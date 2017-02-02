@@ -14,4 +14,4 @@ Validation
 ----------
 The python script "agr_validate.py" can be used to validate a JSON entry against a schema for testing/development purposes.
 Usage is as follows: 
-`validate.py -d test_data.json -s basicGeneInformation.json`
+`validate.py -d test_data.json -s base_schema.json`
