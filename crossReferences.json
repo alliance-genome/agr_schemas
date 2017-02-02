@@ -1,6 +1,6 @@
 {
   "title": "Cross Reference Information For Gene Entities",
-  "description": "An crossReference entity (ie: NCBIGENE links, UniProt Links and links back to MODs",
+  "description": "An crossReference entity (e.g.: NCBIGENE links, UniProt Links and links back to MODs).",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "required": [ "dataSource","id"],
