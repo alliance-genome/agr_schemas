@@ -1,0 +1,61 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Basic Gene Information",
+	"description": "An entry with Gene information from a MOD.  Gene set includes: genes, psuedogenes and not-protein coding genes.  It does not include engineered foreign genes, transcripts or other features.",
+	"id": "basicGeneInformation.json#",
+	"type": "object",
+  "required": [ "primaryId", "metaData", "name", "taxonId", "symbol", "soTermId" ],
+	"properties": {
+		"primaryId": {                                
+			"type": "string",
+			"description": "The primary (MOD) ID for an entity."
+		},
+    "name": { 
+      "type": "string",
+      "description": "The name of the entity."
+    },
+    "taxonId": {
+	    "$ref" : "dataProvider.json#/properties/taxonId",
+	    "description" : "The taxonId for the species of the gene entity."
+    },
+    "symbol": {
+		  "type": "string",
+		  "description": "The symbol for the gene entity."
+		},
+		"geneSynopsis": {
+			"type": "string",
+			"description": "Human readable gene description or synopsis"
+		},
+    "soTermId": { 
+      "type": "string",
+      "description": "The SO Term that represents as best we can, the bioType, or featureType of the object in the file.  DQMs agree that this should be a standardized set."
+    },
+    "synonyms": {
+			"type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+	  },
+	  "crossReferences": {
+	    "description":"Collection holding a limited set (for now) of database cross references for each gene.  That set is defined in geneCrossReferences.json dataSoruce enumeration.  NCBI GENE means just the NCBI Gene reference.  UniProtKB is swissprot and trembl.  Ensembl is just the GENE id for now (not transcript nor protein).  Vega was eliminated as it did not apply to all organisms in the repository.",
+	    "type": "array",
+	    "items": {
+	      "$ref" : "crossReferences.json#"
+	    },
+	    "uniqueItems": true
+	  },
+	  "secondaryIds": {
+	    "description": "Collection of MOD-specific IDs that have been merged into gene entity.",
+	    "type": "array",
+	    "items": {
+	      "type": "string"
+	    },
+	    "uniqueItems": true
+	  },
+	  "metaData": {
+		  "$ref": "metaData.json#",
+		  "description": "meta data of the load file as defined in metaData.json.  we are currently looking for a way to record this in the header of the JSON spec file, just once, instead of repeating it over and over in the file."
+		  }
+	}
+}
