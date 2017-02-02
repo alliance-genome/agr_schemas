@@ -8,7 +8,7 @@
 	"properties": {
 		"primaryId": {                                
 			"type": "string",
-			"description": "The primary (MOD) ID for an entity."
+			"description": "The primary (MOD) ID for an entity. This should be a prefixed ID, e.g. MGI:nnn, FlyBase:FBgnNNNNN, ZFIN:ZDB-GENE-060503-890"
 		},
     "name": { 
       "type": "string",
@@ -28,7 +28,7 @@
 		},
     "soTermId": { 
       "type": "string",
-      "description": "The SO Term that represents as best we can, the bioType, or featureType of the object in the file.  DQMs agree that this should be a standardized set."
+      "description": "The SO Term that represents as best we can, the bioType, or featureType of the object in the file.  DQMs agree that this should be a standardized set. The ID should be a prefixed ID of the form SO:nnnnnn"
     },
     "synonyms": {
 			"type": "array",
