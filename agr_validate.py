@@ -29,8 +29,8 @@ oResolver = js.RefResolver(base_uri = 'file://' + sSchemaDir + '/', referrer = s
 
 try:
 	js.validate(data, schema, format_checker=js.FormatChecker(), resolver=oResolver)
-	print "'%s' successfully validated against '%s'" % (data_file_name, schema_file_name)
+	print("'%s' successfully validated against '%s'" % (data_file_name, schema_file_name))
 except js.ValidationError as e:
-	print e.message
+	print(e.message)
 except js.SchemaError as e:
-	print e.messagep
+	print(e.messagep)
