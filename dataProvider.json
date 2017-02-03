@@ -7,7 +7,7 @@
   "properties": {
     "dataProvider": {
       "description": "The MOD, human, or other source of data. AGR currently supports the entities listed below.",
-      "enum": [ "FB", "MGI", "RGD", "SGD", "ZFIN", "WB", "DRSC","NCBI GENE","UniProtKB","ENSEMBL","RNAcentral"]
+      "enum": [ "FB", "MGI", "RGD", "SGD", "ZFIN", "WB", "DRSC", "NCBIGene", "UniProtKB", "Ensembl", "RNAcentral"]
     },
     "taxonId": {
       "description": "The taxon id of the species of the entity. AGR currently supports the ids listed below.",
