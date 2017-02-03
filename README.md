@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/alliance-genome/agr_schemas.svg?branch=develop)](https://travis-ci.org/alliance-genome/agr_schemas)
+
 AGR JSON Schemas
 ================
 
