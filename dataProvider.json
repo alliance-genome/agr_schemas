@@ -11,7 +11,7 @@
     },
     "taxonId": {
       "description": "The taxon id of the species of the entity. AGR currently supports the ids listed below.",
-      "enum" : ["7955","6239","10090","10116","4932","7227"]
+      "enum" : ["7955","6239","10090","10116","4932","7227", "9606"]
     }
   }
 }
