@@ -3,11 +3,11 @@
   "description": "An crossReference entity (e.g.: NCBIGENE links, UniProt Links and links back to MODs).",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "required": [ "dataSource","id"],
+  "required": [ "dataProvider","id"],
   "id": "geneCrossReference.json#",
   "properties": {
     "dataProvider": {
-      "$ref" : "dataProvider.json#",
+      "$ref" : "dataProvider.json#/properties/dataProvider",
       "description":"Constraints the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
     },
     "id": {
