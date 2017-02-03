@@ -10,9 +10,6 @@ install:
 script: 
   - "python agr_validate.py -s basicGeneInformation.json -d FB_gene_example.json"
 
-after_success:
-  coveralls
-
 # whitelist
 branches:
   only:
