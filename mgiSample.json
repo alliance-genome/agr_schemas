@@ -3,7 +3,7 @@
     {
       "crossReferences": [
         {
-          "dataProvider": "NCBI GENE",
+          "dataProvider": "NCBIGENE",
           "id": "16590"
         },
         {
@@ -78,7 +78,7 @@
     {
       "crossReferences": [
         {
-          "dataProvider": "NCBI GENE",
+          "dataProvider": "NCBIGENE",
           "id": "111246"
         }
       ],
