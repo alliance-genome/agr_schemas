@@ -3,11 +3,11 @@
     {
       "crossReferences": [
         {
-          "dataProvider": "NCBIGENE",
+          "dataProvider": "NCBIGene",
           "id": "16590"
         },
         {
-          "dataProvider": "ENSEMBL",
+          "dataProvider": "Ensembl",
           "id": "ENSMUSG00000005672"
         },
         {
@@ -78,7 +78,7 @@
     {
       "crossReferences": [
         {
-          "dataProvider": "NCBIGENE",
+          "dataProvider": "NCBIGene",
           "id": "111246"
         }
       ],
