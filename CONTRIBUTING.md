@@ -1,6 +1,6 @@
 # How to contribute
 
-In order to contribute to this repository please consult with the main contributors. If you have permission to the repo follow the instructions below to make contributions. Use forks of the repo _only when necessary_ to make your contributions. A properly labelled branch is preferred over a fork (see below under *feature branches*). This allows people within the team to more easily track the work being done.
+In order to contribute to this repository please consult with the main contributors. If you have permission to the repo follow the instructions below to make contributions. Use forks of the repo _only when necessary_ to make your contributions. A properly labelled branch is preferred over a fork (see below under __feature branches__). This allows people within the team to more easily track the work being done.
 
 ## Branches
 
