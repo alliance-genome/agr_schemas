@@ -19,7 +19,7 @@
 	    "description": "the end position of the location."
 	},
 	"chromosome":{
-	    "type": "string"
+	    "type": "string",
 	    "description": "the chromosome of the genomic feature.  Note: whatever loaded here, will be used in JBrowse."
         }
     }
