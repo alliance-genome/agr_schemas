@@ -10,7 +10,7 @@ If you have write permission to the repo, please follow the instructions below t
 
 This branch is the stable branch that is used for creating releases. 
 
-In order to create a release, the developer should ensure all changes are pushed to this branch before making a tag.
+In order to create a release, the developer should ensure all changes are pushed to this branch and create a tag.
 
 ### develop
 
