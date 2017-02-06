@@ -1,0 +1,105 @@
+{
+  "data": [
+    {
+      "crossReferences": [
+        {
+          "dataProvider": "NCBI GENE",
+          "id": "16590"
+        },
+        {
+          "dataProvider": "ENSEMBL",
+          "id": "ENSMUSG00000005672"
+        },
+        {
+          "dataProvider": "UniProtKB",
+          "id": "P05532"
+        },
+        {
+          "dataProvider": "UniProtKB",
+          "id": "P05532-2"
+        },
+        {
+          "dataProvider": "UniProtKB",
+          "id": "P05532-3"
+        },
+        {
+          "dataProvider": "UniProtKB",
+          "id": "A4ZVL1"
+        },
+        {
+          "dataProvider": "UniProtKB",
+          "id": "Q3ULJ6"
+        }
+      ],
+      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96677?typeFilter=Literature",
+      "geneSynopsis": "Mutations at this locus affect migration of embryonic stem cell populations, resulting in mild to severe impairments in hematopoiesis, and pigmentation. Some alleles are homozygous lethal, sterile, or result in the formation of gastrointestinal tumors.",
+      "geneSynopsisUrl": "https://en.wikipedia.org/wiki/CD117",
+      "name": "KIT proto-oncogene receptor tyrosine kinase",
+      "primaryId": "MGI:96677",
+      "secondaryIds": [
+        "MGD-MRK-1672",
+        "MGD-MRK-9743",
+        "MGD-MRK-11588",
+        "MGD-MRK-14609",
+        "MGD-MRK-15420",
+        "MGI:3530304",
+        "MGI:3530312",
+        "MGI:3530319"
+      ],
+      "soTermId": "SO:0001217",
+      "symbol": "Kit",
+      "synonyms": [
+        "belly-spot",
+        "Bs",
+        "CD117",
+        "c-KIT",
+        "dominant spotting",
+        "Dominant white spotting",
+        "Fdc",
+        "Gsfsco1",
+        "Gsfsco5",
+        "Gsfsow3",
+        "gsf spotted coat 1",
+        "gsf spotted coat 5",
+        "Kit",
+        "KIT proto-oncogene receptor tyrosine kinase",
+        "phenotype like Sl or W 3",
+        "SCO1",
+        "SCO5",
+        "SOW3",
+        "spotted sterile male",
+        "Ssm",
+        "Steel Factor Receptor",
+        "Tr-kit",
+        "W"
+      ],
+      "taxonId": "10090"
+    },
+    {
+      "crossReferences": [
+        {
+          "dataProvider": "NCBI GENE",
+          "id": "111246"
+        }
+      ],
+      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:101768?typeFilter=Literature",
+      "name": "myeloid cell leukemia sequence 1, related sequence 1",
+      "primaryId": "MGI:101768",
+      "secondaryIds": [
+        "MGD-MRK-18575"
+      ],
+      "soTermId": "SO:0000336",
+      "symbol": "Mcl1-rs1",
+      "synonyms": [
+        "Mcl1-rs1",
+        "myeloid cell leukemia sequence 1, related sequence 1"
+      ],
+      "taxonId": "10090"
+    }
+  ],
+  "metaData": {
+    "dataProvider": "MGI",
+    "dateProduced": "2017-02-03T12:47:22-05:00",
+    "release": "MGI 6.07 2017-01-24"
+  }
+}
