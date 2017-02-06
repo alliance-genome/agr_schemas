@@ -20,6 +20,6 @@ In order to contribute a new feature or to fix a bug follow the following rules 
      * Use the naming convention `feature/<relevant name>`.
      * Make sure the name of the branch reflects the work being done on the branch.
      * If creating the branch locally, make sure to push the branch to GitHub.
-- Once the branch has been created, associate a github issue with the branch and assign a the developer to the issue.
+- Once the branch has been created, associate a github issue with the branch and assign a developer to the issue.
      * Please create an issue if one does not exist.
 - Once the feature is deemed ready, a pull request should be created and used to pull the changes into develop. 
