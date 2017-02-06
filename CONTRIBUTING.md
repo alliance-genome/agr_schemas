@@ -22,7 +22,7 @@ In order to contribute a new feature or to fix a bug, please follow these recomm
 
 - Create a new branch from `develop`.
      * Use the naming convention `feature/<relevant name>`.
-     * Make sure the name of the branch reflects the work being done on the branch.
+     * The name of the branch should reflect the work being done on the branch.
      * If you've created the branch locally, be sure to push your branch to GitHub.
 - Once the branch has been created, associate a github issue with the branch and assign a developer to the issue.
      * Please create an issue if one does not exist.
