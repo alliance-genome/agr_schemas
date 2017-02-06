@@ -1,12 +1,12 @@
 # How to contribute
 
-In order to contribute to this repository please consult with the main contributors. If you have permission to the repo follow the instructions below to make contributions. Use forks of the repo _only when necessary_ to make your contributions. This way people, within the team, will more easily be able to keep track of the work being done.
+In order to contribute to this repository please consult with the main contributors. If you have permission to the repo follow the instructions below to make contributions. Use forks of the repo _only when necessary_ to make your contributions. A properly labelled branch is preferred over a fork (see below). This way people within the team will more easily be able to keep track of the work being done.
 
 ## Branches
 
 ### master
 
-This branch is the stable branch that is used for creating releases. In order to create a release the developer should make sure all changes are pushed to the branch before making a tag.
+This branch is the stable branch that is used for creating releases. In order to create a release the developer should ensure all changes are pushed to the branch before making a tag.
 
 ### develop
 
