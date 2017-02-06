@@ -19,4 +19,6 @@
 	"type": "string",
 	"description": "alias, plural, systematic_synonym - Not sure if we need this.  Something we have at ZFIN."
     }
+  }
+}
       
