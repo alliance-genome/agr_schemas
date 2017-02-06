@@ -14,7 +14,7 @@ In order to create a release, the developer should ensure all changes are pushed
 
 ### develop
 
-Changes should not be made _directly_ to this branch (rather, via pull requests using __feature branches__). Changes in the branch are intended to, when ready, be merged into the master branch.
+Changes should not be made _directly_ to this branch (rather, via pull requests using __feature branches__). Changes in this branch are intended for preview purposes and, when ready, to be merged into the master branch.
 
 ### feature branches
 
