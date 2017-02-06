@@ -6,7 +6,7 @@ In order to contribute to this repository please consult with the main contribut
 
 ### master
 
-This branch is the stable branch that is used for creating releases. In order to create a release the developer should make sure all changes are pushed to the branch and then create a tag.
+This branch is the stable branch that is used for creating releases. In order to create a release the developer should make sure all changes are pushed to the branch before making a tag.
 
 ### develop
 
