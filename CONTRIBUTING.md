@@ -6,11 +6,11 @@ In order to contribute to this repository please consult with the main contribut
 
 ### master
 
-This branch is the stable branch that is used for creating releases. In order to create a release the developer should make sure all changes are pushed to the brach and then create a tag.
+This branch is the stable branch that is used for creating releases. In order to create a release the developer should make sure all changes are pushed to the branch and then create a tag.
 
 ### develop
 
-Although this branch is called "develop" changes should not be made directly to this branch. Changes in the branch are intended to, when ready, be merged into the master branch.
+Changes should not be made directly to this branch. Changes in the branch are intended to, when ready, be merged into the master branch. Contributions to this branch should be done through a freature branch.
 
 ### feature branches
 
@@ -21,3 +21,4 @@ In order to contribute a new feature or to fix a bug follow the following rules 
 - Once the branch has been created, associate a github issue with the branch and assign a the developer to the issue.
 - If there has not been an issue made for what you are working on please make one.
 - Make sure the name of the branch reflects the work being done on the branch.
+- Once the feature is deemed ready a pull request should be created and used to pull the changes into develop. 
