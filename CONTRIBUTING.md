@@ -18,7 +18,7 @@ Changes should not be made _directly_ to this branch (rather, via pull requests 
 
 ### feature branches
 
-In order to contribute a new feature or to fix a bug follow the following rules of thumb:
+In order to contribute a new feature or to fix a bug, please follow these recommended rules:
 
 - Create a new branch from `develop`.
      * Use the naming convention `feature/<relevant name>`.
