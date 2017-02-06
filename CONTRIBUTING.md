@@ -8,11 +8,13 @@ If you have write permission to the repo, please follow the instructions below t
 
 ### master
 
-This branch is the stable branch that is used for creating releases. In order to create a release the developer should ensure all changes are pushed to the branch before making a tag.
+This branch is the stable branch that is used for creating releases. 
+
+In order to create a release, the developer should ensure all changes are pushed to this branch before making a tag.
 
 ### develop
 
-Changes should not be made directly to this branch. Changes in the branch are intended to, when ready, be merged into the master branch. Contributions to this branch should be done through a feature branch.
+Changes should not be made _directly_ to this branch (rather, via merges using __feature branches__). Changes in the branch are intended to, when ready, be merged into the master branch.
 
 ### feature branches
 
