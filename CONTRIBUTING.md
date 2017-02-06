@@ -2,7 +2,7 @@
 
 In order to contribute to this repository, please consult with the main contributors. 
 
-If you have write permission to the repo, please follow the instructions below to make contributions. Use forks of the repo _only when necessary_ to make your contributions. A properly labelled branch is preferred over a fork (see below under __feature branches__). This allows people within the team to more easily track the work being done.
+If you have write permission to the repo, please follow the instructions below to make contributions. Use forks of the repo _only when necessary_ to make your contributions. A properly labelled branch is preferred over a fork (see below under __feature branches__). This allows people within the team to more easily track the work being done, especially in regards to issues.
 
 ## Branches
 
