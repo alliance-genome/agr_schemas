@@ -32,7 +32,9 @@ try:
     print "'%s' successfully validated against '%s'" % (data_file_name, schema_file_name)
 except js.ValidationError as e:
     print e.message
+    print e
     raise SystemExit("Error in validation.")
 except js.SchemaError as e:
-    print e.messagep
+    print e.message
+    print e
     raise SystemExit("Error in validation.")
