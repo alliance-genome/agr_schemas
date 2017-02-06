@@ -4,6 +4,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "required": [ "dataProvider","id"],
+  "additionalProperties": false,
   "id": "geneCrossReference.json#",
   "properties": {
     "dataProvider": {
