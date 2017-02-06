@@ -6,21 +6,21 @@
   "type": "object",
   "required": [ "assembly","startPostion","endPosition","chromosome" ],
      "properties": {
-	"assembly": { 
-	    "type" : "string",
-	    "description" : "The assembly on which the position and chromosome are based."
-	},
-	"startPostion":{
-	    "type": "number",
-	    "description": "the start position of the location."
-	},
-	"endPosition":{
-	    "type": "number",
-	    "description": "the end position of the location."
-	},
-	"chromosome":{
-	    "type": "string",
-	    "description": "the chromosome of the genomic feature.  Note: whatever loaded here, will be used in JBrowse."
+        "assembly": { 
+            "type" : "string",
+            "description" : "The assembly on which the position and chromosome are based."
+        },
+        "startPostion":{
+            "type": "number",
+            "description": "the start position of the location."
+        },
+        "endPosition":{
+            "type": "number",
+            "description": "the end position of the location."
+        },
+        "chromosome":{
+            "type": "string",
+            "description": "the chromosome of the genomic feature.  Note: whatever loaded here, will be used in JBrowse."
         }
     }
 }
