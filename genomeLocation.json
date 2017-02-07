@@ -4,7 +4,7 @@
   "description": "Location of a sequence object used both by display, and by jbrowse to render a browser.",
   "id": "genomeLocation.json#",
   "type": "object",
-  "required": [ "assembly","startPosition","endPosition","chromosome" ],
+  "required": [ "assembly","chromosome" ],
      "properties": {
         "assembly": { 
             "type" : "string",
@@ -21,6 +21,10 @@
         "chromosome":{
             "type": "string",
             "description": "the chromosome of the genomic feature.  Note: whatever loaded here, will be used in JBrowse."
-        }
+        },
+	"strand":{
+	    "enum": ["+","-","."],
+	    "description": "strand of the genome location."
+	}
     }
 }
