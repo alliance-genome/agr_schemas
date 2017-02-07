@@ -4,13 +4,13 @@
   "description": "Location of a sequence object used both by display, and by jbrowse to render a browser.",
   "id": "genomeLocation.json#",
   "type": "object",
-  "required": [ "assembly","startPostion","endPosition","chromosome" ],
+  "required": [ "assembly","startPosition","endPosition","chromosome" ],
      "properties": {
         "assembly": { 
             "type" : "string",
             "description" : "The assembly on which the position and chromosome are based."
         },
-        "startPostion":{
+        "startPosition":{
             "type": "number",
             "description": "the start position of the location."
         },
