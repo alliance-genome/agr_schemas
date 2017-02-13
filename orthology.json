@@ -14,27 +14,31 @@
     },
     "gene1": {
       "type": "string",
-      "description": "first gene of the pair."
+      "description": "The first gene of the pair."
     },
     "gene1DataProvider": {
       "$ref" : "dataProvider.json#/properties/dataProvider",
-      "description":"Constraints the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
+      "description":"The provider of the original gene id."
     },
     "gene2": {
       "type": "string",
-      "description": "second gene of the pair."
+      "description": "The second gene of the pair."
     },
     "gene1DataProvider": {
       "$ref" : "dataProvider.json#/properties/dataProvider",
-      "description":"Constraints the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
+      "description":"The provider of the original gene id."
     },
-    "predictionMethod":{
+    "predictionMethod": {
       "enum":["Compara","Panther","OrthoMCL","ZFIN Curated Orthology","InParanoid","TreeFam","RoundUp","OrthoDB"],
-      "description":"source of the match."
+      "description":"Source of the match."
     },
-    "confidence":{
+    "confidence": {
       "enum":["moderate","high","low"],
-      "description":"confidence of match"
+      "description":"Confidence of match"
+    },
+    "score": {
+      "type": "number",
+      "description": "The score assigned by DIOPT."
     }
   }
 }
