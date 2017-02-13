@@ -13,12 +13,20 @@
                      "description": "Diopt schema highlights the best pair."
     },
     "gene1": {
-      "type":"string",
+      "type": "string",
       "description": "first gene of the pair."
     },
+    "gene1DataProvider": {
+      "$ref" : "dataProvider.json#/properties/dataProvider",
+      "description":"Constraints the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
+    },
     "gene2": {
-       "type":"string",
+      "type": "string",
       "description": "second gene of the pair."
+    },
+    "gene1DataProvider": {
+      "$ref" : "dataProvider.json#/properties/dataProvider",
+      "description":"Constraints the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
     },
     "predictionMethod":{
       "enum":["Compara","Panther","OrthoMCL","ZFIN Curated Orthology","InParanoid","TreeFam","RoundUp","OrthoDB"],
