@@ -32,10 +32,6 @@
       "enum":["Compara","Panther","OrthoMCL","ZFIN Curated Orthology","InParanoid","TreeFam","RoundUp","OrthoDB"],
       "description":"source of the match."
     },
-    "blastScore":{
-      "type":"number",
-      "description":"blast match score."
-    },
     "confidence":{
       "enum":["moderate","high","low"],
       "description":"confidence of match"
