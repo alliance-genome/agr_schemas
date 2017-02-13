@@ -13,11 +13,11 @@
                      "description": "Diopt schema highlights the best pair."
     },
     "gene1": {
-      "$ref":"basicGeneInformation.json#",
+      "type":"string",
       "description": "first gene of the pair."
     },
     "gene2": {
-       "$ref":"basicGeneInformation.json#",
+       "type":"string",
       "description": "second gene of the pair."
     },
     "predictionMethod":{
