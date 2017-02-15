@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Orthology",
+  "description": "orthology objects.",
+  "id": "orthology.json",
+  "type": "object",
+  "required": [ "metaData", "data" ],
+  "properties": {
+    "isBestScore": { "enum": ["Yes","No"],
+                     "description": "Diopt schema highlights the best pair."
+    },
+    "isBestRevScore": { "enum": ["Yes","No"],
+                     "description": "Diopt schema highlights the best pair."
+    },
+    "gene1": {
+      "type": "string",
+      "description": "The first gene of the pair."
+    },
+    "gene1DataProvider": {
+      "$ref" : "dataProvider.json#/properties/dataProvider",
+      "description":"The provider of the original gene id."
+    },
+    "gene2": {
+      "type": "string",
+      "description": "The second gene of the pair."
+    },
+    "gene1DataProvider": {
+      "$ref" : "dataProvider.json#/properties/dataProvider",
+      "description":"The provider of the original gene id."
+    },
+    "predictionMethod": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "value": { 
+          "enum": ["OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
+        }
+      },
+        "description": "Source of the match.",
+        "uniqueItems": true
+    },
+    "confidence": {
+      "enum":["moderate","high","low"],
+      "description":"Confidence of match"
+    }
+  }
+}
