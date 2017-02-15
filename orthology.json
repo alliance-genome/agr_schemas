@@ -31,12 +31,12 @@
     "predictionMethod": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "string",
         "value": { 
           "enum": ["Compara","Panther","OrthoMCL","ZFIN Curated Orthology","InParanoid","TreeFam","RoundUp","OrthoDB"],
         }
       }
-        "description":"Source of the match."
+        "description": "Source of the match.",
         "uniqueItems": true
     },
     "confidence": {
