@@ -35,7 +35,7 @@
         "value": { 
           "enum": ["Compara","Panther","OrthoMCL","ZFIN Curated Orthology","InParanoid","TreeFam","RoundUp","OrthoDB"],
         }
-      }
+      },
         "description": "Source of the match.",
         "uniqueItems": true
     },
