@@ -33,7 +33,7 @@
       "items": {
         "type": "string",
         "value": { 
-          "enum": ["Compara","Panther","OrthoMCL","ZFIN Curated Orthology","InParanoid","TreeFam","RoundUp","OrthoDB"],
+          "enum": ["OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"],
         }
       },
         "description": "Source of the match.",
