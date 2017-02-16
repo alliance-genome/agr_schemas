@@ -4,28 +4,34 @@
   "description": "orthology objects.",
   "id": "orthology.json",
   "type": "object",
-  "required": [ "metaData", "data" ],
+  "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "gene1UsedSymbol", "gene2UsedSymbol", "gene1DataProvider", "gene2DataProvider", "predictionMethod", "confidence" ],
   "properties": {
     "isBestScore": { "enum": ["Yes","No"],
-                     "description": "Diopt schema highlights the best pair."
+                     "description": "DIOPT schema highlights the best pair."
     },
     "isBestRevScore": { "enum": ["Yes","No"],
-                     "description": "Diopt schema highlights the best pair."
+                     "description": "DIOPT schema highlights the best reverse pair."
     },
     "gene1": {
       "type": "string",
       "description": "The first gene of the pair."
     },
+    "gene1UsedSymbol": { "enum": ["Yes","No"],
+      "description": "Did we use a gene symbol for gene 1? This is true if the species_specific_geneid was missing."
+    },
     "gene1DataProvider": {
-      "$ref" : "dataProvider.json#/properties/dataProvider",
+      "$ref" : "../dataProvider.json#/properties/dataProvider",
       "description":"The provider of the original gene id."
     },
     "gene2": {
       "type": "string",
       "description": "The second gene of the pair."
     },
+    "gene2UsedSymbol": { "enum": ["Yes","No"],
+      "description": "Did we use a gene symbol for gene 2? This is true if the species_specific_geneid was missing."
+    },
     "gene1DataProvider": {
-      "$ref" : "dataProvider.json#/properties/dataProvider",
+      "$ref" : "../dataProvider.json#/properties/dataProvider",
       "description":"The provider of the original gene id."
     },
     "predictionMethod": {
@@ -36,12 +42,12 @@
           "enum": ["OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
         }
       },
-        "description": "Source of the match.",
+        "description": "Source of the orthology match.",
         "uniqueItems": true
     },
     "confidence": {
       "enum":["moderate","high","low"],
-      "description":"Confidence of match"
+      "description":"Confidence of orthology match."
     }
   }
 }
