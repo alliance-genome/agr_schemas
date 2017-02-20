@@ -16,8 +16,12 @@
       "type": "string",
       "description": "The first gene of the pair."
     },
-    "gene1UsedSymbol": { "enum": ["Yes","No"],
-      "description": "Did we use a gene symbol for gene 1? This is true if the species_specific_geneid was missing."
+    "gene1Symbol": {
+      "type": "string"
+      "description": "The symbol for gene 1."
+    },
+    "gene1SymbolAsId": { "enum": ["Yes","No"],
+      "description": "Did we use a gene symbol as the ID for gene 1? This is true if the species_specific_geneid was missing in DIOPT."
     },
     "gene1DataProvider": {
       "$ref" : "../dataProvider.json#/properties/dataProvider",
@@ -27,8 +31,12 @@
       "type": "string",
       "description": "The second gene of the pair."
     },
-    "gene2UsedSymbol": { "enum": ["Yes","No"],
-      "description": "Did we use a gene symbol for gene 2? This is true if the species_specific_geneid was missing."
+    "gene2Symbol": {
+      "type": "string"
+      "description": "The symbol for gene 2."
+    },
+    "gene2SymbolAsId": { "enum": ["Yes","No"],
+      "description": "Did we use a gene symbol as the ID for gene 2? This is true if the species_specific_geneid was missing in DIOPT."
     },
     "gene1DataProvider": {
       "$ref" : "../dataProvider.json#/properties/dataProvider",
