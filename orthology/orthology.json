@@ -48,7 +48,7 @@
     "confidence": {
       "enum":["moderate","high","low"],
       "description":"Confidence of orthology match."
-    }
+    },
     "score": {
       "type": "number",
       "description": "The DIOPT score for an orthology match."
