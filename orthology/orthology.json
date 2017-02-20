@@ -17,7 +17,7 @@
       "description": "The first gene of the pair."
     },
     "gene1Symbol": {
-      "type": "string"
+      "type": "string",
       "description": "The symbol for gene 1."
     },
     "gene1SymbolAsId": { "enum": ["Yes","No"],
@@ -32,7 +32,7 @@
       "description": "The second gene of the pair."
     },
     "gene2Symbol": {
-      "type": "string"
+      "type": "string",
       "description": "The symbol for gene 2."
     },
     "gene2SymbolAsId": { "enum": ["Yes","No"],
