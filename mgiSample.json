@@ -7,7 +7,8 @@
           "id": "109899"
         }
       ],
-      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:87982?typeFilter=Literature",
+      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/
+      87982?typeFilter=Literature",
       "genomeLocations": [
         {
           "assembly": "GRCm38",
@@ -15,7 +16,7 @@
         }
       ],
       "name": "alkaline phosphatase 1",
-      "primaryId": "MGI:87982",
+      "primaryId": "87982",
       "secondaryIds": [
         "MGD-MRK-1248",
         "MGD-MRK-1253"
@@ -48,7 +49,7 @@
         }
       ],
       "name": "immunoglobulin heavy chain 7 (heavy chain of IgE)",
-      "primaryId": "MGI:96449",
+      "primaryId": "96449",
       "secondaryIds": [
         "MGD-MRK-11246"
       ],
@@ -104,7 +105,7 @@
         }
       ],
       "name": "KIT proto-oncogene receptor tyrosine kinase",
-      "primaryId": "MGI:96677",
+      "primaryId": "96677",
       "secondaryIds": [
         "MGD-MRK-1672",
         "MGD-MRK-9743",
@@ -147,7 +148,7 @@
     {
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:5695867?typeFilter=Literature",
       "name": "twisty nose",
-      "primaryId": "MGI:5695867",
+      "primaryId": "5695867",
       "soTermId": "SO:0001500",
       "symbol": "Twsn",
       "synonyms": [
@@ -178,7 +179,7 @@
         }
       ],
       "name": "adhesion G protein-coupled receptor D2, pseudogene",
-      "primaryId": "MGI:2685845",
+      "primaryId": "2685845",
       "secondaryIds": [
         "MGI:3642981"
       ],
