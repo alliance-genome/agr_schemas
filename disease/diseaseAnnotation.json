@@ -11,6 +11,10 @@
       "type" : "string",
       "description" : "The ID to which the disease ontology term is applied. #TODO fold this into objectRelation and reference basicGeneInformation.json"
     },
+    "objectName": {
+      "type":"string",
+      "description":"optional name for the object for which this annotation is based."
+    }
     "objectRelation" : [ 
        {
          "title" : "Genotype",
