@@ -52,7 +52,7 @@
      "experimentalConditions": {
         "type": "array",
         "items": {
-          "$ref": "../experimentalConditions.json#/properties/experimentalCondition",
+          "$ref": "experimentalConditions.json#/properties/experimentalCondition",
           "description":"list of experimental conditions applied to the db object, which together produce the disease association."
         }
      },
@@ -80,7 +80,7 @@
     "dateAssigned": {
        "type": "string",
        "format": "date-time",
-       "description": "Date this entity was dumped from it's primary data source."
+       "description": "Date this entity was assigned in it's primary data source."
     },
     "modifier" : {
         "$ref": "modifer.json#/properties/modifier",
