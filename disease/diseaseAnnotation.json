@@ -14,7 +14,7 @@
     "objectName": {
       "type":"string",
       "description":"optional name for the object for which this annotation is based."
-    }
+    },
     "objectRelation" : [ 
        {
          "title" : "Genotype",
