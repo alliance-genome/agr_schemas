@@ -1,0 +1,39 @@
+{
+  "title": "Evidence for Disease Annotation",
+  "description": "Evidence for Disease Annotation consists of a publication or reference and an evidence code from the evidence code ontology.",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "publications",
+    "evidenceCode"
+  ],
+  "additionalProperties": false,
+  "id": "evidence.json#",
+  "properties": {
+    "evidenceCode": {
+      "type": "string",
+      "description": "an evidence code from the ECO."
+    },
+    "publications": {
+      "type": "array",
+      "items": {
+        "publication": {
+          "type": "object",
+          "description": "in this instance, a publication is made up of a MOD identifier and a PubMed ID.  TODO pull this out into a stand a lone object to be used by other modules.",
+          "properties": {
+            "publicationModId": {
+              "type": "string",
+              "description": "the MOD identifier for the pub. required as many MODs have pubs without pubmed ids.",
+              "required": "true"
+            },
+            "pubMedId": {
+              "type": "string",
+              "description": "the pubmed id when available, of the reference."
+            }
+          }
+        }
+      },
+      "uniqueItems": "true"
+    }
+  }
+}
