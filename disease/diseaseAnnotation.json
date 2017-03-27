@@ -86,7 +86,7 @@
               ],
               "required": "true"
             },
-            "description": "is_model_of can only be applied when objectType is genotype or organism$
+            "description": "is_model_of can only be applied when objectType is genotype or organism",
             "objectType": {
               "enum": [
                 "allele"
@@ -96,7 +96,7 @@
                 "type": "array",
                 "items": {
                      "$ref": "../basicGeneInformation.json#/properties/primaryId",
-                     "description": "list of inferred gene/marker association that can be made base$
+                     "description": "list of inferred gene/marker associations that can be made"
                 }, "required":"true"
             }
           }
