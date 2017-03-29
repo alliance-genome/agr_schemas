@@ -4,7 +4,7 @@
   "description": "An entry with Gene information from a MOD.  Gene set includes: genes, psuedogenes and not-protein coding genes.  It does not include engineered foreign genes, transcripts or other features.",
   "id": "basicGeneInformation.json#",
   "type": "object",
-  "required": [ "primaryId", "taxonId", "symbol", "soTermId","publications" ],
+  "required": [ "primaryId", "taxonId", "symbol", "soTermId" ],
   "additionalProperties": false,
   "properties": {
     "primaryId": {                                
