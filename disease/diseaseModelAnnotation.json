@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Disease Model Annotation",
+  "description": "An entry with disease/object associations",
+  "id": "diseaseModelAnnotation.json#",
+  "type": "object",
+  "required": [
+    "objectId",
+    "DOid",
+    "taxonId",
+    "dataProvider",
+    "dateAssigned",
+    "objectRelation"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "objectId": {
+      "type": "string",
+      "description": "The ID to which the disease ontology term is applied. #TODO fold this into objectRelation and reference basicGeneInformation.json"
+    },
+    "objectName": {
+      "type": "string",
+      "description": "optional name for the object for which this annotation is based."
+    },
+    "objectRelation": {
+      "$ref": "diseaseObjectRelation.json#/properties/",
+      "description": "Constrains the disease object, associationType and inferredGeneAssociation"
+    },
+    "qualifier": {
+      "enum": [
+        "not"
+      ],
+      "description": "The qualifier for the annotation"
+    },
+    "with": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "db identifiers related to the annotation object via the 'with' relationship."
+      },
+      "uniqueItems": true
+    },
+    "experimentalConditions": {
+      "type": "array",
+      "items": {
+        "$ref": "experimentalConditions.json#/properties/experimentalCondition",
+        "description": "list of experimental conditions applied to the db object, which together produce the disease association."
+      }
+    },
+    "taxonId": {
+      "$ref": "../species.json#/properties/taxonId"
+    },
+    "DOid": {
+      "type": "string",
+      "description": "The disease ontology term id."
+    },
+    "dataProvider": {
+      "$ref": "../dataProvider.json#/properties/dataProvider",
+      "description": "Constrains the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "evidence.json#/properites/evidence"
+      }
+    },
+    "geneticSex": {
+      "enum": [
+        "male",
+        "female",
+        "hermaphrodite"
+      ],
+      "description": "The genetic sex of the organism in the disease association"
+    },
+    "dateAssigned": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date this entity was assigned in it's primary data source."
+    },
+    "modifier": {
+      "$ref": "modifer.json#/properties/modifier",
+      "definition": ""
+    }
+  }
+}
