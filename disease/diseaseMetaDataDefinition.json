@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Disease Association Info File",
+  "title": "Disease Meta Data Definition",
   "description": "A file of Disease Association objects.",
-  "id": "diseaseHeader.json",
+  "id": "diseaseMetaDataDefinition.json",
   "type": "object",
   "required": [ "metaData", "data" ],
   "properties": {
@@ -14,7 +14,7 @@
       "type": "array",
       "description": "A list of diseaseAnnotation objects.",
       "items": {
-        "$ref" : "diseaseAnnotation.json#"
+        "$ref" : "diseaseModelAnnotation.json#"
       }
     }
   }

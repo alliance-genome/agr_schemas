@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "diseaseObjectRelation",
+  "description": "An entry that describes the relationship between disease object, relationship and inferredGeneAssociation",
+  "id": "diseaseObjectRelation.json#",
+  "type": "object",
+  "required": [
+    "objectType, associationType"
+  ],
+  "additionalProperties": false,
+  "properties": {
+   "objectRelation": {
+      "type": "object",
+      "description": "Constrains the disease object, associationType and inferredGeneAssociation - for genotype, must have is_model_of relation and optional inferred from gene list.  some genotype/fish models may have no affected gene.",
+      "oneOf": [
+        {
+          "title": "Genotype",
+          "type": "Object",
+	  "description": "is_model_of can only be applied when objectType is GENO/organism",
+          "properties": {
+            "associationType": {
+              "enum": [
+                "is_model_of"
+              ],
+              "required": "true"
+            },
+            "objectType": {
+              "enum": [
+                "genotype",
+                "fish"
+              ],
+              "required": "true"
+            },
+            "inferredGeneAssociation": {
+                "type": "array",
+		"description":"inferred from gene of interest for a genotype/organism.  this maybe null/empty.",
+                "items": {
+                     "$ref": "../basicGeneInformation.json#/properties/primaryId",
+                     "description": "list of inferred gene/marker association that can be made based on the DB object ID"
+                }
+            }
+          }
+        },
+        {
+          "title": "Gene/marker/Allele",
+          "type": "Object",
+	  "description": "is_model_of can only be applied when objectType is genotype or organism level annotation, other conditions can use one of the following relationship types to describe the association.  Allele is broken out so that inferredGeneAssociation can be recorded.",
+          "properties": {
+            "associationType": {
+              "enum": [
+                "causes_or_contributes_to_condition",
+                "causes_condition",
+                "contributes_to_condition",
+                "is_marker_for"
+              ],
+              "required": "true"
+            },  
+            "objectType": {
+              "enum": [
+                "gene",
+                "marker"
+              ]
+            }
+          }
+        },
+	{
+          "title": "Allele",
+          "type": "Object",
+	  "description": "is_model_of can only be applied when objectType is genotype or organism", 
+          "properties": {
+            "associationType": {
+              "enum": [
+                "causes_or_contributes_to_condition",
+                "causes_condition",
+                "contributes_to_condition",
+                "is_marker_for"
+              ],
+              "required": "true"
+            },    
+            "objectType": {
+              "enum": [
+                "allele"
+              ]
+            },
+            "inferredGeneAssociation": {
+                "type": "array",
+		"description":"allele disease annotations may or may not have an inferred from gene. This reference is to the BGI JSON definition of a gene",
+                "items": {
+                     "$ref": "../basicGeneInformation.json#/properties/primaryId",
+                     "description": "list of inferred gene/marker associations that can be made"
+                }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+        
