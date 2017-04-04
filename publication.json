@@ -16,10 +16,10 @@
     },
     "pubMedId": {
 	"type":"string",
-	"description":"the id from pubmed when available."
+	"description": "The id from pubmed when available."
     },
     "summaryReference": {
 	"type":"string",
-	"description":"a publication mini-reference for display. No constraints here yet - but examples the BGI group provide included title, authors, journal, volumne, pages ie: Aamar, E., and Dawid, I.B. (2008) Protocadherin-18a has a role in cell adhesion, behavior and migration in zebrafish development. Dev. Biol. 318(2):335-346"
+	"description": "A publication mini-reference for display. No constraints here yet - but examples the BGI group provide included title, authors, journal, volumne, pages ie: Aamar, E., and Dawid, I.B. (2008) Protocadherin-18a has a role in cell adhesion, behavior and migration in zebrafish development. Dev. Biol. 318(2):335-346"
     }    
 }
