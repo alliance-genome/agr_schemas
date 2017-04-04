@@ -82,6 +82,10 @@
     "score": {
       "type": "number",
       "description": "The DIOPT score for an orthology match."
+    },
+    "highestPossibleScore": {
+      "type": "number",
+      "description": "The highest possible score for a species comparison."
     }
   }
 }
