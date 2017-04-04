@@ -15,7 +15,7 @@
       "oneOf": [
         {
           "title": "Genotype",
-          "type": "Object",
+          "type": "object",
 	  "description": "is_model_of can only be applied when objectType is GENO/organism",
           "properties": {
             "associationType": {
@@ -33,17 +33,16 @@
             },
             "inferredGeneAssociation": {
                 "type": "array",
-		"description":"inferred from gene of interest for a genotype/organism.  this maybe null/empty.",
+	        "description": "list of inferred gene/marker association that can be made based on the DB object ID",
                 "items": {
-                     "$ref": "../basicGeneInformation.json#/properties/primaryId",
-                     "description": "list of inferred gene/marker association that can be made based on the DB object ID"
+                     "$ref": "../basicGeneInformation.json#/properties/primaryId"
                 }
             }
           }
         },
         {
           "title": "Gene/marker/Allele",
-          "type": "Object",
+          "type": "object",
 	  "description": "is_model_of can only be applied when objectType is genotype or organism level annotation, other conditions can use one of the following relationship types to describe the association.  Allele is broken out so that inferredGeneAssociation can be recorded.",
           "properties": {
             "associationType": {
@@ -65,7 +64,7 @@
         },
 	{
           "title": "Allele",
-          "type": "Object",
+          "type": "object",
 	  "description": "is_model_of can only be applied when objectType is genotype or organism", 
           "properties": {
             "associationType": {
@@ -84,10 +83,9 @@
             },
             "inferredGeneAssociation": {
                 "type": "array",
-		"description":"allele disease annotations may or may not have an inferred from gene. This reference is to the BGI JSON definition of a gene",
+		"description": "list of inferred gene/marker associations that can be made",
                 "items": {
-                     "$ref": "../basicGeneInformation.json#/properties/primaryId",
-                     "description": "list of inferred gene/marker associations that can be made"
+                     "$ref": "../basicGeneInformation.json#/properties/primaryId"
                 }
             }
           }
