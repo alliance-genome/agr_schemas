@@ -15,6 +15,10 @@ must also be filled out.",
                   {"required": ["experimentalConditionsText"]}
          ],
          "properties": {
+	    "associationType":{
+		"enum": ["condition_ameliorated_by","condition_exacerbated_by"],
+		"description": "TODO: find the RO terms for these, I don't currently find condition_ameliorated_by in the RO"
+	    }
             "genetic":{
 	       "type":"array",
 	       "items": {
