@@ -10,7 +10,8 @@
     "taxonId",
     "dataProvider",
     "dateAssigned",
-    "objectRelation"
+    "objectRelation",
+    "evidence"
   ],
   "additionalProperties": false,
   "properties": {
