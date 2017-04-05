@@ -19,15 +19,15 @@ must also be filled out.",
 	       "type":"array",
 	       "items": {
                   "type": "string",
-               }
-	       "description":"A list of genetic object (allele/gene) that modifies the disease model"
+               },
+	       "description": "A list of genetic object (allele/gene) that modifies the disease model"
             },
             "experimentalConditionsText": {
 	       "type":"string",
                "items": {
                   "type": "string"
-               }
-               "description":"A list of non-genetic object experimental condition that modifies the disease model"
+               },
+               "description": "A list of non-genetic object experimental condition that modifies the disease model"
            }
         }
      }, 
