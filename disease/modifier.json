@@ -16,12 +16,18 @@ must also be filled out.",
          ],
          "properties": {
             "genetic":{
-	       "type":"string",
-	       "description":"Specifies a genetic object (allele/gene) that modifies the disease model"
+	       "type":"array",
+	       "items": {
+                  "type": "string",
+               }
+	       "description":"A list of genetic object (allele/gene) that modifies the disease model"
             },
-            "experimentalConditionsText":{
+            "experimentalConditionsText": {
 	       "type":"string",
-               "description":"Specifies a non-genetic object experimental condition that modifies the disease model"
+               "items": {
+                  "type": "string"
+               }
+               "description":"A list of non-genetic object experimental condition that modifies the disease model"
            }
         }
      }, 
