@@ -9,7 +9,8 @@
   "properties": {
     "primaryId": {                                
       "type": "string",
-      "description": "The primary (MOD) ID for an entity."
+      "description": "The primary (MOD) ID for an entity.",
+      "pattern": "^((FB:)|(MGI:)|(ZFIN:)|(SGD:)|(WB:)|(RGD:))"
     },
     "name": { 
       "type": "string",
