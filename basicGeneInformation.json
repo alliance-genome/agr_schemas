@@ -9,7 +9,17 @@
   "properties": {
     "primaryId": {                                
       "type": "string",
-      "description": "The primary (MOD) ID for an entity."
+      "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:MGI:87917.",
+      "pattern": "^((FB:)|(MGI:)|(ZFIN:)|(SGD:)|(WB:)|(RGD:))"
+    },
+    "primaryIdDisplay":{
+      "type": "string",
+      "description": "The displayed version of your primaryId. Please enter your Id here exactly as you'd like it displayed, e.g. FBgn0003301, MGI:87917"
+    },
+    "primaryIdPrefix":{
+      "type": "string",
+      "description": "The prefix used for for the primaryId, e.g. FB: WB:",
+      "pattern": "^((FB:)|(MGI:)|(ZFIN:)|(SGD:)|(WB:)|(RGD:))"
     },
     "name": { 
       "type": "string",
