@@ -18,7 +18,8 @@
     },
     "primaryIdPrefix":{
       "type": "string",
-      "description": "The prefix used for for the primaryId, e.g. FB: WB:"
+      "description": "The prefix used for for the primaryId, e.g. FB: WB:",
+      "pattern": "^((FB:)|(MGI:)|(ZFIN:)|(SGD:)|(WB:)|(RGD:))"
     },
     "name": { 
       "type": "string",
