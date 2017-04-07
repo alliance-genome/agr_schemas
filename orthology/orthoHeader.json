@@ -7,7 +7,7 @@
   "required": [ "metaData", "data" ],
   "properties": {
     "metaData": {
-      "$ref": "metaData.json#",
+      "$ref": "../metaData.json#",
       "description": "meta data of the load file as defined in metaData.json."
     },
     "data": { 

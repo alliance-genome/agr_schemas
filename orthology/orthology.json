@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Orthology",
+  "description": "orthology objects.",
+  "id": "orthology.json",
+  "type": "object",
+  "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "gene1UsedSymbol", "gene2UsedSymbol", "gene1DataProvider", "gene2DataProvider", "confidence" ],
+  "properties": {
+    "isBestScore": { "enum": ["Yes","No"],
+                     "description": "DIOPT schema highlights the best pair."
+    },
+    "isBestRevScore": { "enum": ["Yes","No"],
+                     "description": "DIOPT schema highlights the best reverse pair."
+    },
+    "gene1": {
+      "type": "string",
+      "description": "The primaryId of the the first gene."
+    },
+    "gene1DataProvider": {
+      "$ref" : "../dataProvider.json#/properties/dataProvider",
+      "description":"The provider of the original gene id."
+    },
+    "gene2": {
+      "type": "string",
+      "description": "The primaryId of the the second gene."
+    },
+    "gene2DataProvider": {
+      "$ref" : "../dataProvider.json#/properties/dataProvider",
+      "description":"The provider of the original gene id."
+    },
+    "predictionMethodsMatched": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "value": { 
+          "enum": ["OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
+        }
+      },
+        "description": "Source of the orthology match.",
+        "uniqueItems": true
+    },
+    "predictionMethodsNotMatched": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "value": { 
+          "enum": ["OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
+        }
+      },
+        "description": "Prediction methods that were not matched.",
+        "uniqueItems": true
+    },
+    "predictionMethodsNotCalled": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "value": { 
+          "enum": ["OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
+        }
+      },
+        "description": "Prediction methods that were not called.",
+        "uniqueItems": true
+    },
+    "confidence": {
+      "enum":["moderate","high","low"],
+      "description":"Confidence of orthology match."
+    }
+  }
+}

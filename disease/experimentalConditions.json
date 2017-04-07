@@ -1,0 +1,40 @@
+{
+  "title": "Experimental Conditions for Disease Annotation",
+  "description": "An experimental condition can be a combination of text descriptions and ontological assignments used to represent the conditions under which the disease annotation occured.",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [ "textCondition","zecoId"],
+  "additionalProperties": false,
+  "id": "experimentalCondition.json#",
+  "properties": {
+  	"textCondition":{
+	   "type":"string",
+	   "description":"free text describing the environmental/experimental condition."
+	},
+	"zecoId":{
+           "type":"string",
+	   "description": "zebrafish experimental ontology identifier."
+	},
+	"anatomicalId":{
+	   "type":"string",
+           "description": "anatomical ontology identifier used in cases like regeneration/wounding."
+        },
+	"geneOntologyId":{
+	   "type":"string",
+           "description": "gene ontology id used in subset of zeco terms."
+	},
+	"NCBITaxonId:":{
+	   "type":"string",
+           "description": "NCBITaxon ontology id used in subset of zeco terms."
+        },
+        "ChebiOntologyId":{
+           "type":"string",
+           "description": "Chebi ontology id used in subset of zeco terms."
+      	},
+	"ConditionIsStandard":{
+           "type":"boolean",
+	   "required":"true"
+	}
+    }
+}
+
