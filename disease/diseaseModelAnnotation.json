@@ -17,7 +17,8 @@
   "properties": {
     "objectId": {
       "type": "string",
-      "description": "The ID to which the disease ontology term is applied. #TODO fold this into objectRelation and reference basicGeneInformation.json"
+      "description": "The ID to which the disease ontology term is applied. #TODO fold this into objectRelation and reference basicGeneInformation.json",
+      "pattern": "^((FB:)|(MGI:)|(ZFIN:)|(SGD:)|(WB:)|(RGD:))"
     },
     "objectName": {
       "type": "string",
