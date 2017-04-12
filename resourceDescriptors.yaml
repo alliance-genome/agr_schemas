@@ -1,90 +1,93 @@
+# AGR Schema Resource Descriptors YAML.
+# When submitting identifiers, please use the appropriate AGR_id field listed below.
+
 - database: MGI
   - type_name: [primaryId, secondaryId]
-    AGR_prefix: None
+    AGR_added_prefix: None
     AGR_id: MGI:80863
     display_id: MGI:80863
     example_url: http://www.informatics.jax.org/marker/MGI:80863
 
 - database: RGD
   - type_name: [primaryId, secondaryId]
-    AGR_prefix: None
+    AGR_added_prefix: None
     AGR_id: RGD:1311419
     display_id: RGD:1311419
     example_url: http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:1311419
 
 - database: ZFIN
   - type_name: [primaryId, secondaryId]
-    AGR_prefix: ZFIN
+    AGR_added_prefix: ZFIN
     AGR_id: ZFIN:ZDB-GENE-030131-9438
     display_id: ZDB-GENE-030131-9438
     example_url: https://zfin.org/ZDB-GENE-030131-9438
 
 - database: FlyBase
   - type_name: [primaryId, secondaryId]
-    AGR_prefix: FB
+    AGR_added_prefix: FB
     AGR_id: FB:FBgn0000490
     display_id: FBgn0000490
     example_url: http://flybase.org/reports/FBgn0000490.html
 
 - database: WormBase
   - type_name: [primaryId, secondaryId]
-    AGR_prefix: WB
+    AGR_added_prefix: WB
     AGR_id: WB:WBGene00000064
     display_id: WBGene00000064
     example_url: http://www.wormbase.org/species/c_elegans/gene/WBGene00000064
 
 - database: SGD
   - type_name: [primaryId, secondaryId]
-    AGR_prefix: SGD
+    AGR_added_prefix: SGD
     AGR_id: SGD:S000001855
     display_id: S000001855
     example_url: http://www.yeastgenome.org/locus/S000001855/overview
 
 - database: HGNC
   - type_name: [primaryId, secondaryId]
-    AGR_prefix: HGNC
+    AGR_added_prefix: HGNC
     AGR_id: HGNC:33510
     display_id: HGNC:33510
     example_url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=33510
 
 - database: NCBI Gene
   - type_name: [externalGlobalId]
-    AGR_prefix: NCBI_Gene
+    AGR_added_prefix: NCBI_Gene
     AGR_id: NCBI_Gene:33432
     display_id: 33432
     example_url: https://www.ncbi.nlm.nih.gov/gene/33432
 
 - database: UniProt
   - type_name: [externalGlobalId]
-    AGR_prefix: UniProtKB
+    AGR_added_prefix: UniProtKB
     AGR_id: UniProtKB:P07713
     display_id: P07713
     example_url: http://www.uniprot.org/uniprot/P07713
 
 - database: Ensembl
   - type_name: [externalGlobalId]
-    AGR_prefix: Ensembl
+    AGR_added_prefix: Ensembl
     AGR_id: Ensembl:FBgn0000490
     display_id: FBgn0000490
     example_url: http://www.ensembl.org/Drosophila_melanogaster/Gene/Summary?g=FBgn0000490
 
 - database: RNAcentral
   - type_name: [externalGlobalId]
-    AGR_prefix: RNAcentral
+    AGR_added_prefix: RNAcentral
     AGR_id: RNAcentral:URS000075C808
     display_id: URS000075C808
     example_url: http://rnacentral.org/rna/URS000075C808/9606
 
 - database: Pubmed
   - type_name: [externalGlobalId]
-    AGR_prefix: PMID
+    AGR_added_prefix: PMID
     AGR_id: PMID:26447131
     display_id: PMID:26447131 
     example_url: https://www.ncbi.nlm.nih.gov/pubmed/26447131
 
 - database: DRSC
   - type_name: [primaryId]
-    AGR_prefix: DRSC
+    AGR_added_prefix: DRSC
     AGR_id: DRSC:FBgn0000490
     display_id: FBgn0000490
     example_url: None
