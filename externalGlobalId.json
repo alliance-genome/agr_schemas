@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "External Global IDs",
+  "id": "externalGlobalId.json#",
+  "description": "External Global ids.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "externalGlobalId": {
+      "description": "External global ids",
+      "type" : "string",
+      "pattern" :  "^((FB:)|(MGI:)|(ZFIN:)|(SGD:)|(WB:)|(RGD:)|(DRSC:)|(NCBIGene:)|(UniProtKB:)|(Ensembl:)|(RNAcentral:)|(HGNC:)|(PMID:))" 
+    }
+  }
+}
