@@ -9,7 +9,7 @@
     "modGlobalId": {
       "description": "The MOD global id",
       "type" : "string",
-      "pattern" : "^((FB:)|(MGI:)|(ZFIN:)|(SGD:)|(WB:)|(RGD:))"
+      "pattern" : "^((FB:)|(MGI:)|(ZFIN:)|(SGD:)|(WB:)|(RGD:)|(HGNC:))"
     }
   }
 }
