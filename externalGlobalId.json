@@ -9,7 +9,7 @@
     "externalGlobalId": {
       "description": "External global ids",
       "type" : "string",
-      "pattern" :  "^((FB:)|(MGI:)|(ZFIN:)|(SGD:)|(WB:)|(RGD:)|(DRSC:)|(NCBIGene:)|(UniProtKB:)|(Ensembl:)|(RNAcentral:)|(HGNC:)|(PMID:))" 
+      "pattern" :  "^((FB:)|(MGI:)|(ZFIN:)|(SGD:)|(WB:)|(RGD:)|(DRSC:)|(NCBI_Gene:)|(UniProtKB:)|(ENSEMBL:)|(RNAcentral:)|(HGNC:)|(PMID:))" 
     }
   }
 }
