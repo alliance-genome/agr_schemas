@@ -1,0 +1,43 @@
+- database: MGI
+  - type_name: [primaryId, secondaryId]
+    AGR_prefix: None
+    AGR_id: MGI:80863
+    display_id: MGI:80863
+    example_url: http://www.informatics.jax.org/marker/MGI:80863
+
+- database: RGD
+  - type_name: [primaryId, secondaryId]
+    AGR_prefix: None
+    AGR_id: RGD:1311419
+    display_id: RGD:1311419
+    example_url: http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:1311419
+
+- database: ZFIN
+  - type_name: [primaryId, secondaryId]
+    AGR_prefix: ZFIN
+    AGR_id: ZFIN:ZDB-GENE-030131-9438
+    display_id: ZDB-GENE-030131-9438
+    example_url: https://zfin.org/ZDB-GENE-030131-9438
+
+- database: FlyBase
+  - type_name: [primaryId, secondaryId]
+    AGR_prefix: FB
+    AGR_id: FB:FBgn0000490
+    display_id: FBgn0000490
+    example_url: http://flybase.org/reports/FBgn0000490.html
+
+- database: WormBase
+  - type_name: [primaryId, secondaryId]
+    AGR_prefix: WB
+    AGR_id: WB:WBGene00000064
+    display_id: WBGene00000064
+    example_url: http://www.wormbase.org/species/c_elegans/gene/WBGene00000064
+
+- database: SGD
+  - type_name: [primaryId, secondaryId]
+    AGR_prefix: SGD
+    AGR_id: SGD:S000001855
+    display_id: S000001855
+    example_url: http://www.yeastgenome.org/locus/S000001855/overview
+
+- database: 
