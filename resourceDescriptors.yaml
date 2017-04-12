@@ -40,4 +40,51 @@
     display_id: S000001855
     example_url: http://www.yeastgenome.org/locus/S000001855/overview
 
-- database: 
+- database: HGNC
+  - type_name: [primaryId, secondaryId]
+    AGR_prefix: HGNC
+    AGR_id: HGNC:33510
+    display_id: HGNC:33510
+    example_url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=33510
+
+- database: NCBI Gene
+  - type_name: [externalGlobalId]
+    AGR_prefix: NCBI_Gene
+    AGR_id: NCBI_Gene:33432
+    display_id: 33432
+    example_url: https://www.ncbi.nlm.nih.gov/gene/33432
+
+- database: UniProt
+  - type_name: [externalGlobalId]
+    AGR_prefix: UniProtKB
+    AGR_id: UniProtKB:P07713
+    display_id: P07713
+    example_url: http://www.uniprot.org/uniprot/P07713
+
+- database: Ensembl
+  - type_name: [externalGlobalId]
+    AGR_prefix: Ensembl
+    AGR_id: Ensembl:FBgn0000490
+    display_id: FBgn0000490
+    example_url: http://www.ensembl.org/Drosophila_melanogaster/Gene/Summary?g=FBgn0000490
+
+- database: RNAcentral
+  - type_name: [externalGlobalId]
+    AGR_prefix: RNAcentral
+    AGR_id: RNAcentral:URS000075C808
+    display_id: URS000075C808
+    example_url: http://rnacentral.org/rna/URS000075C808/9606
+
+- database: Pubmed
+  - type_name: [externalGlobalId]
+    AGR_prefix: PMID
+    AGR_id: PMID:26447131
+    display_id: PMID:26447131 
+    example_url: https://www.ncbi.nlm.nih.gov/pubmed/26447131
+
+- database: DRSC
+  - type_name: [primaryId]
+    AGR_prefix: DRSC
+    AGR_id: DRSC:FBgn0000490
+    display_id: FBgn0000490
+    example_url: None
