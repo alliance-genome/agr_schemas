@@ -154,10 +154,10 @@
   gid_pattern: "^DRSC:(\S+)$"
   example_url: None
     
-- db_prefix: taxon
+- db_prefix: NCBITaxon
   name: NCBI Taxonomy
-  example_gid: taxon:7227
-  gid_pattern: "^taxon:(\d+)$"
+  example_gid: NCBITaxon:7227
+  gid_pattern: "^NCBITaxon:(\d+)$"
   url_constructor: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=[%s]
 
 - db_prefix: SO

@@ -24,7 +24,7 @@
         "Akp-1",
         "alkaline phosphatase 1"
       ],
-      "taxonId": "taxon:10090"
+      "taxonId": "NCBITaxon:10090"
     },
     {
       "crossReferenceIds": [
@@ -52,7 +52,7 @@
         "Igh-7",
         "immunoglobulin heavy chain 7 (heavy chain of IgE)"
       ],
-      "taxonId": "taxon:10090"
+      "taxonId": "NCBITaxon:10090"
     },
     {
       "crossReferenceIds": [
@@ -115,7 +115,7 @@
         "Tr-kit",
         "W"
       ],
-      "taxonId": "taxon:10090"
+      "taxonId": "NCBITaxon:10090"
     },
     {
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:5695867?typeFilter=Literature",
@@ -127,7 +127,7 @@
         "twisty nose",
         "Twsn"
       ],
-      "taxonId": "taxon:10090"
+      "taxonId": "NCBITaxon:10090"
     },
     {
       "crossReferenceIds": [
@@ -167,7 +167,7 @@
         "predicted gene, EG666416",
         "predicted gene, OTTMUSG00000012858"
       ],
-      "taxonId": "taxon:10090"
+      "taxonId": "NCBITaxon:10090"
     }
   ],
   "metaData": {
