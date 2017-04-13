@@ -12,7 +12,7 @@
         }
       ],
       "name": "alkaline phosphatase 1",
-      "primaryId":"MGI: "MGI:":87982",
+      "primaryId":"MGI:":87982",
       "secondaryIds": [
         "MGI:MGD-MRK-1248",
         "MGI:MGD-MRK-1253"
@@ -77,7 +77,7 @@
         }
       ],
       "name": "KIT proto-oncogene receptor tyrosine kinase",
-      "primaryId": "MGI:":"MGI:96677",
+      "primaryId": "MGI:96677",
       "secondaryIds": [
         "MGI:MGD-MRK-1672",
         "MGI:MGD-MRK-9743",
