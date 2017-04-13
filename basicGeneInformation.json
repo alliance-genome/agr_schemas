@@ -46,7 +46,7 @@
       },
     "uniqueItems": true
     },
-    "crossReferences": {
+    "crossReferenceIds": {
       "description":"Collection holding a limited set (for now) of database cross references for each gene.  That set is defined in geneCrossReferences.json dataSoruce enumeration.  NCBI GENE means just the NCBI Gene reference.  UniProtKB is swissprot and trembl.  Ensembl is just the GENE id for now (not transcript nor protein).  Vega was eliminated as it did not apply to all organisms in the repository.",
       "type": "array",
       "items": {

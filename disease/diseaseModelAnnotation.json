@@ -52,7 +52,7 @@
       "$ref": "../species.json#/properties/taxonId"
     },
     "DOid": {
-      "type": "string",
+      "$ref" : "../globalId.json#/properties/globalId",
       "description": "The disease ontology term id."
     },
     "dataProvider": {

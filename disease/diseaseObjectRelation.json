@@ -85,7 +85,7 @@
                 "type": "array",
 		"description": "list of inferred gene/marker associations that can be made",
                 "items": {
-                     "$ref": "../basicGeneInformation.json#/properties/primaryId"
+                  "$ref": "../globalId.json#/properties/globalId"
                 }
             }
           }
