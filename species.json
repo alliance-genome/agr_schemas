@@ -8,7 +8,7 @@
   "properties": {
     "taxonId": {
       "description": "The taxon id of the species of the entity. AGR currently supports the ids listed below.",
-      "enum" : ["taxon:7955","taxon:6239","taxon:10090","taxon:10116","taxon:559292","taxon:7227", "taxon:9606"]
+      "enum" : ["7955","6239","10090","10116","559292","7227", "9606"]
     }
   }
 }
