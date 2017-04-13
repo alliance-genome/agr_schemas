@@ -16,7 +16,7 @@
       "description": "The name of the entity."
     },
     "taxonId": {
-      "$ref" : "species.json#/properties/taxonId",
+      "$ref" : "globalId.json#/properties/globalId",
       "description" : "The taxonId for the species of the gene entity."
     },
     "symbol": {
