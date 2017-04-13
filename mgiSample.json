@@ -12,7 +12,7 @@
         }
       ],
       "name": "alkaline phosphatase 1",
-      "primaryId": "MGI:MGI:87982",
+      "primaryId":"MGI: "MGI:":87982",
       "secondaryIds": [
         "MGI:MGD-MRK-1248",
         "MGI:MGD-MRK-1253"
@@ -42,7 +42,7 @@
         }
       ],
       "name": "immunoglobulin heavy chain 7 (heavy chain of IgE)",
-      "primaryId": "MGI:MGI:96449",
+      "primaryId": "MGI:96449",
       "secondaryIds": [
         "MGI:MGD-MRK-11246"
       ],
@@ -77,16 +77,16 @@
         }
       ],
       "name": "KIT proto-oncogene receptor tyrosine kinase",
-      "primaryId": "MGI:MGI:96677",
+      "primaryId": "MGI:":"MGI:96677",
       "secondaryIds": [
         "MGI:MGD-MRK-1672",
         "MGI:MGD-MRK-9743",
         "MGI:MGD-MRK-11588",
         "MGI:MGD-MRK-14609",
         "MGI:MGD-MRK-15420",
-        "MGI:MGI:3530304",
-        "MGI:MGI:3530312",
-        "MGI:MGI:3530319"
+        "MGI:3530304",
+        "MGI:3530312",
+        "MGI:M:3530319"
       ],
       "soTermId": "SO:0001217",
       "symbol": "Kit",
@@ -120,7 +120,7 @@
     {
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:5695867?typeFilter=Literature",
       "name": "twisty nose",
-      "primaryId": "MGI:MGI:5695867",
+      "primaryId": "MGI:5695867",
       "soTermId": "SO:0001500",
       "symbol": "Twsn",
       "synonyms": [
@@ -145,9 +145,9 @@
         }
       ],
       "name": "adhesion G protein-coupled receptor D2, pseudogene",
-      "primaryId": "MGI:MGI:2685845",
+      "primaryId": "MGI:2685845",
       "secondaryIds": [
-        "MGI:MGI:3642981"
+        "MGI:MG3642981"
       ],
       "soTermId": "SO:0000336",
       "symbol": "Adgrd2-ps",
@@ -173,6 +173,6 @@
   "metaData": {
     "dataProvider": "MGI",
     "dateProduced": "2017-02-09T10:03:07-05:00",
-    "release": "MGI 6.07 2017-01-31"
+    "release": "M 6.07 2017-01-31"
   }
 }
