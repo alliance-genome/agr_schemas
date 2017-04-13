@@ -1,0 +1,90 @@
+{
+   "data" : [
+      {
+         "DOid" : "DOID:10652",
+         "dataProvider" : "WB",
+         "dateAssigned" : "2013-04-15T00:00:00+00:00",
+         "evidence" : [
+            {
+               "evidenceCode" : "IMP",
+               "publications" : [
+                  {
+                     "modPublicationId" : "WB_REF:WBPaper00033160",
+                     "pubMedId" : "PMID:19414486"
+                  }
+               ]
+            }
+         ],
+         "geneticSex" : "hermaphrodite",
+         "objectId" : "WB:WBGene00000097",
+         "objectRelation" : {
+            "associationType" : "causes_condition",
+            "objectType" : "gene"
+         },
+         "taxonId" : "NCBITaxon:6239"
+      },
+      {
+         "DOid" : "DOID:11726",
+         "dataProvider" : "WB",
+         "dateAssigned" : "2013-02-14T00:00:00+00:00",
+         "evidence" : [
+            {
+               "evidenceCode" : "IMP",
+               "publications" : [
+                  {
+                     "modPublicationId" : "WB_REF:WBPaper00040268",
+                     "pubMedId" : "PMID:21970988"
+                  }
+               ]
+            }
+         ],
+         "geneticSex" : "hermaphrodite",
+         "objectId" : "WB:WBGene00000140",
+         "objectRelation" : {
+            "associationType" : "causes_condition",
+            "objectType" : "gene"
+         },
+         "taxonId" : "NCBITaxon:6239"
+      },
+      {
+         "DOid" : "DOID:10652",
+         "dataProvider" : "WB",
+         "dateAssigned" : "2013-02-21T00:00:00+00:00",
+         "evidence" : [
+            {
+               "evidenceCode" : "IMP",
+               "publications" : [
+                  {
+                     "modPublicationId" : "WB_REF:WBPaper00040364",
+                     "pubMedId" : "PMID:22038715"
+                  },
+                  {
+                     "modPublicationId" : "WB_REF:WBPaper00037623",
+                     "pubMedId" : "PMID:20862215"
+                  },
+                  {
+                     "modPublicationId" : "WB_REF:WBPaper00041335",
+                     "pubMedId" : "PMID:22836251"
+                  },
+                  {
+                     "modPublicationId" : "WB_REF:WBPaper00040923",
+                     "pubMedId" : "PMID:22466039"
+                  }
+               ]
+            }
+         ],
+         "geneticSex" : "hermaphrodite",
+         "objectId" : "WB:WBGene00000149",
+         "objectRelation" : {
+            "associationType" : "causes_condition",
+            "objectType" : "gene"
+         },
+         "taxonId" : "NCBITaxon:6239"
+      }
+   ],
+   "metaData" : {
+      "dataProvider" : "WB",
+      "dateProduced" : "2017-04-13T22:47:51+01:00",
+      "release" : "WS259"
+   }
+}
