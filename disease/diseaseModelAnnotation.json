@@ -49,7 +49,7 @@
       }
     },
     "taxonId": {
-      "$ref" : "globalId.json#/properties/globalId",
+      "$ref" : "../globalId.json#/properties/globalId",
       "description" : "The taxonId for the species of the gene entity."
     },
     "DOid": {
