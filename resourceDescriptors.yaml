@@ -70,6 +70,13 @@
     lid_pattern: ^WB_Strain:(.+)$
     url_contructor: http://www.wormbase.org/species/c_elegans/strain/[%s]
 
+- db_prefix: WB_Var
+  - name: WormBase variations
+    example_gid: WB_Var:WBVar00000001
+    gid_pattern: ^WB_Var:WBVar\d+$
+    lid_pattern: ^WB_Var:(.+)$
+    url_contructor: http://www.wormbase.org/species/c_elegans/variation/[%s]
+
 - db_prefix: WBls
   - name: WormBase life-stage Ontology
     example_gid: WBls:0000001
