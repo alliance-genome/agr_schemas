@@ -13,9 +13,8 @@
       "description": "The ID from the data provider that describes the publication at the data provider site. ie: the pub id from a MOD.  This is useful and required as many MODs have non-pubmed ids that are the reference for bulk-submission data, curator annotations, etc..."
     },
     "pubMedId": {
-      "type": "string",
-      "pattern" : "^PMID:",
-      "description": "the pubmed id when available, of the reference."
+      "$ref" : "globalId.json#/properties/globalId",
+      "description": "The ID from the data provider that describes the publication at the data provider site. ie: the pub id from a MOD.  This is useful and required as many MODs have non-pubmed ids that are the reference for bulk-submission data, curator annotations, etc..."
     }
   }
 } 
