@@ -91,3 +91,10 @@
     AGR_id: DRSC:FBgn0000490
     display_id: FBgn0000490
     example_url: None
+    
+- database: NCBI Taxon
+  - type_name: [externalGlobalId]
+    AGR_added_prefix: taxon
+    AGR_id: taxon:7227
+    display_id: 7227
+    example_url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=7227
