@@ -9,7 +9,7 @@
     "globalId": {
       "description": "A MOD or external global ids",
       "type" : "string",
-      "pattern" :  "^\S+:\S+$"
+      "pattern" : "^\\S+:\\S+$"
     }
   }
 }

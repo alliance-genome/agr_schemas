@@ -31,7 +31,7 @@
         "objectType" : "fish",
         "inferredGeneAssociation" : [ "ZFIN:ZDB-GENE-061110-61" ]
       },
-      "taxonId" : "7955",
+      "taxonId" : "taxon:7955",
       "DOid" : "DOID:1056"
     }, 
     {
@@ -65,7 +65,7 @@
         "objectType" : "fish",
         "inferredGeneAssociation" : [ "ZFIN:ZDB-GENE-030131-4714" ]
       },
-      "taxonId" : "7955",
+      "taxonId" : "taxon:7955",
       "DOid" : "DOID:0080070"
     }
   ]

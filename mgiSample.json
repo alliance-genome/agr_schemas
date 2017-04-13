@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "crossReferences": [
+      "crossReferenceIds": [
         "NCBIGene:109899"
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:87982?typeFilter=Literature",
@@ -24,10 +24,10 @@
         "Akp-1",
         "alkaline phosphatase 1"
       ],
-      "taxonId": "10090"
+      "taxonId": "taxon:10090"
     },
     {
-      "crossReferences": [
+      "crossReferenceIds": [
           "NCBIGene:16020"
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96449?typeFilter=Literature",
@@ -52,10 +52,10 @@
         "Igh-7",
         "immunoglobulin heavy chain 7 (heavy chain of IgE)"
       ],
-      "taxonId": "10090"
+      "taxonId": "taxon:10090"
     },
     {
-      "crossReferences": [
+      "crossReferenceIds": [
         "Ensembl:ENSMUSG00000005672",
         "NCBIGene:16590",
         "UniProtKB:P05532",
@@ -115,7 +115,7 @@
         "Tr-kit",
         "W"
       ],
-      "taxonId": "10090"
+      "taxonId": "taxon:10090"
     },
     {
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:5695867?typeFilter=Literature",
@@ -127,10 +127,10 @@
         "twisty nose",
         "Twsn"
       ],
-      "taxonId": "10090"
+      "taxonId": "taxon:10090"
     },
     {
-      "crossReferences": [
+      "crossReferenceIds": [
         "Ensembl:ENSMUSG00000083722",
         "NCBIGene:674251"
       ],
@@ -167,7 +167,7 @@
         "predicted gene, EG666416",
         "predicted gene, OTTMUSG00000012858"
       ],
-      "taxonId": "10090"
+      "taxonId": "taxon:10090"
     }
   ],
   "metaData": {
