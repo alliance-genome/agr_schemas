@@ -35,7 +35,7 @@
                 "type": "array",
 	        "description": "list of inferred gene/marker association that can be made based on the DB object ID",
                 "items": {
-                  "$ref": "../modGlobalId.json#/properties/modGlobalId"
+                  "$ref": "../globalId.json#/properties/globalId"
                 }
             }
           }

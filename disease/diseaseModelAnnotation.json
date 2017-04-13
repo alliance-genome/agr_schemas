@@ -16,7 +16,7 @@
   "additionalProperties": false,
   "properties": {
     "objectId": {
-      "$ref" : "../modGlobalId.json#/properties/modGlobalId",
+      "$ref" : "../globalId.json#/properties/globalId",
       "description": "The ID to which the disease ontology term is applied. #TODO fold this into objectRelation and reference basicGeneInformation.json"
     },
     "objectName": {
@@ -36,7 +36,7 @@
     "with": {
       "type": "array",
       "items": {
-        "$ref" : "../externalGlobalId.json#/properties/externalGlobalId",
+        "$ref" : "../globalId.json#/properties/globalId",
         "description": "db identifiers related to the annotation object via the 'with' relationship."
       },
       "uniqueItems": true
