@@ -93,7 +93,7 @@
     example_url: None
     
 - database: NCBI Taxon
-  - type_name: [externalGlobalId]
+  - type_name: [taxonId]
     AGR_added_prefix: taxon
     AGR_id: taxon:7227
     display_id: 7227
