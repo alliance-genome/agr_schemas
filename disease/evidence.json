@@ -12,7 +12,7 @@
   "properties": {
     "evidenceCode": {
       "type": "string",
-      "description": "an evidence code from the GO"
+      "description": "an evidence code like IC, TAS, etc..."
     },
     "publications": {
       "type": "array",

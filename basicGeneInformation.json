@@ -9,7 +9,7 @@
   "properties": {
     "primaryId": {                                
       "$ref" : "globalId.json#/properties/globalId",
-      "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:MGI:87917."
+      "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
     },
     "name": { 
       "type": "string",
