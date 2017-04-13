@@ -1,0 +1,72 @@
+{
+  "metaData" : {
+    "dateProduced" : "2017-04-10T16:01:07.463-07:00",
+    "dataProvider" : "ZFIN"
+  },
+  "data" : [ 
+    {
+      "objectId" : "ZFIN:ZDB-FISH-150901-25611",
+      "objectName" : "AB/TL + MO3-ocrl",
+      "dateAssigned" : "2017-04-10T16:01:01.610-07:00",
+      "dataProvider" : "ZFIN",
+      "evidence" : [ 
+        {
+          "evidenceCode" : "TAS",
+          "publications" : [ 
+            {
+              "modPublicationId" : "ZFIN:ZDB-PUB-120111-34",
+              "pubMedId" : "PMID:22228094"
+            } 
+          ]
+        } 
+      ],
+      "experimentalConditions" : [ 
+        {
+          "textCondition" : "standard conditions",
+          "zecoId" : "ZECO:0000103"
+        }
+      ],
+      "objectRelation" : {
+        "associationType" : "is_model_of",
+        "objectType" : "fish",
+        "inferredGeneAssociation" : [ "ZFIN:ZDB-GENE-061110-61" ]
+      },
+      "taxonId" : "NCBITaxon:7955",
+      "DOid" : "DOID:1056"
+    }, 
+    {
+      "objectId" : "ZFIN:ZDB-FISH-150901-24644",
+      "objectName" : "WT + MO1-gnptab",
+      "dateAssigned" : "2017-04-10T16:01:01.659-07:00",
+      "dataProvider" : "ZFIN",
+      "evidence" : [ 
+        {
+          "evidenceCode" : "TAS",
+          "publications" : [ 
+            {
+              "modPublicationId" : "ZFIN:ZDB-PUB-150926-4",
+              "pubMedId" : "PMID:26404503"
+            }, 
+            {
+              "modPublicationId" : "ZFIN:ZDB-PUB-091023-51",
+              "pubMedId" : "PMID:19834066"
+            } 
+          ]
+        } 
+      ],
+      "experimentalConditions" : [ 
+        {
+          "textCondition" : "standard conditions",
+          "zecoId" : "ZECO:0000103"
+        } 
+      ],
+      "objectRelation" : {
+        "associationType" : "is_model_of",
+        "objectType" : "fish",
+        "inferredGeneAssociation" : [ "ZFIN:ZDB-GENE-030131-4714" ]
+      },
+      "taxonId" : "NCBITaxon:7955",
+      "DOid" : "DOID:0080070"
+    }
+  ]
+}

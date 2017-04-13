@@ -12,27 +12,13 @@
   "properties": {
     "evidenceCode": {
       "type": "string",
-      "description": "an evidence code from the ECO."
+      "description": "an evidence code like IC, TAS, etc..."
     },
     "publications": {
       "type": "array",
       "items": {
-        "publication": {
-          "type": "object",
-          "description": "in this instance, a publication is made up of a MOD identifier and a PubMed ID.  TODO pull this out into a stand a lone object to be used by other modules.",
-          "properties": {
-            "publicationModId": {
-              "type": "string",
-              "description": "the MOD identifier for the pub. required as many MODs have pubs without pubmed ids.",
-              "required": "true"
-            },
-            "pubMedId": {
-              "type": "string",
-              "description": "the pubmed id when available, of the reference."
-            }
-          }
-        }
-      },
+        "$ref": "../publicationRef.json#"
+       },
       "uniqueItems": "true"
     }
   }
