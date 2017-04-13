@@ -16,9 +16,8 @@
   "additionalProperties": false,
   "properties": {
     "objectId": {
-      "type": "string",
-      "description": "The ID to which the disease ontology term is applied. #TODO fold this into objectRelation and reference basicGeneInformation.json",
-      "pattern": "^((FB:)|(MGI:)|(ZFIN:)|(SGD:)|(WB:)|(RGD:))"
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description": "The ID to which the disease ontology term is applied. #TODO fold this into objectRelation and reference basicGeneInformation.json"
     },
     "objectName": {
       "type": "string",
@@ -37,7 +36,7 @@
     "with": {
       "type": "array",
       "items": {
-        "type": "string",
+        "$ref" : "../globalId.json#/properties/globalId",
         "description": "db identifiers related to the annotation object via the 'with' relationship."
       },
       "uniqueItems": true
@@ -53,7 +52,7 @@
       "$ref": "../species.json#/properties/taxonId"
     },
     "DOid": {
-      "type": "string",
+      "$ref" : "../globalId.json#/properties/globalId",
       "description": "The disease ontology term id."
     },
     "dataProvider": {

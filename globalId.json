@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Global IDs",
+  "id": "globalId.json#",
+  "description": "External Global ids.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "globalId": {
+      "description": "A MOD or external global ids",
+      "type" : "string",
+      "pattern" : "^\\S+:\\S+$"
+    }
+  }
+}
