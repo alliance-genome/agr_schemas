@@ -8,8 +8,7 @@
 - db_prefix: MGI
   - name: MGI
     example_id: MGI:80863
-    gid_pattern: ^MGI:\d+$
-    lid_pattern: ^(.+)$
+    gid_pattern: "^(MGI:\d+)$"
     url_constructor: http://www.informatics.jax.org/marker/[%s]
 
 #
@@ -19,8 +18,7 @@
 - db_prefix: RGD
   - name: RGD
     example_gid: RGD:1311419
-    gid_pattern: ^RGD:\d+$
-    lid_pattern: ^(.+)$
+    gid_pattern: "^(RGD:\d+)$"
     url_constructor: http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=[%s]
 
 #
@@ -30,8 +28,7 @@
 - db_prefix: ZFIN
   - name: ZFIN
     example_gid: ZFIN:ZDB-GENE-030131-9438
-    gid_pattern: ^ZFIN:\S+$
-    lid_pattern: ^ZFIN:(.+)$
+    gid_pattern: "^ZFIN:(\S+)$"
     url_constructor: https://zfin.org/[%s]
 
 #
@@ -41,8 +38,7 @@
 - db_prefix: FB
   - name: FlyBase
     example_gid: FB:FBgn0000490
-    gid_pattern: ^FB:FB\w+$
-    lid_pattern: ^FB:(.+)$
+    gid_pattern: "^(FB:FB\w+)$"
     url_constructor: http://flybase.org/reports/[%s].html
 
 #
@@ -52,50 +48,43 @@
 - db_prefix: WB
   - name: WormBase
     example_gid: WB:WBGene00000064
-    gid_pattern: ^WB:WB\w+$
-    lid_pattern: ^WB:(.+)$
+    gid_pattern: "^WB:(WB\w+)$"
     url_constructor: http://www.wormbase.org/species/c_elegans/gene/[%s]
 
 - db_prefix: WB_REF
   - name: WormBase references
     example_gid: WB_REF:WBPaper00050597
-    gid_pattern: ^WB_REF:WBPaper\d+$
-    lid_pattern: ^WB_REF:(.+)$
+    gid_pattern: "^WB_REF:(WBPaper\d+)$"
     url_constructor: http://www.wormbase.org/resources/paper/[%s]
 
 - db_prefix: WB_Strain
   - name: WormBase strains
     example_gid: WB_Strain:N2
-    gid_pattern: ^WB_Strain:\S+$
-    lid_pattern: ^WB_Strain:(.+)$
+    gid_pattern: "^WB_Strain:(\S+)$"
     url_contructor: http://www.wormbase.org/species/c_elegans/strain/[%s]
 
 - db_prefix: WB_Var
   - name: WormBase variations
     example_gid: WB_Var:WBVar00000001
-    gid_pattern: ^WB_Var:WBVar\d+$
-    lid_pattern: ^WB_Var:(.+)$
+    gid_pattern: "^WB_Var:(WBVar\d+)$"
     url_contructor: http://www.wormbase.org/species/c_elegans/variation/[%s]
 
 - db_prefix: WBls
   - name: WormBase life-stage Ontology
     example_gid: WBls:0000001
-    gid_pattern: ^WBls:\d+$
-    lid_pattern: ^(.+)$
+    gid_pattern: "^(WBls:\d+)$"
     url_contructor: http://www.wormbase.org/species/all/life_stage/[%s]
 
 - db_prefix: WBbt
   - name: WormBase anatomy Ontology
     example_gid: WBbt:0008611
-    gid_pattern: ^WBbt:\d+$
-    lid_pattern: ^(.+)$
+    gid_pattern: "^(WBbt:\d+)$"
     url_constructor: http://www.wormbase.org/species/all/anatomy_term/[%s]
 
 - db_prefix: WBPhenotype
   - name: WormBase Phenotype Ontology
     example_gid: WBPhenotype:0000517
-    gid_pattern: ^WBPhenotype:\d+$
-    lid_pattern: ^(.+)$
+    gid_pattern: "^(WBPhenotype:\d+)$"
     url_constructor: http://www.wormbase.org/species/all/phenotype/[%s]
 
 #
@@ -105,8 +94,7 @@
 - db_prefix: SGD
   - name: SGD
     example_gid: SGD:S000001855
-    gid_pattern: ^SGD:\w+$
-    lid_pattern: ^SGD:(.+)$
+    gid_pattern: "^SGD:(\w+)$"
     url_constructor: http://www.yeastgenome.org/locus/[%s]/overview
 
 #
@@ -116,8 +104,7 @@
 - db_prefix: GO
   - name: Gene Ontology
     example_gid: GO:0045860
-    gid_pattern: ^GO:\d+$
-    lid_pattern: ^(.+)$
+    gid_pattern: "^(GO:\d+)$"
     url_contructor: http://amigo.geneontology.org/amigo/term/[%s]
 
 
@@ -128,69 +115,71 @@
 - db_prefix: HGNC
   - name: HGNC
     example_gid: HGNC:33510
-    gid_pattern: ^HGNC:\d+$
-    lid_pattern: ^(.+)$
+    gid_pattern: "^(HGNC:\d+)$"
     url_constructor: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=[%s]
 
 - db_prefix: NCBI_Gene
   - name: NCBI Gene
     example_gid: NCBI_Gene:33432
-    gid_pattern: ^NCBI_Gene:\d+$
-    lid_pattern: ^NCBI_Gene:(.+)$
+    gid_pattern: "^NCBI_Gene:(\d+)$"
     url_constructor: https://www.ncbi.nlm.nih.gov/gene/[%s]
 
 - db_prefix: UniProtKB
   - name: UniProtKB
     example_gid: UniProtKB:P07713
-    gid_pattern: ^UniProtKB:\w+$
-    lid_pattern: ^UniProtKB:(.+)$
+    gid_pattern: "^UniProtKB:(\w+)$"
     url_contructor: http://www.uniprot.org/uniprot/[%s]
 
 - db_prefix: ENSEMBL
   - name: Ensembl
     example_id: ENSEMBL:FBgn0000490
-    gid_pattern: ^ENSEMBL:\w+$
-    lid_pattern: ^ENSEMBL:(.+)$
+    gid_pattern: "^ENSEMBL:(\w+)$"
     url_constructor: http://www.ensembl.org/id/[%s]
 
 - db_prefix: RNAcentral
   - name: RNAcentral
     example_gid: RNAcentral:URS000075C808
-    gid_pattern: ^RNAcentral:\w+$
-    lid_pattern: ^RNAcentral:(.+)$
+    gid_pattern: "^RNAcentral:(\w+)$"
     url_contructor: http://rnacentral.org/rna/[%s]
 
 - db_prefix: PMID
   - name: PubMed
     example_gid: PMID:26447131
-    gid_pattern: ^PMID:\d+$
-    lid_pattern: ^PMID:(.+)$
+    gid_pattern: "^PMID:(\d+)$"
     url_constructor: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
 
 - db_prefix: DRSC
   - name: DRSC
     example_gid: DRSC:FBgn0000490
-    gid_pattern: ^DRSC:\S+$
-    lid_pattern: ^DRSC:(.+)$
+    gid_pattern: "^DRSC:(\S+)$"
     example_url: None
     
 - db_prefix: taxon
   - name: NCBI Taxonomy
     example_gid: taxon:7227
-    gid_pattern: ^taxon:\d+$
-    lid_pattern: ^taxon:(.+)$
+    gid_pattern: "^taxon:(\d+)$"
     url_constructor: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=[%s]
 
 - db_prefix: SO
   - name: Sequence Ontology
     example_gid: SO:0001217
-    gid_pattern: ^SO:\d+$
-    lid_pattern: ^(.+)$
+    gid_pattern: "^(SO:\d+)$"
     url_constructor: http://www.sequenceontology.org/browser/current_svn/term/[%s]
 
 - db_prefix: DOID
   - name: Disease Ontology
     example_gid: DOID:820
-    gid_pattern: ^DOID:\d+$
-    lid_pattern: ^(.+)$
+    gid_pattern: "^(DOID:\d+)$"
     url_constructor: None
+
+- db_prefix: ZECO
+  - name: Zebrafish Environment Condition Ontology
+    example_gid: ZECO:0000103
+    gid_pattern: "^(DOID:\d+)$"
+    url_constructor: https://zfin.org/action/ontology/term-detail/[%s]
+
+- db_prefix: CHEBI
+  - name: Chemical Entities of Biological Interest Ontology
+    example_gid: CHEBI:53438
+    gid_pattern: "^(CHEBI:\d+)$"
+    url_constructor: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=[%s]
