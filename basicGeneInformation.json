@@ -29,10 +29,12 @@
     },
     "geneSynopsisUrl": {
        "type": "string",
+       "format": "uri",
        "description": "URL to a gene synopsis outside the MOD, like wikipedia.  Per request from BGI-WG."
     },
     "geneLiteratureUrl": {
       "type": "string",
+      "format": "uri",
       "description": "URL to MOD page for showing pubs associated with gene entity."
     },
     "soTermId": { 
