@@ -8,7 +8,7 @@
   "properties": {
     "dataProvider": {
       "description": "The MOD, human, or other source of data. AGR currently supports the entities listed below.",
-      "enum": [ "FB", "MGI", "RGD", "SGD", "ZFIN", "WB", "DRSC", "NCBIGene", "UniProtKB", "Ensembl", "RNAcentral", "HGNC" ]
+      "enum": [ "FB", "MGI", "RGD", "SGD", "ZFIN", "WB", "HGNC" ]
     }
   }
 }

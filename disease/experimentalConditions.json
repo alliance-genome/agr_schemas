@@ -12,23 +12,23 @@
 	   "description":"free text describing the environmental/experimental condition."
 	},
 	"zecoId":{
-           "type":"string",
+           "$ref": "../globalId.json#/properties/globalId",
 	   "description": "zebrafish experimental ontology identifier."
 	},
 	"anatomicalId":{
-	   "type":"string",
+           "$ref": "../globalId.json#/properties/globalId",
            "description": "anatomical ontology identifier used in cases like regeneration/wounding."
         },
 	"geneOntologyId":{
-	   "type":"string",
+           "$ref": "../globalId.json#/properties/globalId",
            "description": "gene ontology id used in subset of zeco terms."
 	},
 	"NCBITaxonId:":{
-	   "type":"string",
+           "$ref": "../globalId.json#/properties/globalId",
            "description": "NCBITaxon ontology id used in subset of zeco terms."
         },
         "ChebiOntologyId":{
-           "type":"string",
+           "$ref": "../globalId.json#/properties/globalId",
            "description": "Chebi ontology id used in subset of zeco terms."
       	},
 	"ConditionIsStandard":{

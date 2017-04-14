@@ -1,11 +1,8 @@
 {
   "data": [
     {
-      "crossReferences": [
-        {
-          "dataProvider": "NCBIGene",
-          "id": "109899"
-        }
+      "crossReferenceIds": [
+        "NCBIGene:109899"
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:87982?typeFilter=Literature",
       "genomeLocations": [
@@ -15,12 +12,10 @@
         }
       ],
       "name": "alkaline phosphatase 1",
-      "primaryId": "MGI:MGI:87982",
-      "primaryIdPrefix": "MGI:",
-      "primaryIdDisplay": "MGI:87982",
+      "primaryId":"MGI:87982",
       "secondaryIds": [
-        "MGD-MRK-1248",
-        "MGD-MRK-1253"
+        "MGI:MGD-MRK-1248",
+        "MGI:MGD-MRK-1253"
       ],
       "soTermId": "SO:0001217",
       "symbol": "Akp1",
@@ -29,14 +24,11 @@
         "Akp-1",
         "alkaline phosphatase 1"
       ],
-      "taxonId": "10090"
+      "taxonId": "NCBITaxon:10090"
     },
     {
-      "crossReferences": [
-        {
-          "dataProvider": "NCBIGene",
-          "id": "16020"
-        }
+      "crossReferenceIds": [
+          "NCBIGene:16020"
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96449?typeFilter=Literature",
       "geneSynopsis": "Mice homozygous for disruptions in this gene display typical systemic anaphylactic responses in spite of the absence of IgE.",
@@ -50,11 +42,9 @@
         }
       ],
       "name": "immunoglobulin heavy chain 7 (heavy chain of IgE)",
-      "primaryId": "MGI:MGI:96449",
-      "primaryIdPrefix": "MGI:",
-      "primaryIdDisplay": "MGI:96499",
+      "primaryId": "MGI:96449",
       "secondaryIds": [
-        "MGD-MRK-11246"
+        "MGI:MGD-MRK-11246"
       ],
       "soTermId": "SO:3000000",
       "symbol": "Igh-7",
@@ -62,38 +52,17 @@
         "Igh-7",
         "immunoglobulin heavy chain 7 (heavy chain of IgE)"
       ],
-      "taxonId": "10090"
+      "taxonId": "NCBITaxon:10090"
     },
     {
-      "crossReferences": [
-        {
-          "dataProvider": "Ensembl",
-          "id": "ENSMUSG00000005672"
-        },
-        {
-          "dataProvider": "NCBIGene",
-          "id": "16590"
-        },
-        {
-          "dataProvider": "UniProtKB",
-          "id": "P05532"
-        },
-        {
-          "dataProvider": "UniProtKB",
-          "id": "P05532-3"
-        },
-        {
-          "dataProvider": "UniProtKB",
-          "id": "P05532-2"
-        },
-        {
-          "dataProvider": "UniProtKB",
-          "id": "A4ZVL1"
-        },
-        {
-          "dataProvider": "UniProtKB",
-          "id": "Q3ULJ6"
-        }
+      "crossReferenceIds": [
+        "Ensembl:ENSMUSG00000005672",
+        "NCBIGene:16590",
+        "UniProtKB:P05532",
+        "UniProtKB:P05532-3",
+        "UniProtKB:P05532-2",
+        "UniProtKB:A4ZVL1",
+        "UniProtKB:Q3ULJ6"
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96677?typeFilter=Literature",
       "geneSynopsis": "Mutations at this locus affect migration of embryonic stem cell populations, resulting in mild to severe impairments in hematopoiesis, and pigmentation. Some alleles are homozygous lethal, sterile, or result in the formation of gastrointestinal tumors.",
@@ -108,18 +77,16 @@
         }
       ],
       "name": "KIT proto-oncogene receptor tyrosine kinase",
-      "primaryId": "MGI:MGI:96677",
-      "primaryIdPrefix": "MGI:",
-      "primaryIdDisplay": "MGI:96677",
+      "primaryId": "MGI:96677",
       "secondaryIds": [
-        "MGD-MRK-1672",
-        "MGD-MRK-9743",
-        "MGD-MRK-11588",
-        "MGD-MRK-14609",
-        "MGD-MRK-15420",
+        "MGI:MGD-MRK-1672",
+        "MGI:MGD-MRK-9743",
+        "MGI:MGD-MRK-11588",
+        "MGI:MGD-MRK-14609",
+        "MGI:MGD-MRK-15420",
         "MGI:3530304",
         "MGI:3530312",
-        "MGI:3530319"
+        "MGI:M:3530319"
       ],
       "soTermId": "SO:0001217",
       "symbol": "Kit",
@@ -148,32 +115,24 @@
         "Tr-kit",
         "W"
       ],
-      "taxonId": "10090"
+      "taxonId": "NCBITaxon:10090"
     },
     {
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:5695867?typeFilter=Literature",
       "name": "twisty nose",
-      "primaryId": "MGI:MGI:5695867",
-      "primaryIdPrefix": "MGI:",
-      "primaryIdDisplay": "MGI:5695867",
+      "primaryId": "MGI:5695867",
       "soTermId": "SO:0001500",
       "symbol": "Twsn",
       "synonyms": [
         "twisty nose",
         "Twsn"
       ],
-      "taxonId": "10090"
+      "taxonId": "NCBITaxon:10090"
     },
     {
-      "crossReferences": [
-        {
-          "dataProvider": "Ensembl",
-          "id": "ENSMUSG00000083722"
-        },
-        {
-          "dataProvider": "NCBIGene",
-          "id": "674251"
-        }
+      "crossReferenceIds": [
+        "Ensembl:ENSMUSG00000083722",
+        "NCBIGene:674251"
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:2685845?typeFilter=Literature",
       "genomeLocations": [
@@ -186,11 +145,9 @@
         }
       ],
       "name": "adhesion G protein-coupled receptor D2, pseudogene",
-      "primaryId": "MGI:MGI:2685845",
-      "primaryIdPrefix": "MGI:",
-      "primaryIdDisplay": "MGI:2685845",
+      "primaryId": "MGI:2685845",
       "secondaryIds": [
-        "MGI:3642981"
+        "MGI:MG3642981"
       ],
       "soTermId": "SO:0000336",
       "symbol": "Adgrd2-ps",
@@ -210,12 +167,12 @@
         "predicted gene, EG666416",
         "predicted gene, OTTMUSG00000012858"
       ],
-      "taxonId": "10090"
+      "taxonId": "NCBITaxon:10090"
     }
   ],
   "metaData": {
     "dataProvider": "MGI",
     "dateProduced": "2017-02-09T10:03:07-05:00",
-    "release": "MGI 6.07 2017-01-31"
+    "release": "M 6.07 2017-01-31"
   }
 }
