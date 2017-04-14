@@ -2,33 +2,31 @@
   "data": [
     {
       "crossReferenceIds": [
-        "NCBIGene:109899"
+        "NCBI_Gene:109899"
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:87982?typeFilter=Literature",
       "genomeLocations": [
         {
-          "assembly": "GRCm38",
+          "assembly": "",
           "chromosome": "1"
         }
       ],
       "name": "alkaline phosphatase 1",
-      "primaryId":"MGI:87982",
-      "secondaryIds": [
-        "MGI:MGD-MRK-1248",
-        "MGI:MGD-MRK-1253"
-      ],
+      "primaryId": "MGI:87982",
       "soTermId": "SO:0001217",
       "symbol": "Akp1",
       "synonyms": [
         "Akp1",
         "Akp-1",
-        "alkaline phosphatase 1"
+        "alkaline phosphatase 1",
+        "MGD-MRK-1248",
+        "MGD-MRK-1253"
       ],
       "taxonId": "NCBITaxon:10090"
     },
     {
       "crossReferenceIds": [
-          "NCBIGene:16020"
+        "NCBI_Gene:16020"
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96449?typeFilter=Literature",
       "geneSynopsis": "Mice homozygous for disruptions in this gene display typical systemic anaphylactic responses in spite of the absence of IgE.",
@@ -43,25 +41,21 @@
       ],
       "name": "immunoglobulin heavy chain 7 (heavy chain of IgE)",
       "primaryId": "MGI:96449",
-      "secondaryIds": [
-        "MGI:MGD-MRK-11246"
-      ],
       "soTermId": "SO:3000000",
       "symbol": "Igh-7",
       "synonyms": [
         "Igh-7",
-        "immunoglobulin heavy chain 7 (heavy chain of IgE)"
+        "immunoglobulin heavy chain 7 (heavy chain of IgE)",
+        "MGD-MRK-11246"
       ],
       "taxonId": "NCBITaxon:10090"
     },
     {
       "crossReferenceIds": [
         "Ensembl:ENSMUSG00000005672",
-        "NCBIGene:16590",
-        "UniProtKB:P05532",
-        "UniProtKB:P05532-3",
-        "UniProtKB:P05532-2",
+        "NCBI_Gene:16590",
         "UniProtKB:A4ZVL1",
+        "UniProtKB:P05532",
         "UniProtKB:Q3ULJ6"
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96677?typeFilter=Literature",
@@ -79,14 +73,9 @@
       "name": "KIT proto-oncogene receptor tyrosine kinase",
       "primaryId": "MGI:96677",
       "secondaryIds": [
-        "MGI:MGD-MRK-1672",
-        "MGI:MGD-MRK-9743",
-        "MGI:MGD-MRK-11588",
-        "MGI:MGD-MRK-14609",
-        "MGI:MGD-MRK-15420",
         "MGI:3530304",
         "MGI:3530312",
-        "MGI:M:3530319"
+        "MGI:3530319"
       ],
       "soTermId": "SO:0001217",
       "symbol": "Kit",
@@ -113,7 +102,12 @@
         "Ssm",
         "Steel Factor Receptor",
         "Tr-kit",
-        "W"
+        "W",
+        "MGD-MRK-1672",
+        "MGD-MRK-9743",
+        "MGD-MRK-11588",
+        "MGD-MRK-14609",
+        "MGD-MRK-15420"
       ],
       "taxonId": "NCBITaxon:10090"
     },
@@ -132,7 +126,7 @@
     {
       "crossReferenceIds": [
         "Ensembl:ENSMUSG00000083722",
-        "NCBIGene:674251"
+        "NCBI_Gene:674251"
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:2685845?typeFilter=Literature",
       "genomeLocations": [
@@ -147,7 +141,7 @@
       "name": "adhesion G protein-coupled receptor D2, pseudogene",
       "primaryId": "MGI:2685845",
       "secondaryIds": [
-        "MGI:MG3642981"
+        "MGI:3642981"
       ],
       "soTermId": "SO:0000336",
       "symbol": "Adgrd2-ps",
@@ -172,7 +166,7 @@
   ],
   "metaData": {
     "dataProvider": "MGI",
-    "dateProduced": "2017-02-09T10:03:07-05:00",
-    "release": "M 6.07 2017-01-31"
+    "dateProduced": "2017-04-14T09:27:10-04:00",
+    "release": "MGI 6.08 2017-03-28"
   }
 }
