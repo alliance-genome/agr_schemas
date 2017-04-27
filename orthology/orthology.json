@@ -4,7 +4,7 @@
   "description": "orthology objects.",
   "id": "orthology.json",
   "type": "object",
-  "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "gene1UsedSymbol", "gene2UsedSymbol", "confidence", "gene1Species", "gene2Species"],
+  "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "confidence", "gene1Species", "gene2Species"],
   "properties": {
     "gene1Species": {
       "type" : "string",
