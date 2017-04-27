@@ -6,11 +6,11 @@
   "type": "object",
   "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "gene1UsedSymbol", "gene2UsedSymbol", "gene1DataProvider", "gene2DataProvider", "confidence" ],
   "properties": {
-    "isBestScore":
+    "isBestScore": {
       "type" : "boolean",
       "description": "DIOPT schema highlights the best pair."
     },
-    "isBestRevScore":
+    "isBestRevScore": {
       "type" : "boolean",
       "description": "DIOPT schema highlights the best pair."
     },
