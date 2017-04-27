@@ -7,11 +7,11 @@
   "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "confidence", "gene1Species", "gene2Species"],
   "properties": {
     "gene1Species": {
-      "type" : "string",
+      "type" : "integer",
       "description": "The species of the first gene."
     },
     "gene2Species": {
-      "type" : "string",
+      "type" : "integer",
       "description": "The species of the second gene."
     },
     "isBestScore": {
