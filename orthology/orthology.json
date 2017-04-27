@@ -4,8 +4,16 @@
   "description": "orthology objects.",
   "id": "orthology.json",
   "type": "object",
-  "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "gene1UsedSymbol", "gene2UsedSymbol", "gene1DataProvider", "gene2DataProvider", "confidence" ],
+  "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "gene1UsedSymbol", "gene2UsedSymbol", "confidence" "gene1Species", "gene2Species"],
   "properties": {
+    "gene1Species": {
+      "type" : "string",
+      "description": "The species of the first gene."
+    },
+    "gene2Species": {
+      "type" : "string",
+      "description": "The species of the second gene."
+    },
     "isBestScore": {
       "type" : "boolean",
       "description": "DIOPT schema highlights the best pair."
@@ -18,17 +26,9 @@
       "type": "string",
       "description": "The primaryId of the the first gene."
     },
-    "gene1DataProvider": {
-      "$ref" : "../dataProvider.json#/properties/dataProvider",
-      "description":"The provider of the original gene id."
-    },
     "gene2": {
       "type": "string",
       "description": "The primaryId of the the second gene."
-    },
-    "gene2DataProvider": {
-      "$ref" : "../dataProvider.json#/properties/dataProvider",
-      "description":"The provider of the original gene id."
     },
     "predictionMethodsMatched": {
       "type": "array",
