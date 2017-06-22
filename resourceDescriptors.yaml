@@ -9,8 +9,16 @@
   name: MGI
   example_id: MGI:80863
   gid_pattern: "^(MGI:\d+)$"
-  url_constructor: http://www.informatics.jax.org/marker/[%s]
+  url_constructor: http://www.informatics.jax.org/accession/[%s]
 
+# MGI
+#
+
+- db_prefix: MGD_old
+  name: MGD_old
+  example_id: MGD_old:MGD-MRK-11588
+  gid_pattern: "^MGD_old:(MGD-[A-Z]+-\d+)$"
+  url_constructor: http://www.informatics.jax.org/accession/[%s]
 #
 # RGD
 #
