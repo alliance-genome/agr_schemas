@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Associated Genetic Component",
+  "title": "Additional Genetic Component",
   "description": "An entry for each associated genetic component to be used with disease annotations to genes/alleles/transgenes",
-  "id": "associatedGeneticComponent.json#",
+  "id": "additionalGeneticComponent.json#",
   "type": "object",
   "required": [
     "componentId",
