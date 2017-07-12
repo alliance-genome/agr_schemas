@@ -27,7 +27,8 @@
             "objectType": {
               "enum": [
                 "genotype",
-                "fish"
+                "fish",
+		"strain"
               ],
               "required": "true"
             },
