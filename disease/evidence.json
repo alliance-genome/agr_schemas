@@ -10,15 +10,16 @@
   "additionalProperties": false,
   "id": "evidence.json#",
   "properties": {
-    "evidenceCode": {
-      "type": "string",
-      "description": "an evidence code like IC, TAS, etc..."
+    "publication": {
+      "$ref": "../publicationRef.json#",
+      "description": "one publication for which the annotation was made"
     },
-    "publications": {
+    "evidenceCodes": {
       "type": "array",
       "items": {
-        "$ref": "../publicationRef.json#"
-       },
+        "type": "string",
+        "description": "3-4 letter abbreviation."
+      },
       "uniqueItems": "true"
     }
   }
