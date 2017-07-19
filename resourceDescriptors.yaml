@@ -197,3 +197,9 @@
   example_id: ZFA:0001327
   gid_pattern: "^(ZFA:\d+)$"
   url_constructor: http://zfin.org/action/ontology/term-detail/[%s]
+
+- db_prefix: PANTHER
+  name: PANTHER
+  example_id: PANTHER:PTHR11662
+  gid_pattern: "^PANTHER:(PTHR\d+)$"
+  url_contructor: http://pantherdb.org/panther/family.do?clsAccession=[%s] 
