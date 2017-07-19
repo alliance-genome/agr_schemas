@@ -4,8 +4,8 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "required": [
-    "publications",
-    "evidenceCode"
+    "publication",
+    "evidenceCodes"
   ],
   "additionalProperties": false,
   "id": "evidence.json#",
