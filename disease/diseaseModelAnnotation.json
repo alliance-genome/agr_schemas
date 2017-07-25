@@ -61,9 +61,8 @@
       "description": "Constrains the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
     },
     "evidence": {
-      "type": "array",
-      "items": {
-        "$ref": "evidence.json#"
+      "$ref": "evidence.json#",
+      "description": "one pub + many evidence codes per annotation."
       }
     },
     "geneticSex": {
