@@ -63,7 +63,6 @@
     "evidence": {
       "$ref": "evidence.json#",
       "description": "one pub + many evidence codes per annotation."
-      }
     },
     "geneticSex": {
       "enum": [
@@ -79,7 +78,7 @@
       "description": "Date this entity was assigned in it's primary data source."
     },
     "modifier": {
-      "$ref": "modifer.json#/properties/modifier",
+      "$ref": "modifier.json#/properties/modifier",
       "definition": ""
     }
   }
