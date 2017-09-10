@@ -49,7 +49,8 @@
             "associationType": {
               "enum": [
                 "is_implicated_in",
-                "is_marker_for"
+                "is_marker_for",
+                "causes_condition"
               ],
               "required": "true"
             },
