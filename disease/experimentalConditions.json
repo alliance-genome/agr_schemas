@@ -23,7 +23,7 @@
            "$ref": "../globalId.json#/properties/globalId",
            "description": "gene ontology id used in subset of zeco terms."
 	},
-	"NCBITaxonId:":{
+	"NCBITaxonId":{
            "$ref": "../globalId.json#/properties/globalId",
            "description": "NCBITaxon ontology id used in subset of zeco terms."
         },
