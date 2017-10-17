@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "feature",
+  "description": "An enitity that describes the ",
+  "id": "feature.json#",
+  "type": "object",
+  "required": [
+    "symbol", "type"
+  ],
+  "additionalProperties": false,
+  "properties": {"primaryId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the entity."
+    },
+    "taxonId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description" : "The taxonId for the species of the genotype entity."
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {
+         "type": "string"
+      }
+    },
+    "soTermId":{
+      "type":"string",
+      "description": "the so term that defines the kind of feature described. ie: POINT_MUTATION."
+    }
+  }
+}
