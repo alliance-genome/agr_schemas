@@ -21,6 +21,11 @@ The python script "agr_validate.py" can be used to validate a JSON entry against
 Usage is as follows: 
 `agr_validate.py -d test_data.json -s base_schema.json`
 
+For the basic Gene info file run
+   `./agr_validate.py -d <gene_file.json> -s  basicGeneInfoFile.json`
+and for the disease info file run
+   `./agr_validate.py -d <disease_file.json> -s  disease/diseaseMetaDataDefinition.json`
+
 Formatting Notes
 ----------------
 Please use 2 spaces for indentation.
