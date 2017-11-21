@@ -26,9 +26,9 @@
          "type": "string"
       }
     },
-    "soTermId":{
-      "type":"string",
-      "description": "the so term that defines the kind of feature described. ie: POINT_MUTATION."
+    "gene" : {
+     "$ref": "../globalId.json#/properties/globalId",
+      "description" : "The single affected gene of the allele."
     }
   }
 }
