@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "primaryId": "ZFIN:ZDB-ALT-980203-1091",
+      "symbol": "ti282a",
+      "synonyms": [
+        "AI82a"
+      ],
+      "taxonId": "NCBITaxon:7955",
+      "gene": "ZFIN:ZDB-GENE-990415-72"
+    },
+{
+      "primaryId": "ZDB-ALT-980413-523",
+      "secondaryIds": [
+        "ZDB-ALT-980203-1474"
+      ],
+      "symbol": "tt250",
+      "synonyms" : [
+        "AT50A",
+        "tt350"
+      ],
+      "taxonId": "NCBITaxon:7955"
+    }
+}
