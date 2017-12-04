@@ -9,7 +9,7 @@
       "taxonId": "NCBITaxon:7955",
       "gene": "ZFIN:ZDB-GENE-990415-72"
     },
-{
+    {
       "primaryId": "ZDB-ALT-980413-523",
       "secondaryIds": [
         "ZDB-ALT-980203-1474"
@@ -21,4 +21,5 @@
       ],
       "taxonId": "NCBITaxon:7955"
     }
+  ]
 }
