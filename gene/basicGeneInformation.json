@@ -60,7 +60,7 @@
       "description":"Collection holding the set of locations for each gene object.",
       "type": "array",
       "items": {
-        "$ref" : "../genomeLocation.json#"
+        "$ref" : "genomeLocation.json#"
       },
       "uniqueItems": true
     },
