@@ -24,7 +24,15 @@
       "type": "array",
       "items": {
          "type": "string"
-      }
+      },
+      "uniqueItems": true
+    },
+    "secondaryIds": {
+      "type": "array",
+      "items": {
+         "$ref" : "../globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
     },
     "gene" : {
      "$ref": "../globalId.json#/properties/globalId",
