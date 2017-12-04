@@ -10,9 +10,9 @@
       "gene": "ZFIN:ZDB-GENE-990415-72"
     },
 {
-      "primaryId": "ZDB-ALT-980413-523",
+      "primaryId": "ZFIN:ZDB-ALT-980413-523",
       "secondaryIds": [
-        "ZDB-ALT-980203-1474"
+        "ZFIN:ZDB-ALT-980203-1474"
       ],
       "symbol": "tt250",
       "synonyms" : [
