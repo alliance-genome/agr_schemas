@@ -19,7 +19,12 @@
         "AT50A",
         "tt350"
       ],
+      "gene" : "ZFIN:ZDB-GENE-990415-33",
       "taxonId": "NCBITaxon:7955"
     }
-  ]
+  ],
+  "metaData": {
+    "dataProvider": "ZFIN",
+    "dateProduced": "2017-09-21T15:47:46.806-07:00"
+  }
 }

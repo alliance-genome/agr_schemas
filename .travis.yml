@@ -11,7 +11,7 @@ install:
 script: 
   - "python agr_validate.py -s gene/basicGeneInfoFile.json -d gene/wbSample.BGI.json"
   - "python agr_validate.py -s gene/basicGeneInfoFile.json -d gene/mgiSample.BGI.json"
-  - "python agr_validate.py -s feature/feature.json -d feature/zfinSample.feature.json"
+  - "python agr_validate.py -s feature/featureMetaData.json -d feature/zfinSample.feature.json"
 # whitelist
 branches:
   only:
