@@ -9,8 +9,8 @@ install:
 
 # command to run tests
 script: 
-  - "python agr_validate.py -s basicGeneInfoFile.json -d wbSample.BGI.json"
-  - "python agr_validate.py -s basicGeneInfoFile.json -d mgiSample.BGI.json"
+  - "python agr_validate.py -s gene/basicGeneInfoFile.json -d wbSample.BGI.json"
+  - "python agr_validate.py -s gene/basicGeneInfoFile.json -d mgiSample.BGI.json"
 
 # whitelist
 branches:
