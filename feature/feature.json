@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "feature",
-  "description": "An enitity that describes a single affected, endogenous allele.  These can be of any type that matches that definition."
+  "description": "An enitity that describes a single affected, endogenous allele.  These can be of any type that matches that definition.",
   "id": "feature.json#",
   "type": "object",
   "required": [
