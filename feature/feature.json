@@ -5,7 +5,7 @@
   "id": "feature.json#",
   "type": "object",
   "required": [
-    "symbol", "gene"
+    "symbol", "gene", "taxonId", "primaryId"
   ],
   "additionalProperties": false,
   "properties": {"primaryId": {
