@@ -8,7 +8,7 @@
   "additionalProperties": false,
   "properties": {
     "primaryId": {                                
-      "$ref" : "globalId.json#/properties/globalId",
+      "$ref" : "../globalId.json#/properties/globalId",
       "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
     },
     "name": { 
@@ -16,7 +16,7 @@
       "description": "The name of the entity."
     },
     "taxonId": {
-      "$ref" : "globalId.json#/properties/globalId",
+      "$ref" : "../globalId.json#/properties/globalId",
       "description" : "The taxonId for the species of the gene entity."
     },
     "symbol": {
@@ -38,7 +38,7 @@
       "description": "URL to MOD page for showing pubs associated with gene entity."
     },
     "soTermId": { 
-      "$ref" : "globalId.json#/properties/globalId",
+      "$ref" : "../globalId.json#/properties/globalId",
       "description": "The SO Term that represents as best we can, the bioType, or featureType of the object in the file.  DQMs agree that this should be a standardized set."
     },
     "synonyms": {
@@ -52,7 +52,7 @@
       "description":"Collection holding a limited set (for now) of database cross references for each gene.  That set is defined in geneCrossReferences.json dataSoruce enumeration.  NCBI GENE means just the NCBI Gene reference.  UniProtKB is swissprot and trembl.  Ensembl is just the GENE id for now (not transcript nor protein).  Vega was eliminated as it did not apply to all organisms in the repository.",
       "type": "array",
       "items": {
-         "$ref" : "globalId.json#/properties/globalId"
+         "$ref" : "../globalId.json#/properties/globalId"
       },
       "uniqueItems": true
     },
@@ -68,7 +68,7 @@
       "description": "Collection of MOD-specific IDs that have been merged into gene entity.",
        "type": "array",
        "items": {
-         "$ref" : "globalId.json#/properties/globalId"
+         "$ref" : "../globalId.json#/properties/globalId"
        },
       "uniqueItems": true
     }
