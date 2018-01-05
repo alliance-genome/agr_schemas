@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Genotype",
+  "description": "Genotypes and their genomic components.  references allele.json",
+  "id": "genotype.json#",
+  "type": "object",
+  "required": ["primaryId", "taxonId", "symbol", "soTermId"],
+  "additionalProperties": false,
+  "properties": {
+    "primaryId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the entity."
+    },
+    "taxonId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description" : "The taxonId for the species of the genotype entity."
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {
+         "type": "string"
+      },
+    "uniqueItems": true
+    },
+    "featureInstances": {
+      "description": "Collection of genomic components that make up a genotype.",
+       "type": "array",
+       "items": {
+         "$ref" : "featureInstance.json"
+       },
+      "uniqueItems": true
+    }
+  }
+}

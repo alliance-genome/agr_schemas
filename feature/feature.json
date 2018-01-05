@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "feature",
+  "description": "An enitity that describes a single affected, endogenous allele.  These can be of any type that matches that definition.",
+  "id": "feature.json#",
+  "type": "object",
+  "required": [
+    "symbol", "gene", "taxonId", "primaryId"
+  ],
+  "additionalProperties": false,
+  "properties": {"primaryId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
+    },
+    "symbol": {
+      "type": "string",
+      "description": "The symbol of the entity."
+    },
+    "taxonId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description" : "The taxonId for the species of the genotype entity."
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {
+         "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "secondaryIds": {
+      "type": "array",
+      "items": {
+         "$ref" : "../globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
+    },
+    "gene" : {
+     "$ref": "../globalId.json#/properties/globalId",
+      "description" : "The single affected gene of the allele."
+    }
+  }
+}
