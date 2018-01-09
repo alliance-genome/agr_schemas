@@ -37,7 +37,7 @@
   name: ZFIN
   example_gid: ZFIN:ZDB-GENE-030131-9438
   gid_pattern: "^ZFIN:\S+$"
-  url_constructor: https://zfin.org/ZFIN:[%s]
+  url_constructor: https://zfin.org/[%s]
 
 #
 # FlyBase
