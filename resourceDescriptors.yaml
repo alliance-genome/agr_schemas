@@ -106,10 +106,22 @@
 #
 
 - db_prefix: SGD
-  name: SGD
+  name: SGD gene page
   example_gid: SGD:S000001855
   gid_pattern: "^SGD:\w+$"
-  url_constructor: http://www.yeastgenome.org/locus/[%s]/overview
+  url_constructor: http://www.yeastgenome.org/locus/[%s]
+
+- db_prefix: SGD
+  name: SGD expression page
+  example_gid: SGD:S000001855
+  gid_pattern: "^SGD:\w+$"
+  url_constructor: http://www.yeastgenome.org/locus/[%s]/expression
+  
+- db_prefix: SGD
+  name: SGD interaction page
+  example_gid: SGD:S000001855
+  gid_pattern: "^SGD:\w+$"
+  url_constructor: http://www.yeastgenome.org/locus/[%s]/interaction
 
 #
 # GO
