@@ -20,7 +20,7 @@
         "type": "string",
         "description": "3-4 letter abbreviation."
       },
-      "uniqueItems": "true"
+      "uniqueItems": true
     }
   }
 }
