@@ -78,8 +78,7 @@
       "description": "Date this entity was assigned in it's primary data source."
     },
     "modifier": {
-      "$ref": "modifier.json#/properties/modifier",
-      "definition": "Definition"
+      "$ref": "modifier.json#/properties/modifier"
     }
   }
 }

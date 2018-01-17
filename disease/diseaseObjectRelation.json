@@ -74,14 +74,13 @@
           "type": "object",
           "description": "is_model_of can only be applied when objectType is genotype or organism",
           "required": [
-            "associationType", "objectType"
+            "associationType", "objectType", "inferredGeneAssociation"
           ],
           "properties": {
             "associationType": {
               "enum": [
                 "is_implicated_in"
-              ],
-              "required": true
+              ]
             },
             "objectType": {
               "enum": [
@@ -93,8 +92,7 @@
               "description": "list of inferred gene/marker associations that can be made",
               "items": {
                 "$ref": "../globalId.json#/properties/globalId"
-              },
-              "required": true
+              }
             },
             "additionalGeneticComponents": {
               "type": "array",
