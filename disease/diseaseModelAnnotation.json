@@ -39,7 +39,7 @@
         "$ref" : "../globalId.json#/properties/globalId",
         "description": "db identifiers related to the annotation object via the 'with' relationship."
       },
-      "uniqueItems": true
+      "uniqueItems": "true"
     },
     "experimentalConditions": {
       "type": "array",
