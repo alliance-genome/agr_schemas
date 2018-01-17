@@ -74,7 +74,7 @@
           "type": "object",
           "description": "is_model_of can only be applied when objectType is genotype or organism",
           "required": [
-            "associationType", "objectType", "inferredGeneAssociation"
+            "associationType", "objectType"
           ],
           "properties": {
             "associationType": {
