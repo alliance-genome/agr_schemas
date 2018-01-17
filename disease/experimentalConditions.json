@@ -8,7 +8,7 @@
   "id": "experimentalCondition.json#",
   "required": [
     "ConditionIsStandard"
-  ]
+  ],
   "properties": {
   	"textCondition":{
 	   "type":"string",
