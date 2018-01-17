@@ -29,8 +29,8 @@ sSchemaDir = os.path.dirname(os.path.abspath(schema_file_name))
 oResolver = js.RefResolver(base_uri = 'file://' + sSchemaDir + '/', referrer = schema)
 
 print(oResolver)
-print ("schemaDir " + sSchemaDir)
-print ("schema_file_name" + schema_file_name)
+print ("schemaDir: " + sSchemaDir)
+print ("schema_file_name: " + schema_file_name)
 
 try:
     js.validate(data, schema, format_checker=js.FormatChecker(), resolver=oResolver)
