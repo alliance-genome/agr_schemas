@@ -16,7 +16,7 @@
           "description": "is_model_of can only be applied when objectType is GENO/organism",
           "required": [
             "associationType", "objectType"
-          ]
+          ],
           "properties": {
             "associationType": {
               "enum": [
@@ -45,7 +45,7 @@
           "description": "is_model_of can only be applied when objectType is genotype or organism level annotation, other conditions can use one of the following relationship types to describe the association.  Allele is broken out so that inferredGeneAssociation can be recorded.",
           "required": [
             "associationType", "objectType"
-          ]
+          ],
           "properties": {
             "associationType": {
               "enum": [
@@ -75,7 +75,7 @@
           "description": "is_model_of can only be applied when objectType is genotype or organism",
           "required": [
             "associationType", "objectType"
-          ]
+          ],
           "properties": {
             "associationType": {
               "enum": [
