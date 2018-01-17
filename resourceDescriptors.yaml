@@ -65,6 +65,8 @@
       url_constructor: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
     - aspect_name: interaction
       url_constructor: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
+    - aspect_name: references
+      url_constructor: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
 
 - db_prefix: WBRef
   name: WormBase references
