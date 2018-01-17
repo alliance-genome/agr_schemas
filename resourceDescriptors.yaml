@@ -54,27 +54,34 @@
 #
 
 - db_prefix: WB
-  name: WormBase
+  name: WormBase genes
   example_gid: WB:WBGene00000064
   gid_pattern: "^WB:WB\w+$"
   url_constructor: http://www.wormbase.org/db/get?name=[%s];class=Gene
+  entity_types:
+  - type_name: gene
+    aspects:
+    - aspect_name: expression
+      url_constructor: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
+    - aspect_name: interaction
+      url_constructor: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
 
-- db_prefix: WB_REF
+- db_prefix: WBRef
   name: WormBase references
-  example_gid: WB_REF:WBPaper00050597
+  example_gid: WBRef:WBPaper00050597
   gid_pattern: "^WBRef:WBPaper\d+$"
   url_constructor: http://www.wormbase.org/db/get?name=[%s];class=Paper
 
-- db_prefix: WB_Strain
+- db_prefix: WBStrain
   name: WormBase strains
-  example_gid: WB_Strain:N2
+  example_gid: WBStrain:N2
   gid_pattern: "^WBStrain:\S+$"
   url_constructor: http://www.wormbase.org/db/get?name=[%s];class=Strain
 
-- db_prefix: WB_Var
+- db_prefix: WBVar
   name: WormBase variations
-  example_gid: WB_Var:WBVar00000001
-  gid_pattern: "^WB_Var:WBVar\d+$"
+  example_gid: WBVar:WBVar00000001
+  gid_pattern: "^WBVar:WBVar\d+$"
   url_constructor: http://www.wormbase.org/db/get?name=[%s];class=Variation
 
 - db_prefix: WBTransgene
@@ -106,22 +113,18 @@
 #
 
 - db_prefix: SGD
-  name: SGD gene page
+  name: SGD genes
   example_gid: SGD:S000001855
   gid_pattern: "^SGD:\w+$"
   url_constructor: http://www.yeastgenome.org/locus/[%s]
+  entity_types:
+  - type_name: gene
+    aspects:
+    - aspect_name: expression
+      url_constructor: http://www.yeastgenome.org/locus/[%s]/expression
+    - aspect_name: interaction
+      url_constructor: http://www.yeastgenome.org/locus/[%s]/interaction
 
-- db_prefix: SGD
-  name: SGD expression page
-  example_gid: SGD:S000001855
-  gid_pattern: "^SGD:\w+$"
-  url_constructor: http://www.yeastgenome.org/locus/[%s]/expression
-  
-- db_prefix: SGD
-  name: SGD interaction page
-  example_gid: SGD:S000001855
-  gid_pattern: "^SGD:\w+$"
-  url_constructor: http://www.yeastgenome.org/locus/[%s]/interaction
 
 #
 # GO

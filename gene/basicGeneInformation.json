@@ -71,6 +71,14 @@
          "$ref" : "../globalId.json#/properties/globalId"
        },
       "uniqueItems": true
+    },
+    "modAspects": {
+      "description": "Records which data types this gene has that can be linked back to MOD (sub) pages.",
+      "type": "object",
+      "properties": {
+        "expression": { "type": "boolean" },
+        "interaction": { "type": "boolean" }
+      }
     }
   }
 }
