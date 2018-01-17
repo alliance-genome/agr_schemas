@@ -53,6 +53,7 @@
                 "is_implicated_in",
                 "is_marker_for"
               ],
+              "type": "string",
               "required": "true"
             },
             "objectType": {
@@ -60,7 +61,8 @@
                 "gene",
                 "marker",
                 "transgene"
-              ]
+              ],
+              "type": "string"
             },
             "additionalGeneticComponents": {
               "type": "array",
@@ -80,12 +82,14 @@
               "enum": [
                 "is_implicated_in"
               ],
+              "type": "string",
               "required": "true"
             },
             "objectType": {
               "enum": [
                 "allele"
               ]
+              "type": "string"
             },
             "inferredGeneAssociation": {
               "type": "array",

@@ -79,7 +79,6 @@
     },
     "modifier": {
       "$ref": "modifier.json#/properties/modifier",
-      "definition": ""
     }
   }
 }
