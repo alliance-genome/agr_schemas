@@ -101,6 +101,13 @@
   gid_pattern: "^WBPhenotype:\d+$"
   url_constructor: http://www.wormbase.org/db/get?name=WBPhenotype:[%s];class=Phenotype
 
+- db_prefix: WB_SPELL
+  name: WormBase SPELL
+  example_gid: WB_SPELL:eat-4
+  gid_pattern: "^WB_SPELL:\w+$"
+  url_constructor: http://spell.caltech.edu:3000/search/show_listing?search_string=[%s]
+
+
 #
 # SGD
 #
@@ -123,10 +130,10 @@
   gid_pattern: "^SGD:\w+$"
   url_constructor: http://www.yeastgenome.org/locus/[%s]/interaction
   
-- db_prefix: SGD
+- db_prefix: SGD_SPELL
   name: SGD SPELL
   example_gid: SGD_SPELL:YGL008C
-  gid_pattern: "^SGD:\w+$"
+  gid_pattern: "^SGD_SPELL:\w+$"
   url_constructor: http://spell.yeastgenome.org/search/show_results?search_string=[%s]
 
 
