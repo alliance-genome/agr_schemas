@@ -134,7 +134,7 @@
   name: SGD SPELL
   example_gid: SGD_SPELL:YGL008C
   gid_pattern: "^SGD_SPELL:\w+$"
-  url_constructor: http://spell.yeastgenome.org/search/show_results?search_string=[%s]
+  url_constructor: http://spell.yeastgenome.org/search/show_listing?search_string=[%s]
 
 
 #
