@@ -127,6 +127,11 @@
     - aspect_name: interaction
       url_constructor: http://www.yeastgenome.org/locus/[%s]/interaction
 
+- db_prefix: SGD_SPELL
+  name: SGD SPELL
+  example_gid: SGD_SPELL:YGL008C
+  gid_pattern: "^SGD_SPELL:\w+$"
+  url_constructor: http://spell.yeastgenome.org/search/show_results?search_string=[%s]
 
 #
 # GO
