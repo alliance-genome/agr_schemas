@@ -122,6 +122,13 @@
   example_gid: SGD:S000001855
   gid_pattern: "^SGD:\w+$"
   url_constructor: http://www.yeastgenome.org/locus/[%s]/interaction
+  
+- db_prefix: SGD
+  name: SGD SPELL
+  example_gid: SGD_SPELL:YGL008C
+  gid_pattern: "^SGD:\w+$"
+  url_constructor: http://spell.yeastgenome.org/search/show_results?search_string=[%s]
+
 
 #
 # GO
