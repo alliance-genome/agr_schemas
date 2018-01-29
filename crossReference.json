@@ -5,14 +5,14 @@
   "id": "crossReference.json#",
   "type": "object",
   "required": [
-    "page",
+    "pages",
     "id"
   ],
   "properties": {
     "id": {
       "$ref": "../globalId.json#/properties/globalId"
     },
-    "page": {
+    "pages": {
       "type": "array",
       "description": "The ‘page’ type this crossreference is categorized as — controlled vocabulary from resourceDescriptors.yaml — TODO: convert this into a validatable JSON schema array.",
       "items": {

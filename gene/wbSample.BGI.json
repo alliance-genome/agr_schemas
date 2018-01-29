@@ -1,10 +1,10 @@
 {
    "data" : [
       {
-         "crossReferenceIds" : [
-            "NCBI_Gene:172141",
-            "UniProtKB:G5EDP9",
-            "ENSEMBL:WBGene00000001"
+         "crossReferences" : [
+            {"NCBI_Gene:172141","generic_cross_reference"},
+            {"UniProtKB:G5EDP9","generic_cross_reference"},
+            {"ENSEMBL:WBGene00000001","generic_cross_reference"}
          ],
          "geneLiteratureUrl" : "http://www.wormbase.org/species/c_elegans/gene/WBGene00000001#0e--10",
          "geneSynopsis" : "aap-1 encodes the C. elegans ortholog of the phosphoinositide 3-kinase (PI3K) p50/p55 adaptor/regulatory subunit; AAP-1 negatively regulates lifespan and dauer development, and likely functions as the sole adaptor subunit for the AGE-1/p110 PI3K catalytic subunit to which it binds in vitro; although AAP-1 potentiates insulin-like signaling, it is not absolutely required for insulin-like signaling under most conditions.",
@@ -28,10 +28,10 @@
          "taxonId" : "NCBITaxon:6239"
       },
       {
-         "crossReferenceIds" : [
-            "NCBI_Gene:177793",
-            "UniProtKB:Q19834",
-            "ENSEMBL:WBGene00000002"
+         "crossReferences" : [
+            {"NCBI_Gene:177793","generic_cross_reference"},
+            "UniProtKB:Q19834","generic_cross_reference"},
+            "ENSEMBL:WBGene00000002","generic_cross_reference}
          ],
          "geneLiteratureUrl" : "http://www.wormbase.org/species/c_elegans/gene/WBGene00000002#0e--10",
          "geneSynopsis" : "aat-1 encodes an amino acid transporter catalytic subunit; when co-expressed in Xenopus oocytes with the ATG-2 glycoprotein subunit, AAT-1 is able to facilitate amino acid uptake and exchange, showing a relatively high affinity for small and some large neutral amino acids; in addition, AAT-1 is able to covalently associate with ATG-2 or ATG-1 to form heterodimers in the Xenopus expression system; when co-expressed with ATG-2, AAT-1 localizes to the cell surface of oocytes, but when expressed alone or with ATG-1, AAT-1 localizes intracellularly.",
@@ -55,10 +55,10 @@
          "taxonId" : "NCBITaxon:6239"
       },
       {
-         "crossReferenceIds" : [
-            "NCBI_Gene:184126",
-            "UniProtKB:Q19151",
-            "ENSEMBL:WBGene00000003"
+         "crossReferences" : [
+            {"NCBI_Gene:184126","generic_cross_reference"},
+            {"UniProtKB:Q19151","generic_cross_reference"},
+            {"ENSEMBL:WBGene00000003","generic_cross_reference"}
          ],
          "geneLiteratureUrl" : "http://www.wormbase.org/species/c_elegans/gene/WBGene00000003#0e--10",
          "geneSynopsis" : "aat-2 encodes a predicted amino acid transporter catalytic subunit; when co-expressed in Xenopus oocytes with a glycoprotein subunit, however, AAT-2 is not able to induce amino acid uptake.",

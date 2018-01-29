@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Basic Gene Info File",
-  "description": "A file of Basic Gene Information objects.",
-  "id": "basicGeneInfoFile.json",
+  "title": "Orthology MetaData",
+  "description": "A file of orthology objects.",
+  "id": "orthoMetaData.json",
   "type": "object",
   "required": [ "metaData", "data" ],
   "properties": {
@@ -12,9 +12,9 @@
     },
     "data": { 
       "type": "array",
-      "description": "A list of basicGeneInformation objects.",
+      "description": "A list of orthology objects.",
       "items": {
-        "$ref" : "basicGeneInformation.json#"
+        "$ref" : "orthology.json#"
       }
     }
   }

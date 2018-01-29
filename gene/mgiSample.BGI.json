@@ -1,8 +1,8 @@
 {
   "data": [
     {
-      "crossReferenceIds": [
-        "NCBI_Gene:109899"
+      "crossReferences": [
+        { "NCBI_Gene:109899","generic_cross_reference"}
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:87982?typeFilter=Literature",
       "genomeLocations": [
@@ -27,8 +27,8 @@
       "taxonId": "NCBITaxon:10090"
     },
     {
-      "crossReferenceIds": [
-        "NCBI_Gene:16020"
+      "crossReferences": [
+        {"NCBI_Gene:16020","generic_cross_reference"}
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96449?typeFilter=Literature",
       "genomeLocations": [
@@ -54,12 +54,12 @@
       "taxonId": "NCBITaxon:10090"
     },
     {
-      "crossReferenceIds": [
-        "ENSEMBL:ENSMUSG00000005672",
-        "NCBI_Gene:16590",
-        "UniProtKB:A4ZVL1",
-        "UniProtKB:P05532",
-        "UniProtKB:Q3ULJ6"
+      "crossReferences": [
+        {"ENSEMBL:ENSMUSG00000005672","generic_cross_reference"},
+        {"NCBI_Gene:16590","generic_cross_reference"},
+        {"UniProtKB:A4ZVL1","generic_cross_reference"},
+        {"UniProtKB:P05532","generic_cross_reference"},
+        {"UniProtKB:Q3ULJ6","generic_cross_reference}
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96677?typeFilter=Literature",
       "geneSynopsisUrl": "https://en.wikipedia.org/wiki/CD117",
@@ -126,9 +126,9 @@
       "taxonId": "NCBITaxon:10090"
     },
     {
-      "crossReferenceIds": [
-        "ENSEMBL:ENSMUSG00000083722",
-        "NCBI_Gene:674251"
+      "crossReferences": [
+        {"ENSEMBL:ENSMUSG00000083722","generic_cross_reference"}
+        {"NCBI_Gene:674251","generic_cross_reference"}
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:2685845?typeFilter=Literature",
       "genomeLocations": [
