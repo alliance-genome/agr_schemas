@@ -7,7 +7,9 @@
         "AI82a"
       ],
       "taxonId": "NCBITaxon:7955",
-      "gene": "ZFIN:ZDB-GENE-990415-72"
+      "gene": "ZFIN:ZDB-GENE-990415-72",
+      "crossReferences": [{"id":"ZFIN:ZDB-GENE-990415-72","pages":["feature"]}]
+
     },
     {
       "primaryId": "ZFIN:ZDB-ALT-980413-523",
@@ -20,7 +22,8 @@
         "tt350"
       ],
       "gene" : "ZFIN:ZDB-GENE-990415-33",
-      "taxonId": "NCBITaxon:7955"
+      "taxonId": "NCBITaxon:7955",
+      "crossReferences": [{"id":"ZFIN:ZDB-GENE-990415-33","pages":["feature"]}]
     }
   ],
   "metaData": {
