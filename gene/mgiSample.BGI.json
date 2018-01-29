@@ -2,7 +2,8 @@
   "data": [
     {
       "crossReferences": [
-        { "id":"NCBI_Gene:109899","pages":["generic_cross_reference"]}
+        { "id":"NCBI_Gene:109899","pages":["generic_cross_reference"]}, 
+        { "id":"MGI:87982","pages":["gene"]}
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:87982?typeFilter=Literature",
       "genomeLocations": [
@@ -28,7 +29,8 @@
     },
     {
       "crossReferences": [
-        {"id":"NCBI_Gene:16020","pages":["generic_cross_reference"]}
+        {"id":"NCBI_Gene:16020","pages":["generic_cross_reference"]},
+        {"id":"MGI:96449","pages":["gene"]}
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96449?typeFilter=Literature",
       "genomeLocations": [
@@ -59,7 +61,8 @@
         {"id":"NCBI_Gene:16590","pages":["generic_cross_reference"]},
         {"id":"UniProtKB:A4ZVL1","pages":["generic_cross_reference"]},
         {"id":"UniProtKB:P05532","pages":["generic_cross_reference"]},
-        {"id":"UniProtKB:Q3ULJ6","pages":["generic_cross_reference"]}
+        {"id":"UniProtKB:Q3ULJ6","pages":["generic_cross_reference"]},
+        {"id":"MGI:96677","pages":["gene"]}
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96677?typeFilter=Literature",
       "geneSynopsisUrl": "https://en.wikipedia.org/wiki/CD117",
@@ -128,7 +131,8 @@
     {
       "crossReferences": [
         {"id":"ENSEMBL:ENSMUSG00000083722","pages":["generic_cross_reference"]},
-        {"id":"NCBI_Gene:674251","pages":["generic_cross_reference"]}
+        {"id":"NCBI_Gene:674251","pages":["generic_cross_reference"]},
+	{"id":"MGI:2685845","pages":["gene"]}
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:2685845?typeFilter=Literature",
       "genomeLocations": [
