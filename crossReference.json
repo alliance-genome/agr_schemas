@@ -10,7 +10,7 @@
   ],
   "properties": {
     "id": {
-      "$ref": "../globalId.json#/properties/globalId"
+      "$ref": "globalId.json#/properties/globalId"
     },
     "pages": {
       "type": "array",

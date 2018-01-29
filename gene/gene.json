@@ -8,7 +8,7 @@
   "additionalProperties": false,
   "properties": {
     "primaryId": {                                
-      "$ref" : "../globalId.json#/properties/globalId",
+      "$ref": "../globalId.json#/properties/globalId",
       "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
     },
     "name": { 
@@ -16,7 +16,7 @@
       "description": "The name of the entity."
     },
     "taxonId": {
-      "$ref" : "../globalId.json#/properties/globalId",
+      "$ref": "../globalId.json#/properties/globalId",
       "description" : "The taxonId for the species of the gene entity."
     },
     "symbol": {
@@ -32,8 +32,13 @@
        "format": "uri",
        "description": "URL to a gene synopsis outside the MOD, like wikipedia.  Per request from BGI-WG."
     },
+    "geneLiteratureUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to MOD page for showing pubs associated with gene entity."
+    },
     "soTermId": { 
-      "$ref" : "../globalId.json#/properties/globalId",
+      "$ref": "../globalId.json#/properties/globalId",
       "description": "The SO Term that represents as best we can, the bioType, or featureType of the object in the file.  DQMs agree that this should be a standardized set."
     },
     "synonyms": {
@@ -63,7 +68,7 @@
       "description": "Collection of MOD-specific IDs that have been merged into gene entity.",
        "type": "array",
        "items": {
-         "$ref" : "../globalId.json#/properties/globalId"
+         "$ref": "../globalId.json#/properties/globalId"
        },
       "uniqueItems": true
     },
