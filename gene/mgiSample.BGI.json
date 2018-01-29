@@ -58,8 +58,8 @@
         {"id":"ENSEMBL:ENSMUSG00000005672","pages":["generic_cross_reference"]},
         {"id":"NCBI_Gene:16590","pages":["generic_cross_reference"]},
         {"id":"UniProtKB:A4ZVL1","pages":["generic_cross_reference"]},
-        {"UniProtKB:P05532","pages":["generic_cross_reference"]},
-        {"UniProtKB:Q3ULJ6","generic_cross_reference}
+        {"id":"UniProtKB:P05532","pages":["generic_cross_reference"]},
+        {"id":"UniProtKB:Q3ULJ6","pages":["generic_cross_reference"]}
       ],
       "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96677?typeFilter=Literature",
       "geneSynopsisUrl": "https://en.wikipedia.org/wiki/CD117",
