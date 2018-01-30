@@ -32,11 +32,6 @@
        "format": "uri",
        "description": "URL to a gene synopsis outside the MOD, like wikipedia.  Per request from BGI-WG."
     },
-    "geneLiteratureUrl": {
-      "type": "string",
-      "format": "uri",
-      "description": "URL to MOD page for showing pubs associated with gene entity."
-    },
     "soTermId": { 
       "$ref": "../globalId.json#/properties/globalId",
       "description": "The SO Term that represents as best we can, the bioType, or featureType of the object in the file.  DQMs agree that this should be a standardized set."
@@ -71,15 +66,6 @@
          "$ref": "../globalId.json#/properties/globalId"
        },
       "uniqueItems": true
-    },
-    "modAspects": {
-      "description": "Records which data types this gene has that can be linked back to MOD (sub) pages.",
-      "type": "object",
-      "properties": {
-        "expression": { "type": "boolean" },
-        "interaction": { "type": "boolean" },
-        "references": { "type": "boolean" }
-      }
     }
   }
 }

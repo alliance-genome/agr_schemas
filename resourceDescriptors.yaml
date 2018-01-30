@@ -9,6 +9,7 @@
   name: MGI
   example_id: MGI:80863
   gid_pattern: "^MGI:\d+$"
+  default_url: 
   pages:
     - name: gene  
       url: http://www.informatics.jax.org/accession/MGI:[%s]
@@ -20,9 +21,16 @@
   name: MGD_old
   example_id: MGD_old:MGD-MRK-11588
   gid_pattern: "^MGD_old:MGD-[A-Z]+-\d+$"
+  default_url:   
   pages:
     - name: gene
       url: http://www.informatics.jax.org/accession/[%s]
+
+- db_prefix: WIKIP
+  name: Wikipedia
+  example_id: 
+  gid_pattern: 
+  default_url:
 
 
 #
@@ -33,6 +41,7 @@
   name: RGD
   example_gid: RGD:1311419
   gid_pattern: "^RGD:\d+$"
+  default_url: 
   pages:
     - name: gene
       url: http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
@@ -45,6 +54,7 @@
   name: ZFIN
   example_gid: ZFIN:ZDB-GENE-030131-9438
   gid_pattern: "^ZFIN:\S+$"
+  default_url: 
   pages:
     - name: gene
       url: https://zfin.org/[%s]
@@ -68,6 +78,7 @@
   name: FlyBase
   example_gid: FB:FBgn0000490
   gid_pattern: "^FB:FB\w+$"
+  default_url: 
   pages:
     - name: gene
       url: http://flybase.org/reports/[%s].html
@@ -80,6 +91,7 @@
   name: WormBase genes
   example_gid: WB:WBGene00000064
   gid_pattern: "^WB:WB\w+$"
+  default_url: 
   pages:
     - name: gene
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene
@@ -94,6 +106,7 @@
   name: WormBase references
   example_gid: WBRef:WBPaper00050597
   gid_pattern: "^WBRef:WBPaper\d+$"
+  default_url: 
   pages:
     - name: reference
       url: http://www.wormbase.org/db/get?name=[%s];class=Paper
@@ -102,6 +115,7 @@
   name: WormBase variations
   example_gid: WBVar:WBVar:WBVar00000001
   gid_pattern: "^WBVar:WBVar\d+$"
+  default_url:  
   pages:
     - name: feature
       url: http://www.wormbase.org/db/get?name=[%s];class=Variation
@@ -110,6 +124,7 @@
   name: WormBase strains
   example_gid: WBStrain:N2
   gid_pattern: "^WBStrain:\S+$"
+  default_url: 
   pages:
     - name: strain
       url: http://www.wormbase.org/db/get?name=[%s];class=Strain
@@ -118,6 +133,7 @@
   name: WormBase Transgenes
   example_gid: WBTransgene:xxxxxx
   gid_pattern: "^WBTransgene:\S+$"
+  default_url: 
   pages:
     - name: transgene  
       url: http://www.wormbase.org/db/get?name=[%s];class=Transgene
@@ -126,6 +142,7 @@
   name: WormBase life-stage Ontology
   example_gid: WBls:0000001
   gid_pattern: "^WBls:\d+$"
+  default_url: 
   pages:
     - name: life_stage_ontology
       url: http://www.wormbase.org/db/get?name=WBls:[%s];class=Life_stage
@@ -134,6 +151,7 @@
   name: WormBase anatomy Ontology
   example_gid: WBbt:0008611
   gid_pattern: "^(WBbt:\d+)$"
+  default_url: 
   pages:
     - name: anatomy_ontology  
       url: http://www.wormbase.org/db/get?name=WBbt:[%s];class=Anatomy
@@ -142,6 +160,7 @@
   name: WormBase Phenotype Ontology
   example_gid: WBPhenotype:0000517
   gid_pattern: "^WBPhenotype:\d+$"
+  default_url: 
   pages:
     - name: phenotype_ontology 
       url: http://www.wormbase.org/db/get?name=WBPhenotype:[%s];class=Phenotype
@@ -150,6 +169,7 @@
   name: WormBase SPELL
   example_gid: WB_SPELL:eat-4
   gid_pattern: "^WB_SPELL:\w+$"
+  default_url: 
   pages:
     - name: spell
       url: http://spell.caltech.edu:3000/search/show_listing?search_string=[%s]
@@ -163,6 +183,7 @@
   name: SGD genes
   example_gid: SGD:S000001855
   gid_pattern: "^SGD:\w+$"
+  default_url: 
   pages:
   - name: gene
     url: http://www.yeastgenome.org/locus/[%s]
@@ -170,14 +191,8 @@
     url: http://www.yeastgenome.org/locus/[%s]/expression
   - name: interaction
     url: http://www.yeastgenome.org/locus/[%s]/interaction
-
-- db_prefix: SGD_SPELL
-  name: SGD SPELL
-  example_gid: SGD_SPELL:YGL008C
-  gid_pattern: "^SGD_SPELL:\w+$"
-  pages:
-    - name: spell
-      url: http://spell.yeastgenome.org/search/show_listing?search_string=[%s]
+  - name: spell
+    url: http://spell.yeastgenome.org/search/show_listing?search_string=[%s]
 
 #
 # GO
@@ -187,10 +202,7 @@
   name: Gene Ontology
   example_gid: GO:0045860
   gid_pattern: "^GO:\d+$"
-  pages:
-    - name: go_ontology
-      url: http://amigo.geneontology.org/amigo/term/GO:[%s]
-
+  default_url: http://amigo.geneontology.org/amigo/term/GO:[%s] 
 
 #
 # External resources
@@ -200,6 +212,7 @@
   name: HGNC
   example_gid: HGNC:33510
   gid_pattern: "^HGNC:\d+$"
+  default_url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
   pages:
   - name: general_cross_reference
     url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
@@ -208,102 +221,76 @@
   name: NCBI Gene
   example_gid: NCBI_Gene:33432
   gid_pattern: "^NCBI_Gene:\d+$"
-  pages:
-  - name: general_cross_reference
-    url: https://www.ncbi.nlm.nih.gov/gene/[%s]
+  default_url: https://www.ncbi.nlm.nih.gov/gene/[%s]
 
 - db_prefix: UniProtKB
   name: UniProtKB
   example_gid: UniProtKB:P07713
   gid_pattern: "^UniProtKB:\w+$"
-  pages:
-    - name: general_cross_reference
-      url: http://www.uniprot.org/uniprot/[%s]
+  default_url: http://www.uniprot.org/uniprot/[%s]
 
 - db_prefix: ENSEMBL
   name: Ensembl
   example_id: ENSEMBL:FBgn0000490
   gid_pattern: "^ENSEMBL:\w+$"
-  pages:
-    - name: general_cross_reference
-      url: http://www.ensembl.org/id/[%s]
+  default_url: http://www.ensembl.org/id/[%s] 
 
 - db_prefix: RNAcentral
   name: RNAcentral
   example_gid: RNAcentral:URS000075C808
   gid_pattern: "^RNAcentral:\w+$"
-  pages:
-    - name: general_cross_reference 
-      url: http://rnacentral.org/rna/[%s]
+  default_url: http://rnacentral.org/rna/[%s]
 
 - db_prefix: PMID
   name: PubMed
   example_gid: PMID:26447131
   gid_pattern: "^PMID:\d+$"
-  pages:
-    - name: reference
-      url: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
+  default_url: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
 
 - db_prefix: DRSC
   name: DRSC
   example_gid: DRSC:FBgn0000490
   gid_pattern: "^DRSC:\S+$"
-  pages:
-    - name: gene
-      url: None
+  default_url: 
     
 - db_prefix: NCBITaxon
   name: NCBI Taxonomy
   example_gid: NCBITaxon:7227
   gid_pattern: "^NCBITaxon:\d+$"
-  pages:
-    - name: general_cross_reference
-      url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=[%s]
+  default_url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=[%s]
 
 - db_prefix: SO
   name: Sequence Ontology
   example_gid: SO:0001217
   gid_pattern: "^SO:\d+$"
-  pages:
-    - name: sequence_ontology
-      url: http://www.sequenceontology.org/browser/current_svn/term/SO:[%s]
+  default_url: http://www.sequenceontology.org/browser/current_svn/term/SO:[%s]
 
 - db_prefix: DOID
   name: Disease Ontology
   example_gid: DOID:820
   gid_pattern: "^DOID:\d+$"
-  pages:
-    - name: disease_ontology
-      url: None
+  default_url: 
 
 - db_prefix: ZECO
   name: Zebrafish Environment Condition Ontology
   example_gid: ZECO:0000103
   gid_pattern: "^ZECO:\d+$"
-  pages:
-    - name: environment_condition_ontology
-      url: https://zfin.org/action/ontology/term-detail/ZECO:[%s]
+  default_url: https://zfin.org/action/ontology/term-detail/ZECO:[%s]
 
 - db_prefix: CHEBI
   name: Chemical Entities of Biological Interest Ontology
   example_gid: CHEBI:53438
   gid_pattern: "^CHEBI:\d+$"
-  pages: 
-    - name: chebi_ontology
-      url: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=[%s]
+  default_url: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=[%s]
 
 - db_prefix: ZFA
   name: Zebrafish Anatomy Ontology
   example_id: ZFA:0001327
   gid_pattern: "^ZFA:\d+$"
-  pages:
-    - name: anatomy_ontology
-      url: http://zfin.org/action/ontology/term-detail/ZFA:[%s]
+  default_url: http://zfin.org/action/ontology/term-detail/ZFA:[%s]
 
 - db_prefix: PANTHER
   name: PANTHER
   example_id: PANTHER:PTHR11662
   gid_pattern: "^PANTHER:PTHR\d+$"
-  pages:
-    - name: panther
-      url: http://pantherdb.org/panther/family.do?clsAccession=[%s] 
+  default_url: http://pantherdb.org/panther/family.do?clsAccession=[%s]
