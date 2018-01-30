@@ -48,12 +48,12 @@
   pages:
     - name: gene
       url: https://zfin.org/[%s]
-    - name: expression
+    - name: gene/expression
       url: https://zfin.org/action/marker/[%s]/expression
-    - name: wild_type_expression
+    - name: gene/wild_type_expression
       description: "Wild type expression data"
       url: https://zfin.org/action/marker/[%s]/wt_expression
-    - name: reference
+    - name: gene/reference
       url: https://zfin.org/[%s]
     - name: feature
       url: https://zfin.org/[%s]
@@ -83,11 +83,11 @@
   pages:
     - name: gene
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene
-    - name: expression
+    - name: gene/expression
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
     - name: interaction
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
-    - name: references
+    - name: gene/references
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
 
 - db_prefix: WBRef
@@ -241,7 +241,7 @@
   example_gid: PMID:26447131
   gid_pattern: "^PMID:\d+$"
   pages:
-    - name: general_cross_reference
+    - name: reference
       url: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
 
 - db_prefix: DRSC
