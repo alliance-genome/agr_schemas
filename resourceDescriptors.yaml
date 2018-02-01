@@ -214,7 +214,7 @@
   gid_pattern: "^HGNC:\d+$"
   default_url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
   pages:
-  - name: general_cross_reference
+  - name: gene
     url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
 
 - db_prefix: NCBI_Gene
