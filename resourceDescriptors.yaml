@@ -28,9 +28,9 @@
 
 - db_prefix: WIKIP
   name: Wikipedia
-  example_id: 
-  gid_pattern: 
-  default_url:
+  example_id: WIKIP:BRCA2
+  gid_pattern: "^WIKIP:\S+$"
+  default_url: https://en.wikipedia.org/wiki/[%s]
 
 
 #
@@ -63,7 +63,7 @@
     - name: gene/wild_type_expression
       description: "Wild type expression data"
       url: https://zfin.org/action/marker/[%s]/wt_expression
-    - name: gene/reference
+    - name: gene/references
       url: https://zfin.org/[%s]
     - name: feature
       url: https://zfin.org/[%s]
@@ -91,13 +91,13 @@
   name: WormBase genes
   example_gid: WB:WBGene00000064
   gid_pattern: "^WB:WB\w+$"
-  default_url: 
+  default_url: http://www.wormbase.org/db/get?name=[%s];class=Gene
   pages:
     - name: gene
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene
     - name: gene/expression
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
-    - name: interaction
+    - name: gene/interactions
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
     - name: gene/references
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
@@ -106,7 +106,7 @@
   name: WormBase references
   example_gid: WBRef:WBPaper00050597
   gid_pattern: "^WBRef:WBPaper\d+$"
-  default_url: 
+  default_url: http://www.wormbase.org/db/get?name=[%s];class=Paper
   pages:
     - name: reference
       url: http://www.wormbase.org/db/get?name=[%s];class=Paper
@@ -115,16 +115,16 @@
   name: WormBase variations
   example_gid: WBVar:WBVar:WBVar00000001
   gid_pattern: "^WBVar:WBVar\d+$"
-  default_url:  
+  default_url: http://www.wormbase.org/db/get?name=[%s];class=Variation
   pages:
-    - name: feature
+    - name: variation
       url: http://www.wormbase.org/db/get?name=[%s];class=Variation
 
 - db_prefix: WBStrain
   name: WormBase strains
   example_gid: WBStrain:N2
   gid_pattern: "^WBStrain:\S+$"
-  default_url: 
+  default_url: http://www.wormbase.org/db/get?name=[%s];class=Strain
   pages:
     - name: strain
       url: http://www.wormbase.org/db/get?name=[%s];class=Strain
@@ -133,7 +133,7 @@
   name: WormBase Transgenes
   example_gid: WBTransgene:xxxxxx
   gid_pattern: "^WBTransgene:\S+$"
-  default_url: 
+  default_url: http://www.wormbase.org/db/get?name=[%s];class=Transgene
   pages:
     - name: transgene  
       url: http://www.wormbase.org/db/get?name=[%s];class=Transgene
@@ -142,27 +142,27 @@
   name: WormBase life-stage Ontology
   example_gid: WBls:0000001
   gid_pattern: "^WBls:\d+$"
-  default_url: 
+  default_url: http://www.wormbase.org/db/get?name=WBls:[%s];class=Life_stage
   pages:
-    - name: life_stage_ontology
+    - name: ontology_term
       url: http://www.wormbase.org/db/get?name=WBls:[%s];class=Life_stage
 
 - db_prefix: WBbt
   name: WormBase anatomy Ontology
   example_gid: WBbt:0008611
-  gid_pattern: "^(WBbt:\d+)$"
-  default_url: 
+  gid_pattern: "^WBbt:\d+$"
+  default_url: http://www.wormbase.org/db/get?name=WBbt:[%s];class=Anatomy
   pages:
-    - name: anatomy_ontology  
+    - name: ontology_term
       url: http://www.wormbase.org/db/get?name=WBbt:[%s];class=Anatomy
 
 - db_prefix: WBPhenotype
   name: WormBase Phenotype Ontology
   example_gid: WBPhenotype:0000517
   gid_pattern: "^WBPhenotype:\d+$"
-  default_url: 
+  default_url: http://www.wormbase.org/db/get?name=WBPhenotype:[%s];class=Phenotype
   pages:
-    - name: phenotype_ontology 
+    - name: ontology_term
       url: http://www.wormbase.org/db/get?name=WBPhenotype:[%s];class=Phenotype
 
 - db_prefix: WB_SPELL
@@ -171,7 +171,7 @@
   gid_pattern: "^WB_SPELL:\w+$"
   default_url: 
   pages:
-    - name: spell
+    - name: gene/spell
       url: http://spell.caltech.edu:3000/search/show_listing?search_string=[%s]
 
 
@@ -187,9 +187,9 @@
   pages:
   - name: gene
     url: http://www.yeastgenome.org/locus/[%s]
-  - name: expression
+  - name: gene/expression
     url: http://www.yeastgenome.org/locus/[%s]/expression
-  - name: interaction
+  - name: gene/interactions
     url: http://www.yeastgenome.org/locus/[%s]/interaction
   - name: spell
     url: http://spell.yeastgenome.org/search/show_listing?search_string=[%s]
