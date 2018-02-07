@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Orthology Header",
-  "description": "A file of orthology objects.",
-  "id": "orthoHeader.json",
+  "title": "geneMetaData",
+  "description": "A file of Basic Gene Information objects.",
+  "id": "geneMetaData.json",
   "type": "object",
   "required": [ "metaData", "data" ],
   "properties": {
@@ -12,9 +12,9 @@
     },
     "data": { 
       "type": "array",
-      "description": "A list of orthology objects.",
+      "description": "A list of gene objects.",
       "items": {
-        "$ref" : "orthology.json#"
+        "$ref" : "gene.json#"
       }
     }
   }
