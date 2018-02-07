@@ -65,7 +65,7 @@
       url: https://zfin.org/action/marker/[%s]/wt_expression
     - name: gene/references
       url: https://zfin.org/[%s]
-    - name: feature
+    - name: allele
       url: https://zfin.org/[%s]
     - name: genotype
       url: https://zfin.org/[%s]
