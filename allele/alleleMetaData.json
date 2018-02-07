@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Basic Allele Information",
   "description": "A file of Basic Allele Information objects.",
-  "id": "featureMetadata.json",
+  "id": "alleleMetadata.json",
   "type": "object",
   "required": [ "metaData", "data" ],
   "properties": {
@@ -14,7 +14,7 @@
       "type": "array",
       "description": "A list of allele objects.",
       "items": {
-        "$ref" : "feature.json#"
+        "$ref" : "allele.json#"
       }
     }
   }
