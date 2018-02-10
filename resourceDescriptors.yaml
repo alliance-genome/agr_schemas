@@ -82,6 +82,14 @@
   pages:
     - name: gene
       url: http://flybase.org/reports/[%s].html
+    - name: gene/expression
+      url: http://flybase.org/reports/[%s].html#expression_data
+    - name: gene/references
+      url: http://flybase.org/reports/[%s].html#pubs
+    - name: allele
+      url: http://flybase.org/reports/[%s].html
+    - name: strain
+      url: http://flybase.org/reports/[%s].html
 
 #
 # WormBase
