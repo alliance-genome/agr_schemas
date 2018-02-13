@@ -44,8 +44,11 @@
   default_url: 
   pages:
     - name: gene
-      url: http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
-
+      url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
+     - name: homepage
+      url: https://rgd.mcw.edu/
+    - name: allele
+      url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
 #
 # ZFIN
 #
