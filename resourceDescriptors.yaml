@@ -12,9 +12,20 @@
   default_url: 
   pages:
     - name: gene  
-      url: http://www.informatics.jax.org/accession/MGI:[%s]
+      url: http://www.informatics.jax.org/marker/MGI:[%s]
+    - name: gene/expression
+      url: http://www.informatics.jax.org/gxd/marker/MGI:[%s]
+    - name: gene/references
+      url: http://www.informatics.jax.org/reference/marker/MGI:[%s]
+    - name: gene/phenotypes
+      url: http://www.informatics.jax.org/marker/MGI:[%s]
+    - name: allele
+      url: http://www.informatics.jax.org/allele/MGI:[%s]
+    - name: genotype
+      url: http://www.informatics.jax.org/allele/genoview/MGI:[%s]
 
-# MGI
+#
+# MGI - old style IDs
 #
 
 - db_prefix: MGD_old
@@ -25,6 +36,10 @@
   pages:
     - name: gene
       url: http://www.informatics.jax.org/accession/[%s]
+
+#
+# Wikipedia
+#
 
 - db_prefix: WIKIP
   name: Wikipedia
