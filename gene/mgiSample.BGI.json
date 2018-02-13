@@ -1,10 +1,10 @@
 {
   "data": [
     {
-      "crossReferenceIds": [
-        "NCBI_Gene:109899"
+      "crossReferences": [
+        { "id":"NCBI_Gene:109899","pages":["generic_cross_reference"]}, 
+        { "id":"MGI:87982","pages":["gene"]}
       ],
-      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:87982?typeFilter=Literature",
       "genomeLocations": [
         {
           "assembly": "",
@@ -27,10 +27,10 @@
       "taxonId": "NCBITaxon:10090"
     },
     {
-      "crossReferenceIds": [
-        "NCBI_Gene:16020"
+      "crossReferences": [
+        {"id":"NCBI_Gene:16020","pages":["generic_cross_reference"]},
+        {"id":"MGI:96449","pages":["gene"]}
       ],
-      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96449?typeFilter=Literature",
       "genomeLocations": [
         {
           "assembly": "GRCm38",
@@ -54,14 +54,14 @@
       "taxonId": "NCBITaxon:10090"
     },
     {
-      "crossReferenceIds": [
-        "ENSEMBL:ENSMUSG00000005672",
-        "NCBI_Gene:16590",
-        "UniProtKB:A4ZVL1",
-        "UniProtKB:P05532",
-        "UniProtKB:Q3ULJ6"
+      "crossReferences": [
+        {"id":"ENSEMBL:ENSMUSG00000005672","pages":["generic_cross_reference"]},
+        {"id":"NCBI_Gene:16590","pages":["generic_cross_reference"]},
+        {"id":"UniProtKB:A4ZVL1","pages":["generic_cross_reference"]},
+        {"id":"UniProtKB:P05532","pages":["generic_cross_reference"]},
+        {"id":"UniProtKB:Q3ULJ6","pages":["generic_cross_reference"]},
+        {"id":"MGI:96677","pages":["gene"]}
       ],
-      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96677?typeFilter=Literature",
       "geneSynopsisUrl": "https://en.wikipedia.org/wiki/CD117",
       "genomeLocations": [
         {
@@ -114,7 +114,6 @@
       "taxonId": "NCBITaxon:10090"
     },
     {
-      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:5695867?typeFilter=Literature",
       "name": "twisty nose",
       "primaryId": "MGI:5695867",
       "soTermId": "SO:0001500",
@@ -126,11 +125,11 @@
       "taxonId": "NCBITaxon:10090"
     },
     {
-      "crossReferenceIds": [
-        "ENSEMBL:ENSMUSG00000083722",
-        "NCBI_Gene:674251"
+      "crossReferences": [
+        {"id":"ENSEMBL:ENSMUSG00000083722","pages":["generic_cross_reference"]},
+        {"id":"NCBI_Gene:674251","pages":["generic_cross_reference"]},
+	{"id":"MGI:2685845","pages":["gene"]}
       ],
-      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:2685845?typeFilter=Literature",
       "genomeLocations": [
         {
           "assembly": "GRCm38",
