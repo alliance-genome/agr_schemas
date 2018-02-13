@@ -9,9 +9,9 @@
   name: MGI
   example_id: MGI:80863
   gid_pattern: "^MGI:\d+$"
-  default_url: 
+  default_url: http://www.informatics.jax.org/
   pages:
-    - name: gene  
+    - name: gene
       url: http://www.informatics.jax.org/marker/MGI:[%s]
     - name: gene/expression
       url: http://www.informatics.jax.org/gxd/marker/MGI:[%s]
