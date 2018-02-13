@@ -12,7 +12,7 @@ Most recent release:
 |basicGeneInfoFile|A file of Basic Gene Information objects. This is the base or "root" schema.|
 |basicGeneInformation|An entry with Gene information from a MOD.  Gene set includes: genes, psuedogenes and not-protein coding genes.  It does not include engineered foreign genes, transcripts or other features.|
 |dataProvider|An standard set of information regarding data source and taxon ids for the AGR.|
-|crossReference|An crossReference entity (_e.g._: NCBIGENE links, UniProt Links, and links back to MODs).
+|crossReference|An crossReference entity (_e.g._: NCBI_Gene links, UniProtKB links, PANTHER links, and links back to MODs).
 |metaData|An standard set of information regarding when and from whom the load was generated.|
 
 Validation
