@@ -1,21 +1,21 @@
 {
   "data": [
     {
-      "crossReferenceIds": [
-        "NCBIGene:109899"
+      "crossReferences": [
+        { "id":"NCBI_Gene:109899","pages":["generic_cross_reference"]}, 
+        { "id":"MGI:87982","pages":["gene"]}
       ],
-      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:87982?typeFilter=Literature",
       "genomeLocations": [
         {
-          "assembly": "GRCm38",
+          "assembly": "",
           "chromosome": "1"
         }
       ],
       "name": "alkaline phosphatase 1",
-      "primaryId":"MGI:87982",
+      "primaryId": "MGI:87982",
       "secondaryIds": [
-        "MGI:MGD-MRK-1248",
-        "MGI:MGD-MRK-1253"
+        "MGD_old:MGD-MRK-1248",
+        "MGD_old:MGD-MRK-1253"
       ],
       "soTermId": "SO:0001217",
       "symbol": "Akp1",
@@ -27,11 +27,10 @@
       "taxonId": "NCBITaxon:10090"
     },
     {
-      "crossReferenceIds": [
-          "NCBIGene:16020"
+      "crossReferences": [
+        {"id":"NCBI_Gene:16020","pages":["generic_cross_reference"]},
+        {"id":"MGI:96449","pages":["gene"]}
       ],
-      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96449?typeFilter=Literature",
-      "geneSynopsis": "Mice homozygous for disruptions in this gene display typical systemic anaphylactic responses in spite of the absence of IgE.",
       "genomeLocations": [
         {
           "assembly": "GRCm38",
@@ -44,7 +43,7 @@
       "name": "immunoglobulin heavy chain 7 (heavy chain of IgE)",
       "primaryId": "MGI:96449",
       "secondaryIds": [
-        "MGI:MGD-MRK-11246"
+        "MGD_old:MGD-MRK-11246"
       ],
       "soTermId": "SO:3000000",
       "symbol": "Igh-7",
@@ -55,17 +54,14 @@
       "taxonId": "NCBITaxon:10090"
     },
     {
-      "crossReferenceIds": [
-        "Ensembl:ENSMUSG00000005672",
-        "NCBIGene:16590",
-        "UniProtKB:P05532",
-        "UniProtKB:P05532-3",
-        "UniProtKB:P05532-2",
-        "UniProtKB:A4ZVL1",
-        "UniProtKB:Q3ULJ6"
+      "crossReferences": [
+        {"id":"ENSEMBL:ENSMUSG00000005672","pages":["generic_cross_reference"]},
+        {"id":"NCBI_Gene:16590","pages":["generic_cross_reference"]},
+        {"id":"UniProtKB:A4ZVL1","pages":["generic_cross_reference"]},
+        {"id":"UniProtKB:P05532","pages":["generic_cross_reference"]},
+        {"id":"UniProtKB:Q3ULJ6","pages":["generic_cross_reference"]},
+        {"id":"MGI:96677","pages":["gene"]}
       ],
-      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:96677?typeFilter=Literature",
-      "geneSynopsis": "Mutations at this locus affect migration of embryonic stem cell populations, resulting in mild to severe impairments in hematopoiesis, and pigmentation. Some alleles are homozygous lethal, sterile, or result in the formation of gastrointestinal tumors.",
       "geneSynopsisUrl": "https://en.wikipedia.org/wiki/CD117",
       "genomeLocations": [
         {
@@ -79,14 +75,14 @@
       "name": "KIT proto-oncogene receptor tyrosine kinase",
       "primaryId": "MGI:96677",
       "secondaryIds": [
-        "MGI:MGD-MRK-1672",
-        "MGI:MGD-MRK-9743",
-        "MGI:MGD-MRK-11588",
-        "MGI:MGD-MRK-14609",
-        "MGI:MGD-MRK-15420",
+        "MGD_old:MGD-MRK-1672",
+        "MGD_old:MGD-MRK-9743",
+        "MGD_old:MGD-MRK-11588",
+        "MGD_old:MGD-MRK-14609",
+        "MGD_old:MGD-MRK-15420",
         "MGI:3530304",
         "MGI:3530312",
-        "MGI:M:3530319"
+        "MGI:3530319"
       ],
       "soTermId": "SO:0001217",
       "symbol": "Kit",
@@ -118,7 +114,6 @@
       "taxonId": "NCBITaxon:10090"
     },
     {
-      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:5695867?typeFilter=Literature",
       "name": "twisty nose",
       "primaryId": "MGI:5695867",
       "soTermId": "SO:0001500",
@@ -130,11 +125,11 @@
       "taxonId": "NCBITaxon:10090"
     },
     {
-      "crossReferenceIds": [
-        "Ensembl:ENSMUSG00000083722",
-        "NCBIGene:674251"
+      "crossReferences": [
+        {"id":"ENSEMBL:ENSMUSG00000083722","pages":["generic_cross_reference"]},
+        {"id":"NCBI_Gene:674251","pages":["generic_cross_reference"]},
+	{"id":"MGI:2685845","pages":["gene"]}
       ],
-      "geneLiteratureUrl": "http://www.informatics.jax.org/reference/marker/MGI:2685845?typeFilter=Literature",
       "genomeLocations": [
         {
           "assembly": "GRCm38",
@@ -147,7 +142,7 @@
       "name": "adhesion G protein-coupled receptor D2, pseudogene",
       "primaryId": "MGI:2685845",
       "secondaryIds": [
-        "MGI:MG3642981"
+        "MGI:3642981"
       ],
       "soTermId": "SO:0000336",
       "symbol": "Adgrd2-ps",
@@ -172,7 +167,7 @@
   ],
   "metaData": {
     "dataProvider": "MGI",
-    "dateProduced": "2017-02-09T10:03:07-05:00",
-    "release": "M 6.07 2017-01-31"
+    "dateProduced": "2017-06-22T13:27:43-04:00",
+    "release": "MGI 6.010 2017-06-13"
   }
 }

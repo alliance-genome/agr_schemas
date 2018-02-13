@@ -15,4 +15,4 @@
     }
   },
   "anyOf": [{"required": ["modPublicationId"]},{"required": ["pubMedId"]}]
-} 
+}

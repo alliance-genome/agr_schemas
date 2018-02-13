@@ -20,12 +20,17 @@ data_file.closed
 schema_file_name = args.schema
 with open(schema_file_name) as schema_file:
     schema = json.load(schema_file)
+    print(schema)
 schema_file.closed
 
 # Defining a resolver for relative paths and schema issues, see https://github.com/Julian/jsonschema/issues/313
 # and https://github.com/Julian/jsonschema/issues/274
 sSchemaDir = os.path.dirname(os.path.abspath(schema_file_name))
 oResolver = js.RefResolver(base_uri = 'file://' + sSchemaDir + '/', referrer = schema)
+
+print(oResolver)
+print ("schemaDir: " + sSchemaDir)
+print ("schema_file_name: " + schema_file_name)
 
 try:
     js.validate(data, schema, format_checker=js.FormatChecker(), resolver=oResolver)
@@ -37,4 +42,4 @@ except js.ValidationError as e:
 except js.SchemaError as e:
     print e.message
     print e
-    raise SystemExit("Error in validation.")
+    raise SystemExit("Error in schema validation.")

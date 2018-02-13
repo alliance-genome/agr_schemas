@@ -1,0 +1,33 @@
+{
+  "data": [
+    {
+      "primaryId": "ZFIN:ZDB-ALT-980203-1091",
+      "symbol": "ti282a",
+      "synonyms": [
+        "AI82a"
+      ],
+      "taxonId": "NCBITaxon:7955",
+      "gene": "ZFIN:ZDB-GENE-990415-72",
+      "crossReferences": [{"id":"ZFIN:ZDB-GENE-990415-72","pages":["allele"]}]
+
+    },
+    {
+      "primaryId": "ZFIN:ZDB-ALT-980413-523",
+      "secondaryIds": [
+        "ZFIN:ZDB-ALT-980203-1474"
+      ],
+      "symbol": "tt250",
+      "synonyms" : [
+        "AT50A",
+        "tt350"
+      ],
+      "gene" : "ZFIN:ZDB-GENE-990415-33",
+      "taxonId": "NCBITaxon:7955",
+      "crossReferences": [{"id":"ZFIN:ZDB-GENE-990415-33","pages":["allele"]}]
+    }
+  ],
+  "metaData": {
+    "dataProvider": "ZFIN",
+    "dateProduced": "2017-09-21T15:47:46.806-07:00"
+  }
+}

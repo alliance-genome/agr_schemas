@@ -6,6 +6,9 @@
   "required": [ "textCondition","zecoId"],
   "additionalProperties": false,
   "id": "experimentalCondition.json#",
+  "required": [
+    "ConditionIsStandard"
+  ],
   "properties": {
   	"textCondition":{
 	   "type":"string",
@@ -23,7 +26,7 @@
            "$ref": "../globalId.json#/properties/globalId",
            "description": "gene ontology id used in subset of zeco terms."
 	},
-	"NCBITaxonId:":{
+	"NCBITaxonId":{
            "$ref": "../globalId.json#/properties/globalId",
            "description": "NCBITaxon ontology id used in subset of zeco terms."
         },
@@ -32,8 +35,7 @@
            "description": "Chebi ontology id used in subset of zeco terms."
       	},
 	"ConditionIsStandard":{
-           "type":"boolean",
-	   "required":"true"
+           "type":"boolean"
 	}
     }
 }

@@ -4,29 +4,31 @@
   "description": "orthology objects.",
   "id": "orthology.json",
   "type": "object",
-  "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "gene1UsedSymbol", "gene2UsedSymbol", "gene1DataProvider", "gene2DataProvider", "confidence" ],
+  "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "confidence", "gene1Species", "gene2Species"],
   "properties": {
-    "isBestScore": { "enum": ["Yes","No"],
-                     "description": "DIOPT schema highlights the best pair."
+    "gene1Species": {
+      "type" : "integer",
+      "description": "The species of the first gene."
     },
-    "isBestRevScore": { "enum": ["Yes","No"],
-                     "description": "DIOPT schema highlights the best reverse pair."
+    "gene2Species": {
+      "type" : "integer",
+      "description": "The species of the second gene."
+    },
+    "isBestScore": {
+      "type" : "boolean",
+      "description": "DIOPT schema highlights the best pair."
+    },
+    "isBestRevScore": {
+      "type" : "boolean",
+      "description": "DIOPT schema highlights the best pair."
     },
     "gene1": {
       "type": "string",
       "description": "The primaryId of the the first gene."
     },
-    "gene1DataProvider": {
-      "$ref" : "../dataProvider.json#/properties/dataProvider",
-      "description":"The provider of the original gene id."
-    },
     "gene2": {
       "type": "string",
       "description": "The primaryId of the the second gene."
-    },
-    "gene2DataProvider": {
-      "$ref" : "../dataProvider.json#/properties/dataProvider",
-      "description":"The provider of the original gene id."
     },
     "predictionMethodsMatched": {
       "type": "array",
