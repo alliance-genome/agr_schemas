@@ -7,10 +7,9 @@
   "additionalProperties": false,
   "id": "modifier.json#",
   "properties": {
-     "associationType": {
+     "modifier": {
          "type":"object",
-	 "description":"Relationship between the modifier and the disease model. If filled out, one of the genetic or experimentalConditionsText
-must also be filled out.",
+	 "description":"Relationship between the modifier and the disease model. If filled out, one of the genetic or experimentalConditionsText must also be filled out.",
      	 "anyOf": [{"required": ["genetic"]},
                   {"required": ["experimentalConditionsText"]}
          ],
@@ -22,12 +21,12 @@ must also be filled out.",
             "genetic":{
 	       "type":"array",
 	       "items": {
-                  "type": "string",
+                  "type": "string"
                },
 	       "description": "A list of genetic object (allele/gene) that modifies the disease model"
             },
             "experimentalConditionsText": {
-	       "type":"string",
+	       "type":"array",
                "items": {
                   "type": "string"
                },

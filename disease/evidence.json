@@ -4,22 +4,23 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "required": [
-    "publications",
-    "evidenceCode"
+    "publication",
+    "evidenceCodes"
   ],
   "additionalProperties": false,
   "id": "evidence.json#",
   "properties": {
-    "evidenceCode": {
-      "type": "string",
-      "description": "an evidence code like IC, TAS, etc..."
+    "publication": {
+      "$ref": "../publicationRef.json#",
+      "description": "one publication for which the annotation was made"
     },
-    "publications": {
+    "evidenceCodes": {
       "type": "array",
       "items": {
-        "$ref": "../publicationRef.json#"
-       },
-      "uniqueItems": "true"
+        "type": "string",
+        "description": "3-4 letter abbreviation."
+      },
+      "uniqueItems": true
     }
   }
 }
