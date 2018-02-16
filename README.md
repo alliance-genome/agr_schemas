@@ -23,8 +23,10 @@ Usage is as follows:
 
 For the basic Gene info file run
    `./agr_validate.py -d <gene_file.json> -s  basicGeneInfoFile.json`
-and for the disease info file run
+for the disease info file run
    `./agr_validate.py -d <disease_file.json> -s  disease/diseaseMetaDataDefinition.json`
+and for the allele info file run
+   `./agr_validate.py -d <allele_file.json> -s  allele/alleleMetaData.json`
 
 Formatting Notes
 ----------------
