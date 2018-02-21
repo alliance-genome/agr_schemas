@@ -218,7 +218,7 @@
   - name: gene/interactions
     url: http://www.yeastgenome.org/locus/[%s]/interaction
   - name: spell
-    url: http://spell.yeastgenome.org/search/show_listing?search_string=[%s]
+    url: https://spell.yeastgenome.org/search/show_listing?search_string=[%s]
 
 #
 # GO
