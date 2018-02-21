@@ -22,11 +22,11 @@ Usage is as follows:
 `agr_validate.py -d test_data.json -s base_schema.json`
 
 For the basic Gene info file run
-   `./agr_validate.py -d <gene_file.json> -s  basicGeneInfoFile.json`
+   `./agr_validate.py -d <your_new_gene_file.json> -s  gene/geneMetaData.json`
 for the disease info file run
-   `./agr_validate.py -d <disease_file.json> -s  disease/diseaseMetaDataDefinition.json`
+   `./agr_validate.py -d <your_new_disease_file.json> -s  disease/diseaseMetaDataDefinition.json`
 and for the allele info file run
-   `./agr_validate.py -d <allele_file.json> -s  allele/alleleMetaData.json`
+   `./agr_validate.py -d <your_new_allele_file.json> -s  allele/alleleMetaData.json`
 
 Formatting Notes
 ----------------
