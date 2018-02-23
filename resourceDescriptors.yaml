@@ -139,11 +139,11 @@
 
 - db_prefix: WBVar
   name: WormBase variations
-  example_gid: WBVar:WBVar:WBVar00000001
+  example_gid: WBVar:WBVar00000001
   gid_pattern: "^WBVar:WBVar\d+$"
   default_url: http://www.wormbase.org/db/get?name=[%s];class=Variation
   pages:
-    - name: variation
+    - name: allele
       url: http://www.wormbase.org/db/get?name=[%s];class=Variation
 
 - db_prefix: WBStrain
@@ -217,7 +217,7 @@
     url: http://www.yeastgenome.org/locus/[%s]/expression
   - name: gene/interactions
     url: http://www.yeastgenome.org/locus/[%s]/interaction
-  - name: spell
+  - name: gene/spell
     url: https://spell.yeastgenome.org/search/show_listing?search_string=[%s]
 
 #
