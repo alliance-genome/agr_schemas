@@ -47,7 +47,6 @@
   gid_pattern: "^WIKIP:\\S+$"
   default_url: https://en.wikipedia.org/wiki/[%s]
 
-
 #
 # RGD
 #
@@ -60,10 +59,11 @@
   pages:
     - name: gene
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
-     - name: homepage
+    - name: homepage
       url: https://rgd.mcw.edu/
     - name: allele
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
+
 #
 # ZFIN
 #
@@ -246,7 +246,7 @@
 - db_prefix: NCBI_Gene
   name: NCBI Gene
   example_gid: NCBI_Gene:33432
-  gid_pattern: "^NCBI_Gene:\\\d+$"
+  gid_pattern: "^NCBI_Gene:\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/gene/[%s]
 
 - db_prefix: UniProtKB
