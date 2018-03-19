@@ -12,7 +12,8 @@ script:
   - "python agr_validate.py -s gene/geneMetaData.json -d gene/wbSample.BGI.json"
   - "python agr_validate.py -s gene/geneMetaData.json -d gene/mgiSample.BGI.json"
   - "python agr_validate.py -s allele/alleleMetaData.json -d allele/zfinSample.allele.json"
+  - "python validate_yaml.py -d resourceDescriptors.yaml"
 # whitelist
 branches:
   only:
-    - development
+    - develop
