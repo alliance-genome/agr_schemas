@@ -47,7 +47,6 @@
   gid_pattern: "^WIKIP:\\S+$"
   default_url: https://en.wikipedia.org/wiki/[%s]
 
-
 #
 # RGD
 #
@@ -60,10 +59,11 @@
   pages:
     - name: gene
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
-     - name: homepage
+    - name: homepage
       url: https://rgd.mcw.edu/
     - name: allele
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
+
 #
 # ZFIN
 #
