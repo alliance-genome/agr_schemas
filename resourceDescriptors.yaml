@@ -80,7 +80,7 @@
       url: https://zfin.org/action/marker/[%s]/expression
     - name: gene/wild_type_expression
       description: "Wild type expression data"
-      url: https://zfin.org/action/marker/[%s]/wt_expression
+      url: https://zfin.org/[%s]/wt-expression
     - name: gene/references
       url: https://zfin.org/[%s]
     - name: allele
