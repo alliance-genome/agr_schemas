@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Phenotype Model Annotation",
+  "description": "An entry with phenotype/object associations",
+  "id": "phenotypeModelAnnotation.json#",
+  "type": "object",
+  "required": [
+    "objectId",
+    "taxonId",
+    "dataProvider",
+    "dateAssigned",
+    "evidence",
+    "phenotypeTermIdentifiers"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "objectId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description": "The ID to which the phenotype ontology term is applied. #TODO fold this into objectRelation and reference basicGeneInformation.json"
+    },
+    "qualifier": {
+      "enum": [
+        "not"
+      ],
+      "description": "The qualifier for the annotation"
+    },
+    "phenotypeTermIdentifiers": {
+     "type": "array",
+     "items": {
+     	      "$ref" : "../phenotypeTermIdentifier.json#"
+     }
+    },
+    "phenotypeStatement": {
+     "type": "string",
+     "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the phenotypeTermIdentifiers collection.
+    },
+    "taxonId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description" : "The taxonId for the species of the gene entity."
+    },
+    "dataProvider": {
+      "$ref": "../dataProvider.json#/properties/dataProvider",
+      "description": "Constrains the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
+    },
+    "evidence": {
+      "$ref": "evidence.json#",
+      "description": "one pub + many evidence codes per annotation."
+    },
+    "dateAssigned": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date this entity was assigned in it's primary data source."
+    }
+  }
+}
