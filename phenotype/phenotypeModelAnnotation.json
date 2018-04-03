@@ -16,7 +16,7 @@
   "properties": {
     "objectId": {
       "$ref" : "../globalId.json#/properties/globalId",
-      "description": "The ID to which the phenotype ontology term is applied. #TODO fold this into objectRelation and reference basicGeneInformation.json"
+      "description": "The ID to which the phenotype ontology term(s) is applied."
     },
     "qualifier": {
       "enum": [
