@@ -32,7 +32,7 @@
     },
     "phenotypeStatement": {
      "type": "string",
-     "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the phenotypeTermIdentifiers collection.
+     "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the phenotypeTermIdentifiers collection."
     },
     "taxonId": {
       "$ref" : "../globalId.json#/properties/globalId",
