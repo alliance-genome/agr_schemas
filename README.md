@@ -12,7 +12,7 @@ Most recent release:
 |basicGeneInfoFile|A file of Basic Gene Information objects. This is the base or "root" schema.|
 |basicGeneInformation|An entry with Gene information from a MOD.  Gene set includes: genes, psuedogenes and not-protein coding genes.  It does not include engineered foreign genes, transcripts or other features.|
 |dataProvider|An standard set of information regarding data source and taxon ids for the AGR.|
-|crossReference|An crossReference entity (_e.g._: NCBIGENE links, UniProt Links, and links back to MODs).
+|crossReference|An crossReference entity (_e.g._: NCBI_Gene links, UniProtKB links, PANTHER links, and links back to MODs).
 |metaData|An standard set of information regarding when and from whom the load was generated.|
 
 Validation
@@ -22,9 +22,11 @@ Usage is as follows:
 `agr_validate.py -d test_data.json -s base_schema.json`
 
 For the basic Gene info file run
-   `./agr_validate.py -d <gene_file.json> -s  basicGeneInfoFile.json`
-and for the disease info file run
-   `./agr_validate.py -d <disease_file.json> -s  disease/diseaseMetaDataDefinition.json`
+   `./agr_validate.py -d <your_new_gene_file.json> -s  gene/geneMetaData.json`
+for the disease info file run
+   `./agr_validate.py -d <your_new_disease_file.json> -s  disease/diseaseMetaDataDefinition.json`
+and for the allele info file run
+   `./agr_validate.py -d <your_new_allele_file.json> -s  allele/alleleMetaData.json`
 
 Formatting Notes
 ----------------

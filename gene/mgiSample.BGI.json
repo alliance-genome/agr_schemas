@@ -2,8 +2,8 @@
   "data": [
     {
       "crossReferences": [
-        { "id":"NCBI_Gene:109899","pages":["generic_cross_reference"]}, 
-        { "id":"MGI:87982","pages":["gene"]}
+        { "id":"NCBI_Gene:109899"}, 
+        { "id":"MGI:87982","pages":["gene","gene/references"]}
       ],
       "genomeLocations": [
         {
@@ -28,8 +28,8 @@
     },
     {
       "crossReferences": [
-        {"id":"NCBI_Gene:16020","pages":["generic_cross_reference"]},
-        {"id":"MGI:96449","pages":["gene"]}
+        {"id":"NCBI_Gene:16020"},
+        {"id":"MGI:96449","pages":["gene","gene/expression","gene/references"]}
       ],
       "genomeLocations": [
         {
@@ -55,12 +55,12 @@
     },
     {
       "crossReferences": [
-        {"id":"ENSEMBL:ENSMUSG00000005672","pages":["generic_cross_reference"]},
-        {"id":"NCBI_Gene:16590","pages":["generic_cross_reference"]},
-        {"id":"UniProtKB:A4ZVL1","pages":["generic_cross_reference"]},
-        {"id":"UniProtKB:P05532","pages":["generic_cross_reference"]},
-        {"id":"UniProtKB:Q3ULJ6","pages":["generic_cross_reference"]},
-        {"id":"MGI:96677","pages":["gene"]}
+        {"id":"ENSEMBL:ENSMUSG00000005672"},
+        {"id":"NCBI_Gene:16590"},
+        {"id":"UniProtKB:A4ZVL1"},
+        {"id":"UniProtKB:P05532"},
+        {"id":"UniProtKB:Q3ULJ6"},
+        {"id":"MGI:96677","pages":["gene","gene/expression","gene/references"]}
       ],
       "geneSynopsisUrl": "https://en.wikipedia.org/wiki/CD117",
       "genomeLocations": [
@@ -126,9 +126,9 @@
     },
     {
       "crossReferences": [
-        {"id":"ENSEMBL:ENSMUSG00000083722","pages":["generic_cross_reference"]},
-        {"id":"NCBI_Gene:674251","pages":["generic_cross_reference"]},
-	{"id":"MGI:2685845","pages":["gene"]}
+        {"id":"ENSEMBL:ENSMUSG00000083722"},
+        {"id":"NCBI_Gene:674251"},
+	{"id":"MGI:2685845","pages":["gene","gene/expression","gene/references"]}
       ],
       "genomeLocations": [
         {
