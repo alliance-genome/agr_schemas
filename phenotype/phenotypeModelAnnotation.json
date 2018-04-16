@@ -10,7 +10,7 @@
     "dataProvider",
     "dateAssigned",
     "evidence",
-    "phenotypeTermIdentifiers"
+    "phenotypeStatement"
   ],
   "additionalProperties": false,
   "properties": {
@@ -19,16 +19,10 @@
       "description": "The ID to which the phenotype ontology term(s) is applied. For this submission,
       these will be genes and single affected gene alleles."
     },
-    "qualifier": {
-      "enum": [
-        "not"
-      ],
-      "description": "The qualifier for the annotation"
-    },
     "phenotypeTermIdentifiers": {
      "type": "array",
      "items": {
-     	      "$ref" : "../phenotypeTermIdentifier.json#"
+     	      "$ref" : "phenotypeTermIdentifier.json#"
      }
     },
     "phenotypeStatement": {

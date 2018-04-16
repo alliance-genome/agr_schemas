@@ -19,15 +19,15 @@
       "description": "The ID to which the wildtypeExpression ontology term(s) is applied. For this submission,
       these will be genes."
     },
-    "wildtypeExpressionTermIdentifiers": {
+    "whereExpressedTermIdentifiers": {
      "type": "array",
      "items": {
      	      "$ref" : "../wildtypeExpressionTermIdentifier.json#"
      }
     },
-    "wildtypeExpressionStatement": {
+    "whereExpressedStatement": {
      "type": "string",
-     "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the wildtypeExpressionTermIdentifiers collection."
+     "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the whereExpressedTermIdentifiers collection."
     },
     "taxonId": {
       "$ref" : "../globalId.json#/properties/globalId",
@@ -37,9 +37,25 @@
       "$ref": "../dataProvider.json#/properties/dataProvider",
       "description": "Constrains the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
     },
-    "evidence": {
-      "$ref": "evidence.json#",
-      "description": "one pub + many evidence codes per annotation."
+    "modPublicationId": {
+      "$ref": "../globalId.json#"/properties/globalId",
+      "description": "mod publication for annotation."
+    },
+    "pubMedPublicationId": {
+      "$ref": "../globalId.json#"/properties/globalId",
+      "description": "pubmed publication for annotation."
+    },
+    "startStage": {
+      "$ref": "../globalId.json#"/properties/globalId",
+      "description":"the id that represents the start of the expression annotation"
+    },
+    "endStage": {
+      "$ref": "../globalId.json#"/properties/globalId",
+      "description":"the id that represents the	end of the expression annotation"
+    },
+    "assay": {
+      "$ref": "../globalId.json#"/properties/globalId",
+      "description":"the ECO (ontology) id that represents the assay type of the expression, ie: in-situ."
     },
     "dateAssigned": {
       "type": "string",
