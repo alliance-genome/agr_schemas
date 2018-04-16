@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Phenotype Model Annotation",
-  "description": "An entry with phenotype/object associations",
-  "id": "phenotypeModelAnnotation.json#",
+  "title": "WildtypeExpression Model Annotation",
+  "description": "An entry with wildtypeExpression/object associations",
+  "id": "wildtypeExpressionModelAnnotation.json#",
   "type": "object",
   "required": [
     "objectId",
@@ -10,30 +10,24 @@
     "dataProvider",
     "dateAssigned",
     "evidence",
-    "phenotypeTermIdentifiers"
+    "wildtypeExpressionTermIdentifiers"
   ],
   "additionalProperties": false,
   "properties": {
-    "objectId": {
+    "geneId": {
       "$ref" : "../globalId.json#/properties/globalId",
-      "description": "The ID to which the phenotype ontology term(s) is applied. For this submission,
-      these will be genes and single affected gene alleles."
+      "description": "The ID to which the wildtypeExpression ontology term(s) is applied. For this submission,
+      these will be genes."
     },
-    "qualifier": {
-      "enum": [
-        "not"
-      ],
-      "description": "The qualifier for the annotation"
-    },
-    "phenotypeTermIdentifiers": {
+    "wildtypeExpressionTermIdentifiers": {
      "type": "array",
      "items": {
-     	      "$ref" : "../phenotypeTermIdentifier.json#"
+     	      "$ref" : "../wildtypeExpressionTermIdentifier.json#"
      }
     },
-    "phenotypeStatement": {
+    "wildtypeExpressionStatement": {
      "type": "string",
-     "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the phenotypeTermIdentifiers collection."
+     "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the wildtypeExpressionTermIdentifiers collection."
     },
     "taxonId": {
       "$ref" : "../globalId.json#/properties/globalId",
