@@ -63,6 +63,8 @@
       url: https://rgd.mcw.edu/
     - name: allele
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
+    - name: gene/references
+      url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?view=5&id=[%s]
 
 #
 # ZFIN
@@ -219,6 +221,8 @@
     url: http://www.yeastgenome.org/locus/[%s]/interaction
   - name: gene/spell
     url: https://spell.yeastgenome.org/search/show_listing?search_string=[%s]
+  - name: gene/references
+    url: https://www.yeastgenome.org/locus/[%s]/literature
 
 #
 # GO
