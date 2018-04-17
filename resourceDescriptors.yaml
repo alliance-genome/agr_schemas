@@ -219,6 +219,8 @@
     url: http://www.yeastgenome.org/locus/[%s]/interaction
   - name: gene/spell
     url: https://spell.yeastgenome.org/search/show_listing?search_string=[%s]
+  - name: gene/references
+    url: https://www.yeastgenome.org/locus/[%s]/literature
 
 #
 # GO
