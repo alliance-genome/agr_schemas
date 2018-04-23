@@ -9,7 +9,6 @@
     "taxonId",
     "dataProvider",
     "dateAssigned",
-    "evidence",
     "phenotypeStatement"
   ],
   "additionalProperties": false,
@@ -23,7 +22,8 @@
      "type": "array",
      "items": {
      	      "$ref" : "phenotypeTermIdentifier.json#"
-     }
+     },
+     "description":"For most MODs, this will be a single term identifying the phenotype annotation.  For ZFIN, this will be a list, representing a post-composed phenotype annotation."
     },
     "phenotypeStatement": {
      "type": "string",
@@ -37,9 +37,13 @@
       "$ref": "../dataProvider.json#/properties/dataProvider",
       "description": "Constrains the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
     },
-    "evidence": {
-      "$ref": "evidence.json#",
-      "description": "one pub + many evidence codes per annotation."
+    "pubModId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description" : "The optional pubModId for the species of the gene entity."
+    },
+    "pubMedId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description" : "The optional pubMedId for the species of the gene entity."    
     },
     "dateAssigned": {
       "type": "string",
