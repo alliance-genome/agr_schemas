@@ -5,11 +5,10 @@
   "id": "wildtypeExpressionModelAnnotation.json#",
   "type": "object",
   "required": [
-    "objectId",
+    "geneId",
     "taxonId",
     "dataProvider",
     "dateAssigned",
-    "evidence",
     "wildtypeExpressionTermIdentifiers"
   ],
   "additionalProperties": false,
@@ -23,11 +22,12 @@
      "type": "array",
      "items": {
      	      "$ref" : "../wildtypeExpressionTermIdentifier.json#"
-     }
+     },
+     "description": "For most MODs, this will be a single identifier that represents the 'where' of the expression pattern.  For ZFIN, this will be a set that represent the post-composed 'where' of the expression pattern."
     },
     "whereExpressedStatement": {
      "type": "string",
-     "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the whereExpressedTermIdentifiers collection."
+     "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the whereExpressedTermIdentifiers collection.  For most MODs, this will simply be the term name above.  For ZFIN, this will be a sentence that concantenates the post-composed terms appropriately."
     },
     "taxonId": {
       "$ref" : "../globalId.json#/properties/globalId",
@@ -42,16 +42,12 @@
       "description": "mod publication for annotation."
     },
     "pubMedPublicationId": {
-      "$ref": "../globalId.json#"/properties/globalId",
+      "$ref": "../globalId.json#/properties/globalId",
       "description": "pubmed publication for annotation."
     },
-    "startStage": {
+    "stage": {
       "$ref": "../globalId.json#"/properties/globalId",
-      "description":"the id that represents the start of the expression annotation"
-    },
-    "endStage": {
-      "$ref": "../globalId.json#"/properties/globalId",
-      "description":"the id that represents the	end of the expression annotation"
+      "description":"the id that represents the stage of the expression annotation"
     },
     "assay": {
       "$ref": "../globalId.json#"/properties/globalId",
