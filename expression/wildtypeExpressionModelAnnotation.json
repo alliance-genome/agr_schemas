@@ -45,11 +45,11 @@
       "description": "pubmed publication for annotation."
     },
     "stage": {
-      "$ref": "../globalId.json#"/properties/globalId",
+      "$ref": "../globalId.json#/properties/globalId",
       "description":"the id that represents the stage of the expression annotation"
     },
     "assay": {
-      "$ref": "../globalId.json#"/properties/globalId",
+      "$ref": "../globalId.json#/properties/globalId",
       "description":"the ECO (ontology) id that represents the assay type of the expression, ie: in-situ."
     },
     "dateAssigned": {
