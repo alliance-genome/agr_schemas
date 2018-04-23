@@ -6,6 +6,7 @@
   "type": "object",
   "required": [
     "symbol",
+    "symbolText",
     "gene",
     "taxonId",
     "primaryId"

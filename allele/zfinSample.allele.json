@@ -3,6 +3,7 @@
     {
       "primaryId": "ZFIN:ZDB-ALT-980203-1091",
       "symbol": "ti282a",
+      "symbolText": "ti282a",
       "synonyms": [
         "AI82a"
       ],
@@ -16,7 +17,8 @@
       "secondaryIds": [
         "ZFIN:ZDB-ALT-980203-1474"
       ],
-      "symbol": "tt250",
+      "symbol": "tt250<sup>1234</sup>",
+      "symbolText": "tt250<1234>",
       "synonyms" : [
         "AT50A",
         "tt350"
