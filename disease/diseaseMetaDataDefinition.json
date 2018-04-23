@@ -4,7 +4,7 @@
   "description": "A file of Disease Association objects.",
   "id": "diseaseMetaDataDefinition.json",
   "type": "object",
-  "required": [ "metaData", "data" ],
+  "required": [ "data","metaData" ],
   "properties": {
     "metaData": {
       "$ref": "../metaData.json#",

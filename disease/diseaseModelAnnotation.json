@@ -57,8 +57,11 @@
       "description": "The disease ontology term id."
     },
     "dataProvider": {
-      "$ref": "../dataProvider.json#/properties/dataProvider",
-      "description": "Constrains the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
+        "type": "array",
+        "items": {
+            "$ref": "../dataProvider.json#"
+        },
+        "description": "source of data, can be multiple of these, each with a type and a crossReference"
     },
     "evidence": {
       "$ref": "evidence.json#",

@@ -6,9 +6,6 @@
   "required": [ "textCondition","zecoId"],
   "additionalProperties": false,
   "id": "experimentalCondition.json#",
-  "required": [
-    "ConditionIsStandard"
-  ],
   "properties": {
   	"textCondition":{
 	   "type":"string",
