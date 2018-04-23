@@ -7,7 +7,6 @@
   "required": [
     "geneId",
     "taxonId",
-    "dataProvider",
     "dateAssigned",
     "wildtypeExpressionTermIdentifiers"
   ],
@@ -38,7 +37,7 @@
       "description": "Constrains the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
     },
     "modPublicationId": {
-      "$ref": "../globalId.json#"/properties/globalId",
+      "$ref": "../globalId.json#/properties/globalId",
       "description": "mod publication for annotation."
     },
     "pubMedPublicationId": {
