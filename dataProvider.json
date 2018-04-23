@@ -6,7 +6,6 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "dataProvider": {
       "description": "The MOD, human, or other source of data. AGR currently supports the entities listed below.",
       "crossReference": {
       	  "$ref": "crossReference.json#"
@@ -14,6 +13,5 @@
       "type": {
       	      "enum": ["curated", "loaded"]
       }
-    }
   }
 }

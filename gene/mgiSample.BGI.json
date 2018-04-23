@@ -166,7 +166,13 @@
     }
   ],
   "metaData": {
-    "dataProvider": "MGI",
+    "dataProvider": [ {
+        "crossReference": { 
+		"id":"MGI",
+		"pages": ["homepage"]
+	},
+	"type": "curated"
+    } ],
     "dateProduced": "2017-06-22T13:27:43-04:00",
     "release": "MGI 6.010 2017-06-13"
   }
