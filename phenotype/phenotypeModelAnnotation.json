@@ -7,7 +7,6 @@
   "required": [
     "objectId",
     "taxonId",
-    "dataProvider",
     "dateAssigned",
     "phenotypeStatement"
   ],
@@ -15,8 +14,7 @@
   "properties": {
     "objectId": {
       "$ref" : "../globalId.json#/properties/globalId",
-      "description": "The ID to which the phenotype ontology term(s) is applied. For this submission,
-      these will be genes and single affected gene alleles."
+      "description" : "The ID to which the phenotype ontology term(s) is applied. For this submission, these will be genes and single affected gene alleles."
     },
     "phenotypeTermIdentifiers": {
      "type": "array",
@@ -32,10 +30,6 @@
     "taxonId": {
       "$ref" : "../globalId.json#/properties/globalId",
       "description" : "The taxonId for the species of the gene entity."
-    },
-    "dataProvider": {
-      "$ref": "../dataProvider.json#/properties/dataProvider",
-      "description": "Constrains the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
     },
     "pubModId": {
       "$ref" : "../globalId.json#/properties/globalId",
