@@ -89,6 +89,8 @@
       url: https://zfin.org/[%s]
     - name: genotype
       url: https://zfin.org/[%s]
+    - name: homepage
+      url: https://zfin.org/
  
 #
 # FlyBase
@@ -110,6 +112,8 @@
       url: http://flybase.org/reports/[%s].html
     - name: strain
       url: http://flybase.org/reports/[%s].html
+    - name: homepage
+      url: http://flybase.org/
 
 #
 # WormBase
@@ -129,6 +133,8 @@
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
     - name: gene/references
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
+    - name: homepage
+      url: http://www.wormbase.org/
 
 - db_prefix: WBRef
   name: WormBase references
@@ -219,6 +225,8 @@
     url: http://www.yeastgenome.org/locus/[%s]/expression
   - name: gene/interactions
     url: http://www.yeastgenome.org/locus/[%s]/interaction
+  - name: homepage
+    url: http://www.yeastgenome.org/
   - name: gene/spell
     url: https://spell.yeastgenome.org/search/show_listing?search_string=[%s]
   - name: gene/references
@@ -324,3 +332,14 @@
   example_id: PANTHER:PTHR11662
   gid_pattern: "^PANTHER:PTHR\\d+$"
   default_url: http://pantherdb.org/panther/family.do?clsAccession=[%s]
+
+- db_prefix: OMIM
+  name: OMIM
+  example_id: OMIM:600483
+  gid_pattern: "^OMIM:\d+$"
+  default_url: https://www.omim.org/entry/[%s]
+  pages:
+    - name: homepage
+      url: https://www.omim.org/
+    - name: gene
+      url: https://www.omim.org/entry[%s]
