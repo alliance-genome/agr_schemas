@@ -36,7 +36,6 @@
       "associationType" : "is_implicated_in",
       "objectType" : "gene"
     },
-    "taxonId" : "NCBITaxon:7955",
     "DOid" : "DOID:0110869"
   }
  ]
