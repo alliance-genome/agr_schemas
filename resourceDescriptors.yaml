@@ -117,7 +117,7 @@
     - name: gene
       url: http://flybase.org/reports/[%s].html
     - name: gene/expression
-      url: http://flybase.org/reports/[%s].html#expression_data
+      url: http://flybase.org/reports/[%s].html#expression
     - name: gene/references
       url: http://flybase.org/reports/[%s].html#pubs
     - name: allele
