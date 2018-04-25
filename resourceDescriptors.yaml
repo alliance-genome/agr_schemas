@@ -244,7 +244,7 @@
   - name: homepage
     url: http://www.yeastgenome.org/
   - name: gene/spell
-    url: https://spell.yeastgenome.org/search/show_listing?search_string=[%s]
+    url: https://spell.yeastgenome.org/search/show_results?search_string=[%s]
   - name: gene/references
     url: https://www.yeastgenome.org/locus/[%s]/literature
 
