@@ -6,7 +6,6 @@
   "type": "object",
   "required": [
     "objectId",
-    "taxonId",
     "dateAssigned",
     "phenotypeStatement"
   ],
@@ -26,10 +25,6 @@
     "phenotypeStatement": {
      "type": "string",
      "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the phenotypeTermIdentifiers collection."
-    },
-    "taxonId": {
-      "$ref" : "../globalId.json#/properties/globalId",
-      "description" : "The taxonId for the species of the gene entity."
     },
     "pubModId": {
       "$ref" : "../globalId.json#/properties/globalId",
