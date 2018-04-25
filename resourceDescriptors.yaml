@@ -352,7 +352,7 @@
 - db_prefix: OMIM
   name: OMIM
   example_id: OMIM:600483
-  gid_pattern: "^OMIM:\d+$"
+  gid_pattern: "^OMIM:\\d+$"
   default_url: https://www.omim.org/entry/[%s]
   pages:
     - name: homepage
