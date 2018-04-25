@@ -23,6 +23,10 @@
       url: http://www.informatics.jax.org/allele/MGI:[%s]
     - name: genotype
       url: http://www.informatics.jax.org/allele/genoview/MGI:[%s]
+    - name: homepage
+      url: http://www.informatics.jax.org/
+    - name: disease
+      url: http://www.informatics.jax.org/disease/MGI:[%s]
 
 #
 # MGI - old style IDs
@@ -65,6 +69,12 @@
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
     - name: gene/references
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?view=5&id=[%s]
+    - name: disease/rat
+      url: http://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Rat&x=1&acc_id=[%s]#annot
+    - name: disease/human
+      url: http://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
+    - name: disease/all
+      url: http://rgd.mcw.edu/rgdweb/ontology/annot.html?species=All&x=1&acc_id=[%s]#annot
 
 #
 # ZFIN
@@ -89,6 +99,10 @@
       url: https://zfin.org/[%s]
     - name: genotype
       url: https://zfin.org/[%s]
+    - name: homepage
+      url: https://zfin.org/
+    - name: disease
+      url: https://zfin.org/[%s]
  
 #
 # FlyBase
@@ -110,6 +124,10 @@
       url: http://flybase.org/reports/[%s].html
     - name: strain
       url: http://flybase.org/reports/[%s].html
+    - name: homepage
+      url: http://flybase.org/
+    - name: disease
+      url: http://flybase.org/cgi-bin/cvreport.html?id=[%s]
 
 #
 # WormBase
@@ -129,6 +147,10 @@
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
     - name: gene/references
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
+    - name: homepage
+      url: http://www.wormbase.org/
+    - name: disease
+      url: http://www.wormbase.org/resources/disease/[%s]
 
 - db_prefix: WBRef
   name: WormBase references
@@ -219,6 +241,8 @@
     url: http://www.yeastgenome.org/locus/[%s]/expression
   - name: gene/interactions
     url: http://www.yeastgenome.org/locus/[%s]/interaction
+  - name: homepage
+    url: http://www.yeastgenome.org/
   - name: gene/spell
     url: https://spell.yeastgenome.org/search/show_listing?search_string=[%s]
   - name: gene/references
@@ -299,7 +323,7 @@
   name: Disease Ontology
   example_gid: DOID:820
   gid_pattern: "^DOID:\\d+$"
-  default_url: 
+  default_url: http://www.disease-ontology.org/?id=[%s]
 
 - db_prefix: ZECO
   name: Zebrafish Environment Condition Ontology
@@ -324,3 +348,14 @@
   example_id: PANTHER:PTHR11662
   gid_pattern: "^PANTHER:PTHR\\d+$"
   default_url: http://pantherdb.org/panther/family.do?clsAccession=[%s]
+
+- db_prefix: OMIM
+  name: OMIM
+  example_id: OMIM:600483
+  gid_pattern: "^OMIM:\\d+$"
+  default_url: https://www.omim.org/entry/[%s]
+  pages:
+    - name: homepage
+      url: https://www.omim.org/
+    - name: gene
+      url: https://www.omim.org/entry[%s]

@@ -6,6 +6,7 @@
   "type": "object",
   "required": [
     "symbol",
+    "symbolText",
     "gene",
     "taxonId",
     "primaryId"
@@ -19,6 +20,10 @@
     "symbol": {
       "type": "string",
       "description": "The symbol of the entity."
+    },
+    "symbolText": {
+      "type": "string",
+      "description": "the symbol in text format, replacing all html tags with <>.  There may be more than one set of <> in the symbol."
     },
     "taxonId": {
       "$ref": "../globalId.json#/properties/globalId",
