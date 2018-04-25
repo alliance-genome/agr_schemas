@@ -7,7 +7,6 @@
   "required": [
     "objectId",
     "DOid",
-    "taxonId",
     "dataProvider",
     "dateAssigned",
     "objectRelation",
@@ -47,10 +46,6 @@
         "$ref": "experimentalConditions.json#",
         "description": "list of experimental conditions applied to the db object, which together produce the disease association."
       }
-    },
-    "taxonId": {
-      "$ref" : "../globalId.json#/properties/globalId",
-      "description" : "The taxonId for the species of the gene entity."
     },
     "DOid": {
       "$ref" : "../globalId.json#/properties/globalId",
