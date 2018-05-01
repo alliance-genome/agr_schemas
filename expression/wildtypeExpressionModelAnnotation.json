@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "WildtypeExpression Model Annotation",
+  "description": "An entry with wildtypeExpression/object associations",
+  "id": "wildtypeExpressionModelAnnotation.json#",
+  "type": "object",
+  "required": [
+    "geneId",
+    "taxonId",
+    "dateAssigned",
+    "wildtypeExpressionTermIdentifiers"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "geneId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description": "The ID to which the wildtypeExpression ontology term(s) is applied. For this submission,
+      these will be genes."
+    },
+    "whereExpressedTermIdentifiers": {
+     "type": "array",
+     "items": {
+     	      "$ref" : "../wildtypeExpressionTermIdentifier.json#"
+     },
+     "description": "For most MODs, this will be a single identifier that represents the 'where' of the expression pattern.  For ZFIN, this will be a set that represent the post-composed 'where' of the expression pattern."
+    },
+    "whereExpressedStatement": {
+     "type": "string",
+     "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the whereExpressedTermIdentifiers collection.  For most MODs, this will simply be the term name above.  For ZFIN, this will be a sentence that concantenates the post-composed terms appropriately."
+    },
+    "taxonId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description" : "The taxonId for the species of the gene entity."
+    },
+    "dataProvider": {
+      "$ref": "../dataProvider.json#/properties/dataProvider",
+      "description": "Constrains the dataProvider to conform to the dataProvider schema.  This schema enforces that a dataProvider provide the taxonId of the record being added, as well as the database source.  see dataProvider.json for more information."
+    },
+    "modPublicationId": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "mod publication for annotation."
+    },
+    "pubMedPublicationId": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "pubmed publication for annotation."
+    },
+    "stage": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description":"the id that represents the stage of the expression annotation"
+    },
+    "assay": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description":"the ECO (ontology) id that represents the assay type of the expression, ie: in-situ."
+    },
+    "dateAssigned": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date this entity was assigned in it's primary data source."
+    }
+  }
+}

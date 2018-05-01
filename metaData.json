@@ -12,9 +12,12 @@
       "format": "date-time",
       "description": "Date this entity was dumped from it's primary data source."
     },
-      "dataProvider": {
-     "$ref" : "dataProvider.json#/properties/dataProvider",
-      "description": "MOD or source of data."
+    "dataProvider": {
+        "type": "array",
+	"items": {
+	    "$ref": "dataProvider.json#"
+	},
+      	"description": "source of data, can be multiple of these, each with a type and a crossReference"
     },
     "release": {
       "type": "string",

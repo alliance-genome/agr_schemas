@@ -1,2 +1,3 @@
 strict_rfc3339>=0.0
 jsonschema==2.5.1
+pyyaml

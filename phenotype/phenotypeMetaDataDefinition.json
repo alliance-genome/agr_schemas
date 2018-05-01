@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Disease Meta Data Definition",
-  "description": "A file of Disease Association objects.",
-  "id": "diseaseMetaDataDefinition.json",
+  "title": "Phenotype Meta Data Definition",
+  "description": "A file of Phenotype Association objects.",
+  "id": "phenotypeMetaDataDefinition.json",
   "type": "object",
   "required": [ "data","metaData" ],
   "properties": {
@@ -10,11 +10,11 @@
       "$ref": "../metaData.json#",
       "description": "meta data of the load file as defined in metaData.json."
     },
-    "data": { 
+    "data": {
       "type": "array",
-      "description": "A list of diseaseAnnotation objects.",
+      "description": "A list of phenotypeAnnotation objects.",
       "items": {
-        "$ref" : "diseaseModelAnnotation.json#"
+        "$ref" : "phenotypeModelAnnotation.json#"
       }
     }
   }
