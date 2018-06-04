@@ -4,7 +4,6 @@
   "id": "expressionTermIdentifier.json#",
   "description": "Group of ids that represent where a gene is expressed, along with an order to combine for display eventually.",
   "type": "object",
-  "required": [],
   "additionalProperties": false,
   "properties": {
     "cellularComponentTermId": {
