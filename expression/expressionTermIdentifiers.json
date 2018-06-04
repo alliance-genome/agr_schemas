@@ -26,17 +26,17 @@
     "nonCellAnatomicalStructureQualifierTermId":{
     "$ref": "../globalId.json#/properties/globalId",
             "description":"cellularComponentTermId, nonCellAnatomicalSubStructureTermId, and spatialTermId are mutually exclusive.  spatialTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
-            "dependencies": "[{"required":"nonCellAnatomicalStructureTermId"}]"
+            "dependencies": [{"required":"nonCellAnatomicalStructureTermId"}]
     },
     "nonCellAnatomicalSubStructureTermId":{
             "$ref": "../globalId.json#/properties/globalId",
             "description": "This anatomical substructure is a part of the nonCellAnatomicalStructureTermId.  It can only exist if nonCellAnatomicalStructureTermId is populated.",
-	    "dependencies": "[{"required":"nonCellAnatomicalStructureTermId"}]"
+	    "dependencies": [{"required":"nonCellAnatomicalStructureTermId"}]
     },
     "nonCellAnatomicalSubStructureQualifierTermId":{
             "$ref": "../globalId.json#/properties/globalId",
             "description":"cellularComponentTermId, nonCellAnatomicalSubStructureTermId, and spatialTermId are mutually exclusive.  spatialTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
-	    "dependencies":" [{"required":"nonCellAnatomicalSubStructureTermId","required":"nonCellAnatomicalStructureTermId"}]"
+	    "dependencies":" [{"required":"nonCellAnatomicalSubStructureTermId","required":"nonCellAnatomicalStructureTermId"}]
     },
   "anyOf": [{"required": ["nonCellAnatomicalStructureTermId"]},{"required": ["cellularComponentTermId"]},{"required":["cellType"]}]
 }
