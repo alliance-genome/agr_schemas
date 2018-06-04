@@ -9,7 +9,7 @@
   "properties": {
     "cellularComponentTermId": {
     	    "$ref": "../globalId.json#/properties/globalId",
-	    "description":"the id that represents a part, or the entire, expression statement - an ontology id."    
+	    "description": "the id that represents a part, or the entire, expression statement - an ontology id."   
     },
     "biologicalProcessQualifierTermId":{
             "$ref": "../globalId.json#/properties/globalId",
@@ -17,7 +17,7 @@
     },
     "cellType":{
             "$ref": "../globalId.json#/properties/globalId",
-            "description":"
+            "description":""
     },
     "nonCellAnatomicalStructureTermId":{
             "$ref": "../globalId.json#/properties/globalId",
@@ -26,17 +26,17 @@
     "nonCellAnatomicalStructureQualifierTermId":{
     "$ref": "../globalId.json#/properties/globalId",
             "description":"cellularComponentTermId, nonCellAnatomicalSubStructureTermId, and spatialTermId are mutually exclusive.  spatialTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
-            "dependencies":" [{"required":"nonCellAnatomicalStructureTermId"}]"
+            "dependencies": "[{"required":"nonCellAnatomicalStructureTermId"}]"
     },
     "nonCellAnatomicalSubStructureTermId":{
             "$ref": "../globalId.json#/properties/globalId",
             "description": "This anatomical substructure is a part of the nonCellAnatomicalStructureTermId.  It can only exist if nonCellAnatomicalStructureTermId is populated.",
-	    "dependencies": [{"required":"nonCellAnatomicalStructureTermId"}]"
+	    "dependencies": "[{"required":"nonCellAnatomicalStructureTermId"}]"
     },
     "nonCellAnatomicalSubStructureQualifierTermId":{
             "$ref": "../globalId.json#/properties/globalId",
             "description":"cellularComponentTermId, nonCellAnatomicalSubStructureTermId, and spatialTermId are mutually exclusive.  spatialTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
-	    "dependencies":" [{"required":"nonCellAnatomicalSubStructureTermId"}]"
+	    "dependencies":" [{"required":"nonCellAnatomicalSubStructureTermId","required":"nonCellAnatomicalStructureTermId"}]"
     },
-  "anyOf": [{"required": ["nonCellAnatomicalStructureTermId"]},{"required": ["cellularComponentTermId"]}]
+  "anyOf": [{"required": ["nonCellAnatomicalStructureTermId"]},{"required": ["cellularComponentTermId"]},{"required":["cellType"]}]
 }
