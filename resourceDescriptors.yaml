@@ -107,6 +107,8 @@
       url: https://zfin.org/
     - name: disease
       url: https://zfin.org/[%s]
+    - name: figure
+      url: https://zfin.org/[%s]
  
 #
 # FlyBase
