@@ -27,6 +27,8 @@
       url: http://www.informatics.jax.org/
     - name: disease
       url: http://www.informatics.jax.org/disease/MGI:[%s]
+    - name: gene/expression/annotation
+      url:
 
 #
 # MGI - old style IDs
