@@ -4,10 +4,8 @@
       "objectId": "ZFIN:ZDB-GENE-050913-20",
       "whereExpressedStatement": "neurectoderm ; posterior region",
       "evidence": {
-        "publication" : {
-          "modPublicationId" : "ZFIN:ZDB-PUB-120125-37",
-          "pubMedId" : "PMID:22265871"
-        }
+        "pubModId" : "ZFIN:ZDB-PUB-120125-37",
+        "pubMedId" : "PMID:22265871"
       },
       "stage": "ZFS:0000020",
       "assay":"MMO:0000098",
