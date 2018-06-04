@@ -40,7 +40,7 @@
             "$ref": "../globalId.json#/properties/globalId",
             "description":"cellularComponentTermId, anatomicalSubStructureTermId, and spatialTermId are mutually exclusive.  spatialTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
 	    "dependencies":" [{"required":["anatomicalSubStructureTermId","anatomicalStructureTermId"]}]
-    },
-    "anyOf": [{"required": ["anatomicalStructureTermId"]},{"required": ["cellularComponentTermId"]},{"required":["cellType"]} ] 
-  }
+    }
+  },
+  "anyOf": [{"required": ["anatomicalStructureTermId"]},{"required": ["cellularComponentTermId"]},{"required":["cellType"]} ] 
 }
