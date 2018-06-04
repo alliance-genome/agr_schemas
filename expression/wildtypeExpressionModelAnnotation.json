@@ -43,6 +43,10 @@
       "type": "string",
       "format": "date-time",
       "description": "Date this entity was assigned in it's primary data source."
-    }
+    },
+    "crossReference": {
+      "description":"a link back to the MOD for this particular annotation for this gene - using the gnee id as the accession number",
+      "$ref" : "../crossReference.json#"
+     },
   }
 }
