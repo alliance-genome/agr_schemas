@@ -34,7 +34,7 @@
     "wildtypeExpressionTermIdentifiers": {
       "$ref": "expressionTermIdentifiers.json",
       "description":"a collection of terms that when used together represent the 'where expressed' piece of an expression annotation."
-    }
+    },
     "assay": {
       "$ref": "../globalId.json#/properties/globalId",
       "description":"the ECO (ontology) id that represents the assay type of the expression, ie: in-situ."
