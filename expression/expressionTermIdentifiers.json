@@ -36,7 +36,7 @@
     "nonCellAnatomicalSubStructureQualifierTermId":{
             "$ref": "../globalId.json#/properties/globalId",
             "description":"cellularComponentTermId, nonCellAnatomicalSubStructureTermId, and spatialTermId are mutually exclusive.  spatialTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
-	    "dependencies":" [{"required":"nonCellAnatomicalSubStructureTermId"},{"required":"nonCellAnatomicalStructureTermId"}]
+	    "dependencies":" [{"required":"nonCellAnatomicalSubStructureTermId","nonCellAnatomicalStructureTermId"}]
     },
-  "anyOf": [{"required": ["nonCellAnatomicalStructureTermId"]},{"required": ["cellularComponentTermId"]},{"required":["cellType"]}]
+  "anyOf": [{"required": ["nonCellAnatomicalStructureTermId"]},{"required": ["cellularComponentTermId"]},{"required":["cellType"]} ]
 }
