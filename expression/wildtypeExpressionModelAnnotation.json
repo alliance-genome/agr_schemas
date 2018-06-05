@@ -37,7 +37,7 @@
     },
     "assay": {
       "$ref": "../globalId.json#/properties/globalId",
-      "description":"the ECO (ontology) id that represents the assay type of the expression, ie: in-situ."
+      "description":"the MMO (ontology) id that represents the assay type of the expression, ie: in-situ."
     },
     "dateAssigned": {
       "type": "string",
