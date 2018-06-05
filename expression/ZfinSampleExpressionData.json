@@ -8,7 +8,7 @@
         "pubMedId" : "PMID:22265871"
       },
       "stage": "ZFS:0000020",
-      "assay":"MMO:0000098",
+      "assay":"MMO:0000658",
       "wildtypeExpressionTermIdentifiers": {
         "anatomicalStructureTermId":"ZFA:0001120",
         "anatomicalStructureQualifierTermId":"BSPO:0000072"
