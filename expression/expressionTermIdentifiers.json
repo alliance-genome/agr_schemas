@@ -12,7 +12,8 @@
     },
     "cellularComponentQualifierTermId":{
             "$ref": "../globalId.json#/properties/globalId",
-    	    "description":"Only valid in combination with a value in the Cellular Component column. The cellular component qualifier column is derived from column 16 of a GO annotation when groups port GO CC annotations using GO extensions over to expression annotations.  There is an implicit "exists_during" relationship between columns C and D."
+    	    "description":"Only valid in combination with a value in the Cellular Component column. The cellular component qualifier column is derived from column 16 of a GO annotation when groups port GO CC annotations using GO extensions over to expression annotations.  There is an implicit "exists_during" relationship between columns C and D.",
+	    "dependencies": [{"required":"cellularComponentTermId"}]
     },
     "anatomicalStructureTermId":{
             "$ref": "../globalId.json#/properties/globalId",
@@ -34,5 +35,5 @@
 	    "dependencies": [{"required":"anatomicalSubStructureTermId"}]
     }
   },
-  "anyOf": [{"required": ["anatomicalStructureTermId"]},{"required": ["cellularComponentTermId"]},{"required":["cellType"]} ] 
+  "anyOf": [{"required": ["anatomicalStructureTermId"]},{"required": ["cellularComponentTermId"]}] 
 }
