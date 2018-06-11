@@ -27,7 +27,7 @@
       "description":"the id that represents the stage of the expression annotation - for groups with no stage, the value of 'N/A' should be used instead."
     },
     "wildtypeExpressionTermIdentifiers": {
-      "$ref": "expressionTermIdentifiers.json",
+      "$ref": "wildtypeExpressionTermIdentifiers.json",
       "description":"a collection of terms that when used together represent the 'where expressed' piece of an expression annotation."
     },
     "assay": {
