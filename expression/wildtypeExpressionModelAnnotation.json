@@ -16,12 +16,7 @@
   "properties": {
     "geneId": {
       "$ref" : "../globalId.json#/properties/globalId",
-      "description": "The ID to which the wildtypeExpression ontology term(s) is applied. For this submission,
-      these will be genes."
-    },
-    "whereExpressedStatement": {
-     "type": "string",
-     "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the whereExpressedTermIdentifiers collection, used as a convenience to reduce code duplication."
+      "description": "The ID to which the wildtypeExpression ontology term(s) is applied. For this submission, these will be genes."
     },
     "evidence": {
       "$ref": "../publicationRef.json#",
