@@ -33,6 +33,10 @@
             "$ref": "../globalId.json#/properties/globalId",
             "description":"cellularComponentTermId, anatomicalSubStructureTermId, and spatialTermId are mutually exclusive.  spatialTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
 	    "dependencies": [{"required":"anatomicalSubStructureTermId"}]
+    },
+    "whereExpressedStatement": {
+     "type": "string",
+     "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the whereExpressedTermIdentifiers collection, used as a convenience to reduce code duplication."
     }
   },
   "anyOf": [{"required": ["anatomicalStructureTermId"]},{"required": ["cellularComponentTermId"]}] 
