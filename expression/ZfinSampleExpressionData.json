@@ -7,23 +7,25 @@
         "pubMedId" : "PMID:22265871"
       },
       "whenExpressedStage": "ZFS:0000020",
+      "assay":"MMO:0000658",
       "wildtypeExpressionTermIdentifiers": {
-        "anatomicalStructureTermId":"ZFA:0001120",
-        "anatomicalStructureQualifierTermId":"BSPO:0000072",
-        "whereExpressedStatement": "neurectoderm ; posterior region",
+        "anatomicalStructureTermId": "ZFA:0001120",
+        "anatomicalStructureQualifierTermId": "BSPO:0000072",
+        "whereExpressedStatement": "neurectoderm posterior region"
       },
-      "assay":"MMO:0000098",
+      "assay": "MMO:0000098",
       "dateAssigned": "2017-06-22T13:27:43-04:00",
       "crossReference": {
-        "id":"ZFIN:ZDB-FIG-120405-58","pages":["figure"]
+        "id": "ZFIN:ZDB-FIG-120405-58",
+        "pages": [ "figure" ]
       }
     }
   ],
   "metaData": {
     "dataProvider": [ {
         "crossReference": {
-                "id":"ZFIN",
-                "pages": ["homepage"]
+                "id": "ZFIN",
+                "pages": [ "homepage" ]
         },
         "type": "curated"
     } ],
