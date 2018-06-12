@@ -1,18 +1,18 @@
 {
   "data": [
     {
-      "objectId": "ZFIN:ZDB-GENE-050913-20",
-      "whereExpressedStatement": "neurectoderm ; posterior region",
+      "geneId": "ZFIN:ZDB-GENE-050913-20",
       "evidence": {
         "modPublicationId" : "ZFIN:ZDB-PUB-120125-37",
         "pubMedId" : "PMID:22265871"
       },
-      "stage": "ZFS:0000020",
-      "assay":"MMO:0000098",
+      "whenExpressedStage": "ZFS:0000020",
       "wildtypeExpressionTermIdentifiers": {
         "anatomicalStructureTermId":"ZFA:0001120",
-        "anatomicalStructureQualifierTermId":"BSPO:0000072"
+        "anatomicalStructureQualifierTermId":"BSPO:0000072",
+        "whereExpressedStatement": "neurectoderm ; posterior region",
       },
+      "assay":"MMO:0000098",
       "dateAssigned": "2017-06-22T13:27:43-04:00",
       "crossReference": {
         "id":"ZFIN:ZDB-FIG-120405-58","pages":["figure"]
