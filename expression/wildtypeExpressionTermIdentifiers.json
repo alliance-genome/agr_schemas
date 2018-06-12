@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Global IDs",
-  "id": "expressionTermIdentifier.json#",
+  "id": "wildtypeExpressionTermIdentifiers.json#",
   "description": "Group of ids that represent where a gene is expressed.",
   "type": "object",
   "additionalProperties": false,
