@@ -9,8 +9,7 @@
     "dateAssigned",
     "wildtypeExpressionTermIdentifiers",
     "stage",
-    "assay",
-    "whereExpressedStatement"
+    "assay"
   ],
   "additionalProperties": false,
   "properties": {
