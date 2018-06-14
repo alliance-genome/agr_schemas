@@ -154,7 +154,7 @@
     - name: gene/references
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
     - name: gene/spell
-      url: http://spell.caltech.edu:3000/search/show_listing?search_string=[%s]
+      url: http://spell.caltech.edu:3000/search/show_results?search_string=[%s]
     - name: gene/expression/annotation/detail
       url: https://www.wormbase.org/species/all/expr_pattern/[%s]
     - name: strain
