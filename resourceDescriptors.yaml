@@ -154,7 +154,9 @@
     - name: gene/references
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
     - name: gene/spell
-      url: http://spell.caltech.edu:3000/search/show_listing?search_string=[%s]
+      url: http://spell.caltech.edu:3000/search/show_results?search_string=[%s]
+    - name: gene/expression/annotation/detail
+      url: https://www.wormbase.org/species/all/expr_pattern/[%s]
     - name: strain
       url: http://www.wormbase.org/db/get?name=[%s];class=Strain
     - name: reference
@@ -163,8 +165,6 @@
       url: https://www.wormbase.org/db/get?name=[%s];class=Transgene
     - name: allele
       url: https://www.wormbase.org/db/get?name=[%s];class=Variation
-    - name: figure
-      url: https://www.wormbase.org/resources/picture/[%s]/widget/lightbox
     - name: homepage
       url: https://www.wormbase.org/
     - name: disease
