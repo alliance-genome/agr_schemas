@@ -109,6 +109,8 @@
       url: https://zfin.org/[%s]
     - name: figure
       url: https://zfin.org/[%s]
+    - name: gene/expression/annotation/detail
+      url: https://zfin.org/[%s]
  
 #
 # FlyBase
