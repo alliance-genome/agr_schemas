@@ -27,6 +27,10 @@
       url: http://www.informatics.jax.org/
     - name: disease
       url: http://www.informatics.jax.org/disease/MGI:[%s]
+    - name: gene/synopsis
+      url: 
+    - name: gene/expression/annotation
+      url:
 
 #
 # MGI - old style IDs
@@ -103,6 +107,8 @@
       url: https://zfin.org/
     - name: disease
       url: https://zfin.org/[%s]
+    - name: figure
+      url: https://zfin.org/[%s]
  
 #
 # FlyBase
@@ -136,63 +142,39 @@
 - db_prefix: WB
   name: WormBase genes
   example_gid: WB:WBGene00000064
-  gid_pattern: "^WB:WB\\w+$"
-  default_url: http://www.wormbase.org/db/get?name=[%s];class=Gene
+  gid_pattern: "^WB:\\w+$"
+  default_url: https://www.wormbase.org/get?name=[%s]
   pages:
     - name: gene
-      url: http://www.wormbase.org/db/get?name=[%s];class=Gene
+      url: https://www.wormbase.org/db/get?name=[%s];class=Gene
     - name: gene/expression
-      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
+      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
     - name: gene/interactions
-      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
+      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
     - name: gene/references
-      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
-    - name: homepage
-      url: http://www.wormbase.org/
-    - name: disease
-      url: http://www.wormbase.org/resources/disease/[%s]
-
-- db_prefix: WBRef
-  name: WormBase references
-  example_gid: WBRef:WBPaper00050597
-  gid_pattern: "^WBRef:WBPaper\\d+$"
-  default_url: http://www.wormbase.org/db/get?name=[%s];class=Paper
-  pages:
-    - name: reference
-      url: http://www.wormbase.org/db/get?name=[%s];class=Paper
-
-- db_prefix: WBVar
-  name: WormBase variations
-  example_gid: WBVar:WBVar00000001
-  gid_pattern: "^WBVar:WBVar\\d+$"
-  default_url: http://www.wormbase.org/db/get?name=[%s];class=Variation
-  pages:
-    - name: allele
-      url: http://www.wormbase.org/db/get?name=[%s];class=Variation
-
-- db_prefix: WBStrain
-  name: WormBase strains
-  example_gid: WBStrain:N2
-  gid_pattern: "^WBStrain:\\S+$"
-  default_url: http://www.wormbase.org/db/get?name=[%s];class=Strain
-  pages:
+      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
+    - name: gene/spell
+      url: http://spell.caltech.edu:3000/search/show_results?search_string=[%s]
+    - name: gene/expression/annotation/detail
+      url: https://www.wormbase.org/species/all/expr_pattern/[%s]
     - name: strain
       url: http://www.wormbase.org/db/get?name=[%s];class=Strain
-
-- db_prefix: WBTransgene
-  name: WormBase Transgenes
-  example_gid: WBTransgene:xxxxxx
-  gid_pattern: "^WBTransgene:\\S+$"
-  default_url: http://www.wormbase.org/db/get?name=[%s];class=Transgene
-  pages:
-    - name: transgene  
-      url: http://www.wormbase.org/db/get?name=[%s];class=Transgene
+    - name: reference
+      url: https://www.wormbase.org/db/get?name=[%s];class=Paper
+    - name: transgene
+      url: https://www.wormbase.org/db/get?name=[%s];class=Transgene
+    - name: allele
+      url: https://www.wormbase.org/db/get?name=[%s];class=Variation
+    - name: homepage
+      url: https://www.wormbase.org/
+    - name: disease
+      url: https://www.wormbase.org/resources/disease/[%s]
 
 - db_prefix: WBls
   name: WormBase life-stage Ontology
   example_gid: WBls:0000001
   gid_pattern: "^WBls:\\d+$"
-  default_url: http://www.wormbase.org/db/get?name=WBls:[%s];class=Life_stage
+  default_url: https://www.wormbase.org/db/get?name=WBls:[%s];class=Life_stage
   pages:
     - name: ontology_term
       url: http://www.wormbase.org/db/get?name=WBls:[%s];class=Life_stage
@@ -201,7 +183,7 @@
   name: WormBase anatomy Ontology
   example_gid: WBbt:0008611
   gid_pattern: "^WBbt:\\d+$"
-  default_url: http://www.wormbase.org/db/get?name=WBbt:[%s];class=Anatomy
+  default_url: https://www.wormbase.org/db/get?name=WBbt:[%s];class=Anatomy
   pages:
     - name: ontology_term
       url: http://www.wormbase.org/db/get?name=WBbt:[%s];class=Anatomy
@@ -210,19 +192,10 @@
   name: WormBase Phenotype Ontology
   example_gid: WBPhenotype:0000517
   gid_pattern: "^WBPhenotype:\\d+$"
-  default_url: http://www.wormbase.org/db/get?name=WBPhenotype:[%s];class=Phenotype
+  default_url: https://www.wormbase.org/db/get?name=WBPhenotype:[%s];class=Phenotype
   pages:
     - name: ontology_term
       url: http://www.wormbase.org/db/get?name=WBPhenotype:[%s];class=Phenotype
-
-- db_prefix: WB_SPELL
-  name: WormBase SPELL
-  example_gid: WB_SPELL:eat-4
-  gid_pattern: "^WB_SPELL:\\w+$"
-  default_url: 
-  pages:
-    - name: gene/spell
-      url: http://spell.caltech.edu:3000/search/show_listing?search_string=[%s]
 
 
 #
