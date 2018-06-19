@@ -9,7 +9,8 @@
     "dateAssigned",
     "whenExpressedStage",
     "assay",
-    "evidence"
+    "evidence",
+    "wildtypeExpressionTermIdentifiers"
   ],
   "additionalProperties": false,
   "properties": {
