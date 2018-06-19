@@ -14,6 +14,7 @@ script:
   - "python agr_validate.py -s allele/alleleMetaData.json -d allele/zfinSample.allele.json"
   - "python agr_validate.py -s disease/diseaseMetaDataDefinition.json -d disease/ZfinSample.json"
   - "python agr_validate.py -s phenotype/phenotypeMetaDataDefinition.json -d phenotype/zfinSample.phenotype.json"
+  - "python agr_validate.py -s expression/expressionMetaDataDefinition.json -d expression/ZfinSampleExpressionData.json"
   - "python validate_yaml.py -d resourceDescriptors.yaml"
 # whitelist
 branches:
