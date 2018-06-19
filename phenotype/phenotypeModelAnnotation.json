@@ -26,13 +26,9 @@
      "type": "string",
      "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the phenotypeTermIdentifiers collection."
     },
-    "pubModId": {
-      "$ref" : "../globalId.json#/properties/globalId",
-      "description" : "The optional pubModId for the species of the gene entity."
-    },
-    "pubMedId": {
-      "$ref" : "../globalId.json#/properties/globalId",
-      "description" : "The optional pubMedId for the species of the gene entity."    
+    "evidence": {
+      "$ref": "../publicationRef.json#",
+      "description": "one publication for which the annotation was made"
     },
     "dateAssigned": {
       "type": "string",
