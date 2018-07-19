@@ -23,7 +23,7 @@
       "description": "one publication for which the annotation was made"
     },
     "whenExpressedStage": {
-      "$ref": "../globalId.json#/properties/globalId",
+      "type": "string",
       "description":"the id that represents the stage of the expression annotation - for groups with no stage, the value of 'N/A' should be used instead."
     },
     "wildtypeExpressionTermIdentifiers": {
