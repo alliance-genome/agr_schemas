@@ -66,6 +66,14 @@
     "confidence": {
       "enum":["moderate","high","low"],
       "description":"Confidence of orthology match."
+    },
+    "moderateFilter": {
+      "type" : "boolean",
+      "description": "Indicates whether this orthology match is displayed when the moderate filter is selected."
+    },
+    "strictFilter": {
+      "type" : "boolean",
+      "description": "Indicates whether this orthology match is displayed when the strict filter is selected."
     }
   }
 }
