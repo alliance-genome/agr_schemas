@@ -10,6 +10,14 @@
     	    "$ref": "../globalId.json#/properties/globalId",
 	    "description": "the id that represents a part, or the entire, expression statement - an ontology id."   
     },
+    "cellularComponentUberonTerms":{
+	"type": "array",
+     	"items": {
+              	 "$ref" : "../globalId.json#/properties/globalId",
+		 "description" : "the set of ribbon terms in uberon, that the cellularComponent in this annotation."
+        }
+     },
+     "description":"For most MODs, this will be a single term identifying the phenotype annotation.  For ZFIN, this will be a list, representing a post-composed phenotype annotation."},
     "cellularComponentQualifierTermId":{
             "$ref": "../globalId.json#/properties/globalId",
 	    "dependencies": [{"required":"cellularComponentTermId"}]
@@ -18,6 +26,13 @@
             "$ref": "../globalId.json#/properties/globalId",
             "description":"This is an anatomical structure, not a cell type.  The anatomical structure identified here contains the cell optionally identified in the cellularComponentTermId."
     },
+    "anatomcialStructureUberonTermIds":{ 
+    	"type": "array",
+        "items": {
+                 "$ref" : "../globalId.json#/properties/globalId",
+                 "description" : "the set of ribbon terms in uberon, that the anatomicalStructure in this annotation."
+		 }
+},
     "anatomicalStructureQualifierTermId":{
     	   "$ref": "../globalId.json#/properties/globalId",
             "description":"cellularComponentTermId, nonCellAnatomicalSubStructureTermId, and spatialTermId are mutually exclusive.  spatialTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
@@ -28,6 +43,13 @@
             "description": "This anatomical substructure is a part of the nonCellAnatomicalStructureTermId.  It can only exist if nonCellAnatomicalStructureTermId is populated.",
 	    "dependencies": [{"required":"anatomicalStructureTermId"}]
     },
+    "anatomicalSubStructureUberonTermIds":{
+		"type": "array",
+        	"items": {
+                 	 "$ref" : "../globalId.json#/properties/globalId",
+                 	 "description" : "the set of ribbon terms in uberon, that the anatomicalSubStructure in this annotation."
+		 }
+},
     "anatomicalSubStructureQualifierTermId":{
             "$ref": "../globalId.json#/properties/globalId",
             "description":"cellularComponentTermId, anatomicalSubStructureTermId, and spatialTermId are mutually exclusive.  spatialTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
