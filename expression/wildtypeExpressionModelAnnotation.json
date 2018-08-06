@@ -29,10 +29,13 @@
     "stageUberonTerms": {
         "type": "array",
         "items": {
-                 "$ref" : "../globalId.json#/properties/globalId",
-                 "description" : "the set of ribbon terms in uberon, that the stages in this annotation can be rolled up to."
-        }
-     },
+                 "type": "string",
+                 "enum": ["UBERON:0000068",
+		 	  "UBERON:0000113",
+			  "Other"]
+         },
+         "description" : "the ribbon term in uberon, that the anatomicalStructure in this annotation."
+    },
     "wildtypeExpressionTermIdentifiers": {
       "$ref": "wildtypeExpressionTermIdentifiers.json",
       "description":"a collection of terms that when used together represent the 'where expressed' piece of an expression annotation."
