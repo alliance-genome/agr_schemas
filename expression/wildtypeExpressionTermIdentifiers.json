@@ -43,7 +43,6 @@
 	"items": {
 		 "type": "string",
 		 "enum": ["UBERON:0016490",
-			  "UBERON:0004535",
 			  "UBERON:0001007",
 			  "UBERON:0000949",
 			  "UBERON:0001008",
@@ -59,6 +58,7 @@
 			  "UBERON:0001004",
 			  "UBERON:0001032",
 			  "UBERON:0002104",
+			  "UBERON:0001009",
 			  "UBERON:0000924",
 			  "UBERON:0000925",
 			  "UBERON:0000926",
@@ -87,7 +87,6 @@
         "items": {
                  "type": "string",
                  "enum": ["UBERON:0016490",
-                          "UBERON:0004535",
                           "UBERON:0001007",
                           "UBERON:0000949",
                           "UBERON:0001008",
@@ -96,6 +95,7 @@
                           "UBERON:0002416",
                           "UBERON:0002423",
                           "UBERON:0002204",
+			  "UBERON:0001009",
                           "UBERON:0001016",
                           "UBERON:0005726",
                           "UBERON:0007037",
