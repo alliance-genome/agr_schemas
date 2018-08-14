@@ -6,7 +6,8 @@
         "modPublicationId" : "ZFIN:ZDB-PUB-120125-37",
         "pubMedId" : "PMID:22265871"
       },
-      "whenExpressedStage": "ZFS:0000020",
+      "whenExpressedStageName": "Gastrula:50%-epiboly",
+      "whenExpressedStageTermId": "ZFS:0000020",
       "stageUberonTerms":["UBERON:0000068"],
       "assay": "MMO:0000658",
       "dateAssigned": "2017-06-22T13:27:43-04:00",
