@@ -7,7 +7,7 @@
   "required": [
     "geneId",
     "dateAssigned",
-    "whenExpressedStage",
+    "whenExpressedStageName",
     "assay",
     "evidence",
     "wildtypeExpressionTermIdentifiers"
@@ -22,10 +22,11 @@
       "$ref": "../publicationRef.json#",
       "description": "one publication for which the annotation was made"
     },
-    "whenExpressedStage": {
+    "whenExpressedStageName": {
       "type": "string",
       "description":"the id that represents the stage of the expression annotation - for groups with no stage, the value of 'N/A' should be used instead."
     },
+    "whenExpressedStageTermId":{"$ref": "../globalId.json#/properties/globalId"},
     "stageUberonTerms": {
         "type": "array",
         "items": {
