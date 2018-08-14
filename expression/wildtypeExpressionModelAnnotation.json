@@ -10,7 +10,9 @@
     "whenExpressedStageName",
     "assay",
     "evidence",
-    "wildtypeExpressionTermIdentifiers"
+    "wildtypeExpressionTermIdentifiers",
+    "whenExpressedStageName",
+    "stageUberonTerms"
   ],
   "additionalProperties": false,
   "properties": {
