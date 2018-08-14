@@ -126,5 +126,5 @@
      	    "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the whereExpressedTermIdentifiers collection, used as a convenience to reduce code duplication."
     }
   },
-  "anyOf": [{"required": ["anatomicalStructureTermId","anatomcialStructureUberonTermIds"]},{"required": ["cellularComponentTermId","cellularComponentAgrSlimTerms"]}] 
+  "anyOf": [{"required": ["anatomicalStructureTermId", "anatomcialStructureUberonTermIds"]},{"required": ["cellularComponentTermId","cellularComponentAgrSlimTerms"]}] 
 }
