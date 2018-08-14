@@ -13,11 +13,8 @@
       "description": "Date this entity was dumped from it's primary data source."
     },
     "dataProvider": {
-        "type": "array",
-	"items": {
-	    "$ref": "dataProvider.json#"
-	},
-      	"description": "source of data, can be multiple of these, each with a type and a crossReference"
+        "$ref": "dataProvider.json#",
+      	"description": "source of data: just one of these per data file."
     },
     "release": {
       "type": "string",

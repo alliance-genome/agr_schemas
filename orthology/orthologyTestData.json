@@ -27085,7 +27085,7 @@
     }
   ],
   "metaData": {
-    "dataProvider": [
+    "dataProvider":
       {
         "crossReference": {
           "id": "DRSC",
@@ -27094,8 +27094,7 @@
           ]
         },
         "type": "curated"
-      }
-    ],
+      },
     "dateProduced": "2018-07-27T11:25:18-04:00",
     "release": "7.0"
   }

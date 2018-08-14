@@ -84,13 +84,13 @@
       }
    ],
   "metaData": {
-    "dataProvider": [ {
+    "dataProvider":  {
         "crossReference": {
                 "id":"WB",
                 "pages": ["homepage"]
         },
         "type": "curated"
-    } ],
+    } ,
     "dateProduced": "2017-06-22T13:27:43-04:00",
     "release": "WS259"
   }

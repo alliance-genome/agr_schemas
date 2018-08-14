@@ -10,6 +10,26 @@
     	    "$ref": "../globalId.json#/properties/globalId",
 	    "description": "the id that represents a part, or the entire, expression statement - an ontology id."   
     },
+    "cellularComponentAgrSlimTerms":{
+	"type": "array",
+	"items": {
+		 "type":"string",
+		 "enum": ["GO:0005576",
+		 	  "GO:0005737",
+			  "GO:0005856",
+			  "GO:0005739",
+			  "GO:0005634",
+			  "GO:0005694",
+			  "GO:0016020",
+			  "GO:0031982",
+			  "GO:0071944",
+			  "GO:0030054",
+			  "GO:0042995",
+			  "GO:0032991",
+			  "GO:0045202",
+			  "GO:0005575"]
+	}
+     },
     "cellularComponentQualifierTermId":{
             "$ref": "../globalId.json#/properties/globalId",
 	    "dependencies": [{"required":"cellularComponentTermId"}]
@@ -17,6 +37,40 @@
     "anatomicalStructureTermId":{
             "$ref": "../globalId.json#/properties/globalId",
             "description":"This is an anatomical structure, not a cell type.  The anatomical structure identified here contains the cell optionally identified in the cellularComponentTermId."
+    },
+    "anatomcialStructureUberonTermIds":{
+	"type": "array",
+	"items": {
+		 "type": "string",
+		 "enum": ["UBERON:0016490",
+			  "UBERON:0001007",
+			  "UBERON:0000949",
+			  "UBERON:0001008",
+			  "UBERON:0002330",
+			  "UBERON:0002193",
+			  "UBERON:0002416",
+			  "UBERON:0002423",
+			  "UBERON:0002204",
+			  "UBERON:0001016",
+			  "UBERON:0005726",
+			  "UBERON:0007037",
+			  "UBERON:0000990",
+			  "UBERON:0001004",
+			  "UBERON:0001032",
+			  "UBERON:0002104",
+			  "UBERON:0001009",
+			  "UBERON:0000924",
+			  "UBERON:0000925",
+			  "UBERON:0000926",
+			  "UBERON:0003104",
+			  "UBERON:0001013",
+			  "UBERON:0000026",
+			  "UBERON:0005292",
+			  "UBERON:6005023",
+			  "UBERON:0002539", "Other"]
+          ,
+          "description" : "the ribbon term in uberon, that the anatomicalStructure in this annotation."
+        }
     },
     "anatomicalStructureQualifierTermId":{
     	   "$ref": "../globalId.json#/properties/globalId",
@@ -28,6 +82,40 @@
             "description": "This anatomical substructure is a part of the nonCellAnatomicalStructureTermId.  It can only exist if nonCellAnatomicalStructureTermId is populated.",
 	    "dependencies": [{"required":"anatomicalStructureTermId"}]
     },
+    "anatomicalSubStructureUberonTermIds":{
+        "type": "array",
+        "items": {
+                 "type": "string",
+                 "enum": ["UBERON:0016490",
+                          "UBERON:0001007",
+                          "UBERON:0000949",
+                          "UBERON:0001008",
+                          "UBERON:0002330",
+                          "UBERON:0002193",
+                          "UBERON:0002416",
+                          "UBERON:0002423",
+                          "UBERON:0002204",
+			  "UBERON:0001009",
+                          "UBERON:0001016",
+                          "UBERON:0005726",
+                          "UBERON:0007037",
+                          "UBERON:0000990",
+                          "UBERON:0001004",
+                          "UBERON:0001032",
+                          "UBERON:0002104",
+                          "UBERON:0000924",
+                          "UBERON:0000925",
+                          "UBERON:0000926",
+                          "UBERON:0003104",
+                          "UBERON:0001013",
+                          "UBERON:0000026",
+                          "UBERON:0005292",
+                          "UBERON:6005023",
+                          "UBERON:0002539", "Other"]
+          ,
+          "description" : "the ribbon term in uberon, that the anatomicalStructure in this annotation."
+        }
+    },
     "anatomicalSubStructureQualifierTermId":{
             "$ref": "../globalId.json#/properties/globalId",
             "description":"cellularComponentTermId, anatomicalSubStructureTermId, and spatialTermId are mutually exclusive.  spatialTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
@@ -38,5 +126,5 @@
      	    "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the whereExpressedTermIdentifiers collection, used as a convenience to reduce code duplication."
     }
   },
-  "anyOf": [{"required": ["anatomicalStructureTermId"]},{"required": ["cellularComponentTermId"]}] 
+  "anyOf": [{"required": ["anatomicalStructureTermId", "anatomcialStructureUberonTermIds"]},{"required": ["cellularComponentTermId","cellularComponentAgrSlimTerms"]}] 
 }
