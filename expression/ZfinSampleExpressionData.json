@@ -10,18 +10,21 @@
       "assay": "MMO:0000658",
       "dateAssigned": "2017-06-22T13:27:43-04:00",
       "wildtypeExpressionTermIdentifiers": {
-      	"anatomicalStructureTermId":"ZFA:0001120"
+      	"anatomicalStructureTermId":"ZFA:0001120",
+	"anatomcialStructureUberonTermIds": [
+		"UBERON:0001016"
+	]
       }
     }
   ],
   "metaData": {
-    "dataProvider": [ {
+    "dataProvider": {
         "crossReference": {
                 "id": "ZFIN",
                 "pages": [ "homepage" ]
         },
         "type": "curated"
-    } ],
+    } ,
     "dateProduced": "2017-06-22T13:27:43-04:00"
   }
 }
