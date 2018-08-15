@@ -7,16 +7,14 @@
         "pubMedId" : "PMID:22265871"
       },
       "whenExpressed": {
-          "lifeStageModName": "Gastrula:50%-epiboly",
-          "lifeStageModTermId": "ZFS:0000020",
-          "lifeStageUberonSlimTermIds": ["UBERON:0000068"]
-      }
+          "stageName": "Gastrula:50%-epiboly"
+      },
       "whereExpressed": {
-      	"anatomicalStructureModTermId":"ZFA:0001120",
-	"anatomcialStructureUberonSlimTermIds": ["UBERON:0001016"]
-      }
+      	"anatomicalStructureTermId":"ZFA:0001120",
+	"anatomcialStructureUberonSlimTermIds": [{"uberonId":"UBERON:0001016"}]
+      },
       "assay": "MMO:0000658",
-      "dateAssigned": "2017-06-22T13:27:43-04:00",
+      "dateAssigned": "2017-06-22T13:27:43-04:00"
     }
   ],
   "metaData": {

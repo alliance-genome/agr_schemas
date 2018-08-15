@@ -16,7 +16,7 @@
     },
     "anatomicalStructureTermId":{
         "$ref": "../globalId.json#/properties/globalId",
-        "description":"This is an anatomical structure, not a cell type.  The anatomical structure identified here contains the cell optionally identified in the cellularComponentTermId."
+        "description":"This is an anatomical structure, not a cell type."
     },
     "anatomcialStructureUberonSlimTermIds":{
       "type": "array",
@@ -27,7 +27,7 @@
     },
     "anatomicalStructureQualifierTermId":{
         "$ref": "../globalId.json#/properties/globalId",
-        "description":"cellularComponentTermId, nonCellAnatomicalSubStructureTermId, and spatialTermId are mutually exclusive.  spatialTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
+        "description": "anatomicalStructureQualifierTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
         "dependencies": [{"required":"anatomicalStructureTermId"}]
     },
     "anatomicalSubStructureTermId":{
@@ -52,5 +52,5 @@
       "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the whereExpressedTermIdentifiers collection, used as a convenience to reduce code duplication."
     }
   },
-  "anyOf": [{"required": ["anatomicalStructureModTermId", "anatomcialStructureUberonSlimTermIds"]},{"required": ["cellularComponentTermId"]}] 
+  "anyOf": [{"required": ["anatomicalStructureTermId", "anatomcialStructureUberonSlimTermIds"]},{"required": ["cellularComponentTermId"]}] 
 }

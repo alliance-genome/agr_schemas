@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "when Expressed Description",
-  "description": ""
+  "title": "When Expressed",
+  "description": "an object that holds the temporal aspect of an expression pattern.",
   "id": "whenExpressed.json#",
   "type": "object",
   "required": [
