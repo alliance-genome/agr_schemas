@@ -38,7 +38,7 @@
     "anatomcialSubStructureUberonSlimTermIds":{
       "type": "array",
       "items": {
-         "$ref": "uberonStructureSlimTerm.json#/properties/uberonTerm"
+         "$ref": "uberonStructureSlimTerm.json#"
       },
     "uniqueItems": true
     },
