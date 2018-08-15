@@ -7,12 +7,10 @@
   "required": [
     "geneId",
     "dateAssigned",
-    "whenExpressedStageName",
+    "whenExpressed",
     "assay",
     "evidence",
-    "wildtypeExpressionTermIdentifiers",
-    "whenExpressedStageName",
-    "stageUberonTerms"
+    "whereExpressed"
   ],
   "additionalProperties": false,
   "properties": {
@@ -24,23 +22,12 @@
       "$ref": "../publicationRef.json#",
       "description": "one publication for which the annotation was made"
     },
-    "whenExpressedStageName": {
-      "type": "string",
-      "description":"the id that represents the stage of the expression annotation - for groups with no stage, the value of 'N/A' should be used instead."
+    "whenExpressed" : {
+      "$ref": "whenExpressed.json#",
+       "description":"a collection of terms that when used together represent the 'when expressed' piece of an expression annotation."
     },
-    "whenExpressedStageTermId":{"$ref": "../globalId.json#/properties/globalId"},
-    "stageUberonTerms": {
-        "type": "array",
-        "items": {
-                 "type": "string",
-                 "enum": ["UBERON:0000068",
-		 	  "UBERON:0000113",
-			  "Other"]
-         },
-         "description" : "the ribbon term in uberon, that the anatomicalStructure in this annotation."
-    },
-    "wildtypeExpressionTermIdentifiers": {
-      "$ref": "wildtypeExpressionTermIdentifiers.json",
+    "whereExpressed": {
+      "$ref": "whereExpressed.json#",
       "description":"a collection of terms that when used together represent the 'where expressed' piece of an expression annotation."
     },
     "assay": {
@@ -53,7 +40,7 @@
       "description": "Date this entity was assigned in it's primary data source."
     },
     "crossReference": {
-      "$ref": "../crossReference.json",
+      "$ref": "../crossReference.json#",
       "description": "intended to provide a link back to the MOD to see complete details of this expression annotation. Note: the accession number in this cross reference is not limited to the gene of interest in this annotation."
     }
   }
