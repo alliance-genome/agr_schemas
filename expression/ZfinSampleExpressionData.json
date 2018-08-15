@@ -9,7 +9,7 @@
       "whenExpressed": {
           "stageName": "Gastrula:50%-epiboly",
 	  "stageTermId": "ZFS:000021",
-	  "stageUberonSlimTerm": {"uberonTerm":"UBERON:0000068"}
+	  "stageUberonSlimTerm": {"uberonId":"UBERON:0000068"}
       },
       "whereExpressed": {
       	"anatomicalStructureTermId":"ZFA:0001120",
