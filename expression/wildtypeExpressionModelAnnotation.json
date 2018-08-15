@@ -7,12 +7,10 @@
   "required": [
     "geneId",
     "dateAssigned",
-    "whenExpressedStageName",
+    "whenExpressed",
     "assay",
     "evidence",
-    "wildtypeExpressionTermIdentifiers",
-    "whenExpressedStageName",
-    "stageUberonTerms"
+    "whereExpressed"
   ],
   "additionalProperties": false,
   "properties": {
@@ -25,11 +23,11 @@
       "description": "one publication for which the annotation was made"
     },
     "whenExpressed" : {
-      "$ref": "whenExpressedDescription.json",
+      "$ref": "whenExpressed.json#",
        "description":"a collection of terms that when used together represent the 'when expressed' piece of an expression annotation."
     },
     "whereExpressed": {
-      "$ref": "whereExpressedDescription.json",
+      "$ref": "whereExpressed.json#",
       "description":"a collection of terms that when used together represent the 'where expressed' piece of an expression annotation."
     },
     "assay": {
@@ -42,7 +40,7 @@
       "description": "Date this entity was assigned in it's primary data source."
     },
     "crossReference": {
-      "$ref": "../crossReference.json",
+      "$ref": "../crossReference.json#",
       "description": "intended to provide a link back to the MOD to see complete details of this expression annotation. Note: the accession number in this cross reference is not limited to the gene of interest in this annotation."
     }
   }

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Uberon structure slim term ID eunumeration",
+  "id": "uberonStructureSlimTerm.json#",
+  "description": "Uberon ribbon term ids representing controlled set of ribbon terms for expression display.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "uberonId": {
+      "description": "",
+      "type":"string",
+      "enum": ["UBERON:0000068",
+                 "UBERON:0000113",
+                 "post embryonic, pre-adult"]
+      }
+   }
+}
