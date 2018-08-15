@@ -5,9 +5,9 @@
   "description": "Uberon ribbon term ids representing controlled set of ribbon terms",
   "type": "object",
   "additionalProperties": false,
-  "required": ["uberonId"],
+  "required": ["uberonTerm"],
   "properties": {
-    "uberonId": {
+    "uberonTerm": {
       "enum": ["UBERON:0000068","UBERON:0000113","post embryonic, pre-adult"]
       }
    }
