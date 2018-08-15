@@ -249,6 +249,9 @@
   example_gid: NCBI_Gene:33432
   gid_pattern: "^NCBI_Gene:\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/gene/[%s]
+  pages:
+  - name: interaction
+    url: https://www.ncbi.nlm.nih.gov/gene/[%s]
 
 - db_prefix: UniProtKB
   name: UniProtKB
@@ -332,3 +335,41 @@
       url: https://www.omim.org/
     - name: gene
       url: https://www.omim.org/entry[%s]
+    - name: genes/interaction
+      url: https://www.omim.org/entry[%s]
+
+- db_prefix: DIP
+  name: Database of Interacting Proteins
+  example_id: DIP:DIP-88423E
+  gid_pattern: "^DIP:\\w+$"
+  default_url: http://dip.mbi.ucla.edu/dip/record?ac=[%s]
+  pages:
+    - name: genes/interaction
+      url: http://dip.mbi.ucla.edu/dip/record?ac=[%s]
+
+- db_prefix: EMD
+  name: Electron Microscopy Data Bank
+  example_id: EMD:EMD-1191
+  gid_pattern: "^EMD:\\w+$"
+  default_url: http://www.ebi.ac.uk/pdbe/entry/emdb/[%s]
+  pages:
+  - name: genes/interaction
+    url: http://www.ebi.ac.uk/pdbe/entry/emdb/[%s]
+
+- db_prefix: IMEX
+  name: The International Molecular Exchange Consortium
+  example_id: IMEX:IM-10766-6
+  gid_pattern: "^IMEX:\\w+$"
+  default_url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
+  pages:
+  - name: genes/interaction
+    url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
+
+  - db_prefix: INTACT
+  name: IntAct Molecular Interaction Database
+  example_id: INTACT:EBI-1000008
+  gid_pattern: "^INTACT:\\w+$"
+  default_url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
+  pages:
+  - name: genes/interaction
+    url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
