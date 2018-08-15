@@ -19,12 +19,12 @@
         "description":"This is an anatomical structure, not a cell type."
     },
     "anatomcialStructureUberonSlimTermIds":{
-      "type": "array",
+     "type": "array",
       "items": {
-         "$ref": "uberonStructureSlimTerm.json#/properties/uberonId"
+         "$ref": "uberonStructureSlimTerm.json#"
       },
     "uniqueItems": true
-    },
+     },
     "anatomicalStructureQualifierTermId":{
         "$ref": "../globalId.json#/properties/globalId",
         "description": "anatomicalStructureQualifierTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
@@ -38,7 +38,7 @@
     "anatomcialSubStructureUberonSlimTermIds":{
       "type": "array",
       "items": {
-         "$ref": "uberonStructureSlimTerm.json#/properties/uberonId"
+         "$ref": "uberonStructureSlimTerm.json#/properties/uberonTerm"
       },
     "uniqueItems": true
     },

@@ -1,41 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Global IDs",
-  "id": "uberonStructureSlimTerms.json#",
-  "description": "Uberon ribbon term ids representing controlled set of ribbon terms",
+  "title": "Uberon structure slim term id enumeration",
+  "id": "uberonStructureSlimTerm.json#",
+  "description": "term ids representing controlled set of structure ribbon terms",
   "type": "object",
   "additionalProperties": false,
+  "required":["uberonId"],
   "properties": {
     "uberonId": {
-      "description": "",
-      "type":"string",
-      "enum": ["UBERON:0016490",
-                 "UBERON:0001007",
-                 "UBERON:0000949",
-                 "UBERON:0001008",
-                 "UBERON:0002330",
-                 "UBERON:0002193",
-                 "UBERON:0002416",
-                 "UBERON:0002423",
-                 "UBERON:0002204",
-                 "UBERON:0001016",
-                 "UBERON:0005726",
-                 "UBERON:0007037",
-                 "UBERON:0000990",
-                 "UBERON:0001004",
-                 "UBERON:0001032",
-                 "UBERON:0002104",
-                 "UBERON:0001009",
-                 "UBERON:0000924",
-                 "UBERON:0000925",
-                 "UBERON:0000926",
-                 "UBERON:0003104",
-                 "UBERON:0001013",
-                 "UBERON:0000026",
-                 "UBERON:0005292",
-                 "UBERON:6005023",
-                 "UBERON:0002539",
-                 "Other"]
+    	"enum": ["UBERON:0016490","UBERON:0001007","UBERON:0000949","UBERON:0001008","UBERON:0002330","UBErON:0002193","UBERON:0002416","UBERON:0002423","UBERON:0002204","UBERON:0001016","UBERON:0005726","UBERON:0007037","UBERON:0000990","UBERON:0001004","UBERON:0001032","UBERON:0002104","UBERON:0001009","UBERON:0000924","UBERON:0000925","UBERON:0000926","UBERON:0003104","UBERON:0001013","UBERON:0000026","UBERON:0005292","UBERON:6005023","UBERON:0002539","Other"]
     }
   }
 }

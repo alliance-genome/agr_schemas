@@ -16,8 +16,8 @@
        "type": "string",
        "description": "For annotations where there is no MOD term id"
     },
-    "stageUberonSlimTermId": {
-      "$ref": "uberonStageSlimTerm.json#/properties/uberonId",
+    "stageUberonSlimTerm": {
+      "$ref": "uberonStageSlimTerm.json#",
       "description" : "UBERON slim term for the temporal (life-stage) aspect of the annotation.",
       "dependencies": [{"required":"stageTermId"}]
     }
