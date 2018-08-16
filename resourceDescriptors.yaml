@@ -359,7 +359,7 @@
 - db_prefix: IMEX
   name: The International Molecular Exchange Consortium
   example_id: IMEX:IM-10766-6
-  gid_pattern: "^IMEX:\\w+$"
+  gid_pattern: "^IMEX:IM-\d+(-?)(\d+?)$"
   default_url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
   pages:
   - name: genes/interaction
