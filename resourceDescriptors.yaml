@@ -250,7 +250,7 @@
   gid_pattern: "^NCBI_Gene:\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/gene/[%s]
   pages:
-  - name: genes/interaction
+  - name: gene/interactions
     url: https://www.ncbi.nlm.nih.gov/gene/[%s]
 
 - db_prefix: UniProtKB
@@ -335,7 +335,7 @@
       url: https://www.omim.org/
     - name: gene
       url: https://www.omim.org/entry[%s]
-    - name: genes/interaction
+    - name: gene/interactions
       url: https://www.omim.org/entry[%s]
 
 - db_prefix: DIP
@@ -344,7 +344,7 @@
   gid_pattern: "^DIP:DIP(\\:)?\\-\\d{1,}[ENXS]$"
   default_url: http://dip.mbi.ucla.edu/dip/record?ac=[%s]
   pages:
-    - name: genes/interaction
+    - name: gene/interactions
       url: http://dip.mbi.ucla.edu/dip/record?ac=[%s]
 
 - db_prefix: EMD
@@ -353,7 +353,7 @@
   gid_pattern: "^EMD:EMD-\\d{4}$"
   default_url: http://www.ebi.ac.uk/pdbe/entry/emdb/[%s]
   pages:
-  - name: genes/interaction
+  - name: gene/interactions
     url: http://www.ebi.ac.uk/pdbe/entry/emdb/[%s]
 
 - db_prefix: IMEX
@@ -362,7 +362,7 @@
   gid_pattern: "^IMEX:IM-\\d+(-?)(\\d+?)$"
   default_url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
   pages:
-  - name: genes/interaction
+  - name: gene/interactions
     url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
 
 - db_prefix: INTACT
@@ -371,5 +371,5 @@
   gid_pattern: "^INTACT:EBI\\-[0-9]+$"
   default_url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
   pages:
-  - name: genes/interaction
+  - name: gene/interactions
     url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
