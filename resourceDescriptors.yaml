@@ -365,7 +365,7 @@
   - name: genes/interaction
     url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
 
-  - db_prefix: INTACT
+- db_prefix: INTACT
   name: IntAct Molecular Interaction Database
   example_id: INTACT:EBI-1000008
   gid_pattern: "^INTACT:\\w+$"
