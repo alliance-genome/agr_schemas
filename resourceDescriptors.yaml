@@ -250,7 +250,7 @@
   gid_pattern: "^NCBI_Gene:\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/gene/[%s]
   pages:
-  - name: interaction
+  - name: genes/interaction
     url: https://www.ncbi.nlm.nih.gov/gene/[%s]
 
 - db_prefix: UniProtKB
