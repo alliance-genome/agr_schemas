@@ -134,6 +134,8 @@
       url: http://flybase.org/
     - name: disease
       url: http://flybase.org/cgi-bin/cvreport.html?id=[%s]
+    - name: gene/interactions
+      url: http://flybase.org/reports/[%s].html
 
 #
 # WormBase
