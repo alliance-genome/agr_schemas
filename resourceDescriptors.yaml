@@ -386,7 +386,7 @@
 - db_prefix: PDBE
   name: Protein Data Bank in Europe
   example_id: PDBE:pdbe:1FHI
-  gid_pattern: "^PDBE:pdbe\\w+$""
+  gid_pattern: "^PDBE:pdbe\\w+$"
   default_url: https://www.ebi.ac.uk/pdbe/entry/pdb/[%s]
   pages:
   - name: gene/interactions
