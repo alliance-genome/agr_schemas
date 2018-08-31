@@ -409,3 +409,12 @@
   pages:
   - name: gene/interactions
     url: https://www.rcsb.org/structure/[%s]
+
+- db_prefix: BIOGRID
+  name: Biological General Repository for Interaction Datasets
+  example_id: BIOGRID:1276808
+  gid_pattern: "^BIOGRID:\\d+$"
+  default_url: https://thebiogrid.org/interaction/[%s]
+  pages:
+  - name: gene/interactions
+    url: https://thebiogrid.org/interaction/[%s]
