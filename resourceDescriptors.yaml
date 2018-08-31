@@ -377,7 +377,7 @@
 - db_prefix: MINT
   name: The Molecular INTeraction database
   example_id: MINT:MINT-1954459
-  gid_pattern: "^MINT:^MINT\\-\\d{1,7}$
+  gid_pattern: "^MINT:MINT\\-\\d{1,7}$
   default_url: https://mint.bio.uniroma2.it/index.php/results-interactions/?id=[%s]
   pages:
   - name: gene/interactions
