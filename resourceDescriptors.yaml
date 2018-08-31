@@ -385,9 +385,18 @@
     
 - db_prefix: PDBE
   name: Protein Data Bank in Europe
-  example_id: PDBE:pdbe:1FHI
-  gid_pattern: "^PDBE:pdbe\\w+$"
+  example_id: PDBE:1FHI
+  gid_pattern: "^PDBE:\\w+$"
   default_url: https://www.ebi.ac.uk/pdbe/entry/pdb/[%s]
   pages:
   - name: gene/interactions
     url: https://www.ebi.ac.uk/pdbe/entry/pdb/[%s]
+
+- db_prefix: RCSB_PDB
+  name: RCSB Protein Data Bank
+  example_id: RCSB_PDB:1AGR
+  gid_pattern: "^RCSB_PDB:\\w+$"
+  default_url: https://www.rcsb.org/structure/[%s]
+  pages:
+  - name: gene/interactions
+    url: https://www.rcsb.org/structure/[%s]
