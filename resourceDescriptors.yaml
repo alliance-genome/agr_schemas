@@ -400,3 +400,12 @@
   pages:
   - name: gene/interactions
     url: https://www.rcsb.org/structure/[%s]
+
+- db_prefix: WWPDB
+  name: Worldwide Protein Data Bank
+  example_id: WWPDB:1AUI
+  gid_pattern: "^WWPDB:\\w+$"
+  default_url: https://www.rcsb.org/structure/[%s]
+  pages:
+  - name: gene/interactions
+    url: https://www.rcsb.org/structure/[%s]
