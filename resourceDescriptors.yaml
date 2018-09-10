@@ -134,6 +134,8 @@
       url: http://flybase.org/
     - name: disease
       url: http://flybase.org/cgi-bin/cvreport.html?id=[%s]
+    - name: gene/interactions
+      url: http://flybase.org/reports/[%s].html
 
 #
 # WormBase
@@ -249,6 +251,9 @@
   example_gid: NCBI_Gene:33432
   gid_pattern: "^NCBI_Gene:\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/gene/[%s]
+  pages:
+  - name: gene/interactions
+    url: https://www.ncbi.nlm.nih.gov/gene/[%s]
 
 - db_prefix: UniProtKB
   name: UniProtKB
@@ -332,3 +337,86 @@
       url: https://www.omim.org/
     - name: gene
       url: https://www.omim.org/entry[%s]
+    - name: gene/interactions
+      url: https://www.omim.org/entry[%s]
+
+- db_prefix: DIP
+  name: Database of Interacting Proteins
+  example_id: DIP:DIP-88423E
+  gid_pattern: "^DIP:DIP(\\:)?\\-\\d{1,}[ENXS]$"
+  default_url: http://dip.mbi.ucla.edu/dip/record?ac=[%s]
+  pages:
+    - name: gene/interactions
+      url: http://dip.mbi.ucla.edu/dip/record?ac=[%s]
+
+- db_prefix: EMDB
+  name: Electron Microscopy Data Bank
+  example_id: EMDB:EMD-1191
+  gid_pattern: "^EMDB:EMD-\\d{4}$"
+  default_url: http://www.ebi.ac.uk/pdbe/entry/emdb/[%s]
+  pages:
+  - name: gene/interactions
+    url: http://www.ebi.ac.uk/pdbe/entry/emdb/[%s]
+
+- db_prefix: IMEX
+  name: The International Molecular Exchange Consortium
+  example_id: IMEX:IM-10766-6
+  gid_pattern: "^IMEX:IM-\\d+(-?)(\\d+?)$"
+  default_url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
+  pages:
+  - name: gene/interactions
+    url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
+
+- db_prefix: INTACT
+  name: IntAct Molecular Interaction Database
+  example_id: INTACT:EBI-1000008
+  gid_pattern: "^INTACT:EBI\\-[0-9]+$"
+  default_url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
+  pages:
+  - name: gene/interactions
+    url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
+    
+- db_prefix: MINT
+  name: The Molecular INTeraction database
+  example_id: MINT:MINT-1954459
+  gid_pattern: "^MINT:MINT\\-\\d{1,7}$"
+  default_url: https://mint.bio.uniroma2.it/index.php/results-interactions/?id=[%s]
+  pages:
+  - name: gene/interactions
+    url: https://mint.bio.uniroma2.it/index.php/results-interactions/?id=[%s]
+    
+- db_prefix: PDBE
+  name: Protein Data Bank in Europe
+  example_id: PDBE:1FHI
+  gid_pattern: "^PDBE:\\w+$"
+  default_url: https://www.ebi.ac.uk/pdbe/entry/pdb/[%s]
+  pages:
+  - name: gene/interactions
+    url: https://www.ebi.ac.uk/pdbe/entry/pdb/[%s]
+
+- db_prefix: RCSB_PDB
+  name: RCSB Protein Data Bank
+  example_id: RCSB_PDB:1AGR
+  gid_pattern: "^RCSB_PDB:\\w+$"
+  default_url: https://www.rcsb.org/structure/[%s]
+  pages:
+  - name: gene/interactions
+    url: https://www.rcsb.org/structure/[%s]
+
+- db_prefix: WWPDB
+  name: Worldwide Protein Data Bank
+  example_id: WWPDB:1AUI
+  gid_pattern: "^WWPDB:\\w+$"
+  default_url: https://www.rcsb.org/structure/[%s]
+  pages:
+  - name: gene/interactions
+    url: https://www.rcsb.org/structure/[%s]
+
+- db_prefix: BIOGRID
+  name: Biological General Repository for Interaction Datasets
+  example_id: BIOGRID:1276808
+  gid_pattern: "^BIOGRID:\\d+$"
+  default_url: https://thebiogrid.org/interaction/[%s]
+  pages:
+  - name: gene/interactions
+    url: https://thebiogrid.org/interaction/[%s]
