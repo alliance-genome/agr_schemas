@@ -222,6 +222,8 @@
     url: https://spell.yeastgenome.org/search/show_results?search_string=[%s]
   - name: gene/references
     url: https://www.yeastgenome.org/locus/[%s]/literature
+  - name: gene/disease
+    url: https://www.yeastgenome.org/locus/[%s]/disease
 
 #
 # GO
