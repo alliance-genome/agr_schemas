@@ -64,7 +64,7 @@
 	       {"title":"complex",
 	        "type":"object",
 		"required": ["type"],
-		"properties": {"type":{"enum":["complex"]}
+		"properties": {"type":{"enum":["complex"]},
                                "variants": {"type":"array",
 			       		    "items": {
 					    	      "$ref": "variantType.json"}
