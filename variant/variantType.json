@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "variantType",
+  "description": "An entry that describes the genomicLocation and subtype (as necessary) of a variant.",
+  "id": "variantType.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "variantType": {
+      "type":"object",
+      "oneOf": [{"title": "Point Mutation",
+      	       	 "type":"object",
+		 "required":["assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequence","type"],
+		 "properties": {"assembly":{"type":"string"},
+				"chromosome":{"type":"string"},
+		 	        "start":{"type":"number"},
+				"end":{"type":"number"},
+				"strand":{"enum": ["+","-","."]},
+				"genomicReferenceSequence":{"type":"string",
+							    "maxLength":1},
+				"genomicVariantSequence":{"type":"string","maxLength":1},
+				"type":{"enum":["SO:1000008"]}
+				}
+     		},		
+		{"title":"Insertion",
+		 "type":"object",
+		 "required": ["assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequence","type"],
+		 "properties": {"assembly":{"type":"string"},
+                                "chromosome":{"type":"string"},
+                                "start":{"type":"number"},
+                                "end":{"type":"number"},
+                                "strand":{"enum": ["+","-","."]},
+				"genomicReferenceSequence":{"enum":["N/A"]},
+				"genomicVariantSequence":{"enum":["N/A"]},
+                                "type":{"enum":["SO:0000667"]}
+				}
+                },
+		{"title":"Deletion",
+		 "type":"object",
+		 "required": ["assembly","chromosome","start","end","genomicVariantSequence","type"],
+		 "properties":{"assembly":{"type":"string"},
+                                "chromosome":{"type":"string"},
+                                "start":{"type":"number"},
+                                "end":{"type":"number"},
+                                "strand":{"enum": ["+","-","."]},
+                                "genomicReferenceSequence":{"type":"string"},
+                                "genomicVariantSequence":{"enum":["N/A"]},
+				"type":{"enum":["SO:0000159"]}
+                               }
+                },
+		{"title":"MNV",
+		 "type":"object",
+		 "required": ["assembly","chromosome","start","end","genomicVariantSequence","type"],
+		 "properties": {"assembly":{"type":"string"},
+                                "chromosome":{"type":"string"},
+                                "start":{"type":"number"},
+                                "end":{"type":"number"},
+                                "strand":{"enum": ["+","-","."]},
+                                "genomicReferenceSequence":{"type":"string"},
+                                "genomicVariantSequence":{"type":"string"},
+				"type":{"enum":["SO:0002007"]}
+                               }
+                },
+	       {"title":"complex",
+	        "type":"object",
+		"required": ["type"],
+		"properties": {"type":{"enum":["complex"]}
+                               "variants": {"type":"array",
+			       		    "items": {
+					    	      "$ref": "variantType.json"}
+					    }
+			      }
+               }
+              ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "variant",
+  "description": "An entry with Variant information from a MOD.",
+  "id": "variant.json#",
+  "type": "object",
+  "required": ["primaryId", "taxonId", "type","alleleId"],
+  "additionalProperties": false,
+  "properties": {
+    "alleleId": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "The prefixed primary (MOD) ID for the variant."
+    },
+    "primaryId": {                                
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "The prefixed primary (MOD) ID for the variant."
+    },
+    "name": { 
+      "type": "string",
+      "description": "The name of the entity."
+    },
+    "taxonId": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description" : "The taxonId for the species of the gene entity."
+    },
+    "variantDetail": { 
+      "$ref": "variantType.json",
+      "description": "variant type dictates recorded genomic location and sequence information, which is captured in a subschema for each type allowed."
+    },
+    "consequence": {
+      "$ref":"../globalId.json#/properties/globalId",
+      "description": "the consequence of the mutation.  should be an ECO term"
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {
+         "type": "string"
+      },
+    "uniqueItems": true
+    },
+    "secondaryIds": {
+      "description": "Collection of MOD-specific IDs that have been merged into variant entity.",
+       "type": "array",
+       "items": {
+         "$ref": "../globalId.json#/properties/globalId"
+    },
+    "references" : {
+      "type": "array",
+      "items": {
+      	 "$ref": ../publicationRef.json#",
+      "description": "set of publications that support the genomic location annotation for this variant record."
+    },
+    "comments": {
+      "type": "string",
+      "description": "optional description of content."
+    }
+  }
+}
