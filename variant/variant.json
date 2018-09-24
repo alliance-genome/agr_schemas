@@ -47,7 +47,7 @@
     "references" : {
       "type": "array",
       "items": {
-      	 "$ref": ../publicationRef.json#",
+      	 "$ref": "../publicationRef.json#",
       "description": "set of publications that support the genomic location annotation for this variant record."
     },
     "comments": {
