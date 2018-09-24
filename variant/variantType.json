@@ -24,14 +24,17 @@
      		},		
 		{"title":"Insertion",
 		 "type":"object",
-		 "required": ["assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequence","type"],
+		 "anyOf": [{"required":["assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequence","type"]},
+			   {"required":["assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequenceAccessionNumber","type"]}
+			  ],
 		 "properties": {"assembly":{"type":"string"},
                                 "chromosome":{"type":"string"},
                                 "start":{"type":"number"},
                                 "end":{"type":"number"},
                                 "strand":{"enum": ["+","-","."]},
 				"genomicReferenceSequence":{"enum":["N/A"]},
-				"genomicVariantSequence":{"enum":["N/A"]},
+				"genomicVariantSequence":{"type":"string"},
+				"genomicVariantSequenceAccessionNumber":{"type":"string"},
                                 "type":{"enum":["SO:0000667"]}
 				}
                 },
