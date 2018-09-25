@@ -8,7 +8,7 @@
   "required":["variantSOTermIdType"],
   "properties": {
     "variantSOTermIdType": {
-        "enum": ['SO:1000008','SO:0000159','SO:0000667','complex alteration','SO:0002007']
+        "enum": ["SO:1000008","SO:0000159","SO:0000667","complex alteration","SO:0002007"]
     }
   }
 }
