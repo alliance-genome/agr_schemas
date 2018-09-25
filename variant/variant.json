@@ -50,7 +50,7 @@
       	 "$ref": "../publicationRef.json#",
       "description": "set of publications that support the genomic location annotation for this variant record."
     },
-    "evidenceCode": {"$ref":"../globalId.json#/properties/globalId"},
+    "evidenceCode": {"type":{"enum":["ECO:0000302","ECO:0000305","ECO:0000501"]}},
     "comments": {
       "type": "string",
       "description": "optional description of content."
