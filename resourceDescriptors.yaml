@@ -353,8 +353,8 @@
 
 - db_prefix: EMDB
   name: Electron Microscopy Data Bank
-  example_id: EMDB:EMD-1191
-  gid_pattern: "^EMDB:EMD-\\d{4}$"
+  example_id: EMDB:EMDB-1191
+  gid_pattern: "^EMDB:EMDB-\\d{4}$"
   default_url: http://www.ebi.ac.uk/pdbe/entry/emdb/[%s]
   pages:
   - name: gene/interactions
