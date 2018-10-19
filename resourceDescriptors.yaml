@@ -152,7 +152,7 @@
     - name: gene/expression
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
     - name: gene/interactions
-      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
+      url: http://www.wormbase.org/db/get?name=[%s];class=interaction
     - name: gene/references
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
     - name: gene/spell
