@@ -41,7 +41,7 @@
                                 "type":{"enum":["SO:0000667"]},
 				"consequence": {
       					"$ref":"../globalId.json#/properties/globalId",
-     					 "description": "the consequence of the mutation.  should be an ECO term"}
+     					 "description": "the consequence of the mutation.  should be an ECO term"
 				 }
 				}
                 },
@@ -58,7 +58,7 @@
 				"type":{"enum":["SO:0000159"]},
 				"consequence": {
       					"$ref":"../globalId.json#/properties/globalId",
-     					 "description": "the consequence of the mutation.  should be an ECO term"}
+     					 "description": "the consequence of the mutation.  should be an ECO term"
 				}
                                }
                 },
@@ -75,7 +75,7 @@
 				"type":{"enum":["SO:0002007"]},
 				"consequence": {
       					"$ref":"../globalId.json#/properties/globalId",
-     					 "description": "the consequence of the mutation.  should be an ECO term"}
+     					 "description": "the consequence of the mutation.  should be an ECO term"
 				}
                                }
                 },
