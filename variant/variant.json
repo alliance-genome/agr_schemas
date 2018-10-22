@@ -19,10 +19,6 @@
       "$ref": "variantDetail.json",
       "description": "variant type dictates recorded genomic location and sequence information, which is captured in a subschema for each type allowed."
     },
-    "consequence": {
-      "$ref":"../globalId.json#/properties/globalId",
-      "description": "the consequence of the mutation.  should be an ECO term"
-    },
     "references" : {
       "type": "array",
       "items": {
