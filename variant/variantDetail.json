@@ -23,7 +23,14 @@
 				"consequence": {
       					"$ref":"../globalId.json#/properties/globalId",
      					 "description": "the consequence of the mutation.  should be an ECO term"},
-				}
+				},    
+		 		"references" : {
+      						"type": "array",
+      						"items": {
+      	 						"$ref": "../publicationRef.json#",
+      							"description": "set of publications that support the genomic location annotation for this variant record."
+    						}
+   				}
      		},		
 		{"title":"Insertion",
 		 "type":"object",
@@ -42,7 +49,14 @@
 				"consequence": {
       					"$ref":"../globalId.json#/properties/globalId",
      					 "description": "the consequence of the mutation.  should be an ECO term"
-				 }
+				 },
+				"references" : {
+      						"type": "array",
+      						"items": {
+      	 						"$ref": "../publicationRef.json#",
+      							"description": "set of publications that support the genomic location annotation for this variant record."
+    						}
+   				}
 				}
                 },
 		{"title":"Deletion",
@@ -59,7 +73,14 @@
 				"consequence": {
       					"$ref":"../globalId.json#/properties/globalId",
      					 "description": "the consequence of the mutation.  should be an ECO term"
-				}
+				},
+			       	"references" : {
+      						"type": "array",
+      						"items": {
+      	 						"$ref": "../publicationRef.json#",
+      							"description": "set of publications that support the genomic location annotation for this variant record."
+    						}
+   				}
                                }
                 },
 		{"title":"MNV",
@@ -76,7 +97,14 @@
 				"consequence": {
       					"$ref":"../globalId.json#/properties/globalId",
      					 "description": "the consequence of the mutation.  should be an ECO term"
-				}
+				},
+				"references" : {
+      						"type": "array",
+      						"items": {
+      	 						"$ref": "../publicationRef.json#",
+      							"description": "set of publications that support the genomic location annotation for this variant record."
+    						}
+   				}
                                }
                 },
 	       {"title":"complex",
