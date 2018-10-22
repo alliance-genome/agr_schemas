@@ -15,20 +15,13 @@
       "$ref": "../globalId.json#/properties/globalId",
       "description" : "The taxonId for the species of the gene entity."
     },
-    "variantDetails": { 
+    "variants": { 
       "type": "array",
      "items": {
      	      "$ref" : "variantDetail.json"
      },
       "description": "variant detail dictates recorded genomic location and sequence information, which is captured in a subschema for each type allowed."
-    },
-    "references" : {
-      "type": "array",
-      "items": {
-      	 "$ref": "../publicationRef.json#",
-      "description": "set of publications that support the genomic location annotation for this variant record."
     }
-   }
   }
  }
 }
