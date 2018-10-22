@@ -19,7 +19,10 @@
 				"genomicReferenceSequence":{"type":"string",
 							    "maxLength":1},
 				"genomicVariantSequence":{"type":"string","maxLength":1},
-				"type":{"enum":["SO:1000008"]}
+				"type":{"enum":["SO:1000008"]},
+				"consequence": {
+      					"$ref":"../globalId.json#/properties/globalId",
+     					 "description": "the consequence of the mutation.  should be an ECO term"},
 				}
      		},		
 		{"title":"Insertion",
@@ -35,7 +38,11 @@
 				"genomicReferenceSequence":{"enum":["N/A"]},
 				"genomicVariantSequence":{"type":"string"},
 				"genomicVariantSequenceAccessionNumber":{"type":"string"},
-                                "type":{"enum":["SO:0000667"]}
+                                "type":{"enum":["SO:0000667"]},
+				"consequence": {
+      					"$ref":"../globalId.json#/properties/globalId",
+     					 "description": "the consequence of the mutation.  should be an ECO term"},
+				 }
 				}
                 },
 		{"title":"Deletion",
@@ -48,7 +55,11 @@
                                 "strand":{"enum": ["+","-","."]},
                                 "genomicReferenceSequence":{"type":"string"},
                                 "genomicVariantSequence":{"enum":["N/A"]},
-				"type":{"enum":["SO:0000159"]}
+				"type":{"enum":["SO:0000159"]},
+				"consequence": {
+      					"$ref":"../globalId.json#/properties/globalId",
+     					 "description": "the consequence of the mutation.  should be an ECO term"},
+				}
                                }
                 },
 		{"title":"MNV",
@@ -61,7 +72,11 @@
                                 "strand":{"enum": ["+","-","."]},
                                 "genomicReferenceSequence":{"type":"string"},
                                 "genomicVariantSequence":{"type":"string"},
-				"type":{"enum":["SO:0002007"]}
+				"type":{"enum":["SO:0002007"]},
+				"consequence": {
+      					"$ref":"../globalId.json#/properties/globalId",
+     					 "description": "the consequence of the mutation.  should be an ECO term"},
+				}
                                }
                 },
 	       {"title":"complex",
