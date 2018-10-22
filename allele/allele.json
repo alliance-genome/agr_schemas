@@ -54,6 +54,13 @@
         "$ref": "../crossReference.json#"
       },
       "uniqueItems": true
+    },
+    "variants": { 
+      "type": "array",
+     "items": {
+     	      "$ref" : "../variant/variantDetail.json"
+     },
+      "description": "variant detail dictates recorded genomic location and sequence information, which is captured in a subschema for each type allowed."
     }
   }
 }
