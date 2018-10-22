@@ -24,7 +24,7 @@
       "description" : "The taxonId for the species of the gene entity."
     },
     "variantDetail": { 
-      "$ref": "variantType.json",
+      "$ref": "variantDetail.json",
       "description": "variant type dictates recorded genomic location and sequence information, which is captured in a subschema for each type allowed."
     },
     "consequence": {
