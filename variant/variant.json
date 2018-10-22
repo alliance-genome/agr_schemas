@@ -15,9 +15,12 @@
       "$ref": "../globalId.json#/properties/globalId",
       "description" : "The taxonId for the species of the gene entity."
     },
-    "variantDetail": { 
-      "$ref": "variantDetail.json",
-      "description": "variant type dictates recorded genomic location and sequence information, which is captured in a subschema for each type allowed."
+    "variantDetails": { 
+      "type": "array",
+     "items": {
+     	      "$ref" : "variantDetail.json"
+     },
+      description": "variant detail dictates recorded genomic location and sequence information, which is captured in a subschema for each type allowed."
     },
     "references" : {
       "type": "array",
