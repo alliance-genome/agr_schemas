@@ -212,7 +212,7 @@
   pages:
   - name: gene
     url: http://www.yeastgenome.org/locus/[%s]
-  - name: gene/expression
+  - name: gene/expression/annotation/detail
     url: http://www.yeastgenome.org/locus/[%s]/expression
   - name: gene/interactions
     url: http://www.yeastgenome.org/locus/[%s]/interaction
