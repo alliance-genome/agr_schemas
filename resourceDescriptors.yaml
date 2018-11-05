@@ -61,7 +61,7 @@
   name: RGD
   example_gid: RGD:1311419
   gid_pattern: "^RGD:\\d+$"
-  default_url: 
+  default_url: https://rgd.mcw.edu/rgdweb/elasticResults.html?term=RGD:[%s]
   pages:
     - name: gene
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
