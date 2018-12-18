@@ -96,7 +96,7 @@
       description: "Wild type expression data"
       url: https://zfin.org/[%s]/wt-expression
     - name: gene/references
-      url: https://zfin.org/[%s]
+      url: https://zfin.org/action/marker/citation-list/[%s]
     - name: allele
       url: https://zfin.org/[%s]
     - name: genotype
