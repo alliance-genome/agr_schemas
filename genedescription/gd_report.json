@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "gd_report",
+  "description": "Gene description report file containing a list of automated gene descriptions for a single species and a set of overall statistics of the whole data in the file",
+  "id": "gd_report.json",
+  "type": "object",
+  "required": ["data"],
+  "additionalProperties": false,
+  "properties": {
+    "overall_properties": {
+      "$ref": "overall_properties.json#",
+      "description": "build information regarding the report file such as species label, build date etc."
+    },
+    "general_stats": {
+      "$ref": "aggregate_stats.json#",
+      "description": "aggregate statistics on the complete set of gene descriptions in the report file"
+    },
+    "data": {
+      "type": "array",
+      "description": "list of gene description objects",
+      "items": {
+	"$ref": "description.json#"
+      }
+    }
+  }
+}
