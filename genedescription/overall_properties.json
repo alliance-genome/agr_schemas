@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "overall_properties",
+  "description": "Build-related information regarding a gene description report file - e.g., species label, build date, and source files used to generate the descriptions",
+  "id": "overall_properties.json",
+  "type": "object",
+  "required": ["species", "release_version", "date"],
+  "properties": {
+    "species": {
+      "type": ["string", "null"],
+      "description": "The name or label of the species"
+    },
+    "release_version": {
+      "type": ["string", "null"],
+      "description": "Release version (project specific)"
+    },
+    "date": {
+      "type": ["string", "null"],
+      "pattern": "^(January|February|March|April|May|June|July|August|September|October|November|December) (0?[1-9]|[12][0-9]|3[01]), \\d{4}$"
+    }
+  }
+}
