@@ -28,7 +28,7 @@
       "$ref" : "../feature/feature.json#",
       "description" : "The id for the feature referneced in this relation."
     },
-    "sequenceTargetingReagentID: {
+    "sequenceTargetingReagentID": {
       "description": "Collection of genomic components that make up a genotype.",
        "type": "array",
        "items": {
