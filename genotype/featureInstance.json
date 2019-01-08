@@ -28,6 +28,10 @@
       "$ref" : "../feature/feature.json#",
       "description" : "The id for the feature referneced in this relation."
     },
+    "sequenceTargetingReagentID: {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description" : "The morpholino, TALEN or CRISPR id for the species of the genotype entity."
+    }
     "backgroundID": {
       "$ref": "genotype.json#",
       "description" : "The id for the background genotype referneced in this relation."
