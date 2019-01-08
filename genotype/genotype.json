@@ -33,6 +33,21 @@
          "$ref" : "featureInstance.json"
        },
       "uniqueItems": true
-    }
+    },
+    "sequenceTargetingReagentIDs": {
+      "description": "Collection of sequence targeting reagent components that make up a genotype.",
+       "type": "array",
+       "items": {
+         "$ref" : "../globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
+    },
+    "backgroundIDs": { "description": "Collection of background components that make up a genotype.",
+       "type": "array",
+       "items": {
+         "$ref" : "../globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
+     }
   }
 }
