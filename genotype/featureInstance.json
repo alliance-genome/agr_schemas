@@ -5,25 +5,17 @@
   "id": "featureInstance.json#",
   "type": "object",
   "required": [
-    "genotype", "feature"
+       "featureID"
   ],
   "additionalProperties": false,
   "properties": {"primaryId": {
       "$ref" : "../globalId.json#/properties/globalId",
       "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
     },
-    "taxonId": {
-      "$ref" : "../globalId.json#/properties/globalId",
-      "description" : "The taxonId for the species of the genotype entity."
-    },
     "featureZygosity":{
       "type":"string",
       "description": "the zygosity of the feature within the referencing genotype."
       },
-    "genotypeID": {
-      "$ref" : "genotype.json#",
-      "description" : "The genotype for the species of the genotype entity."
-    }, 
     "featureID": {
       "$ref" : "../feature/feature.json#",
       "description" : "The id for the feature referneced in this relation."
