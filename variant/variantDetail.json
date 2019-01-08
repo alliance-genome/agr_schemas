@@ -106,17 +106,7 @@
     						}
    				}
                                }
-                },
-	       {"title":"complex",
-	        "type":"object",
-		"required": ["type", "variants"],
-		"properties": {"type":{"enum":["complex"]},
-                               "variants": {"type":"array",
-			       		    "items": {
-					    	      "$ref": "variantType.json"}
-					    }
-			      }
-               }
+                }
               ]
     }
   }
