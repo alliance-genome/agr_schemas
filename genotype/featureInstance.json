@@ -29,16 +29,18 @@
       "description" : "The id for the feature referneced in this relation."
     },
     "sequenceTargetingReagentID": {
-      "description": "Collection of genomic components that make up a genotype.",
+      "description": "Collection of sequence targeting reagent components that make up a genotype.",
        "type": "array",
        "items": {
          "$ref" : "../globalId.json#/properties/globalId"
        },
       "uniqueItems": true
     },
-    "backgroundID": {
-      "$ref": "genotype.json#",
-      "description" : "The id for the background genotype referneced in this relation."
-    }
+    "backgroundID": { "description": "Collection of background components that make up a genotype.",
+       "type": "array",
+       "items": {
+         "$ref" : "../globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
   }
 }
