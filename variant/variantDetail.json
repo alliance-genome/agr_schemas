@@ -22,7 +22,7 @@
 				"type":{"enum":["SO:1000008"]},
 				"consequence": {
       					"$ref":"../globalId.json#/properties/globalId",
-     					 "description": "the consequence of the mutation.  should be an ECO term"},
+     					 "description": "The consequence of the mutation; should be an SO term"},
 				},    
 		 		"references" : {
       						"type": "array",
