@@ -64,7 +64,7 @@
               "type": "array",
               "description": "list of additionalGeneticComponent objects that together with the dbObjectId, represent a 'genotype.'  Only to be used for SGD, FlyBase and WormBase",
               "items": {
-                "$ref": "additionalGeneticComponent.json#/"
+                "$ref": "additionalGeneticComponent.json#"
               }
             }
           }
@@ -98,7 +98,7 @@
               "type": "array",
               "description": "list of additionalGeneticComponent objects that together with the dbObjectId, represent a 'genotype.'  Only to be used for SGD, FlyBase and WormBase",
               "items": {
-                "$ref": "additionalGeneticComponent.json#/"
+                "$ref": "additionalGeneticComponent.json#"
               }
             }
           }

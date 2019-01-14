@@ -1,0 +1,110 @@
+{
+ "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "single_stats",
+  "description": "Statistics for a single gene description",
+  "id": "single_stats.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "total_number_go_annotations": {
+      "type": "number",
+      "description": "Total number of Gene Ontology annotations used to generate the description"
+    },
+    "total_number_do_annotations": {
+      "type": "number",
+      "description": "Total number of Disease annotations used to generate the description"
+    },
+    "total_number_do_exp_bio_annotations": {
+      "type": "number",
+      "description": "Total number of Disease experimental and biomarker annotations used to generate the description"
+    },
+    "total_number_do_via_orth_annotations": {
+      "type": "number",
+      "description": "Total number of Disease annotations based on orthology data used to generate the description"
+    },
+    "number_final_do_term_covering_multiple_initial_do_terms": {
+      "type": "number",
+      "description": "Number of Disease terms in the final description that are ancestors of more than one term in the original terms set"
+    },
+    "num_initial_experimental_go_ids_f": {
+      "type": "number",
+      "description": "Number of Gene Ontology molecular function terms associated with the gene based on experimental evidence codes before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "num_initial_experimental_go_ids_p": {
+      "type": "number",
+      "description": "Number of Gene Ontology biological process terms associated with the gene based on experimental evidence codes before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "num_initial_experimental_go_ids_c": {
+      "type": "number",
+      "description": "Number of Gene Ontology cellular component terms associated with the gene based on experimental evidence codes before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "num_initial_go_ids_f": {
+      "type": "number",
+      "description": "Number of Gene Ontology molecular function terms associated with the gene before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "num_initial_go_ids_p": {
+      "type": "number",
+      "description": "Number of Gene Ontology biological process terms associated with the gene before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "num_initial_go_ids_c": {
+      "type": "number",
+      "description": "Number of Gene Ontology cellular component terms associated with the gene before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "num_initial_expression_ids": {
+      "type": "number",
+      "description": "Number of Tissue Expression terms associated with the gene before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "num_final_experimental_go_ids_f": {
+      "type": "number",
+      "description": "Number of Gene Ontology molecular function terms in the final description based on experimental evidence codes"
+    },
+    "num_final_experimental_go_ids_p": {
+      "type": "number",
+      "description": "Number of Gene Ontology biological process terms in the final description based on experimental evidence codes"
+    },
+    "num_final_experimental_go_ids_c": {
+      "type": "number",
+      "description": "Number of Gene Ontology cellular component terms in the final description based on experimental evidence codes"
+    },
+    "num_final_go_ids_f": {
+      "type": "number",
+      "description": "Number of Gene Ontology molecular function terms in the final description"
+    },
+    "num_final_go_ids_p": {
+      "type": "number",
+      "description": "Number of Gene Ontology biological process terms in the final description"
+    },
+    "num_final_go_ids_c": {
+      "type": "number",
+      "description": "Number of Gene Ontology cellular component terms in the final description"
+    },
+    "num_initial_do_ids": {
+      "type": "number",
+      "description": "Number of Disease Ontology terms associated with the gene before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "num_final_do_ids": {
+      "type": "number",
+      "description": "Number of Disease Ontology terms in the final description"
+    },
+    "num_best_orthologs": {
+      "type": "number",
+      "description": "Number of 'best' orthologs. The best orthologs are those predicted by the highest number of methods"
+    },
+    "num_final_expression_ids": {
+      "type": "number",
+      "description": "Number of Tissue Expression terms in the final description"
+    },
+    "average_terms_level": {
+      "type": "number",
+      "description": "Average depth (max distance from root considering the relationships used to generate the description) of the terms in the final description"
+    },
+    "coverage_percentage": {
+      "type": "number",
+      "description": "Percentage of terms in the initial annotations that are present in the final descriptions (directly or indirectly via an ancestor)"
+    },
+    "trimmed": {
+      "type": "boolean",
+      "description": "Whether the trimming algorithm has been applied to the description to reduce its length"
+    }
+  }
+}

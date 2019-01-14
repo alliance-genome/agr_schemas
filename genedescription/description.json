@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "description",
+  "description": "Gene description",
+  "id": "description.json",
+  "type": "object",
+  "required": ["gene_id", "gene_name", "description", "go_description", "go_function_description", "go_process_description", "go_component_description", "do_description", "do_experimental_description", "do_biomarker_description", "do_orthology_description", "orthology_description", "tissue_expression_description", "gene_expression_cluster_description", "molecule_expression_cluster_description", "anatomy_expression_cluster_description", "protein_domain_description", "human_gene_function_description", "sister_species_description", "publications", "refs"],
+  "additionalProperties": false,
+  "properties": {
+    "gene_id": {
+      "type": "string",
+      "description": "Gene identifier"
+    },
+    "gene_name": {
+      "type": "string",
+      "description": "Gene symbol or name"
+    },
+    "description": {
+      "type": ["string", "null"],
+      "description": "Complete gene description"
+    },
+    "go_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for Gene Ontology data only"
+    },
+    "go_function_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for Gene Ontology molecular function data only"
+    },
+    "go_process_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for Gene Ontology biological process data only"
+    },
+    "go_component_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for Gene Ontology cellular component data only"
+    },
+    "do_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for Disease data only"
+    },
+    "do_experimental_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for Disease experimental data only"
+    },
+    "do_biomarker_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for Disease biomarker data only"
+    },
+    "do_orthology_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for Disease data based on orthology only"
+    },
+    "orthology_description": {
+      "type": ["string", "null"],
+      "description": "Gene descrption for orthology data only"
+    },
+    "tissue_expression_description": {
+      "type": ["string", "null"],
+      "description": "Gene descriprion for tissue expression data only"
+    },
+    "gene_expression_cluster_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for gene expression cluster data only"
+    },
+    "molecule_expression_cluster_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for molecule expression cluster data only"
+    },
+    "anatomy_expression_cluster_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for anatomy expression cluster data only"
+    },
+    "protein_domain_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for protein domain data only"
+    },
+    "human_gene_function_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for Gene Ontology molecular function related to human orthologs only"
+    },
+    "sister_species_description": {
+      "type": ["string", "null"],
+      "description": "Gene description for sister species data only"
+    },
+    "publications": {
+      "type": ["string", "null"],
+      "description": "Publications supporting the description"
+    },
+    "refs": {
+      "type": ["string", "null"],
+      "description": "References supporting the description"
+    },
+    "paper_evidences": {
+      "type": "array",
+      "description": "List of publications supporting the description",
+      "items": {
+	"type": "string",
+	"description": "Publication ID"
+      }
+    },
+    "accession_evidences": {
+      "type": "array",
+      "description": "List of references supporting the description",
+      "items": {
+	"type": "string",
+	"description": "Accession ID"
+      }
+    },
+    "stats": {
+      "$ref": "single_stats.json#",
+      "description": "Statistics of a single gene description"
+    }
+  }
+}
