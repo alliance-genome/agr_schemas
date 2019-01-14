@@ -26,11 +26,11 @@
       },
     "uniqueItems": true
     },
-    "featureInstances": {
-      "description": "Collection of genomic components that make up a genotype.",
+    "genotypeComponents": {
+      "description": "Collection of genomic components that make up a genotype, ie: 'allele', each with a zygosity",
        "type": "array",
        "items": {
-         "$ref" : "featureInstance.json"
+         "$ref" : "genotypeComponent.json"
        },
       "uniqueItems": true
     },

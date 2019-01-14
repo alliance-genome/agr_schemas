@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "genotypeComponent",
+  "description": "An enitity that describes the components (allele, etc...) in a genotype, along with their zygosities.",
+  "id": "genotypeComponent.json#",
+  "type": "object",
+  "required": [
+       "alleleID","zygosity"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "zygosity":{"enum":["homozygous","heterozygous","hemizygous insertion","hemizygous", "deletion",
+    			"hemizygous", "X-linked", "hemozygous", "Y-linked", "homoplastic", "heteroplastic",
+			indeterminate", "unknown"]},
+    "alleleID": {
+      "$ref" : "../allele/allele.json#",
+      "description" : "The curie (ie: 'ZFIN:ZDB-ALT-010101-1') for the allele referenced in this relation."
+    }
+}
