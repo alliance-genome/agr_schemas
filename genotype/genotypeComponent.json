@@ -11,7 +11,7 @@
   "properties": {
     "zygosity":{"enum":["homozygous","heterozygous","hemizygous insertion","hemizygous", "deletion",
     			"hemizygous", "X-linked", "hemozygous", "Y-linked", "homoplastic", "heteroplastic",
-			indeterminate", "unknown"]},
+			"indeterminate", "unknown"]},
     "alleleID": {
       "$ref" : "../allele/allele.json#",
       "description" : "The curie (ie: 'ZFIN:ZDB-ALT-010101-1') for the allele referenced in this relation."
