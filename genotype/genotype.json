@@ -4,10 +4,10 @@
   "description": "Genotypes and their genomic components.  references allele.json",
   "id": "genotype.json#",
   "type": "object",
-  "required": ["primaryId", "taxonId", "name"],
+  "required": ["genotypeId", "taxonId", "name"],
   "additionalProperties": false,
   "properties": {
-    "primaryId": {
+    "genotypeId": {
       "$ref" : "../globalId.json#/properties/globalId",
       "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
     },
