@@ -19,7 +19,7 @@
       "$ref" : "../globalId.json#/properties/globalId",
       "description" : "The taxonId for the species of the genotype entity."
     },
-    "modCrossReference": {
+    "crossReference": {
       "description":"MOD database cross references for each genotype, most likely the link back to the MOD.",
       "$ref" : "../crossReference.json#"
     },
