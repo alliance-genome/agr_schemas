@@ -13,7 +13,7 @@
     			"hemizygous", "X-linked", "hemozygous", "Y-linked", "homoplastic", "heteroplastic",
 			"indeterminate", "unknown"]},
     "alleleID": {
-      "$ref" : "../allele/allele.json#",
+      "$ref": "../globalId.json#/properties/globalId",
       "description" : "The curie (ie: 'ZFIN:ZDB-ALT-010101-1') for the allele referenced in this relation."
     }
 }
