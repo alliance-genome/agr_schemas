@@ -10,7 +10,7 @@
   "additionalProperties": false,
   "properties": {
     "zygosity":{"enum":["homozygous","heterozygous","hemizygous insertion","hemizygous", "deletion",
-    			"hemizygous", "X-linked", "hemozygous", "Y-linked", "homoplastic", "heteroplastic",
+    			"hemizygous", "X-linked homozygous", "hemozygous", "Y-linked hemizygous", "homoplastic", "heteroplastic",
 			"indeterminate", "unknown"]},
     "alleleID": {
       "$ref": "../globalId.json#/properties/globalId",
