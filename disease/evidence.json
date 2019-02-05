@@ -17,8 +17,8 @@
     "evidenceCodes": {
       "type": "array",
       "items": {
-        "type": "string",
-        "description": "3-4 letter abbreviation."
+        "$ref": "../globalID.json#",
+        "description": "ECO term id."
       },
       "uniqueItems": true
     }
