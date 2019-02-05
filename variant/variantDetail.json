@@ -34,7 +34,7 @@
 		{"title":"Insertion",
 		 "type":"object",
 		 "anyOf": [{"required":["assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequence","type"]},
-			   {"required":["assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequenceAccessionNumber","type"]}
+			   {"required":["assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequenceAccessionNumber","type","paddedBase"]}
 			  ],
 		 "properties": {"assembly":{"type":"string"},
                                 "chromosome":{"type":"string"},
@@ -43,6 +43,7 @@
 				"genomicReferenceSequence":{"enum":["N/A"]},
 				"genomicVariantSequence":{"type":"string"},
 				"genomicVariantSequenceAccessionNumber":{"type":"string"},
+				"paddedBase":{"type":"string"};
                                 "type":{"enum":["SO:0000667"]},
 				"consequence": {
       					"$ref":"../globalId.json#/properties/globalId",
@@ -64,6 +65,7 @@
                                 "chromosome":{"type":"string"},
                                 "start":{"type":"number"},
                                 "end":{"type":"number"},
+				"paddedBase":{"type":"string"},
                                 "genomicReferenceSequence":{"type":"string"},
                                 "genomicVariantSequence":{"enum":["N/A"]},
 				"type":{"enum":["SO:0000159"]},

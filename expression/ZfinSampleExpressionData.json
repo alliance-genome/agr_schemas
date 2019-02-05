@@ -3,8 +3,8 @@
     {
       "geneId": "ZFIN:ZDB-GENE-050913-20",
       "evidence": {
-        "modPublicationId" : "ZFIN:ZDB-PUB-120125-37",
-        "pubMedId" : "PMID:22265871"
+        "crossReference" : {"ZFIN:ZDB-PUB-120125-37"},
+        "publicationId" : "PMID:22265871"
       },
       "whenExpressed": {
           "stageName": "Gastrula:50%-epiboly",

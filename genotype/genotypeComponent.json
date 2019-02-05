@@ -9,11 +9,7 @@
   ],
   "additionalProperties": false,
   "properties": {
-    "zygosity":{"enum":["homozygous","heterozygous","hemizygous insertion","hemizygous", "deletion",
-    			"hemizygous", "X-linked hemizygous", "Y-linked hemizygous", "homoplastic", "heteroplastic",
-			"indeterminate", "unknown"]},
-	  //needs to be a GENO term id enumeration -- indeterminate and unknown are the same thing
-	  //under allelic state (parent) -- will be enumerated in a spreadsheet.
+    "zygosity":{"enum":["GENO:0000602","GENO:0000603","GENO:0000604","GENO:0000605","GENO:0000606","GENO:0000135","GENO:0000136","GENO:0000137"]},
     "alleleID": {
       "$ref": "../globalId.json#/properties/globalId",
       "description" : "The curie (ie: 'ZFIN:ZDB-ALT-010101-1') for the allele referenced in this relation."

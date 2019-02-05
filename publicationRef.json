@@ -5,14 +5,13 @@
   "id": "publicationRef.json#",
   "type": "object",
   "properties": {
-    "modPublicationId": {
+    "publicationId": {
       "$ref" : "globalId.json#/properties/globalId",
-      "description": "The ID from the data provider that describes the publication at the data provider site. ie: the pub id from a MOD.  This is useful and required as many MODs have non-pubmed ids that are the reference for bulk-submission data, curator annotations, etc..."
+      "description": "The ID from the data provider that describes the publication.  When available, this is the PMID. When no PMID (PUBMED id) is available, this is the MOD publication id."
     },
-    "pubMedId": {
-      "$ref" : "globalId.json#/properties/globalId",
-      "description": "The ID from the data provider that describes the publication at the data provider site. ie: the pub id from a MOD.  This is useful and required as many MODs have non-pubmed ids that are the reference for bulk-submission data, curator annotations, etc..."
-    }
+    "crossReference": {
+     "description": "an optional cross reference to the MOD publication page."
+     "$ref" : "../crossReference.json#"
   },
-  "anyOf": [{"required": ["modPublicationId"]},{"required": ["pubMedId"]}]
+  "required": "publicationId"
 }
