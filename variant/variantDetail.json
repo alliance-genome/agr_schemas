@@ -33,8 +33,7 @@
      		},		
 		{"title":"Insertion",
 		 "type":"object",
-		 "anyOf": [{"required":["assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequence","type"]},
-			   {"required":["assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequenceAccessionNumber","type","paddedBase"]}
+		 "anyOf": [{"required":["assembly","chromosome","start","end","genomicReferenceSequence","type"]}
 			  ],
 		 "properties": {"assembly":{"type":"string"},
                                 "chromosome":{"type":"string"},
