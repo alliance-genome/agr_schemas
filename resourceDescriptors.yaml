@@ -30,7 +30,7 @@
     - name: gene/expression/annotation/detail
       url: http://www.informatics.jax.org/assay/MGI:[%s]
     - name: gene/MODinteractions
-      url: http://www.informatics.jax.org/interaction/explorer?markerIDs=[%s]
+      url: http://www.informatics.jax.org/interaction/explorer?markerIDs=MGI:[%s]
 
 #
 # MGI - old style IDs
