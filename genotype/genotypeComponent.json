@@ -9,7 +9,9 @@
   ],
   "additionalProperties": false,
   "properties": {
-    "zygosity":{"enum":["GENO:0000602","GENO:0000603","GENO:0000604","GENO:0000605","GENO:0000606","GENO:0000135","GENO:0000136","GENO:0000137"]},
+    "zygosity":{
+	"enum":["GENO:0000602","GENO:0000603","GENO:0000604","GENO:0000605","GENO:0000606","GENO:0000135","GENO:0000136","GENO:0000137"]
+    },
     "alleleID": {
       "$ref": "../globalId.json#/properties/globalId",
       "description" : "The curie (ie: 'ZFIN:ZDB-ALT-010101-1') for the allele referenced in this relation."
