@@ -17,7 +17,7 @@
     "evidenceCodes": {
       "type": "array",
       "items": {
-        "$ref": "../globalID.json#",
+        "$ref": "../globalId.json#",
         "description": "ECO term ids."
       },
       "uniqueItems": true
