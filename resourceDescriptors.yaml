@@ -29,6 +29,8 @@
       url: http://www.informatics.jax.org/disease/MGI:[%s]
     - name: gene/expression/annotation/detail
       url: http://www.informatics.jax.org/assay/MGI:[%s]
+    - name: gene/MODinteractions
+      url: http://www.informatics.jax.org/interaction/explorer?markerIDs=[%s]
 
 #
 # MGI - old style IDs
@@ -77,6 +79,8 @@
       url: http://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
     - name: disease/all
       url: http://rgd.mcw.edu/rgdweb/ontology/annot.html?species=All&x=1&acc_id=[%s]#annot
+    - name: gene/MODinteractions
+      url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=3&identifiers=[%s]
 
 #
 # ZFIN
@@ -136,6 +140,8 @@
       url: http://flybase.org/cgi-bin/cvreport.html?id=[%s]
     - name: gene/interactions
       url: http://flybase.org/reports/[%s].html
+    - name: gene/MODinteractions
+      url: http://flybase.org/reports/[%s]#interactions
 
 #
 # WormBase
@@ -171,6 +177,8 @@
       url: https://www.wormbase.org/
     - name: disease
       url: https://www.wormbase.org/resources/disease/[%s]
+    - name: gene/MODinteractions
+      url: http://www.wormbase.org/db/get?name=[%s];class=Gene#08--10
 
 - db_prefix: WBls
   name: WormBase life-stage Ontology
@@ -224,6 +232,8 @@
     url: https://www.yeastgenome.org/locus/[%s]/literature
   - name: gene/disease
     url: https://www.yeastgenome.org/locus/[%s]/disease
+  - name: gene/MODinteractions
+    url: https://www.yeastgenome.org/locus/[%s]/interaction#network
 
 #
 # GO
@@ -247,6 +257,8 @@
   pages:
   - name: gene
     url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
+  - name: gene/MODinteractions
+    url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=1&identifiers=[%s]
 
 - db_prefix: NCBI_Gene
   name: NCBI Gene
