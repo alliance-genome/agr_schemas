@@ -13,7 +13,7 @@
       "taxonId": "NCBITaxon:7955",
       "crossReferences": [{"id":"ZFIN:ZDB-FISH-150901-20750","pages":["fish"]}],
       "genotypeComponents": [{"alleleID":"ZFIN:ZDB-ALT-980203-1091","zygosity":"GENO:0000135"}]
-    },
+    }],
   "metaData": {
     "dataProvider": {
         "crossReference": {
