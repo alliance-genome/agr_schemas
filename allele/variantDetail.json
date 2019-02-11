@@ -83,7 +83,7 @@
                 },
 		{"title":"MNV",
 		 "type":"object",
-		 "required": ["assembly","chromosome","start","end","genomicVariantSequence","type"],
+		 "required": ["assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequence","type"],
 		 "properties": {"assembly":{"type":"string"},
                                 "chromosome":{"type":"string"},
                                 "start":{"type":"number"},

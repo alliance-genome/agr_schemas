@@ -3,7 +3,8 @@
     {
       "geneId": "ZFIN:ZDB-GENE-050913-20",
       "evidence": {
-        "crossReference" : {"ZFIN:ZDB-PUB-120125-37"},
+        "crossReference" : {"id":"ZFIN:ZDB-PUB-120125-37",
+			    "pages":["reference"]},
         "publicationId" : "PMID:22265871"
       },
       "whenExpressed": {

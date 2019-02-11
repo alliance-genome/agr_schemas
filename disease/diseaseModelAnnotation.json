@@ -32,21 +32,6 @@
       ],
       "description": "The qualifier for the annotation"
     },
-    "with": {
-      "type": "array",
-      "items": {
-        "$ref" : "../globalId.json#/properties/globalId",
-        "description": "db identifiers related to the annotation object via the 'with' relationship."
-      },
-      "uniqueItems": true
-    },
-    "experimentalConditions": {
-      "type": "array",
-      "items": {
-        "$ref": "experimentalConditions.json#",
-        "description": "list of experimental conditions applied to the db object, which together produce the disease association."
-      }
-    },
     "DOid": {
       "$ref" : "../globalId.json#/properties/globalId",
       "description": "The disease ontology term id."
@@ -62,21 +47,10 @@
       "$ref": "evidence.json#",
       "description": "one pub + many evidence codes per annotation."
     },
-    "geneticSex": {
-      "enum": [
-        "male",
-        "female",
-        "hermaphrodite"
-      ],
-      "description": "The genetic sex of the organism in the disease association"
-    },
     "dateAssigned": {
       "type": "string",
       "format": "date-time",
       "description": "Date this entity was assigned in it's primary data source."
-    },
-    "modifier": {
-      "$ref": "modifier.json#/properties/modifier"
     }
   }
 }
