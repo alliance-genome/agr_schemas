@@ -8,9 +8,7 @@
   "required":["uberonTerm"],
   "properties": {
     "uberonTerm": {
-    	"enum": ["UBERON:0001009",
-		 "UBERON:0005409",
-		 "UBERON:0000949",
+    	"enum": ["UBERON:0001009","UBERON:0005409","UBERON:0000949",
 		 "UBERON:0001008",
 		 "UBERON:0002330",
 		 "UBERON:0002193",
@@ -33,8 +31,7 @@
 		 "UBERON:0000026",
 		 "UBERON:0016887",
 		 "UBERON:6005023",
-		 "UBERON:0002539",
-		 "Other"
+		 "UBERON:0002539","Other"
 		 ]
     }
   }
