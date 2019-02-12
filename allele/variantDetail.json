@@ -6,7 +6,7 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "variantType": {
+    "variant": {
       "type":"object",
       "oneOf": [{"title": "Point Mutation",
       	       	 "type":"object",

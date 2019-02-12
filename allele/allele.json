@@ -58,7 +58,7 @@
     "variants": { 
       "type": "array",
      "items": {
-     	      "$ref" : "variantDetail.json"
+     	      "$ref" : "variantDetail.json#"
      },
       "description": "variant detail dictates recorded genomic location and sequence information, which is captured in a subschema for each type allowed."
     }
