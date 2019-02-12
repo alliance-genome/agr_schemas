@@ -17,7 +17,7 @@
     },
     "nameText": {
       "type": "string",
-      "description": "The name of the entity, with html tags replaced by < and >."
+      "description": "The name of the entity, in plain text."
     },
     "taxonId": {
       "$ref" : "../globalId.json#/properties/globalId",
