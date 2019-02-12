@@ -15,7 +15,7 @@
 			   "pages":["fish"]
                          }],
       "genotypeComponents": [{"zygosity":"GENO:0000135",
-				"alleleID":"ZFIN:ZDB-ALT-980203-1091",
+				"alleleID":"ZFIN:ZDB-ALT-980203-1091"
 			      }]
     }
   ],

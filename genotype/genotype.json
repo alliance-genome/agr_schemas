@@ -38,7 +38,7 @@
       "description": "Collection of genomic components that make up a genotype, ie: 'allele', each with a zygosity",
        "type": "array",
        "items": {
-         "$ref" : "genotypeComponent.json"
+         "$ref" : "genotypeComponent.json#"
        },
       "uniqueItems": true
     },
