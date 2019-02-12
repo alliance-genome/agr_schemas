@@ -10,7 +10,7 @@
       "description": "The ID from the data provider that describes the publication.  When available, this is the PMID. When no PMID (PUBMED id) is available, this is the MOD publication id."
     },
     "crossReference": {
-     "description": "an optional cross reference to the MOD publication page."
+     "description": "an optional cross reference to the MOD publication page.",
      "$ref" : "../crossReference.json#"
   },
   "required": "publicationId"
