@@ -21,8 +21,8 @@
 				"type":{"enum":["SO:1000008"]},
 				"consequence": {
       					"$ref":"../globalId.json#/properties/globalId",
-     					 "description": "The consequence of the mutation; should be an SO term",
-				},    
+     					 "description": "The consequence of the mutation; should be an SO term"
+				}, 
 		 		"references" : {
       						"type": "array",
       						"items": {
@@ -30,8 +30,10 @@
       							"description": "set of publications that support the genomic location annotation for this variant record."
     						}
    				}
-     		},		
-		{"title":"Insertion",
+     		}
+                },
+		{
+		"title": "Insertion",
 		 "type":"object",
 		 "anyOf": [{"required":["assembly","chromosome","start","end","genomicReferenceSequence","type"]}
 			  ],
