@@ -10,7 +10,7 @@
       "taxonId": "NCBITaxon:7955",
       "gene": "ZFIN:ZDB-GENE-990415-72",
       "crossReferences": [{"id":"ZFIN:ZDB-GENE-990415-72","pages":["allele"]}],
-    "variants": [{"variant": {"type":"SO:1000008",
+      "variants": [{"variant": {"type":"SO:1000008",
                     "assembly":"GRCz11",
     		    "start":"23342",
                     "chromosome":"12",
