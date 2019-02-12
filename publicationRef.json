@@ -11,7 +11,7 @@
     },
     "crossReference": {
      "description": "an optional cross reference to the MOD publication page.",
-     "$ref" : "../crossReference.json#"
+     "$ref" : "crossReference.json#"
   },
   "required": "publicationId"
 }
