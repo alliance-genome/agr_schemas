@@ -21,7 +21,7 @@
 				"type":{"enum":["SO:1000008"]},
 				"consequence": {
       					"$ref":"../globalId.json#/properties/globalId",
-     					 "description": "The consequence of the mutation; should be an SO term"},
+     					 "description": "The consequence of the mutation; should be an SO term",
 				},    
 		 		"references" : {
       						"type": "array",
