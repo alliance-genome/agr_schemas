@@ -8,7 +8,7 @@
 	  "stageUberonSlimTerm": {"uberonTerm":"UBERON:0000068"}
       },
       "whereExpressed": {
-      	"anatomicalStructureTermId":"ZFA:0001120","anatomcialStructureUberonSlimTermIds": [{"uberonTerm":"UBERON:0003104"}],"whereExpressedStatement":"neuroectoderm"
+      	"anatomicalStructureTermId":"ZFA:0001120","anatomicalStructureUberonSlimTermIds": [{"uberonTerm":"UBERON:0003104"}],"whereExpressedStatement":"neuroectoderm"
       },
       "assay": "MMO:0000658",
       "dateAssigned": "2017-06-22T13:27:43-04:00",
