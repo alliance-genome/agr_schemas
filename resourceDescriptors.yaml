@@ -235,12 +235,6 @@
   - name: gene/MODinteractions
     url: https://www.yeastgenome.org/locus/[%s]/interaction#network
 
-- db_prefix:ECO
-  name: Evidence and Conclusion Ontology
-  example_gid: ECO:0000000
-  gid_pattern: "^ECO:\\d+$"
-  default_url:http://www.evidenceontology.org/browse/#ECO:[%s]
-
 #
 # GO
 #
@@ -254,6 +248,12 @@
 #
 # External resources
 #
+
+- db_prefix:ECO
+  name: Evidence and Conclusion Ontology
+  example_gid: ECO:0000000
+  gid_pattern: "^ECO:\\d+$"
+  default_url: http://www.evidenceontology.org/browse/#ECO:[%s]
 
 - db_prefix: HGNC
   name: HGNC
