@@ -14,12 +14,12 @@ args = parser.parse_args()
 
 data_file_name = args.data
 with open(data_file_name) as data_file:
-    data = json.load(data_file, strict='False')
+    data = json.load(data_file)
 data_file.closed
 
 schema_file_name = args.schema
 with open(schema_file_name) as schema_file:
-    schema = json.load(schema_file, strict='False')
+    schema = json.load(schema_file)
     print(schema)
 schema_file.closed
 
