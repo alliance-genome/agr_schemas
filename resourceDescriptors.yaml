@@ -81,6 +81,8 @@
       url: http://rgd.mcw.edu/rgdweb/ontology/annot.html?species=All&x=1&acc_id=[%s]#annot
     - name: gene/MODinteractions
       url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=3&identifiers=[%s]
+    - name: reference
+      url: https://rgd.mcw.edu/rgdweb/report/reference/main.html?id=RGD:[%s]
 
 #
 # ZFIN
@@ -112,6 +114,8 @@
     - name: figure
       url: https://zfin.org/[%s]
     - name: gene/expression/annotation/detail
+      url: https://zfin.org/[%s]
+    - name: reference
       url: https://zfin.org/[%s]
  
 #
