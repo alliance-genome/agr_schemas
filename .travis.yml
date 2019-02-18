@@ -17,6 +17,7 @@ script:
   - "python agr_validate.py -s expression/wildtypeExpressionMetaDataDefinition.json -d expression/ZfinSampleExpressionData.json"
   - "python agr_validate.py -s orthology/orthologyMetaData.json -d orthology/orthologyTestData.json"
   - "python agr_validate.py -s genotype/genotypeMetaData.json -d genotype/zfinSample.genotype.json"
+  - "python agr_validate.py -s allele/variantMetaData.json -d allele/zfinSample.variant.json"
   - "python validate_yaml.py -d resourceDescriptors.yaml"
 # whitelist
 branches:
