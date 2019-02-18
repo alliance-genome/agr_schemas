@@ -6,12 +6,12 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "variant": {
       "type":"object",
       "oneOf": [{"title": "Point Mutation",
       	       	 "type":"object",
-		 "required":["assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequence","type"],
-		 "properties": {"assembly":{"type":"string"},
+		 "required":["alleleId","assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequence","type"],
+		 "properties": {"alleleId":{"$ref": "../globalId.json#/properties/globalId"},
+		 	        "assembly":{"type":"string"},
 				"chromosome":{"type":"string"},
 		 	        "start":{"type":"number"},
 				"end":{"type":"number"},
@@ -35,8 +35,9 @@
 		{
 		"title": "Insertion",
 		 "type":"object",
-		 "required":["assembly","chromosome","start","end","genomicReferenceSequence","type"],
-		 "properties": {"assembly":{"type":"string"},
+		 "required":["alleleId","assembly","chromosome","start","end","genomicReferenceSequence","type"],
+		 "properties": {"alleleId":{"$ref": "../globalId.json#/properties/globalId"},
+		 	        "assembly":{"type":"string"},
                                 "chromosome":{"type":"string"},
                                 "start":{"type":"number"},
                                 "end":{"type":"number"},
@@ -60,8 +61,9 @@
                 },
 		{"title":"Deletion",
 		 "type":"object",
-		 "required": ["assembly","chromosome","start","end","genomicVariantSequence","type"],
-		 "properties":{"assembly":{"type":"string"},
+		 "required": ["alleleId","assembly","chromosome","start","end","genomicVariantSequence","type"],
+		 "properties":{"alleleId":{"$ref": "../globalId.json#/properties/globalId"},
+				"assembly":{"type":"string"},
                                 "chromosome":{"type":"string"},
                                 "start":{"type":"number"},
                                 "end":{"type":"number"},
@@ -84,8 +86,9 @@
                 },
 		{"title":"MNV",
 		 "type":"object",
-		 "required": ["assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequence","type"],
-		 "properties": {"assembly":{"type":"string"},
+		 "required": ["alleleId","assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequence","type"],
+		 "properties": {"alleleId":{"$ref": "../globalId.json#/properties/globalId"},
+				"assembly":{"type":"string"},
                                 "chromosome":{"type":"string"},
                                 "start":{"type":"number"},
                                 "end":{"type":"number"},
@@ -107,5 +110,4 @@
                 }
               ]
     }
-  }
 }

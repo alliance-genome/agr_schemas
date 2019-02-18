@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+	"alleleId":"ZFIN:ZDB-ALT-980413-523",
+	"type":"SO:1000008",
+        "assembly":"GRCz11",
+    		    "start":23342,
+                    "chromosome":"12",
+		    "end":23342,
+                    "genomicReferenceSequence":"A",
+                    "genomicVariantSequence":"T"
+   }
+  ],
+  "metaData": {
+    "dataProvider": {
+        "crossReference": {
+                "id":"ZFIN",
+                "pages": ["homepage"]
+        },
+        "type": "curated"
+    },
+    "dateProduced": "2017-06-22T13:27:43-04:00"
+  }
+}
