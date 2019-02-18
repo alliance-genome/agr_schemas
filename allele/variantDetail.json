@@ -1,13 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "variantType",
-  "description": "An entry that describes the genomicLocation and subtype (as necessary) of a variant.",
-  "id": "variantType.json",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {
-      "oneOf": [{"title": "Point Mutation",
-      	       	 "type":"object",
+  "description": "An entry that describes the genomicLocation of a variant.",
+  "id": "variant.json",
+  "oneOf": [{"title": "Point Mutation",
+		 "type":"object",
 		 "required":["alleleId","assembly","chromosome","start","end","genomicReferenceSequence","genomicVariantSequence","type"],
 		 "properties": {"alleleId":{"$ref": "../globalId.json#/properties/globalId"},
 		 	        "assembly":{"type":"string"},
@@ -30,10 +26,9 @@
     						}
    				}
      		}
-                },
+		},
 		{
 		"title": "Insertion",
-		 "type":"object",
 		 "required":["alleleId","assembly","chromosome","start","end","genomicReferenceSequence","type"],
 		 "properties": {"alleleId":{"$ref": "../globalId.json#/properties/globalId"},
 		 	        "assembly":{"type":"string"},
@@ -108,5 +103,4 @@
                                }
                 }
               ]
-    }
 }

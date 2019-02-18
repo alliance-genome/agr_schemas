@@ -1,8 +1,7 @@
 {
   "data": [
-    {
-	"alleleId":"ZFIN:ZDB-ALT-980413-523",
-	"type":"SO:1000008",
+	{"alleleId":"ZFIN:ZDB-ALT-980413-523",
+        "type":"SO:1000008",
         "assembly":"GRCz11",
     		    "start":23342,
                     "chromosome":"12",
