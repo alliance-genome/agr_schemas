@@ -10,13 +10,9 @@
       "taxonId": "NCBITaxon:7955",
       "gene": "ZFIN:ZDB-GENE-990415-72",
       "crossReferences": [{"id":"ZFIN:ZDB-GENE-990415-72","pages":["allele"]}]
-
-    },
+   },
     {
       "primaryId": "ZFIN:ZDB-ALT-980413-523",
-      "secondaryIds": [
-        "ZFIN:ZDB-ALT-980203-1474"
-      ],
       "symbol": "tt250<sup>1234</sup>",
       "symbolText": "tt250<1234>",
       "synonyms" : [

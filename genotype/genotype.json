@@ -4,10 +4,10 @@
   "description": "Genotypes and their genomic components.  references allele.json",
   "id": "genotype.json#",
   "type": "object",
-  "required": ["primaryId", "taxonId", "symbol", "soTermId"],
+  "required": ["genotypeID", "taxonId", "name"],
   "additionalProperties": false,
   "properties": {
-    "primaryId": {
+    "genotypeID": {
       "$ref" : "../globalId.json#/properties/globalId",
       "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
     },
@@ -15,9 +15,17 @@
       "type": "string",
       "description": "The name of the entity."
     },
+    "nameText": {
+      "type": "string",
+      "description": "The name of the entity, in plain text."
+    },
     "taxonId": {
       "$ref" : "../globalId.json#/properties/globalId",
       "description" : "The taxonId for the species of the genotype entity."
+    },
+    "crossReference": {
+      "description":"MOD database cross references for each genotype;the link back to the MOD.",
+      "$ref" : "../crossReference.json#"
     },
     "synonyms": {
       "type": "array",
@@ -26,13 +34,35 @@
       },
     "uniqueItems": true
     },
-    "featureInstances": {
-      "description": "Collection of genomic components that make up a genotype.",
+    "secondaryIds":{
+      "type": "array",
+      "items": {
+         "type": "string"
+      },
+    "uniqueItems": true
+    },
+    "genotypeComponents": {
+      "description": "Collection of genomic components that make up a genotype, ie: 'allele', each with a zygosity",
        "type": "array",
        "items": {
-         "$ref" : "featureInstance.json"
+         "$ref" : "genotypeComponent.json#"
        },
       "uniqueItems": true
-    }
+    },
+    "sequenceTargetingReagentIDs": {
+      "description": "Collection of sequence targeting reagent components that make up a genotype.",
+       "type": "array",
+       "items": {
+         "$ref" : "../globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
+    },
+    "backgroundIDs": { "description": "Collection of background components that make up a genotype.",
+       "type": "array",
+       "items": {
+         "$ref" : "../globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
+     }
   }
 }

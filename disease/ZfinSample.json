@@ -22,16 +22,12 @@
     } ],
     "evidence" : {
       "publication" : {
-        "modPublicationId" : "ZFIN:ZDB-PUB-120215-13",
-        "pubMedId" : "PMID:22325362"
+        "crossReference" : {"id":"ZFIN:ZDB-PUB-120215-13",
+			    "pages":["reference"]},
+        "publicationId" : "PMID:22325362"
       },
-      "evidenceCodes" : [ "TAS" ]
+      "evidenceCodes" : ["ECO:0000304"]
     },
-    "experimentalConditions" : [ {
-      "textCondition" : "standard conditions",
-      "zecoId" : "ZECO:0000103",
-      "ConditionIsStandard" : true
-    } ],
     "objectRelation" : {
       "associationType" : "is_implicated_in",
       "objectType" : "gene"

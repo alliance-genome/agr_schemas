@@ -15,11 +15,11 @@
       "description": "one publication for which the annotation was made"
     },
     "evidenceCodes": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "description": "3-4 letter abbreviation."
-      },
+      "description": "Collection of ECOids representing the evidence codes satisfied in this annotation.",
+       "type": "array",
+       "items": {
+         "$ref": "../globalId.json#/properties/globalId"
+       },
       "uniqueItems": true
     }
   }

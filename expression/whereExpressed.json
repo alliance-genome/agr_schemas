@@ -18,7 +18,7 @@
         "$ref": "../globalId.json#/properties/globalId",
         "description":"This is an anatomical structure, not a cell type."
     },
-    "anatomcialStructureUberonSlimTermIds":{
+    "anatomicalStructureUberonSlimTermIds":{
      "type": "array",
       "items": {
          "$ref": "uberonStructureSlimTerm.json#"
@@ -35,7 +35,7 @@
         "description": "This anatomical substructure is a part of the nonCellAnatomicalStructureTermId.  It can only exist if nonCellAnatomicalStructureTermId is populated.",
         "dependencies": {"required":["anatomicalStructureTermId"]}
     },
-    "anatomcialSubStructureUberonSlimTermIds":{
+    "anatomicalSubStructureUberonSlimTermIds":{
       "type": "array",
       "items": {
          "$ref": "uberonStructureSlimTerm.json#"
@@ -49,8 +49,7 @@
     },
     "whereExpressedStatement": {
       "type": "string",
-      "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the whereExpressedTermIdentifiers collection, used as a convenience to reduce code duplication."
+      "description": "use to provide a human-readable text display for the combination of one to many ontology terms coded in the whereExpressedTermIdentifiers collection, used as a convenience to reduce code duplication."
     }
   },
-  "anyOf": [{"required": ["anatomicalStructureTermId", "anatomcialStructureUberonSlimTermIds"]},{"required": ["cellularComponentTermId"]}] 
-}
+  "anyOf": [{"required": ["anatomicalStructureTermId", "anatomicalStructureUberonSlimTermIds","whereExpressedStatement"]},{"required": ["cellularComponentTermId","whereExpressedStatement"]}]}

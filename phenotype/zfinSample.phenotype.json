@@ -8,8 +8,9 @@
       ],
       "phenotypeStatement": "alar plate midbrain region morphology, abnormal",
       "evidence": {
-         "modPublicationId": "ZFIN:ZDB-PUB-081031-1",
-         "pubMedId": "PMID:14660549"
+         "crossReference": {"id":"ZFIN:ZDB-PUB-081031-1",
+			    "pages":["reference"]},
+         "publicationId": "PMID:14660549"
       },
       "dateAssigned": "2017-06-22T13:27:43-04:00"
     }
