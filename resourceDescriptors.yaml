@@ -177,28 +177,18 @@
   example_gid: WBls:0000001
   gid_pattern: "^WBls:\\d+$"
   default_url: https://www.wormbase.org/db/get?name=WBls:[%s];class=Life_stage
-  pages:
-    - name: ontology_term
-      url: http://www.wormbase.org/db/get?name=WBls:[%s];class=Life_stage
 
 - db_prefix: WBbt
   name: WormBase anatomy Ontology
   example_gid: WBbt:0008611
   gid_pattern: "^WBbt:\\d+$"
   default_url: https://www.wormbase.org/db/get?name=WBbt:[%s];class=Anatomy
-  pages:
-    - name: ontology_term
-      url: http://www.wormbase.org/db/get?name=WBbt:[%s];class=Anatomy
 
 - db_prefix: WBPhenotype
   name: WormBase Phenotype Ontology
   example_gid: WBPhenotype:0000517
   gid_pattern: "^WBPhenotype:\\d+$"
   default_url: https://www.wormbase.org/db/get?name=WBPhenotype:[%s];class=Phenotype
-  pages:
-    - name: ontology_term
-      url: http://www.wormbase.org/db/get?name=WBPhenotype:[%s];class=Phenotype
-
 
 #
 # SGD
