@@ -132,6 +132,8 @@
       url: http://flybase.org/reports/[%s].html
     - name: gene/expression
       url: http://flybase.org/reports/[%s].html#expression
+    - name: gene/expression_images
+      url: http://flybase.org/reports/[%s].html#expression
     - name: gene/references
       url: http://flybase.org/reports/[%s].html#pubs
     - name: allele
@@ -146,6 +148,8 @@
       url: http://flybase.org/reports/[%s].html
     - name: gene/MODinteractions
       url: http://flybase.org/reports/[%s]#interactions
+    - name: reference
+      url: https://flybase.org/reports/[%s].html
 
 #
 # WormBase
