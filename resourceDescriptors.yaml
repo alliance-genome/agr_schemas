@@ -186,7 +186,7 @@
     - name: disease
       url: https://www.wormbase.org/resources/disease/[%s]
     - name: gene/MODinteractions
-      url: http://www.wormbase.org/db/get?name=[%s];class=Gene#08--10
+      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
 
 - db_prefix: WBls
   name: WormBase life-stage Ontology
