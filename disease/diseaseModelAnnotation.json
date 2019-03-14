@@ -44,8 +44,12 @@
         "description": "source of data, can be multiple of these, each with a type and a crossReference"
     },
     "with": {
-       "$ref":"../globalId.json#/properties/globalId",
-      "description": "please see: http://geneontology.org/docs/go-annotation-file-gaf-format-21/#with-or-from-column-8"
+      "type": "array",
+      "items": {
+        "$ref" : "../globalId.json#/properties/globalId",
+        "description": "http://geneontology.org/docs/go-annotation-file-gaf-format-21/#with-or-from-column-8"
+      },
+      "uniqueItems": true
     },
     "evidence": {
       "$ref": "evidence.json#",
