@@ -7,7 +7,8 @@
                     "chromosome":"12",
 		    "end":23342,
                     "genomicReferenceSequence":"A",
-                    "genomicVariantSequence":"T"
+                    "genomicVariantSequence":"T",
+		    "sequenceOfReferenceAccessionNumber": "RefSeq:XM_005156904"
    }
   ],
   "metaData": {
