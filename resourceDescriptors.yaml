@@ -273,6 +273,12 @@
   - name: gene/interactions
     url: https://www.ncbi.nlm.nih.gov/gene/[%s]
 
+- db_prefix: RefSeq
+  name: RefSeq
+  example_gid: RefSeq:NT_033778
+  gid_pattern: "^RefSeq:\\w+$"
+  default_url: https://www.ncbi.nlm.nih.gov/nuccore/[%s]
+
 - db_prefix: UniProtKB
   name: UniProtKB
   example_gid: UniProtKB:P07713
