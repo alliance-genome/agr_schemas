@@ -15,10 +15,12 @@
       url: http://www.informatics.jax.org/marker/MGI:[%s]
     - name: gene/expression
       url: http://www.informatics.jax.org/gxd/marker/MGI:[%s]
+    - name: gene/expression_images
+      url: http://www.informatics.jax.org/gxd/marker/MGI:[%s]?tab=imagestab
     - name: gene/references
       url: http://www.informatics.jax.org/reference/marker/MGI:[%s]
     - name: gene/phenotypes
-      url: http://www.informatics.jax.org/marker/MGI:[%s]
+      url: http://www.informatics.jax.org/marker/phenotypes/MGI:[%s]
     - name: allele
       url: http://www.informatics.jax.org/allele/MGI:[%s]
     - name: genotype
@@ -31,6 +33,8 @@
       url: http://www.informatics.jax.org/assay/MGI:[%s]
     - name: gene/MODinteractions
       url: http://www.informatics.jax.org/interaction/explorer?markerIDs=MGI:[%s]
+    - name: reference
+      url: http://www.informatics.jax.org/reference/MGI:[%s]
 
 #
 # MGI - old style IDs
@@ -186,35 +190,25 @@
     - name: disease
       url: https://www.wormbase.org/resources/disease/[%s]
     - name: gene/MODinteractions
-      url: http://www.wormbase.org/db/get?name=[%s];class=Gene#08--10
+      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
 
 - db_prefix: WBls
   name: WormBase life-stage Ontology
   example_gid: WBls:0000001
   gid_pattern: "^WBls:\\d+$"
   default_url: https://www.wormbase.org/db/get?name=WBls:[%s];class=Life_stage
-  pages:
-    - name: ontology_term
-      url: http://www.wormbase.org/db/get?name=WBls:[%s];class=Life_stage
 
 - db_prefix: WBbt
   name: WormBase anatomy Ontology
   example_gid: WBbt:0008611
   gid_pattern: "^WBbt:\\d+$"
   default_url: https://www.wormbase.org/db/get?name=WBbt:[%s];class=Anatomy
-  pages:
-    - name: ontology_term
-      url: http://www.wormbase.org/db/get?name=WBbt:[%s];class=Anatomy
 
 - db_prefix: WBPhenotype
   name: WormBase Phenotype Ontology
   example_gid: WBPhenotype:0000517
   gid_pattern: "^WBPhenotype:\\d+$"
   default_url: https://www.wormbase.org/db/get?name=WBPhenotype:[%s];class=Phenotype
-  pages:
-    - name: ontology_term
-      url: http://www.wormbase.org/db/get?name=WBPhenotype:[%s];class=Phenotype
-
 
 #
 # SGD
@@ -272,7 +266,7 @@
   - name: gene
     url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
   - name: gene/MODinteractions
-    url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=1&identifiers=[%s]
+    url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=1&identifiers=HGNC:[%s]
 
 - db_prefix: NCBI_Gene
   name: NCBI Gene
