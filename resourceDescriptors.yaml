@@ -165,6 +165,8 @@
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene
     - name: gene/expression
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
+    - name: gene/expression_images
+      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
     - name: gene/interactions
       url: http://www.wormbase.org/db/get?name=[%s];class=interaction
     - name: gene/references
