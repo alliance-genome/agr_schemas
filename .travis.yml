@@ -20,7 +20,8 @@ script:
   - "python agr_validate.py -s allele/variantMetaData.json -d allele/zfinSample.variant.json"
   - "python agr_validate.py -d genotype/zfinSample.sqtr.json -s genotype/sequenceTargetingReagentMetaData.json
   - "python validate_yaml.py -d resourceDescriptors.yaml"
+
 # whitelist
-branches:
-  only:
-    - develop
+#branches:
+#  only:
+#    - develop
