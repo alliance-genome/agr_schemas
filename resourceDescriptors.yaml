@@ -170,7 +170,7 @@
     - name: gene/expression
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
     - name: gene/expression_images
-      url: http://www.informatics.jax.org/gxd/marker/MGI:[%s]?tab=imagestab
+      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
     - name: gene/interactions
       url: http://www.wormbase.org/db/get?name=[%s];class=interaction
     - name: gene/references
@@ -278,6 +278,12 @@
   pages:
   - name: gene/interactions
     url: https://www.ncbi.nlm.nih.gov/gene/[%s]
+
+- db_prefix: RefSeq
+  name: RefSeq
+  example_gid: RefSeq:NT_033778
+  gid_pattern: "^RefSeq:\\w+$"
+  default_url: https://www.ncbi.nlm.nih.gov/nuccore/[%s]
 
 - db_prefix: UniProtKB
   name: UniProtKB
