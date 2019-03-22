@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Sequence Targeting Reagent Meta Data Definition",
+  "description": "Meta Data Definition for SQTR Objects.",
+  "id": "sequenceTargetingReagentMetaDataDefinition.json",
+  "type": "object",
+  "required": [ "metaData", "data" ],
+  "properties": {
+    "metaData": {
+      "$ref": "../metaData.json#",
+      "description": "meta data of the load file as defined in metaData.json."
+    },
+    "data": {
+      "type": "array",
+      "description": "A list of sequence targeting reagent objects.",
+      "items": {
+        "$ref" : "sequenceTargetingReagent.json#"
+      }
+    }
+  }
+}

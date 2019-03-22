@@ -1,0 +1,10 @@
+{
+  "metaData" : null,
+  "data" : [ 
+{
+    "primaryId" : "ZFIN:ZDB-CRISPR-181015-8",
+    "name" : "CRISPR10-alk",
+    "targetGeneIds" : [ "ZFIN:ZDB-GENE-031027-1" ],
+    "taxonId" : "NCBITaxon:7955"
+  }]
+}
