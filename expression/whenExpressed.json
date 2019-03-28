@@ -5,6 +5,7 @@
   "id": "whenExpressed.json#",
   "type": "object",
   "required": [
+    "stageName",
     "stageName"
   ],
   "additionalProperties": false,
