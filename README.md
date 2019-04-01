@@ -28,6 +28,12 @@ for the disease info file run
 and for the allele info file run
    `./agr_validate.py -d <your_new_allele_file.json> -s  allele/alleleMetaData.json`
 
+The java script "agr_validate_schema.sh" can be used to validate that the schema file itself conforms to the draft-4 version of the JSON schema spec and will run on PR into master.  
+
+For validating all schema files in a branch: 
+./agr_validate_schema.sh
+
+
 Formatting Notes
 ----------------
 Please use 2 spaces for indentation.
