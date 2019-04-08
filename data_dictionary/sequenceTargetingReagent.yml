@@ -1,0 +1,50 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "sequenceTargetingReagent"
+title: SequenceTargetingReagent
+type: object
+description: >
+
+additionalProperties: false
+validators: 
+
+properties: 
+ primaryId (could be sequenceTargetingReagentID?)
+ name
+
+relations:
+  - name: Gene
+    backref: targeted_by
+    label: targets
+    multiplicity: many_to_many
+    required: true
+  - name: Synonym
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - name: SecondaryId (needs a new node name)
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - name: CrossReference
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: one_to_one
+    required: false
+  - name: Species
+    backref: from_species
+    label: from_species
+    multiplicity: one_to_one
+    required: true
+  - name: Load
+    backref: loaded_from
+    label: loaded_from
+    multiplicity: one_to_one
+    required: true
+  - name: SOTerm
+    backref: (association? type? soterm_of?)
+    label: (association? type? soterm_of?)
+    multiplicity: one_to_one
+    required: true
