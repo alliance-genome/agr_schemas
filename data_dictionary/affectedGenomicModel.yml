@@ -14,48 +14,48 @@ properties:
  subtype
  
 secondaryLabels: 
- - name: Genotype
+ - relatedNode: Genotype
    required: false
- - name: Strain
+ - relatedNode: Strain
    required: false 
 
 relations:
-  - name: AffectedGenomicModel
+  - relatedNode: AffectedGenomicModel
     backref: is_parental_population
     label: has_parental_population
     multiplicity: many_to_many
     required: false
-  - name: Allele
+  - relatedNode: Allele
     backref: is_allele_of 
     label: has_allele
     multiplicity: many_to_many
     required: false
-  - name: SequenceTargetingReagent
+  - relatedNode: SequenceTargetingReagent
     backref: has_sequence_targeting_reagent
     label: is_sequence_targeting_reagent_of
     multiplicity: many_to_many
     required: false
-  - name: Synonym
+  - relatedNode: Synonym
     backref: also_known_as
     label: also_known_as
     multiplicity: many_to_many
     required: false
-  - name: SecondaryId (needs a new node name)
+  - relatedNode: SecondaryId (needs a new node name)
     backref: also_known_as
     label: also_known_as
     multiplicity: many_to_many
     required: false
-  - name: CrossReference
+  - relatedNode: CrossReference
     backref: cross_reference
     label: cross_reference
     multiplicity: one_to_one
     required: false
-  - name: Species
+  - relatedNode: Species
     backref: from_species
     label: from_species
     multiplicity: one_to_one
     required: true
-  - name: Load
+  - relatedNode: Load
     backref: loaded_from
     label: loaded_from
     multiplicity: one_to_one

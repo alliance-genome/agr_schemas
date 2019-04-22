@@ -19,26 +19,26 @@ properties:
   
 
 relations:
-  - name: BioEntityGeneExpressionJoin
+  - relatedNode: BioEntityGeneExpressionJoin
     backref: evidence (could be 'has_evidence')
     label: evidence (could be 'evidence_of')
     multiplicity: many_to_one
     required: false
-  - name: PublicationEvidenceCodeJoin
+  - relatedNode: PublicationEvidenceCodeJoin
     backref: association 
     label: association
     multiplicity: many_to_one
     required: false
-  - name: PhenotypeEntityJoin
+  - relatedNode: PhenotypeEntityJoin
     backref: evidence
     label: evidence
     multiplicity: many_to_one
     required: false
-  - name: InteractionGenejoin
+  - relatedNode: InteractionGenejoin
     backref: evidence
     label: evidence
     mutiplicity: many_to_one
-  - name: CrossReference
+  - relatedNode: CrossReference
     backref: cross_reference
     label: cross_reference
     multiplicity: one_to_one
