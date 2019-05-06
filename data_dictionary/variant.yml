@@ -1,0 +1,40 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "variant"
+title: Variant
+type: object
+description: A DNA sequence that differs relative to a designated reference sequence. The sequence difference occurs at a single position or in contiguous nucleotides.
+
+Notes: This term currently includes the following variant types: substitution, point mutation, insertion, deletion, insertion+deletion. Genomic Variants could refer to nuclear or organellar genomes. The designated reference sequence can be whatever sequence or set of sequences to which the variant is compared. >
+
+additionalProperties: false
+validators: 
+
+properties: 
+ primaryId
+ genomicReferenceSequence
+ genomicVariantSequence
+
+relations:
+  - name: Allele:Feature
+    backref: variation
+    label: variation
+    multiplicity: one_to_one
+    required: true
+  - name: SOTerm
+    backref: variation_type
+    label: variation_type
+    multiplicity: one_to_one
+    required: true
+  - name: Chromosome
+    backref: located_on
+    label: located_on
+    multiplicity: one_to_one
+    properties:
+     start
+     end
+     assembly
+  - name: CrossReference
+    backref: cross_reference
+    multiplicity: cross_reference
+    label: one_to_one
