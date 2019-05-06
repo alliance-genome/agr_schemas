@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "regulatoryComponent",
+  "description": "Regulatory region driving expression: sometimes there isn't an ID, so name is the primary key, with an optional id.",
+  "id": "regulatoryComponent.json#",
+  "type": "object",
+  "required": ["name"],
+  "additionalProperties": false,
+  "properties": {
+    "primaryId": {
+      "$ref": "../globalId.json#/properties/globalId",
+    },
+    "name": {
+      "type": "string"
+    }
+}

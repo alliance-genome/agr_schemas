@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "transgenicConstruct",
+  "description": "An entry with transgenicConstruct information from a MOD.",
+  "id": "transgenicConstruct.json#",
+  "type": "object",
+  "required": ["primaryId"],
+  "additionalProperties": false,
+  "properties": {
+    "primaryId": {                                
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
+    },
+    "symbol": {
+      "type": "string",
+      "description": "The short name for the transgenicConstruct entity."
+    },
+    "regulatoryComponent": {
+      "$ref": "regulatoryComponent.json"
+    },
+    "expressedComponent": {
+     "$ref": "expressedComponent.json"
+    },
+    "soTermId": { 
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "The SO Term that represents as best we can, the bioType, or featureType of the object in the file."
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {
+         "type": "string"
+      },
+    "uniqueItems": true
+    },
+    "secondaryIds": {
+      "description": "Collection of MOD-specific IDs that have been merged into gene entity.",
+       "type": "array",
+       "items": {
+         "$ref": "../globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
+    }
+  }
+}
