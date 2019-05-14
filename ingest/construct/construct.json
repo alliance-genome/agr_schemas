@@ -16,10 +16,16 @@
       "description": "The short name for the transgenicConstruct entity."
     },
     "regulatoryComponent": {
-      "$ref": "regulatoryComponent.json"
+      "type": "array",
+      "items": {
+        "$ref": "regulatoryComponent.json"
+      }
     },
     "expressedComponent": {
+     "type": "array",
+     "items": {
      "$ref": "expressedComponent.json"
+    }
     },
     "soTermId": { 
       "$ref": "../globalId.json#/properties/globalId",
