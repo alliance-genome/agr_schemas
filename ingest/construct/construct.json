@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "transgenicConstruct",
-  "description": "An entry with transgenicConstruct information from a MOD.",
-  "id": "transgenicConstruct.json#",
+  "title": "construct",
+  "description": "An entry with construct information from a MOD.",
+  "id": "construct.json#",
   "type": "object",
   "required": ["primaryId"],
   "additionalProperties": false,
@@ -13,7 +13,7 @@
     },
     "symbol": {
       "type": "string",
-      "description": "The short name for the transgenicConstruct entity."
+      "description": "The short name for the construct entity."
     },
     "regulatoryComponent": {
       "type": "array",

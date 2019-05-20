@@ -36,6 +36,7 @@
                                 "chromosome":{"type":"string"},
                                 "start":{"type":"number"},
                                 "end":{"type":"number"},
+				"insertionLength":{"type":"number"},
 				"genomicReferenceSequence":{"enum":["N/A"]},
 				"genomicVariantSequence":{"type":"string"},
 				"sequenceOfReferenceAccessionNumber": {"$ref":"../globalId.json#/properties/globalId"},
@@ -104,6 +105,34 @@
       							"description": "set of publications that support the genomic location annotation for this variant record."
     						}
    				}
+                               }
+                },
+                {"title":"DELIN",
+                 "type":"object",
+                 "required": ["alleleId","start","end","type","sequenceOfReferenceAccessionNumber"],
+                 "properties": {"alleleId":{"$ref": "../globalId.json#/properties/globalId"},
+                                "assembly":{"type":"string"},
+                                "chromosome":{"type":"string"},
+                                "start":{"type":"number"},
+                                "end":{"type":"number"},
+				"genomicVariantSequenceAccessionNumber":{"type":"string"},
+                                "genomicReferenceSequence":{"type":"string"},
+                                "genomicVariantSequence":{"type":"string"},
+                                "sequenceOfReferenceAccessionNumber": {"$ref":"../globalId.json#/properties/globalId"},
+                                "type":{"enum":["SO:1000032"]},
+				"insertionLength":{"type":"number"},
+                                "consequence": {
+                                        "$ref":"../globalId.json#/properties/globalId",
+                                         "description": "the consequence of the mutation.  should be an SO term"
+                                },
+                                "references" : {
+                                                "type": "array",
+                                                "items": {
+                                                        "$ref": "../publicationRef.json#",
+                                                        "description": "set of publications that support the genomic location annotation for this variant recor\
+d."
+                                                }
+                                }
                                }
                 }
               ]

@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "transgenicConstructMetaData",
+  "title": "constructMetaData",
   "description": "A file of Transgenic Construct objects.",
-  "id": "transgenicConstructMetaData.json",
+  "id": "constructMetaData.json",
   "type": "object",
   "required": [ "metaData", "data" ],
   "properties": {
@@ -12,9 +12,9 @@
     },
     "data": { 
       "type": "array",
-      "description": "A list of transgenicConstruct objects.",
+      "description": "A list of construct objects.",
       "items": {
-        "$ref" : "transgenicConstruct.json#"
+        "$ref" : "construct.json#"
       }
     }
   }

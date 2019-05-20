@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "transgenicConstruct"
+id: "construct"
 title: TransgenicConstruct
 type: object
 description: >
