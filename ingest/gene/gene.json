@@ -1,27 +1,27 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "gene",
-  "description": "An entry with Gene information from a MOD.  Gene set includes: genes, psuedogenes and not-protein coding genes.  It does not include engineered foreign genes, transcripts or other features.",
+  "description": "An entry with Gene information from a MOD.  Types of genes are enumerated using the soTermId enumeration as referenced below.",
   "id": "gene.json#",
   "type": "object",
-  "required": ["primaryId", "taxonId", "symbol", "soTermId"],
+  "required": ["basicGeneticEntity", "symbol", "soTermId"],
   "additionalProperties": false,
   "properties": {
-    "primaryId": {                                
-      "$ref": "../globalId.json#/properties/globalId",
-      "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
+    "basicGeneticEntity": {                                
+      "$ref": "../basicGeneticEntity.json",
+      "description": "The basic attributes of a gene object including id, taxonId, crossReferences, etc..
     },
     "name": { 
       "type": "string",
       "description": "The name of the entity."
     },
-    "taxonId": {
-      "$ref": "../globalId.json#/properties/globalId",
-      "description" : "The taxonId for the species of the gene entity."
-    },
     "symbol": {
       "type": "string",
       "description": "The symbol for the gene entity."
+    },
+    "taxonId": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description" : "The taxonId for the species of the gene entity."
     },
     "geneSynopsis": {
       "type": "string",
@@ -33,39 +33,8 @@
        "description": "URL to a gene synopsis outside the MOD, like wikipedia.  Per request from BGI-WG."
     },
     "soTermId": { 
-      "$ref": "../globalId.json#/properties/globalId",
-      "description": "The SO Term that represents as best we can, the bioType, or featureType of the object in the file.  DQMs agree that this should be a standardized set."
-    },
-    "synonyms": {
-      "type": "array",
-      "items": {
-         "type": "string"
-      },
-    "uniqueItems": true
-    },
-    "crossReferences": {
-      "description":"Collection holding a limited set (for now) of database cross references for each gene.  That set is defined in geneCrossReferences.json dataSoruce enumeration.  NCBI GENE means just the NCBI Gene reference.  UniProtKB is swissprot and trembl.  Ensembl is just the GENE id for now (not transcript nor protein).  Vega was eliminated as it did not apply to all organisms in the repository.",
-      "type": "array",
-      "items": {
-         "$ref" : "../crossReference.json#"
-      },
-      "uniqueItems": true
-    },
-    "genomeLocations": {
-      "description":"Collection holding the set of locations for each gene object.",
-      "type": "array",
-      "items": {
-        "$ref" : "genomeLocation.json#"
-      },
-      "uniqueItems": true
-    },
-    "secondaryIds": {
-      "description": "Collection of MOD-specific IDs that have been merged into gene entity.",
-       "type": "array",
-       "items": {
-         "$ref": "../globalId.json#/properties/globalId"
-       },
-      "uniqueItems": true
+      "$ref": "geneTypeSlim.json",
+      "description": "The SO Term that represents as best we can, the specific type of gene in the file."
     }
   }
 }
