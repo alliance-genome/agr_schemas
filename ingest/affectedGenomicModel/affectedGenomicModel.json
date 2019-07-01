@@ -4,7 +4,7 @@
   "description": "Genotypes and their genomic components.  references allele.json",
   "id": "genotype.json#",
   "type": "object",
-  "required": ["primaryID", "taxonId", "name", "type"],
+  "required": ["primaryID", "taxonId", "name"],
   "additionalProperties": false,
   "properties": {
     "primaryID": {

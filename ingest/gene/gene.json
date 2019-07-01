@@ -19,10 +19,6 @@
       "type": "string",
       "description": "The symbol for the gene entity."
     },
-    "taxonId": {
-      "$ref": "../globalId.json#/properties/globalId",
-      "description" : "The taxonId for the species of the gene entity."
-    },
     "geneSynopsis": {
       "type": "string",
       "description": "Human readable gene description or synopsis"
