@@ -1,32 +1,36 @@
 {
   "data": [
-    {
-      "crossReferences": [
-        { "id":"NCBI_Gene:109899"}, 
-        { "id":"MGI:87982","pages":["gene","gene/references"]}
-      ],
-      "genomeLocations": [
-        {
-          "assembly": "",
-          "chromosome": "1"
-        }
-      ],
-      "name": "alkaline phosphatase 1",
-      "primaryId": "MGI:87982",
+    { 
+      "basicGeneticEntity": {
+      	"crossReferences": [
+				{ "id":"NCBI_Gene:109899"}, 
+        		   	{ "id":"MGI:87982","pages":["gene","gene/references"]}
+      			   ],
+      	"genomeLocations": [
+				{
+					"assembly": "",
+          				"chromosome": "1"
+	          	         }
+      		            ],
+      "primaryId": "MGI:87912",
       "secondaryIds": [
         "MGD_old:MGD-MRK-1248",
         "MGD_old:MGD-MRK-1253"
       ],
-      "soTermId": "SO:0001217",
-      "symbol": "Akp1",
       "synonyms": [
         "Akp1",
         "Akp-1",
         "alkaline phosphatase 1"
       ],
       "taxonId": "NCBITaxon:10090"
+     },
+     "name": "alkaline phosphatase 1",
+      "soTermId": "SO:0001217",
+      "symbol": "Akp1",
     },
     {
+    {
+      "basicGeneticEntity": {
       "crossReferences": [
         {"id":"NCBI_Gene:16020"},
         {"id":"MGI:96449","pages":["gene","gene/expression","gene/references"]}
@@ -40,20 +44,22 @@
           "strand": "."
         }
       ],
-      "name": "immunoglobulin heavy chain 7 (heavy chain of IgE)",
       "primaryId": "MGI:96449",
       "secondaryIds": [
         "MGD_old:MGD-MRK-11246"
       ],
-      "soTermId": "SO:3000000",
-      "symbol": "Igh-7",
       "synonyms": [
         "Igh-7",
         "immunoglobulin heavy chain 7 (heavy chain of IgE)"
       ],
       "taxonId": "NCBITaxon:10090"
+     },
+      "soTermId": "SO:3000000",
+      "name": "immunoglobulin heavy chain 7 (heavy chain of IgE)",
+      "symbol": "Igh-7",
     },
     {
+"basicGeneticEntity": {
       "crossReferences": [
         {"id":"ENSEMBL:ENSMUSG00000005672"},
         {"id":"NCBI_Gene:16590"},
@@ -72,7 +78,6 @@
           "strand": "+"
         }
       ],
-      "name": "KIT proto-oncogene receptor tyrosine kinase",
       "primaryId": "MGI:96677",
       "secondaryIds": [
         "MGD_old:MGD-MRK-1672",
@@ -84,8 +89,6 @@
         "MGI:3530312",
         "MGI:3530319"
       ],
-      "soTermId": "SO:0001217",
-      "symbol": "Kit",
       "synonyms": [
         "belly-spot",
         "Bs",
@@ -112,19 +115,26 @@
         "W"
       ],
       "taxonId": "NCBITaxon:10090"
+     },
+     "name": "KIT proto-oncogene receptor tyrosine kinase",
+     "soTermId": "SO:0001217",
+      "symbol": "Kit",
     },
     {
-      "name": "twisty nose",
+     "basicGeneticEntity": {
       "primaryId": "MGI:5695867",
-      "soTermId": "SO:0001500",
-      "symbol": "Twsn",
       "synonyms": [
         "twisty nose",
         "Twsn"
       ],
       "taxonId": "NCBITaxon:10090"
+     },
+     "name": "twisty nose",
+     "soTermId": "SO:0001500",
+      "symbol": "Twsn",
     },
     {
+    "basicGeneticEntity": {
       "crossReferences": [
         {"id":"ENSEMBL:ENSMUSG00000083722"},
         {"id":"NCBI_Gene:674251"},
@@ -139,13 +149,10 @@
           "strand": "+"
         }
       ],
-      "name": "adhesion G protein-coupled receptor D2, pseudogene",
       "primaryId": "MGI:2685845",
       "secondaryIds": [
         "MGI:3642981"
       ],
-      "soTermId": "SO:0000336",
-      "symbol": "Adgrd2-ps",
       "synonyms": [
         "Adgrd2-ps",
         "adhesion G protein-coupled receptor D2, pseudogene",
@@ -163,6 +170,10 @@
         "predicted gene, OTTMUSG00000012858"
       ],
       "taxonId": "NCBITaxon:10090"
+     },
+      "name": "adhesion G protein-coupled receptor D2, pseudogene",
+      "soTermId": "SO:0000336",
+      "symbol": "Adgrd2-ps"
     }
   ],
   "metaData": {

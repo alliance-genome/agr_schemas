@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "basicBasicGeneticEntityticEntity",
-  "description": "An entry with basicGeneticEntitytic entity information from a MOD.",
-  "id": "basicBasicGeneticEntityticEntity.json#",
+  "title": "basicGeneticEntity",
+  "description": "An entry with basicGeneticEntity entity information from a MOD.",
+  "id": "basicGeneticEntity.json#",
   "type": "object",
   "required": ["primaryId", "taxonId"],
   "additionalProperties": false,
