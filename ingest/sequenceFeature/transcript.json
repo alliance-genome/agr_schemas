@@ -9,7 +9,7 @@
   "properties": {
     "basicGeneticEntity": {                                
       "$ref": "../basicGeneticEntity.json",
-      "description": "The basic attributes of a gene object including id, taxonId, crossReferences, etc..
+      "description": "The basic attributes of a gene object including id, taxonId, crossReferences, etc.."
     },
     "name": { 
       "type": "string",
@@ -22,6 +22,13 @@
     "soTermId": { 
       "$ref": "transcriptTypeSlim.json",
       "description": "The SO Term that represents as best we can, the specific type of transcript in the file."
+    },
+    "exons": {
+    	"type": "array",
+      	"items": {	
+         	 "$ref": "../crossReference.json"
+        },
+      "uniqueItems": true
     }
   }
 }

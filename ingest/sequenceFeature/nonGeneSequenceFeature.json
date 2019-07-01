@@ -4,12 +4,12 @@
   "description": "Non gene, transcript or construct sequence feature.",
   "id": "nonGeneSequenceFeature.json#",
   "type": "object",
-  "required": ["basicGeneticEntity", "soTermId"],
+  "required": ["basicGeneticEntity", "soTermId", "symbol"],
   "additionalProperties": false,
   "properties": {
     "basicGeneticEntity": {                                
       "$ref": "../basicGeneticEntity.json",
-      "description": "The basic attributes of a gene object including id, taxonId, crossReferences, etc..
+      "description": "The basic attributes of a gene object including id, taxonId, crossReferences, etc.."
     },
     "name": { 
       "type": "string",
