@@ -4,7 +4,7 @@
   "description": "An entry with basicGeneticEntitytic entity information from a MOD.",
   "id": "basicBasicGeneticEntityticEntity.json#",
   "type": "object",
-  "required": ["primaryId", "taxonId", "symbol", "soTermId"],
+  "required": ["primaryId", "taxonId"],
   "additionalProperties": false,
   "properties": {
     "primaryId": {
