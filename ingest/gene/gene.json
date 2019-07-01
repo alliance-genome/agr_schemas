@@ -9,7 +9,7 @@
   "properties": {
     "basicGeneticEntity": {                                
       "$ref": "../basicGeneticEntity.json",
-      "description": "The basic attributes of a gene object including id, taxonId, crossReferences, etc..
+      "description": "The basic attributes of a gene object including id, taxonId, crossReferences, etc.."
     },
     "name": { 
       "type": "string",
