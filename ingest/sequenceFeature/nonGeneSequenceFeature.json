@@ -20,7 +20,7 @@
       "description": "The symbol for the gene entity."
     },
     "soTermId": { 
-      "$ref": "nonGeneSequenceFeatureTypeSlim.json",
+      "type": "string",
       "description": "The SO Term that represents as best we can, the specific type of non gene sequence feature in the file."
     }
   }

@@ -129,8 +129,7 @@
                                                 "type": "array",
                                                 "items": {
                                                         "$ref": "../publicationRef.json#",
-                                                        "description": "set of publications that support the genomic location annotation for this variant recor\
-d."
+                                                        "description": "set of publications that support the genomic location annotation for this variant record."
                                                 }
                                 }
                                }

@@ -29,7 +29,7 @@
        "description": "URL to a gene synopsis outside the MOD, like wikipedia.  Per request from BGI-WG."
     },
     "soTermId": { 
-      "$ref": "geneTypeSlim.json",
+      "type": "string",
       "description": "The SO Term that represents as best we can, the specific type of gene in the file."
     }
   }

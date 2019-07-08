@@ -25,7 +25,7 @@
       "taxonId": "NCBITaxon:10090"
      },
      "name": "alkaline phosphatase 1",
-      "soTermId": {"SOTermId":"SO:0001217"},
+      "soTermId": "SO:0001217",
       "symbol": "Akp1"
     }, 
     {
@@ -53,7 +53,7 @@
       ],
       "taxonId": "NCBITaxon:10090"
      },
-      "soTermId": {"SOTermId":"SO:3000000"},
+      "soTermId": "SO:3000000",
       "name": "immunoglobulin heavy chain 7 (heavy chain of IgE)",
       "symbol": "Igh-7"
     },
@@ -115,7 +115,7 @@
       "taxonId": "NCBITaxon:10090"
      },
      "name": "KIT proto-oncogene receptor tyrosine kinase",
-     "soTermId": {"SOTermId":"SO:0001217"},
+     "soTermId": "SO:0001217",
       "symbol": "Kit",
       "geneSynopsisUrl": "https://en.wikipedia.org/wiki/CD117"
     },
@@ -129,7 +129,7 @@
       "taxonId": "NCBITaxon:10090"
      },
      "name": "twisty nose",
-     "soTermId": {"SOTermId":"SO:0001500"},
+     "soTermId": "SO:0001500",
       "symbol": "Twsn"
     },
     {
@@ -171,7 +171,7 @@
       "taxonId": "NCBITaxon:10090"
      },
       "name": "adhesion G protein-coupled receptor D2, pseudogene",
-      "soTermId": {"SOTermId":"SO:0000336"},
+      "soTermId": "SO:0000336",
       "symbol": "Adgrd2-ps"
     }
   ],

@@ -1,15 +1,16 @@
 {
   "data": [
-	{"alleleId":"ZFIN:ZDB-ALT-980413-523",
-        "type":"SO:1000008",
-        "assembly":"GRCz11",
-    		    "start":23342,
-                    "chromosome":"12",
-		    "end":23342,
-                    "genomicReferenceSequence":"A",
-                    "genomicVariantSequence":"T",
-		    "sequenceOfReferenceAccessionNumber": "RefSeq:XM_005156904"
-   }
+{
+    "alleleId" : "ZFIN:ZDB-ALT-000412-8",
+    "assembly" : "GRCz11",
+    "chromosome" : "7",
+    "start" : 30341642,
+    "end" : 30341642,
+    "sequenceOfReferenceAccessionNumber" : "NC_007118.7",
+    "genomicReferenceSequence" : "C",
+    "genomicVariantSequence" : "T",
+    "type" : "SO:1000008"
+  }
   ],
   "metaData": {
     "dataProvider": {
