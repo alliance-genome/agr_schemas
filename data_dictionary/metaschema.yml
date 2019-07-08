@@ -1,0 +1,63 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+definitions:
+
+  link:
+    type: object
+    additionalProperties: false
+    required:
+      - relatedNode
+      - target_type
+      - backref
+      - label
+      - multiplicity
+      - required
+    properties:
+      relatedNode:
+        type: string
+      target_type:
+        type: string
+      backref:
+        type: string
+      label:
+        type: string
+      multiplicity:
+        type: string
+        enum:
+          - one_to_one
+          - one_to_many
+          - many_to_one
+          - many_to_many
+      required:
+        type: boolean
+
+
+foreign_key:
+    type: object
+    # Allow true here because we can have other unique keys defined on
+    # a target type
+    additionalProperties: True
+    #Can either use 'id' which are GDC IDs (UUID) or 'submitter_id'
+    #which are user defined IDs ("submitter IDs in the backend")
+    properties:
+        id:
+            $ref: "#/UUID"
+        submitter_id:
+            type: string
+
+to_one:
+  anyOf:
+    - type: array
+      items:
+        $ref: "#/foreign_key"
+        minItems: 1
+        maxItems: 1
+    - $ref: "#/foreign_key"
+
+to_many:
+  anyOf:
+    - type: array
+      items:
+        $ref: "#/foreign_key"
+        minItems: 1
+    - $ref: "#/foreign_key"

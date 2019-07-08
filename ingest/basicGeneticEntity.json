@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "basicGeneticEntity",
+  "description": "An entry with basicGeneticEntity entity information from a MOD.",
+  "id": "basicGeneticEntity.json#",
+  "type": "object",
+  "required": ["primaryId", "taxonId"],
+  "additionalProperties": false,
+  "properties": {
+    "primaryId": {
+      "$ref": "globalId.json#/properties/globalId",
+      "description": "The prefixed primary (MOD) ID for an entity. e.g. FB:FBgn0003301, MGI:87917."
+    },
+    "taxonId": {
+      "$ref": "globalId.json#/properties/globalId",
+      "description" : "The taxonId for the species of the basicGeneticEntity entity."
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {
+         "type": "string"
+      },
+    "uniqueItems": true
+    },
+    "secondaryIds": {
+      "description": "Collection of MOD-specific IDs that have been merged into basicGeneticEntity.",
+       "type": "array",
+       "items": {
+         "$ref": "globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
+    },
+    "crossReferences": {
+      "description":"Collection holding a limited set of database cross references for each object.",
+      "type": "array",
+      "items": {
+         "$ref" : "gene/geneCrossReference.json"
+      },
+      "uniqueItems": true
+    },
+    "genomeLocations": {
+      "description":"Collection holding the set of locations for each genetic object.",
+      "type": "array",
+      "items": {
+        "$ref" : "gene/genomeLocation.json#"
+      },
+      "uniqueItems": true
+    }
+  }
+}

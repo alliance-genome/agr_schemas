@@ -1,0 +1,45 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "publication"
+title: Publication
+type: object
+description: >
+  The ID from the data provider that describes the publication.  
+  When available, this is the PMID. When no PMID (PUBMED id) is available, 
+  this is the MOD publication id.
+additionalProperties: false
+validators: 
+
+properties: 
+  primaryKey (could be primaryId or publicationId)
+  pubMedId 
+  pubMedUrl
+  pubModUrl
+  pubModId 
+  
+
+relations:
+  - relatedNode: BioEntityGeneExpressionJoin
+    backref: evidence (could be 'has_evidence')
+    label: evidence (could be 'evidence_of')
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: PublicationEvidenceCodeJoin
+    backref: association 
+    label: association
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: PhenotypeEntityJoin
+    backref: evidence
+    label: evidence
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: InteractionGenejoin
+    backref: evidence
+    label: evidence
+    mutiplicity: many_to_one
+  - relatedNode: CrossReference
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: one_to_one
+    required: false

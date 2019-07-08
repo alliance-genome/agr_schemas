@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "gene",
+  "description": "An entry with Gene information from a MOD.  Types of genes are enumerated using the soTermId enumeration as referenced below.",
+  "id": "gene.json#",
+  "type": "object",
+  "required": ["basicGeneticEntity", "symbol", "soTermId"],
+  "additionalProperties": false,
+  "properties": {
+    "basicGeneticEntity": {                                
+      "$ref": "../basicGeneticEntity.json",
+      "description": "The basic attributes of a gene object including id, taxonId, crossReferences, etc.."
+    },
+    "name": { 
+      "type": "string",
+      "description": "The name of the entity."
+    },
+    "symbol": {
+      "type": "string",
+      "description": "The symbol for the gene entity."
+    },
+    "geneSynopsis": {
+      "type": "string",
+      "description": "Human readable gene description or synopsis"
+    },
+    "geneSynopsisUrl": {
+       "type": "string",
+       "format": "uri",
+       "description": "URL to a gene synopsis outside the MOD, like wikipedia.  Per request from BGI-WG."
+    },
+    "soTermId": { 
+      "type": "string",
+      "description": "The SO Term that represents as best we can, the specific type of gene in the file."
+    }
+  }
+}

@@ -4,10 +4,10 @@
   "description": "Genotypes and their genomic components.  references allele.json",
   "id": "genotype.json#",
   "type": "object",
-  "required": ["genotypeID", "taxonId", "name"],
+  "required": ["primaryID", "taxonId", "name"],
   "additionalProperties": false,
   "properties": {
-    "genotypeID": {
+    "primaryID": {
       "$ref" : "../globalId.json#/properties/globalId",
       "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
     },
@@ -15,9 +15,9 @@
       "type": "string",
       "description": "The name of the entity."
     },
-    "nameText": {
-      "type": "string",
-      "description": "The name of the entity, in plain text."
+    "subtype":{
+      "enum": ["strain", "genotype"],
+      "description": "a typing field that further qualifies an affectedGenomicModel as a strain or genotype.  This field is optional because some submissions will simply be submitting affectedGenomicModels that are more than just strains or genotypes, but fill the same biological model space as strains and genotypes at this time."
     },
     "taxonId": {
       "$ref" : "../globalId.json#/properties/globalId",
@@ -41,11 +41,11 @@
       },
     "uniqueItems": true
     },
-    "genotypeComponents": {
-      "description": "Collection of genomic components that make up a genotype, ie: 'allele', each with a zygosity",
+    "affectedGenomicModelComponents": {
+      "description": "Collection of genomic components that make up a model, ie: 'allele', each with a zygosity",
        "type": "array",
        "items": {
-         "$ref" : "genotypeComponent.json#"
+         "$ref" : "affectedGenomicModelComponent.json#"
        },
       "uniqueItems": true
     },
@@ -57,7 +57,7 @@
        },
       "uniqueItems": true
     },
-    "backgroundIDs": { "description": "Collection of background components that make up a genotype.",
+    "parentalPopulationIDs": { "description": "Collection of background components that make up a genotype.",
        "type": "array",
        "items": {
          "$ref" : "../globalId.json#/properties/globalId"

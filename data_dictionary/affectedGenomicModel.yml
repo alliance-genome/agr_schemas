@@ -1,0 +1,62 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "affectedGenomicModel"
+title: AffectedGenomicModel
+type: object
+description: >
+The genotype, strain or model, defined by its curated set of gene affectors, ie: alleles and sequence targeting reagents, as well as its (optional) parental populations. 
+additionalProperties: false
+validators: 
+
+properties: 
+ primaryID (could be affectedGenomicModelID?)
+ name
+ subtype
+ 
+secondaryLabels: 
+ - relatedNode: Genotype
+   required: false
+ - relatedNode: Strain
+   required: false 
+
+relations:
+  - relatedNode: AffectedGenomicModel
+    backref: is_parental_population
+    label: has_parental_population
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Allele
+    backref: is_allele_of 
+    label: has_allele
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: SequenceTargetingReagent
+    backref: has_sequence_targeting_reagent
+    label: is_sequence_targeting_reagent_of
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Synonym
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: SecondaryId (needs a new node name)
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: CrossReference
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: Species
+    backref: from_species
+    label: from_species
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: Load
+    backref: loaded_from
+    label: loaded_from
+    multiplicity: one_to_one
+    required: true

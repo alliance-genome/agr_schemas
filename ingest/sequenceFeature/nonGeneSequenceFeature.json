@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "nonGeneSequenceFeature",
+  "description": "Non gene, transcript or construct sequence feature.",
+  "id": "nonGeneSequenceFeature.json#",
+  "type": "object",
+  "required": ["basicGeneticEntity", "soTermId", "symbol"],
+  "additionalProperties": false,
+  "properties": {
+    "basicGeneticEntity": {                                
+      "$ref": "../basicGeneticEntity.json",
+      "description": "The basic attributes of a gene object including id, taxonId, crossReferences, etc.."
+    },
+    "name": { 
+      "type": "string",
+      "description": "The name of the entity."
+    },
+    "symbol": {
+      "type": "string",
+      "description": "The symbol for the gene entity."
+    },
+    "soTermId": { 
+      "type": "string",
+      "description": "The SO Term that represents as best we can, the specific type of non gene sequence feature in the file."
+    }
+  }
+}
