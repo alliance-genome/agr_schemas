@@ -15,11 +15,11 @@
       "description": "The species of the second gene."
     },
     "isBestScore": {
-      "type" : "boolean",
+      "enum": ["Yes", "No", "Yes_Adjusted"],
       "description": "DIOPT schema highlights the best pair."
     },
     "isBestRevScore": {
-      "type" : "boolean",
+      "enum": ["Yes", "No"],
       "description": "DIOPT schema highlights the best pair."
     },
     "gene1": {

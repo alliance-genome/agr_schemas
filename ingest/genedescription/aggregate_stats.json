@@ -4,7 +4,6 @@
   "description": "Aggregate statistics of a list of gene descriptions. These statistics give an overview of the descriptions in the report file, and they can be used to have an overview of the data in the file and also to perform manual or automated data quality control",
   "id": "aggregate_stats.json",
   "type": "object",
-  "required": [],
   "properties": {
     "total_number_of_genes": {
       "type": "number",
