@@ -43,11 +43,11 @@
       },
     "uniqueItems": true
     },
-    "affectedGenomicComponents": {
+    "affectedGenomicModelComponents": {
       "description": "Collection of genomic components that make up a model, ie: 'allele', each with a zygosity",
        "type": "array",
        "items": {
-         "$ref" : "affectedGenomicComponent.json#"
+         "$ref" : "affectedGenomicModelComponent.json#"
        },
       "uniqueItems": true
     },

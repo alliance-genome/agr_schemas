@@ -1,9 +1,8 @@
 {
   "data": [
     {
-      "genotypeID": "ZFIN:ZDB-FISH-150901-20750",
+      "primaryID": "ZFIN:ZDB-FISH-150901-20750",
       "name": "fgf8a<sup>ti282a/+</sup>(AB)",
-      "nameText":"fgf8a<ti282a/+>(AB)",
       "synonyms": [
         "testSynonym"
       ],
@@ -14,7 +13,7 @@
       "crossReference": {"id":"ZFIN:ZDB-FISH-150901-20750",
 			   "pages":["fish"]
                          },
-      "genotypeComponents": [{
+      "affectedGenomicModelComponents": [{
       			    "zygosity":"GENO:0000135",
 			    "alleleID":"ZFIN:ZDB-ALT-980203-1091"
       }]
