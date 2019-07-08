@@ -16,9 +16,7 @@
       "description": "The name of the entity."
     },
     "subtype":{
-      "type": {
-              "enum": ["strain", "genotype"]
-      },
+      "enum": ["strain", "genotype"],
       "description": "a typing field that further qualifies an affectedGenomicModel as a strain or genotype.  This field is optional because some submissions will simply be submitting affectedGenomicModels that are more than just strains or genotypes, but fill the same biological model space as strains and genotypes at this time."
     },
     "taxonId": {
