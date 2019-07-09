@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Transcript SO slim term id enumeration",
+  "id": "transcriptTypeSlim.json#",
+  "description": "term ids representing controlled set of transcript types",
+  "type": "object",
+  "additionalProperties": false,
+  "required":["SOTermId"],
+  "properties": {
+    "SOTermId": {"enum": []}
+  }
+}
+
