@@ -16,6 +16,12 @@
       "$ref" : "../globalId.json#/properties/globalId",
       "description" : "The ID to which the phenotype ontology term(s) is applied. For this submission, these will be genes and single affected gene alleles."
     },
+ "primaryGeneticEntityIDs": {
+"type": "array",
+      "items": {
+        "$ref" : "../globalId.json#/properties/globalId",
+       "description": "for calculated submissions, this field represents the id of the genetic objects (allele or affectedGenomicModel) that this annotation is based on."}
+   },
     "primaryGeneticEntityID": {
        "$ref": "../globalId.json#/properties/globalId",
        "description": "for calculated submissions, this field represents the id of the genetic entity from which this annotation was derived, if it was derived.  Null for non-derived annotations" 
