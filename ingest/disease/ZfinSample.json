@@ -11,6 +11,7 @@
   },
   "data" : [ {
     "objectId" : "ZFIN:ZDB-GENE-120229-1",
+    "primaryGeneticEntities": ["ZFIN:ZDB-FISH-010101-1","ZFIN:ZDB-FISH-010101-2"],
     "objectName" : "gpr179",
     "dateAssigned" : "2018-03-21T15:54:59.179-07:00",
     "dataProvider": [ {
