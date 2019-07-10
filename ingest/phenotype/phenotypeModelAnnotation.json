@@ -16,7 +16,7 @@
       "$ref" : "../globalId.json#/properties/globalId",
       "description" : "The ID to which the phenotype ontology term(s) is applied. For this submission, these will be genes and single affected gene alleles."
     },
-    "primaryGeneticEntity": {
+    "primaryGeneticEntities": {
     "type": "array",
         "items": {
             "$ref": "../globalId.json#/properties/globalId"

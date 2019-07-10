@@ -32,7 +32,7 @@
       ],
       "description": "The qualifier for the annotation"
     },
-    "primaryGeneticEntity": {
+    "primaryGeneticEntities": {
     "type": "array",
         "items": {
             "$ref": "../globalId.json#/properties/globalId"
