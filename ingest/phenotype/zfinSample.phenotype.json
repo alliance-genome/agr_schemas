@@ -6,7 +6,7 @@
          {"termId": "ZFA:0001357", "termOrder":1},
          {"termId": "PATO:0000051", "termOrder":2}
       ],
-      "primaryGeneticEntity": "ZFIN:ZDB-FISH-010101-1",
+      "primaryGeneticEntityID": "ZFIN:ZDB-FISH-010101-1",
       "phenotypeStatement": "alar plate midbrain region morphology, abnormal",
       "evidence": {
          "crossReference": {"id":"ZFIN:ZDB-PUB-081031-1",

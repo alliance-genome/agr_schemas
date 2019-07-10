@@ -32,7 +32,7 @@
       ],
       "description": "The qualifier for the annotation"
     },
-    "primaryGeneticEntity": {
+    "primaryGeneticEntityID": {
        "$ref": "../globalId.json#/properties/globalId",
        "description": "for calculated submissions, this field represents the id of the genetic objects (allele or affectedGenomicModel) that this annotation is based on."
    }, 
