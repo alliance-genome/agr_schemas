@@ -1,0 +1,48 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "CrossReference"
+title: CrossReference
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ name
+ displayName
+ prefix
+ page
+ localId
+ uuid
+ globalCrossRefId
+ crossRefType
+ crossRefCompleteUrl
+
+
+relations:
+  - relatedNode: DOTerm
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: Gene
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: Allele
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: BioEntityGeneExpressionJoin
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: InteractionGeneJoin
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: one_to_one
+    required: false
