@@ -1,0 +1,70 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "DOTerm"
+title: DOTerm
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ name
+ definition
+ type
+ isObsolete
+ nameKey
+ displaySynonym
+
+
+relations:
+  - relatedNode: DOTerm
+    backref: is_a_part_of_closure
+    label: is_a_part_of_closure
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Synonym
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: DOTerm
+    backref: is_a
+    label: is_a
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: DOTerm
+    backref: part_of
+    label: part_of
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: CrossReference
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: DiseaseEntityJoin
+    backref: association
+    label: association
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Gene
+    backref: is_marker_for
+    label: is_marker_for
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Gene
+    backref: is_implicated_in
+    label: is_implicated_in
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Allele
+    backref: is_implicated_in
+    label: is_implicated_in
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Gene
+    backref: implicated_via_orthology
+    label: implicated_via_orthology
+    multiplicity: many_to_many
+    required: false

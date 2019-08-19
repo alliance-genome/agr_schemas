@@ -1,0 +1,109 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Synonym"
+title: Synonym
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ name
+
+relations:
+  - relatedNode: Gene
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Allele
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: SequenceTargetingReagent
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: AffectedGenomicModel
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: DOTerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: BSPOTerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: MMUSDVTerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: WBBTTerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: MMOTerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: EMAPATerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: FBCVTerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: ECOTerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: ZFATerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: MATerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: UBERONTerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: GOTerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: FBBTTerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: CLTerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: WBLSTerm
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
