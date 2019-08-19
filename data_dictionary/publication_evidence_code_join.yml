@@ -1,0 +1,30 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "PublicationEvidenceCodeJoin"
+title: PublicationEvidenceCodeJoin
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ joinType
+
+
+relations:
+  - relatedNode: ECOTerm 
+    backref: association
+    label: association
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: DiseaseEntityJoin
+    backref: evidence
+    label: evidence
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: Publication
+    backref: association
+    label: association
+    multiplicity: one_to_one
+    required: true

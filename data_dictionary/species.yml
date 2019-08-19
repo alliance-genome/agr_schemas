@@ -1,0 +1,37 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Species"
+title: Species
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ species
+ name
+ phylogenicOrder
+
+
+relations:
+  - relatedNode: AffectedGenomicModel 
+    backref: from_species
+    label: from_species
+    multiplicity: one_to_many
+    required: false
+  - relatedNode: Allele
+    backref: from_species
+    label: from_species
+    multiplicity: one_to_many
+    required: false
+  - relatedNode: Gene
+    backref: from_species
+    label: from_species
+    multiplicity: one_to_many
+    required: false
+  - relatedNode: SequenceTargetingReagent
+    backref: from_species
+    label: from_species
+    multiplicity: one_to_many
+    required: false
