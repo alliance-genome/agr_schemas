@@ -135,25 +135,25 @@
   default_url: 
   pages:
     - name: gene
-      url: http://flybase.org/reports/[%s].html
+      url: https://flybase.org/reports/[%s].html
     - name: gene/expression
-      url: http://flybase.org/reports/[%s].html#expression
+      url: https://flybase.org/reports/[%s].html#expression
     - name: gene/expression_images
-      url: http://flybase.org/reports/[%s].html#expression
+      url: https://flybase.org/reports/[%s].html#expression
     - name: gene/references
-      url: http://flybase.org/reports/[%s].html#pubs
+      url: https://flybase.org/reports/[%s].html#pubs
     - name: allele
-      url: http://flybase.org/reports/[%s].html
+      url: https://flybase.org/reports/[%s].html
     - name: strain
-      url: http://flybase.org/reports/[%s].html
+      url: https://flybase.org/reports/[%s].html
     - name: homepage
-      url: http://flybase.org/
+      url: https://flybase.org/
     - name: disease
-      url: http://flybase.org/cgi-bin/cvreport.html?id=[%s]
+      url: https://flybase.org/cgi-bin/cvreport.html?id=[%s]
     - name: gene/interactions
-      url: http://flybase.org/reports/[%s].html
+      url: https://flybase.org/reports/[%s].html
     - name: gene/MODinteractions
-      url: http://flybase.org/reports/[%s]#interactions
+      url: https://flybase.org/reports/[%s]#interactions
     - name: reference
       url: https://flybase.org/reports/[%s].html
 
