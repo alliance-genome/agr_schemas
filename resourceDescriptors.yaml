@@ -78,11 +78,11 @@
     - name: gene/references
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?view=5&id=[%s]
     - name: disease/rat
-      url: http://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Rat&x=1&acc_id=[%s]#annot
+      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Rat&x=1&acc_id=[%s]#annot
     - name: disease/human
-      url: http://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
+      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
     - name: disease/all
-      url: http://rgd.mcw.edu/rgdweb/ontology/annot.html?species=All&x=1&acc_id=[%s]#annot
+      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=All&x=1&acc_id=[%s]#annot
     - name: gene/MODinteractions
       url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=3&identifiers=[%s]
     - name: reference
