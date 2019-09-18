@@ -5,7 +5,7 @@
 "releaseNotes" : "https://www.alliancegenome.org/release-notes",
 "apiDocumentation": "https://www.alliancegenome.org/api/swagger-ui/",
 "softwareComponentReleaseDetails" : [{
-				 "component":"Data Dictionary and Data Ingest"
+				 "component":"Data Dictionary and Data Ingest",
 				 "componentDetail":"https://github.com/alliance-genome/agr_schemas/releases/tag/1.0.0.9"},
 				 {"component": "Files used in this release",
 				 "componentDetail": "https://fms.alliancegenome.org/api/snapshot/release/2.3.0"
