@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Release Meta Data",
+  "id": "release.json#",
+  "description": "An standard set of information regarding a release at the Alliance.",
+  "type": "object",
+  "required": [ "dateReleased","softwareReleaseVersion", "dataFreezeDate", "releaseNotes", "apiDocumentation", "softwareComponentReleaseDetail"],
+  "additionalProperties": false,
+  "properties": {
+    "dateReleased": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date of this release."
+    },
+    "softwareReleaseVersion": {
+        "type": "string",
+      	"description": "semantic version of the release."
+    },
+    "dataFreezeDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date of this release.",
+      "description": "The date of this release's data freeze."
+    },
+    "releaseNotes": {
+      "type": "string",
+      "description": "A link to the release notes for this release"
+    },
+    "apiDocumentation": {
+      "type": "string",
+      "description": "A link to the API documentation for this releae, potentially a link to the version of the API." 
+    },
+    "softwareComponentReleaseDetails": {
+      "type": "array",
+      "items": {
+      	       "$ref": "softwareComponent.json"
+      },
+      "description": "A list of software components contained in this release, and links to the release tags of each component for this release."
+    }
+  }
+}
