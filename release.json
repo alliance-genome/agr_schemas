@@ -4,7 +4,7 @@
   "id": "release.json#",
   "description": "An standard set of information regarding a release at the Alliance.",
   "type": "object",
-  "required": [ "dateReleased","softwareReleaseVersion", "dataFreezeDate", "releaseNotes", "apiDocumentation", "softwareComponentReleaseDetail"],
+  "required": [ "dateReleased","softwareReleaseVersion", "dataFreezeDate", "releaseNotesURL", "apiDocumentationURL", "softwareComponentReleaseDetail"],
   "additionalProperties": false,
   "properties": {
     "dateReleased": {
@@ -22,11 +22,11 @@
       "description": "Date of this release.",
       "description": "The date of this release's data freeze."
     },
-    "releaseNotes": {
+    "releaseNotesURL": {
       "type": "string",
       "description": "A link to the release notes for this release"
     },
-    "apiDocumentation": {
+    "apiDocumentationURL": {
       "type": "string",
       "description": "A link to the API documentation for this releae, potentially a link to the version of the API." 
     },
