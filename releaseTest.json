@@ -1,6 +1,6 @@
 {
 "dateReleased" : "2019-10-15T13:27:43-04:00",
-"softwareReleaseVersion" : "2.3.0",
+"releaseVersion" : "2.3.0",
 "dataFreezeDate" : "2019-10-07T13:27:43-04:00",
 "releaseNotesURL" : "https://www.alliancegenome.org/release-notes",
 "apiDocumentationURL": "https://www.alliancegenome.org/api/swagger-ui/",
