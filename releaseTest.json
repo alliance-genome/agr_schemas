@@ -2,8 +2,8 @@
 "dateReleased" : "2019-10-15T13:27:43-04:00",
 "softwareReleaseVersion" : "2.3.0",
 "dataFreezeDate" : "2019-10-07T13:27:43-04:00",
-"releaseNotes" : "https://www.alliancegenome.org/release-notes",
-"apiDocumentation": "https://www.alliancegenome.org/api/swagger-ui/",
+"releaseNotesURL" : "https://www.alliancegenome.org/release-notes",
+"apiDocumentationURL": "https://www.alliancegenome.org/api/swagger-ui/",
 "softwareComponentReleaseDetails" : [{
 				 "component":"Data Dictionary and Data Ingest",
 				 "componentDetail":"https://github.com/alliance-genome/agr_schemas/releases/tag/1.0.0.9"},
