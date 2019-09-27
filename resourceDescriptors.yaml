@@ -111,7 +111,7 @@
       url: https://zfin.org/[%s]
     - name: genotype
       url: https://zfin.org/[%s]
-    - name: fish
+    - name: Fish
       url: https://zfin.org/[%s]
     - name: homepage
       url: https://zfin.org/
