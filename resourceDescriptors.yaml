@@ -87,6 +87,8 @@
       url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=3&identifiers=[%s]
     - name: reference
       url: https://rgd.mcw.edu/rgdweb/report/reference/main.html?id=RGD:[%s]
+    - name: strain
+      url: https://rgd.mcw.edu/rgdweb/report/strain/main.html?id=[%s]
 
 #
 # ZFIN
