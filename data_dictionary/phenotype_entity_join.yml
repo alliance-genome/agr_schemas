@@ -14,9 +14,9 @@ properties:
 
 
 relations:
-  - relatedNode: Publication
-    backref: evidence
-    label: evidence
+  - relatedNode: PublicationJoin
+    backref: association
+    label: association
     multiplicity: one_to_many
     required: true
   - relatedNode: Phenotype

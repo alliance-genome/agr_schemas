@@ -21,7 +21,7 @@ properties:
 
 
 relations:
-  - relatedNode: DOTerm
+  - relatedNode: Ontology
     backref: cross_reference
     label: cross_reference
     multiplicity: many_to_one
@@ -45,4 +45,14 @@ relations:
     backref: cross_reference
     label: cross_reference
     multiplicity: one_to_one
+    required: false
+  - relatedNode: AffectedGenomicModel
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: SequenceTargetingReagent
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: many_to_one
     required: false
