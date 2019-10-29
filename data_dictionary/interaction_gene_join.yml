@@ -3,7 +3,7 @@ schema: "http://json-schema.org/draft-04/schema#"
 id: "InteractionGeneJoin"
 title: InteractionGeneJoin
 type: object
-description: >
+description: At a high level, this is the node that represents a single interaction (annotation).
 additionalProperties: false
 validators:
 

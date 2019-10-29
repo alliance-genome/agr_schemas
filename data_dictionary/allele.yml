@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "Allele"
 title: Allele
 type: object
+secondaryLable: Feature
 description: >
 additionalProperties: false
 validators:

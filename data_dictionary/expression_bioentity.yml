@@ -3,7 +3,7 @@ schema: "http://json-schema.org/draft-04/schema#"
 id: "ExpressionBioEntity"
 title: ExpressionBioEntity
 type: object
-description: >
+description: A node that represents the combinations of anatomical and cellular components that make up an entity where a gene is expressed. 
 additionalProperties: false
 validators:
 

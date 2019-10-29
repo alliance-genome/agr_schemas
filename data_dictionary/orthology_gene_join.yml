@@ -1,0 +1,39 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "OrthologyGeneJoin"
+title: OrthologyGeneJoin
+type: object
+description: The combination of two genes and the necessary filter, scores and confidence values that identify an orthology annotation.
+additionalProperties: false
+validators:
+
+properties:
+  primaryKey
+  joinType
+
+relations:
+  - relatedNode: Gene 
+    backref: association
+    label: association
+    multiplicity: many_to_one
+    required: true
+  - relatedNode: Gene
+    backref: association
+    label: association
+    multiplicity: many_to_one
+    required: true
+  - relatedNode: OrthoAlgorithm
+    backref: matched
+    label: matched
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: OrthoAlgorithm
+    backref: not_called
+    label: not_called
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: OrthoAlgorithm
+    backref: not_matched
+    label: not_matched
+    multiplicity: one_to_one
+    required: false

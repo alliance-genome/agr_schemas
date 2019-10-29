@@ -3,7 +3,7 @@ schema: "http://json-schema.org/draft-04/schema#"
 id: "DiseaseEntityJoin"
 title: DiseaseEntityJoin
 type: object
-description: >
+description: At a high level, this node represents the combination of objects that make up a single disease annotation.
 additionalProperties: false
 validators:
 
