@@ -1,0 +1,29 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "OrthoAlgorithm"
+title: OrthoAlgorithm
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ name
+
+
+relations:
+  - relatedNode: OrthologyGeneJoin
+    backref: matched
+    label: matched
+    multiplicity: one_to_many
+    required: true
+  - relatedNode: OrthologyGeneJoin
+    backref: not_matched
+    label: not_matched
+    multiplicity: one_to_many
+    required: true
+  - relatedNode: OrthologyGeneJoin
+    backref: not_called
+    label: not_called
+    multiplicity: one_to_many
+    required: true

@@ -1,0 +1,24 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Chromosome"
+title: Chromosome
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+
+
+relations:
+  - relatedNode: Variant
+    backref: located_on
+    label: located_on
+    multiplicity: one_to_many
+    required: false
+  - relatedNode: Gene
+    backref: located_on
+    label: located_on
+    multiplicity: one_to_many
+    required: false

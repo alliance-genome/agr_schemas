@@ -1,0 +1,103 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Association"
+title: Association
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ joinType
+ sortOrder
+ dateAssigned
+ dataProvider
+ 
+
+relations:
+  - relatedNode: Publication
+    backref: evidence
+    label: evidence
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Stage
+    backref: during
+    label: during
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: ExpressionBioEntity
+    backref: association
+    label: association
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: CrossReference
+    backref: crossReference
+    label: crossReference
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Publication
+    backref: evidence
+    label: evidence
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: OrthoAlgorithm
+    backref: not_called
+    label: not_called
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: OrthoAlgorithm
+    backref: not_matched
+    label: not_matched
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: OrthoAlgorithm
+    backref: matched
+    label: matched
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: MITerm
+    backref: interactor_a_role
+    label: interactor_a_role
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: MITerm
+    backref: interactor_b_role
+    label: interactor_b_role
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: MITerm
+    backref: interactor_b_type
+    label: interactor_b_type
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: MITerm
+    backref: interactor_b_type
+    label: interactor_b_type
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: MITerm
+    backref: detection_method
+    label: detection_method
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: MITerm
+    backref: source_database
+    label: source_database
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: MITerm
+    backref: aggregation_database
+    label: aggregation_database
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: MITerm
+    backref: interaction_type
+    label: interaction_type
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: Publication
+    backref: evidence
+    label: evidence
+    multiplicity: many_to_many
+    required: false

@@ -1,0 +1,130 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Gene"
+title: Gene
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ uuid
+ name
+ symbol
+ taxonid
+ symbolWithSpecies 
+ modLocalId
+ modGlobalCrossRefId
+ modGlobalId
+ dateProduced
+ dataProvider
+ description
+ automatedGeneSynopsis
+ geneSynopsis
+ geneSynopsisUrl
+ geneticEntityExternalUrl
+ geneLiteratureUrl
+ modCrossRefCompleteUrl
+
+relations:
+  - relatedNode: Synonym
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Identifier
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: SecondaryId   
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Species
+    backref: from_species
+    label: from_species
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: Load
+    backref: loaded_from
+    label: loaded_from
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: GOTerm
+    backref: annotated_to
+    label: annotated_to
+    mutliplicity: one_to_many
+    required: false
+  - relatedNode: SOTerm
+    backref: annotated_to
+    label: annotated_to
+    mutliplicity: one_to_one
+    required: false
+  - relatedNode: Chromosome
+    backref: located_on
+    label: located_on
+    multiplicity: one_to_many
+    required: false
+  - relatedNode: Allele
+    backref: is_allele_of
+    label: is_allele_of
+    multiplicity: one_to_many
+    required: false
+  - relatedNode: InteractionGeneJoin
+    backref: association
+    label: association
+    mutiplicity: one_to_many
+    requried: false
+  - relatedNode: DiseaseEntityJoin
+    backref: association
+    label: association
+    mutiplicity: many_to_many
+    requried: false
+  - relatedNode: OrthologyGeneJoin    
+    backref: association
+    label: association
+    mutiplicity: one_to_many
+    requried: false
+  - relatedNode: PhenotypeEntityJoin
+    backref: association
+    label: association
+    mutiplicity: many_to_many
+    requried: false
+  - relatedNode: BioEntityGeneExpressionJoin
+    backref: association
+    label: association
+    mutiplicity: many_to_many
+    requried: false
+  - relatedNode: ExpressionBioEntity
+    backref: expressed_in
+    label: expressed_in
+    mutiplicity: many_to_many
+    requried: false
+  - relatedNode: Phenotype
+    backref: has_phenotype
+    label: has_phenotype
+    mutiplicity: many_to_many
+    requried: false
+  - relatedNode: Gene
+    backref: orthologous
+    label: orthologous
+    mutiplicity: many_to_many
+    requried: false
+  - relatedNode: Gene
+    backref: interacts_with
+    label: interacts_with
+    mutiplicity: many_to_many
+    requried: false
+  - relatedNode: DOTerm
+    backref: is_implicated_in
+    label: is_implicated_in
+    mutiplicity: many_to_many
+    requried: false
+  - relatedNode: SequenceTargetingReagent
+    backref: targets
+    label: targets
+    multiplicity: many_to_many
+    required: false

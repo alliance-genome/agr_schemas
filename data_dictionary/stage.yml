@@ -1,0 +1,20 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Stage"
+title: Stage
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ name
+
+
+relations:
+  - relatedNode: BioEntityGeneExpressionJoin
+    backref: during
+    label: during
+    multiplicity: one_to_one
+    required: false

@@ -1,0 +1,36 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "PhenotypeEntityJoin"
+title: PhenotypeEntityJoin
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ dataProviders
+ primaryKey
+ joinType
+
+
+relations:
+  - relatedNode: Publication
+    backref: evidence
+    label: evidence
+    multiplicity: one_to_many
+    required: true
+  - relatedNode: Phenotype
+    backref: association
+    label: association
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: Gene
+    backref: association
+    label: association
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: Allele
+    backref: association
+    label: association
+    multiplicity: one_to_one
+    required: false

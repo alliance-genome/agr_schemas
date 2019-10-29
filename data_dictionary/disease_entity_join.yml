@@ -1,0 +1,39 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "DiseaseEntityJoin"
+title: DiseaseEntityJoin
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ sortOrder
+ dateAssigned
+ dataProvider
+ joinType
+
+
+relations:
+  - relatedNode: DOTerm
+    backref: association
+    label: association
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: Gene
+    backref: from_orthologous_gene 
+    label: from_orthologous_gene
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: Gene
+    backref: association 
+    label: association
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: Allele
+    backref: association
+    label: association
+    multiplicity: many_to_one
+    required: false
+

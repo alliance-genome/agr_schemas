@@ -1,0 +1,35 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "ZFATerm"
+title: ZFATerm
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ name
+ definition
+ type
+ isObsolete
+ nameKey
+ displaySynonym
+
+
+relations:
+  - relatedNode: ZFATerm
+    backref: is_a_part_of_closure
+    label: is_a_part_of_closure
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: ZFATerm
+    backref: is_a
+    label: is_a
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: ZFATerm
+    backref: part_of
+    label: part_of
+    multiplicity: many_to_many
+    required: false
