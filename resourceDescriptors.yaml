@@ -126,7 +126,7 @@
     - name: reference
       url: https://zfin.org/[%s]
     - name: gene/expression_images
-      url: https://zfin.org/action/marker/[%s]/expression
+      url: https://zfin.org/[%s]/wt-expression/images
  
 #
 # FlyBase
