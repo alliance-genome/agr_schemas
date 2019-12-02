@@ -1,0 +1,34 @@
+# Alliance Assembly Controlled Vocabulary.
+
+- taxonId: NCBITaxon:7955
+  assemblies:  
+    - name: GRCz11
+    - displayName: GRCz11
+    - name: GRCz10
+    - displayName: GRCz10
+
+- taxonId: NCBITaxon:7227
+  assemblies: 
+    - name: R6.27
+    - displayName: Release6
+
+- taxonId: NCBITaxon:6239
+  assemblies: 
+    - name: WBcel235
+    - displayName: WBcel235
+
+- taxonId: NCBITaxon:10090
+  assemblies:
+    - name: GRCm38
+    - displayName: GRCm38 
+
+- taxonId: NCBITaxon:10116
+  assemblies:
+    - name: Rnor60
+    - displayName: Rnor60
+
+- taxonId: NCBITaxon:559292
+  assemblies:
+    - name: S288C
+    - displayName:
+    - version: R64-2-1
