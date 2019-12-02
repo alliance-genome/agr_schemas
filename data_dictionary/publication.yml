@@ -11,7 +11,7 @@ additionalProperties: false
 validators: 
 
 properties: 
-  primaryKey (could be primaryId or publicationId)
+  primaryKey
   pubMedId 
   pubMedUrl
   pubModUrl
