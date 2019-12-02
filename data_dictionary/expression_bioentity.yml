@@ -1,0 +1,85 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "ExpressionBioEntity"
+title: ExpressionBioEntity
+type: object
+description: A node that represents the combinations of anatomical and cellular components that make up an entity where a gene is expressed. 
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ whereExpressedStatement
+
+
+relations:
+  - relatedNode: GOTerm
+    backref: cellular_component_ribbon_term
+    label: cellular_component_ribbon_term
+    multiplicity: one_to_many
+    required: false
+  - relatedNode: Gene
+    backref: expressed_in
+    label: expressed_in
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: BioEntityGeneExpressionJoin
+    backref: association
+    label: association
+    multiplicity: one_to_many
+    required: true
+  - relatedNode: UBERONTerm
+    backref: anatomical_ribbon_term
+    label: anatomical_ribbon_term
+    multiplicity: one_to_many
+    required: false
+  - relatedNode: WBBTTerm
+    backref: anatomical_structure
+    label: anatomical_structure
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: FBBTTerm
+    backref: anatomical_structure
+    label: anatomical_structure
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: FBCVTerm
+    backref: cellular_component_qualifier
+    label: cellular_component_qualifier
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: FBBTTerm
+    backref: anatomical_sub_structure
+    label: anatomical_sub_structure
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: ZFATerm
+    backref: anatomical_structure
+    label: anatomical_structure
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: ZFATerm
+    backref: anatomical_sub_structure
+    label: anatomical_sub_structure
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: BSPOTerm
+    backref: anatomical_structure_qualifier
+    label: anatomical_structure_qualifier
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: EMAPATerm
+    backref: anatomical_structure
+    label: anatomical_structure
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: FBCVTerm
+    backref: anatomical_structure_qualifier
+    label: anatomical_structure_qualifier
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: FBCVTerm
+    backref: anatomical_sub_structure_qualifier
+    label: anatomical_sub_structure_qualifier
+    multiplicity: one_to_one
+    required: false

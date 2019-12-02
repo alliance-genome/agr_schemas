@@ -1,0 +1,71 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "InteractionGeneJoin"
+title: InteractionGeneJoin
+type: object
+description: At a high level, this is the node that represents a single interaction (annotation).
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ joinType
+
+
+relations:
+  - relatedNode: Gene
+    backref: association
+    label: association
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: CrossReference
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: Publication
+    backref: evidence
+    label: evidence
+    multiplicity: one_to_many
+    required: true
+  - relatedNode: MITerm
+    backref: interactor_b_role
+    label: interactor_b_role
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: MITerm
+    backref: detection_method
+    label: detection_method
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: MITerm
+    backref: interactor_a_role
+    label: interactor_a_role
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: MITerm
+    backref: interactor_b_type
+    label: interactor_b_type
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: MITerm
+    backref: source_database
+    label: source_database
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: MITerm
+    backref: aggregation_database
+    label: aggregation_database
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: MITerm
+    backref: interactor_a_type
+    label: interactor_a_type
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: MITerm
+    backref: interaction_type
+    label: interaction_type
+    multiplicity: one_to_one
+    required: true
+

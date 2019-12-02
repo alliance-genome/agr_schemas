@@ -11,9 +11,15 @@ additionalProperties: false
 validators: 
 
 properties: 
- primaryId
+ primaryKey
  genomicReferenceSequence
  genomicVariantSequence
+ paddingLeft
+ paddingRight
+ hgvsNomenclature
+ dateProduced
+ release
+ dataProvider
 
 relations:
   - name: Allele:Feature
@@ -26,14 +32,10 @@ relations:
     label: variation_type
     multiplicity: one_to_one
     required: true
-  - name: Chromosome
-    backref: located_on
-    label: located_on
+  - name: GenomicLocation
+    backref: association
+    label: association
     multiplicity: one_to_one
-    properties:
-     start
-     end
-     assembly
   - name: CrossReference
     backref: cross_reference
     multiplicity: cross_reference

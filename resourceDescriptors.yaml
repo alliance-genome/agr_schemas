@@ -87,6 +87,8 @@
       url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=3&identifiers=[%s]
     - name: reference
       url: https://rgd.mcw.edu/rgdweb/report/reference/main.html?id=RGD:[%s]
+    - name: strain
+      url: https://rgd.mcw.edu/rgdweb/report/strain/main.html?id=[%s]
 
 #
 # ZFIN
@@ -111,6 +113,8 @@
       url: https://zfin.org/[%s]
     - name: genotype
       url: https://zfin.org/[%s]
+    - name: Fish
+      url: https://zfin.org/[%s]
     - name: homepage
       url: https://zfin.org/
     - name: disease
@@ -122,7 +126,7 @@
     - name: reference
       url: https://zfin.org/[%s]
     - name: gene/expression_images
-      url: https://zfin.org/action/marker/[%s]/expression
+      url: https://zfin.org/[%s]/wt-expression/images
  
 #
 # FlyBase
@@ -384,7 +388,7 @@
 - db_prefix: EMDB
   name: Electron Microscopy Data Bank
   example_id: EMDB:EMD-1191
-  gid_pattern: "^EMDB:EMDB?-\\d{4}$"
+  gid_pattern: "^(EMDB:EMDB?-\\d{4})|(EMDB:\\d{4})$"
   default_url: http://www.ebi.ac.uk/pdbe/entry/emdb/[%s]
   pages:
   - name: gene/interactions

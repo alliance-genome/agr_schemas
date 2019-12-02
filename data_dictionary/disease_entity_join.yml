@@ -1,0 +1,54 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "DiseaseEntityJoin"
+title: DiseaseEntityJoin
+type: object
+description: At a high level, this node represents the combination of objects that make up a single disease annotation.
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ sortOrder
+ dateAssigned
+ dataProvider
+ joinType
+
+
+relations:
+  - relatedNode: DOTerm
+    backref: association
+    label: association
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: Gene
+    backref: from_orthologous_gene 
+    label: from_orthologous_gene
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: Gene
+    backref: association 
+    label: association
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: Allele
+    backref: association
+    label: association
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: AffectedGenomicModel
+    backref: association
+    label: association
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: PublicationJoin
+    backref: evidence
+    label: evidence
+    multiplicity: one_to_many
+    required: false
+  - relatedNode: CrossReference
+    backref: annotation_source_cross_refernece
+    label: annotation_source_cross_refernece
+    multiplicity: one_to_many
+    required: false
+

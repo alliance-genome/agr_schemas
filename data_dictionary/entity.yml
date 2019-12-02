@@ -1,0 +1,23 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Entity"
+title: Entity
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ release
+ dataProviders
+ dataProvider
+ loadName
+
+
+relations:
+  - relatedNode: Gene
+    backref: loaded_from
+    label: loaded_from
+    multiplicity: one_to_many
+    required: true
