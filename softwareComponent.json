@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Release Software Component Meta Data",
+  "id": "softwareComponent.json#",
+  "description": "An standard set of information regarding a release of a particular software component as part of a larger release at the Alliance.",
+  "type": "object",
+  "required": [ "component", "componentDetail"],
+  "additionalProperties": false,
+  "properties": {
+    "component": {
+      "type": "string",
+      "description": "Software repository description."
+    },
+    "componentDetail": {
+        "type": "string",
+      	"description": "Link to the release tag of this software component."
+    }
+  }
+}
