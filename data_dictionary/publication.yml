@@ -4,9 +4,9 @@ id: "publication"
 title: Publication
 type: object
 description: >
-  The ID from the data provider that describes the publication.  
-  When available, this is the PMID. When no PMID (PUBMED id) is available, 
-  this is the MOD publication id.
+   Publication is a node in the model that describes attributes necessary to link publications to annotations and to external sources like PUBMED 
+  or MOD publication pages.  PrimaryKey attribute is typically a PUBMED id. If a publication originates at a MOD, and does not have a record 
+  in PUBMED, the primaryKey attribute is the MOD publication identifier.    
 additionalProperties: false
 validators: 
 
@@ -16,7 +16,16 @@ properties:
   pubMedUrl
   pubModUrl
   pubModId 
-  
+
+uniqueKeys:
+ - [primaryKey]
+ - [pubMedId, pubModId]
+
+required:
+  oneOf: 
+    - [primaryKey, pubMedId, pubMedUrl]
+    - [primaryKey, pubModId, pubModUrl]
+ 
 
 relations:
   - relatedNode: BioEntityGeneExpressionJoin
@@ -43,3 +52,4 @@ relations:
     label: cross_reference
     multiplicity: one_to_one
     required: false
+
