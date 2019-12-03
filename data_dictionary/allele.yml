@@ -3,8 +3,17 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "Allele"
 title: Allele
 type: object
-secondaryLable: Feature
-description: >
+description: > One of multiple possible forms of a functional genomic element (most often described as a locus or a gene), 
+differing from the reference DNA sequence. The genomic element can be endogenous or constructed.
+
+Associated data: Is allele of: gene/locus/genomic element; 
+Contains: variant(s)
+
+Notes: The change(s) present in a given allele is effectively described by genomic Variant(s). At the Alliance, “allele” refers to a form of a 
+functional genomic element. Functional genomic element is a section of DNA with known (e.g. gene, regulatory sequence), 
+or unknown function (e.g. conserved region with unknown function). Functional genomic element also includes constructs 
+which were inserted anywhere in the genome. An allele can refer to a functional element/locus present in the nuclear or in the organellar genome.
+ 
 additionalProperties: false
 validators:
 
@@ -13,14 +22,27 @@ properties:
  uuid
  symbol
  symbolText
- taxonid
+ symbolWithSpecies
+ symbolTextWithSpecies
+ taxonId
  globalId
+ localId
  release
  dateProduced
  dataProvider
- localId
  dataProviders
  modCrossRefCompleteUrl
+
+uniqueKeys:
+ - [primaryKey, uuid]
+
+required:
+  oneOf:
+    - [primaryKey, symbol, symbolText, symbolWithSpecies, symbolTextWithSpecies, globalId, localId, dataProvider, modCrossRefCompleteUrl]
+
+secondaryLabels: 
+ oneOf:
+   - Feature
 
 relations:
   - relatedNode: Synonym

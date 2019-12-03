@@ -1,9 +1,9 @@
-schema: "http://json-schema.org/draft-04/schema#"
+çschema: "http://json-schema.org/draft-04/schema#"
 
 id: "CLTerm"
 title: CLTerm
 type: object
-description: >
+description: > Cell Ontology Term.  primaryKey is a cell ontology id (ie: CL:00011011)
 additionalProperties: false
 validators:
 
@@ -16,6 +16,19 @@ properties:
  nameKey
  displaySynonym
 
+uniqueKeys:
+ - [primaryKey]
+
+required:
+  oneOf:
+    - [primaryKey]
+
+secondaryLabels:
+ - OntologyTerm
+
+notNull:
+ - primaryKey
+ - name
 
 relations:
   - relatedNode: CLTerm

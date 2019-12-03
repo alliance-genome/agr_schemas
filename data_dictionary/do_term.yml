@@ -17,6 +17,20 @@ properties:
  displaySynonym
 
 
+uniqueKeys:
+ - [primaryKey]
+
+required:
+  oneOf:
+    - [primaryKey]
+
+secondaryLabels:
+ - OntologyTerm
+
+notNull:
+ - primaryKey
+ - name
+
 relations:
   - relatedNode: DOTerm
     backref: is_a_part_of_closure
