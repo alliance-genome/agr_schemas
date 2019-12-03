@@ -14,6 +14,18 @@ properties:
  dataProvider
  loadName
 
+uniqueKeys:
+ - [primaryKey]
+
+required:
+  oneOf:
+    - [primaryKey]
+
+secondaryLabels:
+ - Entity
+
+notNull:
+ - primaryKey
 
 relations:
   - relatedNode: Gene

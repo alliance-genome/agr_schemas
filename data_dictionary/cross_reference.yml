@@ -3,7 +3,7 @@ schema: "http://json-schema.org/draft-04/schema#"
 id: "CrossReference"
 title: CrossReference
 type: object
-description: >
+description: > Node that defines attributes that are used to construct links to external data repositories
 additionalProperties: false
 validators:
 
@@ -19,6 +19,20 @@ properties:
  crossRefType
  crossRefCompleteUrl
 
+uniqueKeys:
+ - [primaryKey, uuid]
+
+required:
+  oneOf:
+    - [primaryKey, prefix, localId, uuid, globalCrossRefId, crossRefCompleteUrl]
+
+notNull:
+ - primaryKey
+ - prefix
+ - localId
+ - uuid
+ - globalCrossRefId
+ - crossRefCompleteUrl
 
 relations:
   - relatedNode: Ontology
