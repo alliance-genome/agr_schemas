@@ -21,6 +21,18 @@ properties:
  release
  dataProvider
 
+uniqueKeys:
+ - [primaryKey]
+ - [hgvsNomenclature]
+
+required:
+  oneOf:
+    - [primaryKey, genomicReferenceSequence, genomicVariantSequence, paddingLeft, paddingRight, hgvsNomenclature]
+
+notNull:
+ - primaryKey
+
+
 relations:
   - name: Allele:Feature
     backref: variation

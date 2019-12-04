@@ -9,8 +9,19 @@ additionalProperties: false
 validators: 
 
 properties: 
- primaryId (could be sequenceTargetingReagentID?)
+ primaryKey
  name
+
+uniqueKeys:
+ - [primaryKey]
+
+required:
+  oneOf:
+    - [primaryKey, name]
+
+notNull:
+ - primaryKey
+ - name
 
 relations:
   - name: Gene

@@ -11,6 +11,16 @@ properties:
  primaryKey
  name
 
+uniqueKeys:
+ - [primaryKey]
+
+required:
+  oneOf:
+    - [primaryKey]
+
+notNull:
+ - primaryKey
+
 
 relations:
   - relatedNode: Gene

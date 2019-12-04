@@ -3,7 +3,7 @@ schema: "http://json-schema.org/draft-04/schema#"
 id: "BioEntityGeneExpressionJoin"
 title: BioEntityGeneExpressionJoin
 type: object
-description: At a high level, this node represents a single expression annotation.
+description: At a high level, this join node represents a single expression annotation.
 additionalProperties: false
 validators:
 
@@ -11,6 +11,15 @@ properties:
  primaryKey
  joinType
 
+uniqueKeys:
+ - [primaryKey]
+
+required:
+  oneOf:
+    - [primaryKey, joinType]
+
+secondaryLabels:
+ - Association
 
 relations:
   - relatedNode: Publication

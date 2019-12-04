@@ -16,6 +16,19 @@ properties:
  nameKey
  displaySynonym
 
+uniqueKeys:
+ - [primaryKey]
+
+required:
+  oneOf:
+    - [primaryKey]
+
+secondaryLabels:
+ - OntologyTerm
+
+notNull:
+ - primaryKey
+ - name
 
 relations:
   - relatedNode: MATerm

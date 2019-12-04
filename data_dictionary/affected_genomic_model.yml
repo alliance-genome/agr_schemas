@@ -3,22 +3,37 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "affectedGenomicModel"
 title: AffectedGenomicModel
 type: object
-description: The genotype, strain or model, defined by its curated set of gene affectors, ie: alleles and sequence targeting reagents, as well as its (optional) parental populations. 
+description: > The genotype, strain or model, defined by its curated set of gene affectors, 
+ie: alleles and sequence targeting reagents, as well as its (optional) parental populations. 
 additionalProperties: false
 validators: 
 
 properties: 
- primaryID (could be affectedGenomicModelID?)
- name
+ primaryKey
  subtype
+ name
+ nameText
+ nameWithSpecies
+ nameTextWithSpecies
+ globalId
+ localId
+ modCrossRefCompleteUrl
+ dataProviders
+ dateProduced
+ dataProvider
+
+uniqueKeys:
+ - [primaryKey]
+
+required:
+ oneOf:
+   - [primaryKey, name, nameText, subtype, nameWithSpecies, nameTextWithSpecies, globalId, localId, modCrossRefCompleteUrl, dataProvider]
  
 secondaryLabels: 
- - relatedNode: Genotype
-   required: false
- - relatedNode: Strain
-   required: false 
- - relatedNode: Fish
-   required: false
+ oneOf:
+   - Genotype
+   - Strain
+   - Fish
 
 relations:
   - relatedNode: AffectedGenomicModel

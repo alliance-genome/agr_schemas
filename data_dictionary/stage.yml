@@ -11,6 +11,17 @@ properties:
  primaryKey
  name
 
+uniqueKeys:
+ - [primaryKey]
+ - [name]
+
+required:
+  oneOf:
+    - [primaryKey, name]
+
+notNull:
+ - primaryKey
+ - name
 
 relations:
   - relatedNode: BioEntityGeneExpressionJoin
