@@ -11,6 +11,16 @@ properties:
  primaryKey
  phenotypeStatement
 
+uniqueKeys:
+ - [primaryKey]
+
+required:
+  oneOf:
+    - [primaryKey, phenotypeStatement]
+
+notNull:
+ - primaryKey
+ - phenotypeStatement
 
 relations:
   - relatedNode: PhenotypeEntityJoin

@@ -10,6 +10,15 @@ validators:
 properties:
  name
 
+uniqueKeys:
+ - [name]
+
+required:
+  oneOf:
+    - [name]
+
+notNull:
+ - name
 
 relations:
   - relatedNode: OrthologyGeneJoin

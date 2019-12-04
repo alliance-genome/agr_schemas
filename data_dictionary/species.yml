@@ -13,6 +13,19 @@ properties:
  name
  phylogenicOrder
 
+uniqueKeys:
+ - [primaryKey]
+ - [species]
+
+required:
+  oneOf:
+    - [primaryKey, species, name, phylogenicOrder]
+
+notNull:
+ - primaryKey
+ - species
+ - name
+ - phylogenicOrder
 
 relations:
   - relatedNode: AffectedGenomicModel 
