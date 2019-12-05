@@ -128,3 +128,8 @@ relations:
     label: targets
     multiplicity: many_to_many
     required: false
+  - relatedNode: GenomicLocation
+    backref: association
+    label: association
+    multiplicity: one_to_one
+    required: false
