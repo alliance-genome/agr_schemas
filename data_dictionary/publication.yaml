@@ -26,6 +26,8 @@ required:
     - [primaryKey, pubMedId, pubMedUrl]
     - [primaryKey, pubModId, pubModUrl]
  
+notNull:
+ - primaryKey
 
 relations:
   - relatedNode: BioEntityGeneExpressionJoin
