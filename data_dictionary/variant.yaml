@@ -34,7 +34,7 @@ notNull:
 
 
 relations:
-  - name: Allele:Feature
+  - name: Allele
     backref: variation
     label: variation
     multiplicity: one_to_one
