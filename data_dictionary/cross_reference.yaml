@@ -38,7 +38,7 @@ relations:
   - relatedNode: Ontology
     backref: cross_reference
     label: cross_reference
-    multiplicity: many_to_one
+    multiplicity: many_to_many
     required: false
   - relatedNode: Gene
     backref: cross_reference
