@@ -54,6 +54,9 @@
         "$ref": "../crossReference.json#"
       },
       "uniqueItems": true
-    }
+    },
+   "type": {
+     "type": "string",
+     "description": "the type of the allele or alteration."
   }
 }
