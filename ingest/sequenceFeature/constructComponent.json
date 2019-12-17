@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "constructComponent",
+  "title": "Construct Component",
   "description": "An enitity that describes the components of a construct.",
   "id": "constructComponent.json#",
   "type": "object",
@@ -21,4 +21,5 @@
       "$ref": "../globalID.json",
       "description": "curie identifier that identifies the component."
   }
+}
 }

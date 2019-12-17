@@ -25,7 +25,7 @@
     },
     "constructComponents": {
     	"type": "array",
-      "description": "the regulatory regions, expressed components, and targeted genes in this construct." 
+      "description": "the regulatory regions, expressed components, and targeted genes in this construct." ,
       "items": {
         "$ref": "constructComponent.json",
         "description": "The set of components that make up the construct."
