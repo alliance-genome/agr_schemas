@@ -36,6 +36,14 @@
       },
       "uniqueItems": true
     },
+    "description": {
+      "type": "string",
+      "description":"optional free text annotation area provided for the allele by the MOD curators."
+    },
+    "type": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "the type of the allele, represented by a SOTerm Id."
+    },
     "secondaryIds": {
       "type": "array",
       "items": {
