@@ -4,14 +4,13 @@
   "description": "An enitity that describes a single affected, endogenous allele.  These can be of any type that matches that definition.",
   "id": "allele.json#",
   "type": "object",
-  "required": [
+    "required": [
     "symbol",
     "symbolText",
-    "gene",
     "taxonId",
-    "primaryId"
+    "primaryId",
+    "hasConstruct"
   ],
-  "additionalProperties": false,
   "properties": {
     "primaryId": {
       "$ref": "../globalId.json#/properties/globalId",
@@ -28,6 +27,10 @@
     "taxonId": {
       "$ref": "../globalId.json#/properties/globalId",
       "description": "The taxonId for the species of the genotype entity."
+    },
+    "hasConstruct": {
+      "type":"boolean",
+      "description": "boolean that indicates whether or not this allele, or feature, is transgenic."
     },
     "synonyms": {
       "type": "array",
@@ -54,6 +57,10 @@
     "gene": {
       "$ref": "../globalId.json#/properties/globalId",
       "description": "The single affected gene of the allele."
+    },
+    "construct": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "The optional construct that is inserted in this allele."
     },
     "crossReferences": {
       "description": "Collection holding a limited set (for now) of database cross references for each gene.  That set is defined in geneCrossReferences.json dataSoruce enumeration.  NCBI GENE means just the NCBI Gene reference.  UniProtKB is swissprot and trembl.  Ensembl is just the GENE id for now (not transcript nor protein).  Vega was eliminated as it did not apply to all organisms in the repository.",
