@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "",
+  "id": "insertionTypeEnumeration.json#",
+  "description": "enumeration that validates the possible values for the allele type when the allele is considered a transgene.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["insertionType"],
+  "properties": {
+    "insertionType": {
+      "enum": ["Extra Chromosomal Array","Transgenic Insertion"]
+      }
+   }
+}
