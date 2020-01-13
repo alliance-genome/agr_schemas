@@ -1,0 +1,30 @@
+{
+ "data": [{
+        "crossReferences": [
+                         
+                                { "id":"ZFIN:ZDB-TGCONSTRCT-151222-1","pages":["construct"]}
+                           ],
+      "primaryId": "ZFIN:ZDB-TGCONSTRCT-151222-1",
+      "synonyms": [
+        "heat shock lacz",
+        "hsl"
+      ],
+      "taxonId": "NCBITaxon:7955",
+     "name": "Tg(-3.5ubb:LOXP-LacZ-LOXP-egfp)",
+    "constructComponents": [
+    			   {"componentSymbol":"ubb","componentID":"ZFIN:ZDB-GENE-050411-10","componentRelation":"regulatory"},
+			   {"componentSymbol":"LacZ","componentID":"ZFIN:ZDB-EFG-151222-1","componentRelation":"expressed"},
+                           {"componentSymbol":"LOXP","componentID":"ZFIN:ZDB-EREGION-110816-5","componentRelation":"expressed"}
+    }
+   ],
+  "metaData": {
+    "dataProvider": {
+        "crossReference": { 
+                "id":"ZFIN",
+                "pages": ["homepage"]
+        },
+        "type": "curated"
+    } ,
+    "dateProduced": "2017-06-22T13:27:43-04:00"
+  }
+}
