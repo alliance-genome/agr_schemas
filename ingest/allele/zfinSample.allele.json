@@ -9,7 +9,7 @@
       ],
       "taxonId": "NCBITaxon:7955",
       "gene": "ZFIN:ZDB-GENE-990415-72",
-      "crossReferences": [{"id":"ZFIN:ZDB-GENE-990415-72","pages":["allele"]}]
+      "crossReferences": [{"id":"ZFIN:ZDB-ALT-990415-72","pages":["allele"]}]
    },
     {
       "primaryId": "ZFIN:ZDB-ALT-980413-523",
@@ -19,9 +19,25 @@
         "AT50A",
         "tt350"
       ],
+      "description": "test",
       "gene" : "ZFIN:ZDB-GENE-990415-33",
       "taxonId": "NCBITaxon:7955",
-      "crossReferences": [{"id":"ZFIN:ZDB-GENE-990415-33","pages":["allele"]}]
+      "crossReferences": [{"id":"ZFIN:ZDB-ALT-990415-33","pages":["allele"]}]
+    },
+      {
+      "primaryId": "ZFIN:ZDB-ALT-020506-2",
+      "symbol": "b165Tg",
+      "symbolText": "b165Tg",
+      "synonyms" : [
+        "b165",
+        "Tg(Hsp70-1:lacz)",
+        "Tg(Hsp70-1:lacz)b165"
+      ],
+      "description": "lacz expression in response to heat shock (41 degrees C for 30 minutes). A mouse Hsp70-1 promoter is used to drive lacz expression.",
+      "insertionType": "Transgenic Insertion",
+      "construct" : "ZFIN:ZDB-TGCONSTRCT-070117-134",
+      "taxonId": "NCBITaxon:7955",
+      "crossReferences": [{"id":"ZFIN:ZDB-ALT-990415-33","pages":["allele"]}]
     }
   ],
   "metaData": {
