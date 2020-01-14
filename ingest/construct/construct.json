@@ -4,7 +4,7 @@
   "description": "A construct definition.",
   "id": "construct.json#",
   "type": "object",
-  "required": ["primaryId","name","taxonId"],
+  "required": ["primaryId","name"],
   "additionalProperties": false,
   "properties": {
     "primaryID": {
