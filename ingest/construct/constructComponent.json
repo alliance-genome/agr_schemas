@@ -10,8 +10,8 @@
   "additionalProperties": false,
   "properties": {
     "relation": {
-      "type": "string",
-      "description": "the relationship between this component and the construct"
+      "$ref": "constructComponentRelationEnumeration.json#",
+      "description": "the relationship between this component and the construct, enumerated and one of the following: targets, expresses, regulates"
     },
     "componentSymbol": {
       "type": "string",
