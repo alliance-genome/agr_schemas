@@ -15,7 +15,7 @@
     			   {"componentSymbol":"ubb","componentID":"ZFIN:ZDB-GENE-050411-10","componentRelation":"regulatory"},
 			   {"componentSymbol":"LacZ","componentID":"ZFIN:ZDB-EFG-151222-1","componentRelation":"expressed"},
                            {"componentSymbol":"LOXP","componentID":"ZFIN:ZDB-EREGION-110816-5","componentRelation":"expressed"}
-    }
+    
    ],
   "metaData": {
     "dataProvider": {
