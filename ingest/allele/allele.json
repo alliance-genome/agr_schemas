@@ -4,14 +4,18 @@
   "description": "An enitity that describes a single affected, endogenous allele.  These can be of any type that matches that definition.",
   "id": "allele.json#",
   "type": "object",
-  "required": [
+    "required": [
     "symbol",
     "symbolText",
-    "gene",
     "taxonId",
     "primaryId"
   ],
-  "additionalProperties": false,
+"anyOf": [
+  { "required":
+    [ "gene" ] },
+  { "required":
+    [ "constructInsertionType" ] }
+],
   "properties": {
     "primaryId": {
       "$ref": "../globalId.json#/properties/globalId",
@@ -29,12 +33,24 @@
       "$ref": "../globalId.json#/properties/globalId",
       "description": "The taxonId for the species of the genotype entity."
     },
+    "constructInsertionType": {
+      "$ref":"constructInsertionTypeEnumeration.json#/properties/constructInsertionType",
+      "description": "controlled vocabulary/enumeration of possible transgenic insertion types."
+    },
     "synonyms": {
       "type": "array",
       "items": {
         "type": "string"
       },
       "uniqueItems": true
+    },
+    "description": {
+      "type": "string",
+      "description":"optional free text annotation area provided for the allele by the MOD curators."
+    },
+    "type": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "the type of the allele, represented by a SOTerm Id."
     },
     "secondaryIds": {
       "type": "array",
@@ -46,6 +62,11 @@
     "gene": {
       "$ref": "../globalId.json#/properties/globalId",
       "description": "The single affected gene of the allele."
+    },
+    "construct": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "The optional construct that is inserted in this allele.",
+      "dependencies": {"required":["insertionType"]}
     },
     "crossReferences": {
       "description": "Collection holding a limited set (for now) of database cross references for each gene.  That set is defined in geneCrossReferences.json dataSoruce enumeration.  NCBI GENE means just the NCBI Gene reference.  UniProtKB is swissprot and trembl.  Ensembl is just the GENE id for now (not transcript nor protein).  Vega was eliminated as it did not apply to all organisms in the repository.",

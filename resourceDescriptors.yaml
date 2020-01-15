@@ -113,6 +113,8 @@
       url: https://zfin.org/[%s]
     - name: genotype
       url: https://zfin.org/[%s]
+    - name: construct
+      url: https://zfin.org/[%s]
     - name: Fish
       url: https://zfin.org/[%s]
     - name: homepage

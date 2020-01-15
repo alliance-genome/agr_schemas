@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "construct",
+  "description": "A construct definition.",
+  "id": "construct.json#",
+  "type": "object",
+  "required": ["primaryId","name"],
+  "additionalProperties": false,
+  "properties": {
+    "primaryId": {
+      "$ref":"../globalId.json#/properties/globalId",
+      "description": "The prefixed primary (MOD) ID for an entity. e.g. FB:FBgn0003301, MGI:87917."
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {
+         "type": "string"
+      },
+    "uniqueItems": true
+    },
+    "secondaryIds": {
+      "description": "Collection of MOD-specific IDs that have been merged into basicGeneticEntity.",
+       "type": "array",
+       "items": {
+         "$ref": "globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
+    },
+    "crossReferences": {
+      "description":"Collection holding a limited set of database cross references for each object.",
+      "type": "array",
+      "items": {
+         "$ref" : "../crossReference.json"
+      },
+      "uniqueItems": true
+    },    
+    "name": { 
+      "type": "string",
+      "description": "The name of the entity."
+    },
+    "constructComponents": {
+    	"type": "array",
+      "description": "the regulatory regions, expressed components, and targeted genes in this construct." ,
+      "items": {
+        "$ref": "constructComponent.json",
+        "description": "The set of components that make up the construct."
+      }
+    }
+  }
+}

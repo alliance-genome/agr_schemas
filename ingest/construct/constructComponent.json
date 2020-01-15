@@ -5,20 +5,20 @@
   "id": "constructComponent.json#",
   "type": "object",
   "required": [
-       "componentSymbol", "relation"
+       "componentSymbol", "componentRelation"
   ],
   "additionalProperties": false,
   "properties": {
-    "relation": {
-      "type": "string",
-      "description": "the relationship between this component and the construct"
+    "componentRelation": {
+      "$ref": "constructComponentRelationEnumeration.json#/properties/componentRelation",
+      "description": "the relationship between this component and the construct, enumerated and one of the following: targets, expresses, regulates"
     },
     "componentSymbol": {
       "type": "string",
       "description": "represents the symbol of the construct component."
     },
     "componentID": {
-      "$ref": "../globalID.json",
+      "$ref": "../globalId.json#/properties/globalId",
       "description": "curie identifier that identifies the component."
   }
 }

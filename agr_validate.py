@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import json
-import strict_rfc3339
 import os
+import strict_rfc3339
 import argparse
 import sys
 import jsonschema as js
