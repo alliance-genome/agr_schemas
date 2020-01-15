@@ -14,7 +14,7 @@
       "type": "array",
       "description": "A list of construct objects.",
       "items": {
-        "$ref" : "construct.json#"
+        "$ref" : "construct.json"
       }
     }
   }

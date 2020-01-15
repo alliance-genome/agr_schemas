@@ -10,7 +10,7 @@
   "additionalProperties": false,
   "properties": {
     "componentRelation": {
-      "$ref": "constructComponentRelationEnumeration.json#",
+      "type": "string",
       "description": "the relationship between this component and the construct, enumerated and one of the following: targets, expresses, regulates"
     },
     "componentSymbol": {
@@ -18,8 +18,8 @@
       "description": "represents the symbol of the construct component."
     },
     "componentID": {
-      "$ref": "../globalID.json",
+      "$ref": "../globalId.json#/properties/globalId",
       "description": "curie identifier that identifies the component."
   }
 }
-
+}

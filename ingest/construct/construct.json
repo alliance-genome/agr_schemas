@@ -30,7 +30,7 @@
       "description":"Collection holding a limited set of database cross references for each object.",
       "type": "array",
       "items": {
-         "$ref" : "gene/geneCrossReference.json"
+         "$ref" : "../crossReference.json"
       },
       "uniqueItems": true
     },    
