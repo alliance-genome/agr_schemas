@@ -5,7 +5,7 @@
   "id": "constructComponent.json#",
   "type": "object",
   "required": [
-       "componentSymbol", "relation"
+       "componentSymbol", "componentRelation"
   ],
   "additionalProperties": false,
   "properties": {
@@ -22,4 +22,4 @@
       "description": "curie identifier that identifies the component."
   }
 }
-}
+
