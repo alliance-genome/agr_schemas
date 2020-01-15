@@ -33,8 +33,8 @@
       "$ref": "../globalId.json#/properties/globalId",
       "description": "The taxonId for the species of the genotype entity."
     },
-    "insertionType": {
-      "$ref":"insertionTypeEnumeration.json",
+    "constructInsertionType": {
+      "$ref":"constructInsertionTypeEnumeration.json#/properties/constructInsertionType",
       "description": "controlled vocabulary/enumeration of possible transgenic insertion types."
     },
     "synonyms": {
