@@ -14,7 +14,7 @@
   { "required":
     [ "gene" ] },
   { "required":
-    [ "insertionType" ] }
+    [ "constructInsertionType" ] }
 ],
   "properties": {
     "primaryId": {

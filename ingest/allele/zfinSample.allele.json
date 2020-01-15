@@ -34,7 +34,7 @@
         "Tg(Hsp70-1:lacz)b165"
       ],
       "description": "lacz expression in response to heat shock (41 degrees C for 30 minutes). A mouse Hsp70-1 promoter is used to drive lacz expression.",
-      "insertionType": "Transgenic Insertion",
+      "constructInsertionType": {"constructInsertionType":"Transgenic Insertion"},
       "construct" : "ZFIN:ZDB-TGCONSTRCT-070117-134",
       "taxonId": "NCBITaxon:7955",
       "crossReferences": [{"id":"ZFIN:ZDB-ALT-990415-33","pages":["allele"]}]
