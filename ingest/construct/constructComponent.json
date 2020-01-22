@@ -5,7 +5,7 @@
   "id": "constructComponent.json#",
   "type": "object",
   "required": [
-       "componentSymbol", "componentRelation"
+       "componentSymbol"
   ],
   "additionalProperties": false,
   "properties": {
