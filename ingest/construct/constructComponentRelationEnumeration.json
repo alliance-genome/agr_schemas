@@ -8,7 +8,7 @@
   "required": ["componentRelation"],
   "properties": {
     "componentRelation": {
-      "enum": ["expresses","regulates","targets"]
+      "enum": ["expresses","is_regulated_by","targets"]
       }
    }
 }
