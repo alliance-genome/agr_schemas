@@ -150,6 +150,8 @@
       url: https://flybase.org/reports/[%s].html#pubs
     - name: allele
       url: https://flybase.org/reports/[%s].html
+    - name: construct
+      url: https://flybase.org/reports/[%s].html
     - name: strain
       url: https://flybase.org/reports/[%s].html
     - name: homepage
