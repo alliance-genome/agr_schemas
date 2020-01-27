@@ -22,7 +22,7 @@
       "description": "Collection of MOD-specific IDs that have been merged into basicGeneticEntity.",
        "type": "array",
        "items": {
-         "$ref": "globalId.json#/properties/globalId"
+         "$ref": "../globalId.json#/properties/globalId"
        },
       "uniqueItems": true
     },
