@@ -129,6 +129,8 @@
       url: https://zfin.org/[%s]
     - name: gene/expression_images
       url: https://zfin.org/[%s]/wt-expression/images
+    - name: allele/references
+      url: https://zfin.org/action/publication/list/[%s]
  
 #
 # FlyBase
