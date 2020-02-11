@@ -205,6 +205,8 @@
       url: https://www.wormbase.org/resources/disease/[%s]
     - name: gene/MODinteractions
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
+    - name: construct
+      url: https://www.wormbase.org/db/get?name=[%s];class=Construct
 
 - db_prefix: WBls
   name: WormBase life-stage Ontology
