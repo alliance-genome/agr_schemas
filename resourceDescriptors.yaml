@@ -23,6 +23,8 @@
       url: http://www.informatics.jax.org/marker/phenotypes/MGI:[%s]
     - name: allele
       url: http://www.informatics.jax.org/allele/MGI:[%s]
+    - name: allele/references
+      url: http://www.informatics.jax.org/reference/allele/MGI:[%s]?typeFilter=Literature
     - name: genotype
       url: http://www.informatics.jax.org/allele/genoview/MGI:[%s]
     - name: homepage
