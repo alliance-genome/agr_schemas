@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Construct Component",
+  "description": "An enitity that describes the components of a construct.",
+  "id": "constructComponent.json#",
+  "type": "object",
+  "required": [
+       "componentSymbol"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "componentRelation": {
+      "$ref": "constructComponentRelationEnumeration.json#/properties/componentRelation",
+      "description": "the relationship between this component and the construct, enumerated and one of the following: targets, expresses, regulates"
+    },
+    "componentSymbol": {
+      "type": "string",
+      "description": "represents the symbol of the construct component."
+    },
+    "componentID": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "curie identifier that identifies the component."
+  }
+}
+}

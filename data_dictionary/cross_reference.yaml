@@ -1,0 +1,72 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "CrossReference"
+title: CrossReference
+type: object
+description: > Node that defines attributes that are used to construct links to external data repositories
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ name
+ displayName
+ prefix
+ page
+ localId
+ uuid
+ globalCrossRefId
+ crossRefType
+ crossRefCompleteUrl
+
+uniqueKeys:
+ - [primaryKey, uuid]
+
+required:
+  oneOf:
+    - [primaryKey, prefix, localId, uuid, globalCrossRefId, crossRefCompleteUrl]
+
+notNull:
+ - primaryKey
+ - prefix
+ - localId
+ - uuid
+ - globalCrossRefId
+ - crossRefCompleteUrl
+
+relations:
+  - relatedNode: Ontology
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Gene
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: Allele
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: BioEntityGeneExpressionJoin
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: InteractionGeneJoin
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: AffectedGenomicModel
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: SequenceTargetingReagent
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: many_to_one
+    required: false

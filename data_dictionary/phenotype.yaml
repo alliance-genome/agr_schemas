@@ -1,0 +1,40 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Phenotype"
+title: Phenotype
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ phenotypeStatement
+
+uniqueKeys:
+ - [primaryKey]
+
+required:
+  oneOf:
+    - [primaryKey, phenotypeStatement]
+
+notNull:
+ - primaryKey
+ - phenotypeStatement
+
+relations:
+  - relatedNode: PhenotypeEntityJoin
+    backref: association
+    label: association
+    multiplicity: one_to_many
+    required: true
+  - relatedNode: Allele
+    backref: has_phenotype
+    label: has_phenotype
+    multiplicity: one_to_many
+    required: false
+  - relatedNode: Gene
+    backref: has_phenotype
+    label: has_phenotype
+    multiplicity: one_to_many
+    required: false

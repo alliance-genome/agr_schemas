@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "",
+  "id": "constructComponentRelationEnumeration.json#",
+  "description": "relationship enumeration that validates the relations available between constructs and their components. ",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["componentRelation"],
+  "properties": {
+    "componentRelation": {
+      "enum": ["expresses","is_regulated_by","targets"]
+      }
+   }
+}

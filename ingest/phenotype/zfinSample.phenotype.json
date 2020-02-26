@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "objectId": "ZFIN:ZDB-ALT-980203-1091",     
+      "phenotypeTermIdentifiers": [
+         {"termId": "ZFA:0001357", "termOrder":1},
+         {"termId": "PATO:0000051", "termOrder":2}
+      ],
+      "primaryGeneticEntityIDs": ["ZFIN:ZDB-FISH-010101-1"],
+      "phenotypeStatement": "alar plate midbrain region morphology, abnormal",
+      "evidence": {
+         "crossReference": {"id":"ZFIN:ZDB-PUB-081031-1",
+			    "pages":["reference"]},
+         "publicationId": "PMID:14660549"
+      },
+      "dateAssigned": "2017-06-22T13:27:43-04:00"
+    }
+  ],
+  "metaData": {
+    "dataProvider": {
+        "crossReference": {
+                "id":"ZFIN",
+                "pages": ["homepage"]
+        },
+        "type": "curated"
+    },
+    "dateProduced": "2017-06-22T13:27:43-04:00"
+  }
+}

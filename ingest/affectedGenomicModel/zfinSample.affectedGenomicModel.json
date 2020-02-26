@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "primaryID": "ZFIN:ZDB-FISH-150901-20750",
+      "name": "fgf8a<sup>ti282a/+</sup>(AB)",
+      "synonyms": [
+        "testSynonym"
+      ],
+      "secondaryIds": [
+        "ZFIN:ZDB-GENO-070209-1"
+      ],
+      "taxonId": "NCBITaxon:7955",
+      "crossReference": {"id":"ZFIN:ZDB-FISH-150901-20750",
+			   "pages":["fish"]
+                         },
+      "affectedGenomicModelComponents": [{
+      			    "zygosity":"GENO:0000135",
+			    "alleleID":"ZFIN:ZDB-ALT-980203-1091"
+      }]
+    }
+  ],
+  "metaData": {
+    "dataProvider": {
+        "crossReference": {
+                "id":"ZFIN",
+                "pages": ["homepage"]
+        },
+        "type": "curated"
+    },
+    "dateProduced": "2017-06-22T13:27:43-04:00"
+  }
+}

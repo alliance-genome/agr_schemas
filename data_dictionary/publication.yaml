@@ -1,0 +1,57 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "publication"
+title: Publication
+type: object
+description: >
+   Publication is a node in the model that describes attributes necessary to link publications to annotations and to external sources like PUBMED 
+  or MOD publication pages.  PrimaryKey attribute is typically a PUBMED id. If a publication originates at a MOD, and does not have a record 
+  in PUBMED, the primaryKey attribute is the MOD publication identifier.    
+additionalProperties: false
+validators: 
+
+properties: 
+  primaryKey
+  pubMedId 
+  pubMedUrl
+  pubModUrl
+  pubModId 
+
+uniqueKeys:
+ - [primaryKey]
+ - [pubMedId, pubModId]
+
+required:
+  oneOf: 
+    - [primaryKey, pubMedId, pubMedUrl]
+    - [primaryKey, pubModId, pubModUrl]
+ 
+notNull:
+ - primaryKey
+
+relations:
+  - relatedNode: BioEntityGeneExpressionJoin
+    backref: evidence (could be 'has_evidence')
+    label: evidence (could be 'evidence_of')
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: PublicationEvidenceCodeJoin
+    backref: association 
+    label: association
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: PhenotypeEntityJoin
+    backref: evidence
+    label: evidence
+    multiplicity: many_to_one
+    required: false
+  - relatedNode: InteractionGenejoin
+    backref: evidence
+    label: evidence
+    mutiplicity: many_to_one
+  - relatedNode: CrossReference
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: one_to_one
+    required: false
+

@@ -1,0 +1,42 @@
+{
+  "title": "Modifier(s) for Disease Annotation",
+  "description": "Modifier(s) for disease annotation",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": ["associationType"],
+  "additionalProperties": false,
+  "id": "modifier.json#",
+  "properties": {
+     "modifier": {
+         "type":"object",
+	 "description":"Relationship between the modifier and the disease model. If filled out, one of the genetic or experimentalConditionsText must also be filled out.",
+     	 "anyOf": [{"required": ["genetic"]},
+                  {"required": ["experimentalConditionsText"]}
+         ],
+         "properties": {
+	    "associationType":{
+		"enum": ["condition_ameliorated_by","condition_exacerbated_by"],
+		"description": "TODO: find the RO terms for these, I don't currently find condition_ameliorated_by in the RO"
+	    },
+            "genetic":{
+	       "type":"array",
+	       "items": {
+                  "type": "string"
+               },
+	       "description": "A list of genetic object (allele/gene) that modifies the disease model"
+            },
+            "experimentalConditionsText": {
+	       "type":"array",
+               "items": {
+                  "type": "string"
+               },
+               "description": "A list of non-genetic object experimental condition that modifies the disease model"
+           }
+        }
+     }, 
+     "qualifier":{
+	 "type":"string",
+	 "description":"Used to make an explicit note that the DB object is not associated with the DO term/association type"
+     }
+  }
+}

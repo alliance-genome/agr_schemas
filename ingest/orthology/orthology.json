@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Orthology",
+  "description": "orthology objects.",
+  "id": "orthology.json",
+  "type": "object",
+  "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "confidence", "gene1Species", "gene2Species"],
+  "properties": {
+    "gene1Species": {
+      "type" : "integer",
+      "description": "The species of the first gene."
+    },
+    "gene2Species": {
+      "type" : "integer",
+      "description": "The species of the second gene."
+    },
+    "isBestScore": {
+      "enum": ["Yes", "No", "Yes_Adjusted"],
+      "description": "DIOPT schema highlights the best pair."
+    },
+    "isBestRevScore": {
+      "enum": ["Yes", "No"],
+      "description": "DIOPT schema highlights the best pair."
+    },
+    "gene1": {
+      "type": "string",
+      "description": "The primaryId of the the first gene."
+    },
+    "gene2": {
+      "type": "string",
+      "description": "The primaryId of the the second gene."
+    },
+    "predictionMethodsMatched": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "value": { 
+          "enum": ["OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
+        }
+      },
+        "description": "Source of the orthology match.",
+        "uniqueItems": true
+    },
+    "predictionMethodsNotMatched": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "value": { 
+          "enum": ["OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
+        }
+      },
+        "description": "Prediction methods that were not matched.",
+        "uniqueItems": true
+    },
+    "predictionMethodsNotCalled": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "value": { 
+          "enum": ["OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
+        }
+      },
+        "description": "Prediction methods that were not called.",
+        "uniqueItems": true
+    },
+    "confidence": {
+      "enum":["moderate","high","low"],
+      "description":"Confidence of orthology match."
+    },
+    "moderateFilter": {
+      "type" : "boolean",
+      "description": "Indicates whether this orthology match is displayed when the moderate filter is selected."
+    },
+    "strictFilter": {
+      "type" : "boolean",
+      "description": "Indicates whether this orthology match is displayed when the strict filter is selected."
+    }
+  }
+}

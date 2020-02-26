@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Disease Model Annotation",
+  "description": "An entry with disease/object associations",
+  "id": "diseaseModelAnnotation.json#",
+  "type": "object",
+  "required": [
+    "objectId",
+    "DOid",
+    "dataProvider",
+    "dateAssigned",
+    "objectRelation",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "objectId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description": "The ID to which the disease ontology term is applied. #TODO fold this into objectRelation and reference basicGeneInformation.json"
+    },
+    "objectName": {
+      "type": "string",
+      "description": "optional name for the object for which this annotation is based."
+    },
+    "objectRelation": {
+      "$ref": "diseaseObjectRelation.json#/properties/objectRelation",
+      "description": "Constrains the disease object, associationType and inferredGeneAssociation"
+    },
+    "qualifier": {
+      "enum": [
+        "not"
+      ],
+      "description": "The qualifier for the annotation"
+    },
+    "primaryGeneticEntityIDs": {
+"type": "array",
+      "items": {
+        "$ref" : "../globalId.json#/properties/globalId",
+       "description": "for calculated submissions, this field represents the id of the genetic objects (allele or affectedGenomicModel) that this annotation is based on."}
+   }, 
+    "DOid": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description": "The disease ontology term id."
+    },
+    "dataProvider": {
+        "type": "array",
+        "items": {
+            "$ref": "../dataProvider.json#"
+        },
+        "description": "source of data, can be multiple of these, each with a type and a crossReference"
+    },
+    "with": {
+      "type": "array",
+      "items": {
+        "$ref" : "../globalId.json#/properties/globalId",
+        "description": "http://geneontology.org/docs/go-annotation-file-gaf-format-21/#with-or-from-column-8"
+      },
+      "uniqueItems": true
+    },
+    "evidence": {
+      "$ref": "evidence.json#",
+      "description": "one pub + many evidence codes per annotation."
+    },
+    "dateAssigned": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date this entity was assigned in it's primary data source."
+    }
+  }
+}

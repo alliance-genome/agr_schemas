@@ -1,0 +1,64 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "FBCVTerm"
+title: FBCVTerm
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ name
+ definition
+ type
+ isObsolete
+ nameKey
+ displaySynonym
+
+uniqueKeys:
+ - [primaryKey]
+
+required:
+  oneOf:
+    - [primaryKey]
+
+secondaryLabels:
+ - OntologyTerm
+
+notNull:
+ - primaryKey
+ - name
+
+
+relations:
+  - relatedNode: FBCVTerm
+    backref: is_a_part_of_closure
+    label: is_a_part_of_closure
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Synonym
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: FBCVTerm
+    backref: is_a
+    label: is_a
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: FBCVTerm
+    backref: part_of
+    label: part_of
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: FBCVTerm
+    backref: cellular_component_qualifier
+    label: cellular_component_qualifier
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: FBCVTerm
+    backref: anatomical_sub_structure
+    label: anatomical_sub_structure
+    multiplicity: many_to_many
+    required: false

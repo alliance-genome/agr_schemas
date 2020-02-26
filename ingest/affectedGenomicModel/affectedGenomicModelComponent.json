@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "genotypeComponent",
+  "description": "An enitity that describes the components (allele, etc...) in a genotype, along with their zygosities.",
+  "id": "genotypeComponent.json#",
+  "type": "object",
+  "required": [
+       "alleleID","zygosity"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "zygosity":{
+	"enum":["GENO:0000602","GENO:0000603","GENO:0000604","GENO:0000605","GENO:0000606","GENO:0000135","GENO:0000136","GENO:0000137","GENO:0000134"]
+    },
+    "alleleID": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description" : "The curie (ie: 'ZFIN:ZDB-ALT-010101-1') for the allele referenced in this relation."
+    }
+}
+}

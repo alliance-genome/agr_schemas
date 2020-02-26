@@ -1,0 +1,57 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "metaschema"
+title: "Alliance data dictionary metaschema"
+
+allOf:
+  - $ref: "http://json-schema.org/draft-04/schema#"
+
+required:
+  - uniqueKeys
+  - properties
+  - description
+  - required
+  - notNull
+  - relations
+
+definitions:
+
+  relations:
+    type: object
+    additionalProperties: false
+    required:
+      - relatedNode
+      - backref
+      - label
+      - multiplicity
+    properties:
+      relatedNode:
+        type: string
+      backref:
+        type: string
+      label:
+        type: string
+      multiplicity:
+        type: string
+        enum:
+          - one_to_one
+          - one_to_many
+          - many_to_one
+          - many_to_many
+      required:
+        type: boolean
+
+   uniqueKeys:
+     type: object
+     oneOf: 
+       type: array
+
+   required:
+     oneOf:
+       type: array
+
+   secondaryLabels:
+     type: array
+   
+   notNull:
+     type: array

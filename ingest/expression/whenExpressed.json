@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "When Expressed",
+  "description": "an object that holds the temporal aspect of an expression pattern.",
+  "id": "whenExpressed.json#",
+  "type": "object",
+  "required": [
+    "stageName"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "stageTermId":{
+       "$ref": "../globalId.json#/properties/globalId"
+    },
+    "stageName": {
+       "type": "string",
+       "description": "For annotations where there is no MOD term id"
+    },
+    "stageUberonSlimTerm": {
+      "$ref": "uberonStageSlimTerm.json#",
+      "description" : "UBERON slim term for the temporal (life-stage) aspect of the annotation.",
+      "dependencies": {"required":["stageName"]}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "construct"
+title: TransgenicConstruct
+type: object
+description: >
+
+additionalProperties: false
+validators: 
+
+properties: 
+ primaryId
+ symbol
+
+relations:
+  - name: Feature
+    backref: is_allele_of
+    label: has_allele_of
+    multiplicity: one_to_many
+    required: false
+  - name: SOTerm
+    backref: construct_type
+    label: construct_type
+    multiplicity: one_to_one
+    required: false
+  - name: Gene
+    backref: expressedComponent
+    label: expressedComponent
+    multiplicity: one_to_one
+  - name: Gene
+    backref: regulatoryComponent
+    label: regulatoryComponent
+    multiplicity: one_to_one
+  - name: Synonym
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+  

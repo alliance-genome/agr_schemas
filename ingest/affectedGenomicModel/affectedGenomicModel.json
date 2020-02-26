@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Genotype",
+  "description": "Genotypes and their genomic components.  references allele.json",
+  "id": "genotype.json#",
+  "type": "object",
+  "required": ["primaryID", "taxonId", "name"],
+  "additionalProperties": false,
+  "properties": {
+    "primaryID": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the entity."
+    },
+    "subtype":{
+      "enum": ["strain", "genotype"],
+      "description": "a typing field that further qualifies an affectedGenomicModel as a strain or genotype.  This field is optional because some submissions will simply be submitting affectedGenomicModels that are more than just strains or genotypes, but fill the same biological model space as strains and genotypes at this time."
+    },
+    "taxonId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description" : "The taxonId for the species of the genotype entity."
+    },
+    "crossReference": {
+      "description":"MOD database cross references for each genotype;the link back to the MOD.",
+      "$ref" : "../crossReference.json#"
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {
+         "type": "string"
+      },
+    "uniqueItems": true
+    },
+    "secondaryIds":{
+      "type": "array",
+      "items": {
+         "type": "string"
+      },
+    "uniqueItems": true
+    },
+    "affectedGenomicModelComponents": {
+      "description": "Collection of genomic components that make up a model, ie: 'allele', each with a zygosity",
+       "type": "array",
+       "items": {
+         "$ref" : "affectedGenomicModelComponent.json#"
+       },
+      "uniqueItems": true
+    },
+    "sequenceTargetingReagentIDs": {
+      "description": "Collection of sequence targeting reagent components that make up a genotype.",
+       "type": "array",
+       "items": {
+         "$ref" : "../globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
+    },
+    "parentalPopulationIDs": { "description": "Collection of background components that make up a genotype.",
+       "type": "array",
+       "items": {
+         "$ref" : "../globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
+     }
+  }
+}

@@ -1,0 +1,54 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "BioEntityGeneExpressionJoin"
+title: BioEntityGeneExpressionJoin
+type: object
+description: At a high level, this join node represents a single expression annotation.
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ joinType
+
+uniqueKeys:
+ - [primaryKey]
+
+required:
+  oneOf:
+    - [primaryKey, joinType]
+
+secondaryLabels:
+ - Association
+
+relations:
+  - relatedNode: Publication
+    backref: evidence
+    label: evidence
+    multiplicity: one_to_many
+    required: true
+  - relatedNode: Stage
+    backref: during
+    label: during
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: ExpressionBioEntity
+    backref: association
+    label: association
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: MMOTerm
+    backref: assay
+    label: assay
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: CrossReference
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: UBERONTerm
+    backref: stage_ribbon_term
+    label: stage_ribbon_term
+    multiplicity: one_to_many
+    required: false

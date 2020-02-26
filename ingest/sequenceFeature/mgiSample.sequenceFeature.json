@@ -1,0 +1,188 @@
+{
+  "data": [
+    { 
+      "basicGeneticEntity": {
+      	"crossReferences": [
+				{ "id":"NCBI_Gene:109899"}, 
+        		   	{ "id":"MGI:87982","pages":["gene","gene/references"]}
+      			   ],
+      	"genomeLocations": [
+				{
+					"assembly": "",
+          				"chromosome": "1"
+	          	         }
+      		            ],
+      "primaryId": "MGI:87912",
+      "secondaryIds": [
+        "MGD_old:MGD-MRK-1248",
+        "MGD_old:MGD-MRK-1253"
+      ],
+      "synonyms": [
+        "Akp1",
+        "Akp-1",
+        "alkaline phosphatase 1"
+      ],
+      "taxonId": "NCBITaxon:10090"
+     },
+     "name": "alkaline phosphatase 1",
+      "soTermId": "SO:0001217",
+      "symbol": "Akp1"
+    }, 
+    {
+      "basicGeneticEntity": {
+      "crossReferences": [
+        {"id":"NCBI_Gene:16020"},
+        {"id":"MGI:96449","pages":["gene","gene/expression","gene/references"]}
+      ],
+      "genomeLocations": [
+        {
+          "assembly": "GRCm38",
+          "chromosome": "12",
+          "endPosition": 113277715,
+          "startPosition": 113264521,
+          "strand": "."
+        }
+      ],
+      "primaryId": "MGI:96449",
+      "secondaryIds": [
+        "MGD_old:MGD-MRK-11246"
+      ],
+      "synonyms": [
+        "Igh-7",
+        "immunoglobulin heavy chain 7 (heavy chain of IgE)"
+      ],
+      "taxonId": "NCBITaxon:10090"
+     },
+      "soTermId": "SO:3000000",
+      "name": "immunoglobulin heavy chain 7 (heavy chain of IgE)",
+      "symbol": "Igh-7"
+    },
+    {
+"basicGeneticEntity": {
+      "crossReferences": [
+        {"id":"ENSEMBL:ENSMUSG00000005672"},
+        {"id":"NCBI_Gene:16590"},
+        {"id":"UniProtKB:A4ZVL1"},
+        {"id":"UniProtKB:P05532"},
+        {"id":"UniProtKB:Q3ULJ6"},
+        {"id":"MGI:96677","pages":["gene","gene/expression","gene/references"]}
+      ],
+      "genomeLocations": [
+        {
+          "assembly": "GRCm38",
+          "chromosome": "5",
+          "endPosition": 75656722,
+          "startPosition": 75574916,
+          "strand": "+"
+        }
+      ],
+      "primaryId": "MGI:96677",
+      "secondaryIds": [
+        "MGD_old:MGD-MRK-1672",
+        "MGD_old:MGD-MRK-9743",
+        "MGD_old:MGD-MRK-11588",
+        "MGD_old:MGD-MRK-14609",
+        "MGD_old:MGD-MRK-15420",
+        "MGI:3530304",
+        "MGI:3530312",
+        "MGI:3530319"
+      ],
+      "synonyms": [
+        "belly-spot",
+        "Bs",
+        "CD117",
+        "c-KIT",
+        "dominant spotting",
+        "Dominant white spotting",
+        "Fdc",
+        "Gsfsco1",
+        "Gsfsco5",
+        "Gsfsow3",
+        "gsf spotted coat 1",
+        "gsf spotted coat 5",
+        "Kit",
+        "KIT proto-oncogene receptor tyrosine kinase",
+        "phenotype like Sl or W 3",
+        "SCO1",
+        "SCO5",
+        "SOW3",
+        "spotted sterile male",
+        "Ssm",
+        "Steel Factor Receptor",
+        "Tr-kit",
+        "W"
+      ],
+      "taxonId": "NCBITaxon:10090"
+     },
+     "name": "KIT proto-oncogene receptor tyrosine kinase",
+     "soTermId": "SO:0001217",
+      "symbol": "Kit"
+    },
+    {
+     "basicGeneticEntity": {
+      "primaryId": "MGI:5695867",
+      "synonyms": [
+        "twisty nose",
+        "Twsn"
+      ],
+      "taxonId": "NCBITaxon:10090"
+     },
+     "name": "twisty nose",
+     "soTermId": "SO:0001500",
+      "symbol": "Twsn"
+    },
+    {
+    "basicGeneticEntity": {
+      "crossReferences": [
+        {"id":"ENSEMBL:ENSMUSG00000083722"},
+        {"id":"NCBI_Gene:674251"},
+	{"id":"MGI:2685845","pages":["gene","gene/expression","gene/references"]}
+      ],
+      "genomeLocations": [
+        {
+          "assembly": "GRCm38",
+          "chromosome": "2",
+          "endPosition": 38687651,
+          "startPosition": 38671158,
+          "strand": "+"
+        }
+      ],
+      "primaryId": "MGI:2685845",
+      "secondaryIds": [
+        "MGI:3642981"
+      ],
+      "synonyms": [
+        "Adgrd2-ps",
+        "adhesion G protein-coupled receptor D2, pseudogene",
+        "EG666416",
+        "gene model 999, (NCBI)",
+        "Gm13585",
+        "Gm999",
+        "Gpr144",
+        "Gpr144-ps",
+        "G protein-coupled receptor 144",
+        "G protein-coupled receptor 144, pseudogene",
+        "OTTMUSG00000012858",
+        "predicted gene 13585",
+        "predicted gene, EG666416",
+        "predicted gene, OTTMUSG00000012858"
+      ],
+      "taxonId": "NCBITaxon:10090"
+     },
+      "name": "adhesion G protein-coupled receptor D2, pseudogene",
+      "soTermId": "SO:0000336",
+      "symbol": "Adgrd2-ps"
+    }
+  ],
+  "metaData": {
+    "dataProvider": {
+        "crossReference": { 
+		"id":"MGI",
+		"pages": ["homepage"]
+	},
+	"type": "curated"
+    } ,
+    "dateProduced": "2017-06-22T13:27:43-04:00",
+    "release": "MGI 6.010 2017-06-13"
+  }
+}

@@ -1,0 +1,26 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Chromosome"
+title: Chromosome
+type: object
+description: > Node that defines the chromosome name/number for each organism.  Can be a number or a roman numerale or a series of characters.
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+
+uniqueKeys:
+ - [primaryKey]
+
+relations:
+  - relatedNode: Variant
+    backref: located_on
+    label: located_on
+    multiplicity: one_to_many
+    required: false
+  - relatedNode: Gene
+    backref: located_on
+    label: located_on
+    multiplicity: one_to_many
+    required: false

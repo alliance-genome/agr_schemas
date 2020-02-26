@@ -1,0 +1,60 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "genomic_location"
+title: GenomicLocation
+type: object
+description: >
+  The location of a sequence feature on a chromosome and based on a specific assembly.
+validators:
+
+properties:
+  primaryKey:
+    type: String
+  start
+    type: Integer
+  end
+    type: Integer
+  assembly:
+    type: String
+  strand:
+    type: String
+  chromosome:
+    type: String
+
+uniqueKeys:
+ - [primaryKey]
+ - [start, end, assembly, strand, chromosome]
+
+required:
+  oneOf:
+    - [primaryKey, start, end, assembly, strand, chromosome]
+
+notNull:
+ - primaryKey
+ - start
+ - end
+ - chromosome
+ - assembly
+ - strand
+
+relations:
+  - relatedNode: Assembly
+    backref: association
+    label: association
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: Chromosome
+    backref: association
+    label: association
+    multiplicity: one_to_one
+    required: true
+  - relatedNode: Gene
+    backref: association
+    label: association
+    multiplicity: one_to_one
+    required: false
+  - relatedNode: Variant
+    backref: association
+    label: association
+    multiplicity: one_to_one
+    required: false

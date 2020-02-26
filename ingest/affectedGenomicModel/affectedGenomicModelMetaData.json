@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AffectedGenomicModel Meta Data Definition",
+  "description": "Meta Data Definition for AffectedGenomicModel Objects.",
+  "id": "affectedGenomicModelMetaDataDefinition.json",
+  "type": "object",
+  "required": [ "metaData", "data" ],
+  "properties": {
+    "metaData": {
+      "$ref": "../metaData.json",
+      "description": "meta data of the load file as defined in metaData.json."
+    },
+    "data": {
+      "type": "array",
+      "description": "A list of genotype objects.",
+      "items": {
+        "$ref" : "affectedGenomicModel.json"
+      }
+    }
+  }
+}

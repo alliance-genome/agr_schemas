@@ -1,0 +1,20 @@
+{
+  "metaData" : {
+    "dateProduced" : "2019-03-22T09:41:31.174-07:01",
+    "dataProvider" : {
+      "crossReference" : {
+        "id" : "ZFIN",
+        "pages" : [ "homepage" ]
+      },
+      "type" : "curated"
+    }
+  },
+  "data" : [ {
+    "primaryId" : "ZFIN:ZDB-CRISPR-181015-8",
+    "name" : "CRISPR10-alk",
+    "soTermId" : "SO:0000034",
+    "targetGeneIds" : [ "ZFIN:ZDB-GENE-031027-1" ],
+    "taxonId" : "NCBITaxon:7955"
+  }
+]
+}

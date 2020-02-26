@@ -1,0 +1,97 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Allele"
+title: Allele
+type: object
+description: > One of multiple possible forms of a functional genomic element (most often described as a locus or a gene), 
+differing from the reference DNA sequence. The genomic element can be endogenous or constructed.
+
+Associated data: Is allele of: gene/locus/genomic element; 
+Contains: variant(s)
+
+Notes: The change(s) present in a given allele is effectively described by genomic Variant(s). At the Alliance, “allele” refers to a form of a 
+functional genomic element. Functional genomic element is a section of DNA with known (e.g. gene, regulatory sequence), 
+or unknown function (e.g. conserved region with unknown function). Functional genomic element also includes constructs 
+which were inserted anywhere in the genome. An allele can refer to a functional element/locus present in the nuclear or in the organellar genome.
+ 
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ uuid
+ symbol
+ symbolText
+ symbolWithSpecies
+ symbolTextWithSpecies
+ taxonId
+ globalId
+ localId
+ release
+ dateProduced
+ dataProvider
+ dataProviders
+ modCrossRefCompleteUrl
+
+uniqueKeys:
+ - [primaryKey, uuid]
+
+required:
+  oneOf:
+    - [primaryKey, symbol, symbolText, symbolWithSpecies, symbolTextWithSpecies, globalId, localId, dataProvider, modCrossRefCompleteUrl]
+
+secondaryLabels: 
+ oneOf:
+   - Feature
+
+relations:
+  - relatedNode: Synonym
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: SecondaryId
+    backref: also_known_as
+    label: also_known_as
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Phenotype
+    backref: has_phenotype
+    label: has_phenotype
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: AffectedGenomicModel
+    backref: model_component
+    label: model_component
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: CrossRefernece
+    backref: cross_reference
+    label: cross_reference
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Species
+    backref: from_species
+    label: from_species
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Gene
+    backref: is_allele_of
+    label: is_allele_of
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: Variant
+    backref: variation
+    label: variation
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: DOTerm
+    backref: is_implicated_in
+    label: is_implicated_in
+    multiplicity: many_to_many
+    required: false
+  - relatedNode: DiseaseEntityJoin
+    backref: association
+    label: association
+    multiplicity: many_to_many
+    required: false

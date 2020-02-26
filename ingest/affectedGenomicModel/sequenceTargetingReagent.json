@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Sequence Targeting Reagent",
+  "description": "gene disrupting small sequence agents like CRISPR, TALEN, RNAi And Morpholino objects",
+  "id": "sequenceTargetingReagent.json#",
+  "type": "object",
+  "required": ["primaryId", "taxonId", "name", "soTermId", "targetGeneIds"],
+  "additionalProperties": false,
+  "properties": {
+    "primaryId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:87917."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the entity."
+    },
+    "soTermId": {
+      "type": "string",
+      "$ref" : "../globalId.json#/properties/globalId"
+},
+    "taxonId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description" : "The taxonId for the species of the genotype entity."
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {
+         "type": "string"
+      },
+    "uniqueItems": true
+    },
+    "modCrossReference": {
+      "description":"MOD database cross references for each sequence targeting reagent, most likely the link back to the MOD.",
+      "$ref" : "../crossReference.json#"
+    },
+    "secondaryIds": {
+      "description": "Collection of MOD-specific IDs that have been merged into gene entity.",
+       "type": "array",
+       "items": {
+         "$ref": "../globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
+    },
+    "targetGeneIds":{    
+      "type":"array",
+       "items": {
+         "$ref": "../globalId.json#/properties/globalId"
+       },
+     "description": "the targeted genes identified for this sequence targeting reagent.",
+     "uniqueItems": true
+    }
+  }
+}

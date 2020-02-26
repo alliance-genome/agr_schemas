@@ -1,0 +1,169 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "aggregate_stats",
+  "description": "Aggregate statistics of a list of gene descriptions. These statistics give an overview of the descriptions in the report file, and they can be used to have an overview of the data in the file and also to perform manual or automated data quality control",
+  "id": "aggregate_stats.json",
+  "type": "object",
+  "properties": {
+    "total_number_of_genes": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object in the report file"
+    },
+    "number_genes_with_non_null_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty description field (i.e., its complete description)"
+    },
+    "number_genes_with_non_null_go_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty Gene Ontology description field (i.e., the complete GO field, including data from molecular functions, biological processes and cellular components of the genes)"
+    },
+    "number_genes_with_non_null_go_function_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty Gene Ontology molecular function description field"
+    },
+    "number_genes_with_non_null_go_process_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty Gene Ontology biological process description field"
+    },
+    "number_genes_with_non_null_go_component_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty Gene Ontology cellular component description field"
+    },
+    "number_genes_with_null_go_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing an empty Gene Ontology description field (the complete GO field, including data from molecular functions, biological processes and cellular components of the genes)"
+    },
+    "number_genes_with_more_than_3_initial_go_terms": {
+      "type": "number",
+      "description": "Total number of genes that were associated to more than 3 Gene Ontology terms before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "number_genes_with_non_null_do_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty disease description field (the complete DO description field, including experimentally derived, biomarker, and orthology-based disease associations)"
+    },
+    "number_genes_with_null_do_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing an empty disease description field (the complete DO field, including experimentally derived, biomarker, and orthology-based disease associations)"
+    },
+    "number_genes_with_non_null_do_experimental_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty disease 'experimental' description field"
+    },
+    "number_genes_with_non_null_do_biomarker_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty disease 'biomarker' description field"
+    },
+    "number_genes_with_non_null_do_orthology_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty disease 'orthology' description field"
+    },
+    "number_genes_with_more_than_3_initial_do_terms": {
+      "type": "number",
+      "description": "Total number of genes that were associated with more than 3 Disease Ontology terms before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "number_genes_with_final_do_terms_covering_multiple_initial_terms": {
+      "type": "number",
+      "description": "Total number of genes that have one or more Disease Ontology terms included in the description field that were derived by the trimming algorithm as common ancestors of the original terms associated with the genes and that are ancestors of more than one original terms (i.e., they 'cover' multiple original terms)"
+    },
+    "number_genes_with_non_null_protein_domain_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty protein domain description field"
+    },
+    "number_genes_with_non_null_human_gene_function_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty Gene Ontology molecular function description related to the 'best' human ortholog of the gene in question"
+    },
+    "number_genes_with_non_null_sister_species_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty Gene Ontology molecular function description related to the ortholog of the gene in question in the main 'sister' species (e.g., C. elegans is the main sister species for B. malayi)"
+    },
+    "number_genes_with_non_null_tissue_expression_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty tissue expression description field"
+    },
+    "number_genes_with_non_null_gene_expression_cluster_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty gene expression cluster description field"
+    },
+    "number_genes_with_non_null_molecule_expression_cluster_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty molecule expression cluster description field"
+    },
+    "number_genes_with_non_null_anatomy_expression_cluster_description": {
+      "type": "number",
+      "description": "Total number of genes with a gene description object containing a non-empty anatomy expression cluster description field"
+    },
+    "average_number_initial_go_terms_f": {
+      "type": "number",
+      "description": "Average number of Gene Ontology molecular function terms associated with the genes with non-empty GO molecular function description field before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "average_number_initial_go_terms_p": {
+      "type": "number",
+      "description": "Average number of Gene Ontology biological process terms associated with the genes with non-empty GO biological process description field before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "average_number_initial_go_terms_c": {
+      "type": "number",
+      "description": "Average number of Gene Ontology cellular component terms associated with the genes with non-empty GO cellular component description field before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "average_number_final_go_terms_f": {
+      "type": "number",
+      "description": "Average number of Gene Ontology molecular function terms associated with the genes with non-empty GO molecular function description field in the final description computed by the gene descriptions algorithm"
+    },
+    "average_number_final_go_terms_p": {
+      "type": "number",
+      "description": "Average number of Gene Ontology biological process terms associated with the genes with non-empty GO biological process description field in the final description computed by the gene descriptions algorithm"
+    },
+    "average_number_final_go_terms_c": {
+      "type": "number",
+      "description": "Average number of Gene Ontology cellular component terms associated with the genes with non-empty GO cellular component description field in the final description computed by the gene descriptions algorithm"
+    },
+    "average_number_initial_do_terms": {
+      "type": "number",
+      "description": "Average number of Disease Ontology terms associated with the genes with non-empty DO description field before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number of initial terms can differ from the number of associations for a given gene in the source association files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "average_number_final_do_terms": {
+      "type": "number",
+      "description": "Average number of Disease Ontology terms associated with the genes with non-empty DO description field in the final description computed by the gene descriptions algorithm"
+    },
+    "average_number_go_annotations": {
+      "type": "number",
+      "description": "Average number of Gene Ontology terms associated with the genes with non-empty GO description field before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number can differ from the number of associations in the source files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "average_number_do_annotations": {
+      "type": "number",
+      "description": "Average number of Disease terms associated with the genes with non-empty DO description field before any processing performed by the gene descriptions algorithm to reduce the number of terms. Note that the number can differ from the number in the source files since some associations may be filtered out by evidence code or other pre-processing rules"
+    },
+    "average_number_orthologs": {
+      "type": "number",
+      "description": "Average number of orthologs of the genes"
+    },
+    "number_genes_with_non_null_orthology_description": {
+      "type": "number",
+      "description": "Total number of genes with non-empty orthology description"
+    },
+    "number_genes_with_null_orthology_description": {
+      "type": "number",
+      "description": "Total number of genes with empty orthology description"
+    },
+    "number_genes_with_more_than_3_best_orthologs": {
+      "type": "number",
+      "description": "Total number of genes associated with more than 3 'best' orthologs. The best orthologs for a gene are the ones predicted by the highest number of methods."
+    },
+    "average_term_coverage": {
+      "type": "number",
+      "description": "Average percentage of terms in the initial annotations that are present in the final descriptions (directly or indirectly via an ancestor)"
+    },
+    "average_term_level": {
+      "type": "number",
+      "description": "Average depth (max distance from root considering the relationships used to generate the descriptions) of the terms in the final descriptions"
+    },
+    "average_term_level_trimmed": {
+      "type": "number",
+      "description": "Average depth (max distance from root considering the relationships used to generate the descriptions) of the terms in the final descriptions considering only trimmed descriptions"
+    },
+    "average_term_coverage_trimmed": {
+      "type": "number",
+      "description": "Average percentage of terms in the initial annotations that are present in the final descriptions (directly or indirectly via an ancestor) considering only trimmed descriptions"
+    }
+  }
+}

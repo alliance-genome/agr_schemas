@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "nonGene SO slim term id enumeration",
+  "id": "nonGeneSequenceFeatureTypeSlim.json#",
+  "description": "term ids representing controlled set of non gene sequence feature types",
+  "type": "object",
+  "additionalProperties": false,
+  "required":["SOTermId"],
+  "properties": {
+    "SOTermId": {"enum": []}
+  }
+}
+

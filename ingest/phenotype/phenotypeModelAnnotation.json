@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Phenotype Model Annotation",
+  "description": "An entry with phenotype/object associations",
+  "id": "phenotypeModelAnnotation.json#",
+  "type": "object",
+  "required": [
+    "objectId",
+    "dateAssigned",
+    "phenotypeStatement",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "objectId": {
+      "$ref" : "../globalId.json#/properties/globalId",
+      "description" : "The ID to which the phenotype ontology term(s) is applied. For this submission, these will be genes and single affected gene alleles."
+    },
+ "primaryGeneticEntityIDs": {
+"type": "array",
+      "items": {
+        "$ref" : "../globalId.json#/properties/globalId",
+       "description": "for calculated submissions, this field represents the id of the genetic objects (allele or affectedGenomicModel) that this annotation is based on."}
+   },
+    "phenotypeTermIdentifiers": {
+     "type": "array",
+     "items": {
+     	      "$ref" : "phenotypeTermIdentifier.json#"
+     },
+     "description":"For most MODs, this will be a single term identifying the phenotype annotation.  For ZFIN, this will be a list, representing a post-composed phenotype annotation."
+    },
+    "phenotypeStatement": {
+     "type": "string",
+     "description": "use to provide a human-readable text display for the combination of 1->many ontology terms coded in the phenotypeTermIdentifiers collection."
+    },
+    "evidence": {
+      "$ref": "../publicationRef.json#",
+      "description": "one publication for which the annotation was made"
+    },
+    "dateAssigned": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date this entity was assigned in it's primary data source."
+    }
+  }
+}

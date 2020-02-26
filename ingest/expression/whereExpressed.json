@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Where Expressed",
+  "id": "whereExpressed.json#",
+  "description": "Group of ids and names that represent where a gene is expressed.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "cellularComponentTermId": {
+       "$ref": "../globalId.json#/properties/globalId",
+       "description": "the id that represents a part, or the entire, expression statement."   
+    },
+    "cellularComponentQualifierTermId":{
+      "$ref": "../globalId.json#/properties/globalId",
+      "dependencies": {"required":["cellularComponentTermId"]}
+    },
+    "anatomicalStructureTermId":{
+        "$ref": "../globalId.json#/properties/globalId",
+        "description":"This is an anatomical structure, not a cell type."
+    },
+    "anatomicalStructureUberonSlimTermIds":{
+     "type": "array",
+      "items": {
+         "$ref": "uberonStructureSlimTerm.json#"
+      },
+    "uniqueItems": true
+     },
+    "anatomicalStructureQualifierTermId":{
+        "$ref": "../globalId.json#/properties/globalId",
+        "description": "anatomicalStructureQualifierTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
+        "dependencies": {"required":["anatomicalStructureTermId"]}
+    },
+    "anatomicalSubStructureTermId":{
+        "$ref": "../globalId.json#/properties/globalId",
+        "description": "This anatomical substructure is a part of the nonCellAnatomicalStructureTermId.  It can only exist if nonCellAnatomicalStructureTermId is populated.",
+        "dependencies": {"required":["anatomicalStructureTermId"]}
+    },
+    "anatomicalSubStructureUberonSlimTermIds":{
+      "type": "array",
+      "items": {
+         "$ref": "uberonStructureSlimTerm.json#"
+      },
+    "uniqueItems": true
+    },
+    "anatomicalSubStructureQualifierTermId":{
+        "$ref": "../globalId.json#/properties/globalId",
+        "description":"cellularComponentTermId, anatomicalSubStructureTermId, and spatialTermId are mutually exclusive.  spatialTermId is only valid when used in conjunction with the nonCellAnatomicalStructureTermId.",
+	"dependencies": {"required":["anatomicalSubStructureTermId"]}
+    },
+    "whereExpressedStatement": {
+      "type": "string",
+      "description": "use to provide a human-readable text display for the combination of one to many ontology terms coded in the whereExpressedTermIdentifiers collection, used as a convenience to reduce code duplication."
+    }
+  },
+  "anyOf": [{"required": ["anatomicalStructureTermId", "anatomicalStructureUberonSlimTermIds","whereExpressedStatement"]},{"required": ["cellularComponentTermId","whereExpressedStatement"]}]}

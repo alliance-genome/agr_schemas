@@ -15,12 +15,16 @@
       url: http://www.informatics.jax.org/marker/MGI:[%s]
     - name: gene/expression
       url: http://www.informatics.jax.org/gxd/marker/MGI:[%s]
+    - name: gene/expression_images
+      url: http://www.informatics.jax.org/gxd/marker/MGI:[%s]?tab=imagestab
     - name: gene/references
       url: http://www.informatics.jax.org/reference/marker/MGI:[%s]
     - name: gene/phenotypes
-      url: http://www.informatics.jax.org/marker/MGI:[%s]
+      url: http://www.informatics.jax.org/marker/phenotypes/MGI:[%s]
     - name: allele
       url: http://www.informatics.jax.org/allele/MGI:[%s]
+    - name: allele/references
+      url: http://www.informatics.jax.org/reference/allele/MGI:[%s]?typeFilter=Literature
     - name: genotype
       url: http://www.informatics.jax.org/allele/genoview/MGI:[%s]
     - name: homepage
@@ -29,6 +33,10 @@
       url: http://www.informatics.jax.org/disease/MGI:[%s]
     - name: gene/expression/annotation/detail
       url: http://www.informatics.jax.org/assay/MGI:[%s]
+    - name: gene/MODinteractions
+      url: http://www.informatics.jax.org/interaction/explorer?markerIDs=MGI:[%s]
+    - name: reference
+      url: http://www.informatics.jax.org/reference/MGI:[%s]
 
 #
 # MGI - old style IDs
@@ -61,7 +69,7 @@
   name: RGD
   example_gid: RGD:1311419
   gid_pattern: "^RGD:\\d+$"
-  default_url: 
+  default_url: https://rgd.mcw.edu/rgdweb/elasticResults.html?term=RGD:[%s]
   pages:
     - name: gene
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
@@ -72,11 +80,17 @@
     - name: gene/references
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?view=5&id=[%s]
     - name: disease/rat
-      url: http://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Rat&x=1&acc_id=[%s]#annot
+      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Rat&x=1&acc_id=[%s]#annot
     - name: disease/human
-      url: http://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
+      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
     - name: disease/all
-      url: http://rgd.mcw.edu/rgdweb/ontology/annot.html?species=All&x=1&acc_id=[%s]#annot
+      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=All&x=1&acc_id=[%s]#annot
+    - name: gene/MODinteractions
+      url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=3&identifiers=[%s]
+    - name: reference
+      url: https://rgd.mcw.edu/rgdweb/report/reference/main.html?id=RGD:[%s]
+    - name: strain
+      url: https://rgd.mcw.edu/rgdweb/report/strain/main.html?id=[%s]
 
 #
 # ZFIN
@@ -96,10 +110,14 @@
       description: "Wild type expression data"
       url: https://zfin.org/[%s]/wt-expression
     - name: gene/references
-      url: https://zfin.org/[%s]
+      url: https://zfin.org/action/marker/citation-list/[%s]
     - name: allele
       url: https://zfin.org/[%s]
     - name: genotype
+      url: https://zfin.org/[%s]
+    - name: construct
+      url: https://zfin.org/[%s]
+    - name: Fish
       url: https://zfin.org/[%s]
     - name: homepage
       url: https://zfin.org/
@@ -109,6 +127,12 @@
       url: https://zfin.org/[%s]
     - name: gene/expression/annotation/detail
       url: https://zfin.org/[%s]
+    - name: reference
+      url: https://zfin.org/[%s]
+    - name: gene/expression_images
+      url: https://zfin.org/[%s]/wt-expression/images
+    - name: allele/references
+      url: https://zfin.org/action/publication/list/[%s]
  
 #
 # FlyBase
@@ -117,25 +141,33 @@
 - db_prefix: FB
   name: FlyBase
   example_gid: FB:FBgn0000490
-  gid_pattern: "^FB:FB\\w+$"
+  gid_pattern: "^FB:FB.+$"
   default_url: 
   pages:
     - name: gene
-      url: http://flybase.org/reports/[%s].html
+      url: https://flybase.org/reports/[%s].html
     - name: gene/expression
-      url: http://flybase.org/reports/[%s].html#expression
+      url: https://flybase.org/reports/[%s].html#expression
+    - name: gene/expression_images
+      url: https://flybase.org/reports/[%s].html#expression
     - name: gene/references
-      url: http://flybase.org/reports/[%s].html#pubs
+      url: https://flybase.org/reports/[%s].html#pubs
     - name: allele
-      url: http://flybase.org/reports/[%s].html
+      url: https://flybase.org/reports/[%s].html
+    - name: construct
+      url: https://flybase.org/reports/[%s].html
     - name: strain
-      url: http://flybase.org/reports/[%s].html
+      url: https://flybase.org/reports/[%s].html
     - name: homepage
-      url: http://flybase.org/
+      url: https://flybase.org/
     - name: disease
-      url: http://flybase.org/cgi-bin/cvreport.html?id=[%s]
+      url: https://flybase.org/cgi-bin/cvreport.html?id=[%s]
     - name: gene/interactions
-      url: http://flybase.org/reports/[%s].html
+      url: https://flybase.org/reports/[%s].html
+    - name: gene/MODinteractions
+      url: https://flybase.org/reports/[%s]#interactions
+    - name: reference
+      url: https://flybase.org/reports/[%s].html
 
 #
 # WormBase
@@ -151,12 +183,14 @@
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene
     - name: gene/expression
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
+    - name: gene/expression_images
+      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
     - name: gene/interactions
-      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
+      url: http://www.wormbase.org/db/get?name=[%s];class=interaction
     - name: gene/references
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
     - name: gene/spell
-      url: http://spell.caltech.edu:3000/search/show_results?search_string=[%s]
+      url: http://spell.wormbase.org/search/show_results?search_string=[%s]
     - name: gene/expression/annotation/detail
       url: https://www.wormbase.org/species/all/expr_pattern/[%s]
     - name: strain
@@ -171,34 +205,28 @@
       url: https://www.wormbase.org/
     - name: disease
       url: https://www.wormbase.org/resources/disease/[%s]
+    - name: gene/MODinteractions
+      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
+    - name: construct
+      url: https://www.wormbase.org/db/get?name=[%s];class=Construct
 
 - db_prefix: WBls
   name: WormBase life-stage Ontology
   example_gid: WBls:0000001
   gid_pattern: "^WBls:\\d+$"
   default_url: https://www.wormbase.org/db/get?name=WBls:[%s];class=Life_stage
-  pages:
-    - name: ontology_term
-      url: http://www.wormbase.org/db/get?name=WBls:[%s];class=Life_stage
 
 - db_prefix: WBbt
   name: WormBase anatomy Ontology
   example_gid: WBbt:0008611
   gid_pattern: "^WBbt:\\d+$"
   default_url: https://www.wormbase.org/db/get?name=WBbt:[%s];class=Anatomy
-  pages:
-    - name: ontology_term
-      url: http://www.wormbase.org/db/get?name=WBbt:[%s];class=Anatomy
 
 - db_prefix: WBPhenotype
   name: WormBase Phenotype Ontology
   example_gid: WBPhenotype:0000517
   gid_pattern: "^WBPhenotype:\\d+$"
   default_url: https://www.wormbase.org/db/get?name=WBPhenotype:[%s];class=Phenotype
-  pages:
-    - name: ontology_term
-      url: http://www.wormbase.org/db/get?name=WBPhenotype:[%s];class=Phenotype
-
 
 #
 # SGD
@@ -222,6 +250,10 @@
     url: https://spell.yeastgenome.org/search/show_results?search_string=[%s]
   - name: gene/references
     url: https://www.yeastgenome.org/locus/[%s]/literature
+  - name: gene/disease
+    url: https://www.yeastgenome.org/locus/[%s]/disease
+  - name: gene/MODinteractions
+    url: https://www.yeastgenome.org/locus/[%s]/interaction#network
 
 #
 # GO
@@ -237,6 +269,12 @@
 # External resources
 #
 
+- db_prefix: ECO
+  name: Evidence and Conclusion Ontology
+  example_gid: ECO:0000000
+  gid_pattern: "^ECO:\\d+$"
+  default_url: http://www.evidenceontology.org/browse/#ECO:[%s]
+
 - db_prefix: HGNC
   name: HGNC
   example_gid: HGNC:33510
@@ -245,6 +283,8 @@
   pages:
   - name: gene
     url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
+  - name: gene/MODinteractions
+    url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=1&identifiers=HGNC:[%s]
 
 - db_prefix: NCBI_Gene
   name: NCBI Gene
@@ -254,6 +294,12 @@
   pages:
   - name: gene/interactions
     url: https://www.ncbi.nlm.nih.gov/gene/[%s]
+
+- db_prefix: RefSeq
+  name: RefSeq
+  example_gid: RefSeq:NT_033778
+  gid_pattern: "^RefSeq:\\w+$"
+  default_url: https://www.ncbi.nlm.nih.gov/nuccore/[%s]
 
 - db_prefix: UniProtKB
   name: UniProtKB
@@ -352,7 +398,7 @@
 - db_prefix: EMDB
   name: Electron Microscopy Data Bank
   example_id: EMDB:EMD-1191
-  gid_pattern: "^EMDB:EMD-\\d{4}$"
+  gid_pattern: "^(EMDB:EMDB?-\\d{4})|(EMDB:\\d{4})$"
   default_url: http://www.ebi.ac.uk/pdbe/entry/emdb/[%s]
   pages:
   - name: gene/interactions

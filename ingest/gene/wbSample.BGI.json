@@ -1,0 +1,103 @@
+{
+   "data" : [
+      {
+       "basicGeneticEntity":{
+         "crossReferences" : [
+            {"id":"NCBI_Gene:172141"},
+            {"id":"UniProtKB:G5EDP9"},
+            {"id":"ENSEMBL:WBGene00000001"},
+	    {"id":"WB:WBGene00000001","pages":["gene","gene/references","gene/expression"]}
+
+         ],
+         "genomeLocations" : [
+            {
+               "assembly" : "WBcel235",
+               "chromosome" : "I",
+               "endPosition" : 5110183,
+               "startPosition" : 5107833,
+               "strand" : "+"
+            }
+         ],
+         "primaryId" : "WB:WBGene00000001",
+         "synonyms" : [
+            "CELE_Y110A7A.10",
+            "Y110A7A.10"
+         ],
+         "taxonId" : "NCBITaxon:6239"
+	 },
+         "geneSynopsis" : "aap-1 encodes the C. elegans ortholog of the phosphoinositide 3-kinase (PI3K) p50/p55 adaptor regulatory subunit; AAP-1 negatively regulates lifespan and dauer development, and likely functions as the sole adaptor subunit for the AGE-1/p110 PI3K catalytic subunit to which it binds in vitro; although AAP-1 potentiates insulin-like signaling, it is not absolutely required for insulin-like signaling under most conditions.",
+         "name" : "phosphoinositide kinase AdAPter subunit 1",
+	          "soTermId" : "SO:0001217",
+         "symbol" : "aap-1"
+      },
+      {
+	"basicGeneticEntity": {
+         "crossReferences" : [
+            {"id":"NCBI_Gene:177793"},
+            {"id":"UniProtKB:Q19834"},
+            {"id":"ENSEMBL:WBGene00000002"},
+	    {"id":"WB:WBGene00000002", "pages":["gene","gene/references"]}
+         ],
+         "genomeLocations" : [
+            {
+               "assembly" : "WBcel235",
+               "chromosome" : "IV",
+               "endPosition" : 9601695,
+               "startPosition" : 9598986,
+               "strand" : "-"
+            }
+         ],
+         "primaryId" : "WB:WBGene00000002",
+         "synonyms" : [
+            "CELE_F27C8.1",
+            "F27C8.1"
+         ],
+         "taxonId" : "NCBITaxon:6239"
+	 },
+	 "geneSynopsis" : "aat-1 encodes an amino acid transporter catalytic subunit; when co-expressed in Xenopus oocytes with the ATG-2 glycoprotein subunit, AAT-1 is able to facilitate amino acid uptake and exchange, showing a relatively high affinity for small and some large neutral amino acids; in addition, AAT-1 is able to covalently associate with ATG-2 or ATG-1 to form heterodimers in the Xenopus expression system; when co-expressed with ATG-2, AAT-1 localizes to the cell surface of oocytes, but when expressed alone or with ATG-1, AAT-1 localizes intracellularly.",
+"name" : "Amino Acid Transporter 1",
+"symbol" : "aat-1",
+         "soTermId" : "SO:0001217"
+      },
+      {
+	"basicGeneticEntity": {
+         "crossReferences" : [
+            {"id":"NCBI_Gene:184126"},
+            {"id":"UniProtKB:Q19151"},
+            {"id":"ENSEMBL:WBGene00000003"},
+	    {"id":"WB:WBGene00000003","pages":["gene","gene/expression","gene/references"]}
+         ],
+         "genomeLocations" : [
+            {
+               "assembly" : "WBcel235",
+               "chromosome" : "V",
+               "endPosition" : 9246360,
+               "startPosition" : 9244402,
+               "strand" : "-"
+            }
+         ],
+         "primaryId" : "WB:WBGene00000003",
+         "synonyms" : [
+            "CELE_F07C3.7",
+            "F07C3.7"
+         ],
+         "taxonId" : "NCBITaxon:6239"
+       },
+       "name" : "Amino Acid Transporter 2",
+       "symbol" : "aat-2",
+       "soTermId" : "SO:0001217",
+       "geneSynopsis" : "aat-2 encodes a predicted amino acid transporter catalytic subunit; when co-expressed in Xenopus oocytes with a glycoprotein subunit, however, AAT-2 is not able to induce amino acid uptake."
+      }
+   ],
+  "metaData": {
+    "dataProvider":  {
+        "crossReference": {
+                "id":"WB",
+                "pages": ["homepage"]
+        },
+        "type": "curated"
+    } ,
+    "dateProduced": "2017-06-22T13:27:43-04:00",
+    "release": "WS259"
+  }
+}

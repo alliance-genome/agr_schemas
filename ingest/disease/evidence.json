@@ -1,0 +1,26 @@
+{
+  "title": "Evidence for Disease Annotation",
+  "description": "Evidence for Disease Annotation consists of a publication or reference and an evidence code from the evidence code ontology.",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "publication",
+    "evidenceCodes"
+  ],
+  "additionalProperties": false,
+  "id": "evidence.json#",
+  "properties": {
+    "publication": {
+      "$ref": "../publicationRef.json#",
+      "description": "one publication for which the annotation was made"
+    },
+    "evidenceCodes": {
+      "description": "Collection of ECOids representing the evidence codes satisfied in this annotation.",
+       "type": "array",
+       "items": {
+         "$ref": "../globalId.json#/properties/globalId"
+       },
+      "uniqueItems": true
+    }
+  }
+}

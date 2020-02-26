@@ -1,0 +1,35 @@
+schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Load"
+title: Load
+type: object
+description: >
+additionalProperties: false
+validators:
+
+properties:
+ primaryKey
+ release
+ dataProviders
+ dataProvider
+ loadName
+
+uniqueKeys:
+ - [primaryKey]
+
+required:
+  oneOf:
+    - [primaryKey]
+
+secondaryLabels:
+ - Entity
+
+notNull:
+ - primaryKey
+
+relations:
+  - relatedNode: Gene
+    backref: loaded_from
+    label: loaded_from
+    multiplicity: one_to_many
+    required: true
