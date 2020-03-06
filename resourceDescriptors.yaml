@@ -199,8 +199,12 @@
       url: https://www.wormbase.org/db/get?name=[%s];class=Paper
     - name: transgene
       url: https://www.wormbase.org/db/get?name=[%s];class=Transgene
+    - name: transgene/references
+      url: https://www.wormbase.org/db/get?name=[%s];class=Transgene;widget=references
     - name: allele
       url: https://www.wormbase.org/db/get?name=[%s];class=Variation
+    - name: allele/references
+      url: https://www.wormbase.org/db/get?name=[%s];class=Variation;widget=references
     - name: homepage
       url: https://www.wormbase.org/
     - name: disease
