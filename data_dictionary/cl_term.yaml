@@ -3,7 +3,8 @@
 id: "CLTerm"
 title: CLTerm
 type: object
-description: > Cell Ontology Term.  primaryKey is a cell ontology id (ie: CL:00011011)
+description: >
+        "Cell Ontology Term.  primaryKey is a cell ontology id (ie: CL:00011011)"
 additionalProperties: false
 validators:
 
