@@ -1,5 +1,4 @@
 # Alliance Assembly Controlled Vocabulary.
-
 - taxonId: NCBITaxon:7955
   assemblies:  
     - name: GRCz11
