@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/alliance-genome/agr_schemas.svg?branch=development)](https://travis-ci.org/alliance-genome/agr_schemas)
-
 Alliance JSON Ingest Schemas and Data Dictionary
 ================
 
@@ -28,7 +26,13 @@ For validating all schema files in a branch:
 GOCD Validation
 ---------------
 
-JSON schema files are validated by the Continuous Integration / Deployment System (GOCD) through a JAVA JSON validator made available through the Docker base container. This is because the JAVA implementation is much more strict than the Python implementation. This validation is called by the default command in the Docker files.
+JSON schema files are validated by the Continuous Integration / Deployment System (GOCD) through a JAVA JSON validator made available through the Docker base container. This is because the JAVA implementation is much more strict than the Python implementation. This validation is called by the default command in the Docker files. The way the java works is that the Dockerfile points to a directory full of JSON files. Java opens each file and checks for the "$schema": "http://json-schema.org/draft-04/schema#", property if its found then it validates it, otherwise ignores the file. 
+
+In order to run these validations locally install Docker and then run the command:
+
+```bash
+make run
+```
 
 Data Dictionary
 ---------------
