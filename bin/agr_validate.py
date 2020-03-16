@@ -13,19 +13,19 @@ parser.add_argument('-s', '--schema', help='JSON schema file', required=True)
 args = parser.parse_args() 
 
 data_file_name = args.data
-with open(os.path.join("ingest", data_file_name)) as data_file:
+with open(data_file_name) as data_file:
     data = json.load(data_file)
 data_file.closed
 
 schema_file_name = args.schema
-with open(os.path.join("ingest", schema_file_name)) as schema_file:
+with open(schema_file_name) as schema_file:
     schema = json.load(schema_file)
     print(schema)
 schema_file.closed
 
 # Defining a resolver for relative paths and schema issues, see https://github.com/Julian/jsonschema/issues/313
 # and https://github.com/Julian/jsonschema/issues/274
-sSchemaDir = os.path.dirname(os.path.abspath(os.path.join("ingest", schema_file_name)))
+sSchemaDir = os.path.dirname(os.path.abspath(schema_file_name))
 oResolver = js.RefResolver(base_uri = 'file://' + sSchemaDir + '/', referrer = schema)
 
 print(oResolver)

@@ -9,17 +9,15 @@ install:
 
 # command to run tests
 script: 
-  - "python bin/agr_validate.py -s gene/geneMetaData.json -d gene/wbSample.BGI.json"
-  - "python bin/agr_validate.py -s gene/geneMetaData.json -d gene/mgiSample.BGI.json"
-  - "python bin/agr_validate.py -s allele/alleleMetaData.json -d allele/zfinSample.allele.json"
-  - "python bin/agr_validate.py -s disease/diseaseMetaDataDefinition.json -d disease/ZfinSample.json"
-  - "python bin/agr_validate.py -s phenotype/phenotypeMetaDataDefinition.json -d phenotype/zfinSample.phenotype.json"
-  - "python bin/agr_validate.py -s expression/wildtypeExpressionMetaDataDefinition.json -d expression/ZfinSampleExpressionData.json"
-  - "python bin/agr_validate.py -s orthology/orthologyMetaData.json -d orthology/orthologyTestData.json"
-  - "python bin/agr_validate.py -s genotype/genotypeMetaData.json -d genotype/zfinSample.genotype.json"
-  - "python bin/agr_validate.py -s allele/variantMetaData.json -d allele/zfinSample.variant.json"
-  - "python bin/agr_validate.py -s construct/constructMetaData.json -d construct/zfinSample.construct.json"
-  - "python bin/agr_validate.py -d genotype/zfinSample.sqtr.json -s genotype/sequenceTargetingReagentMetaData.json"
+  - "python bin/agr_validate.py -s ingest/gene/geneMetaData.json -d ingest/gene/wbSample.BGI.json"
+  - "python bin/agr_validate.py -s ingest/gene/geneMetaData.json -d ingest/gene/mgiSample.BGI.json"
+  - "python bin/agr_validate.py -s ingest/allele/alleleMetaData.json -d ingest/allele/zfinSample.allele.json"
+  - "python bin/agr_validate.py -s ingest/disease/diseaseMetaDataDefinition.json -d ingest/disease/ZfinSample.json"
+  - "python bin/agr_validate.py -s ingest/phenotype/phenotypeMetaDataDefinition.json -d ingest/phenotype/zfinSample.phenotype.json"
+  - "python bin/agr_validate.py -s ingest/expression/wildtypeExpressionMetaDataDefinition.json -d ingest/expression/ZfinSampleExpressionData.json"
+  - "python bin/agr_validate.py -s ingest/orthology/orthologyMetaData.json -d ingest/orthology/orthologyTestData.json"
+  - "python bin/agr_validate.py -s ingest/allele/variantMetaData.json -d ingest/allele/zfinSample.variant.json"
+  - "python bin/agr_validate.py -s ingest/construct/constructMetaData.json -d ingest/construct/zfinSample.construct.json"
   - "python bin/validate_yaml.py"
 
 # whitelist
