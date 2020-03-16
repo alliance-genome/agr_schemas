@@ -25,6 +25,11 @@ For validating all schema files in a branch:
 `./agr_validate_schema.sh`
 
 
+GOCD Validation
+---------------
+
+JSON schema files are validated by the Continuous Integration / Deployment System (GOCD) through a JAVA JSON validator made available through the Docker base container. This is because the JAVA implementation is much more strict than the Python implementation. This validation is called by the default command in the Docker files.
+
 Data Dictionary
 ---------------
 
