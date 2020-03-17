@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Super Series Dataset Annotation",
+    "description": "An entry for a published super series dataset object annotation; ",
+    "id": "superSeriesAnnotation.json#",
+    "type": "object",
+    "required": [
+        "dateAssigned",
+        "title",
+        "objectId",
+        "subSeries"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "objectId": {
+            "$ref": "datasetId.json#/primaryId",
+            "description": "The unique ID for the dataset object; these will external or MOD IDs."
+        },
+        "publication": {
+            "type": "array",
+            "items": {
+                "$ref": "../publicationRef.json#"
+            },
+            "description": "list of publications associated with this dataset"
+        },
+        "title": {
+            "type": "string",
+            "description": "free text title of the dataset"
+        },
+        "summary": {
+            "type": "string",
+            "description": "free text summary or description of the dataset"
+        },
+        "subSeries": {
+            "type": "array",
+            "items": {
+                "$ref": "datasetAnnotation.json#/datasetId"
+            },
+            "description": "list of datasets that are associated with this dataset"
+        },
+        "dateAssigned": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date this entity was assigned in it's primary data source."
+        }
+    }
+}

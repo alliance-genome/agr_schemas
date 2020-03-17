@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Expression Dataset Meta Data Definition",
+    "description": "A file of Expression Dataset metadata objects.",
+    "id": "datasetMetaDataDefinition.json",
+    "type": "object",
+    "required": [
+        "data",
+        "metaData"
+    ],
+    "properties": {
+        "metaData": {
+            "$ref": "../metaData.json#",
+            "description": "meta data of the load file as defined in metaData.json."
+        },
+        "data": {
+            "type": "array",
+            "description": "A list of dataset Metadata Annotation objects.",
+            "items": {
+                "$ref": "datasetAnnotation.json#"
+            }
+        }
+    }
+}
