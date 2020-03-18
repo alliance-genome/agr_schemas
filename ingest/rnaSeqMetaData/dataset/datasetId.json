@@ -7,6 +7,7 @@
     "required": [
         "primaryId"
     ],
+    //could we add stricter validation here to restrict global id down to GEO, ArrayExpress or MOD id? 
     "properties": {
         "primaryId": {
             "$ref": "../globalId.json#/properties/globalId",
@@ -17,7 +18,8 @@
             "type": "array",
             "item": {
                 "$ref": "../globalId.json#/properties/globalId"
-            }
+            },
+	    "uniqueItems": true
         }
     }
 }

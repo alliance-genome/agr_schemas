@@ -21,6 +21,7 @@
             "items": {
                 "$ref": "../publicationRef.json#"
             },
+	    "uniqueItems": true,
             "description": "list of publications associated with this dataset"
         },
         "title": {
