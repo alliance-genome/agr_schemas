@@ -3,10 +3,10 @@
     {
       "geneId":"ZFIN:ZDB-GENE-050913-20",
       "whenExpressed": {
-          "stageName": "Gastrula:50%-epiboly",
-	  "stageTermId": "ZFS:000021",
+          "stage": {"stageName": "Gastrula:50%-epiboly",
+		    "stageTermId": "ZFS:000021"},
 	  "stageUberonSlimTerm": {"uberonTerm":"UBERON:0000068"}
-      },
+		   },
       "whereExpressed": {
       	"anatomicalStructureTermId":"ZFA:0001120","anatomicalStructureUberonSlimTermIds": [{"uberonTerm":"UBERON:0003104"}],"whereExpressedStatement":"neuroectoderm"
       },
