@@ -19,7 +19,7 @@
         "publication": {
             "type": "array",
             "items": {
-                "$ref": "../publicationRef.json#"
+                "$ref": "../../publicationRef.json#"
             },
 	    "uniqueItems": true,
             "description": "list of publications associated with this dataset"
