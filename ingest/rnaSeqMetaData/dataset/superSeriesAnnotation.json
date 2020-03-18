@@ -1,20 +1,20 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Dataset Annotation Metadata",
-    "description": "An entry for a published dataset object annotation; ",
-    "id": "datasetAnnotation.json#",
+    "title": "Super Series Dataset Annotation",
+    "description": "An entry for a published super series dataset object annotation; ",
+    "id": "superSeriesAnnotation.json#",
     "type": "object",
     "required": [
-        "publication",
         "dateAssigned",
         "title",
-        "datasetId"
+        "objectId",
+        "subSeries"
     ],
     "additionalProperties": false,
     "properties": {
-        "datasetId": {
-            "$ref": "datasetId#",
-            "description": "All ids associated with a dataset dataset object; these will external or MOD IDs."
+        "objectId": {
+            "$ref": "../../globalId.json#/properties/globalId",
+            "description": "The unique ID for the dataset object; these will external or MOD IDs."
         },
         "publication": {
             "type": "array",
@@ -31,9 +31,13 @@
             "type": "string",
             "description": "free text summary or description of the dataset"
         },
-        "numChannels": { ## make micorarray specific json to import? #
-            "type": "integer",
-            "description": "for microarrays, need number of channels; need to make req'd for microarray assays; "
+        "subSeries": {
+            "type": "array",
+            "items": {
+                "$ref": "../../globalId.json#/properties/globalId"
+            },
+	    "uniqueItems": true,
+            "description": "list of dataset ids that are associated with this dataset"
         },
         "dateAssigned": {
             "type": "string",
