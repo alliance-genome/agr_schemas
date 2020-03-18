@@ -8,8 +8,8 @@ import jsonschema as js
 
 parser = argparse.ArgumentParser(description='This is a simple validator for JSON schema.')
 
-parser.add_argument('-d','--data', help='JSON data file',required=True)
-parser.add_argument('-s','--schema',help='JSON schema file', required=True)
+parser.add_argument('-d', '--data', help='JSON data file', required=True)
+parser.add_argument('-s', '--schema', help='JSON schema file', required=True)
 args = parser.parse_args() 
 
 data_file_name = args.data
@@ -29,17 +29,17 @@ sSchemaDir = os.path.dirname(os.path.abspath(schema_file_name))
 oResolver = js.RefResolver(base_uri = 'file://' + sSchemaDir + '/', referrer = schema)
 
 print(oResolver)
-print ("schemaDir: " + sSchemaDir)
-print ("schema_file_name: " + schema_file_name)
+print("schemaDir: " + sSchemaDir)
+print("schema_file_name: " + schema_file_name)
 
 try:
     js.validate(data, schema, format_checker=js.FormatChecker(), resolver=oResolver)
-    print "'%s' successfully validated against '%s'" % (data_file_name, schema_file_name)
+    print("'%s' successfully validated against '%s'" % (data_file_name, schema_file_name))
 except js.ValidationError as e:
-    print e.message
-    print e
+    print(e.message)
+    print(e)
     raise SystemExit("Error in validation.")
 except js.SchemaError as e:
-    print e.message
-    print e
+    print(e.message)
+    print(e)
     raise SystemExit("Error in schema validation.")
