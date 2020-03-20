@@ -13,14 +13,15 @@
     "additionalProperties": false,
     "properties": {
         "datasetId": {
-            "$ref": "datasetId#",
-            "description": "All ids associated with a dataset dataset object; these will external or MOD IDs."
+            "$ref": "../../globalId.json#/properties/globalId",
+            "description": "An id associated with a dataset dataset object; these will external or MOD IDs."
         },
         "publication": {
             "type": "array",
             "items": {
-                "$ref": "../publicationRef.json#"
+                "$ref": "../../publicationRef.json#"
             },
+	    "uniqueItems": true,
             "description": "list of publications associated with this dataset"
         },
         "title": {
@@ -31,7 +32,7 @@
             "type": "string",
             "description": "free text summary or description of the dataset"
         },
-        "numChannels": { ## make micorarray specific json to import? #
+        "numChannels": { // make micorarray specific json to import?
             "type": "integer",
             "description": "for microarrays, need number of channels; need to make req'd for microarray assays; "
         },

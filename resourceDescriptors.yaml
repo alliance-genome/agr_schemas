@@ -77,6 +77,8 @@
       url: https://rgd.mcw.edu/
     - name: allele
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
+    - name: allele/references
+      url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?view=5&id=[%s]
     - name: gene/references
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?view=5&id=[%s]
     - name: disease/rat
@@ -154,6 +156,8 @@
       url: https://flybase.org/reports/[%s].html#pubs
     - name: allele
       url: https://flybase.org/reports/[%s].html
+    - name: allele/references
+      url: https://flybase.org/reports/[%s].html#pubs
     - name: construct
       url: https://flybase.org/reports/[%s].html
     - name: strain
@@ -199,8 +203,12 @@
       url: https://www.wormbase.org/db/get?name=[%s];class=Paper
     - name: transgene
       url: https://www.wormbase.org/db/get?name=[%s];class=Transgene
+    - name: transgene/references
+      url: https://www.wormbase.org/db/get?name=[%s];class=Transgene;widget=references
     - name: allele
       url: https://www.wormbase.org/db/get?name=[%s];class=Variation
+    - name: allele/references
+      url: https://www.wormbase.org/db/get?name=[%s];class=Variation;widget=references
     - name: homepage
       url: https://www.wormbase.org/
     - name: disease
