@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Disease Model Annotation",
-    "description": "An entry with disease/object associations",
+    "title": "Dataset Sample Model Annotation",
+    "description": "An entry with dataset sample object associations",
     "id": "datasetSampleModelAnnotation.json#",
     "type": "object",
     "required": [
