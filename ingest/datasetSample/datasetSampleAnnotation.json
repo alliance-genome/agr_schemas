@@ -75,19 +75,22 @@
             "description": "list of controlled vocabulary text to describe the experiment"
         },
         "assemblyVersion": {
-            "type": "string",
-            "description": " describes the version of genome the sample's sequence was mapped to"
-        },
-        "notes": {
-            "type": "array",
+            "type":"array",
             "items": {
                 "type": "string"
             },
-            "description": "list of curated and automatically generated notes about the sample"
+            "description": "List of the version(s) of genome the sample's sequence was mapped to"
+        },
+        "notes": {
+            "type": "string",
+            "description": "curated notes about the sample"
         },
         "datasetId": {
-            "$ref": "../../globalId.json#/properties/globalId",
-            "description": "Primary dataset id that this sample is associated with, should be in datasetAnnotation.json"
+            "type": "array",
+            "items": {
+                    "$ref": "../../globalId.json#/properties/globalId"
+            },
+            "description": "list of primary dataset id that this sample is associated with, should be in datasetAnnotation.json"
         },
         "microarraySampleDetails": {
             "$ref": "microarraySampleDetails.json#",
