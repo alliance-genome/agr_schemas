@@ -13,7 +13,7 @@
     "additionalProperties": false,
     "properties": {
         "datasetId": {
-            "$ref": "../../globalId.json#/properties/globalId",
+            "$ref": "datasetId.json#",
             "description": "An id associated with a dataset dataset object; these will external or MOD IDs."
         },
         "publication": {
