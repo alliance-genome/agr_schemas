@@ -29,12 +29,12 @@
     "anyOf": [
         {
             "required": [
-                "startStage"
+                "startStage", "endStage"
             ]
         },
         {
             "required": [
-                "startAge"
+                "startAge", "endAge"
             ]
         }
     ]
