@@ -32,7 +32,7 @@
             "type": "string",
             "description": "free text summary or description of the dataset"
         },
-        "numChannels": { // make micorarray specific json to import?
+        "numChannels": {
             "type": "integer",
             "description": "for microarrays, need number of channels; need to make req'd for microarray assays; "
         },
