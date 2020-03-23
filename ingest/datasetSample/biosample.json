@@ -11,6 +11,7 @@
         },
         "idType": {
             "type": "string",
+            "enum": ["AGM", "genotype","strain","allele"],
             "description": "indicates what type of id is in biosampleId; AGM, genotype, strain or allele"
         },
         "bioSampleText": {
