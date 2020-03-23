@@ -7,12 +7,12 @@
     "properties": {
         "biosampleId": {
             "$ref": "../globalId.json#/properties/globalId",
-            "description": "The id of the biosample genomic information. AGM, genotype, allele, strain ID"
+            "description": "The id of the biosample genomic information. fish, genotype, allele, strain ID"
         },
         "idType": {
             "type": "string",
-            "enum": ["AGM", "genotype","strain","allele"],
-            "description": "indicates what type of id is in biosampleId; AGM, genotype, strain or allele"
+            "enum": ["fish", "genotype","strain","allele"],
+            "description": "indicates what type of id is in biosampleId; fish, genotype, strain or allele"
         },
         "bioSampleText": {
             "type": "string",
