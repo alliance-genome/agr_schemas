@@ -1,57 +1,27 @@
 {
-  "data": {
+  "data": [
        "datasetId": {
-             "primaryId": {
-            "$ref": "../../globalId.json#/properties/globalId",
-            "description": "The ID from the data provider for the dataset. When available, this is the GEO ID. When no GEO ID is available, it will be the ArrayExpress ID. When these both are unavailable, it will be the MOD ID."
-        },
-        "secondaryId": {
-            "description": "list of optional cross reference ids to the primary dataset id.",
-            "type": "array",
-            "item": {
-                "$ref": "../../globalId.json#/properties/globalId"
+     		"primaryId": "GEO:GSEXXXXX",
+     		"secondaryId": ["ArrayExpress:XXXX","MOD:XXXXX"]
             },
-	    "uniqueItems": true
-        }
-        },
-        "publication": {
-            "type": "array",
-            "items": {
-                "$ref": "../../publicationRef.json#"
-            },
-	    "uniqueItems": true,
-            "description": "list of publications associated with this dataset"
-        },
-        "title": {
-            "type": "string",
-            "description": "free text title of the dataset"
-        },
-        "summary": {
-            "type": "string",
-            "description": "free text summary or description of the dataset"
-        },
-        "numChannels": {
-            "type": "integer",
-            "description": "for microarrays, need number of channels; need to make req'd for microarray assays; "
-        },
-        "dateAssigned": {
-            "type": "string",
-            "format": "date-time",
-            "description": "Date this entity was assigned in it's primary data source."
-        }
-  },
+        "publication": [
+		{"crossReference" : {"id":"ZFIN:ZDB-PUB-120215-13",
+			    "pages":["reference"]},
+       			 "publicationId" : "PMID:22325362"
+		},
+		{"crossReference" : {"id":"ZFIN:ZDB-PUB-120215-13",
+			    "pages":["reference"]},
+       			 "publicationId" : "PMID:22325362"
+		}
+	],
+        "title": "",
+        "summary": "",
+        "numChannels": "1",
+        "dateAssigned": "2017-06-22T13:27:43-04:00"
+  ],
   "metadata":{
-    "dateProduced": {
-      "type": "string",
-      "format": "date-time",
-      "description": "Date this entity was dumped from it's primary data source."
-    },
-    "dataProvider": {
-        "$ref": "dataProvider.json#",
-      	"description": "source of data: just one of these per data file."
-    },
-    "release": {
-      "type": "string",
-      "description": "The release or version of the data, if available."
-    }
+    "dateProduced": "2017-06-22T13:27:43-04:00",
+    "dataProvider": "",
+    "release": ""
   }
+}
