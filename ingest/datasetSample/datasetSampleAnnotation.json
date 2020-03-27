@@ -33,9 +33,11 @@
             "description": "a collection of terms that when used together represent the age of the sample"
         },
         "sampleLocation": {
-            //make this an array //
-            "$ref": "sampleLocation.json#",
-            "description": "a collection of terms that when used together represents the location within an organism from which the sample was taken"
+            "type":"array",
+            "items": {
+                "$ref": "sampleLocation.json#",
+                "description": "a collection of terms that when used together represents the location within an organism from which the sample was taken"
+            }
         },
         "dataProvider": {
             "$ref": "../dataProvider.json#",
