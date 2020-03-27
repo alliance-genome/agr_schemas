@@ -20,9 +20,7 @@
         }
     },
     "oneOf": [
-        {
             "biosampleId",
             "biosampleText"
-        }
     ]
 }
