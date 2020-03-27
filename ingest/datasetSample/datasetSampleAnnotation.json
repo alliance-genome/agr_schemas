@@ -43,8 +43,8 @@
             "$ref": "../dataProvider.json#",
             "description": "source of data, can be multiple of these, each with a type and a crossReference"
         },
-        "biosample": {
-            "$ref": "biosample.json#",
+        "genomicInformation": {
+            "$ref": "biosampleGenomicInformation.json#",
             "description": "A collection of information that represents the strain or genomic background of the sample, either an id or free text"
         },
         "taxonId": {
