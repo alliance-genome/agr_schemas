@@ -1,5 +1,44 @@
 {
 "data":{[
+        
+        {"sampleId": "GEO:GSMXXXX",
+        "sampleTitle":"",
+        "abundance": "",
+        "sampleType": "MMO:",
+        "sampleAge": { 
+            "startStage":"",
+            "startAge": "",
+            "intermediateStages": [],
+             "endStage":"",
+             "endAge": ""
+        },
+        "sampleLocation": {[
+              {"cellularComponentTermId": "GO:XXXXXX",
+                "cellularComponentQualifierTermId": "",
+                 "anatomicalStructureTermId": "MMO:",
+                "anatomicalStructureQualifierTermId": "MMO:",
+                "anatomicalSubStructureTermId": "MMO:",
+                "anatomicalSubStructureQualifierTermId": "MMO:",
+                "whereExpressedStatement":"The biosample came from this organ or cell type"
+              }
+       ]},
+        "dataProvider": "GEO",
+        "genomicInformation": {
+            "biosampleId": "",
+            "idType": 
+            "enum": ["fish", "genotype","strain","allele"],
+           "bioSampleText":""
+        },
+        "taxonId": "",
+        "sex": "female",
+        "assayType": "MMO: or EFO:",
+        "sequencingFormat": "paired",
+        "categoryTags": [],
+        "assemblyVersion": [],
+        "notes": "",
+        "datasetId": ["GEO:GSEXXXX","GEO:GSEXXXX"],
+        "dateAssigned":""
+         }
 
 ]
 },
