@@ -1,0 +1,54 @@
+{
+"data":{
+        [
+        {"sampleId": "GEO:GSM4431818",
+        "sampleTitle":"",
+        "abundance": "",
+        "sampleType": "MMO:",
+        "sampleAge": { 
+            "startStage":"",
+            "startAge": "",
+            "intermediateStages": [],
+             "endStage":"",
+             "endAge": ""
+        },
+        "sampleLocation": [
+              {"cellularComponentTermId": "GO:XXXXXX",
+                "cellularComponentQualifierTermId": "",
+                 "anatomicalStructureTermId": "MMO:",
+                "anatomicalStructureQualifierTermId": "MMO:",
+                "anatomicalSubStructureTermId": "MMO:",
+                "anatomicalSubStructureQualifierTermId": "MMO:",
+                "whereExpressedStatement":"The biosample came from this organ or cell type"
+              }
+       ],
+        "dataProvider": "GEO",
+        "genomicInformation": {
+            "biosampleId": "",
+            "idType": 
+            "enum": ["fish", "genotype","strain","allele"],
+           "bioSampleText":""
+        },
+        "taxonId": "",
+        "sex": "female",
+        "assayType": "MMO: or EFO:",
+        "sequencingFormat": "paired",
+        "categoryTags": [],
+        "assemblyVersion": [],
+        "notes": "",
+        "datasetId": ["GEO:GSEXXXX","GEO:GSEXXXX"],
+        "dateAssigned":""
+         }
+
+]
+},
+"metadata":{
+        "dataProvider": {
+        "crossReference": {
+                "id":"ZFIN",
+                "pages": ["homepage"]
+        },
+        "type": "curated"
+    },
+    "dateProduced": "2017-06-22T13:27:43-04:00"
+  },
