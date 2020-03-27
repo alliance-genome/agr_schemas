@@ -1,6 +1,6 @@
 {
   "data": [
-       "datasetId": {
+	  {"datasetId": {
      		"primaryId": "GEO:GSE147474",
      		"secondaryId": ["ArrayExpress:E-MTAB-8024","MGI:XXXXX"]
             },
@@ -18,7 +18,7 @@
         "summary": "Purpose: To determine transcriptome profile of the facial processes of Wnt9b, Rspo2 and double gene knockout embryos by NG RNA sequencing Method: Embryonic facial process RNA samples isolated from wild type, Rspo2, Wnt9b and Rspo2;Wnt9b double mutants in triplicate (except wild type (n=2)) at embryonic day 10.5 Results: single-end 50bp reads, 19.8 million reads - 30.7 million reads.",
         "numChannels": "1",
         "dateAssigned": "2020-03-24T13:27:43-04:00"
-  ],
+	  }],
   "metadata":{
     "dateProduced": "2017-06-22T13:27:43-04:00",
     "dataProvider": "MGI",
