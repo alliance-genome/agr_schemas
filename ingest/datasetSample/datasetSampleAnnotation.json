@@ -53,6 +53,7 @@
         },
         "sex": {
             "type": "string",
+            "enum": ["female","male", "hermaphrodite",??] //can we have a set list of sexes? //
             "description": "sex of the organism the sample came from"
         },
         "assayType": {
@@ -61,12 +62,7 @@
         },
         "sequencingFormat": {
             "type": "string",
-            "oneOf": [
-                {
-                    "single",
-                    "paired"
-                }
-            ],
+            "enum": ["single","paired"],
             "description": "single or paired end sequencing; might be better in experiment info"
         },
         "categoryTags": {
