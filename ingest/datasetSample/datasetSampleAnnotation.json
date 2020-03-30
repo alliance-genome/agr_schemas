@@ -1,0 +1,103 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Dataset Sample Model Annotation",
+    "description": "An entry with dataset sample object associations",
+    "id": "datasetSampleModelAnnotation.json#",
+    "type": "object",
+    "required": [
+        "sampleId",
+        "sampleTitle",
+        "dataProvider",
+        "dateAssigned"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "sampleId": {
+            "$ref": "../globalId.json#/properties/globalId",
+            "description": "The object ID for this sample object, MOD or external database ID (ex: GEO)"
+        },
+        "sampleTitle": {
+            "type": "string",
+            "description": "free text title of the sample."
+        },
+        "abundance": {
+            "type": "string",
+            "description": "free text of amount of sample used"
+        },
+        "sampleType": {
+            "$ref": "../globalId.json#/properties/globalId",
+            "description": "Ontology ID of the biosample type. EX: total mRNA, DB:XXXXXXX"
+        },
+        "sampleAge": {
+            "$ref": "biosampleAge.json#",
+            "description": "a collection of terms that when used together represent the age of the sample"
+        },
+        "sampleLocation": {
+            "type":"array",
+            "items": {
+                "$ref": "biosampleLocation.json#",
+                "description": "a collection of terms that when used together represents the location within an organism from which the sample was taken"
+            }
+        },
+        "dataProvider": {
+            "$ref": "../dataProvider.json#",
+            "description": "source of data, can be multiple of these, each with a type and a crossReference"
+        },
+        "genomicInformation": {
+            "$ref": "bioSampleGenomicInformation.json#",
+            "description": "A collection of information that represents the strain or genomic background of the sample, either an id or free text"
+        },
+        "taxonId": {
+            "$ref": "../globalId.json#/properties/globalId",
+            "description": "taxon id of the organism the sample comes from"
+        },
+        "sex": {
+            "type": "string",
+            "enum": ["female","male", "not specified", "pooled"],
+            "description": "sex of the organism the sample came from"
+        },
+        "assayType": {
+            "$ref": "../globalId.json#/properties/globalId",
+            "description": "id of type of assay used for this sample; sample or experiment property?"
+        },
+        "sequencingFormat": {
+            "type": "string",
+            "enum": ["single","paired"],
+            "description": "single or paired end sequencing; might be better in experiment info"
+        },
+        "categoryTags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "list of controlled vocabulary text to describe the experiment"
+        },
+        "assemblyVersion": {
+            "type":"array",
+            "items": {
+                "type": "string"
+            },
+            "description": "List of the version(s) of genome the sample's sequence was mapped to"
+        },
+        "notes": {
+            "type": "string",
+            "description": "curated notes about the sample"
+        },
+        "datasetId": {
+            "type": "array",
+            "items": {
+                    "$ref": "../../globalId.json#/properties/globalId"
+            },
+            "description": "list of primary dataset id that this sample is associated with, should be in datasetAnnotation.json"
+        },
+        "microarraySampleDetails": {
+            "$ref": "microarraySampleDetails.json#",
+            "description": "collection of information that is specific for microarray samples"
+        },
+        "dateAssigned": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date this entity was assigned in it's primary data source."
+        }
+    }
+}

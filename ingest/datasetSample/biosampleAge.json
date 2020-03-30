@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Sample Age",
+    "description": "an object that holds the temporal aspect of a sample.",
+    "id": "biosampleAge.json#",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "startStage": {
+            "$ref": "../expression/whenExpressed.json#/properties"
+        },
+        "startAge": {
+            "type": "string",
+            "description": "Free text for age of the sample"
+        },
+        "intermediateStages": {
+            "type": "array",
+            "items": "string",
+            "description": "list of stages between the start and end stages"
+        },
+        "endStage": {
+            "$ref": "../expression/whenExpressed.json#/properties"
+        },
+        "endAge": {
+            "type": "string",
+            "description": "Free text for end age of the sample if there is an age range"
+        }
+    },
+    "anyOf": [
+        {
+            "required": [
+                "startStage", "endStage"
+            ]
+        },
+        {
+            "required": [
+                "startAge", "endAge"
+            ]
+        }
+    ]
+}

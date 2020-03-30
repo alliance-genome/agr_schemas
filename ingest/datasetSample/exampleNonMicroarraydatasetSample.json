@@ -1,0 +1,44 @@
+{
+"data":[
+        {"sampleId": "GEO:GSEM1080197",
+        "sampleTitle":"mouse pronuclei 1",
+        "abundance": "??",
+        "sampleType": "MMO: (polyA RNA)",
+        "sampleAge": { 
+            "startAge": "E0.5",
+             "endStage":"E0.5"
+        },
+        "sampleLocation": [
+              { "anatomicalStructureTermId": "EMAPA:16033",
+                "cellularComponentTermId": "GO:0045120",
+                "whereExpressedStatement":"TS1:1-cell stage embryo, pronucleus"
+              }
+       ],
+        "dataProvider": "GEO",
+        "genomicInformation": {
+            "biosampleId": "MGI:XYZ",
+            "idType": "genotype",
+           "bioSampleText":"C57BL/6"
+        },
+        "taxonId": "NCBITaxon:10090",
+        "sex": "not specified",
+        "assayType": "MMO:NNN or EFO:NNN (RNA-seq)",
+        "sequencingFormat": "single",
+        "categoryTags": ["transcription"],
+        "assemblyVersion": ["???"],
+        "notes": "Curated notes about the sample",
+        "datasetId": ["GEO:GSE44183"],
+        "dateAssigned":"2019-07-29T13:27:43-04:00"
+        }             
+],
+"metadata":{
+        "dataProvider": {
+        "crossReference": {
+                "id":"MGI",
+                "pages": ["homepage"]
+        },
+        "type": "curated"
+    },
+    "dateProduced": "2020-06-22T13:27:43-04:00"
+}
+}
