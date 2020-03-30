@@ -32,7 +32,7 @@
                 "channelNumber":"1",
                 "channelId":"1"
         }
-         }
+}
 
 ]
 },
@@ -45,4 +45,5 @@
         "type": "curated"
     },
     "dateProduced": "2020-03-11T13:27:43-04:00"
-  },
+  }
+}
