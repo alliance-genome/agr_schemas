@@ -36,6 +36,10 @@
             "type": "integer",
             "description": "for microarrays, need number of channels; need to make req'd for microarray assays; "
         },
+	"dataProvider": {
+		"$ref":"../../dataProvider.json",
+		"description": "the data source this metadata is originally from and the MOD that curated the information"
+	},
         "dateAssigned": {
             "type": "string",
             "format": "date-time",
