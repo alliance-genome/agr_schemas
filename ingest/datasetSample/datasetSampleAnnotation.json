@@ -29,13 +29,13 @@
             "description": "Ontology ID of the biosample type. EX: total mRNA, DB:XXXXXXX"
         },
         "sampleAge": {
-            "$ref": "bioSampleAge.json#",
+            "$ref": "biosampleAge.json#",
             "description": "a collection of terms that when used together represent the age of the sample"
         },
         "sampleLocation": {
             "type":"array",
             "items": {
-                "$ref": "bioSampleLocation.json#",
+                "$ref": "biosampleLocation.json#",
                 "description": "a collection of terms that when used together represents the location within an organism from which the sample was taken"
             }
         },
@@ -53,7 +53,7 @@
         },
         "sex": {
             "type": "string",
-            "enum": ["female","male", "not specified", "pooled"]
+            "enum": ["female","male", "not specified", "pooled"],
             "description": "sex of the organism the sample came from"
         },
         "assayType": {
