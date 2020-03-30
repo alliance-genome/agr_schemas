@@ -3,7 +3,7 @@
         {"sampleId": "GEO:GSM1080197",
         "sampleTitle":"mouse pronuclei 1",
         "abundance": "??",
-        "sampleType": "OBI: (polyA RNA)",
+        "sampleType": "OBI:0000869",
         "sampleAge": { 
             "startAge": "E0.5",
              "endAge":"E0.5"
@@ -14,7 +14,6 @@
                 "whereExpressedStatement":"TS1:1-cell stage embryo, pronucleus"
               }
        ],
-        "dataProvider": "" # use dataProvider.json object; move to dataset #
         "genomicInformation": {
             "biosampleId": "MGI:XYZ",
             "idType": "genotype",
@@ -22,7 +21,7 @@
         },
         "taxonId": "NCBITaxon:10090",
         "sex": "not specified",
-        "assayType": "MMO:NNN (RNA-seq)",
+        "assayType": "MMO_0000659",
         "sequencingFormat": "single",
         "categoryTags": ["transcription"],
         "assemblyVersion": ["???"],
