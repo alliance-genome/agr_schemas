@@ -39,10 +39,6 @@
                 "description": "a collection of terms that when used together represents the location within an organism from which the sample was taken"
             }
         },
-        "dataProvider": {
-            "$ref": "../dataProvider.json#",
-            "description": "source of data, can be multiple of these, each with a type and a crossReference"
-        },
         "genomicInformation": {
             "$ref": "bioSampleGenomicInformation.json#",
             "description": "A collection of information that represents the strain or genomic background of the sample, either an id or free text"
@@ -53,7 +49,7 @@
         },
         "sex": {
             "type": "string",
-            "enum": ["female","male", "not specified", "pooled"],
+            "enum": ["female","male", "not specified", "pooled", "unspecified","hermaphrodite"],
             "description": "sex of the organism the sample came from"
         },
         "assayType": {
