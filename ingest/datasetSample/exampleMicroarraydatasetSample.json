@@ -1,43 +1,37 @@
 {
 "data":{
         [
-        {"sampleId": "GEO:GSM4431818",
-        "sampleTitle":"",
-        "abundance": "",
-        "sampleType": "MMO:",
+        {"sampleId": "GEO:GSM980896",
+        "sampleTitle":"embryo at TS01, biological rep3",
+        "abundance": "??",
+        "sampleType": "MMO: (total RNA)",
         "sampleAge": { 
-            "startStage":"",
-            "startAge": "",
-            "intermediateStages": [],
-             "endStage":"",
-             "endAge": ""
+            "startAge": "E0.5",
+             "endStage":"E0.5"
         },
         "sampleLocation": [
-              {"cellularComponentTermId": "GO:XXXXXX",
-                "cellularComponentQualifierTermId": "",
-                 "anatomicalStructureTermId": "MMO:",
-                "anatomicalStructureQualifierTermId": "MMO:",
-                "anatomicalSubStructureTermId": "MMO:",
-                "anatomicalSubStructureQualifierTermId": "MMO:",
-                "whereExpressedStatement":"The biosample came from this organ or cell type"
+              {"anatomicalStructureTermId": "EMAPA:36041",
+                "whereExpressedStatement":"TS1: 1-cell stage conceptus"
               }
        ],
         "dataProvider": "GEO",
         "genomicInformation": {
-            "biosampleId": "",
-            "idType": 
-            "enum": ["fish", "genotype","strain","allele"],
-           "bioSampleText":""
+            "biosampleId": "MGI:XYZ",
+            "idType": "strain",
+           "bioSampleText":"C57BL/6J"
         },
-        "taxonId": "",
-        "sex": "female",
-        "assayType": "MMO: or EFO:",
-        "sequencingFormat": "paired",
-        "categoryTags": [],
-        "assemblyVersion": [],
-        "notes": "",
-        "datasetId": ["GEO:GSEXXXX","GEO:GSEXXXX"],
-        "dateAssigned":""
+        "taxonId": "NCBITaxon:10090",
+        "sex": "not specified",
+        "assayType": "MMO: or EFO: (expression profiling by array)",
+        "categoryTags": ["transcription"],
+        "assemblyVersion": ["XYZ"],
+        "notes": "curated notes about the sample",
+        "datasetId": ["GEO:GSE39897"],
+        "dateAssigned":"2013-09-11T13:27:43-04:00"
+         "microarray":{
+                "channelNumber":"1",
+                "channelId":"1"
+        }
          }
 
 ]
@@ -45,10 +39,10 @@
 "metadata":{
         "dataProvider": {
         "crossReference": {
-                "id":"ZFIN",
+                "id":"MGI",
                 "pages": ["homepage"]
         },
         "type": "curated"
     },
-    "dateProduced": "2017-06-22T13:27:43-04:00"
+    "dateProduced": "2020-03-11T13:27:43-04:00"
   },
