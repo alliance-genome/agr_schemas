@@ -1,12 +1,12 @@
 {
 "data":[
-        {"sampleId": "GEO:GSEM1080197",
+        {"sampleId": "GEO:GSM1080197",
         "sampleTitle":"mouse pronuclei 1",
         "abundance": "??",
-        "sampleType": "MMO: (polyA RNA)",
+        "sampleType": "OBI:0000869",
         "sampleAge": { 
             "startAge": "E0.5",
-             "endStage":"E0.5"
+             "endAge":"E0.5"
         },
         "sampleLocation": [
               { "anatomicalStructureTermId": "EMAPA:16033",
@@ -14,7 +14,6 @@
                 "whereExpressedStatement":"TS1:1-cell stage embryo, pronucleus"
               }
        ],
-        "dataProvider": "GEO",
         "genomicInformation": {
             "biosampleId": "MGI:XYZ",
             "idType": "genotype",
@@ -22,7 +21,7 @@
         },
         "taxonId": "NCBITaxon:10090",
         "sex": "not specified",
-        "assayType": "MMO:NNN or EFO:NNN (RNA-seq)",
+        "assayType": "MMO_0000659",
         "sequencingFormat": "single",
         "categoryTags": ["transcription"],
         "assemblyVersion": ["???"],

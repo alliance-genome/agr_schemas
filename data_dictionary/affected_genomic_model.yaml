@@ -3,7 +3,8 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "affectedGenomicModel"
 title: AffectedGenomicModel
 type: object
-description: > The genotype, strain or model, defined by its curated set of gene affectors, 
+description: >
+        The genotype, strain or model, defined by its curated set of gene affectors, 
 ie: alleles and sequence targeting reagents, as well as its (optional) parental populations. 
 additionalProperties: false
 validators: 

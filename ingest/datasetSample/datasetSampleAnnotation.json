@@ -4,12 +4,6 @@
     "description": "An entry with dataset sample object associations",
     "id": "datasetSampleModelAnnotation.json#",
     "type": "object",
-    "required": [
-        "sampleId",
-        "sampleTitle",
-        "dataProvider",
-        "dateAssigned"
-    ],
     "additionalProperties": false,
     "properties": {
         "sampleId": {
@@ -26,7 +20,7 @@
         },
         "sampleType": {
             "$ref": "../globalId.json#/properties/globalId",
-            "description": "Ontology ID of the biosample type. EX: total mRNA, DB:XXXXXXX"
+            "description": "Ontology ID of the biosample type. EX: total mRNA, OBI:XXXXXXX"
         },
         "sampleAge": {
             "$ref": "biosampleAge.json#",
@@ -39,10 +33,6 @@
                 "description": "a collection of terms that when used together represents the location within an organism from which the sample was taken"
             }
         },
-        "dataProvider": {
-            "$ref": "../dataProvider.json#",
-            "description": "source of data, can be multiple of these, each with a type and a crossReference"
-        },
         "genomicInformation": {
             "$ref": "bioSampleGenomicInformation.json#",
             "description": "A collection of information that represents the strain or genomic background of the sample, either an id or free text"
@@ -53,11 +43,12 @@
         },
         "sex": {
             "type": "string",
-            "enum": ["female","male", "not specified", "pooled"],
+            "enum": ["female","male", "not specified", "pooled", "unspecified","hermaphrodite"],
             "description": "sex of the organism the sample came from"
         },
         "assayType": {
             "$ref": "../globalId.json#/properties/globalId",
+            "emunm": ["MMO_0000659", "MMO_0000648","MMO_0000650","MMO_0000649","MMO_0000664","MMO_0000666","MMO_0000000"]
             "description": "id of type of assay used for this sample; sample or experiment property?"
         },
         "sequencingFormat": {
@@ -65,7 +56,7 @@
             "enum": ["single","paired"],
             "description": "single or paired end sequencing; might be better in experiment info"
         },
-        "categoryTags": {
+        "categoryTags": { //128 terms, how can we restrict them?//
             "type": "array",
             "items": {
                 "type": "string"
@@ -90,7 +81,7 @@
             },
             "description": "list of primary dataset id that this sample is associated with, should be in datasetAnnotation.json"
         },
-        "microarraySampleDetails": {
+        "microarraySampleDetails": {  // use this for Wormbase to distinguish between microarray samples //
             "$ref": "microarraySampleDetails.json#",
             "description": "collection of information that is specific for microarray samples"
         },
@@ -99,5 +90,8 @@
             "format": "date-time",
             "description": "Date this entity was assigned in it's primary data source."
         }
-    }
+    },
+    "anyOf": [{"required": ["sampleId","datasetId"]},
+              {"required": ["sampleTitle","datasetId"]}
+             ]
 }

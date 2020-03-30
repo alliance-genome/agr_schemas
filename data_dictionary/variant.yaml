@@ -5,7 +5,7 @@ title: Variant
 type: object
 description: A DNA sequence that differs relative to a designated reference sequence. The sequence difference occurs at a single position or in contiguous nucleotides.
 
-Notes: This term currently includes the following variant types: substitution, point mutation, insertion, deletion, insertion+deletion. Genomic Variants could refer to nuclear or organellar genomes. The designated reference sequence can be whatever sequence or set of sequences to which the variant is compared. >
+Notes: "This term currently includes the following variant types: substitution, point mutation, insertion, deletion, insertion+deletion. Genomic Variants could refer to nuclear or organellar genomes. The designated reference sequence can be whatever sequence or set of sequences to which the variant is compared."
 
 additionalProperties: false
 validators: 
