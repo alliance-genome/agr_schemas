@@ -2,7 +2,7 @@
   "data": [
 	  {"datasetId": {
      		"primaryId": "GEO:GSE147474",
-     		"secondaryId": ["ArrayExpress:E-MTAB-8024", "MGI":"XXXX"]
+     		"secondaryId": ["ArrayExpress:E-MTAB-8024", "MGI:XXXX"]
             },
         "publication": [
 		{"crossReference" : {"id":"ZFIN:ZDB-PUB-120215-13",
