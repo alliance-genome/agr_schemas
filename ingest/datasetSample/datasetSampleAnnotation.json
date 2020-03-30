@@ -53,7 +53,7 @@
         },
         "sex": {
             "type": "string",
-            "enum": ["female","male", "hermaphrodite",??] //can we have a set list of sexes? //
+            "enum": ["female","male", "not specified", "pooled"]
             "description": "sex of the organism the sample came from"
         },
         "assayType": {
