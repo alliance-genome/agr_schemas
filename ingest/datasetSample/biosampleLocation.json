@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Sample Location",
-    "id": "sampleLocation.json#",
+    "id": "biosampleLocation.json#",
     "description": "Group of ids and names that represent where the sample was taken from.",
     "type": "object",
     "additionalProperties": false,
