@@ -90,5 +90,8 @@
             "format": "date-time",
             "description": "Date this entity was assigned in it's primary data source."
         }
-    }
+    },
+    "anyOf": [{"required": ["sampleId","datasetId"]},
+              {"required": ["sampleTitle","datasetId"]}
+             ]
 }
