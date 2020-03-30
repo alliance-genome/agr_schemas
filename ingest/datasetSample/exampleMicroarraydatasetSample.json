@@ -3,7 +3,7 @@
         {"sampleId": "GEO:GSM980896",
         "sampleTitle":"embryo at TS01, biological rep3",
         "abundance": "??",
-        "sampleType": "MMO: (total RNA)",
+        "sampleType": "OBI:0000895",
         "sampleAge": { 
             "startAge": "E0.5",
              "endStage":"E0.5"
@@ -13,7 +13,6 @@
                 "whereExpressedStatement":"TS1: 1-cell stage conceptus"
               }
        ],
-        "dataProvider": "GEO",
         "genomicInformation": {
             "biosampleId": "MGI:XYZ",
             "idType": "strain",
@@ -21,7 +20,7 @@
         },
         "taxonId": "NCBITaxon:10090",
         "sex": "not specified",
-        "assayType": "MMO: or EFO: (expression profiling by array)",
+        "assayType": "MMO_0000649",
         "categoryTags": ["transcription"],
         "assemblyVersion": ["XYZ"],
         "notes": "curated notes about the sample",
