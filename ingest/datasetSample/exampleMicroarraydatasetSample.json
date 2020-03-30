@@ -27,13 +27,12 @@
         "assemblyVersion": ["XYZ"],
         "notes": "curated notes about the sample",
         "datasetId": ["GEO:GSE39897"],
-        "dateAssigned":"2013-09-11T13:27:43-04:00"
+        "dateAssigned":"2013-09-11T13:27:43-04:00",
          "microarray":{
                 "channelNumber":"1",
                 "channelId":"1"
         }
 }
-
 ]
 },
 "metadata":{
