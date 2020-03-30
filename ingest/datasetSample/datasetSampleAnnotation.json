@@ -29,13 +29,13 @@
             "description": "Ontology ID of the biosample type. EX: total mRNA, DB:XXXXXXX"
         },
         "sampleAge": {
-            "$ref": "sampleAge.json#",
+            "$ref": "bioSampleAge.json#",
             "description": "a collection of terms that when used together represent the age of the sample"
         },
         "sampleLocation": {
             "type":"array",
             "items": {
-                "$ref": "sampleLocation.json#",
+                "$ref": "bioSampleLocation.json#",
                 "description": "a collection of terms that when used together represents the location within an organism from which the sample was taken"
             }
         },
@@ -44,7 +44,7 @@
             "description": "source of data, can be multiple of these, each with a type and a crossReference"
         },
         "genomicInformation": {
-            "$ref": "biosampleGenomicInformation.json#",
+            "$ref": "bioSampleGenomicInformation.json#",
             "description": "A collection of information that represents the strain or genomic background of the sample, either an id or free text"
         },
         "taxonId": {
