@@ -37,9 +37,12 @@
             "description": "for microarrays, need number of channels; need to make req'd for microarray assays; "
         },
 	"dataProvider": {
-		"$ref":"../../dataProvider.json",
-		"description": "the data source this metadata is originally from and the MOD that curated the information"
-	},
+        "type": "array",
+        "items": {
+            "$ref": "../dataProvider.json#"
+        },
+        "description": "source of data, can be multiple of these, each with a type and a crossReference"
+    },
         "dateAssigned": {
             "type": "string",
             "format": "date-time",
