@@ -10,9 +10,9 @@ validators:
 properties:
   primaryKey:
     type: String
-  start
+  start:
     type: Integer
-  end
+  end:
     type: Integer
   assembly:
     type: String
