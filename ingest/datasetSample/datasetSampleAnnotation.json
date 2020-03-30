@@ -4,12 +4,6 @@
     "description": "An entry with dataset sample object associations",
     "id": "datasetSampleModelAnnotation.json#",
     "type": "object",
-    "required": [
-        "sampleId",
-        "sampleTitle",
-        "dataProvider",
-        "dateAssigned"
-    ],
     "additionalProperties": false,
     "properties": {
         "sampleId": {
@@ -26,7 +20,7 @@
         },
         "sampleType": {
             "$ref": "../globalId.json#/properties/globalId",
-            "description": "Ontology ID of the biosample type. EX: total mRNA, DB:XXXXXXX"
+            "description": "Ontology ID of the biosample type. EX: total mRNA, OBI:XXXXXXX"
         },
         "sampleAge": {
             "$ref": "biosampleAge.json#",
@@ -54,6 +48,7 @@
         },
         "assayType": {
             "$ref": "../globalId.json#/properties/globalId",
+            "emunm": ["MMO_0000659", "MMO_0000648","MMO_0000650","MMO_0000649","MMO_0000664","MMO_0000666","MMO_0000000"]
             "description": "id of type of assay used for this sample; sample or experiment property?"
         },
         "sequencingFormat": {
@@ -61,7 +56,7 @@
             "enum": ["single","paired"],
             "description": "single or paired end sequencing; might be better in experiment info"
         },
-        "categoryTags": {
+        "categoryTags": { //128 terms, how can we restrict them?//
             "type": "array",
             "items": {
                 "type": "string"
@@ -86,7 +81,7 @@
             },
             "description": "list of primary dataset id that this sample is associated with, should be in datasetAnnotation.json"
         },
-        "microarraySampleDetails": {
+        "microarraySampleDetails": {  // use this for Wormbase to distinguish between microarray samples //
             "$ref": "microarraySampleDetails.json#",
             "description": "collection of information that is specific for microarray samples"
         },
