@@ -1,6 +1,5 @@
 {
-"data":{
-        [
+"data": [
         {"sampleId": "GEO:GSM980896",
         "sampleTitle":"embryo at TS01, biological rep3",
         "abundance": "??",
@@ -33,8 +32,7 @@
                 "channelId":"1"
         }
 }
-]
-},
+],
 "metadata":{
         "dataProvider": {
         "crossReference": {
