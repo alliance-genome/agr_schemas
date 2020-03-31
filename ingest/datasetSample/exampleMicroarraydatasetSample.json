@@ -2,11 +2,10 @@
 "data": [
         {"sampleId": "GEO:GSM980896",
         "sampleTitle":"embryo at TS01, biological rep3",
-        "abundance": "??",
         "sampleType": "OBI:0000895",
         "sampleAge": { 
             "startAge": "E0.5",
-             "endStage":"E0.5"
+             "endAge":"E0.5"
         },
         "sampleLocation": [
               {"anatomicalStructureTermId": "EMAPA:36041",
@@ -20,9 +19,9 @@
         },
         "taxonId": "NCBITaxon:10090",
         "sex": "not specified",
-        "assayType": "MMO_0000649",
+        "assayType": "MMO:0000649",
         "categoryTags": ["transcription"],
-        "assemblyVersion": ["XYZ"],
+        "assemblyVersion": ["GRCm38.p6"],
         "notes": "curated notes about the sample",
         "datasetId": ["GEO:GSE39897"],
         "dateAssigned":"2013-09-11T13:27:43-04:00",
