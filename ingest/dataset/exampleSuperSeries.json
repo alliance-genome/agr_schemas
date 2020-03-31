@@ -1,3 +1,4 @@
+
 {
 "data" : [
       {
@@ -14,29 +15,23 @@
         "subSeries": ["GEO:GSE144894","GEO:GSE144896"],
         "dateAssigned": "2020-02-06T00:00:00-0:00",
         "dataProvider": [
-              {
-        "crossReference": {
-                "id":"WB",
-                "pages": ["homepage"]
-        },
-        "type": "curated"
-      }, {
-        "crossReference": {
-                "id":"GEO"
-        },
-        "type": "loaded"
-      }   
+              { "crossReference": { "id":"ZFIN",
+                           "type": "loaded"}
+              }, 
+              {"crossReference": {"id":"GEO",
+                                  "type": "curated"
+              }   
       ]
     ],
     "metaData": {
     "dataProvider":  {
         "crossReference": {
-                "id":"WB",
+                "id":"ZFIN",
                 "pages": ["homepage"]
         },
         "type": "curated"
 },
     "dateProduced": "2020-06-22T13:27:43-04:00",
-    "release": "WS259"
+    "release": "GRCz11"
   }
 }
