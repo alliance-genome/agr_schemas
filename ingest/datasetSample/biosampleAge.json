@@ -15,8 +15,9 @@
         },
         "intermediateStages": {
             "type": "array",
-            "items": "string",
-            "description": "list of stages between the start and end stages"
+            "items": {"$ref":"../expression/whenExpressed.json#/properties"
+                     },
+            "description": "list of stage objects between the start and end stages"
         },
         "endStage": {
             "$ref": "../expression/whenExpressed.json#/properties"
