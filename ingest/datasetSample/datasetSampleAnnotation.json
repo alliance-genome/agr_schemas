@@ -43,12 +43,12 @@
         },
         "sex": {
             "type": "string",
-            "enum": ["female","male", "not specified", "pooled", "unspecified","hermaphrodite"],
+            "enum": ["female","male", "unknown", "pooled","hermaphrodite"],
             "description": "sex of the organism the sample came from"
         },
         "assayType": {
             "$ref": "../globalId.json#/properties/globalId",
-            "emun": ["MMO_0000659", "MMO_0000648","MMO_0000650","MMO_0000649","MMO_0000664","MMO_0000666","MMO_0000000"],
+            "emun": ["MMO:0000659", "MMO:0000648","MMO:0000650","MMO:0000649","MMO:0000664","MMO:0000666","MMO:0000000"],
             "description": "id of type of assay used for this sample; sample or experiment property?"
         },
         "sequencingFormat": {
