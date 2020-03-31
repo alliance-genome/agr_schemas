@@ -2,7 +2,6 @@
 "data":[
         {"sampleId": "GEO:GSM1080197",
         "sampleTitle":"mouse pronuclei 1",
-        "abundance": "??",
         "sampleType": "OBI:0000869",
         "sampleAge": { 
             "startAge": "E0.5",
@@ -15,8 +14,6 @@
               }
        ],
         "genomicInformation": {
-            "biosampleId": "MGI:XYZ",
-            "idType": "genotype",
            "bioSampleText":"C57BL/6"
         },
         "taxonId": "NCBITaxon:10090",
@@ -24,7 +21,7 @@
         "assayType": "MMO_0000659",
         "sequencingFormat": "single",
         "categoryTags": ["transcription"],
-        "assemblyVersion": ["???"],
+        "assemblyVersion": ["GRCm38.p6"],
         "notes": "Curated notes about the sample",
         "datasetId": ["GEO:GSE44183"],
         "dateAssigned":"2019-07-29T13:27:43-04:00"
