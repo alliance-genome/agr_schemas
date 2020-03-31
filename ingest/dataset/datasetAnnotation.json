@@ -41,7 +41,8 @@
         "items": {
             "$ref": "../dataProvider.json#"
         },
-        "description": "source of data, can be multiple of these, each with a type and a crossReference"
+        "description":
+		"source of data, can be multiple of these, each with a type and a crossReference; use 'curated' for GEO/ArrayExpress, 'loaded' for the MOD"
     },
         "dateAssigned": {
             "type": "string",
