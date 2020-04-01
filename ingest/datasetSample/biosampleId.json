@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "biosSample Id",
     "description": "An basic entry for defining a bioSample id",
-    "id": "bioSampleId.json#",
+    "id": "biosampleId.json#",
     "type": "object",
     "required": [
         "primaryId"
