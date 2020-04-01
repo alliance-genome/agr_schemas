@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "biosSample Id",
+    "description": "An basic entry for defining a bioSample id",
+    "id": "bioSampleId.json#",
+    "type": "object",
+    "required": [
+        "primaryId"
+    ],
+    "properties": {
+        "primaryId": {
+            "$ref": "../../globalId.json#/properties/globalId",
+            "description": "The primary Id for a biosample."
+        },
+        "secondaryId": {
+            "description": "list of optional cross reference ids to the primary dataset id.",
+            "type": "array",
+            "item": {
+                "$ref": "../../globalId.json#/properties/globalId"
+            },
+	    "uniqueItems": true
+        }
+    }
+}
