@@ -19,7 +19,7 @@
         "publication": {
             "type": "array",
             "items": {
-                "$ref": "../../publicationRef.json#"
+                "$ref": "../../../publicationRef.json#"
             },
 	    "uniqueItems": true,
             "description": "list of publications associated with this dataset"
@@ -39,7 +39,7 @@
 	"dataProvider": {
         "type": "array",
         "items": {
-            "$ref": "../dataProvider.json#"
+            "$ref": "../../dataProvider.json#"
         },
         "description":
 		"source of data, can be multiple of these, each with a type and a crossReference; use 'curated' for GEO/ArrayExpress, 'loaded' for the MOD"
