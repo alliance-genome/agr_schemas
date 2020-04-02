@@ -36,6 +36,14 @@
             "type": "integer",
             "description": "for microarrays, need number of channels; need to make req'd for microarray assays; "
         },
+	 "subSeries": {
+            "type": "array",
+            "items": {
+                "$ref": "../../../globalId.json#/properties/globalId"
+            },
+	    "uniqueItems": true,
+            "description": "If the dataset is a SuperSeries, this is a list of dataset ids that are associated with this dataset"
+        },
 	"dataProvider": {
         "type": "array",
         "items": {
