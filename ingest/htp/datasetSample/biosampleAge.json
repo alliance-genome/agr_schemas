@@ -7,7 +7,7 @@
     "additionalProperties": false,
     "properties": {
         "startStage": {
-            "$ref": "../expression/whenExpressed.json#/properties"
+            "$ref": "../../expression/whenExpressed.json#/properties"
         },
         "startAge": {
             "type": "string",
@@ -15,12 +15,12 @@
         },
         "intermediateStages": {
             "type": "array",
-            "items": {"$ref":"../expression/whenExpressed.json#/properties"
+            "items": {"$ref":"../../expression/whenExpressed.json#/properties"
                      },
             "description": "list of stage objects between the start and end stages"
         },
         "endStage": {
-            "$ref": "../expression/whenExpressed.json#/properties"
+            "$ref": "../../expression/whenExpressed.json#/properties"
         },
         "endAge": {
             "type": "string",
