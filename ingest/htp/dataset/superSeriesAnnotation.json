@@ -12,8 +12,8 @@
     ],
     "additionalProperties": false,
     "properties": {
-        "objectId": {
-            "$ref": "../../../globalId.json#/properties/globalId",
+        "datasetId": {
+            "$ref": "../htpId.json",
             "description": "The unique ID for the dataset object; these will external or MOD IDs."
         },
         "publication": {
