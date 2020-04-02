@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "biosSample Id",
+    "title": "Data Sample Id",
     "description": "An basic entry for defining a bioSample id",
-    "id": "biosampleId.json#",
+    "id": "datasampleId.json#",
     "type": "object",
     "required": [
         "primaryId"
