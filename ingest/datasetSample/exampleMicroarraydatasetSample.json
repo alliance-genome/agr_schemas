@@ -1,6 +1,6 @@
 {
 "data": [
-        {"sampleId": "GEO:GSM980896",
+        {"sampleId": {"primaryId":"GEO:GSM980896"},
         "sampleTitle":"embryo at TS01, biological rep3",
         "sampleType": "OBI:0000895",
         "sampleAge": { 
