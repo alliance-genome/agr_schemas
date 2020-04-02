@@ -7,7 +7,7 @@
     "additionalProperties": false,
     "properties": {
         "sampleId": {
-            "$ref": "biosampleId.json",
+            "$ref": "datasampleId.json",
             "description": "The IDs for this sample object, MOD or external database ID (ex: GEO); primaryId and secondaryId"
         },
         "sampleTitle": {
