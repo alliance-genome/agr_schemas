@@ -13,8 +13,8 @@
     "additionalProperties": false,
     "properties": {
         "datasetId": {
-            "$ref": "datasetId.json#",
-            "description": "An id associated with a dataset dataset object; these will external or MOD IDs."
+            "$ref": "../htpId.json#",
+            "description": "An id associated with a dataset object; these will external or MOD IDs."
         },
         "publication": {
             "type": "array",
