@@ -262,6 +262,8 @@
     url: https://www.yeastgenome.org/locus/[%s]/disease
   - name: gene/MODinteractions
     url: https://www.yeastgenome.org/locus/[%s]/interaction#network
+  - name: HTP_dataset
+    url: https://www.yeastgenome.org/dataset/[%s]
 
 #
 # GO
