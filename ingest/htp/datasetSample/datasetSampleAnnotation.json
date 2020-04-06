@@ -56,13 +56,6 @@
             "enum": ["single","paired"],
             "description": "single or paired end sequencing; might be better in experiment info"
         },
-        "categoryTags": { //128 terms, how can we restrict them?//
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "description": "list of controlled vocabulary text to describe the experiment"
-        },
         "assemblyVersion": {
             "type":"array",
             "items": {
@@ -88,7 +81,7 @@
         "dateAssigned": {
             "type": "string",
             "format": "date-time",
-            "description": "Date this entity was assigned in it's primary data source."
+            "description": "Date this entity was assigned/curated by a MOD."
         }
     },
     "anyOf": [{"required": ["sampleId","datasetId"]},
