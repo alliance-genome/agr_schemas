@@ -44,18 +44,17 @@
 	    "uniqueItems": true,
             "description": "If the dataset is a SuperSeries, this is a list of dataset ids that are associated with this dataset"
         },
-	"dataProvider": {
-        "type": "array",
-        "items": {
-            "$ref": "../../dataProvider.json#"
-        },
-        "description":
-		"source of data, can be multiple of these, each with a type and a crossReference; use 'curated' for GEO/ArrayExpress, 'loaded' for the MOD"
-    },
+	"categoryTags":{
+		"type":"array",
+		"items":{
+			"type":"string"
+		},
+		"description":"List of controlled vocabulary to describe the purpose of the dataset"
+	},
         "dateAssigned": {
             "type": "string",
             "format": "date-time",
-            "description": "Date this entity was assigned in it's primary data source."
+            "description": "Date of curation/assigned by the MOD."
         }
     }
 }
