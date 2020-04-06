@@ -44,13 +44,14 @@
 	    "uniqueItems": true,
             "description": "If the dataset is a SuperSeries, this is a list of dataset ids that are associated with this dataset"
         },
-	"categoryTags":{
-		"type":"array",
-		"items":{
-			"type":"string"
-		},
-		"description":"List of controlled vocabulary to describe the purpose of the dataset"
-	},
+	"categoryTags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+		"uniqueItems":true,
+            "description": "list of controlled vocabulary text to describe the experiment"
+        },
         "dateAssigned": {
             "type": "string",
             "format": "date-time",
