@@ -1,6 +1,6 @@
 {
 "data":[
-        {"sampleId": "GEO:GSM1080197",
+        {"sampleId": {"primaryId":"GEO:GSM1080197"},
         "sampleTitle":"mouse pronuclei 1",
         "sampleType": "OBI:0000869",
         "sampleAge": { 
@@ -18,9 +18,8 @@
         },
         "taxonId": "NCBITaxon:10090",
         "sex": "not specified",
-        "assayType": "MMO_0000659",
+        "assayType": "MMO:0000659",
         "sequencingFormat": "single",
-        "categoryTags": ["transcription"],
         "assemblyVersion": ["GRCm38.p6"],
         "notes": "Curated notes about the sample",
         "datasetId": ["GEO:GSE44183"],
@@ -30,8 +29,7 @@
 "metadata":{
         "dataProvider": {
         "crossReference": {
-                "id":"MGI",
-                "pages": ["homepage"]
+                "id":"MGI"
         },
         "type": "curated"
     },
