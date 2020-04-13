@@ -22,9 +22,13 @@
             "$ref": "../../globalId.json#/properties/globalId",
             "description": "Ontology ID of the biosample type. EX: total mRNA, OBI:XXXXXXX"
         },
-        "sampleAge": {
-            "$ref": "biosampleAge.json#",
+        "sampleStage": {
+            "$ref": "biosampleStage.json#",
             "description": "a collection of terms that when used together represent the age of the sample"
+        },
+        "sampleAge": {
+            "type": "string",
+            "description": "free text for the age of the sample"
         },
         "sampleLocation": {
             "type":"array",
