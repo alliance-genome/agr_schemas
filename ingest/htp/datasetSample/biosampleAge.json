@@ -9,10 +9,6 @@
         "startStage": {
             "$ref": "../../expression/whenExpressed.json#/properties"
         },
-        "startAge": {
-            "type": "string",
-            "description": "Free text for age of the sample"
-        },
         "intermediateStages": {
             "type": "array",
             "items": {"$ref":"../../expression/whenExpressed.json#/properties"
@@ -21,10 +17,6 @@
         },
         "endStage": {
             "$ref": "../../expression/whenExpressed.json#/properties"
-        },
-        "endAge": {
-            "type": "string",
-            "description": "Free text for end age of the sample if there is an age range"
         }
     },
     "anyOf": [
@@ -33,10 +25,5 @@
                 "startStage", "endStage"
             ]
         },
-        {
-            "required": [
-                "startAge", "endAge"
-            ]
-        }
     ]
 }
