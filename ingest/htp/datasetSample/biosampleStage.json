@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Sample Age",
+    "title": "Sample Stage",
     "description": "an object that holds the temporal aspect of a sample.",
-    "id": "biosampleAge.json#",
+    "id": "biosampleStage.json#",
     "type": "object",
     "additionalProperties": false,
     "properties": {
