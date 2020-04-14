@@ -74,7 +74,7 @@
             },
             "description": "list of primary dataset id that this sample is associated with, should be in datasetAnnotation.json"
         },
-        "microarraySampleDetails": {  // use this for Wormbase to distinguish between microarray samples //
+        "microarraySampleDetails": {  
             "$ref": "microarraySampleDetails.json#",
             "description": "collection of information that is specific for microarray samples"
         },
