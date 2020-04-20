@@ -1,6 +1,7 @@
 {
 "data": [
-        {"sampleId": {“primaryId”:"GEO:GSM479736"}, "sampleTitle":"wild type 75 min rep-1",
+        {"sampleId": {"primaryId":"GEO:GSM479736"}, 
+         "sampleTitle":"wild type 75 min rep-1",
         "sampleType": "OBI:0000895", 
         "taxonId": "NCBITaxon:4932",
         "assayType": "MMO:0000649",
