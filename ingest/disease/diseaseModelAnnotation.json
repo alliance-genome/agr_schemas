@@ -26,11 +26,11 @@
       "$ref": "diseaseObjectRelation.json#/properties/objectRelation",
       "description": "Constrains the disease object, associationType and inferredGeneAssociation"
     },
-    "qualifier": {
+    "negation": {
       "enum": [
         "not"
       ],
-      "description": "The qualifier for the annotation"
+      "description": "The negative qualifier for the annotation."
     },
     "primaryGeneticEntityIDs": {
 "type": "array",
