@@ -1,25 +1,25 @@
 {
   "data": [
-	  {"datasetId": {
-     		"primaryId": "GEO:GSE147474",
-     		"secondaryId": ["ArrayExpress:E-MTAB-8024"]
-            },
+      {"datasetId": {
+             "primaryId": "GEO:GSE19302"
+                        },
         "publication": [
-		{"crossReference" : {"id":"ZFIN:ZDB-PUB-120215-13",
-			    "pages":["reference"]},
-       			 "publicationId" : "PMID:22325362"
-		}
-	],
-        "title": "Transcriptome analysis of the facial processes in Rspo2, WNT9b and Rspo2;Wnt9b double mutant mice",
-        "summary": "Purpose: To determine transcriptome profile of the facial processes of Wnt9b, Rspo2 and double gene knockout embryos by NG RNA sequencing Method: Embryonic facial process RNA samples isolated from wild type, Rspo2, Wnt9b and Rspo2;Wnt9b double mutants in triplicate (except wild type (n=2)) at embryonic day 10.5 Results: single-end 50bp reads, 19.8 million reads - 30.7 million reads.",
+        {"crossReference" : {  "pages":["reference"]},
+                    "publicationId" : "PMID:21680710"
+        }
+    ],
+        "title": "Expression profile of the “heat-inducible N-degron” of Nab2 (nab2-td)",
+        "summary": "Gene expression in eukaryotes is an essential process that includes transcription, pre-RNA processing and RNA export. All these steps are coupled and normally, any failure in one step affects the other steps and could cause nuclear mRNA retention. One important player in this interface is the poly(A)-RNA binding protein Nab2, which regulates the poly(A)-tail length of mRNAs protecting their 3’-ends from a second round of polyadenylation and facilitating their nucleo-cytoplasmic export. Interestingly, here we show that Nab2 has additional roles in mRNA transcription elongation, tRNA metabolism and rRNA export. We use Genome-wide analysis of expression of a conditional degron nab2 mutant that allows the depletion of the protein in 15 minutes, to demosntrate that the role of Nab2 in RNAPII transcription and RNAPIII metabolism is not the result of a secondary effect. Our results identify primary targets of nab2 revealing novel functions for Nab2 in transcription and metabolism of most types of RNAs, not only poly(A) mRNAs, indicating that Nab2 function is more ubiquitous than previously anticipated, being a central player in the general and coordinated control of gene expression from transcription elongation to translation initiation.",
         "numChannels": "1",
-        "dateAssigned": "2020-03-24T13:27:43-04:00",
-        "categoryTags": ["transcription"]
- }
+        "dateAssigned": "2011-12-01"}
 ],
   "metadata":{
-    "dateProduced": "2017-06-22T13:27:43-04:00",
-    "dataProvider": "ZFIN",
-    "release": "GRCz11"
+    "dateProduced": "2020-04-06",
+    "dataProvider":           
+{"crossReference": {
+                    "id":"SGD",
+                        "pages": ["HTP_dataset"]},
+"type":"curated",
+    "release": "R64.2.1"
   }
 }
