@@ -9,7 +9,7 @@
         "stage": {
             "$ref": "../../stage.json#"
         },
-        "sampleAge": {
+        "age": {
             "type": "string",
             "description": "free text for the age of the sample"
         },
