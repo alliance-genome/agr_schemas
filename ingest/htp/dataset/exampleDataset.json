@@ -23,6 +23,6 @@
                     "id":"SGD",
                         "pages": ["HTP_dataset"]},
 "type":"curated",
-    "release": "R64.2.1"
+    "release": "SGD 1.0.1.0 2020-04-06"
   }
 }
