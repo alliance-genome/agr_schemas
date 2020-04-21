@@ -12,11 +12,12 @@
         "dataProvider": {
         "crossReference": {
                 "id":"SGD",
-                        },
+                "pages":["homepage"]
+        },
         "type": "curated"
     },
     "dateProduced": "2020-04-06",
-    "release": "R64.2.1" 
+    "release": "SGD 1.0.1.0 2020-02-19" 
 
   }
 }
