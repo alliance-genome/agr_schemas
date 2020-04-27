@@ -483,8 +483,10 @@
   gid_pattern: "^GEO:GS[EM]\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=[%s]
   pages:
-  -name: 
-   url:
+  -name: htp/dataset
+   url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
+  -name: htp/datasetsample
+   url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
    
 - db_prefix: ArrayExpress
   name: ArrayExpress
@@ -492,13 +494,13 @@
   gid_pattern: "^ArrayExpress:\\w+$"
   default_url: https://www.ebi.ac.uk/arrayexpress/experiments/[%s]
   pages:
-  - name:
-    url:
+  - name: htp/dataset
+    url: https://www.ebi.ac.uk/arrayexpress/experiments/[%s]
 
 - db_prefix: GXA
   name: Expression Atlas
-  example_id: GXA:
+  example_id: GXA:E-MTAB-8344
   gid_pattern: "^GXA:\\w+$"
-  default_url:
-  -name:
-    url:
+  default_url: https://www.ebi.ac.uk/gxa/experiments/[%s]/Results
+  -name: htp/dataset
+    url: https://www.ebi.ac.uk/gxa/experiments/[%s]/Results
