@@ -29,7 +29,7 @@
         "sampleLocation": {
             "type":"array",
             "items": {
-                "$ref": "biosampleLocation.json#",
+                "$ref": "../../expression/whereExpressed.json#",
                 "description": "a collection of terms that when used together represents the location within an organism from which the sample was taken"
             }
         },
