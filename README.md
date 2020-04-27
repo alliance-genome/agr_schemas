@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/alliance-genome/agr_schemas.svg?branch=development)](https://travis-ci.org/alliance-genome/agr_schemas)
-
 Alliance JSON Ingest Schemas and Data Dictionary
 ================
 
