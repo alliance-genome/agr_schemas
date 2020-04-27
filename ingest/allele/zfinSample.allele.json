@@ -8,7 +8,8 @@
         "AI82a"
       ],
       "taxonId": "NCBITaxon:7955",
-      "gene": "ZFIN:ZDB-GENE-990415-72",
+	"alleleObjectRelations": [{"associationType":"is_allele_of",
+				 "gene":"ZFIN:ZDB-GENE-990415-72"}],
       "crossReferences": [{"id":"ZFIN:ZDB-ALT-990415-72","pages":["allele"]}]
    },
     {
@@ -19,8 +20,8 @@
         "AT50A",
         "tt350"
       ],
-      "description": "test",
-      "gene" : "ZFIN:ZDB-GENE-990415-33",
+	"description": "test",
+	"alleleObjectRelations": [{"associationType":"is_allele_of","gene":"ZFIN:ZDB-GENE-990415-33"}]
       "taxonId": "NCBITaxon:7955",
       "crossReferences": [{"id":"ZFIN:ZDB-ALT-990415-33","pages":["allele"]}]
     },
