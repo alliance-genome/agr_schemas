@@ -489,7 +489,7 @@
    url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
    
 - db_prefix: ArrayExpress
-  name: Array Express
+  name: ArrayExpress
   example_id: ArrayExpress:E-MEXP-31
   gid_pattern: "^ArrayExpress:\\w+$"
   default_url: https://www.ebi.ac.uk/arrayexpress/experiments/[%s]
