@@ -19,8 +19,7 @@
     "dataFreezeDate": {
       "type": "string",
       "format": "date-time",
-      "description": "Date of this release.",
-      "description": "The date of this release's data freeze."
+      "description": "Date of this release's data freeze."
     },
     "releaseNotesURL": {
       "type": "string",
