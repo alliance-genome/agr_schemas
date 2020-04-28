@@ -496,7 +496,7 @@
   pages:
   - name: htp/dataset
     url: https://www.ebi.ac.uk/arrayexpress/experiments/[%s]
-
+    
 - db_prefix: GXA
   name: Expression Atlas
   example_id: GXA:E-MTAB-8344
