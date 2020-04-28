@@ -1,3 +1,4 @@
+{
 "$schema": "http://json-schema.org/draft-04/schema#",
 "title": "Microarray Sasmple Details",
 "description": "An entry with microarray-specific metadata",
@@ -13,4 +14,5 @@
         "type": "integer",
         "description": "for micorarray data, which channel this sample is in, 1 or 2"
     }
+}
 }
