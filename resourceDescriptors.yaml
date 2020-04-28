@@ -487,7 +487,7 @@
     url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
   - name: htp/datasetsample
     url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
-   
+
 - db_prefix: ArrayExpress
   name: ArrayExpress
   example_id: ArrayExpress:E-MEXP-31
