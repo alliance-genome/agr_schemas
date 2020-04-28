@@ -7,11 +7,16 @@
     "additionalProperties": false,
     "properties": {
         "stage": {
-            "$ref": "../../stage.json#"
+            "$ref": "../../expression/whenExpressed.json#"
         },
         "age": {
             "type": "string",
             "description": "free text for the age of the sample"
         }
-    }
+    },
+    "anyOf": [{
+    "required" : ["age"]
+  }, {
+    "required" : ["stage"]
+  }]
 }

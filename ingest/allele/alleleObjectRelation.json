@@ -42,7 +42,7 @@
             },
 	    "construct": {
 		"$ref": "../globalId.json#/properties/globalId",
-		"description": "The optional construct that is inserted in this allele.",
+		"description": "The optional construct that is inserted in this allele."
 	    }	     
 	  }
 	  }
