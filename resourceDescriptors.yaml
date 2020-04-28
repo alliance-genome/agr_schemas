@@ -498,7 +498,7 @@
     url: https://www.ebi.ac.uk/arrayexpress/experiments/[%s]
 
 - db_prefix: GXA
-  name: Expression Atlas
+  name: ExpressionAtlas
   example_id: GXA:E-MTAB-8344
   gid_pattern: "^GXA:\\w+$"
   default_url: https://www.ebi.ac.uk/gxa/experiments/[%s]/Results
