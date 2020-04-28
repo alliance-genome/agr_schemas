@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "MOD Species and Taxon Information",
+  "title": "Data Provider Metadata",
   "id": "dataProvider.json#",
-  "description": "An standard set of information regarding data source and taxon ids for the AGR, The MOD, human, or other source of data. AGR currently supports the entities listed below.",
+  "description": "Meta data that describes the provider of the resource, and how to link back to them.",
   "type": "object",
   "additionalProperties": false,
   "properties": {
