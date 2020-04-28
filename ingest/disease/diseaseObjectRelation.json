@@ -55,11 +55,10 @@
             },
             "objectType": {
               "enum": [
-                "gene"ref": "additionalGeneticComponent.json#"
+                "gene"]
               }
             }
           }
-        }
       ]
     }
   }
