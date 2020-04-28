@@ -3,8 +3,8 @@
     {
       "geneId":"ZFIN:ZDB-GENE-050913-20",
       "whenExpressed": {
-          "stage": {"stageName": "Gastrula:50%-epiboly",
-		    "stageTermId": "ZFS:000021"},
+          "stageName": "Gastrula:50%-epiboly",
+		    "stageTermId": "ZFS:000021",
 	  "stageUberonSlimTerm": {"uberonTerm":"UBERON:0000068"}
       },
       "whereExpressed": {
