@@ -1,6 +1,6 @@
 {
   "title": "Experimental Conditions for Disease Annotation",
-  "description": "An experimental condition can be a combination of text descriptions and ontological assignments used to represent the conditions under which the disease annotation occured.",
+  "description": "An experimental condition",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "required": [ "textCondition","zecoId"],
