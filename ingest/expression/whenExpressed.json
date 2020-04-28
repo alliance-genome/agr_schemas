@@ -15,7 +15,6 @@
     "stageUberonSlimTerm": {
       "$ref": "uberonStageSlimTerm.json#",
       "description" : "UBERON slim term for the temporal (life-stage) aspect of the annotation.",
-      }
     }
-  }
+    }
 }
