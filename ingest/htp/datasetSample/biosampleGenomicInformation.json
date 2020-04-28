@@ -19,8 +19,11 @@
             "description": "free text of biosample genomic information if no Id is available"
         }
     },
-    "oneOf": [
-        {"required": "biosampleId"},
-        {"required": "biosampleText"}
-    ]
+    "anyOf": [
+  { "required":
+    [ "bioSampleText" ] },
+  { "required":
+    [ "biosampleId" ] }
+]
 }
+B
