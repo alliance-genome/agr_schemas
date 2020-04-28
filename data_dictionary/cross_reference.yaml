@@ -3,7 +3,8 @@ schema: "http://json-schema.org/draft-04/schema#"
 id: "CrossReference"
 title: CrossReference
 type: object
-description: > Node that defines attributes that are used to construct links to external data repositories
+description: >
+        Node that defines attributes that are used to construct links to external data repositories
 additionalProperties: false
 validators:
 

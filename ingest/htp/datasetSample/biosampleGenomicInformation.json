@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "biosampleGenomicInformation",
+    "description": "An basic entry for defining a biosample's genomic information",
+    "id": "biosampleGenomicInformation.json#",
+    "type": "object",
+    "properties": {
+        "biosampleId": {
+            "$ref": "../../globalId.json#/properties/globalId",
+            "description": "The id of the biosample genomic information. fish, genotype, allele, strain ID"
+        },
+        "idType": {
+            "type": "string",
+            "enum": ["fish", "genotype","strain","allele"],
+            "description": "indicates what type of id is in biosampleId; fish, genotype, strain or allele"
+        },
+        "bioSampleText": {
+            "type": "string",
+            "description": "free text of biosample genomic information if no Id is available"
+        }
+    },
+    "oneOf": [
+            "biosampleId",
+            "biosampleText"
+    ]
+}

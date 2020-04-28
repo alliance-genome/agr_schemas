@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "stage",
+  "description": "an object that holds the temporal aspect of an expression pattern.",
+  "id": "stage.json#",
+  "type": "object",
+  "required": [
+    "stageName"
+  ],
+    "additionalProperties": false,
+  "properties": {
+    "stageTermId":{
+       "$ref": "../globalId.json#/properties/globalId"
+    },
+    "stageName": {
+       "type": "string",
+       "description": "For annotations where there is no MOD term id"
+    }
+  }
+}
