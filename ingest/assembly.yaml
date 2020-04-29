@@ -8,7 +8,7 @@
 
 - taxonId: NCBITaxon:7227
   assemblies: 
-    - name: R6.27
+    - name: R6
     - displayName: Release6
 
 - taxonId: NCBITaxon:6239
