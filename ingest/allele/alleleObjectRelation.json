@@ -33,7 +33,11 @@
 	  {
           "title": "contains",
           "type": "object",
-          "description": "contains can only be applied when objectType is construct",
+              "description": "contains can only be applied when objectType is construct",
+	      
+          "required": [
+            "construct"
+          ],
           "properties": {
             "associationType": {
               "enum": [

@@ -8,8 +8,7 @@
 	"symbol",
 	"symbolText",
 	"taxonId",
-	"primaryId",
-	"alleleObjectRelations"
+	"primaryId"
     ],
   "properties": {
     "primaryId": {
