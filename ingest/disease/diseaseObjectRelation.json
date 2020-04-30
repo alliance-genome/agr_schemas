@@ -55,10 +55,10 @@
             },
             "objectType": {
               "enum": [
-                "gene" ]
+                "gene"]
               }
             }
-        }
+          }
       ]
     }
   }
