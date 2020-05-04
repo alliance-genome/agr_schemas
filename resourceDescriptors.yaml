@@ -77,6 +77,8 @@
       url: https://rgd.mcw.edu/
     - name: allele
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
+    - name: allele/references
+      url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?view=5&id=[%s]
     - name: gene/references
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?view=5&id=[%s]
     - name: disease/rat
@@ -154,6 +156,8 @@
       url: https://flybase.org/reports/[%s].html#pubs
     - name: allele
       url: https://flybase.org/reports/[%s].html
+    - name: allele/references
+      url: https://flybase.org/reports/[%s].html#pubs
     - name: construct
       url: https://flybase.org/reports/[%s].html
     - name: strain
@@ -199,8 +203,12 @@
       url: https://www.wormbase.org/db/get?name=[%s];class=Paper
     - name: transgene
       url: https://www.wormbase.org/db/get?name=[%s];class=Transgene
+    - name: transgene/references
+      url: https://www.wormbase.org/db/get?name=[%s];class=Transgene;widget=references
     - name: allele
       url: https://www.wormbase.org/db/get?name=[%s];class=Variation
+    - name: allele/references
+      url: https://www.wormbase.org/db/get?name=[%s];class=Variation;widget=references
     - name: homepage
       url: https://www.wormbase.org/
     - name: disease
@@ -254,6 +262,8 @@
     url: https://www.yeastgenome.org/locus/[%s]/disease
   - name: gene/MODinteractions
     url: https://www.yeastgenome.org/locus/[%s]/interaction#network
+  - name: HTP_dataset
+    url: https://www.yeastgenome.org/dataset/[%s]
 
 #
 # GO
@@ -466,3 +476,32 @@
   pages:
   - name: gene/interactions
     url: https://thebiogrid.org/interaction/[%s]
+    
+- db_prefix: GEO
+  name: Gene Expression Omnibus
+  example_id: GEO:GSE59105
+  gid_pattern: "^GEO:GS[EM]\\d+$"
+  default_url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=[%s]
+  pages:
+  - name: htp/dataset
+    url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
+  - name: htp/datasetsample
+    url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
+
+- db_prefix: ArrayExpress
+  name: ArrayExpress
+  example_id: ArrayExpress:E-MEXP-31
+  gid_pattern: "^ArrayExpress:\\w+$"
+  default_url: https://www.ebi.ac.uk/arrayexpress/experiments/[%s]
+  pages:
+  - name: htp/dataset
+    url: https://www.ebi.ac.uk/arrayexpress/experiments/[%s]
+
+- db_prefix: GXA
+  name: ExpressionAtlas
+  example_id: GXA:E-MTAB-8344
+  gid_pattern: "^GXA:\\w+$"
+  default_url: https://www.ebi.ac.uk/gxa/experiments/[%s]/Results
+  pages:
+  - name: htp/dataset
+    url: https://www.ebi.ac.uk/gxa/experiments/[%s]/Results

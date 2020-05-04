@@ -1,0 +1,56 @@
+  
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "alleleObjectRelation",
+  "description": "An entry that describes the relationship between an allele object a gene or construct object",
+  "id": "alleleObjectRelation.json#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "objectRelation": {
+      "type": "object",
+      "description": "Constrains the allele object to require genes when the 'is allele of' relation is used.",
+      "oneOf": [
+        {
+          "title": "alleleOf",
+          "type": "object",
+          "description": "allele_of can only be applied when objectType is gene",
+          "required": [
+            "gene"
+          ],
+          "properties": {
+            "associationType": {
+              "enum": [
+                "allele_of"
+              ]
+            },
+	     "gene" : {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "The single affected gene of the allele."
+	     }
+	  }
+	},
+	  {
+          "title": "contains",
+          "type": "object",
+              "description": "contains can only be applied when objectType is construct",
+	      
+          "required": [
+            "construct"
+          ],
+          "properties": {
+            "associationType": {
+              "enum": [
+		"contains"
+              ]
+            },
+	    "construct": {
+		"$ref": "../globalId.json#/properties/globalId",
+		"description": "The optional construct that is inserted in this allele."
+	    }	     
+	  }
+	  }
+      ]
+    }
+  }
+}

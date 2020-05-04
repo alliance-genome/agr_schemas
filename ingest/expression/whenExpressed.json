@@ -8,18 +8,18 @@
     "stageName"
   ],
   "additionalProperties": false,
-  "properties": {
-    "stageTermId":{
-       "$ref": "../globalId.json#/properties/globalId"
-    },
-    "stageName": {
-       "type": "string",
-       "description": "For annotations where there is no MOD term id"
-    },
-    "stageUberonSlimTerm": {
-      "$ref": "uberonStageSlimTerm.json#",
-      "description" : "UBERON slim term for the temporal (life-stage) aspect of the annotation.",
-      "dependencies": {"required":["stageName"]}
+    "properties": {
+	"stageTermId":{
+	    "$ref": "globalId.json#/properties/globalId",
+	    "description": "optional stage ontology term id"
+	},
+	"stageName": {
+            "type": "string",
+            "description": "For annotations where there is no MOD ontology term id for stage"
+	},
+        "stageUberonSlimTerm": {
+            "$ref": "uberonStageSlimTerm.json#",
+            "description" : "UBERON slim term for the temporal (life-stage) aspect of the annotation.  This field helps rollup annotations to higher levels in the expression ribbon on the gene page at Alliance."
+        }
     }
-  }
 }

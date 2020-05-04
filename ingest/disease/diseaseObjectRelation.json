@@ -40,7 +40,7 @@
           }
         },
         {
-          "title": "Gene/marker/transgene",
+          "title": "Gene",
           "type": "object",
           "description": "is_model_of can only be applied when objectType is genotype or organism level annotation, other conditions can use one of the following relationship types to describe the association.  Allele is broken out so that inferredGeneAssociation can be recorded.",
           "required": [
@@ -55,54 +55,44 @@
             },
             "objectType": {
               "enum": [
-                "gene",
-                "marker",
-                "transgene"
-              ]
-            },
-            "additionalGeneticComponents": {
-              "type": "array",
-              "description": "list of additionalGeneticComponent objects that together with the dbObjectId, represent a 'genotype.'  Only to be used for SGD, FlyBase and WormBase",
-              "items": {
-                "$ref": "additionalGeneticComponent.json#"
+                "gene"]
+              }
+            }
+          },
+          {
+            "title": "Allele",
+            "type": "object",
+            "description": "is_model_of can only be applied when objectType is genotype or organism",
+            "required": [
+              "associationType", "objectType"
+            ],
+            "properties": {
+              "associationType": {
+                "enum": [
+                  "is_implicated_in"
+                ]
+              },
+              "objectType": {
+                "enum": [
+                  "allele"
+                ]
+              },
+              "inferredGeneAssociation": {
+                "type": "array",
+                "description": "list of inferred gene/marker associations that can be made",
+                "items": {
+                  "$ref": "../globalId.json#/properties/globalId"
+                }
+              },
+              "additionalGeneticComponents": {
+                "type": "array",
+                "description": "list of additionalGeneticComponent objects that together with the dbObjectId, represent a 'genotype.'  Only to be used for SGD, FlyBase and WormBase",
+                "items": {
+                  "$ref": "additionalGeneticComponent.json#"
+                }
               }
             }
           }
-        },
-        {
-          "title": "Allele",
-          "type": "object",
-          "description": "is_model_of can only be applied when objectType is genotype or organism",
-          "required": [
-            "associationType", "objectType"
-          ],
-          "properties": {
-            "associationType": {
-              "enum": [
-                "is_implicated_in"
-              ]
-            },
-            "objectType": {
-              "enum": [
-                "allele"
-              ]
-            },
-            "inferredGeneAssociation": {
-              "type": "array",
-              "description": "list of inferred gene/marker associations that can be made",
-              "items": {
-                "$ref": "../globalId.json#/properties/globalId"
-              }
-            },
-            "additionalGeneticComponents": {
-              "type": "array",
-              "description": "list of additionalGeneticComponent objects that together with the dbObjectId, represent a 'genotype.'  Only to be used for SGD, FlyBase and WormBase",
-              "items": {
-                "$ref": "additionalGeneticComponent.json#"
-              }
-            }
-          }
-        }
       ]
     }
   }

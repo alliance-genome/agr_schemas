@@ -5,17 +5,11 @@
   "id": "allele.json#",
   "type": "object",
     "required": [
-    "symbol",
-    "symbolText",
-    "taxonId",
-    "primaryId"
-  ],
-"anyOf": [
-  { "required":
-    [ "gene" ] },
-  { "required":
-    [ "constructInsertionType" ] }
-],
+	"symbol",
+	"symbolText",
+	"taxonId",
+	"primaryId"
+    ],
   "properties": {
     "primaryId": {
       "$ref": "../globalId.json#/properties/globalId",
@@ -32,10 +26,6 @@
     "taxonId": {
       "$ref": "../globalId.json#/properties/globalId",
       "description": "The taxonId for the species of the genotype entity."
-    },
-    "constructInsertionType": {
-      "$ref":"constructInsertionTypeEnumeration.json#/properties/constructInsertionType",
-      "description": "controlled vocabulary/enumeration of possible transgenic insertion types."
     },
     "synonyms": {
       "type": "array",
@@ -55,17 +45,14 @@
       },
       "uniqueItems": true
     },
-    "gene": {
-      "$ref": "../globalId.json#/properties/globalId",
-      "description": "The single affected gene of the allele."
-    },
-    "construct": {
-      "$ref": "../globalId.json#/properties/globalId",
-      "description": "The optional construct that is inserted in this allele.",
-      "dependencies": {"required":["constructInsertionType"]}
+    "alleleObjectRelations": {
+	  "type": "array",
+	  "items": {
+              "$ref": "alleleObjectRelation.json",
+	      "description": "An object that describes how this allele object is related to either a gene or a construct or both."
+	  }
     },
     "crossReferences": {
-      "description": "Collection holding a limited set (for now) of database cross references for each gene.  That set is defined in geneCrossReferences.json dataSoruce enumeration.  NCBI GENE means just the NCBI Gene reference.  UniProtKB is swissprot and trembl.  Ensembl is just the GENE id for now (not transcript nor protein).  Vega was eliminated as it did not apply to all organisms in the repository.",
       "type": "array",
       "items": {
         "$ref": "../crossReference.json#"

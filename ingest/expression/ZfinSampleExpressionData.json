@@ -4,17 +4,19 @@
       "geneId":"ZFIN:ZDB-GENE-050913-20",
       "whenExpressed": {
           "stageName": "Gastrula:50%-epiboly",
-	  "stageTermId": "ZFS:000021",
+		    "stageTermId": "ZFS:000021",
 	  "stageUberonSlimTerm": {"uberonTerm":"UBERON:0000068"}
       },
       "whereExpressed": {
-      	"anatomicalStructureTermId":"ZFA:0001120","anatomicalStructureUberonSlimTermIds": [{"uberonTerm":"UBERON:0003104"}],"whereExpressedStatement":"neuroectoderm"
+      	  "anatomicalStructureTermId":"ZFA:0001120",
+	  "anatomicalStructureUberonSlimTermIds": [{"uberonTerm":"UBERON:0003104"}],
+	  "whereExpressedStatement":"neuroectoderm"
       },
       "assay": "MMO:0000658",
       "dateAssigned": "2017-06-22T13:27:43-04:00",
       "evidence": {"publicationId" : "PMID:22265871",
-        "crossReference" : {"id":"ZFIN:ZDB-PUB-120125-37","pages":["reference"]}
-      }
+		   "crossReference" : {"id":"ZFIN:ZDB-PUB-120125-37","pages":["reference"]}
+		  }
     }
   ],
   "metaData": {

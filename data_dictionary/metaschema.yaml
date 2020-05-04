@@ -15,43 +15,42 @@ required:
   - relations
 
 definitions:
+    relations:
+        type: object
+        additionalProperties: false
+        required:
+            - relatedNode
+            - backref
+            - label
+            - multiplicity
+        properties:
+            relatedNode:
+                type: string
+            backref:
+                type: string
+            label:
+                type: string
+            multiplicity:
+                type: string
+            enum:
+                - one_to_one
+                - one_to_many
+                - many_to_one
+                - many_to_many
+        required:
+            type: boolean
 
-  relations:
-    type: object
-    additionalProperties: false
+    uniqueKeys:
+        type: object
+    oneOf:
+        type: array
+
     required:
-      - relatedNode
-      - backref
-      - label
-      - multiplicity
-    properties:
-      relatedNode:
-        type: string
-      backref:
-        type: string
-      label:
-        type: string
-      multiplicity:
-        type: string
-        enum:
-          - one_to_one
-          - one_to_many
-          - many_to_one
-          - many_to_many
-      required:
-        type: boolean
+        oneOf:
+            type: array
 
-   uniqueKeys:
-     type: object
-     oneOf: 
-       type: array
-
-   required:
-     oneOf:
-       type: array
-
-   secondaryLabels:
-     type: array
+    secondaryLabels:
+        type: array
    
-   notNull:
-     type: array
+    notNull:
+        type: array

@@ -1,5 +1,4 @@
 # Alliance Assembly Controlled Vocabulary.
-
 - taxonId: NCBITaxon:7955
   assemblies:  
     - name: GRCz11
@@ -9,7 +8,7 @@
 
 - taxonId: NCBITaxon:7227
   assemblies: 
-    - name: R6.27
+    - name: R6
     - displayName: Release6
 
 - taxonId: NCBITaxon:6239

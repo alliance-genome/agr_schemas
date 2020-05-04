@@ -1,0 +1,61 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Dataset Annotation Metadata",
+    "description": "An entry for a published dataset object annotation; ",
+    "id": "datasetAnnotation.json#",
+    "type": "object",
+    "required": [
+        "publication",
+        "dateAssigned",
+        "title",
+        "datasetId"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "datasetId": {
+            "$ref": "../htpId.json#",
+            "description": "An id associated with a dataset object; these will external or MOD IDs."
+        },
+        "publication": {
+            "type": "array",
+            "items": {
+                "$ref": "../../../publicationRef.json#"
+            },
+	    "uniqueItems": true,
+            "description": "list of publications associated with this dataset"
+        },
+        "title": {
+            "type": "string",
+            "description": "free text title of the dataset"
+        },
+        "summary": {
+            "type": "string",
+            "description": "free text summary or description of the dataset"
+        },
+        "numChannels": {
+            "type": "integer",
+            "description": "for microarrays, need number of channels; need to make req'd for microarray assays; "
+        },
+	 "subSeries": {
+            "type": "array",
+            "items": {
+                "$ref": "../../../globalId.json#/properties/globalId"
+            },
+	    "uniqueItems": true,
+            "description": "If the dataset is a SuperSeries, this is a list of dataset ids that are associated with this dataset"
+        },
+	"categoryTags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+		"uniqueItems":true,
+            "description": "list of controlled vocabulary text to describe the experiment"
+        },
+        "dateAssigned": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date of curation/assigned by the MOD."
+        }
+    }
+}
