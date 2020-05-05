@@ -10,7 +10,7 @@
   "additionalProperties": false,
     "properties": {
 	"stageTermId":{
-	    "$ref": "globalId.json#/properties/globalId",
+	    "$ref": "../globalId.json#/properties/globalId",
 	    "description": "optional stage ontology term id"
 	},
 	"stageName": {
