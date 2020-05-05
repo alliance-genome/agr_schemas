@@ -295,6 +295,8 @@
     url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
   - name: gene/MODinteractions
     url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=1&identifiers=HGNC:[%s]
+  - name: disease/human
+    url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
 
 - db_prefix: NCBI_Gene
   name: NCBI Gene
@@ -392,9 +394,9 @@
     - name: homepage
       url: https://www.omim.org/
     - name: gene
-      url: https://www.omim.org/entry[%s]
+      url: https://www.omim.org/entry/[%s]
     - name: gene/interactions
-      url: https://www.omim.org/entry[%s]
+      url: https://www.omim.org/entry/[%s]
 
 - db_prefix: DIP
   name: Database of Interacting Proteins
