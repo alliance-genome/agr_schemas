@@ -19,7 +19,7 @@
         "publication": {
             "type": "array",
             "items": {
-                "$ref": "../../../publicationRef.json#"
+                "$ref": "../../publicationRef.json#"
             },
 	    "uniqueItems": true,
             "description": "list of publications associated with this dataset"
@@ -39,7 +39,7 @@
 	 "subSeries": {
             "type": "array",
             "items": {
-                "$ref": "../../../globalId.json#/properties/globalId"
+                "$ref": "../../globalId.json#/properties/globalId"
             },
 	    "uniqueItems": true,
             "description": "If the dataset is a SuperSeries, this is a list of dataset ids that are associated with this dataset"
