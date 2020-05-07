@@ -1,36 +1,42 @@
 {
-"data" : [
-      {
-        "objectId": "GEO:GSE144901",
-        "publication": 
-            [
-            {"publicationId" : "PMID:22265871", 
-             "crossReference" : {"id":"ZFIN:ZDB-PUB-120125-37","pages":["reference"]}
-             },
-            {"publicationId":"PMID:32150608"}
-            ],
-        "title": "CLL intraclonal fractions exhibit established and recently-acquired patterns of DNA methylation",
-        "summary": "This SuperSeries is composed of the SubSeries listed below.",
-        "subSeries": ["GEO:GSE144894","GEO:GSE144896"],
-        "dateAssigned": "2020-02-06T00:00:00-0:00",
-        "dataProvider": [
-              { "crossReference": { "id":"ZFIN",
-                           "type": "loaded"}
-              }, 
-              {"crossReference": {"id":"GEO",
-                                  "type": "curated"}
-              }   
-      ]
-      }
-    ],
-    "metaData": {
-    "dataProvider":  {
-        "crossReference": {
-                "id":"ZFIN",
-                "pages": ["homepage"]
+  "data": [
+    {
+      "datasetId": {
+        "primaryId": "GEO:GSE144901"
+      },
+      "publication": [
+        {
+          "publicationId": "PMID:22265871",
+          "crossReference": {
+            "id": "ZFIN:ZDB-PUB-120125-37",
+            "pages": [
+              "reference"
+            ]
+          }
         },
-        "type": "curated"
-},
+        {
+          "publicationId": "PMID:32150608"
+        }
+      ],
+      "title": "CLL intraclonal fractions exhibit established and recently-acquired patterns of DNA methylation",
+      "summary": "This SuperSeries is composed of the SubSeries listed below.",
+      "subSeries": [
+        "GEO:GSE144894",
+        "GEO:GSE144896"
+      ],
+      "dateAssigned": "2020-05-06T20:05:44-00:00"
+    }
+  ],
+  "metaData": {
+    "dataProvider": {
+      "crossReference": {
+        "id": "ZFIN",
+        "pages": [
+          "homepage"
+        ]
+      },
+      "type": "curated"
+    },
     "dateProduced": "2020-06-22T13:27:43-04:00",
     "release": "GRCz11"
   }

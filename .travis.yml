@@ -19,6 +19,9 @@ script:
   - "python bin/agr_validate.py -s ingest/orthology/orthologyMetaData.json -d ingest/orthology/orthologyTestData.json"
   - "python bin/agr_validate.py -s ingest/allele/variantMetaData.json -d ingest/allele/zfinSample.variant.json"
   - "python bin/agr_validate.py -s ingest/construct/constructMetaData.json -d ingest/construct/zfinSample.construct.json"
+  - "python bin/agr_validate.py -s ingest/htp/datasetSample/datasetSampleMetaDataDefinition.json -d ingest/htp/datasetSample/exampleSGDdatasample.json"
+  - "python bin/agr_validate.py -s ingest/htp/dataset/datasetMetaDataDefinition.json -d ingest/htp/dataset/exampleDataset.json"
+  - "python bin/agr_validate.py -s ingest/htp/dataset/datasetMetaDataDefinition.json -d ingest/htp/dataset/exampleSuperseriesDataset.json"
   - "python bin/validate_yaml.py"
 
 # whitelist
