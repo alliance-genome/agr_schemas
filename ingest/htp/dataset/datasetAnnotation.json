@@ -34,6 +34,7 @@
         },
         "numChannels": {
             "type": "integer",
+		"enum": [1,2],
             "description": "for microarrays, need number of channels; need to make req'd for microarray assays; "
         },
 	 "subSeries": {
