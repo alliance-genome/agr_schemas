@@ -1,6 +1,6 @@
 {
 "$schema": "http://json-schema.org/draft-04/schema#",
-"title": "Microarray Sasmple Details",
+"title": "Microarray Sample Details",
 "description": "An entry with microarray-specific metadata",
 "id": "microarraySampleDetails.json#",
 "type": "object",
@@ -12,6 +12,7 @@
     },
     "channelNum": {
         "type": "integer",
+        "enum": [1,2],
         "description": "for micorarray data, which channel this sample is in, 1 or 2"
     }
 }

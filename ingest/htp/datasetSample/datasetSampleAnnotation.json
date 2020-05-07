@@ -70,7 +70,7 @@
         "datasetId": {
             "type": "array",
             "items": {
-                    "$ref": "../../../globalId.json#/properties/globalId"
+                    "$ref": "../../globalId.json#/properties/globalId"
             },
             "description": "list of primary dataset id that this sample is associated with, should be in datasetAnnotation.json"
         },
