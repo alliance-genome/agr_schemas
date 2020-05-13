@@ -150,8 +150,6 @@
       url: https://flybase.org/reports/[%s].html
     - name: gene/expression
       url: https://flybase.org/reports/[%s].html#expression
-    - name: gene/expression_images
-      url: https://flybase.org/reports/[%s].html#expression
     - name: gene/references
       url: https://flybase.org/reports/[%s].html#pubs
     - name: allele
@@ -171,6 +169,8 @@
     - name: gene/MODinteractions
       url: https://flybase.org/reports/[%s]#interactions
     - name: reference
+      url: https://flybase.org/reports/[%s].html
+    - name: HTP_dataset
       url: https://flybase.org/reports/[%s].html
 
 #
