@@ -20,6 +20,8 @@
         },
         "sampleType": {
             "$ref": "../../globalId.json#/properties/globalId",
+            "enum": ["OBI:0000895","OBI:0000869","OBI:0000880","OBI:0000862","OBI:0000423","OBI:0000876","OBI:0002573",
+"OBI:0002627"]
             "description": "Ontology ID of the biosample type. EX: total mRNA, OBI:XXXXXXX"
         },
         "sampleAge": {
