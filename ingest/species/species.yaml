@@ -1,0 +1,54 @@
+# Alliance Species Controlled Vocabulary.
+- taxonId: NCBITaxon:7955
+  shortName: Dre
+  fullName: Danio rerio
+  commonNames:
+    - zebrafish
+  primaryDataProvider: ZFIN
+   dataProviderFullName: Zebrafish Information Network
+
+- taxonId: NCBITaxon:7227
+  shortName: Dme
+  fullName: Drosophila melanogaster
+  commonNames:
+    - fly
+    - fruit fly
+  primaryDataProvider: 
+   dataProviderFullName: FlyBase
+   dataProviderShortName: FB
+   
+- taxonId: NCBITaxon:6239
+  shortName: Cel
+  fullName: Caenorhabditis elegans
+  commonNames:
+    - worm
+  primaryDataProvider: 
+   dataProviderFullName: WormBase
+   dataProviderShortName: WB
+   
+- taxonId: NCBITaxon:10090
+  shortName: Rno
+  fullName: Rattus norvegicus
+  commonNames:
+    - rat
+  primaryDataProvider: 
+   dataProviderFullName: Rat Genome Database
+   dataProviderShortName: RGD
+   
+- taxonId: NCBITaxon:10116
+  shortName: Mmu 
+  fullName: Mus musculus
+  commonNames:
+    - mouse
+  primaryDataProvider: 
+   dataProviderFullName: Mouse Genome Informatics
+   dataProviderShortName: MGI
+
+- taxonId: NCBITaxon:559292
+  shortName: Sce
+  fullName: Saccharomyces cerevisiae
+  commonNames:
+    - yeast
+  primaryDataProvider: 
+   dataProviderFullName: Saccharomyces Genome Database
+   dataProviderShortName: SGD
