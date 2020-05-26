@@ -262,8 +262,6 @@
     url: https://www.yeastgenome.org/locus/[%s]/disease
   - name: gene/MODinteractions
     url: https://www.yeastgenome.org/locus/[%s]/interaction#network
-  - name: HTP_dataset
-    url: https://www.yeastgenome.org/dataset/[%s]
 
 #
 # GO
@@ -489,6 +487,8 @@
     url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
   - name: htp/datasetsample
     url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
+  - name: HTP/dataset/sgd
+    url: https://www.yeastgenome.org/dataset/[%s]
 
 - db_prefix: ArrayExpress
   name: ArrayExpress
