@@ -498,6 +498,8 @@
   pages:
   - name: htp/dataset
     url: https://www.ebi.ac.uk/arrayexpress/experiments/[%s]
+  - name: HTP/dataset/sgd
+    url: https://www.yeastgenome.org/dataset/[%s]
 
 - db_prefix: GXA
   name: ExpressionAtlas
