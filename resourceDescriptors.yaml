@@ -37,6 +37,8 @@
       url: http://www.informatics.jax.org/interaction/explorer?markerIDs=MGI:[%s]
     - name: reference
       url: http://www.informatics.jax.org/reference/MGI:[%s]
+    - name: htp/dataset
+      url: http://www.informatics.jax.org/gxd/htexp_index/summary?arrayExpressID=[%s]
 
 #
 # MGI - old style IDs
