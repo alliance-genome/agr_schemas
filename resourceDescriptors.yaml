@@ -373,6 +373,8 @@
       url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=All&x=1&acc_id=[%s]#annot
     - name: disease/zfin
       url: https://zfin.org/[%s]
+    - name: disease/wb
+      url: https://www.wormbase.org/resources/disease/[%s]
 
 - db_prefix: ZECO
   name: Zebrafish Environment Condition Ontology
