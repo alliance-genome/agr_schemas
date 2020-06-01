@@ -342,7 +342,7 @@
 - db_prefix: DOI
   name: DOI
   example_gid: DOI:10.3389/fcimb.2016.00052
-  gid_pattern: "^DOI:\\w+$"
+  gid_pattern: "^DOI:\\S+$"
   default_url: doi.org/[%s]
 
 - db_prefix: DRSC
