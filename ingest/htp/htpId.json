@@ -22,7 +22,7 @@
         },
 	"crossReference": {
       "description": "an optional cross reference to the MOD sample or dataset page.",
-      "$ref" : "crossReference.json#"
+      "$ref" : "../crossReference.json#"
     }
     }
 }

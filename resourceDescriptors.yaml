@@ -37,6 +37,8 @@
       url: http://www.informatics.jax.org/interaction/explorer?markerIDs=MGI:[%s]
     - name: reference
       url: http://www.informatics.jax.org/reference/MGI:[%s]
+    - name: htp/dataset
+      url: http://www.informatics.jax.org/gxd/htexp_index/summary?arrayExpressID=[%s]
 
 #
 # MGI - old style IDs
@@ -170,7 +172,7 @@
       url: https://flybase.org/reports/[%s]#interactions
     - name: reference
       url: https://flybase.org/reports/[%s].html
-    - name: HTP_dataset
+    - name: htp/dataset
       url: https://flybase.org/reports/[%s].html
 
 #
@@ -262,6 +264,8 @@
     url: https://www.yeastgenome.org/locus/[%s]/disease
   - name: gene/MODinteractions
     url: https://www.yeastgenome.org/locus/[%s]/interaction#network
+  - name: htp/dataset
+    url: https://www.yeastgenome.org/dataset/[%s]
 
 #
 # GO
@@ -512,8 +516,6 @@
     url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
   - name: htp/datasetsample
     url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
-  - name: HTP/dataset/sgd
-    url: https://www.yeastgenome.org/dataset/[%s]
 
 - db_prefix: ArrayExpress
   name: ArrayExpress
