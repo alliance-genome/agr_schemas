@@ -370,11 +370,11 @@
   default_url: http://www.disease-ontology.org/?id=[%s]
   pages:
     - name: disease/rat
-      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Rat&x=1&acc_id=[%s]#annot
+      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Rat&x=1&acc_id=DOID:[%s]#annot
     - name: disease/human
-      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
+      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=DOID:[%s]#annot
     - name: disease/all
-      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=All&x=1&acc_id=[%s]#annot
+      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=All&x=1&acc_id=DOID:[%s]#annot
     - name: disease/zfin
       url: https://zfin.org/[%s]
     - name: disease/wb
