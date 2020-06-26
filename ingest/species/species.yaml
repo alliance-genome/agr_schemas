@@ -6,6 +6,7 @@
     - zebrafish
   primaryDataProvider: ZFIN
    dataProviderFullName: Zebrafish Information Network
+  phylogenicOrder: 40
 
 - taxonId: NCBITaxon:7227
   shortName: Dme
@@ -16,6 +17,8 @@
   primaryDataProvider: 
    dataProviderFullName: FlyBase
    dataProviderShortName: FB
+  phylogenicOrder: 50
+
    
 - taxonId: NCBITaxon:6239
   shortName: Cel
@@ -24,8 +27,9 @@
     - worm
   primaryDataProvider: 
    dataProviderFullName: WormBase
-   dataProviderShortName: WB
-   
+   dataProviderShortName: WB 
+  phylogenicOrder: 60
+
 - taxonId: NCBITaxon:10090
   shortName: Rno
   fullName: Rattus norvegicus
@@ -34,6 +38,7 @@
   primaryDataProvider: 
    dataProviderFullName: Rat Genome Database
    dataProviderShortName: RGD
+  phylogenicOrder: 20
    
 - taxonId: NCBITaxon:10116
   shortName: Mmu 
@@ -43,6 +48,7 @@
   primaryDataProvider: 
    dataProviderFullName: Mouse Genome Informatics
    dataProviderShortName: MGI
+  phylogenicOrder: 30
 
 - taxonId: NCBITaxon:559292
   shortName: Sce
@@ -52,3 +58,15 @@
   primaryDataProvider: 
    dataProviderFullName: Saccharomyces Genome Database
    dataProviderShortName: SGD
+  phylogenicOrder: 70
+
+- taxonId: NCBITaxon:559292
+  shortName: Hsa
+  fullName: Homo sapiens
+  commonNames:
+    - human
+  primaryDataProvider:
+   dataProviderFullName: Rat Genome Database
+   dataProviderShortName: RGD
+  phylogenicOrder: 10
+
