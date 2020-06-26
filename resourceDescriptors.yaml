@@ -37,6 +37,8 @@
       url: http://www.informatics.jax.org/interaction/explorer?markerIDs=MGI:[%s]
     - name: reference
       url: http://www.informatics.jax.org/reference/MGI:[%s]
+    - name: htp/dataset
+      url: http://www.informatics.jax.org/gxd/htexp_index/summary?arrayExpressID=[%s]
 
 #
 # MGI - old style IDs
@@ -170,7 +172,7 @@
       url: https://flybase.org/reports/[%s]#interactions
     - name: reference
       url: https://flybase.org/reports/[%s].html
-    - name: HTP_dataset
+    - name: htp/dataset
       url: https://flybase.org/reports/[%s].html
 
 #
@@ -262,7 +264,7 @@
     url: https://www.yeastgenome.org/locus/[%s]/disease
   - name: gene/MODinteractions
     url: https://www.yeastgenome.org/locus/[%s]/interaction#network
-  - name: HTP_dataset
+  - name: htp/dataset
     url: https://www.yeastgenome.org/dataset/[%s]
 
 #
@@ -340,7 +342,7 @@
 - db_prefix: DOI
   name: DOI
   example_gid: DOI:10.3389/fcimb.2016.00052
-  gid_pattern: "^DOI:\\w+$"
+  gid_pattern: "^DOI:\\S+$"
   default_url: doi.org/[%s]
 
 - db_prefix: DRSC
@@ -368,13 +370,15 @@
   default_url: http://www.disease-ontology.org/?id=[%s]
   pages:
     - name: disease/rat
-      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Rat&x=1&acc_id=[%s]#annot
+      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Rat&x=1&acc_id=DOID:[%s]#annot
     - name: disease/human
-      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
+      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=DOID:[%s]#annot
     - name: disease/all
-      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=All&x=1&acc_id=[%s]#annot
+      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=All&x=1&acc_id=DOID:[%s]#annot
     - name: disease/zfin
       url: https://zfin.org/[%s]
+    - name: disease/wb
+      url: https://www.wormbase.org/resources/disease/[%s]
 
 - db_prefix: ZECO
   name: Zebrafish Environment Condition Ontology
@@ -412,6 +416,14 @@
       url: https://www.omim.org/entry/[%s]
     - name: gene/interactions
       url: https://www.omim.org/entry/[%s]
+    - name: disease
+      url: https://www.omim.org/entry/[%s]
+
+- db_prefix: Orphanet
+  name: Orphanet
+  example_id: ORPHA:600483
+  gid_pattern: "^ORPHA:\\d+$"
+  default_url:  https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
 
 - db_prefix: DIP
   name: Database of Interacting Proteins
