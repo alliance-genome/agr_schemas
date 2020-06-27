@@ -4,8 +4,9 @@
   fullName: Danio rerio
   commonNames:
     - zebrafish
-  primaryDataProvider: ZFIN
+  primaryDataProvider:
    dataProviderFullName: Zebrafish Information Network
+   dataProviderShortName: ZFIN
   phylogenicOrder: 40
 
 - taxonId: NCBITaxon:7227
