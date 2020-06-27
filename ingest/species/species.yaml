@@ -61,7 +61,7 @@
    dataProviderShortName: SGD
   phylogenicOrder: 70
 
-- taxonId: NCBITaxon:559292
+- taxonId: NCBITaxon:9606
   shortName: Hsa
   fullName: Homo sapiens
   commonNames:
