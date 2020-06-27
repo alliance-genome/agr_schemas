@@ -31,7 +31,7 @@
    dataProviderShortName: WB 
   phylogenicOrder: 60
 
-- taxonId: NCBITaxon:10090
+- taxonId: NCBITaxon:10116
   shortName: Rno
   fullName: Rattus norvegicus
   commonNames:
@@ -41,7 +41,7 @@
    dataProviderShortName: RGD
   phylogenicOrder: 20
    
-- taxonId: NCBITaxon:10116
+- taxonId: NCBITaxon:10090
   shortName: Mmu 
   fullName: Mus musculus
   commonNames:
