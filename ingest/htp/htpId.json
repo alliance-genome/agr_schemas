@@ -15,7 +15,7 @@
         "alternateIds": {
             "description": "list of optional cross reference ids to the primary dataset id.",
             "type": "array",
-            "item": {
+            "items": {
                 "$ref": "../globalId.json#/properties/globalId"
             },
 	    "uniqueItems": true
@@ -23,7 +23,7 @@
 	"crossReferences": {
       "description": "an optional cross references to the MOD sample or dataset page.",
 	"type":"array",
-		"item":{      
+		"items":{      
 			"$ref" : "../crossReference.json#"
 		},
 		"uniqueItems": true
