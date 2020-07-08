@@ -19,6 +19,10 @@
                 "$ref": "../globalId.json#/properties/globalId"
             },
 	    "uniqueItems": true
-        }
+        },
+	"crossReference": {
+      "description": "an optional cross reference to the MOD sample or dataset page.",
+      "$ref" : "../crossReference.json#"
+    }
     }
 }
