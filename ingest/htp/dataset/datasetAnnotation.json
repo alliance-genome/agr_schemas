@@ -15,7 +15,7 @@
             "$ref": "../htpId.json#",
             "description": "An id associated with a dataset object; these will external or MOD IDs."
         },
-        "publication": {
+        "publications": {
             "type": "array",
             "items": {
                 "$ref": "../../publicationRef.json#"
