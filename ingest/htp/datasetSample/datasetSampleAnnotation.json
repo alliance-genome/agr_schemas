@@ -28,7 +28,7 @@
             "$ref": "biosampleAge.json#",
             "description": "a collection of terms that when used together represent the age and stage of the sample"
         },
-        "sampleLocation": {
+        "sampleLocations": {
             "type":"array",
             "items": {
                 "$ref": "../../expression/whereExpressed.json#",
@@ -58,7 +58,7 @@
             "enum": ["single","paired"],
             "description": "single or paired end sequencing; might be better in experiment info"
         },
-        "assemblyVersion": {
+        "assemblyVersions": {
             "type":"array",
             "items": {
                 "type": "string"
@@ -69,7 +69,7 @@
             "type": "string",
             "description": "curated notes about the sample"
         },
-        "datasetId": {
+        "datasetIds": {
             "type": "array",
             "items": {
                     "$ref": "../../globalId.json#/properties/globalId"
