@@ -4,7 +4,7 @@
       "datasetId": {
         "primaryId": "GEO:GSE144901"
       },
-      "publication": [
+      "publications": [
         {
           "publicationId": "PMID:22265871",
           "crossReference": {
