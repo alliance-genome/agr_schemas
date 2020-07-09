@@ -36,7 +36,7 @@
             }
         },
         "genomicInformation": {
-            "$ref": "bioSampleGenomicInformation.json#",
+            "$ref": "../bioSampleGenomicInformation.json#",
             "description": "A collection of information that represents the strain or genomic background of the sample, either an id or free text"
         },
         "taxonId": {
