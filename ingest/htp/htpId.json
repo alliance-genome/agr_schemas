@@ -21,7 +21,7 @@
 	    "uniqueItems": true
         },
 	"crossReferences": {
-      "description": "an optional cross references to the MOD sample or dataset page.",
+      "description": "optional cross references to the MOD sample or dataset page.",
 	"type":"array",
 		"items":{      
 			"$ref" : "../crossReference.json#"
