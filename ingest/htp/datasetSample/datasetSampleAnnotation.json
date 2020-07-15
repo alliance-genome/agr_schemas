@@ -86,7 +86,7 @@
             "description": "Date this entity was assigned/curated by a MOD."
         }
     },
-    "anyOf": [{"required": ["sampleId","datasetIds","sampleType","assayType"]},
-              {"required": ["sampleTitle","datasetIds","sampleType","assayType"]}
+    "anyOf": [{"required": ["sampleId","datasetIds","assayType"]},
+              {"required": ["sampleTitle","datasetIds","assayType"]}
              ]
 }
