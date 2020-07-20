@@ -4,7 +4,7 @@
       "datasetId": {
         "primaryId": "GEO:GSE144901"
       },
-      "publication": [
+      "publications": [
         {
           "publicationId": "PMID:22265871",
           "crossReference": {
@@ -24,7 +24,8 @@
         "GEO:GSE144894",
         "GEO:GSE144896"
       ],
-      "dateAssigned": "2020-05-06T20:05:44-00:00"
+      "dateAssigned": "2020-05-06T20:05:44-00:00",
+      "categoryTags":["unclassified"]
     }
   ],
   "metaData": {

@@ -8,7 +8,7 @@
                         "sampleType": "OBI:0000895",
                         "taxonId": "NCBITaxon:4932",
                         "assayType": "MMO:0000649",
-                        "datasetId": [
+                        "datasetIds": [
                                 "GEO:GSE19302"
                         ],
                         "dateAssigned": "2009-12-03T20:05:44-00:00"

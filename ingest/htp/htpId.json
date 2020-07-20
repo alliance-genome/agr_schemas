@@ -12,17 +12,21 @@
             "$ref": "../globalId.json#/properties/globalId",
             "description": "The ID from the data provider for the dataset. When available, this is the GEO ID. When no GEO ID is available, it will be the ArrayExpress ID. When these both are unavailable, it will be the MOD ID."
         },
-        "secondaryId": {
+        "alternateIds": {
             "description": "list of optional cross reference ids to the primary dataset id.",
             "type": "array",
-            "item": {
+            "items": {
                 "$ref": "../globalId.json#/properties/globalId"
             },
 	    "uniqueItems": true
         },
-	"crossReference": {
-      "description": "an optional cross reference to the MOD sample or dataset page.",
-      "$ref" : "../crossReference.json#"
+	"crossReferences": {
+      "description": "optional cross references to the MOD sample or dataset page.",
+	"type":"array",
+		"items":{      
+			"$ref" : "../crossReference.json#"
+		},
+		"uniqueItems": true
     }
     }
 }

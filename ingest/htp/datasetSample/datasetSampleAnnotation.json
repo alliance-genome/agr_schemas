@@ -28,7 +28,7 @@
             "$ref": "biosampleAge.json#",
             "description": "a collection of terms that when used together represent the age and stage of the sample"
         },
-        "sampleLocation": {
+        "sampleLocations": {
             "type":"array",
             "items": {
                 "$ref": "../../expression/whereExpressed.json#",
@@ -36,7 +36,7 @@
             }
         },
         "genomicInformation": {
-            "$ref": "bioSampleGenomicInformation.json#",
+            "$ref": "../bioSampleGenomicInformation.json#",
             "description": "A collection of information that represents the strain or genomic background of the sample, either an id or free text"
         },
         "taxonId": {
@@ -58,7 +58,7 @@
             "enum": ["single","paired"],
             "description": "single or paired end sequencing; might be better in experiment info"
         },
-        "assemblyVersion": {
+        "assemblyVersions": {
             "type":"array",
             "items": {
                 "type": "string"
@@ -69,7 +69,7 @@
             "type": "string",
             "description": "curated notes about the sample"
         },
-        "datasetId": {
+        "datasetIds": {
             "type": "array",
             "items": {
                     "$ref": "../../globalId.json#/properties/globalId"
@@ -86,7 +86,7 @@
             "description": "Date this entity was assigned/curated by a MOD."
         }
     },
-    "anyOf": [{"required": ["sampleId","datasetId"]},
-              {"required": ["sampleTitle","datasetId"]}
+    "anyOf": [{"required": ["sampleId","datasetIds","assayType", "sampleType"]},
+              {"required": ["sampleTitle","datasetIds","assayType","sampleType"]}
              ]
 }
