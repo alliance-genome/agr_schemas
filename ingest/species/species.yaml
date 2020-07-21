@@ -20,7 +20,27 @@
    dataProviderShortName: FB
   phylogenicOrder: 50
 
-   
+- taxonId: NCBITaxon:2697049
+  shortName: SARS-CoV-2
+  fullName: Severe acute respiratory syndrome coronavirus 2
+  commonNames:
+    - SARS-CoV-2
+  primaryDataProvider:
+   dataProviderFullName: Alliance of Genome Resources
+   dataProviderShortName: Alliance
+  phylogenicOrder: 80
+
+- taxonId: NCBITaxon:7227
+  shortName: Dme
+  fullName: Drosophila melanogaster
+  commonNames:
+    - fly
+    - fruit fly
+  primaryDataProvider:
+   dataProviderFullName: FlyBase
+   dataProviderShortName: FB
+  phylogenicOrder: 50
+
 - taxonId: NCBITaxon:6239
   shortName: Cel
   fullName: Caenorhabditis elegans
