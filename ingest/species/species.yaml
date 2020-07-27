@@ -13,9 +13,10 @@
 
 - taxonId: NCBITaxon:2697049
   shortName: SARS-CoV-2
-  fullName: Severe acute respiratory syndrome coronavirus 2
+  fullName: SARS-CoV-2
   commonNames:
     - SARS-CoV-2
+    - Severe acute respiratory syndrome coronavirus 2
   primaryDataProvider:
    dataProviderFullName: Alliance of Genome Resources
    dataProviderShortName: Alliance
