@@ -12,11 +12,11 @@
 	   "description":"free text describing the environmental/experimental condition."
 	},
 	"experimentConditionId": {
-	  "$ref": "../../globalId.json"
+	  "$ref": "../../globalId.json",
           "description": "identifier that describes a single experimental condition."
 	},
 	"experimentConditionType": {
-	  "$ref": "../../globalId.json" 
+	  "$ref": "../../globalId.json" ,
           "description": "ontology term that describes the type of the condition, primarily ZECO terms."
         }
     }
