@@ -42,6 +42,27 @@
       "$ref" : "../globalId.json#/properties/globalId",
       "description": "The disease ontology term id."
     },
+    "amelioratesConditions": {
+	"type": "array":
+        "items": {
+		"$ref": "experimentCondition.json#/properties/experimentConditionRelation",
+	         "description": "Identifies the way in which experimental conditions affect the disease.  Can be one of three ways: ameliorates, exacerbates, unknown"
+                 }
+    },
+    "exacerbatesConditions": {
+        "type": "array":
+        "items": {
+                "$ref": "experimentCondition.json#/properties/experimentConditionRelation",
+                 "description": "Identifies the way in which experimental conditions affect the disease.  Can be one of three ways: ameliorates, exacerbates, $
+                 } 
+    }, 
+    "conditionsWithUnspecifiedEffects": {
+	"type": "array":
+        "items": {
+                "$ref": "experimentCondition.json#/properties/experimentConditionRelation",
+                 "description": "Identifies the way in which experimental conditions affect the disease.  Can be one of three ways: ameliorates, exacerbates, $
+                 }
+    }, 
     "dataProvider": {
         "type": "array",
         "items": {
