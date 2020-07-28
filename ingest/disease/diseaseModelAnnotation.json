@@ -43,7 +43,7 @@
       "description": "The disease ontology term id."
     },
     "amelioratesConditions": {
-	"type": "array":
+	"type": "array",
         "items": {
 		"$ref": "experimentCondition.json#/properties/experimentConditionRelation",
 	         "description": "Identifies the conditions in which the disease is ameliorated."
@@ -57,7 +57,7 @@
                  } 
     }, 
     "conditionsWithUnspecifiedEffects": {
-	"type": "array":
+	"type": "array",
         "items": {
                 "$ref": "experimentCondition.json#/properties/experimentConditionRelation",
                  "description": "Identifies the experimental conditions that are used in this annotation without making a claim about whether this set of conditions ameliorates or exacerbates the disease annotation."
