@@ -308,6 +308,8 @@
   pages:
   - name: gene/interactions
     url: https://www.ncbi.nlm.nih.gov/gene/[%s]
+  - name: biogrid/orcs
+    url: https://orcs.thebiogrid.org/Gene/[%s]
 
 - db_prefix: RefSeq
   name: RefSeq
