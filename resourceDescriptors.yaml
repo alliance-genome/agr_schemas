@@ -1,6 +1,7 @@
 # AGR Schema Resource Descriptors YAML.
 # When submitting identifiers, please use the appropriate example_id/gid field listed below.
 
+
 #
 # MGI
 #
@@ -69,6 +70,10 @@
 
 - db_prefix: RGD
   name: RGD
+  aliases: 
+    - taxon: "10116"
+    - taxon_str: NCBITaxon:10116
+    - abbreviation: Rno
   example_gid: RGD:1311419
   gid_pattern: "^RGD:\\d+$"
   default_url: https://rgd.mcw.edu/rgdweb/elasticResults.html?term=RGD:[%s]
