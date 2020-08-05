@@ -74,6 +74,7 @@
     - taxon: "10116"
     - taxon_str: NCBITaxon:10116
     - abbreviation: Rno
+    - species_name: Rattus norvegicus
   example_gid: RGD:1311419
   gid_pattern: "^RGD:\\d+$"
   default_url: https://rgd.mcw.edu/rgdweb/elasticResults.html?term=RGD:[%s]
