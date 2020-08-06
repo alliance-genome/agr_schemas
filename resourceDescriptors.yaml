@@ -407,9 +407,9 @@
   default_url: http://www.genome.jp/dbget-bin/www_bget?map[%s]
 
 - db_prefix: MESH
-  name: Medical Subject Headings)
-  example_gid: NCBITaxon:7227
-  gid_pattern: "^NCBITaxon:\\d+$"
+  name: Medical Subject Headings
+  example_gid: NotSure
+  gid_pattern: "MESh??:\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/mesh/[%s]
 
 - db_prefix: MINT
