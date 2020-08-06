@@ -440,7 +440,7 @@
 
 - db_prefix: NCI
   name: NCI Thesaurus
-  example_gid:
+  example_gid: SOmething
   default_url : https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=[%s]
 
 - db_prefix: OMIM
