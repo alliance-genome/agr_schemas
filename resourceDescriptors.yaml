@@ -340,8 +340,8 @@
   gid_pattern: "^(EMDB:EMDB?-\\d{4})|(EMDB:\\d{4})$"
   default_url: http://www.ebi.ac.uk/pdbe/entry/emdb/[%s]
   pages:
-  - name: gene/interactions
-    url: http://www.ebi.ac.uk/pdbe/entry/emdb/[%s]
+    - name: gene/interactions
+      url: http://www.ebi.ac.uk/pdbe/entry/emdb/[%s]
 
 - db_prefix: ENSEMBL
   name: Ensembl
@@ -355,10 +355,10 @@
   gid_pattern: "^GEO:GS[EM]\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=[%s]
   pages:
-  - name: htp/dataset
-    url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
-  - name: htp/datasetsample
-    url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
+    - name: htp/dataset
+      url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
+    - name: htp/datasetsample
+      url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
 
 - db_prefix: GXA
   name: ExpressionAtlas
@@ -442,6 +442,7 @@
   name: NCI Thesaurus
   example_gid:
   default_url : https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=[%s]
+
 - db_prefix: OMIM
   name: OMIM
   example_id: OMIM:600483, OMIM:PS100200
@@ -463,8 +464,8 @@
 - db_prefix: ORDO
   name: ORDO
   example_id: ORDO:600483
-    gid_pattern: "^ORDO:\\d+$"
-    default_url:  https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
+  gid_pattern: "^ORDO:\\d+$"
+  default_url:  https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
     
 - db_prefix: Orphanet
   name: Orphanet
