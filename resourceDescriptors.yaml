@@ -269,14 +269,14 @@
   - name: htp/dataset
     url: https://www.ebi.ac.uk/arrayexpress/experiments/[%s]
 
-    - db_prefix: BIOGRID
-    name: Biological General Repository for Interaction Datasets
-    example_id: BIOGRID:1276808
-    gid_pattern: "^BIOGRID:\\d+$"
-    default_url: https://thebiogrid.org/interaction/[%s]
-    pages:
-    - name: gene/interactions
-      url: https://thebiogrid.org/interaction/[%s]
+- db_prefix: BIOGRID
+  name: Biological General Repository for Interaction Datasets
+  example_id: BIOGRID:1276808
+  gid_pattern: "^BIOGRID:\\d+$"
+  default_url: https://thebiogrid.org/interaction/[%s]
+  pages:
+  - name: gene/interactions
+    url: https://thebiogrid.org/interaction/[%s]
     
 - db_prefix: CHEBI
   name: Chemical Entities of Biological Interest Ontology
@@ -327,6 +327,12 @@
   example_gid: ECO:0000000
   gid_pattern: "^ECO:\\d+$"
   default_url: http://www.evidenceontology.org/browse/#ECO:[%s]
+
+- db_prefix: EFO
+  name: Experimental Factor Ontology
+  example_gid: EFO:EFO_0000000
+  gid_pattern: "^EFO:\\d+$"
+  default_url: http://www.ebi.ac.uk/efo/EFO_[%s]
 
 - db_prefix: EMDB
   name: Electron Microscopy Data Bank
@@ -393,7 +399,19 @@
   pages:
   - name: gene/interactions
     url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
-    
+
+- db_prefix: KEGG
+  name: Kyoto Encyclopedia of Genes and Genomes
+  example_id: ?
+  gid_pattern: None?
+  default_url: http://www.genome.jp/dbget-bin/www_bget?map[%s]
+
+- db_prefix: MESH
+  name: Medical Subject Headings)
+  example_gid: NCBITaxon:7227
+  gid_pattern: "^NCBITaxon:\\d+$"
+  default_url: https://www.ncbi.nlm.nih.gov/mesh/[%s]
+
 - db_prefix: MINT
   name: The Molecular INTeraction database
   example_id: MINT:MINT-1954459
@@ -420,10 +438,14 @@
   - name: biogrid/orcs
     url: https://orcs.thebiogrid.org/Gene/[%s]
 
+- db_prefix: NCI
+  name: NCI Thesaurus
+  example_gid:
+  default_url : https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=[%s]
 - db_prefix: OMIM
   name: OMIM
-  example_id: OMIM:600483
-  gid_pattern: "^OMIM:\\d+$"
+  example_id: OMIM:600483, OMIM:PS100200
+  gid_pattern: "^OMIM:[PS]*\\d+$"
   default_url: https://www.omim.org/entry/[%s]
   pages:
     - name: homepage
@@ -434,12 +456,21 @@
       url: https://www.omim.org/entry/[%s]
     - name: disease
       url: https://www.omim.org/entry/[%s]
-  
+    -name: ont
+      url: https://www.omim.org/phenotypicSeries/[%s]
+
+# maybe make this an alias of Orphanet instead.
+- db_prefix: ORDO
+  name: ORDO
+  example_id: ORDO:600483
+    gid_pattern: "^ORDO:\\d+$"
+    default_url:  https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
+    
 - db_prefix: Orphanet
   name: Orphanet
   example_id: ORPHA:600483
   gid_pattern: "^ORPHA:\\d+$"
-  default_url:  https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]    
+  default_url:  https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
 
 - db_prefix: PANTHER
   name: PANTHER
