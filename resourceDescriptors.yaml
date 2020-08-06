@@ -361,13 +361,13 @@
     url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
 
 - db_prefix: GXA
-    name: ExpressionAtlas
-    example_id: GXA:E-MTAB-8344
-    gid_pattern: "^GXA:\\w+$"
-    default_url: https://www.ebi.ac.uk/gxa/experiments/[%s]/Results
-    pages:
-    - name: htp/dataset
-      url: https://www.ebi.ac.uk/gxa/experiments/[%s]/Results
+  name: ExpressionAtlas
+  example_id: GXA:E-MTAB-8344
+  gid_pattern: "^GXA:\\w+$"
+  default_url: https://www.ebi.ac.uk/gxa/experiments/[%s]/Results
+  pages:
+  - name: htp/dataset
+    url: https://www.ebi.ac.uk/gxa/experiments/[%s]/Results
 
 - db_prefix: HGNC
   name: HGNC
