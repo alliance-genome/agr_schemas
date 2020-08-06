@@ -266,8 +266,8 @@
   gid_pattern: "^ArrayExpress:\\w+$"
   default_url: https://www.ebi.ac.uk/arrayexpress/experiments/[%s]
   pages:
-  - name: htp/dataset
-    url: https://www.ebi.ac.uk/arrayexpress/experiments/[%s]
+    - name: htp/dataset
+      url: https://www.ebi.ac.uk/arrayexpress/experiments/[%s]
 
 - db_prefix: BIOGRID
   name: Biological General Repository for Interaction Datasets
