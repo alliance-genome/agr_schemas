@@ -422,10 +422,10 @@
       url: https://mint.bio.uniroma2.it/index.php/results-interactions/?id=[%s]
 
 - db_prefix: NCBITaxon
-    name: NCBI Taxonomy
-    example_gid: NCBITaxon:7227
-    gid_pattern: "^NCBITaxon:\\d+$"
-    default_url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=[%s]
+  name: NCBI Taxonomy
+  example_gid: NCBITaxon:7227
+  gid_pattern: "^NCBITaxon:\\d+$"
+  default_url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=[%s]
 
 - db_prefix: NCBI_Gene
   name: NCBI Gene
