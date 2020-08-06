@@ -366,8 +366,8 @@
   gid_pattern: "^GXA:\\w+$"
   default_url: https://www.ebi.ac.uk/gxa/experiments/[%s]/Results
   pages:
-  - name: htp/dataset
-    url: https://www.ebi.ac.uk/gxa/experiments/[%s]/Results
+    - name: htp/dataset
+      url: https://www.ebi.ac.uk/gxa/experiments/[%s]/Results
 
 - db_prefix: HGNC
   name: HGNC
@@ -375,12 +375,12 @@
   gid_pattern: "^HGNC:\\d+$"
   default_url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
   pages:
-  - name: gene
-    url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
-  - name: gene/MODinteractions
-    url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=1&identifiers=HGNC:[%s]
-  - name: disease/human
-    url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
+    - name: gene
+      url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
+    - name: gene/MODinteractions
+      url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=1&identifiers=HGNC:[%s]
+    - name: disease/human
+      url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
 
 - db_prefix: IMEX
   name: The International Molecular Exchange Consortium
@@ -388,8 +388,8 @@
   gid_pattern: "^IMEX:IM-\\d+(-?)(\\d+?)$"
   default_url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
   pages:
-  - name: gene/interactions
-    url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
+    - name: gene/interactions
+      url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
   
 - db_prefix: INTACT
   name: IntAct Molecular Interaction Database
@@ -397,8 +397,8 @@
   gid_pattern: "^INTACT:EBI\\-[0-9]+$"
   default_url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
   pages:
-  - name: gene/interactions
-    url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
+    - name: gene/interactions
+      url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
 
 - db_prefix: KEGG
   name: Kyoto Encyclopedia of Genes and Genomes
@@ -418,8 +418,8 @@
   gid_pattern: "^MINT:MINT\\-\\d{1,7}$"
   default_url: https://mint.bio.uniroma2.it/index.php/results-interactions/?id=[%s]
   pages:
-  - name: gene/interactions
-    url: https://mint.bio.uniroma2.it/index.php/results-interactions/?id=[%s]
+    - name: gene/interactions
+      url: https://mint.bio.uniroma2.it/index.php/results-interactions/?id=[%s]
 
 - db_prefix: NCBITaxon
     name: NCBI Taxonomy
@@ -433,10 +433,10 @@
   gid_pattern: "^NCBI_Gene:\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/gene/[%s]
   pages:
-  - name: gene/interactions
-    url: https://www.ncbi.nlm.nih.gov/gene/[%s]
-  - name: biogrid/orcs
-    url: https://orcs.thebiogrid.org/Gene/[%s]
+    - name: gene/interactions
+      url: https://www.ncbi.nlm.nih.gov/gene/[%s]
+    - name: biogrid/orcs
+      url: https://orcs.thebiogrid.org/Gene/[%s]
 
 - db_prefix: NCI
   name: NCI Thesaurus
@@ -484,8 +484,8 @@
   gid_pattern: "^PDBE:\\w+$"
   default_url: https://www.ebi.ac.uk/pdbe/entry/pdb/[%s]
   pages:
-  - name: gene/interactions
-    url: https://www.ebi.ac.uk/pdbe/entry/pdb/[%s]
+    - name: gene/interactions
+      url: https://www.ebi.ac.uk/pdbe/entry/pdb/[%s]
 
 - db_prefix: PMID
   name: PubMed
@@ -499,8 +499,8 @@
   gid_pattern: "^RCSB_PDB:\\w+$"
   default_url: https://www.rcsb.org/structure/[%s]
   pages:
-  - name: gene/interactions
-    url: https://www.rcsb.org/structure/[%s]
+    - name: gene/interactions
+      url: https://www.rcsb.org/structure/[%s]
 
 - db_prefix: RNAcentral
   name: RNAcentral
@@ -556,8 +556,8 @@
   gid_pattern: "^WWPDB:\\w+$"
   default_url: https://www.rcsb.org/structure/[%s]
   pages:
-  - name: gene/interactions
-    url: https://www.rcsb.org/structure/[%s]
+    - name: gene/interactions
+      url: https://www.rcsb.org/structure/[%s]
 
 - db_prefix: ZECO
   name: Zebrafish Environment Condition Ontology
