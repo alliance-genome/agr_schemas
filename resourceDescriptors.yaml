@@ -275,8 +275,8 @@
   gid_pattern: "^BIOGRID:\\d+$"
   default_url: https://thebiogrid.org/interaction/[%s]
   pages:
-  - name: gene/interactions
-    url: https://thebiogrid.org/interaction/[%s]
+    - name: gene/interactions
+      url: https://thebiogrid.org/interaction/[%s]
     
 - db_prefix: CHEBI
   name: Chemical Entities of Biological Interest Ontology
