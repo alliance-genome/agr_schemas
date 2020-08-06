@@ -402,8 +402,8 @@
 
 - db_prefix: KEGG
   name: Kyoto Encyclopedia of Genes and Genomes
-  example_id: ?
-  gid_pattern: None?
+  example_id: NoideaNeed TolLookOneUp
+  gid_pattern: NoneAtMoment
   default_url: http://www.genome.jp/dbget-bin/www_bget?map[%s]
 
 - db_prefix: MESH
