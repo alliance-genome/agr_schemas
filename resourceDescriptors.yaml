@@ -60,11 +60,6 @@
 
 - db_prefix: RGD
   name: RGD
-  aliases: 
-    - taxon: "10116"
-    - taxon_str: NCBITaxon:10116
-    - abbreviation: Rno
-    - species_name: Rattus norvegicus
   example_gid: RGD:1311419
   gid_pattern: "^RGD:\\d+$"
   default_url: https://rgd.mcw.edu/rgdweb/elasticResults.html?term=RGD:[%s]
@@ -91,6 +86,8 @@
       url: https://rgd.mcw.edu/rgdweb/report/reference/main.html?id=RGD:[%s]
     - name: strain
       url: https://rgd.mcw.edu/rgdweb/report/strain/main.html?id=[%s]
+    - name: pub
+      url: http://rgd.mcw.edu/rgdweb/search/search.html?term=[%s]
 
 #
 # ZFIN
@@ -215,7 +212,8 @@
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
     - name: construct
       url: https://www.wormbase.org/db/get?name=[%s];class=Construct
-
+    - name: pub
+      url: http://www.wormbase.org/db/misc/paper?name=[%s]
 #
 # SGD
 #
@@ -244,7 +242,8 @@
     url: https://www.yeastgenome.org/locus/[%s]/interaction#network
   - name: htp/dataset
     url: https://www.yeastgenome.org/dataset/[%s]
-
+  - name: reference
+    url: https://www.yeastgenome.org/reference/[%s]
 #
 # GO
 #
@@ -490,6 +489,7 @@
 
 - db_prefix: PMID
   name: PubMed
+  aliases: ['pubmed', 'BOB']
   example_gid: PMID:26447131
   gid_pattern: "^PMID:\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
