@@ -231,7 +231,7 @@
   - name: gene/interactions
     url: http://www.yeastgenome.org/locus/[%s]/interaction
   - name: homepage
-    url: http://www.yeastgenome.org/
+    url: http://www.yeastgenome.org/[%s]
   - name: gene/spell
     url: https://spell.yeastgenome.org/search/show_results?search_string=[%s]
   - name: gene/references
