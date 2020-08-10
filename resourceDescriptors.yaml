@@ -394,7 +394,7 @@
   name: IntAct Molecular Interaction Database
   example_id: INTACT:EBI-1000008
   gid_pattern: "^INTACT:EBI\\-[0-9]+$"
-  default_url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
+  default_url: https://www.ebi.ac.uk/intact/interaction/[%s]
   pages:
     - name: gene/interactions
       url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
@@ -514,6 +514,14 @@
   example_gid: RefSeq:NT_033778
   gid_pattern: "^RefSeq:\\w+$"
   default_url: https://www.ncbi.nlm.nih.gov/nuccore/[%s]
+
+# Could not find entries in WWPDB so use RCSB_PDB
+- db_prefix: RCSB_PDB
+  name: RCSB_PDB
+  aliases: ['WWPDB']
+  example_gid: RCSB_PDB:1GZP
+  gid_pattern: ""RCSB_PDB:\\w+$""
+  default_url: https://www.rcsb.org/structure/[%s]
 
 - db_prefix: SO
   name: Sequence Ontology
