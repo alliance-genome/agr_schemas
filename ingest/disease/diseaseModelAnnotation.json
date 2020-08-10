@@ -33,7 +33,7 @@
       "description": "The negative qualifier for the annotation."
     },
     "primaryGeneticEntityIDs": {
-"type": "array",
+      "type": "array",
       "items": {
         "$ref" : "../globalId.json#/properties/globalId",
        "description": "for calculated submissions, this field represents the id of the genetic objects (allele or affectedGenomicModel) that this annotation is based on."}
@@ -65,6 +65,19 @@
       "type": "string",
       "format": "date-time",
       "description": "Date this entity was assigned in it's primary data source."
+    },
+
+    "conditionRelations": {
+      "conditionRelationType": {
+        "enum": ["ameliorates", "exacerbates", "unspecified"]
+      },
+      "conditions": {
+        "type": "array",
+        "items": {
+          "$ref": "experimentalConditions",
+          "description": "all the experimental conditions that participate with the disease annotation as defined by the conditionRelationType"
+        }
+      }
     }
   }
 }
