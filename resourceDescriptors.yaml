@@ -515,10 +515,8 @@
   gid_pattern: "^RefSeq:\\w+$"
   default_url: https://www.ncbi.nlm.nih.gov/nuccore/[%s]
 
-# Could not find entries in WWPDB so use RCSB_PDB
 - db_prefix: RCSB_PDB
   name: RCSB_PDB
-  aliases: ['WWPDB']
   example_gid: RCSB_PDB:1GZP
   gid_pattern: ""RCSB_PDB:\\w+$""
   default_url: https://www.rcsb.org/structure/[%s]
