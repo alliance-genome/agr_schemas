@@ -518,7 +518,7 @@
 - db_prefix: RCSB_PDB
   name: RCSB_PDB
   example_gid: RCSB_PDB:1GZP
-  gid_pattern: ""RCSB_PDB:\\w+$""
+  gid_pattern: "RCSB_PDB:\\w+$"
   default_url: https://www.rcsb.org/structure/[%s]
 
 - db_prefix: SO
