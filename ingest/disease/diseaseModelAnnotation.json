@@ -68,15 +68,10 @@
     },
 
     "conditionRelations": {
-      "conditionRelationType": {
-        "enum": ["ameliorates", "exacerbates", "unspecified"]
-      },
-      "conditions": {
-        "type": "array",
-        "items": {
-          "$ref": "experimentalConditions",
-          "description": "all the experimental conditions that participate with the disease annotation as defined by the conditionRelationType"
-        }
+      "type": "array",
+      "items": {
+        "$ref": "conditionRelation.json",
+        "description": "all the experimental conditions that participate with the disease annotation as defined by the conditionRelationType"
       }
     }
   }
