@@ -4,10 +4,23 @@
   fullName: Danio rerio
   commonNames:
     - zebrafish
+    - fish
+    - dre
   primaryDataProvider:
    dataProviderFullName: Zebrafish Information Network
    dataProviderShortName: ZFIN
   phylogenicOrder: 40
+
+- taxonId: NCBITaxon:2697049
+  shortName: SARS-CoV-2
+  fullName: SARS-CoV-2
+  commonNames:
+    - SARS-CoV-2
+    - Severe acute respiratory syndrome coronavirus 2
+  primaryDataProvider:
+   dataProviderFullName: Alliance of Genome Resources
+   dataProviderShortName: Alliance
+  phylogenicOrder: 80
 
 - taxonId: NCBITaxon:7227
   shortName: Dme
@@ -15,17 +28,18 @@
   commonNames:
     - fly
     - fruit fly
-  primaryDataProvider: 
+    - dme
+  primaryDataProvider:
    dataProviderFullName: FlyBase
    dataProviderShortName: FB
   phylogenicOrder: 50
 
-   
 - taxonId: NCBITaxon:6239
   shortName: Cel
   fullName: Caenorhabditis elegans
   commonNames:
     - worm
+    - cel
   primaryDataProvider: 
    dataProviderFullName: WormBase
    dataProviderShortName: WB 
@@ -36,6 +50,7 @@
   fullName: Rattus norvegicus
   commonNames:
     - rat
+    - rno
   primaryDataProvider: 
    dataProviderFullName: Rat Genome Database
    dataProviderShortName: RGD
@@ -46,6 +61,7 @@
   fullName: Mus musculus
   commonNames:
     - mouse
+    - mmu
   primaryDataProvider: 
    dataProviderFullName: Mouse Genome Informatics
    dataProviderShortName: MGI
@@ -56,6 +72,7 @@
   fullName: Saccharomyces cerevisiae
   commonNames:
     - yeast
+    - sce
   primaryDataProvider: 
    dataProviderFullName: Saccharomyces Genome Database
    dataProviderShortName: SGD

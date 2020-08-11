@@ -21,6 +21,8 @@
       url: http://www.informatics.jax.org/reference/marker/MGI:[%s]
     - name: gene/phenotypes
       url: http://www.informatics.jax.org/marker/phenotypes/MGI:[%s]
+    - name: gene/phenotypes_impc
+      url: https://www.mousephenotype.org/data/genes/MGI:[%s]
     - name: allele
       url: http://www.informatics.jax.org/allele/MGI:[%s]
     - name: allele/references
@@ -83,6 +85,8 @@
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?view=5&id=[%s]
     - name: gene/references
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?view=5&id=[%s]
+    - name: gene/phenotypes
+      url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
     - name: disease/rat
       url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Rat&x=1&acc_id=[%s]#annot
     - name: disease/human
@@ -115,6 +119,8 @@
       url: https://zfin.org/[%s]/wt-expression
     - name: gene/references
       url: https://zfin.org/action/marker/citation-list/[%s]
+    - name: gene/phenotypes
+      url: https://zfin.org/action/marker/[%s]/phenotype-summary
     - name: allele
       url: https://zfin.org/[%s]
     - name: genotype
@@ -154,6 +160,8 @@
       url: https://flybase.org/reports/[%s].html#expression
     - name: gene/references
       url: https://flybase.org/reports/[%s].html#pubs
+    - name: gene/phenotypes
+      url: https://flybase.org/reports/[%s].html#phenotypes
     - name: allele
       url: https://flybase.org/reports/[%s].html
     - name: allele/references
@@ -195,6 +203,8 @@
       url: http://www.wormbase.org/db/get?name=[%s];class=interaction
     - name: gene/references
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
+    - name: gene/phenotypes
+      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=phenotype
     - name: gene/spell
       url: http://spell.wormbase.org/search/show_results?search_string=[%s]
     - name: gene/expression/annotation/detail
@@ -262,6 +272,8 @@
     url: https://www.yeastgenome.org/locus/[%s]/literature
   - name: gene/disease
     url: https://www.yeastgenome.org/locus/[%s]/disease
+  - name: gene/phenotypes
+    url: https://www.yeastgenome.org/locus/[%s]/phenotype
   - name: gene/MODinteractions
     url: https://www.yeastgenome.org/locus/[%s]/interaction#network
   - name: htp/dataset
@@ -308,6 +320,8 @@
   pages:
   - name: gene/interactions
     url: https://www.ncbi.nlm.nih.gov/gene/[%s]
+  - name: biogrid/orcs
+    url: https://orcs.thebiogrid.org/Gene/[%s]
 
 - db_prefix: RefSeq
   name: RefSeq
