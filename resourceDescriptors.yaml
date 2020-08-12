@@ -483,6 +483,7 @@
     
 - db_prefix: Orphanet
   name: Orphanet
+  aliases: ['ORPHA']
   example_id: ORPHA:600483
   gid_pattern: "^ORPHA:\\d+$"
   default_url:  https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
