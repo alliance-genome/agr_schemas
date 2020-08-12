@@ -416,14 +416,14 @@
 
 - db_prefix: KEGG
   name: Kyoto Encyclopedia of Genes and Genomes
-  example_id: NoideaNeed TolLookOneUp
-  gid_pattern: NoneAtMoment
+  example_id: KEGG:05220
+  gid_pattern: "^KEGG:\\d+$""
   default_url: http://www.genome.jp/dbget-bin/www_bget?map[%s]
 
 - db_prefix: MESH
   name: Medical Subject Headings
   example_gid: MESH:D020516
-  gid_pattern: "^MESH:D\\d+$"
+  gid_pattern: "^MESH:[CD]+\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/mesh/[%s]
 
 - db_prefix: MINT
