@@ -423,7 +423,7 @@
 - db_prefix: MESH
   name: Medical Subject Headings
   example_gid: MESH:D020516
-  gid_pattern: "MESH:D\\d+$"
+  gid_pattern: "^MESH:D\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/mesh/[%s]
 
 - db_prefix: MINT
@@ -454,7 +454,9 @@
 
 - db_prefix: NCI
   name: NCI Thesaurus
-  example_gid: SOmething
+  aliases: ['NCI_Thesaurus', 'NCI']
+  example_gid: NCI:C7646
+  gid_pattern: "^NCI:C\d+$"
   default_url : https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=[%s]
 
 - db_prefix: OMIM
