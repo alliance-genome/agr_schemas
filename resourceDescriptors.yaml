@@ -500,7 +500,7 @@
     - name: ZFIN
       url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=ZFIN=[%s]
     - name: WB
-      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=WB=[%s]
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=WormBase=[%s]
     - name: HGNC
       url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=HGNC=[%s]
     - name: SGD
