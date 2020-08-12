@@ -22,6 +22,8 @@
       url: http://www.informatics.jax.org/reference/marker/MGI:[%s]
     - name: gene/phenotypes
       url: http://www.informatics.jax.org/marker/phenotypes/MGI:[%s]
+    - name: gene/phenotypes_impc
+      url: https://www.mousephenotype.org/data/genes/MGI:[%s]
     - name: allele
       url: http://www.informatics.jax.org/allele/MGI:[%s]
     - name: allele/references
@@ -74,6 +76,8 @@
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?view=5&id=[%s]
     - name: gene/references
       url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?view=5&id=[%s]
+    - name: gene/phenotypes
+      url: https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=RGD:[%s]
     - name: disease/rat
       url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Rat&x=1&acc_id=[%s]#annot
     - name: disease/human
@@ -108,6 +112,8 @@
       url: https://zfin.org/[%s]/wt-expression
     - name: gene/references
       url: https://zfin.org/action/marker/citation-list/[%s]
+    - name: gene/phenotypes
+      url: https://zfin.org/action/marker/[%s]/phenotype-summary
     - name: allele
       url: https://zfin.org/[%s]
     - name: genotype
@@ -147,6 +153,8 @@
       url: https://flybase.org/reports/[%s].html#expression
     - name: gene/references
       url: https://flybase.org/reports/[%s].html#pubs
+    - name: gene/phenotypes
+      url: https://flybase.org/reports/[%s].html#phenotypes
     - name: allele
       url: https://flybase.org/reports/[%s].html
     - name: allele/references
@@ -174,6 +182,7 @@
 
 - db_prefix: WB
   name: WormBase genes
+  aliases: ['WORMBASE']
   example_gid: WB:WBGene00000064
   gid_pattern: "^WB:\\w+$"
   default_url: https://www.wormbase.org/get?name=[%s]
@@ -188,6 +197,8 @@
       url: http://www.wormbase.org/db/get?name=[%s];class=interaction
     - name: gene/references
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
+    - name: gene/phenotypes
+      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=phenotype
     - name: gene/spell
       url: http://spell.wormbase.org/search/show_results?search_string=[%s]
     - name: gene/expression/annotation/detail
@@ -238,6 +249,8 @@
     url: https://www.yeastgenome.org/locus/[%s]/literature
   - name: gene/disease
     url: https://www.yeastgenome.org/locus/[%s]/disease
+  - name: gene/phenotypes
+    url: https://www.yeastgenome.org/locus/[%s]/phenotype
   - name: gene/MODinteractions
     url: https://www.yeastgenome.org/locus/[%s]/interaction#network
   - name: htp/dataset
@@ -477,6 +490,22 @@
   example_id: PANTHER:PTHR11662
   gid_pattern: "^PANTHER:PTHR\\d+$"
   default_url: http://pantherdb.org/panther/family.do?clsAccession=[%s]
+  pages:
+    - name: MGI
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=MGI=MGI=[%s]
+    - name: FB
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=FlyBase=[%s]
+    - name: RGD
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=RGD=[%s]
+    - name: ZFIN
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=ZFIN=[%s]
+    - name: WB
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=WB=[%s]
+    - name: HGNC
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=HGNC=[%s]
+    - name: SGD
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=SGD=[%s]
+
 
 - db_prefix: PDBE
   name: Protein Data Bank in Europe
@@ -489,13 +518,14 @@
 
 - db_prefix: PMID
   name: PubMed
-  aliases: ['pubmed', 'BOB']
+  aliases: ['pubmed']
   example_gid: PMID:26447131
   gid_pattern: "^PMID:\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
   
 - db_prefix: RCSB_PDB
   name: RCSB Protein Data Bank
+  aliases: ['RCSB PDB']
   example_id: RCSB_PDB:1AGR
   gid_pattern: "^RCSB_PDB:\\w+$"
   default_url: https://www.rcsb.org/structure/[%s]
