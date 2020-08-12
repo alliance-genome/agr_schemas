@@ -145,7 +145,7 @@
   name: FlyBase
   example_gid: FB:FBgn0000490
   gid_pattern: "^FB:FB.+$"
-  default_url: https://flybase.org/reports/[%s]
+  default_url: https://flybase.org/reports/[%s].html
   pages:
     - name: gene
       url: https://flybase.org/reports/[%s].html
