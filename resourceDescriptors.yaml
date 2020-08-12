@@ -422,8 +422,8 @@
 
 - db_prefix: MESH
   name: Medical Subject Headings
-  example_gid: NotSure
-  gid_pattern: "MESh??:\\d+$"
+  example_gid: MESH:D020516
+  gid_pattern: "MESH:D\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/mesh/[%s]
 
 - db_prefix: MINT
