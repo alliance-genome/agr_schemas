@@ -492,19 +492,19 @@
   default_url: http://pantherdb.org/panther/family.do?clsAccession=[%s]
   pages:
     - name: MGI
-      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=MGI=MGI=[%s]
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%b]&species=agr&seq=MGI=MGI=[%s]
     - name: FB
-      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=FlyBase=[%s]
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%b]&species=agr&seq=FlyBase=[%s]
     - name: RGD
-      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=RGD=[%s]
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%b]&species=agr&seq=RGD=[%s]
     - name: ZFIN
-      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=ZFIN=[%s]
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%b]&species=agr&seq=ZFIN=[%s]
     - name: WB
-      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=WormBase=[%s]
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%b]&species=agr&seq=WormBase=[%s]
     - name: HGNC
-      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=HGNC=[%s]
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%b]&species=agr&seq=HGNC=[%s]
     - name: SGD
-      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%ss]&species=agr&seq=SGD=[%s]
+      url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=[%b]&species=agr&seq=SGD=[%s]
 
 
 - db_prefix: PDBE
