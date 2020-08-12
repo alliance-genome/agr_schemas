@@ -417,7 +417,7 @@
 - db_prefix: KEGG
   name: Kyoto Encyclopedia of Genes and Genomes
   example_id: KEGG:05220
-  gid_pattern: "^KEGG:\\d+$"
+  gid_pattern: "^KEGG:\\w*:*\\d+$"
   default_url: http://www.genome.jp/dbget-bin/www_bget?map[%s]
 
 - db_prefix: MESH
