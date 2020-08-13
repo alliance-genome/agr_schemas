@@ -396,6 +396,15 @@
     - name: disease/human
       url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
 
+- db_prefix: ICD9CM
+  name: ICD9CM
+  ignore_url_generation: True
+  aliases: ['ICD10CM']
+
+- db_prefix: ICDO
+  name: ICDO
+  ignore_url_generation: True
+
 - db_prefix: IMEX
   name: The International Molecular Exchange Consortium
   example_id: IMEX:IM-10766-6
@@ -419,6 +428,10 @@
   example_id: KEGG:05220
   gid_pattern: "^KEGG:\\w*:*\\d+$"
   default_url: http://www.genome.jp/dbget-bin/www_bget?map[%s]
+
+- db_prefix: MEDDRA
+  name: MEDDRA
+  ignore_url_generation: True
 
 - db_prefix: MESH
   name: Medical Subject Headings
@@ -564,6 +577,16 @@
   example_gid: SO:0001217
   gid_pattern: "^SO:\\d+$"
   default_url: http://www.sequenceontology.org/browser/current_svn/term/SO:[%s]
+
+- db_prefix: SNOMED
+  name: SNOMED
+  ignore_url_generation: True
+  aliases: ['SNOMEDCT_US_2019_09_01', 'SNOMEDCT_US_2020_03_01', 'SNOMED_CT_US_2018_03_01',
+            'SNOMEDCT_US_2020_09_01', 'SNOMEDCT_2020_03_01', 'SNOMEDCT_US_2018_03_01']
+
+- db_prefix: UMLS_CUI
+  name: UMLS_CUI
+  ignore_url_generation: True
 
 - db_prefix: UniProtKB
   name: UniProtKB
