@@ -479,7 +479,7 @@
 # maybe make this an alias of Orphanet instead.
 - db_prefix: ORDO
   name: ORDO
-  example_id: ORDO:600483
+  example_id: ORDO:600483, ORDO:644:GARD:262
   gid_pattern: "^ORDO:\\d+:*[GARD]*:*\\d*$"
   default_url:  https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
     
