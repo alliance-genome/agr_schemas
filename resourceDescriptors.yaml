@@ -480,7 +480,7 @@
 - db_prefix: ORDO
   name: ORDO
   example_id: ORDO:600483
-  gid_pattern: "^ORDO:\\d+[GARD]*:*\\d*$"
+  gid_pattern: "^ORDO:\\d+:*[GARD]*:*\\d*$"
   default_url:  https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
     
 - db_prefix: Orphanet
