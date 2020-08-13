@@ -362,7 +362,13 @@
   example_id: ENSEMBL:FBgn0000490
   gid_pattern: "^ENSEMBL:\\w+$"
   default_url: http://www.ensembl.org/id/[%s] 
-    
+
+- db_prefix: GARD
+  name: GARD
+  example_id: GARD:262
+  gid_pattern: "^GARD:\\d+$"
+  default_url: https://rarediseases.info.nih.gov/diseases/[%s]/index
+
 - db_prefix: GEO
   name: Gene Expression Omnibus
   example_id: GEO:GSE59105
