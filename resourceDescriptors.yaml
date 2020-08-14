@@ -379,6 +379,8 @@
       url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
     - name: htp/datasetsample
       url: https://www.ncbi.nlm.nih.gov/gds/?term=[%s]
+    - name: entrezgene
+      url: https://www.ncbi.nlm.nih.gov/sites/entrez?Db=geoprofiles&DbFrom=gene&Cmd=Link&LinkName=gene_geoprofiles&LinkReadableName=GEO%20Profiles&IdsFromResult=[%s]
 
 - db_prefix: GXA
   name: ExpressionAtlas
