@@ -311,7 +311,7 @@
   name: DOI
   example_gid: DOI:10.3389/fcimb.2016.00052
   gid_pattern: "^DOI:\\S+$"
-  default_url: https://doi.org/[%s]
+  default_url: https://doi.org/doi:[%s]
 
 - db_prefix: DOID
   name: Disease Ontology
