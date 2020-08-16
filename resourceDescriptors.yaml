@@ -559,8 +559,8 @@
   gid_pattern: "^RCSB_PDB:\\w+$"
   default_url: https://www.rcsb.org/structure/[%s]
   pages:
-    - name: gene/interactions
-      url: https://www.rcsb.org/structure/[%s]
+  - name: gene/interactions
+    url: https://www.rcsb.org/structure/[%s]
 
 - db_prefix: RNAcentral
   name: RNAcentral
