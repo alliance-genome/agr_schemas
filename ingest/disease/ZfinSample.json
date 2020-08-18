@@ -1,39 +1,77 @@
 {
-"metaData": {
+  "metaData": {
     "dataProvider": {
-        "crossReference": {
-                "id":"ZFIN",
-                "pages": ["homepage"]
-        },
-        "type": "curated"
+      "crossReference": {
+        "id": "ZFIN",
+        "pages": [
+          "homepage"
+        ]
+      },
+      "type": "curated"
     },
     "dateProduced": "2017-06-22T13:27:43-04:00"
   },
-  "data" : [ {
-    "objectId" : "ZFIN:ZDB-GENE-120229-1",
-    "primaryGeneticEntityIDs": ["ZFIN:ZDB-FISH-010101-1"],
-    "objectName" : "gpr179",
-    "dateAssigned" : "2018-03-21T15:54:59.179-07:00",
-    "dataProvider": [ {
-        "crossReference": {
-                "id":"ZFIN",
-                "pages": ["homepage"]
+  "data": [
+    {
+      "objectId": "ZFIN:ZDB-GENE-120229-1",
+      "primaryGeneticEntityIDs": [
+        "ZFIN:ZDB-FISH-010101-1"
+      ],
+      "objectName": "gpr179",
+      "dateAssigned": "2018-03-21T15:54:59.179-07:00",
+      "dataProvider": [
+        {
+          "crossReference": {
+            "id": "ZFIN",
+            "pages": [
+              "homepage"
+            ]
+          },
+          "type": "curated"
+        }
+      ],
+      "evidence": {
+        "publication": {
+          "crossReference": {
+            "id": "ZFIN:ZDB-PUB-120215-13",
+            "pages": [
+              "reference"
+            ]
+          },
+          "publicationId": "PMID:22325362"
         },
-        "type": "curated"
-    } ],
-    "evidence" : {
-      "publication" : {
-        "crossReference" : {"id":"ZFIN:ZDB-PUB-120215-13",
-			    "pages":["reference"]},
-        "publicationId" : "PMID:22325362"
+        "evidenceCodes": [
+          "ECO:0000304"
+        ]
       },
-      "evidenceCodes" : ["ECO:0000304"]
-    },
-    "objectRelation" : {
-      "associationType" : "is_implicated_in",
-      "objectType" : "gene"
-    },
-    "DOid" : "DOID:0110869"
-  }
- ]
+      "objectRelation": {
+        "associationType": "is_implicated_in",
+        "objectType": "gene"
+      },
+      "conditionRelations": [
+        {
+          "conditionRelationType": "unspecified",
+          "conditions": {
+            "textCondition": "ablation:eye",
+            "ZFATerm": "ZFA:0000123",
+            "conditionType": "ZECO:0000123"
+          }
+        },
+        {
+          "conditionRelationType": "ameliorates",
+          "conditions": {
+            "textCondition": "ablation:brain",
+            "ZFATerm": "ZFA:0000124",
+            "conditionType": "ZECO:0000123"
+          },
+          "conditions": {
+            "textCondition": "ablation:fin",
+            "ZFATerm": "ZFA:0000125",
+            "conditionType": "ZECO:0000123"
+          }
+        }
+      ],
+      "DOid": "DOID:0110869"
+    }
+  ]
 }
