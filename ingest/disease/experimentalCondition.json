@@ -4,12 +4,12 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "required": [
-    "textCondition"
+    "conditionStatement"
   ],
   "additionalProperties": false,
   "id": "experimentalCondition.json#",
   "properties": {
-    "textCondition": {
+    "conditionStatement": {
       "type": "string",
       "description": "free text describing the environmental/experimental condition."
     },
