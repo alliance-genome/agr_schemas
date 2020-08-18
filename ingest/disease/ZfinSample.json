@@ -48,29 +48,6 @@
         "associationType": "is_implicated_in",
         "objectType": "gene"
       },
-      "conditionRelations": [
-        {
-          "conditionRelationType": "unspecified",
-          "conditions": {
-            "textCondition": "ablation:eye",
-            "ZFATerm": "ZFA:0000123",
-            "conditionType": "ZECO:0000123"
-          }
-        },
-        {
-          "conditionRelationType": "ameliorates",
-          "conditions": {
-            "textCondition": "ablation:brain",
-            "ZFATerm": "ZFA:0000124",
-            "conditionType": "ZECO:0000123"
-          },
-          "conditions": {
-            "textCondition": "ablation:fin",
-            "ZFATerm": "ZFA:0000125",
-            "conditionType": "ZECO:0000123"
-          }
-        }
-      ],
       "DOid": "DOID:0110869"
     }
   ]
