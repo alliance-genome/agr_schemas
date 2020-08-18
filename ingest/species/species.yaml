@@ -78,6 +78,8 @@
    dataProviderShortName: SGD
   phylogenicOrder: 70
 
+
+# NOTE: Hsa uses RGD for now,
 - taxonId: NCBITaxon:9606
   shortName: Hsa
   fullName: Homo sapiens
