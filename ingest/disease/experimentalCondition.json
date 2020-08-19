@@ -29,9 +29,9 @@
       "$ref": "../globalId.json#/properties/globalId",
       "description": "NCBITaxon ontology id used in subset of condition types like 'bacterial infection'."
     },
-    "ChEBIOntologyId": {
+    "ChemicalOntologyId": {
       "$ref": "../globalId.json#/properties/globalId",
-      "description": "ChEBI ontology id used in subset of condition terms.  ie: the specific chemcial used in conjunction with 'chemical condition'."
+      "description": "ChEBI or molecular ontology id used in subset of condition terms.  ie: the specific chemcial used in conjunction with 'chemical condition'."
     },
     "ConditionIsStandard": {
       "type": "boolean"
