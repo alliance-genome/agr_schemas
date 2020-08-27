@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "variantNote",
+  "description": "An enitity that describes a single affected, endogenous allele.  These can be of any type that matches that definition.",
+  "id": "variantNote.json#",
+  "type": "object",
+  "required": [
+    "note"
+  ],
+  "properties": {
+    "note": {
+      "type": "string",
+      "description": "Text note associated with the variant."
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "$ref": "../publicationRef.json",
+        "description": "the set of publications associated with this note."
+      }
+    }
+  }
+}
