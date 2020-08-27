@@ -66,7 +66,7 @@
           "description": "Collection holding a limited set of database cross references for each object.",
           "type": "array",
           "items": {
-            "$ref": "gene/geneCrossReference.json"
+            "$ref": "../gene/geneCrossReference.json"
           },
           "uniqueItems": true
         }
@@ -143,7 +143,7 @@
           "description": "Collection holding a limited set of database cross references for each object.",
           "type": "array",
           "items": {
-            "$ref": "gene/geneCrossReference.json"
+            "$ref": "../gene/geneCrossReference.json"
           },
           "uniqueItems": true
         }
@@ -215,7 +215,7 @@
           "description": "Collection holding a limited set of database cross references for each object.",
           "type": "array",
           "items": {
-            "$ref": "gene/geneCrossReference.json"
+            "$ref": "../gene/geneCrossReference.json"
           },
           "uniqueItems": true
         }
@@ -282,7 +282,7 @@
           "description": "Collection holding a limited set of database cross references for each object.",
           "type": "array",
           "items": {
-            "$ref": "gene/geneCrossReference.json"
+            "$ref": "../gene/geneCrossReference.json"
           },
           "uniqueItems": true
         }
@@ -353,7 +353,7 @@
           "description": "Collection holding a limited set of database cross references for each object.",
           "type": "array",
           "items": {
-            "$ref": "gene/geneCrossReference.json"
+            "$ref": "../gene/geneCrossReference.json"
           },
           "uniqueItems": true
         }
