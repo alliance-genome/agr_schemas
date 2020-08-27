@@ -193,6 +193,8 @@
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene
     - name: gene/expression
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
+    - name: gene/phenotypes
+      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=phenotypes
     - name: gene/expression_images
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
     - name: gene/interactions
