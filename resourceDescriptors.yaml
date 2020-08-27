@@ -193,6 +193,8 @@
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene
     - name: gene/expression
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
+    - name: gene/expression
+      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
     - name: gene/expression_images
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=expression
     - name: gene/interactions
@@ -200,7 +202,7 @@
     - name: gene/references
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
     - name: gene/phenotypes
-      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=phenotype
+      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=phenotypes
     - name: gene/spell
       url: http://spell.wormbase.org/search/show_results?search_string=[%s]
     - name: gene/expression/annotation/detail
