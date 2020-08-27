@@ -278,8 +278,6 @@
     url: https://www.yeastgenome.org/locus/[%s]/interaction#network
   - name: htp/dataset
     url: https://www.yeastgenome.org/dataset/[%s]
-  - name: strain
-    url: https://www.yeastgenome.org/strain/[%s]
 
 #
 # GO
