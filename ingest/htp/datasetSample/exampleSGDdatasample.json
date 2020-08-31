@@ -11,6 +11,11 @@
                         "datasetIds": [
                                 "GEO:GSE19302"
                         ],
+			"genomicInformation": {
+  				"biosampleId": "SGD:12346",
+				"bioSampleText": "test",
+				"idType":"strain"
+                        }
                         "dateAssigned": "2009-12-03T20:05:44-00:00"
                 }
         ],
