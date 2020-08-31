@@ -261,6 +261,8 @@
     url: https://www.yeastgenome.org/dataset/[%s]
   - name: reference
     url: https://www.yeastgenome.org/reference/[%s]
+  - name: strain
+    url: https://www.yeastgenome.org/strain/[%s]
 #
 # GO
 #
