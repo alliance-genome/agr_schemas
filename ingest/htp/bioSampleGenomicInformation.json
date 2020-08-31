@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
         "biosampleId": {
-            "$ref": "../../globalId.json#/properties/globalId",
+            "$ref": "../globalId.json#/properties/globalId",
             "description": "The id of the biosample genomic information. fish, genotype, allele, strain ID"
         },
         "idType": {
