@@ -59,7 +59,10 @@
       "type": "string"
     },
     "crossReferences":{
-      "$ref": "../crossReference.json"
+      "type": "array",
+      "items": {
+         "$ref": "../crossReference.json"
+      }
     }
   }
 }
