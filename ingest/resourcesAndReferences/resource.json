@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Resource",
-  "description": "Any source of information that collates curatable items.  For example, Books, Journals, Newspapers, etc...In some cases, curation is done on the Resource itself.",
+  "description": "Any source of information that collates curatable items.  For example, Books, Journals, Newspapers, etc.",
   "id": "resource.json#",
   "type": "object",
   "required": [
