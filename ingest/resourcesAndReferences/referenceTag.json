@@ -17,10 +17,12 @@
     "tagName": {
       "enum": [
         "canShowImages",
-        "PMCOpenAccess"
+        "PMCOpenAccess",
+        "providedBy",
+        "notRelevant"
       ]
     },
-    "modAgreement": {
+    "tagSource": {
       "enum": [
         "SGD",
         "ZFIN",
