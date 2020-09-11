@@ -58,9 +58,12 @@
             "description": "set of publications that support the genomic location annotation for this variant record."
           }
         },
-        "note": {
-          "$ref": "variantNote.json",
-          "description": "free text note associated with the variant.  variantNote.json also specifies an optional set of references for this note."
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "variantNote.json",
+            "description": "free text note associated with the variant.  variantNote.json also specifies an optional set of references for this note."
+          }
         },
         "crossReferences": {
           "description": "Collection holding a limited set of database cross references for each object.",
@@ -135,9 +138,12 @@
             "description": "set of publications that support the genomic location annotation for this variant record."
           }
         },
-        "note": {
-          "$ref": "variantNote.json",
-          "description": "free text note associated with the variant.  variantNote.json also specifies an optional set of references for this note."
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "variantNote.json",
+            "description": "free text note associated with the variant.  variantNote.json also specifies an optional set of references for this note."
+          }
         },
         "crossReferences": {
           "description": "Collection holding a limited set of database cross references for each object.",
@@ -277,9 +283,12 @@
             "description": "set of publications that support the genomic location annotation for this variant record."
           }
         },
-        "note": {
-          "$ref": "variantNote.json",
-          "description": "free text note associated with the variant.  variantNote.json also specifies an optional set of references for this note."
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "variantNote.json",
+            "description": "free text note associated with the variant.  variantNote.json also specifies an optional set of references for this note."
+          }
         },
         "crossReferences": {
           "description": "Collection holding a limited set of database cross references for each object.",
@@ -348,9 +357,12 @@
             "description": "set of publications that support the genomic location annotation for this variant record."
           }
         },
-        "note": {
-          "$ref": "variantNote.json",
-          "description": "free text note associated with the variant.  variantNote.json also specifies an optional set of references for this note."
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "variantNote.json",
+            "description": "free text note associated with the variant.  variantNote.json also specifies an optional set of references for this note."
+          }
         },
         "crossReferences": {
           "description": "Collection holding a limited set of database cross references for each object.",
