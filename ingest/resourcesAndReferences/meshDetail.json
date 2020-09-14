@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MeshDetail",
+  "desription": "A mesh heading and qualifier set",
+  "id": "meshDetail.json#",
+  "type": "object",
+  "required": [
+    "referenceID",
+    "meshHeadingTerm"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "referenceID": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "The globally unique identifier for the reference. "
+    },
+    "meshHeadingTerm": {
+	"type":"string",
+	"description": "medical subject heading term identifier. note: this is not a global ID."
+    },
+    "meshQualfierTerm": {
+	 "type":"string",
+        "description": "medical subject heading qualfier term identifier (aka: medical subject subheading term). note: this is not a global ID."
+    }
+  }
+}
