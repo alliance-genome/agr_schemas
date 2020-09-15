@@ -8,9 +8,19 @@
                         "sampleType": "OBI:0000895",
                         "taxonId": "NCBITaxon:4932",
                         "assayType": "MMO:0000649",
+                        "genomicInformation": {
+                                "biosampleId": "SGD:12346",
+                                "bioSampleText": "test",
+                                "idType":"strain"
+                        },
                         "datasetIds": [
                                 "GEO:GSE19302"
                         ],
+			"genomicInformation": {
+  				"biosampleId": "SGD:12346",
+				"bioSampleText": "test",
+				"idType":"strain"
+                        },
                         "dateAssigned": "2009-12-03T20:05:44-00:00"
                 }
         ],
