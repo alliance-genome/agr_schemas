@@ -10,7 +10,8 @@
     "authors",
     "datePublished",
     "citation",
-    "allianceCategory"
+    "allianceCategory",
+	  "resourceId"
   ],
   "additionalProperties": false,
   "properties": {
@@ -103,7 +104,7 @@
         "$ref": "../crossReference.json"
       }
     },
-    "resource": {
+    "resourceId": {
       "$ref": "../globalId.json#/properties/globalId"
   }
 }
