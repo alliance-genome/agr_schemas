@@ -20,6 +20,10 @@
             },
 	    "uniqueItems": true
         },
+	     "preferredCrossReference": {
+		    "description": "cross reference to the preferred page to link to in search",
+		    "$ref": "../crossReference.json#"
+	    },
 	"crossReferences": {
       "description": "optional cross references to the MOD sample or dataset page.",
 	"type":"array",
