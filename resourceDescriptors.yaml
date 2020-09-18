@@ -231,6 +231,8 @@
       url: https://www.wormbase.org/db/get?name=[%s];class=Construct
     - name: pub
       url: http://www.wormbase.org/db/misc/paper?name=[%s]
+    - name: htp/dataset
+      url: https://www.wormbase.org/resources/analysis/[%s]
 #
 # SGD
 #
