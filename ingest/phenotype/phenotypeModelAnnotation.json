@@ -41,6 +41,13 @@
       "type": "string",
       "format": "date-time",
       "description": "Date this entity was assigned in it's primary data source."
+    },
+    "conditionRelations": {
+      "type": "array",
+      "items": {
+        "$ref": "../experiment/conditionRelation.json",
+        "description": "all the experimental conditions that participate with the phenotype annotation as defined by the conditionRelationType"
+      }
     }
   }
 }
