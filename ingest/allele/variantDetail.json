@@ -2,137 +2,377 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "An entry that describes the genomicLocation of a variant.",
   "id": "variant.json",
-  "oneOf": [{"title": "Point Mutation",
-		 "type":"object",
-		 "required":["alleleId","start","end","genomicReferenceSequence","genomicVariantSequence","type","sequenceOfReferenceAccessionNumber"],
-		 "properties": {"alleleId":{"$ref": "../globalId.json#/properties/globalId"},
-		 	        "assembly":{"type":"string"},
-				"chromosome":{"type":"string"},
-		 	        "start":{"type":"number"},
-				"end":{"type":"number"},
-				"sequenceOfReferenceAccessionNumber": {"$ref":"../globalId.json#/properties/globalId"},
-				"genomicReferenceSequence":{"type":"string",
-							    "maxLength":1},
-				"genomicVariantSequence":{"type":"string","maxLength":1},
-				"type":{"enum":["SO:1000008"]},
-				"consequence": {
-      					"$ref":"../globalId.json#/properties/globalId",
-     					 "description": "The consequence of the mutation; should be an SO term"
-				}, 
-		 		"references" : {
-      						"type": "array",
-      						"items": {
-      	 						"$ref": "../publicationRef.json#",
-      							"description": "set of publications that support the genomic location annotation for this variant record."
-    						}
-   				}
-     		}
-		},
-		{
-		"title": "Insertion",
-		 "required":["alleleId","start","end","genomicReferenceSequence","type","sequenceOfReferenceAccessionNumber"],
-		 "properties": {"alleleId":{"$ref": "../globalId.json#/properties/globalId"},
-		 	        "assembly":{"type":"string"},
-                                "chromosome":{"type":"string"},
-                                "start":{"type":"number"},
-                                "end":{"type":"number"},
-				"insertionLength":{"type":"number"},
-				"genomicReferenceSequence":{"enum":["N/A"]},
-				"genomicVariantSequence":{"type":"string"},
-				"sequenceOfReferenceAccessionNumber": {"$ref":"../globalId.json#/properties/globalId"},
-				"genomicVariantSequenceAccessionNumber":{"type":"string"},
-				"paddedBase":{"type":"string","maxLength":1},
-                                "type":{"enum":["SO:0000667"]},
-				"consequence": {
-      					"$ref":"../globalId.json#/properties/globalId",
-     					 "description": "the consequence of the mutation.  should be an SO term"
-				 },
-				"references" : {
-      						"type": "array",
-      						"items": {
-      	 						"$ref": "../publicationRef.json#",
-      							"description": "set of publications that support the genomic location annotation for this variant record."
-    						}
-   				}
-				}
-                },
-		{"title":"Deletion",
-		 "type":"object",
-		 "required": ["alleleId","start","end","genomicVariantSequence","type","sequenceOfReferenceAccessionNumber"],
-		 "properties":{"alleleId":{"$ref": "../globalId.json#/properties/globalId"},
-				"assembly":{"type":"string"},
-                                "chromosome":{"type":"string"},
-                                "start":{"type":"number"},
-                                "end":{"type":"number"},
-				"paddedBase":{"type":"string","maxLength":1},
-                                "genomicReferenceSequence":{"type":"string"},
-                                "genomicVariantSequence":{"enum":["N/A"]},
-				"sequenceOfReferenceAccessionNumber": {"$ref":"../globalId.json#/properties/globalId"},
-				"type":{"enum":["SO:0000159"]},
-				"consequence": {
-      					"$ref":"../globalId.json#/properties/globalId",
-     					 "description": "the consequence of the mutation.  should be an SO term"
-				},
-			       	"references" : {
-      						"type": "array",
-      						"items": {
-      	 						"$ref": "../publicationRef.json#",
-      							"description": "set of publications that support the genomic location annotation for this variant record."
-    						}
-   				}
-                               }
-                },
-		{"title":"MNV",
-		 "type":"object",
-		 "required": ["alleleId","start","end","genomicReferenceSequence","genomicVariantSequence","type","sequenceOfReferenceAccessionNumber"],
-		 "properties": {"alleleId":{"$ref": "../globalId.json#/properties/globalId"},
-				"assembly":{"type":"string"},
-                                "chromosome":{"type":"string"},
-                                "start":{"type":"number"},
-                                "end":{"type":"number"},
-                                "genomicReferenceSequence":{"type":"string"},
-                                "genomicVariantSequence":{"type":"string"},
-                                "sequenceOfReferenceAccessionNumber": {"$ref":"../globalId.json#/properties/globalId"},
-				"type":{"enum":["SO:0002007"]},
-				"consequence": {
-      					"$ref":"../globalId.json#/properties/globalId",
-     					 "description": "the consequence of the mutation.  should be an SO term"
-				},
-				"references" : {
-      						"type": "array",
-      						"items": {
-      	 						"$ref": "../publicationRef.json#",
-      							"description": "set of publications that support the genomic location annotation for this variant record."
-    						}
-   				}
-                               }
-                },
-                {"title":"DELIN",
-                 "type":"object",
-                 "required": ["alleleId","start","end","type","sequenceOfReferenceAccessionNumber"],
-                 "properties": {"alleleId":{"$ref": "../globalId.json#/properties/globalId"},
-                                "assembly":{"type":"string"},
-                                "chromosome":{"type":"string"},
-                                "start":{"type":"number"},
-                                "end":{"type":"number"},
-				"genomicVariantSequenceAccessionNumber":{"type":"string"},
-                                "genomicReferenceSequence":{"type":"string"},
-                                "genomicVariantSequence":{"type":"string"},
-                                "sequenceOfReferenceAccessionNumber": {"$ref":"../globalId.json#/properties/globalId"},
-                                "type":{"enum":["SO:1000032"]},
-				"insertionLength":{"type":"number"},
-                                "consequence": {
-                                        "$ref":"../globalId.json#/properties/globalId",
-                                         "description": "the consequence of the mutation.  should be an SO term"
-                                },
-                                "references" : {
-                                                "type": "array",
-                                                "items": {
-                                                        "$ref": "../publicationRef.json#",
-                                                        "description": "set of publications that support the genomic location annotation for this variant record."
-                                                }
-                                }
-                               }
-                }
-              ]
+  "oneOf": [
+    {
+      "title": "Point Mutation",
+      "type": "object",
+      "required": [
+        "alleleId",
+        "start",
+        "end",
+        "genomicReferenceSequence",
+        "genomicVariantSequence",
+        "type",
+        "sequenceOfReferenceAccessionNumber"
+      ],
+      "properties": {
+        "alleleId": {
+          "$ref": "../globalId.json#/properties/globalId"
+        },
+        "assembly": {
+          "type": "string"
+        },
+        "chromosome": {
+          "type": "string"
+        },
+        "start": {
+          "type": "number"
+        },
+        "end": {
+          "type": "number"
+        },
+        "sequenceOfReferenceAccessionNumber": {
+          "$ref": "../globalId.json#/properties/globalId"
+        },
+        "genomicReferenceSequence": {
+          "type": "string",
+          "maxLength": 1
+        },
+        "genomicVariantSequence": {
+          "type": "string",
+          "maxLength": 1
+        },
+        "type": {
+          "enum": [
+            "SO:1000008"
+          ]
+        },
+        "consequence": {
+          "$ref": "../globalId.json#/properties/globalId",
+          "description": "The consequence of the mutation; should be an SO term"
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "$ref": "../publicationRef.json#",
+            "description": "set of publications that support the genomic location annotation for this variant record."
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "variantNote.json",
+            "description": "free text note associated with the variant.  variantNote.json also specifies an optional set of references for this note."
+          }
+        },
+        "crossReferences": {
+          "description": "Collection holding a limited set of database cross references for each object.",
+          "type": "array",
+          "items": {
+            "$ref": "../gene/geneCrossReference.json"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    {
+      "title": "Insertion",
+      "required": [
+        "alleleId",
+        "start",
+        "end",
+        "genomicReferenceSequence",
+        "type",
+        "sequenceOfReferenceAccessionNumber"
+      ],
+      "properties": {
+        "alleleId": {
+          "$ref": "../globalId.json#/properties/globalId"
+        },
+        "assembly": {
+          "type": "string"
+        },
+        "chromosome": {
+          "type": "string"
+        },
+        "start": {
+          "type": "number"
+        },
+        "end": {
+          "type": "number"
+        },
+        "insertionLength": {
+          "type": "number"
+        },
+        "genomicReferenceSequence": {
+          "enum": [
+            "N/A"
+          ]
+        },
+        "genomicVariantSequence": {
+          "type": "string"
+        },
+        "sequenceOfReferenceAccessionNumber": {
+          "$ref": "../globalId.json#/properties/globalId"
+        },
+        "genomicVariantSequenceAccessionNumber": {
+          "type": "string"
+        },
+        "paddedBase": {
+          "type": "string",
+          "maxLength": 1
+        },
+        "type": {
+          "enum": [
+            "SO:0000667"
+          ]
+        },
+        "consequence": {
+          "$ref": "../globalId.json#/properties/globalId",
+          "description": "the consequence of the mutation.  should be an SO term"
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "$ref": "../publicationRef.json#",
+            "description": "set of publications that support the genomic location annotation for this variant record."
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "variantNote.json",
+            "description": "free text note associated with the variant.  variantNote.json also specifies an optional set of references for this note."
+          }
+        },
+        "crossReferences": {
+          "description": "Collection holding a limited set of database cross references for each object.",
+          "type": "array",
+          "items": {
+            "$ref": "../gene/geneCrossReference.json"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    {
+      "title": "Deletion",
+      "type": "object",
+      "required": [
+        "alleleId",
+        "start",
+        "end",
+        "genomicVariantSequence",
+        "type",
+        "sequenceOfReferenceAccessionNumber"
+      ],
+      "properties": {
+        "alleleId": {
+          "$ref": "../globalId.json#/properties/globalId"
+        },
+        "assembly": {
+          "type": "string"
+        },
+        "chromosome": {
+          "type": "string"
+        },
+        "start": {
+          "type": "number"
+        },
+        "end": {
+          "type": "number"
+        },
+        "paddedBase": {
+          "type": "string",
+          "maxLength": 1
+        },
+        "genomicReferenceSequence": {
+          "type": "string"
+        },
+        "genomicVariantSequence": {
+          "enum": [
+            "N/A"
+          ]
+        },
+        "sequenceOfReferenceAccessionNumber": {
+          "$ref": "../globalId.json#/properties/globalId"
+        },
+        "type": {
+          "enum": [
+            "SO:0000159"
+          ]
+        },
+        "consequence": {
+          "$ref": "../globalId.json#/properties/globalId",
+          "description": "the consequence of the mutation.  should be an SO term"
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "$ref": "../publicationRef.json#",
+            "description": "set of publications that support the genomic location annotation for this variant record."
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "variantNote.json",
+            "description": "free text note associated with the variant.  variantNote.json also specifies an optional set of references for this note."
+          }
+        },
+        "crossReferences": {
+          "description": "Collection holding a limited set of database cross references for each object.",
+          "type": "array",
+          "items": {
+            "$ref": "../gene/geneCrossReference.json"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    {
+      "title": "MNV",
+      "type": "object",
+      "required": [
+        "alleleId",
+        "start",
+        "end",
+        "genomicReferenceSequence",
+        "genomicVariantSequence",
+        "type",
+        "sequenceOfReferenceAccessionNumber"
+      ],
+      "properties": {
+        "alleleId": {
+          "$ref": "../globalId.json#/properties/globalId"
+        },
+        "assembly": {
+          "type": "string"
+        },
+        "chromosome": {
+          "type": "string"
+        },
+        "start": {
+          "type": "number"
+        },
+        "end": {
+          "type": "number"
+        },
+        "genomicReferenceSequence": {
+          "type": "string"
+        },
+        "genomicVariantSequence": {
+          "type": "string"
+        },
+        "sequenceOfReferenceAccessionNumber": {
+          "$ref": "../globalId.json#/properties/globalId"
+        },
+        "type": {
+          "enum": [
+            "SO:0002007"
+          ]
+        },
+        "consequence": {
+          "$ref": "../globalId.json#/properties/globalId",
+          "description": "the consequence of the mutation.  should be an SO term"
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "$ref": "../publicationRef.json#",
+            "description": "set of publications that support the genomic location annotation for this variant record."
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "variantNote.json",
+            "description": "free text note associated with the variant.  variantNote.json also specifies an optional set of references for this note."
+          }
+        },
+        "crossReferences": {
+          "description": "Collection holding a limited set of database cross references for each object.",
+          "type": "array",
+          "items": {
+            "$ref": "../gene/geneCrossReference.json"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    {
+      "title": "DELIN",
+      "type": "object",
+      "required": [
+        "alleleId",
+        "start",
+        "end",
+        "type",
+        "sequenceOfReferenceAccessionNumber"
+      ],
+      "properties": {
+        "alleleId": {
+          "$ref": "../globalId.json#/properties/globalId"
+        },
+        "assembly": {
+          "type": "string"
+        },
+        "chromosome": {
+          "type": "string"
+        },
+        "start": {
+          "type": "number"
+        },
+        "end": {
+          "type": "number"
+        },
+        "genomicVariantSequenceAccessionNumber": {
+          "type": "string"
+        },
+        "genomicReferenceSequence": {
+          "type": "string"
+        },
+        "genomicVariantSequence": {
+          "type": "string"
+        },
+        "sequenceOfReferenceAccessionNumber": {
+          "$ref": "../globalId.json#/properties/globalId"
+        },
+        "type": {
+          "enum": [
+            "SO:1000032"
+          ]
+        },
+        "insertionLength": {
+          "type": "number"
+        },
+        "consequence": {
+          "$ref": "../globalId.json#/properties/globalId",
+          "description": "the consequence of the mutation.  should be an SO term"
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "$ref": "../publicationRef.json#",
+            "description": "set of publications that support the genomic location annotation for this variant record."
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "variantNote.json",
+            "description": "free text note associated with the variant.  variantNote.json also specifies an optional set of references for this note."
+          }
+        },
+        "crossReferences": {
+          "description": "Collection holding a limited set of database cross references for each object.",
+          "type": "array",
+          "items": {
+            "$ref": "../gene/geneCrossReference.json"
+          },
+          "uniqueItems": true
+        }
+      }
+    }
+  ]
 }
