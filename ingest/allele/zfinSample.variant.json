@@ -9,7 +9,8 @@
     "sequenceOfReferenceAccessionNumber" : "NC_007118.7",
     "genomicReferenceSequence" : "C",
     "genomicVariantSequence" : "T",
-    "type" : "SO:1000008"
+    "type" : "SO:1000008",
+    "crossReferences": [{"id":"ZFIN:ZDB-ALT-990415-72","pages":["variation"]}]
   }
   ],
   "metaData": {
