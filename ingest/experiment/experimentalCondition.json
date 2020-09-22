@@ -4,18 +4,19 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "required": [
-    "conditionEntity"
+    "conditionStatement",
+    "conditionClass"
   ],
   "additionalProperties": false,
   "id": "experimentalCondition.json#",
   "properties": {
-    "conditionEntity": {
-      "type": "string",
-      "description": "free text describing the environmental/experimental condition. For some groups this is a single term, others is it is a concantenation of the term names from the ontologies included in this data structure."
-    },
     "conditionClass": {
       "$ref": "../globalId.json#/properties/globalId",
       "description": "An ontology ID that represents the type of condition, for ZFIN this is a ZECO term, for RGD it is a different ontology ID."
+    },
+    "conditionStatement": {
+      "type": "string",
+      "description": "free text describing the environmental/experimental condition. For some groups this is a single term, others is it is a concatenation of the term names from the ontologies included in this data structure."
     },
     "conditionQuantity": {
      "type":"string",
