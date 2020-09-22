@@ -69,7 +69,7 @@
     "conditionRelations": {
       "type": "array",
       "items": {
-        "$ref": "conditionRelation.json",
+        "$ref": "../experiment/conditionRelation.json",
         "description": "all the experimental conditions that participate with the disease annotation as defined by the conditionRelationType"
       }
     }
