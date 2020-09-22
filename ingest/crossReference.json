@@ -13,7 +13,7 @@
     },
     "pages": {
       "type": "array",
-      "description": "The ‘page’ type this crossreference is categorized as — controlled vocabulary from resourceDescriptors.yaml — TODO: convert this into a validatable JSON schema array.",
+      "description": "The page type this crossreference is categorized as — controlled vocabulary from resourceDescriptors.yaml — TODO: convert this into a validatable JSON schema array.",
       "items": {
         "type": "string",
         "description": "list of pages that this id is used to link to - should correspond one to one with page attribute in resourceDescriptor.yaml entry for this prefixed id"
