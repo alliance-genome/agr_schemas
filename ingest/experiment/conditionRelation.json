@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "ConditionRelation",
-  "description": "All the experimental conditions that participate with the disease annotation as defined by the conditionRelationType",
+  "description": "All the experimental conditions that participate with the annotation as defined by the conditionRelationType",
   "id": "conditionRelation.json#",
   "type": "object",
   "required": [
@@ -12,7 +12,7 @@
     "enum": [
       "ameliorates",
       "exacerbates",
-      "unspecified",
+      "has_condition",
       "induces"
     ]
   },
@@ -20,7 +20,7 @@
     "type": "array",
     "items": {
       "$ref": "experimentalCondition.json",
-      "description": "all the experimental conditions that participate with the disease annotation as defined by the conditionRelationType"
+      "description": "all the experimental conditions that participate with the annotation as defined by the conditionRelationType"
     }
   }
 }
