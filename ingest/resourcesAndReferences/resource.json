@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Resource",
+  "description": "Any source of information that collates curatable items.  For example, Books, Journals, Newspapers, etc.",
+  "id": "resource.json#",
+  "type": "object",
+  "required": [
+    "primaryID",
+    "title",
+    "isoAbbreviation",
+    "medlineAbbreviation"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "primaryID": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "The globally unique identifier for the resource.  ie: NLMId or ISBN or MOD ID.  Each identifier should be prefixed and of the form prefix:id "
+    },
+    "title" : {
+      "type": "string",
+      "description": "The title of the resource."
+    },
+    "titleSynonyms":  {
+      "type" : "array",
+        "items": {
+          "type": "string"
+        },
+      "uniqueItems": true
+    },
+    "isoAbbreviation": {
+      "type": "string"
+    },
+    "medlineAbbreviation": {
+      "type": "string"
+    },
+    "copyrightDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "editorsOrAuthors": {
+      "type": "array",
+      "items": {
+        "$ref": "authorReference.json"
+      }
+    },
+    "volumes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pages": {
+      "type": "number"
+    },
+    "abstractOrSummary": {
+      "type": "string"
+    },
+    "crossReferences":{
+      "type": "array",
+      "items": {
+         "$ref": "../crossReference.json"
+      }
+    }
+  }
+}
