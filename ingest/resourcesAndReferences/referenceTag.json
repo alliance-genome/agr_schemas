@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ReferenceTag",
+  "description": "A tag is a bit of meta data that describes unique characteristics of each reference.",
+  "id": "resource.json#",
+  "type": "object",
+  "required": [
+    "referenceID",
+    "tagName"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "referenceID": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "The globally unique identifier for the reference. "
+    },
+    "tagName": {
+      "enum": [
+        "canShowImages",
+        "PMCOpenAccess",
+        "inCorpus",
+        "notRelevant"
+      ]
+    },
+    "tagSource": {
+      "enum": [
+        "SGD",
+        "ZFIN",
+        "RGD",
+        "WB",
+        "MGI",
+        "FB"
+      ]
+    }
+  }
+}
