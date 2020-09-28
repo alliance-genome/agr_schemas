@@ -19,7 +19,7 @@
         "description": "medical subject heading qualfier term identifier (aka: medical subject subheading term). note: this is not a global ID."
     }, 
     "referenceID": {
-	 "$ref": "../globalId.json",
+	 "$ref": "../globalId.json#/properties/globalId",
 	 "description": "the id of the reference that this term applies to."
     }
   }
