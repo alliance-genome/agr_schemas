@@ -52,25 +52,25 @@
         {
           "conditionRelationType": "has_condition",
           "conditions": [{
-            "conditionId":"ZECO:0000446", // chemical treatment
+            "conditionId":"ZECO:0000446", 
             "conditionStatement": "chemical:bleach",
-            "chemicalOntologyId": "CCEBI:00004532", //bleach
-            "conditionClass": "ZECO:0000446" // chemical treatment
+            "chemicalOntologyId": "CCEBI:00004532", 
+            "conditionClass": "ZECO:0000446" 
           }]
         },
         {
           "conditionRelationType": "exacerbates",
           "conditions": [{
-            "conditionId": "ZECO:0000444", // ablation
+            "conditionId": "ZECO:0000444", 
 	    "conditionStatement":"ablation:neck",
-            "anatomicalOntologyId": "ZFA:0000124", //neck
-            "conditionClass": "ZECO:0000229" // physical alteration 
+            "anatomicalOntologyId": "ZFA:0000124", 
+            "conditionClass": "ZECO:0000229" 
           },
           {
-            "conditionId": "ZECO:0000444", // ablation
+            "conditionId": "ZECO:0000444", 
             "conditionStatement":"ablation:head",
-            "anatomicalOntologyId": "ZFA:0000126", //head
-            "conditionClass": "ZECO:0000229" // physical alteration
+            "anatomicalOntologyId": "ZFA:0000126", 
+            "conditionClass": "ZECO:0000229" 
           }]
         }
       ],
