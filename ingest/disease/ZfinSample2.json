@@ -52,7 +52,7 @@
         {
           "conditionRelationType": "has_condition",
           "conditions": [{
-            "conditionId":"ZECO:0000446" // chemical treatment
+            "conditionId":"ZECO:0000446", // chemical treatment
             "conditionStatement": "chemical:bleach",
             "chemicalOntologyId": "CCEBI:00004532", //bleach
             "conditionClass": "ZECO:0000446" // chemical treatment
