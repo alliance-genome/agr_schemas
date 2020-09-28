@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Bibliography Category Information",
+  "description": "A controlled vocabulary for Bibliograpgy Information objects.",
+  "id": "bibliographyCategoryMetaData.json",
+  "type": "object",
+  "required": [ "metaData", "data" ],
+  "properties": {
+    "metaData": {
+      "$ref": "../metaData.json#",
+      "description": "meta data of the load file as defined in metaData.json."
+    },
+    "data": { 
+      "type": "array",
+      "description": "A list of bibliographyCategories objects.",
+      "items": {
+        "$ref" : "bibliographyCategory.json#"
+      }
+    }
+  }
+}
