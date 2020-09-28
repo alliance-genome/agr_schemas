@@ -8,7 +8,7 @@
     "primaryID",
     "firstName",
     "lastName",
-    "referenceID",
+    "referenceID"
   ],
   "additionalProperties": false,
   "properties": {
