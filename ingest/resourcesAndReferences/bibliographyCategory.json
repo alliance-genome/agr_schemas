@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Bibliography Category",
+  "description": "An enitity that describes a category of bibliographical resources that each bibliographic resource at the Alliance can be sorted into.",
+  "id": "bibliographyCategory.json#",
+  "type": "object",
+    "required": [
+	"allianceBibliographiCategory",
+	"definition"
+    ],
+  "additionalProperties": false,
+  "properties": {
+    "allianceBibliographiCategory": {
+      "type": "string",
+      "description": "The bibliographic category used in the alliance for search and grouping purposes."
+    },
+    "definition": {
+      "type": "string",
+      "description": "The definition of the category."
+    }
+  }
+}
+
