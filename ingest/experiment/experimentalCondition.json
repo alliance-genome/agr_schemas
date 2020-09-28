@@ -1,0 +1,43 @@
+{
+  "title": "Experimental Conditions for Disease Annotation",
+  "description": "An experimental condition",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "conditionStatement",
+    "conditionClass"
+  ],
+  "additionalProperties": false,
+  "id": "experimentalCondition.json#",
+  "properties": {
+    "conditionClass": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "An ontology ID that represents the type of condition, for ZFIN this is a ZECO term, for RGD it is a different ontology ID."
+    },
+    "conditionStatement": {
+      "type": "string",
+      "description": "free text describing the environmental/experimental condition. For some groups this is a single term, others is it is a concatenation of the term names from the ontologies included in this data structure."
+    },
+    "conditionQuantity": {
+     "type":"string",
+     "description": "Units/amount/degrees (text)"
+    },
+    "anatomicalOntologyId": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "anatomical ontology identifier used in cases like regeneration/wounding."
+    },
+    "geneOntologyId": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "gene ontology id used in subset of condition types."
+    },
+    "NCBITaxonId": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "NCBITaxon ontology id used in subset of condition types like 'bacterial infection'."
+    },
+    "ChemicalOntologyId": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "ChEBI or molecular ontology id used in subset of condition terms.  ie: the specific chemcial used in conjunction with 'chemical condition'."
+    }
+  }
+}
+
