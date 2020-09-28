@@ -52,22 +52,25 @@
         {
           "conditionRelationType": "has_condition",
           "conditions": [{
-            "conditionStatement": "ablation:eye",
-            "anatomicalOntologyId": "ZFA:0000123",
-            "conditionClass": "ZECO:0000123"
+            "conditionId":"ZECO:0000446" // chemical treatment
+            "conditionStatement": "chemical:bleach",
+            "chemicalOntologyId": "CCEBI:00004532", //bleach
+            "conditionClass": "ZECO:0000446" // chemical treatment
           }]
         },
         {
-          "conditionRelationType": "ameliorates",
+          "conditionRelationType": "exacerbates",
           "conditions": [{
-            "conditionStatement": "ablation:brain",
-            "anatomicalOntologyId": "ZFA:0000124",
-            "conditionClass": "ZECO:0000123"
+            "conditionId": "ZECO:0000444", // ablation
+	    "conditionStatement":"ablation:neck",
+            "anatomicalOntologyId": "ZFA:0000124", //neck
+            "conditionClass": "ZECO:0000229" // physical alteration 
           },
           {
-            "conditionStatement": "ablation:fin",
-            "anatomicalOntologyId": "ZFA:0000125",
-            "conditionClass": "ZECO:0000123"
+            "conditionId": "ZECO:0000444", // ablation
+            "conditionStatement":"ablation:head",
+            "anatomicalOntologyId": "ZFA:0000126", //head
+            "conditionClass": "ZECO:0000229" // physical alteration
           }]
         }
       ],
