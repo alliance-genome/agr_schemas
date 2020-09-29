@@ -11,7 +11,7 @@
   "id": "experimentalCondition.json#",
   "properties": {
     "conditionId": {
-      "$ref": "../globalId.json#/properties/globalId"
+      "$ref": "../globalId.json#/properties/globalId",
       "description": "the optional id of the ontology term most closely related to the condition."
      },
     "zecoId": {
