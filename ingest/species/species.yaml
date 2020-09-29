@@ -17,6 +17,17 @@
   commonNames:
     - SARS-CoV-2
     - Severe acute respiratory syndrome coronavirus 2
+    - SARS-CoV2
+    - sars cov 2
+    - SARS-2
+    - SARS2
+    - COVID
+    - COVID19
+    - COVID-19
+    - COVID-19 virus
+    - 2019-nCoV
+    - HCoV-19
+    - Human coronavirus 2019
   primaryDataProvider:
    dataProviderFullName: Alliance of Genome Resources
    dataProviderShortName: Alliance
