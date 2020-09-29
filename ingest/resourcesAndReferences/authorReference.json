@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "AuthorReference",
-  "description": "A object that holds contributor/author name and the reference and the reference id.  This object is only unique when it ",
+  "description": "A object that holds contributor/author name and the reference id.",
   "id": "resource.json#",
   "type": "object",
   "required": [
