@@ -1,0 +1,111 @@
+{
+   "data" : [
+       {
+         "DOid" : "DOID:13636",
+         "conditionRelations" : [
+            {
+               "conditionRelationType" : "induces",
+               "conditions" : [
+                  {
+                     "ChemicalOntologyID" : "WB:WBMol:00005119",
+                     "conditionClass" : "ZECO:0000104",
+                     "conditionStatement" : "Nitrogen Mustard Compounds"
+                  }
+               ]
+            }
+         ],
+         "dataProvider" : [
+            {
+               "crossReference" : {
+                  "id" : "DOID:13636",
+                  "pages" : [
+                     "disease/wb"
+                  ]
+               },
+               "type" : "curated"
+            }
+         ],
+         "dateAssigned" : "2018-03-05T00:00:00+00:00",
+         "evidence" : {
+            "evidenceCodes" : [
+               "ECO:0000315"
+            ],
+            "publication" : {
+               "crossReference" : {
+                  "id" : "WB:WBPaper00031336",
+                  "pages" : [
+                     "reference"
+                  ]
+               },
+               "publicationId" : "PMID:18086896"
+            }
+         },
+         "objectId" : "WB:WBStrain00035483",
+         "objectName" : "VC13",
+         "objectRelation" : {
+            "associationType" : "is_model_of",
+            "objectType" : "strain"
+         }
+      },
+      {
+         "DOid" : "DOID:11723",
+         "conditionRelations" : [
+            {
+               "conditionRelationType" : "unspecified",
+               "conditions" : [
+                  {
+                     "ChemicalOntologyID" : "WB:WBMol:00004976",
+                     "conditionClass" : "ZECO:0000104",
+                     "conditionStatement" : "Methazolamide"
+                  }
+               ]
+            }
+         ],
+         "dataProvider" : [
+            {
+               "crossReference" : {
+                  "id" : "DOID:11723",
+                  "pages" : [
+                     "disease/wb"
+                  ]
+               },
+               "type" : "curated"
+            }
+         ],
+         "dateAssigned" : "2017-05-22T00:00:00+00:00",
+         "evidence" : {
+            "evidenceCodes" : [
+               "ECO:0000315"
+            ],
+            "publication" : {
+               "crossReference" : {
+                  "id" : "WB:WBPaper00035094",
+                  "pages" : [
+                     "reference"
+                  ]
+               },
+               "publicationId" : "PMID:19648295"
+            }
+         },
+         "objectId" : "WB:WBStrain00024340",
+         "objectName" : "LS587",
+         "objectRelation" : {
+            "associationType" : "is_model_of",
+            "objectType" : "strain"
+         }
+      }
+   ],
+   "metaData" : {
+      "dataProvider" : {
+         "crossReference" : {
+            "id" : "WB",
+            "pages" : [
+               "homepage"
+            ]
+         },
+         "type" : "curated"
+      },
+      "dateProduced" : "2020-09-29T15:24:59+01:00",
+      "release" : "WS278"
+   }
+}
