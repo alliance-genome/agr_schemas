@@ -5,12 +5,12 @@
   "id": "bibliographyCategory.json#",
   "type": "object",
     "required": [
-	"allianceBibliographiCategory",
+	"allianceBibliographicCategory",
 	"definition"
     ],
   "additionalProperties": false,
   "properties": {
-    "allianceBibliographiCategory": {
+    "allianceBibliographicCategory": {
       "type": "string",
       "description": "The bibliographic category used in the alliance for search and grouping purposes."
     },
