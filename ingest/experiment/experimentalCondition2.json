@@ -1,5 +1,5 @@
 {
-  "title": "Experimental Conditions for Disease Annotation",
+  "title": "Experimental Conditions for Disease and Phenotype Annotation",
   "description": "An experimental condition",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
