@@ -20,7 +20,7 @@
     },
     "conditionId": {
       "$ref": "../globalId.json#/properties/globalId",
-      "description": "the optional id of the ontology term most closely related to the condition."
+      "description": "the optional id of the term most closely related to the condition. (could be a more specific ZECO term id, or an XFO term id) "
     },
     "conditionQuantity": {
      "type":"string",
