@@ -10,7 +10,7 @@
   "additionalProperties": false,
   "id": "experimentalCondition.json#",
   "properties": {
-    "conditionClass": {
+    "conditionClassId": {
       "$ref": "../globalId.json#/properties/globalId",
       "description": "The ZECO ID that represents the high level condition grouping term."
     },
