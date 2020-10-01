@@ -205,7 +205,7 @@
     - name: gene/references
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=references
     - name: gene/phenotypes
-      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=phenotypes
+      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=phenotype
     - name: gene/spell
       url: http://spell.wormbase.org/search/show_results?search_string=[%s]
     - name: gene/expression/annotation/detail
