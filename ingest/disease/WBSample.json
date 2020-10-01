@@ -1,0 +1,171 @@
+{
+   "data" : [
+      {
+         "DOid" : "DOID:13636",
+         "conditionRelations" : [
+            {
+               "conditionRelationType" : "induces",
+               "conditions" : [
+                  {
+                     "chemicalOntologyId" : "CHEBI:37598",
+                     "conditionClassId" : "ZECO:0000111",
+                     "conditionId" : "ZECO:0000111",
+                     "conditionStatement" : "chemical treatment:Nitrogen Mustard Compounds"
+                  }
+               ]
+            }
+         ],
+         "dataProvider" : [
+            {
+               "crossReference" : {
+                  "id" : "DOID:13636",
+                  "pages" : [
+                     "disease/wb"
+                  ]
+               },
+               "type" : "curated"
+            }
+         ],
+         "dateAssigned" : "2018-03-05T00:00:00+00:00",
+         "evidence" : {
+            "evidenceCodes" : [
+               "ECO:0000315"
+            ],
+            "publication" : {
+               "crossReference" : {
+                  "id" : "WB:WBPaper00031336",
+                  "pages" : [
+                     "reference"
+                  ]
+               },
+               "publicationId" : "PMID:18086896"
+            }
+         },
+         "objectId" : "WB:WBStrain00035483",
+         "objectName" : "VC13",
+         "objectRelation" : {
+            "associationType" : "is_model_of",
+            "objectType" : "strain"
+         }
+      },
+      {
+         "DOid" : "DOID:14330",
+         "conditionRelations" : [
+            {
+               "conditionRelationType" : "induces",
+               "conditions" : [
+                  {
+                     "chemicalOntologyId" : "CHEBI:641",
+                     "conditionClassId" : "ZECO:0000111",
+                     "conditionId" : "ZECO:0000111",
+                     "conditionStatement" : "chemical treatment:1-Methyl-4-phenylpyridinium"
+                  }
+               ]
+            },
+            {
+               "conditionRelationType" : "ameliorates",
+               "conditions" : [
+                  {
+                     "chemicalOntologyId" : "WB:WBMol:00007847",
+                     "conditionClassId" : "ZECO:0000111",
+                     "conditionId" : "ZECO:0000111",
+                     "conditionStatement" : "chemical treatment:methanol extracts of Sorbus alnifolia"
+                  }
+               ]
+            }
+         ],
+         "dataProvider" : [
+            {
+               "crossReference" : {
+                  "id" : "DOID:14330",
+                  "pages" : [
+                     "disease/wb"
+                  ]
+               },
+               "type" : "curated"
+            }
+         ],
+         "dateAssigned" : "2017-12-19T00:00:00+00:00",
+         "evidence" : {
+            "evidenceCodes" : [
+               "ECO:0000315"
+            ],
+            "publication" : {
+               "crossReference" : {
+                  "id" : "WB:WBPaper00050603",
+                  "pages" : [
+                     "reference"
+                  ]
+               },
+               "publicationId" : "PMID:27937005"
+            }
+         },
+         "objectId" : "WB:WBStrain00004039",
+         "objectName" : "BZ555",
+         "objectRelation" : {
+            "associationType" : "is_model_of",
+            "objectType" : "strain"
+         }
+      },
+      {
+         "DOid" : "DOID:13636",
+         "conditionRelations" : [
+            {
+               "conditionRelationType" : "induces",
+               "conditions" : [
+                  {
+                     "conditionClassId" : "ZECO:0000104",
+                     "conditionId" : "ZECO:0000104",
+                     "conditionStatement" : "experimental conditions:UVA activated Trioxsalen (TMP-UVA)"
+                  }
+               ]
+            }
+         ],
+         "dataProvider" : [
+            {
+               "crossReference" : {
+                  "id" : "DOID:13636",
+                  "pages" : [
+                     "disease/wb"
+                  ]
+               },
+               "type" : "curated"
+            }
+         ],
+         "dateAssigned" : "2018-03-05T00:00:00+00:00",
+         "evidence" : {
+            "evidenceCodes" : [
+               "ECO:0000315"
+            ],
+            "publication" : {
+               "crossReference" : {
+                  "id" : "WB:WBPaper00031336",
+                  "pages" : [
+                     "reference"
+                  ]
+               },
+               "publicationId" : "PMID:18086896"
+            }
+         },
+         "objectId" : "WB:WBStrain00035483",
+         "objectName" : "VC13",
+         "objectRelation" : {
+            "associationType" : "is_model_of",
+            "objectType" : "strain"
+         }
+      }
+   ],
+   "metaData" : {
+      "dataProvider" : {
+         "crossReference" : {
+            "id" : "WB",
+            "pages" : [
+               "homepage"
+            ]
+         },
+         "type" : "curated"
+      },
+      "dateProduced" : "2020-09-29T23:48:29+01:00",
+      "release" : "WS278"
+   }
+}
