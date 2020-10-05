@@ -96,6 +96,7 @@
   fullName: Homo sapiens
   commonNames:
     - human
+    - hsa
   primaryDataProvider:
    dataProviderFullName: Rat Genome Database
    dataProviderShortName: RGD
