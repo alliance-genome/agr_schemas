@@ -74,7 +74,7 @@
 	{
           "conditionRelationType": "induces",
           "conditions": [{ 
-            "conditionStatement": "diet:controlled fat content diet"
+            "conditionStatement": "diet:controlled fat content diet",
 	    "conditionId": "XCO:0000025",
             "conditionClassId": "ZECO:0000112" 
           }, 
