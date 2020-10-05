@@ -1,120 +1,84 @@
 {
-  "metaData": {
-    "dataProvider": {
-      "crossReference": {
-        "id": "ZFIN",
-        "pages": [
-          "homepage"
-        ]
-      },
-      "type": "curated"
-    },
-    "dateProduced": "2017-06-22T13:27:43-04:00"
-  },
-  "data": [
-    {
-      "objectId": "ZFIN:ZDB-GENE-120229-1",
-      "primaryGeneticEntityIDs": [
-        "ZFIN:ZDB-FISH-010101-1"
-      ],
-      "objectName": "gpr179",
-      "dateAssigned": "2018-03-21T15:54:59.179-07:00",
-      "dataProvider": [
-        {
-          "crossReference": {
-            "id": "ZFIN",
-            "pages": [
-              "homepage"
-            ]
-          },
-          "type": "curated"
-        }
-      ],
-      "evidence": {
-        "publication": {
-          "crossReference": {
-            "id": "ZFIN:ZDB-PUB-120215-13",
-            "pages": [
-              "reference"
-            ]
-          },
-          "publicationId": "PMID:22325362"
-        },
-        "evidenceCodes": [
-          "ECO:0000304"
-        ]
-      },
-      "objectRelation": {
-        "associationType": "is_implicated_in",
-        "objectType": "gene"
-      },
-      "conditionRelations": [
-        {
-          "conditionRelationType": "has_condition",
-          "conditions": [{
-            "conditionId":"ZECO:0000446", 
-            "conditionStatement": "chemical_treatment:bleach",
-            "chemicalOntologyId": "CCEBI:00004532", 
-            "conditionClass": "ZECO:0000446" 
-          },
-	{
-          "conditionRelationType": "ameliorates",
-          "conditions": [{ 
-            "conditionStatement": "chemical_treatment:bleach",
-            "chemicalOntologyId": "WBMol:00004532", 
-            "conditionClass": "ZECO:0000446" // chemical_treatment
-          },
-	{
-          "conditionRelationType": "exacerbates",
-          "conditions": [{ 
-            "conditionStatement": "diet: high fat diet",
-            "conditionClass": "ZECO:0000555" // diet
-            "conditionId": "ZECO:00003353535" // high fat diet?
-          },	 
-	{
-          "conditionRelationType": "exacerbates",
-          "conditions": [{ 
-            "conditionStatement": "diet: high fat diet",
-            "conditionClasses": ["ZECO:0000555","ZECO:0000446"] // diet, chemical_condition?
-            "conditionId": "ZECO:00003353535" // high fat diet?
-          },
-	{//RGD
-          "conditionRelationType": "induces",
-          "conditions": [{ 
-            "conditionStatement": "diet:controlled fat content diet",
-	    "conditionId": "XCO:0000025" // controlled fat content diet,
-            "conditionClass": "ZECO:0000112" // diet
-          }, 
-	//RGD
-          "conditionRelationType": "has_condition",
-          "conditions": [{ 
-            "conditionStatement": "chemical_condition: vinegar",
-	    "conditionId": "XCO:0000055" // specific chemical vinegar ,
-            "conditionClass": "ZECO:0000446" // chemical_condition,
-	    "chemicalOntologyId": "CHEBI:00000123" // vinegar ?	 
-          },
-	{"conditionId":"ZECO:0000446", 
-            "conditionStatement": "chemical_treatment:bleach",
-            "chemicalOntologyId": "CCEBI:00004532", 
-            "conditionClass": "ZECO:0000446" ]
-        },
-        {
-          "conditionRelationType": "exacerbates",
-          "conditions": [{
-            "conditionId": "ZECO:0000444", 
-	    "conditionStatement":"ablation:neck",
-            "anatomicalOntologyId": "ZFA:0000124", 
-            "conditionClass": "ZECO:0000229" 
-          },
-          {
-            "conditionId": "ZECO:0000444", 
-            "conditionStatement":"ablation:head",
-            "anatomicalOntologyId": "ZFA:0000126", 
-            "conditionClass": "ZECO:0000229" 
-          }]
-        }
-      ],
-      "DOid": "DOID:0110869"
-    }
-  ]
+	"metaData": {
+		"dataProvider": {
+			"crossReference": {
+				"id": "ZFIN",
+				"pages": [
+					"homepage"
+				]
+			},
+			"type": "curated"
+		},
+		"dateProduced": "2017-06-22T13:27:43-04:00"
+	},
+	"data": [{
+		"objectId": "ZFIN:ZDB-GENE-120229-1",
+		"primaryGeneticEntityIDs": [
+			"ZFIN:ZDB-FISH-010101-1"
+		],
+		"objectName": "gpr179",
+		"dateAssigned": "2018-03-21T15:54:59.179-07:00",
+		"dataProvider": [{
+			"crossReference": {
+				"id": "ZFIN",
+				"pages": [
+					"homepage"
+				]
+			},
+			"type": "curated"
+		}],
+		"evidence": {
+			"publication": {
+				"crossReference": {
+					"id": "ZFIN:ZDB-PUB-120215-13",
+					"pages": [
+						"reference"
+					]
+				},
+				"publicationId": "PMID:22325362"
+			},
+			"evidenceCodes": [
+				"ECO:0000304"
+			]
+		},
+		"objectRelation": {
+			"associationType": "is_implicated_in",
+			"objectType": "gene"
+		},
+		"conditionRelations": [{
+				"conditionRelationType": "has_condition",
+				"conditions": [{
+					"conditionId": "ZECO:0000446",
+					"conditionStatement": "chemical_treatment:bleach",
+					"chemicalOntologyId": "CHEBI:00004532",
+					"conditionClassId": "ZECO:0000446"
+				}]
+			},
+			{
+				"conditionRelationType": "ameliorates",
+				"conditions": [{
+					"conditionStatement": "chemical_treatment:bleach",
+					"chemicalOntologyId": "WBMol:00004532",
+					"conditionClassId": "ZECO:0000446"
+				}]
+			},
+			{
+				"conditionRelationType": "exacerbates",
+				"conditions": [{
+					"conditionStatement": "diet: high fat diet",
+					"conditionClassId": "ZECO:0000555",
+					"conditionId": "ZECO:000023535"
+				}]
+			},
+			{
+				"conditionRelationType": "induces",
+				"conditions": [{
+					"conditionStatement": "diet:controlled fat content diet",
+					"conditionId": "XCO:0000025",
+					"conditionClassId": "ZECO:0000112"
+				}]
+			}
+		],
+		"DOid": "DOID:0110869"
+	}]
 }

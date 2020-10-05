@@ -54,7 +54,7 @@
           "conditions": [{
             "conditionStatement": "ablation:eye",
             "anatomicalOntologyId": "ZFA:0000123",
-            "conditionClass": "ZECO:0000123"
+            "conditionClassId": "ZECO:0000123"
           }]
         },
         {
@@ -62,12 +62,12 @@
           "conditions": [{
             "conditionStatement": "ablation:brain",
             "anatomicalOntologyId": "ZFA:0000124",
-            "conditionClass": "ZECO:0000123"
+            "conditionClassId": "ZECO:0000123"
           },
           {
             "conditionStatement": "ablation:fin",
             "anatomicalOntologyId": "ZFA:0000125",
-            "conditionClass": "ZECO:0000123"
+            "conditionClassId": "ZECO:0000123"
           }]
         }
       ],
