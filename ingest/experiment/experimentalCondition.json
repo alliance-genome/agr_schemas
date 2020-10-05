@@ -1,26 +1,30 @@
 {
-  "title": "Experimental Conditions for Disease Annotation",
+  "title": "Experimental Conditions for Disease and Phenotype Annotation",
   "description": "An experimental condition",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "required": [
     "conditionStatement",
-    "conditionClass"
+    "conditionClassId"
   ],
   "additionalProperties": false,
   "id": "experimentalCondition.json#",
   "properties": {
-    "conditionClass": {
+    "conditionClassId": {
       "$ref": "../globalId.json#/properties/globalId",
-      "description": "An ontology ID that represents the type of condition, for ZFIN this is a ZECO term, for RGD it is a different ontology ID."
+      "description": "The ZECO ID that represents the high level condition grouping term.  This will come from a slim in the ZECO, called 'AllianceSlim'. "
     },
     "conditionStatement": {
       "type": "string",
       "description": "free text describing the environmental/experimental condition. For some groups this is a single term, others is it is a concatenation of the term names from the ontologies included in this data structure."
     },
+    "conditionId": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "The specific ontology ID for the condition when that is not covered by any of the other condition ontology ID attributes (chemical, NCBITaxon, anatomical). This could also be another ZECO term if the ZECO term that describes this condition is more specific, or outside the conditionClassId slim."
+    },
     "conditionQuantity": {
      "type":"string",
-     "description": "Units/amount/degrees (text)"
+     "description": "Optional free text field that records the units/amount/degrees of a condition."
     },
     "anatomicalOntologyId": {
       "$ref": "../globalId.json#/properties/globalId",
