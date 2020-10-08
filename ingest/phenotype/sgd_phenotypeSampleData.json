@@ -54,8 +54,7 @@
             {"conditionClassId": "ZECO:XXXX", ## can't find appropriate ZECO for media
             "conditionStatement": "media:pH 4.5",
             "conditionQuantity": "pH 4.5"
-            }]            
-            },
+            }]    
         }
     ],
     "metaData": {
