@@ -1,0 +1,74 @@
+{
+    "data": [
+        {
+            "objectId": "SGD:S000001101",
+            "phenotypeTermIdentifiers": [
+                {
+                    "termId": "APO:0000003",
+                    "termOrder": 1
+                },
+                {
+                    "termId": "APO:0000087",
+                    "termOrder": 2
+                }
+            ],
+            "phenotypeStatement": "decreased resistance to chemicals",
+            "dateAssigned": "2006-04-11T00:04:00-00:00",
+            "evidence": {
+                "publicationId": "PMID:16729036"
+            },
+            "conditionRelations": [
+        {
+          "conditionRelationType": "has_condition",
+          "conditions": [
+          {"conditionClassId": "ZECO:0000111",
+            "conditionStatement": "chemical treatment:0.7 M calcium dichloride",
+            "conditionQuantity": "0.7 M",
+            "ChemicalOnotlogyId":"CHEBI:3312"
+            }]            
+            },
+        {
+            "objectId": "SGD:S000001133",
+            "phenotypeTermIdentifiers": [
+                {
+                    "termId": "APO:0000003",
+                    "termOrder": 1
+                },
+                {
+                    "termId": "APO:0000095",
+                    "termOrder": 2
+                }
+            ],
+            "phenotypeStatement": "decreased chemical compound accumulation",
+            "dateAssigned": "2006-04-11T00:04:00-00:00",
+            "evidence": {
+                "publicationId": "PMID:12096123"
+            },
+            "conditionRelations": [
+        {
+          "conditionRelationType": "has_condition",
+          "conditions": [{"conditionClassId": "ZECO:0000111",
+            "conditionStatement": "chemical treatment:2 mM sorbate",
+            "conditionQuantity": "2 mM",
+            "ChemicalOnotlogyId":"CHEBI:36550"},
+            {"conditionClassId": "ZECO:XXXX", ## can't find appropriate ZECO for media
+            "conditionStatement": "media:pH 4.5",
+            "conditionQuantity": "pH 4.5"
+            }]            
+            },
+        }
+    ],
+    "metaData": {
+        "dataProvider": {
+            "crossReference": {
+                "id": "SGD",
+                "pages": [
+                    "homepage"
+                ]
+            },
+            "type": "curated"
+        },
+        "dateProduced": "2020-10-01T21:10:52-00:00",
+        "release": "SGD 1.0.1.3 2020-10-01"
+    }
+}
