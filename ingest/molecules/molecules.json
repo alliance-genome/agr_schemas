@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Molecules",
+  "description": "molecules as described by WormBase",
+  "id": "molecules.json#",
+  "type": "object",
+    "required": [
+	"id",
+	"name"
+    ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "../globalId.json#/properties/globalId",
+      "description": "The curie of the molecule referenced"
+    },
+    "name": {
+      "type": "string",
+      "description": "The definition of the category."
+    },
+    "inchi": {
+      "type": "string",
+      "description": "InChi style description of the molecule"
+    },
+    "inchikey": {
+      "type": "string",
+      "description": "InChi key description of the molecule"
+    },
+    "iupac": {
+      "type": "string",
+      "description": "IUPAC name of the molecule"
+    },
+    "formula": {
+      "type": "string",
+      "description": "formula of the molecule"
+    },
+    "smiles": {
+      "type": "string",
+      "description": "Molecular structure in SMILES format"
+    },
+    "synonyms": {
+	"type" : "array",
+	"description" : "alternate free text identifiers",
+	"items":{
+	  "type" : "string"
+	}
+    },
+    "crossReferences": {
+	"type" : "array",
+        "description":"MOD database cross references for each genotype;the link back to the MOD.",
+	"items" : {
+          "$ref" : "../crossReference.json#"
+	}
+    }   
+  }
+}
