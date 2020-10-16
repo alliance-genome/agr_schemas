@@ -22,6 +22,7 @@ script:
   - "python bin/agr_validate.py -s ingest/htp/datasetSample/datasetSampleMetaDataDefinition.json -d ingest/htp/datasetSample/exampleSGDdatasample.json"
   - "python bin/agr_validate.py -s ingest/htp/dataset/datasetMetaDataDefinition.json -d ingest/htp/dataset/exampleDataset.json"
   - "python bin/agr_validate.py -s ingest/htp/dataset/datasetMetaDataDefinition.json -d ingest/htp/dataset/exampleSuperseriesDataset.json"
+  - "python bin/agr_validate.py -s ingest/molecules/moleculeMetadData.json.json -d ingest/molecules/WbSampleMolecule.json"
   - "python bin/validate_yaml.py"
 
 # whitelist
