@@ -12,7 +12,7 @@
     },
     "data": { 
       "type": "array",
-      "description": "A list of bibliographyCategories objects.",
+      "description": "A list of WB Molecule objects.",
       "items": {
         "$ref" : "molecules.json#"
       }
