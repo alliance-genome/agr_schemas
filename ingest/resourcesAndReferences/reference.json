@@ -70,7 +70,7 @@
       "type": "string"
     },
     "allianceCategory": {
-      "enum": ["Research Article","Review Article","Thesis","Book","Other","Preprint","Conference Publication","Personal Communication","Direct Data Submission","Internal Process Reference", "Unkown","Retraction"],
+      "enum": ["Research Article","Review Article","Thesis","Book","Other","Preprint","Conference Publication","Personal Communication","Direct Data Submission","Internal Process Reference", "Unknown","Retraction"],
       "description": "a higher level classification for publications. can also be thought of as a helper grouping for search (ie: facet value)."
     },
     "MODReferenceTypes": {
