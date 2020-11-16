@@ -1,18 +1,18 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Reference Exchange",
-  "description": "small set of meta data that is exchanged from a MOD to ABC to establish and update PubMed corpus"
+  "description": "small set of meta data that is exchanged from a MOD to ABC to establish and update PubMed corpus",
   "id": "referenceExchange.json#",
   "type": "object",
   "required": [
-    "primaryID",
+    "pubMedID",
     "allianceCategory"
   ],
   "additionalProperties": false,
   "properties": {
-    "primaryID": {
+    "pubMedID": {
       "$ref": "../globalId.json#/properties/globalId",
-      "description": "The globally unique identifier for the object.  ie: NLMId or ISBN or MOD ID. Each identifier should be prefixed and of the form prefix:id "
+      "description": "The globally unique identifier for the object.  ie: PMID, NLMId or ISBN. Each identifier should be prefixed and of the form prefix:id "
     }
     "allianceCategory": {
       "enum": ["Research Article","Review Article","Thesis","Book","Other","Preprint","Conference Publication","Personal Communication","Direct Data Submission","Internal Process Reference", "Unknown","Retraction"],
@@ -23,8 +23,10 @@
       "items":  {
         "type": "string"
       }
+    },
+    "modID": {
+      "$ref":  "../globalId.json#/properties/globalId",
+      "description": "The globally unique MOD identifier for the publication."  
     }
   }
 }
-// MOD id/crossReference 
-// 
