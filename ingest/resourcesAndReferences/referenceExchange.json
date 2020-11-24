@@ -28,9 +28,15 @@
       "$ref":  "../globalId.json#/properties/globalId",
       "description": "The globally unique MOD identifier for the publication."  
     },
-    "dateLastModified": {      "description": "the date when the pub last changed at the MOD.  If the date is more recent than the date stored at the Alliance, the incoming metadata in this file will be added/updated at Alliance." 
+    "dateLastModified": {      "description": "the date when the pub last changed at the MOD.  If the date is more recent than the date stored at the Alliance, the incoming metadata in this file will be added/updated at Alliance.", 
       "type": "string",
       "format": "date-time"
+    },
+    "tags": {
+     "type":"array",
+      "items": {
+        "$ref": "referenceTag.json"
+      }
     }
   }
 }
