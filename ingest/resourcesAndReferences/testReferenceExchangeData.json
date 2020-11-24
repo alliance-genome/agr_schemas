@@ -1,6 +1,6 @@
 {
   "data": [ {
-    "pubMedID": "PMID:12345678,
+    "pubMedID": "PMID:12345678",
     "allianceCategory": "Research Article",
     "MODReferenceTypes": ["Journal"],
     "modID": "ZFIN:ZDB-PUB-010101-1",
