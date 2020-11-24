@@ -1,0 +1,20 @@
+{
+  "data": [ { "primaryID":"ZFIN:ZDB-JRNL-010101-1",
+    "title" : "testJournal"
+    "titleSynonyms": ["testingResource"],
+    "medlineAbbreviation": "Mol. Vis.",
+    "publisher": "Society of Environmental Toxicology and Chemistry (SETAC)",
+    "crossReferences":[{"primaryID":"ZFIN:ZDB-JRNL-010101-1","pages":["journal"]}]
+    }
+}],
+  "metaData": {
+    "dataProvider": {
+        "crossReference": {
+                "id":"ZFIN",
+                "pages": ["homepage"]
+        },
+        "type": "curated"
+    },
+    "dateProduced": "2017-06-22T13:27:43-04:00"
+  }
+}
