@@ -76,7 +76,7 @@
     "MODReferenceTypes": {
       "type": "array",
       "items":  {
-        "type": "string"
+        "$ref": "MODReferenceType.json#"
       }
     },
     "issueName": {
