@@ -40,6 +40,12 @@
     "publisher": {
       "type": "string"
     },
+    "printISSN" : {
+      "type": "string"
+    },
+    "onlineISSN" : {
+      "type": "string"
+    },
     "editorsOrAuthors": {
       "type": "array",
       "items": {
