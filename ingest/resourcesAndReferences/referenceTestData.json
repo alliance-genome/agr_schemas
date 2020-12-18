@@ -1,0 +1,36 @@
+{
+  "data": [ {
+    "primaryID": "PMID:12345678",
+    "allianceCategory": "Research Article",
+    "MODReferenceTypes": ["Journal"],
+    "modID": "ZFIN:ZDB-PUB-010101-1",
+    "dateLastModified": "2020-06-22T13:27:43-04:00",
+    "tags": ["canShowImages","PMCOpenAccess","inCorpus"],
+    "title": "Really complicated biology using genes and fish and mice.",
+    "authors": [{"primaryId": "SylivaATMooreZFIN:ZDB-PERS-010101-1", "firstName":"Sylvia","middleNames":["A","T"],"lastName":"Moore"}],
+    "referenceID": "ZFIN:ZDB-JRNL-010101-1",
+    "datePublished": "2001-06-22T13:27:43-04:00",
+    "dateArrivedInPubMed": "2001-10-22T13:27:43-04:00",
+    "dateLastModified": "2020-10-22T13:27:43-04:00",
+    "volume": "21",
+    "pages": "124-135",
+    "abstract": "This paper is very complicated and uses genes and fish and mice.",
+    "citation": {
+      "type": "string"
+    },
+    "keywords": ["gene","fish","mice"],
+    "pubMedType": ["Article"],
+    "resourceId": "ZFIN:ZDB-JRNL-010101-1",
+    "crossReferences": [{"id":"ZFIN:ZDB-PUB-010101-1","pages":["reference"]}]
+}],
+  "metaData": {
+    "dataProvider": {
+        "crossReference": {
+                "id":"ZFIN",
+                "pages": ["homepage"]
+        },
+        "type": "curated"
+    },
+    "dateProduced": "2017-06-22T13:27:43-04:00"
+  }
+}
