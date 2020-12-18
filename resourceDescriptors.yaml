@@ -36,6 +36,8 @@
       url: http://www.informatics.jax.org/disease/MGI:[%s]
     - name: gene/expression/annotation/detail
       url: http://www.informatics.jax.org/assay/MGI:[%s]
+    - name: gene/MODinteractions_molecular
+      url: http://www.informatics.jax.org/interaction/explorer?markerIDs=MGI:[%s]
     - name: gene/MODinteractions
       url: http://www.informatics.jax.org/interaction/explorer?markerIDs=MGI:[%s]
     - name: reference
@@ -85,6 +87,8 @@
     - name: disease/all
       url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=All&x=1&acc_id=[%s]#annot
     - name: gene/MODinteractions
+      url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=3&identifiers=[%s]
+    - name: gene/MODinteractions_molecular
       url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=3&identifiers=[%s]
     - name: reference
       url: https://rgd.mcw.edu/rgdweb/report/reference/main.html?id=RGD:[%s]
@@ -175,7 +179,11 @@
     - name: gene/interactions
       url: https://flybase.org/reports/[%s].html
     - name: gene/MODinteractions
-      url: https://flybase.org/reports/[%s]#interactions
+      url: https://flybase.org/reports/[%s]#summary_physical_interactions_sub
+    - name: gene/MODinteractions_molecular
+      url: https://flybase.org/reports/[%s]#summary_physical_interactions_sub
+    - name: gene/MODinteractions_genetic
+      url: https://flybase.org/reports/[%s]#summary_genetic_interactions_sub
     - name: reference
       url: https://flybase.org/reports/[%s].html
     - name: htp/dataset
@@ -228,6 +236,10 @@
       url: https://www.wormbase.org/resources/disease/[%s]
     - name: gene/MODinteractions
       url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
+    - name: gene/MODinteractions_molecular
+      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
+    - name: gene/MODinteractions_genetic
+      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
     - name: construct
       url: https://www.wormbase.org/db/get?name=[%s];class=Construct
     - name: pub
@@ -261,7 +273,11 @@
   - name: gene/phenotypes
     url: https://www.yeastgenome.org/locus/[%s]/phenotype
   - name: gene/MODinteractions
-    url: https://www.yeastgenome.org/locus/[%s]/interaction#network
+    url: https://www.yeastgenome.org/locus/[%s]/interaction#physical_interaction
+  - name: gene/MODinteractions_molecular
+    url: https://www.yeastgenome.org/locus/[%s]/interaction#physical_interaction
+  - name: gene/MODinteractions_genetic
+    url: https://www.yeastgenome.org/locus/[%s]/interaction#genetic_interaction
   - name: htp/dataset
     url: https://www.yeastgenome.org/dataset/[%s]
   - name: reference
@@ -411,6 +427,8 @@
     - name: gene
       url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
     - name: gene/MODinteractions
+      url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=1&identifiers=HGNC:[%s]
+    - name: gene/MODinteractions_molecular
       url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=1&identifiers=HGNC:[%s]
     - name: disease/human
       url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
