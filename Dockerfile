@@ -1,4 +1,7 @@
-FROM agrdocker/agr_java_software:build
+ARG ALLIANCE_RELEASE=build
+ARG REG=agrdocker
+
+FROM ${REG}/agr_java_software:${ALLIANCE_RELEASE}
 
 WORKDIR /workdir/agr_java_software/schemas
 
