@@ -29,7 +29,7 @@
       }
     },
     "referenceId": {
-      "$ref":"../../globalId.json#/properties/globalId",
+      "$ref":"../globalId.json#/properties/globalId",
       "description": "The globally unique identifier for the resource.  ie: NLMId or ISBN or MOD ID.  Each identifier should be prefixed and of the form prefix:id "
     },
     "crossReferences":{
