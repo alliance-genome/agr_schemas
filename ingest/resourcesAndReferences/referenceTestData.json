@@ -13,9 +13,7 @@
     "volume": "21",
     "pages": "124-135",
     "abstract": "This paper is very complicated and uses genes and fish and mice.",
-    "citation": {
-      "type": "string"
-    },
+    "citation": "Bob et al., 2020, Am. Nat. 21:124-135",
     "keywords": ["gene","fish","mice"],
     "pubMedType": ["Article"],
     "resourceId": "ZFIN:ZDB-JRNL-010101-1",
