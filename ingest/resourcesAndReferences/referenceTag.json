@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "ReferenceTag",
   "description": "A tag is a bit of meta data that describes unique characteristics of each reference.",
-  "id": "resource.json#",
+  "id": "referenceTag.json#",
   "type": "object",
   "required": [
     "referenceId",
