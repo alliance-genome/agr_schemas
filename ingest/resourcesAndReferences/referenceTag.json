@@ -5,12 +5,12 @@
   "id": "resource.json#",
   "type": "object",
   "required": [
-    "referenceID",
+    "referenceId",
     "tagName"
   ],
   "additionalProperties": false,
   "properties": {
-    "referenceID": {
+    "referenceId": {
       "$ref": "../globalId.json#/properties/globalId",
       "description": "The globally unique identifier for the reference. "
     },

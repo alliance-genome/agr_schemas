@@ -1,9 +1,9 @@
 {
   "data": [ {
-    "pubMedID": "PMID:12345678",
+    "pubMedId": "PMID:12345678",
     "allianceCategory": "Research Article",
     "MODReferenceTypes": ["Journal"],
-    "modID": "ZFIN:ZDB-PUB-010101-1",
+    "modId": "ZFIN:ZDB-PUB-010101-1",
     "dateLastModified": "2020-06-22T13:27:43-04:00",
     "tags": ["canShowImages","PMCOpenAccess","inCorpus"]
   }],

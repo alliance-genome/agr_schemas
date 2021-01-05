@@ -5,16 +5,16 @@
   "id": "resource.json#",
   "type": "object",
   "required": [
-    "primaryID",
+    "primaryId",
     "firstName",
     "lastName",
-    "referenceID"
+    "referenceId"
   ],
   "additionalProperties": false,
   "properties": {
     "primaryId": {
       "type": "string",
-      "description": "a generated combination of firstName, middleName, LastName and referenceID"
+      "description": "a generated combination of firstName, middleNames, LastName and referenceId"
     },
     "firstName": {
       "type": "string"
@@ -28,7 +28,7 @@
         "type" : "string"
       }
     },
-    "referenceID": {
+    "referenceId": {
       "$ref":"../../globalId.json#/properties/globalId",
       "description": "The globally unique identifier for the resource.  ie: NLMId or ISBN or MOD ID.  Each identifier should be prefixed and of the form prefix:id "
     },

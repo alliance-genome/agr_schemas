@@ -5,14 +5,14 @@
   "id": "referenceExchange.json#",
   "type": "object",
   "required": [
-    "pubMedID",
+    "pubMedId",
     "allianceCategory"
   ],
   "additionalProperties": false,
   "properties": {
-    "pubMedID": {
+    "pubMedId": {
       "$ref": "../globalId.json#/properties/globalId",
-      "description": "The globally unique identifier for the object.  ie: PMID, NLMId or ISBN. Each identifier should be prefixed and of the form prefix:id "
+      "description": "The globally unique identifier for the object.  ie: PMID, NLMId or ISBN. Each identifier should be prefixed and of the form prefix:Id "
     },
     "allianceCategory": {
       "enum": ["Research Article","Review Article","Thesis","Book","Other","Preprint","Conference Publication","Personal Communication","Direct Data Submission","Internal Process Reference", "Unknown","Retraction"],
@@ -24,7 +24,7 @@
         "$ref": "MODReferenceType.json#"
       }
     },
-    "modID": {
+    "modId": {
       "$ref":  "../globalId.json#/properties/globalId",
       "description": "The globally unique MOD identifier for the publication."  
     },
