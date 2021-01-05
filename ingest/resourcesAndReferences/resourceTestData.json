@@ -3,6 +3,7 @@
     "title" : "testJournal",
     "titleSynonyms": ["testingResource"],
     "medlineAbbreviation": "Mol. Vis.",
+    "isoAbbreviation": "Mol. Vis",
     "publisher": "Society of Environmental Toxicology and Chemistry (SETAC)",
     "crossReferences":[{"primaryId":"ZFIN:ZDB-JRNL-010101-1","pages":["journal"]}]
   }],
