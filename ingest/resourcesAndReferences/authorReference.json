@@ -2,19 +2,19 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "AuthorReference",
   "description": "A object that holds contributor/author name and the reference id.",
-  "id": "resource.json#",
+  "id": "authorReference.json#",
   "type": "object",
   "required": [
-    "primaryID",
+    "primaryId",
     "firstName",
     "lastName",
-    "referenceID"
+    "referenceId"
   ],
   "additionalProperties": false,
   "properties": {
     "primaryId": {
       "type": "string",
-      "description": "a generated combination of firstName, middleName, LastName and referenceID"
+      "description": "a generated combination of firstName, middleNames, LastName and referenceId"
     },
     "firstName": {
       "type": "string"
@@ -28,8 +28,8 @@
         "type" : "string"
       }
     },
-    "referenceID": {
-      "$ref":"../../globalId.json#/properties/globalId",
+    "referenceId": {
+      "$ref":"../globalId.json#/properties/globalId",
       "description": "The globally unique identifier for the resource.  ie: NLMId or ISBN or MOD ID.  Each identifier should be prefixed and of the form prefix:id "
     },
     "crossReferences":{
