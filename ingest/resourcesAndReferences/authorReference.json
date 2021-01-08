@@ -5,28 +5,29 @@
   "id": "authorReference.json#",
   "type": "object",
   "required": [
-    "primaryId",
-    "firstName",
-    "lastName",
+    "name",
     "referenceId"
   ],
   "additionalProperties": false,
   "properties": {
-    "primaryId": {
-      "type": "string",
-      "description": "a generated combination of firstName, middleNames, LastName and referenceId"
-    },
+    "name": {
+     "type":"string",
+     "description": "a single field to describe the first, middle, last names of an unique author per reference.   This can be of many forms: First Last or Last First or Last First_initial or First_initial Last, etc."
+   },
     "firstName": {
-      "type": "string"
+      "type": "string",
+      "description": "first name or first initial of the author when available."
     },
     "lastName": {
-      "type": "string"
+      "type": "string",
+      "description": "last name of the author when available."
     },
     "middleNames": {
       "type":"array",
       "items": {
         "type" : "string"
-      }
+      },
+      "description": "middle name or middle initial of the author when available."
     },
     "referenceId": {
       "$ref":"../globalId.json#/properties/globalId",
