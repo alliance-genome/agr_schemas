@@ -9,8 +9,7 @@
     "title",
     "datePublished",
     "citation",
-    "allianceCategory",
-    "resourceAbbreviation"
+    "allianceCategory"
   ],
   "additionalProperties": false,
   "properties": {
