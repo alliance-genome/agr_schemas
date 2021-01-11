@@ -7,11 +7,9 @@
   "required": [
     "primaryId",
     "title",
-    "authors",
     "datePublished",
     "citation",
-    "allianceCategory",
-	  "resourceId"
+    "allianceCategory"
   ],
   "additionalProperties": false,
   "properties": {
@@ -30,8 +28,7 @@
       "uniqueItems": false
     },
     "datePublished": {
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "dateArrivedInPubMed": {
       "type": "string",
@@ -104,8 +101,9 @@
         "$ref": "../crossReference.json"
       }
     },
-    "resourceId": {
-      "$ref": "../globalId.json#/properties/globalId"
+    "resourceAbbreviation": {
+      "type": "string",
+      "description": "The title of the resource in abbreviation form (for book references, this can be the full title).  If submission of resource.json is completed, these abbreviations should match an abbreviation in that submission."
   }
 }
 }
