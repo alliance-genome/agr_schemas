@@ -1,0 +1,84 @@
+id: https://github.com/alliance-genome/agr_schemas
+name: Alliance-Schema-Prototype
+description: Alliance Schema Prototype with BiolinkML
+license: https://creativecommons.org/publicdomain/zero/1.0/
+
+version: 0.0.1a
+
+prefixes:
+  Alliance: 'http://alliancegenome.org/'
+  biolinkml: 'https://w3id.org/biolink/biolinkml/'
+
+default_prefix: Alliance
+default_range: string
+
+imports:
+  - biolinkml:types
+
+
+# Classes
+
+classes:
+
+  named thing:
+    description: "a databased entity or concept"
+    slots:
+      - primaryKey
+      - uuid
+
+  gene:
+    is_a: named thing
+    description: >-
+      Gene class
+    slots:
+      - name
+      - symbol
+      - taxonid
+    mappings:
+      - SO:0000704
+
+
+# Slots
+
+slots:
+
+  node property:
+    description: >-
+      A grouping for any property that holds between a node and a value
+    domain: named thing
+
+  primaryKey:
+    is_a: node property
+    description: >-
+      Primary key of an entity
+    required: true
+
+  uuid:
+    is_a: node property
+    description: >-
+      Unique internal identifier for an entity
+    required: true
+
+  name:
+    is_a: node property
+    domain: gene
+    range: string
+    description: >-
+      A human-readable name for an entity
+    required: true
+    slot_uri: rdfs:label
+
+  symbol:
+    is_a: node property
+    domain: gene
+    range: string
+    description: >-
+      Symbol for a gene
+    required: true
+
+  taxonid:
+    is_a: node property
+    description: >-
+      NCBITaxon identifier for an entity
+    domain: gene
+    range: uriorcurie

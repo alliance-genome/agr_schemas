@@ -1,0 +1,37 @@
+id: Alliance-reference-prototype
+
+imports:
+  - core
+
+classes:
+  resource:
+    slots:
+      - id
+      - title
+      - ISO abbreviation
+      - medlinle abbreviation
+      - copyright date
+      - publisher
+      - print ISSN
+      - online ISSN
+      - agents
+      - volumes
+      - summary
+      - title synonyms
+    id_prefixes:
+      - PMID
+      - NLMID
+      - DOI
+      - SGD
+      - FB
+      - WB
+      - ZFIN
+      - MGI
+      - RGD
+    exact_mappings:
+      - biolink:Article
+    slot_usage:
+      id:
+        description: >-
+          Precedence of identifiers for references is as follows: PMID if available; DOI if not; actual
+          alternate CURIE otherwise.
