@@ -38,6 +38,9 @@
     "medlineAbbreviation": {
       "type": "string"
     },
+    "language": {
+      "type": "string"
+    },
     "copyrightDate": {
       "type": "string",
       "format": "date-time"
