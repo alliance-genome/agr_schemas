@@ -6,9 +6,7 @@
   "type": "object",
   "required": [
     "primaryId",
-    "title",
-    "isoAbbreviation",
-    "medlineAbbreviation"
+    "title"
   ],
   "additionalProperties": false,
   "properties": {
@@ -21,6 +19,13 @@
       "description": "The title of the resource."
     },
     "titleSynonyms":  {
+      "type" : "array",
+        "items": {
+          "type": "string"
+        },
+      "uniqueItems": true
+    },
+    "abbreviationSynonyms":  {
       "type" : "array",
         "items": {
           "type": "string"
@@ -59,7 +64,7 @@
       }
     },
     "pages": {
-      "type": "number"
+      "type": "string"
     },
     "abstractOrSummary": {
       "type": "string"
