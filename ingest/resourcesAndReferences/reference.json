@@ -20,6 +20,9 @@
     "title": {
       "type": "string"
     },
+    "language": {
+      "type": "string"
+    },
     "authors": {
       "type": "array",
       "items": {
