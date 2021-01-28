@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MODReferenceType",
+  "description": "An enitity that describes the category of the reference at the MOD.  MOD name is also specified to help with updates.",
+  "id": "MODReferenceType.json#",
+  "type": "object",
+  "required": [
+       "referenceType","source"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "referenceType": {
+        "type":"string"},
+    "source": {
+        "type":"string"}
+    }
+}
