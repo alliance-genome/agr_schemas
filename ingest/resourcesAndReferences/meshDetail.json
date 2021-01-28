@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "MeshDetail",
-  "desription": "A mesh heading and qualifier set",
+  "description": "A mesh heading and qualifier set",
   "id": "meshDetail.json#",
   "type": "object",
   "required": [
