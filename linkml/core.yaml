@@ -110,6 +110,24 @@ classes:
       - RGD
       - MGI
 
+  named thing:
+    is_a: entity
+    description: "a databased entity or concept/class"
+    exact_mappings:
+      - BFO:0000001
+      - WIKIDATA:Q35120
+      # UMLS Semantic Group "Objects"
+      - UMLSSG:OBJC
+      # Entity
+      - UMLSSC:T071
+      - UMLSST:enty
+
+  entity:
+    description: >-
+      Root Biolink Model class for all things and informational relationships, real or imagined.
+    abstract: true
+
+
 # Slots
 
 slots:
@@ -148,22 +166,3 @@ slots:
     exact_mappings:
       - dct:createdOn
       - WIKIDATA_PROPERTY:P577
-
-  named thing:
-    is_a: entity
-    description: "a databased entity or concept/class"
-    exact_mappings:
-      - BFO:0000001
-      - WIKIDATA:Q35120
-      # UMLS Semantic Group "Objects"
-      - UMLSSG:OBJC
-      # Entity
-      - UMLSSC:T071
-      - UMLSST:enty
-
-  entity:
-    description: >-
-      Root Biolink Model class for all things and informational relationships, real or imagined.
-    abstract: true
-
-
