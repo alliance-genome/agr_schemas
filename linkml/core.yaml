@@ -21,55 +21,14 @@ imports:
 
 classes:
 
-  information content entity:
-    aliases: ['information', 'information artifact', 'information entity']
-    abstract: true
-    description: >-
-      a piece of information that typically describes some topic of discourse or is used as support.
-    slots:
-      - creation date
-    exact_mappings:
-      - biolink:information content entity
-      - IAO:0000030
-    slot_usage:
-      creation date:
-        description: >-
-          Precedence of identifiers for references is as follows: PMID if available; DOI if not; actual
-          alternate CURIE otherwise.
-
   agent:
     aliases: ['group']
-    is_a: information content entity
     description: >-
       person, group, organization or project that provides
       a piece of information (i.e. a knowledge association)
     slots:
-      - affiliation
-      - address
-    exact_mappings:
-      - prov:Agent
-      - dct:Agent
-      - biolink:Agent
-    narrow_mappings:
-      # Organization
-      - UMLSSG:ORGA
-      - UMLSSC:T092
-      - UMLSST:orgt
-      # Health Care Related Organization
-      - UMLSSC:T093
-      - UMLSST:hcro
-      # Professional Society
-      - UMLSSC:T094
-      - UMLSST:pros
-      # Self-help or Relief Organization
-      - UMLSSC:T095
-      - UMLSST:shro
-      # Group
-      - UMLSSC:T096
-      - UMLSST:grup
-      # Professional or Occupational Group
-      - UMLSSC:T097
-      - UMLSST:prog
+      - name
+      - id
     slot_usage:
       id:
         required: true
@@ -82,16 +41,6 @@ classes:
           Google Scholar ID ('GSID') may be used if the author ORCID is unknown.
           Institutional agents could be identified by an
           International Standard Name Identifier ('ISNI') code.
-        values_from:
-          # CURIE space for publishers
-          - isbn
-          # CURIE space for authors
-          - ORCID
-          - ScopusID
-          - ResearchID
-          - GSID
-          # Institutional agents
-          - isni
       name:
         description: >-
           it is recommended that an author's 'name' property
@@ -99,10 +48,6 @@ classes:
     id_prefixes:
       - isbn
       - ORCID
-      - ScopusID
-      - ResearchID
-      - GSID
-      - isni
       - SGD
       - WB
       - FB
@@ -114,56 +59,14 @@ classes:
 
 slots:
 
-  node property:
-    description: >-
-      A grouping for any property that holds between a node and a value
-
   description:
     aliases: ['definition']
     description: >-
       a human-readable description of an entity
 
-  affiliation:
-    is_a: node property
+  name:
     description: >-
-      a professional relationship between one provider (often a person) within another provider (often an organization).
-      Target provider identity should be specified by a CURIE. Providers may have multiple affiliations.
-    domain: agent
-    range: uriorcurie
-    multivalued: true
+      a human-readable name for an entity
 
-  address:
-    is_a: node property
-    description: >-
-      the particulars of the place where someone or an organization is situated.  For now, this slot is a
-      simple text "blob" containing all relevant details of the given location for fitness of purpose.
-      For the moment, this "address" can include other contact details such as email and phone number(?).
-
-  creation date:
-    is_a: node property
-    aliases: ['publication date']
-    range: date
-    description: >-
-      date on which an entity was created. This can be applied to nodes or edges
-    exact_mappings:
-      - dct:createdOn
-      - WIKIDATA_PROPERTY:P577
-
-  named thing:
-    is_a: entity
-    description: "a databased entity or concept/class"
-    exact_mappings:
-      - BFO:0000001
-      - WIKIDATA:Q35120
-      # UMLS Semantic Group "Objects"
-      - UMLSSG:OBJC
-      # Entity
-      - UMLSSC:T071
-      - UMLSST:enty
-
-  entity:
-    description: >-
-      Root Biolink Model class for all things and informational relationships, real or imagined.
-    abstract: true
 
 

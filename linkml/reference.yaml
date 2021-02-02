@@ -2,9 +2,27 @@ id: https://github.com/alliance-genome/agr_schemas/linkml/reference.yaml
 
 imports:
   - core
-  - cross_reference
+  - biolinkml:types
+
+prefixes:
+  SGD: http://www.yeastgenome.org/
+  WB: https://www.wormbase.org/
+  FB: https://flybase.org
+  ZFIN: https://zfin.org/
+  RGD: https://rgd.mcw.edu/
+  MGI: http://www.informatics.jax.org/
+  biolinkml: https://w3id.org/biolink/biolinkml/
+
 
 classes:
+
+  mesh term:
+    slots:
+      - id
+
+  tag:
+    slots:
+      - name
 
   reference:
     slots:
@@ -41,8 +59,6 @@ classes:
       - ZFIN
       - MGI
       - RGD
-    exact_mappings:
-      - biolink:Article
     slot_usage:
       id:
         description: >-
@@ -70,20 +86,10 @@ classes:
         description: >-
       issue date:
         description: >-
-      publisherId:
-        description: >-
-      resourceId:
-        description: >-
       alliance category:
         description: >-
           Controlled vocabulary term drawn from a list of Alliance-defined reference categories.
             - mod reference types
-      tags:
-        description: >-
-      mesh terms:
-        description: >-
-      cross references:
-        description: >-
       publisher:
         description: >-
       resource abbreviation:
@@ -93,12 +99,13 @@ slots:
 
   id:
     identifier: true
+    required: true
     multivalued: false
     description: >-
       A unique identifier for a thing. Must be either a CURIE shorthand for a URI or a complete URI
+    range: uriorcurie
 
   date_published:
-    is_a: node property
     aliases: ['publication date']
     description: >-
       Date on which an entity was created.
@@ -106,126 +113,105 @@ slots:
     domain: reference
 
   has_mod_reference_type:
-    is_a: node property
     multivalued: true
     description: >-
       List of types as assigned at a MOD.
+    range: string
 
   has_tag:
-    is_a: node property
     description: >-
       Optional ist of controlled vocabulary tags that give categories to each pub (ie: "can show images").
     multivalued: true
+    range: string
 
   arrived_in_pubmed:
-    is_a: node property
     description: >-
       Date on which an entity was created in PubMed.
-    range: date
     domain: reference
+    range: date
 
   has_cross_reference:
-    is_a: node property
     description: >-
-    domain: information content entity
     multivalued: true
+    domain: reference
 
   resource_abbreviation:
-    is_a: node property
     description: >-
     domain: reference
+    range: string
 
   issue_date:
-    is_a: node property
     description: >-
       Date on which an entity was issued.
-    range: date
     domain: reference
+    range: date
 
   last_modified:
-    is_a: node property
     description: >-
       Date on which an entity was last modified in PubMed or in the MOD.
-    range: date
     domain: reference
+    range: date
 
   title:
     multivalued: false
-    range: string
     description: >-
       A human readable title for a reference.
     domain: reference
+    range: string
 
   volume:
     multivalued: false
-    range: string
     domain: reference
+    range: string
     description: >-
 
   pages:
     multivalued: false
-    range: string
     domain: reference
+    range: string
     description: >-
 
   abstract:
     multivalued: false
-    range: string
     domain: reference
+    range: string
     description: >-
 
   citation:
     multivalued: false
-    range: string
     domain: reference
+    range: string
     description: >-
 
   issue_name:
     multivalued: false
-    range:
     domain: reference
+    range:
     description: >-
 
   alliance_category:
     multivalued: false
-    range:
     domain: reference
+    range:
     description: >-
 
   has_mesh_term:
-    is_a: node property
     description: >-
       mesh terms tagging a publication
     domain: reference
-    range: uriorcurie
+    range: mesh term
     values_from:
       - MESH
     multivalued: true
 
   has_keyword:
-    is_a: node property
     description: >-
       keywords tagging a publication
     domain: reference
+    range: string
     multivalued: true
-
-  related to:
-    description: >-
-      A relationship that is asserted between two named things
-    multivalued: true
-    inherited: true
-    symmetric: true
-    exact_mappings:
-      - skos:relatedMatch
-      - SEMMEDDB:ASSOCIATED_WITH
-      - SEMMEDDB:associated_with
-      - UMLS:related_to
-      - biolink:related_to
-    broad_mappings:
-      - owl:topObjectProperty
 
   has_author:
-    is_a: node property
     description: >-
       connects an publication to the list of authors who contributed to the publication.
       This property should be a comma-delimited list of author names. It is recommended that an author's name
@@ -236,11 +222,8 @@ slots:
     multivalued: true
     domain: reference
     range: agent
-    exact_mappings:
-      - biolink:authors
 
   has_publisher:
-    is_a: node property
     description: >-
       connects an publication to the list of authors who contributed to the publication.
       This property should be a comma-delimited list of author names. It is recommended that an author's name

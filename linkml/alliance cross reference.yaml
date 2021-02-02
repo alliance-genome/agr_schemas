@@ -1,0 +1,41 @@
+id: Alliance-cross-reference-prototype
+
+imports:
+  - core
+
+classes:
+
+  alliance cross reference:
+    slots:
+      - id
+      - page
+      - display name
+      - cross ref complete url
+      - prefix
+
+slots:
+
+  prefix:
+    required: true
+    multivalued: false
+    description: Denormalization to help with classifying types of crossReferences, ie: distinguishing DOIs from PMC ids, etc.
+
+  page:
+    required: true
+    multivalued: true
+    domain: alliance cross reference
+    range: string
+
+  display name:
+    required: true
+    multivalued: false
+    domain: alliance cross reference
+    range: string
+
+  cross ref complete url:
+    required: true
+    multivalued: false
+    domain: alliance cross reference
+    range: string
+
+

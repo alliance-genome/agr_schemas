@@ -1,5 +1,5 @@
 # Auto generated from reference.yaml by pythongen.py version: 0.9.0
-# Generation date: 2021-01-18 18:18
+# Generation date: 2021-01-20 09:23
 # Schema: reference
 #
 # id: https://github.com/alliance-genome/agr_schemas/linkml/reference.yaml
@@ -33,32 +33,71 @@ dataclasses._init_fn = dataclasses_init_fn_with_kwargs
 # Namespaces
 ALLIANCE = CurieNamespace('Alliance', 'http://alliancegenome.org/')
 DOI = CurieNamespace('DOI', 'http://example.org/UNKNOWN/DOI/')
-FB = CurieNamespace('FB', 'http://example.org/UNKNOWN/FB/')
-GSID = CurieNamespace('GSID', 'http://example.org/UNKNOWN/GSID/')
-MGI = CurieNamespace('MGI', 'http://example.org/UNKNOWN/MGI/')
+FB = CurieNamespace('FB', 'https://flybase.org')
+MGI = CurieNamespace('MGI', 'http://www.informatics.jax.org/')
 NLMID = CurieNamespace('NLMID', 'http://example.org/UNKNOWN/NLMID/')
 ORCID = CurieNamespace('ORCID', 'http://example.org/UNKNOWN/ORCID/')
 PMID = CurieNamespace('PMID', 'http://example.org/UNKNOWN/PMID/')
-RGD = CurieNamespace('RGD', 'http://example.org/UNKNOWN/RGD/')
-RESEARCHID = CurieNamespace('ResearchID', 'http://example.org/UNKNOWN/ResearchID/')
-SGD = CurieNamespace('SGD', 'http://example.org/UNKNOWN/SGD/')
-SCOPUSID = CurieNamespace('ScopusID', 'http://example.org/UNKNOWN/ScopusID/')
-WB = CurieNamespace('WB', 'http://example.org/UNKNOWN/WB/')
-ZFIN = CurieNamespace('ZFIN', 'http://example.org/UNKNOWN/ZFIN/')
+RGD = CurieNamespace('RGD', 'https://rgd.mcw.edu/')
+SGD = CurieNamespace('SGD', 'http://www.yeastgenome.org/')
+WB = CurieNamespace('WB', 'https://www.wormbase.org/')
+ZFIN = CurieNamespace('ZFIN', 'https://zfin.org/')
+BIOLINKML = CurieNamespace('biolinkml', 'https://w3id.org/biolink/biolinkml/')
 ISBN = CurieNamespace('isbn', 'http://example.org/UNKNOWN/isbn/')
-ISNI = CurieNamespace('isni', 'http://example.org/UNKNOWN/isni/')
 DEFAULT_ = CurieNamespace('', 'https://github.com/alliance-genome/agr_schemas/linkml/reference.yaml/')
 
 
 # Types
 
 # Class references
-class ReferenceId(extended_str):
+class MeshTermId(URIorCURIE):
     pass
 
 
-class AgentId(extended_str):
+class ReferenceId(URIorCURIE):
     pass
+
+
+class AgentId(URIorCURIE):
+    pass
+
+
+@dataclass
+class MeshTerm(YAMLRoot):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = URIRef("https://github.com/alliance-genome/agr_schemas/linkml/reference.yaml/MeshTerm")
+    class_class_curie: ClassVar[str] = None
+    class_name: ClassVar[str] = "mesh term"
+    class_model_uri: ClassVar[URIRef] = URIRef("https://github.com/alliance-genome/agr_schemas/linkml/reference.yaml/MeshTerm")
+
+    id: Union[str, MeshTermId] = None
+
+    def __post_init__(self, **kwargs: Dict[str, Any]):
+        if self.id is None:
+            raise ValueError("id must be supplied")
+        if not isinstance(self.id, MeshTermId):
+            self.id = MeshTermId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass
+class Tag(YAMLRoot):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = URIRef("https://github.com/alliance-genome/agr_schemas/linkml/reference.yaml/Tag")
+    class_class_curie: ClassVar[str] = None
+    class_name: ClassVar[str] = "tag"
+    class_model_uri: ClassVar[URIRef] = URIRef("https://github.com/alliance-genome/agr_schemas/linkml/reference.yaml/Tag")
+
+    name: Optional[str] = None
+
+    def __post_init__(self, **kwargs: Dict[str, Any]):
+        if self.name is not None and not isinstance(self.name, str):
+            self.name = str(self.name)
+
+        super().__post_init__(**kwargs)
 
 
 @dataclass
@@ -85,7 +124,7 @@ class Reference(YAMLRoot):
     has_mod_reference_type: Optional[Union[str, List[str]]] = empty_list()
     has_author: Optional[Union[Union[str, AgentId], List[Union[str, AgentId]]]] = empty_list()
     has_tag: Optional[Union[str, List[str]]] = empty_list()
-    has_mesh_term: Optional[Union[Union[str, URIorCURIE], List[Union[str, URIorCURIE]]]] = empty_list()
+    has_mesh_term: Optional[Union[Union[str, MeshTermId], List[Union[str, MeshTermId]]]] = empty_list()
     has_cross_reference: Optional[Union[str, List[str]]] = empty_list()
     has_publisher: Optional[Union[Union[str, AgentId], List[Union[str, AgentId]]]] = empty_list()
     resource_abbreviation: Optional[str] = None
@@ -93,12 +132,7 @@ class Reference(YAMLRoot):
     arrived_in_PubMed: Optional[str] = None
     last_modified: Optional[str] = None
     issue_date: Optional[str] = None
-    publisherId: Optional[str] = None
-    resourceId: Optional[str] = None
     alliance_category: Optional[str] = None
-    tags: Optional[str] = None
-    mesh_terms: Optional[str] = None
-    cross_references: Optional[str] = None
     publisher: Optional[str] = None
     resource_abbreviation: Optional[str] = None
 
@@ -163,7 +197,7 @@ class Reference(YAMLRoot):
             self.has_mesh_term = []
         if not isinstance(self.has_mesh_term, list):
             self.has_mesh_term = [self.has_mesh_term]
-        self.has_mesh_term = [v if isinstance(v, URIorCURIE) else URIorCURIE(v) for v in self.has_mesh_term]
+        self.has_mesh_term = [v if isinstance(v, MeshTermId) else MeshTermId(v) for v in self.has_mesh_term]
 
         if self.has_cross_reference is None:
             self.has_cross_reference = []
@@ -192,23 +226,8 @@ class Reference(YAMLRoot):
         if self.issue_date is not None and not isinstance(self.issue_date, str):
             self.issue_date = str(self.issue_date)
 
-        if self.publisherId is not None and not isinstance(self.publisherId, str):
-            self.publisherId = str(self.publisherId)
-
-        if self.resourceId is not None and not isinstance(self.resourceId, str):
-            self.resourceId = str(self.resourceId)
-
         if self.alliance_category is not None and not isinstance(self.alliance_category, str):
             self.alliance_category = str(self.alliance_category)
-
-        if self.tags is not None and not isinstance(self.tags, str):
-            self.tags = str(self.tags)
-
-        if self.mesh_terms is not None and not isinstance(self.mesh_terms, str):
-            self.mesh_terms = str(self.mesh_terms)
-
-        if self.cross_references is not None and not isinstance(self.cross_references, str):
-            self.cross_references = str(self.cross_references)
 
         if self.publisher is not None and not isinstance(self.publisher, str):
             self.publisher = str(self.publisher)
@@ -220,28 +239,7 @@ class Reference(YAMLRoot):
 
 
 @dataclass
-class InformationContentEntity(YAMLRoot):
-    """
-    a piece of information that typically describes some topic of discourse or is used as support.
-    """
-    _inherited_slots: ClassVar[List[str]] = []
-
-    class_class_uri: ClassVar[URIRef] = ALLIANCE.InformationContentEntity
-    class_class_curie: ClassVar[str] = "Alliance:InformationContentEntity"
-    class_name: ClassVar[str] = "information content entity"
-    class_model_uri: ClassVar[URIRef] = URIRef("https://github.com/alliance-genome/agr_schemas/linkml/reference.yaml/InformationContentEntity")
-
-    creation_date: Optional[Union[str, XSDDate]] = None
-
-    def __post_init__(self, **kwargs: Dict[str, Any]):
-        if self.creation_date is not None and not isinstance(self.creation_date, XSDDate):
-            self.creation_date = XSDDate(self.creation_date)
-
-        super().__post_init__(**kwargs)
-
-
-@dataclass
-class Agent(InformationContentEntity):
+class Agent(YAMLRoot):
     """
     person, group, organization or project that provides a piece of information (i.e. a knowledge association)
     """
@@ -253,8 +251,6 @@ class Agent(InformationContentEntity):
     class_model_uri: ClassVar[URIRef] = URIRef("https://github.com/alliance-genome/agr_schemas/linkml/reference.yaml/Agent")
 
     id: Union[str, AgentId] = None
-    affiliation: Optional[Union[Union[str, URIorCURIE], List[Union[str, URIorCURIE]]]] = empty_list()
-    address: Optional[str] = None
     name: Optional[str] = None
 
     def __post_init__(self, **kwargs: Dict[str, Any]):
@@ -262,15 +258,6 @@ class Agent(InformationContentEntity):
             raise ValueError("id must be supplied")
         if not isinstance(self.id, AgentId):
             self.id = AgentId(self.id)
-
-        if self.affiliation is None:
-            self.affiliation = []
-        if not isinstance(self.affiliation, list):
-            self.affiliation = [self.affiliation]
-        self.affiliation = [v if isinstance(v, URIorCURIE) else URIorCURIE(v) for v in self.affiliation]
-
-        if self.address is not None and not isinstance(self.address, str):
-            self.address = str(self.address)
 
         if self.name is not None and not isinstance(self.name, str):
             self.name = str(self.name)
@@ -299,7 +286,7 @@ slots.arrived_in_pubmed = Slot(uri=DEFAULT_.arrived_in_pubmed, name="arrived_in_
                    model_uri=DEFAULT_.arrived_in_pubmed, domain=Reference, range=Optional[Union[str, XSDDate]])
 
 slots.has_cross_reference = Slot(uri=DEFAULT_.has_cross_reference, name="has_cross_reference", curie=DEFAULT_.curie('has_cross_reference'),
-                   model_uri=DEFAULT_.has_cross_reference, domain=InformationContentEntity, range=Optional[Union[str, List[str]]])
+                   model_uri=DEFAULT_.has_cross_reference, domain=Reference, range=Optional[Union[str, List[str]]])
 
 slots.resource_abbreviation = Slot(uri=DEFAULT_.resource_abbreviation, name="resource_abbreviation", curie=DEFAULT_.curie('resource_abbreviation'),
                    model_uri=DEFAULT_.resource_abbreviation, domain=Reference, range=Optional[str])
@@ -332,13 +319,10 @@ slots.alliance_category = Slot(uri=DEFAULT_.alliance_category, name="alliance_ca
                    model_uri=DEFAULT_.alliance_category, domain=Reference, range=Optional[str])
 
 slots.has_mesh_term = Slot(uri=DEFAULT_.has_mesh_term, name="has_mesh_term", curie=DEFAULT_.curie('has_mesh_term'),
-                   model_uri=DEFAULT_.has_mesh_term, domain=Reference, range=Optional[Union[Union[str, URIorCURIE], List[Union[str, URIorCURIE]]]])
+                   model_uri=DEFAULT_.has_mesh_term, domain=Reference, range=Optional[Union[Union[str, MeshTermId], List[Union[str, MeshTermId]]]])
 
 slots.has_keyword = Slot(uri=DEFAULT_.has_keyword, name="has_keyword", curie=DEFAULT_.curie('has_keyword'),
                    model_uri=DEFAULT_.has_keyword, domain=Reference, range=Optional[Union[str, List[str]]])
-
-slots.related_to = Slot(uri=DEFAULT_.related_to, name="related to", curie=DEFAULT_.curie('related_to'),
-                   model_uri=DEFAULT_.related_to, domain=None, range=Optional[Union[str, List[str]]])
 
 slots.has_author = Slot(uri=DEFAULT_.has_author, name="has_author", curie=DEFAULT_.curie('has_author'),
                    model_uri=DEFAULT_.has_author, domain=Reference, range=Optional[Union[Union[str, AgentId], List[Union[str, AgentId]]]])
@@ -346,26 +330,11 @@ slots.has_author = Slot(uri=DEFAULT_.has_author, name="has_author", curie=DEFAUL
 slots.has_publisher = Slot(uri=DEFAULT_.has_publisher, name="has_publisher", curie=DEFAULT_.curie('has_publisher'),
                    model_uri=DEFAULT_.has_publisher, domain=Reference, range=Optional[Union[Union[str, AgentId], List[Union[str, AgentId]]]])
 
-slots.node_property = Slot(uri=ALLIANCE.node_property, name="node property", curie=ALLIANCE.curie('node_property'),
-                   model_uri=DEFAULT_.node_property, domain=None, range=Optional[str])
-
 slots.description = Slot(uri=ALLIANCE.description, name="description", curie=ALLIANCE.curie('description'),
                    model_uri=DEFAULT_.description, domain=None, range=Optional[str])
 
-slots.affiliation = Slot(uri=ALLIANCE.affiliation, name="affiliation", curie=ALLIANCE.curie('affiliation'),
-                   model_uri=DEFAULT_.affiliation, domain=Agent, range=Optional[Union[Union[str, URIorCURIE], List[Union[str, URIorCURIE]]]])
-
-slots.address = Slot(uri=ALLIANCE.address, name="address", curie=ALLIANCE.curie('address'),
-                   model_uri=DEFAULT_.address, domain=None, range=Optional[str])
-
-slots.creation_date = Slot(uri=ALLIANCE.creation_date, name="creation date", curie=ALLIANCE.curie('creation_date'),
-                   model_uri=DEFAULT_.creation_date, domain=None, range=Optional[Union[str, XSDDate]])
-
-slots.named_thing = Slot(uri=ALLIANCE.named_thing, name="named thing", curie=ALLIANCE.curie('named_thing'),
-                   model_uri=DEFAULT_.named_thing, domain=None, range=Optional[str])
-
-slots.entity = Slot(uri=ALLIANCE.entity, name="entity", curie=ALLIANCE.curie('entity'),
-                   model_uri=DEFAULT_.entity, domain=None, range=Optional[str])
+slots.name = Slot(uri=ALLIANCE.name, name="name", curie=ALLIANCE.curie('name'),
+                   model_uri=DEFAULT_.name, domain=None, range=Optional[str])
 
 slots.date_published = Slot(uri=DEFAULT_.date_published, name="date published", curie=DEFAULT_.curie('date_published'),
                    model_uri=DEFAULT_.date_published, domain=None, range=Optional[str])
@@ -379,32 +348,14 @@ slots.last_modified = Slot(uri=DEFAULT_.last_modified, name="last modified", cur
 slots.issue_date = Slot(uri=DEFAULT_.issue_date, name="issue date", curie=DEFAULT_.curie('issue_date'),
                    model_uri=DEFAULT_.issue_date, domain=None, range=Optional[str])
 
-slots.publisherId = Slot(uri=DEFAULT_.publisherId, name="publisherId", curie=DEFAULT_.curie('publisherId'),
-                   model_uri=DEFAULT_.publisherId, domain=None, range=Optional[str])
-
-slots.resourceId = Slot(uri=DEFAULT_.resourceId, name="resourceId", curie=DEFAULT_.curie('resourceId'),
-                   model_uri=DEFAULT_.resourceId, domain=None, range=Optional[str])
-
 slots.alliance_category = Slot(uri=DEFAULT_.alliance_category, name="alliance category", curie=DEFAULT_.curie('alliance_category'),
                    model_uri=DEFAULT_.alliance_category, domain=None, range=Optional[str])
-
-slots.tags = Slot(uri=DEFAULT_.tags, name="tags", curie=DEFAULT_.curie('tags'),
-                   model_uri=DEFAULT_.tags, domain=None, range=Optional[str])
-
-slots.mesh_terms = Slot(uri=DEFAULT_.mesh_terms, name="mesh terms", curie=DEFAULT_.curie('mesh_terms'),
-                   model_uri=DEFAULT_.mesh_terms, domain=None, range=Optional[str])
-
-slots.cross_references = Slot(uri=DEFAULT_.cross_references, name="cross references", curie=DEFAULT_.curie('cross_references'),
-                   model_uri=DEFAULT_.cross_references, domain=None, range=Optional[str])
 
 slots.publisher = Slot(uri=DEFAULT_.publisher, name="publisher", curie=DEFAULT_.curie('publisher'),
                    model_uri=DEFAULT_.publisher, domain=None, range=Optional[str])
 
 slots.resource_abbreviation = Slot(uri=DEFAULT_.resource_abbreviation, name="resource abbreviation", curie=DEFAULT_.curie('resource_abbreviation'),
                    model_uri=DEFAULT_.resource_abbreviation, domain=None, range=Optional[str])
-
-slots.name = Slot(uri=DEFAULT_.name, name="name", curie=DEFAULT_.curie('name'),
-                   model_uri=DEFAULT_.name, domain=None, range=Optional[str])
 
 slots.reference_id = Slot(uri=DEFAULT_.id, name="reference_id", curie=DEFAULT_.curie('id'),
                    model_uri=DEFAULT_.reference_id, domain=Reference, range=Union[str, ReferenceId])
@@ -436,32 +387,14 @@ slots.reference_abstract = Slot(uri=DEFAULT_.abstract, name="reference_abstract"
 slots.reference_issue_date = Slot(uri=DEFAULT_.issue_date, name="reference_issue date", curie=DEFAULT_.curie('issue_date'),
                    model_uri=DEFAULT_.reference_issue_date, domain=Reference, range=Optional[str])
 
-slots.reference_publisherId = Slot(uri=DEFAULT_.publisherId, name="reference_publisherId", curie=DEFAULT_.curie('publisherId'),
-                   model_uri=DEFAULT_.reference_publisherId, domain=Reference, range=Optional[str])
-
-slots.reference_resourceId = Slot(uri=DEFAULT_.resourceId, name="reference_resourceId", curie=DEFAULT_.curie('resourceId'),
-                   model_uri=DEFAULT_.reference_resourceId, domain=Reference, range=Optional[str])
-
 slots.reference_alliance_category = Slot(uri=DEFAULT_.alliance_category, name="reference_alliance category", curie=DEFAULT_.curie('alliance_category'),
                    model_uri=DEFAULT_.reference_alliance_category, domain=Reference, range=Optional[str])
-
-slots.reference_tags = Slot(uri=DEFAULT_.tags, name="reference_tags", curie=DEFAULT_.curie('tags'),
-                   model_uri=DEFAULT_.reference_tags, domain=Reference, range=Optional[str])
-
-slots.reference_mesh_terms = Slot(uri=DEFAULT_.mesh_terms, name="reference_mesh terms", curie=DEFAULT_.curie('mesh_terms'),
-                   model_uri=DEFAULT_.reference_mesh_terms, domain=Reference, range=Optional[str])
-
-slots.reference_cross_references = Slot(uri=DEFAULT_.cross_references, name="reference_cross references", curie=DEFAULT_.curie('cross_references'),
-                   model_uri=DEFAULT_.reference_cross_references, domain=Reference, range=Optional[str])
 
 slots.reference_publisher = Slot(uri=DEFAULT_.publisher, name="reference_publisher", curie=DEFAULT_.curie('publisher'),
                    model_uri=DEFAULT_.reference_publisher, domain=Reference, range=Optional[str])
 
 slots.reference_resource_abbreviation = Slot(uri=DEFAULT_.resource_abbreviation, name="reference_resource abbreviation", curie=DEFAULT_.curie('resource_abbreviation'),
                    model_uri=DEFAULT_.reference_resource_abbreviation, domain=Reference, range=Optional[str])
-
-slots.information_content_entity_creation_date = Slot(uri=DEFAULT_.creation_date, name="information content entity_creation date", curie=DEFAULT_.curie('creation_date'),
-                   model_uri=DEFAULT_.information_content_entity_creation_date, domain=InformationContentEntity, range=Optional[Union[str, XSDDate]])
 
 slots.agent_id = Slot(uri=DEFAULT_.id, name="agent_id", curie=DEFAULT_.curie('id'),
                    model_uri=DEFAULT_.agent_id, domain=Agent, range=Union[str, AgentId])
