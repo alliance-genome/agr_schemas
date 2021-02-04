@@ -236,6 +236,14 @@ slots:
       - dct:createdOn
       - WIKIDATA_PROPERTY:P577
 
+  has cross references:
+    is_a: related to
+    singular_name: has cross reference
+    description: >-
+    domain: named thing
+    range: cross reference
+    multivalued: true
+
   related to:
     description: >-
       A relationship that is asserted between two named things

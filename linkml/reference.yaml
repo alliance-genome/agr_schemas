@@ -294,13 +294,6 @@ slots:
       Optional ist of controlled vocabulary tags that give categories to each pub (ie: "can show images").
     multivalued: true
 
-  has cross references:
-    is_a: related to
-    singular_name: has cross reference
-    description: >-
-    domain: information content entity
-    multivalued: true
-
   issue date:
     is_a: node property
     description: >-
