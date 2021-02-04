@@ -8,17 +8,17 @@ classes:
     slots:
       - id
       - title
-      - ISO abbreviation
-      - medlinle abbreviation
+      - iso abbreviation
+      - medline abbreviation
       - copyright date
       - publisher
-      - print ISSN
-      - online ISSN
-      - agents
+      - print issn
+      - online issn
+      - has publisher
       - volumes
       - summary
-      - title synonyms
-      - has reference
+      - has synonyms
+      - has references
     id_prefixes:
       - PMID
       - NLMID
@@ -29,17 +29,67 @@ classes:
       - ZFIN
       - MGI
       - RGD
-    exact_mappings:
-      - biolink:Article
     slot_usage:
       id:
         description: >-
           Precedence of identifiers for references is as follows: PMID if available; DOI if not; actual
           alternate CURIE otherwise.
+      title:
+        description: >-
+          the title of the publication
 
 slots:
 
-    resource abbreviation:
+    iso abbreviation:
       is_a: node property
       description: >-
-      domain: reference
+      range: string
+      domain: information content entity
+
+    medline abbreviation:
+      is_a: node property
+      description: >-
+      range: string
+      domain: information content entity
+
+    copyright date:
+      is_a: node property
+      description: >-
+      range: date
+      domain: information content entity
+
+    publisher:
+      is_a: node property
+      description: >-
+      range: string
+      domain: information content entity
+
+    print issn:
+      is_a: node property
+      description: >-
+      range: string
+      domain: information content entity
+
+    online issn:
+      is_a: node property
+      description: >-
+      range: string
+      domain: information content entity
+
+    summary:
+      is_a: node property
+      description: >-
+      range: string
+      domain: information content entity
+    
+    has references:
+      is_a: related to
+      singular_name: has reference
+      description: >-
+      domain: resource
+      multivalued: true
+      range: reference
+
+
+
+

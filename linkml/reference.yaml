@@ -64,17 +64,20 @@ classes:
       - DOI
     slot_usage:
       id:
-        description: the identifier for the publication in the form of a curie.
+        description: >-
+          the identifier for the publication in the form of a curie.
         examples:
           - value: ZFIN:ZDB-PUB-010101-1
           - value: PMID:3323398
         required: true
       title:
-        description: the title of the publication
+        description: >-
+          the title of the publication
         examples:
           - Substrate interactions affecting motor growth cone guidance during development and regeneration
       alliance category:
-        description: assigned as one of the alliance controlled vocabulary for types.
+        description: >-
+          assigned as one of the alliance controlled vocabulary for types.
         examples:
           - Research Article
           - Review Article
@@ -217,19 +220,6 @@ slots:
     description: >-
       Connects an object to a vocabulary term or ontology class that describes some aspect of the entity.
 
-  has publisher:
-    is_a: related to
-    range: person
-    domain: information content entity
-
-  id:
-    identifier: true
-    required: true
-    multivalued: false
-    description: >-
-      A unique identifier for a thing. Must be either a CURIE shorthand for a URI or a complete URI
-    range: uriorcurie
-
   date published:
     is_a: node property
     description: >-
@@ -320,13 +310,6 @@ slots:
       Date on which an entity was last modified in PubMed or in the MOD.
     domain: information content entity
     range: date
-
-  title:
-    multivalued: false
-    description: >-
-      A human readable title for a reference.
-    domain: information content entity
-    range: string
 
   volume:
     multivalued: false
