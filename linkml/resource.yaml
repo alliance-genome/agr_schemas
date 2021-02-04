@@ -18,6 +18,7 @@ classes:
       - volumes
       - summary
       - title synonyms
+      - has reference
     id_prefixes:
       - PMID
       - NLMID
@@ -35,3 +36,10 @@ classes:
         description: >-
           Precedence of identifiers for references is as follows: PMID if available; DOI if not; actual
           alternate CURIE otherwise.
+
+slots:
+
+    resource abbreviation:
+      is_a: node property
+      description: >-
+      domain: reference

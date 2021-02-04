@@ -1,0 +1,251 @@
+---
+id: https://github.com/alliance-genome/agr_schemas/linkml/variation_core.yaml
+name: Alliance-Schema-Prototype-Variation-Core
+title: Alliance Schema Prototype Variation Core
+
+imports:
+  - core
+  - reference
+  - cross_reference
+# Types
+
+types:
+
+  biological sequence:
+    typeof: string
+
+  predicate type:
+    typeof: uriorcurie
+    description: >-
+      A CURIE from the biolink related_to hierarchy.
+      For example, biolink:related_to, biolink:causes, biolink:treats.
+
+
+# Classes
+
+classes:
+
+  association:
+    is_a: entity
+    description: >-
+      A typed association between two entities, supported by evidence
+      comments:
+      - This is roughly the model used by biolink and ontobio at the moment
+    slots:
+      - subject
+      - predicate
+      - object
+    slot_usage:
+      type:
+        description: rdf:type of biolink:Association should be fixed at rdf:Statement
+      category:
+        range: association
+    exact_mappings:
+      - biolink:Association
+
+  biological entity:
+    is_a: named thing
+    abstract: true
+    exact_mappings:
+      - biolink:BiologicalEntity
+
+  molecular entity:
+    is_a: biological entity
+    aliases: ['bioentity']
+    description: >-
+      A gene, gene product, small molecule or macromolecule (including protein complex)"
+    #notes:
+    #  - "Check SIO mapping - also mapped to chemical substance.": Resolved by changing SIO:010004 to SIO:010341
+    exact_mappings:
+      - CHEBI:24431
+      - biolink:MolecularEntity
+
+  genomic entity:
+    is_a: molecular entity
+    aliases: ['sequence feature']
+    description: >-
+      an entity that can either be directly located on a genome (gene,
+      transcript, exon, regulatory region) or is encoded in a genome (protein)
+    slots:
+      - has biological sequence
+    exact_mappings:
+      - biolink:GenomicEntity
+
+  gene:
+    description: >-
+      A region (or regions) that includes all of the sequence elements
+      necessary to encode a functional transcript. A gene locus may include
+      regulatory regions, transcribed regions and/or other
+      functional sequence regions.
+    is_a: genomic entity
+    aliases: ['locus']
+    exact_mappings:
+      - biolink:Gene
+    id_prefixes:
+      - ENSEMBL
+      - HGNC
+      - FB
+      - MGI
+      - RGD
+      - SGD
+      - WB
+      - ZFIN
+
+  transcript:
+    is_a: genomic entity
+    description: >-
+      An RNA synthesized on a DNA or RNA template by an RNA polymerase.
+    exact_mappings:
+      - biolink:Transcript
+    id_prefixes:
+      - ENSEMBL # ENSEMBL:ENST for human
+      - FB      # FlyBase:FBtr
+      - WB
+      - MGI
+      - RGD
+      - SGD
+      - ZFIN
+
+  allele:
+    is_a: genomic entity
+
+  feature:
+
+  synonym:
+
+  identifier:
+
+  so_term:
+
+  go_term:
+
+  ontology:
+
+  chromosome:
+    is_a: genomic entity
+
+  assembly:
+
+  genomic_location:
+
+  note:
+
+  species:
+
+
+# Slots
+
+slots:
+
+  has biological sequence:
+    is_a: node property
+    description: >-
+      connects a genomic feature to its sequence
+    range: biological sequence
+
+  symbol:
+    is_a: node property
+    domain: named thing
+    description: >-
+      Symbol for a particular thing
+    exact_mappings:
+      - biolink:symbol
+
+  from_species:
+    is_a: related to
+    description: holds between a genomic entity and a species
+    domain: genomic entity
+    range: species
+
+  has_gene:
+    is_a: related to
+    description: holds between a named thing and a gene
+    multivalued: true
+    domain: named thing
+    range: gene
+
+  has_transcript:
+    is_a: related to
+    description: holds between a named thing and a transcript
+    multivalued: true
+    domain: named thing
+    range: transcript
+
+  has_variant:
+    is_a: related to
+    description: holds between a named thing and a variant
+    multivalued: true
+    domain: named thing
+    range: variant
+
+  has_feature:
+    is_a: related to
+    description: holds between a named thing and a feature
+    multivalued: true
+    domain: named thing
+    range: feature
+
+  has_synonym:
+    is_a: related to
+    description: holds between a named thing and a synonym
+    multivalued: true
+    domain: named thing
+    range: synonym
+
+  has_identifier:
+    is_a: related to
+    description: holds between a named thing and an identifier
+    multivalued: true
+    domain: named thing
+    range: identifier
+
+  has_so_term:
+    is_a: related to
+    description: holds between a named thing and a sequence ontology term
+    domain: named thing
+    range: so_term
+
+  has_go_term:
+    is_a: related to
+    description: holds between a named thing and a gene ontology term
+    domain: named thing
+    range: go_term
+
+  has_ontology:
+    is_a: related to
+    description: holds between a named thing and an ontology
+    multivalued: true
+    domain: named thing
+    range: ontology
+
+  has_reference:
+    is_a: related to
+    description: holds between a named thing and a reference
+    multivalued: true
+    domain: named thing
+    range: reference
+
+  on_chromosome:
+    is_a: related to
+    description: holds between a genomic entity and a chromosome
+    domain: genomic entity
+    range: chromosome
+
+  has_assembly:
+    is_a: related to
+    description: holds between a genomic entity and an assembly
+    domain: genomic entity
+    range: assembly
+
+  has_genomic_location:
+    is_a: related to
+    description: holds between a genomic entity and a genomic location
+    domain: genomic entity
+    range: genomic_location
+
+  has_note:
+    is_a: related to
+    description: holds between a named thing and a note
+    multivalued: true
+    domain: named thing
+    range: note

@@ -25,30 +25,30 @@ classes:
       - name
 
   reference:
+    is_a: information content entity
+    description: >-
     slots:
       - id
       - title
-      - date_published
-      - arrived_in_pubmed
-      - last_modified
+      - alliance category
+      - date published
+      - year published
+      - month published
+      - day published
+      - date arrived in pubmed
+      - date last modified
       - volume
       - pages
       - abstract
       - citation
-      - issue_name
-      - issue_date
-      - alliance_category
-     # the slots below refer to one-to-many associations (ie: has_tags is defined below in the slot section, but represents the
-     # idea that a reference can have many tags - in the SQL DDL, this means we need a one-to-many relationship
-     # between the reference table and the reference_tag table (or a three-table approach - reference, referenceTagJoin and Tag tables -
-     # if we want "Tags" to be a controlled vocabulary table).  Check out the generated UML for more details.
-      - has_mod_reference_type
-      - has_author
-      - has_tag
-      - has_mesh_term
-      - has_cross_reference
-      - has_publisher
-      - resource_abbreviation
+      - issue name
+      - issue date
+      - has mod reference types
+      - has authors
+      - has tags
+      - has topics
+      - has cross reference
+      - has publisher
     id_prefixes:
       - PMID
       - NLMID
@@ -59,43 +59,167 @@ classes:
       - ZFIN
       - MGI
       - RGD
+      - PMC
+      - DOI
     slot_usage:
       id:
-        description: >-
-          Precedence of identifiers for references is as follows: PMID if available; DOI if not; actual
-          alternate CURIE otherwise.
+        description: the identifier for the publication in the form of a curie.
+        examples:
+          - value: ZFIN:ZDB-PUB-010101-1
+          - value: PMID:3323398
+        required: true
       title:
-        description: >-
-          The title of the publication.
+        description: the title of the publication
+        examples:
+          - Substrate interactions affecting motor growth cone guidance during development and regeneration
+      alliance category:
+        description: assigned as one of the alliance controlled vocabulary for types.
+        examples:
+          - Research Article
+          - Review Article
+          - Thesis
+          - Other
+          - Preprint
+          - Conference Publication
+          - Personal Communication
+          - Direct Data Submission
+          - Internal Process Reference
+          - Unknown
+          - Retraction
       date published:
         description: >-
-      arrived in PubMed:
+          The date the reference was published.  This field can be submitted by a MOD or from PUBMED.
+          When pulled from PUBMED, this date is generated from the year, month and day published fields.
+          When submitted from a MOD it can be any string.
+        examples:
+          - Spring 1991
+          - 01-01-1991
+          - 25-12-1991
+      year published:
         description: >-
-      last modified:
+          When the reference is a PUBMED reference, this will be a 4-digit year.
+      month published:
         description: >-
+          When the reference is a PUBMED reference, this will be a 2-digit year.
+      day published:
+        description: >-
+          When the reference is a PUBMED reference, this will be a 2-digit day.
+      date arrived in pubmed:
+        description: >-
+          As per the PUBMED XML record, this is the date the reference entered PUBMED.
+      mod last modified date:
+        description: >-
+          The date the meta data on this object was last updated at the MOD.
+      pubmed last modified date:
+        description: >-
+          The date the meta data on this object was last updated at PUBMED.
       volume:
-        description: >-
-      pages:
-        description: >-
-          When a 2-tuple of page numbers are provided, they represent
-          the start and end page of the publication within its parent publication context.
-          For books, this may be set to the total number of pages of the book.
-      citation:
-        description: >-
-      abstract:
-        description: >-
-      issue date:
         description: >-
       alliance category:
         description: >-
           Controlled vocabulary term drawn from a list of Alliance-defined reference categories.
             - mod reference types
       publisher:
+          Volume of a book or music release in a collection/series or a published collection of
+          journal issues in a serial publication
+      pages:
         description: >-
-      resource abbreviation:
+          Page number of source referenced for statement or publication
+      abstract:
         description: >-
+          The abstract of the reference.
+      citation:
+        description: >-
+          Is a reference to a source.
+      has mod reference types:
+        description: >-
+          Reference type as defined by the MOD on submission of the publication.
+      has authors:
+        description: >-
+          List of authors in the reference.  There might be more than one author in the publication with the same
+          name.
+      has tags:
+        description: >-
+          Tags from the MOD from a controlled vocabulary of possible tags.
+        examples:
+          - inCorpus
+          - canShowImages
+          - PMCOpenAccess
+          - notRelevant
+      has topics:
+        description: >-
+          The list of MeSH terms associated with a reference.  Note: this is an association slot that allows
+          a qualifier to be associated with the reference-meshTerm relationship.
+        multivalued: true
+      has cross reference:
+        description: >-
+          The list of crossReference objects associated with a reference.
+
+  keyword:
+    slots:
+      - has reference
+      - keyword
+  authorReference:
+    slots:
+      - id
+      - first name
+      - last name
+      - middle name
+      - has reference
+  meshTerm:
+    slots:
+      - id
+      - name
+    is_a: ControlledVocabulary
+  crossReference:
+    slots:
+      - id
+      - local id
+      - prefix
+      - has page
+  modReferenceType:
+    slots:
+      - id
+      - name
+      -
+  modTag:
+    slots:
+      - id
+      - name
+      -
 
 slots:
+
+  reference to mesh association:
+    is_a: association
+    defining_slots:
+      - subject
+      - object
+      - predicate
+    slot_usage:
+      subject:
+        range: reference
+        description: >-
+      object:
+        range: ontology class
+        description:
+      predicate:
+        subproperty of: has topic
+        description: has topic is the relation used to describe the relationship between
+
+  has topics:
+    is_a: related to
+    singular_name: has topic
+    range: ontology class
+    exact_mappings:
+      - foaf:topic
+    description: >-
+      Connects an object to a vocabulary term or ontology class that describes some aspect of the entity.
+
+  has publisher:
+    is_a: related to
+    range: person
+    domain: information content entity
 
   id:
     identifier: true
@@ -105,7 +229,8 @@ slots:
       A unique identifier for a thing. Must be either a CURIE shorthand for a URI or a complete URI
     range: uriorcurie
 
-  date_published:
+  date published:
+    is_a: node property
     aliases: ['publication date']
     description: >-
       Date on which an entity was created.
@@ -140,13 +265,78 @@ slots:
     domain: reference
     range: string
 
-  issue_date:
+  date last modified:
+    is_a: node property
+    description: >-
+      Date on which an entity was last modified by the MOD.
+    range: date
+    domain: reference
+
+  year published:
+    is_a: node property
+    description: >-
+      Year in which an entity was created.
+    range: date
+    domain: information content entity
+
+  month published:
+    is_a: node property
+    description: >-
+      Month in which an entity was created.
+    range: date
+    domain: information content entity
+
+  day published:
+    is_a: node property
+    description: >-
+      Day in which an entity was created.
+    range: date
+    domain: information content entity
+
+  date arrived in pubmed:
+    is_a: node property
+    description: >-
+      Day in which a reference or resource was created in PUBMED. Only relevant for PUBMED references
+    range: date
+    domain: information content entity
+
+  has mod reference types:
+    is_a: related to
+    singular_name: has mod reference type
+    multivalued: true
+    description: >-
+      List of types as assigned at a MOD.
+
+  has tags:
+    is_a: related to
+    singular_name: has tag
+    description: >-
+      Optional ist of controlled vocabulary tags that give categories to each pub (ie: "can show images").
+    multivalued: true
+
+  arrived in pubmed:
+    is_a: node property
+    description: >-
+      Date on which an entity was created in PubMed.
+    range: date
+    domain: information content entity
+
+  has cross references:
+    is_a: related to
+    singular_name: has cross reference
+    description: >-
+    domain: information content entity
+    multivalued: true
+
+  issue date:
+    is_a: node property
     description: >-
       Date on which an entity was issued.
     domain: reference
     range: date
 
-  last_modified:
+  last modified:
+    is_a: node property
     description: >-
       Date on which an entity was last modified in PubMed or in the MOD.
     domain: reference
@@ -161,15 +351,18 @@ slots:
 
   volume:
     multivalued: false
-    domain: reference
     range: string
+    domain: information content entity
     description: >-
 
   pages:
-    multivalued: false
-    domain: reference
-    range: string
+    is_a: node property
     description: >-
+      page number of source referenced for statement or publication
+    domain: information content entity
+    multivalued: true
+    exact_mappings:
+      - WIKIDATA_PROPERTY:P304
 
   abstract:
     multivalued: false
@@ -183,19 +376,21 @@ slots:
     range: string
     description: >-
 
-  issue_name:
+  issue name:
     multivalued: false
     domain: reference
     range:
     description: >-
 
-  alliance_category:
+  alliance category:
     multivalued: false
     domain: reference
     range:
     description: >-
 
-  has_mesh_term:
+  has topic:
+    is_a: related to
+
     description: >-
       mesh terms tagging a publication
     domain: reference
@@ -204,34 +399,13 @@ slots:
       - MESH
     multivalued: true
 
-  has_keyword:
+  has keyword:
+    is_a: node property
+
     description: >-
       keywords tagging a publication
     domain: reference
     range: string
     multivalued: true
 
-  has_author:
-    description: >-
-      connects an publication to the list of authors who contributed to the publication.
-      This property should be a comma-delimited list of author names. It is recommended that an author's name
-      be formatted as "surname, firstname initial.".   Note that this property is a node annotation expressing
-      the citation list of authorship which might typically otherwise be more completely documented in
-      biolink:PublicationToProviderAssociation defined edges which point to full details about an author
-      and possibly, some qualifiers which clarify the specific status of a given author in the publication.
-    multivalued: true
-    domain: reference
-    range: agent
-
-  has_publisher:
-    description: >-
-      connects an publication to the list of authors who contributed to the publication.
-      This property should be a comma-delimited list of author names. It is recommended that an author's name
-      be formatted as "surname, firstname initial.".   Note that this property is a node annotation expressing
-      the citation list of authorship which might typically otherwise be more completely documented in
-      biolink:PublicationToProviderAssociation defined edges which point to full details about an author
-      and possibly, some qualifiers which clarify the specific status of a given author in the publication.
-    multivalued: true
-    domain: reference
-    range: agent
 
