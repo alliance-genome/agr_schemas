@@ -237,7 +237,7 @@ slots:
       - WIKIDATA_PROPERTY:P577
 
   has cross references:
-    is_a: related to
+    is_a: node property
     singular_name: has cross reference
     description: >-
     domain: named thing
