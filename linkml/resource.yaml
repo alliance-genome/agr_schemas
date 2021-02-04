@@ -81,7 +81,7 @@ slots:
       description: >-
       range: string
       domain: information content entity
-    
+
     has references:
       is_a: related to
       singular_name: has reference

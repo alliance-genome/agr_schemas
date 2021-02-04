@@ -8,9 +8,8 @@ classes:
   alliance cross reference:
     slots:
       - id
-      - page
+      - pages
       - display name
-      - cross ref complete url
       - prefix
 
 slots:
@@ -20,22 +19,17 @@ slots:
     multivalued: false
     description: Denormalization to help with classifying types of crossReferences, ie: distinguishing DOIs from PMC ids, etc.
 
-  page:
+  pages:
     required: true
     multivalued: true
-    domain: alliance cross reference
+    domain: cross reference
     range: string
 
   display name:
     required: true
     multivalued: false
-    domain: alliance cross reference
+    domain: cross reference
     range: string
 
-  cross ref complete url:
-    required: true
-    multivalued: false
-    domain: alliance cross reference
-    range: string
 
 

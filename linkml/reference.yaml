@@ -50,6 +50,7 @@ classes:
       - has topics
       - has cross reference
       - has publisher
+      - has keywords
     id_prefixes:
       - PMID
       - NLMID
@@ -138,13 +139,16 @@ classes:
       has mod reference types:
         description: >-
           Reference type as defined by the MOD on submission of the publication.
+        multivalued: true
       has authors:
         description: >-
           List of authors in the reference.  There might be more than one author in the publication with the same
           name.
+        multivalued: true
       has tags:
         description: >-
           Tags from the MOD from a controlled vocabulary of possible tags.
+        multivalued: true
         examples:
           - inCorpus
           - canShowImages
@@ -350,9 +354,6 @@ slots:
     range:
     description: >-
 
-  has topic:
-    is_a: related to
-
     description: >-
       mesh terms tagging a publication
     domain: reference
@@ -361,13 +362,12 @@ slots:
       - MESH
     multivalued: true
 
-  has keyword:
-    is_a: node property
-
+  has keywords:
+    is_a: related to
+    multivalued: true
     description: >-
       keywords tagging a publication
     domain: reference
     range: string
-    multivalued: true
 
 
