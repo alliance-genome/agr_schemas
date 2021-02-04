@@ -206,7 +206,7 @@ slots:
     description: >-
       Date on which an entity was created.
     range: date
-    domain: information content entity
+    domain: named thing
 
   date last modified in pubmed:
     is_a: node property
@@ -220,7 +220,7 @@ slots:
     description: >-
       Date on which an entity was last modified by the MOD.
     range: date
-    domain: information content entity
+    domain: named thing
 
   year published:
     is_a: node property

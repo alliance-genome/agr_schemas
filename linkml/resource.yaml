@@ -85,7 +85,7 @@ slots:
       domain: information content entity
 
     has references:
-      is_a: related to
+      is_a: named thing
       singular_name: has reference
       description: >-
       domain: resource
