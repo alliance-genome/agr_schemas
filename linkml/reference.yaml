@@ -36,6 +36,7 @@ classes:
       - month published
       - day published
       - date arrived in pubmed
+      - date last modified in pubmed
       - date last modified
       - volume
       - pages
@@ -231,66 +232,51 @@ slots:
 
   date published:
     is_a: node property
-    aliases: ['publication date']
     description: >-
       Date on which an entity was created.
     range: date
-    domain: reference
+    domain: information content entity
 
-  has_mod_reference_type:
-    multivalued: true
+  date last modified:
+    is_a: node property
     description: >-
-      List of types as assigned at a MOD.
-    range: string
-
-  has_tag:
-    description: >-
-      Optional ist of controlled vocabulary tags that give categories to each pub (ie: "can show images").
-    multivalued: true
-    range: string
-
-  arrived_in_pubmed:
-    description: >-
-      Date on which an entity was created in PubMed.
-    domain: reference
+      Date on which an entity was created.
     range: date
+    domain: information content entity
 
-  has_cross_reference:
+  date last modified in pubmed:
+    is_a: node property
     description: >-
-    multivalued: true
-    domain: reference
-
-  resource_abbreviation:
-    description: >-
-    domain: reference
-    range: string
+      Date on which an entity was created.
+    range: date
+    domain: information content entity
 
   date last modified:
     is_a: node property
     description: >-
       Date on which an entity was last modified by the MOD.
     range: date
-    domain: reference
+    domain: information content entity
 
   year published:
     is_a: node property
     description: >-
       Year in which an entity was created.
-    range: date
+    range: string
     domain: information content entity
 
   month published:
     is_a: node property
     description: >-
       Month in which an entity was created.
-    range: date
+    range: string
     domain: information content entity
 
   day published:
     is_a: node property
     description: >-
       Day in which an entity was created.
-    range: date
+    range: string
     domain: information content entity
 
   date arrived in pubmed:
@@ -314,13 +300,6 @@ slots:
       Optional ist of controlled vocabulary tags that give categories to each pub (ie: "can show images").
     multivalued: true
 
-  arrived in pubmed:
-    is_a: node property
-    description: >-
-      Date on which an entity was created in PubMed.
-    range: date
-    domain: information content entity
-
   has cross references:
     is_a: related to
     singular_name: has cross reference
@@ -332,21 +311,21 @@ slots:
     is_a: node property
     description: >-
       Date on which an entity was issued.
-    domain: reference
+    domain: information content entity
     range: date
 
   last modified:
     is_a: node property
     description: >-
       Date on which an entity was last modified in PubMed or in the MOD.
-    domain: reference
+    domain: information content entity
     range: date
 
   title:
     multivalued: false
     description: >-
       A human readable title for a reference.
-    domain: reference
+    domain: information content entity
     range: string
 
   volume:
