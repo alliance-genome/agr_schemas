@@ -3,6 +3,9 @@ id: https://github.com/alliance-genome/agr_schemas/linkml/reference.yaml
 imports:
   - core
   - biolinkml:types
+  - cross_reference
+  - person
+  - author_reference
 
 prefixes:
   SGD: http://www.yeastgenome.org/
@@ -15,14 +18,6 @@ prefixes:
 
 
 classes:
-
-  mesh term:
-    slots:
-      - id
-
-  tag:
-    slots:
-      - name
 
   reference:
     is_a: information content entity
@@ -163,39 +158,6 @@ classes:
         description: >-
           The list of crossReference objects associated with a reference.
 
-  keyword:
-    slots:
-      - has reference
-      - keyword
-  authorReference:
-    slots:
-      - id
-      - first name
-      - last name
-      - middle name
-      - has reference
-  meshTerm:
-    slots:
-      - id
-      - name
-    is_a: ControlledVocabulary
-  crossReference:
-    slots:
-      - id
-      - local id
-      - prefix
-      - has page
-  modReferenceType:
-    slots:
-      - id
-      - name
-      -
-  modTag:
-    slots:
-      - id
-      - name
-      -
-
 slots:
 
   reference to mesh association:
@@ -204,6 +166,7 @@ slots:
       - subject
       - object
       - predicate
+      - qualifier
     slot_usage:
       subject:
         range: reference
@@ -212,17 +175,24 @@ slots:
         range: ontology class
         description:
       predicate:
-        subproperty of: has topic
+        subproperty of: has topics
         description: has topic is the relation used to describe the relationship between
 
   has topics:
     is_a: related to
     singular_name: has topic
+    domain: reference
     range: ontology class
     exact_mappings:
       - foaf:topic
     description: >-
       Connects an object to a vocabulary term or ontology class that describes some aspect of the entity.
+
+  qualifier:
+    is_a: association slot
+    range: reference
+    description: >-
+      This is the MeSH qualifier term that is optionally added to the descriptor term.
 
   date published:
     is_a: node property
@@ -281,14 +251,14 @@ slots:
     domain: information content entity
 
   has mod reference types:
-    is_a: related to
+    is_a: node property
     singular_name: has mod reference type
     multivalued: true
     description: >-
       List of types as assigned at a MOD.
 
   has tags:
-    is_a: related to
+    is_a: node property
     singular_name: has tag
     description: >-
       Optional ist of controlled vocabulary tags that give categories to each pub (ie: "can show images").
@@ -347,20 +317,28 @@ slots:
     range:
     description: >-
 
-    description: >-
-      mesh terms tagging a publication
-    domain: reference
-    range: mesh term
-    values_from:
-      - MESH
-    multivalued: true
+
+#    description: >-
+#      mesh terms tagging a publication
+#    domain: reference
+#    range: mesh term
+#    values_from:
+#      - MESH
+#    multivalued: true
 
   has keywords:
-    is_a: related to
+    is_a: node property
     multivalued: true
     description: >-
       keywords tagging a publication
-    domain: reference
+    domain: information content entity
     range: string
+
+  has authors:
+    is_a: node property
+    multivalued: true
+    domain: information content entity
+    range: author reference
+
 
 

@@ -1,0 +1,19 @@
+id: https://github.com/alliance-genome/agr_schemas/linkml/reference.yaml
+
+imports:
+  - core
+  - biolinkml:types
+  - cross_reference
+  - person
+
+prefixes:
+  SGD: http://www.yeastgenome.org/
+  WB: https://www.wormbase.org/
+  FB: https://flybase.org
+  ZFIN: https://zfin.org/
+  RGD: https://rgd.mcw.edu/
+  MGI: http://www.informatics.jax.org/
+  biolinkml: https://w3id.org/biolink/biolinkml/
+
+
+classes:

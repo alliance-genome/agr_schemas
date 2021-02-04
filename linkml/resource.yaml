@@ -2,6 +2,8 @@ id: Alliance-reference-prototype
 
 imports:
   - core
+  - reference
+  - person
 
 classes:
   resource:
