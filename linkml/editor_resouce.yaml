@@ -1,0 +1,62 @@
+id: https://github.com/alliance-genome/agr_schemas/linkml/author_reference.yaml
+
+imports:
+  - core
+  - biolinkml:types
+  - cross_reference
+  - person
+
+prefixes:
+  SGD: http://www.yeastgenome.org/
+  WB: https://www.wormbase.org/
+  FB: https://flybase.org
+  ZFIN: https://zfin.org/
+  RGD: https://rgd.mcw.edu/
+  MGI: http://www.informatics.jax.org/
+  biolinkml: https://w3id.org/biolink/biolinkml/
+
+
+classes:
+  author reference:
+    slots:
+      - corresponding author
+      - first name
+      - middle names
+      - last name
+      - initials
+      - has cross references
+    slot_usage:
+
+
+slots:
+
+  corresponding author:
+    is_a: node property
+    description: >-
+    range: person
+    domain: information content entity
+
+  first name:
+    is_a: node property
+    description: >-
+    domain: person
+    range: information content entity
+
+  middle names:
+    is_a: node property
+    description: >-
+    domain: person
+    range: information content entity
+    multivalued: false
+
+  last name:
+    is_a: node property
+    description: >-
+    domain: person
+    range: information content entity
+
+  initials:
+    is_a: node property
+    description: >-
+    domain: person
+    range: information content entity

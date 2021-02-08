@@ -346,7 +346,7 @@ slots:
     is_a: node property
     multivalued: true
     domain: information content entity
-    range: author reference
+    range: information content entity
 
 
 

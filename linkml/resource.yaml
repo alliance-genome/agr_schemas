@@ -21,6 +21,8 @@ classes:
       - summary
       - has synonyms
       - has references
+      - has authors
+      - has editors
     id_prefixes:
       - PMID
       - NLMID
