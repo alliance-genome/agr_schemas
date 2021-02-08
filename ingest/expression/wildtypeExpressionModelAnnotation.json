@@ -4,13 +4,9 @@
   "description": "An entry with wildtypeExpression/object associations",
   "id": "wildtypeExpressionModelAnnotation.json#",
   "type": "object",
-  "required": [
-    "geneId",
-    "dateAssigned",
-    "whenExpressed",
-    "assay",
-    "evidence",
-    "whereExpressed"
+  "anyOf": [
+    {"required": ["geneId", "dateAssigned", "evidence", "expressionNote"]},
+    {"required": ["geneId", "dateAssigned", "evidence", "whenExpressed", "whereExpressed", "assay"]}
   ],
   "additionalProperties": false,
   "properties": {
@@ -59,11 +55,18 @@
       ],
       "description": "The uncertain qualifier for the annotation."
     },
-    "nonWildtypeExpression": {
+    "perturbedExpression": {
       "enum": [
-        "non-WT"
+        "perturbed"
       ],
-      "description": "The uncertain qualifier for the annotation."
+      "description": "The expression observed under some perturbation, genetic and/or environmental."
+    },
+    "expressionQualifierTermIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../globalId.json#/properties/globalId",
+      "description": "Qualifier terms that describe additional aspects of expression strength (e.g., 'intense') or pattern (e.g., 'restricted')."
+      }
     },
     "nonWildtypeExpressionQualifierTermIds": {
       "type": "array",
