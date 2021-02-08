@@ -21,7 +21,7 @@ classes:
     slots:
       - corresponding author
       - first name
-      - middle name
+      - middle names
       - last name
       - initials
       - has cross references
@@ -42,11 +42,12 @@ slots:
     domain: person
     range: information content entity
 
-  middle name:
+  middle names:
     is_a: node property
     description: >-
     domain: person
     range: information content entity
+    multivalued: false
 
   last name:
     is_a: node property
