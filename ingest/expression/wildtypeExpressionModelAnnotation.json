@@ -24,7 +24,7 @@
     },
     "whenExpressed" : {
       "$ref": "whenExpressed.json#",
-       "description":"a collection of terms that when used together represent the 'when expressed' piece of an expression annotation."
+      "description":"a collection of terms that when used together represent the 'when expressed' piece of an expression annotation."
     },
     "whereExpressed": {
       "$ref": "whereExpressed.json#",
@@ -33,6 +33,50 @@
     "assay": {
       "$ref": "../globalId.json#/properties/globalId",
       "description":"the MMO (ontology) id that represents the assay type of the expression, ie: in-situ."
+    },
+    "primaryGeneticEntityIDs": {
+      "type": "array",
+      "items": {
+        "$ref" : "../globalId.json#/properties/globalId",
+        "description": "for calculated submissions, this field represents the id of the genetic objects (allele or affectedGenomicModel) that this annotation is based on."}
+     },
+     "conditionRelations": {
+      "type": "array",
+      "items": {
+        "$ref": "../experiment/conditionRelation.json",
+        "description": "all the experimental conditions that participate with the disease annotation as defined by the conditionRelationType"
+      }
+    },
+    "negation": {
+      "enum": [
+        "not"
+      ],
+      "description": "The negative qualifier for the annotation."
+    },
+    "uncertainty": {
+      "enum": [
+        "uncertain"
+      ],
+      "description": "The uncertain qualifier for the annotation."
+    },
+    "nonWildtypeExpression": {
+      "enum": [
+        "non-WT"
+      ],
+      "description": "The uncertain qualifier for the annotation."
+    },
+    "nonWildtypeExpressionQualifierTermIds": {
+      "type": "array",
+      "items": {
+        "$ref": "../globalId.json#/properties/globalId"
+      },
+      "uniqueItems": true,
+      "description": "Qualifiers describing non-wildtype expression relative to wildtype: e.g., 'increased', 'mislocalized'",
+      "dependencies": {"required":["nonWildtypeExpression"]}
+    },
+    "expressionNote": {
+      "type": "string",
+      "description":"Text associated with this expression statement."
     },
     "dateAssigned": {
       "type": "string",
