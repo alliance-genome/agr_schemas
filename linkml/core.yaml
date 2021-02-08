@@ -21,9 +21,14 @@ imports:
 
 classes:
 
-  ontology class:
+  ontology:
     is_a: named thing
     description: "a concept or class in an ontology, vocabulary or thesaurus"
+    slots:
+      - id
+      - name
+      - has cross references
+      - has synonyms
     id_prefixes:
       - MESH
 
@@ -240,6 +245,13 @@ slots:
     description: >-
     domain: named thing
     range: cross reference
+    multivalued: true
+
+  has synonyms:
+    is_a: node property
+    singular_name: has synonyms
+    description: >-
+    domain: named thing
     multivalued: true
 
   related to:
