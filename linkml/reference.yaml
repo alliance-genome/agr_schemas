@@ -37,6 +37,7 @@ classes:
       - pages
       - abstract
       - citation
+      - pub med type
       - issue name
       - issue date
       - has mod reference types
@@ -193,6 +194,13 @@ slots:
     range: reference
     description: >-
       This is the MeSH qualifier term that is optionally added to the descriptor term.
+
+  pub med type:
+    is_a: node property
+    description: >-
+      Type of information content entity as descriped by pub med/
+    range: string
+    domain: information content entity
 
   date published:
     is_a: node property
