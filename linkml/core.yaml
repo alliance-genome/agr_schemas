@@ -26,7 +26,6 @@ classes:
     description: "a concept or class in an ontology, vocabulary or thesaurus"
     id_prefixes:
       - MESH
-      - KEGG.BRITE ## br/ko number
 
   information content entity:
     aliases: ['information', 'information artifact', 'information entity']
@@ -69,14 +68,13 @@ classes:
           it is recommended that an author's 'name' property
           be formatted as "surname, firstname initial."
     id_prefixes:
-      - isbn
       - ORCID
       - SGD
-      - WB
       - FB
+      - WB
       - ZFIN
-      - RGD
       - MGI
+      - RGD
 
   named thing:
     is_a: entity
