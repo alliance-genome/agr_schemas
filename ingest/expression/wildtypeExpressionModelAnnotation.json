@@ -5,7 +5,7 @@
   "id": "wildtypeExpressionModelAnnotation.json#",
   "type": "object",
   "anyOf": [
-    {"required": ["geneId", "dateAssigned", "evidence", "expressionNote"]},
+    {"required": ["geneId", "dateAssigned", "expressionSummary"]},
     {"required": ["geneId", "dateAssigned", "evidence", "whenExpressed", "whereExpressed", "assay"]}
   ],
   "additionalProperties": false,
@@ -79,9 +79,12 @@
     },
     "expressionNote": {
       "type": "string",
-      "description":"Text associated with this expression statement."
+      "description":"Text associated with this expression statement, tied to a specific annotation(s)."
     },
-    "dateAssigned": {
+    "expressionSummary": {
+      "type": "string",
+      "description":"Text associated with expression for this gene in some publication."
+    },    "dateAssigned": {
       "type": "string",
       "format": "date-time",
       "description": "Date this entity was assigned in it's primary data source."
