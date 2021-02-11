@@ -2,35 +2,39 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "AuthorReference",
   "description": "A object that holds contributor/author name and the reference id.",
-  "id": "resource.json#",
+  "id": "authorReference.json#",
   "type": "object",
   "required": [
-    "primaryID",
-    "firstName",
-    "lastName",
-    "referenceID"
+    "name",
+    "referenceId"
   ],
   "additionalProperties": false,
   "properties": {
-    "primaryId": {
-      "type": "string",
-      "description": "a generated combination of firstName, middleName, LastName and referenceID"
-    },
+    "name": {
+     "type":"string",
+     "description": "a single field to describe the first, middle, last names of an unique author per reference.   This can be of many forms: First Last or Last First or Last First_initial or First_initial Last, etc."
+   },
     "firstName": {
-      "type": "string"
+      "type": "string",
+      "description": "first name or first initial of the author when available."
     },
     "lastName": {
-      "type": "string"
+      "type": "string",
+      "description": "last name of the author when available."
     },
     "middleNames": {
       "type":"array",
       "items": {
         "type" : "string"
-      }
+      },
+      "description": "middle name or middle initial of the author when available."
     },
-    "referenceID": {
-      "$ref":"../../globalId.json#/properties/globalId",
+    "referenceId": {
+      "$ref":"../globalId.json#/properties/globalId",
       "description": "The globally unique identifier for the resource.  ie: NLMId or ISBN or MOD ID.  Each identifier should be prefixed and of the form prefix:id "
+    },
+    "authorRank": {
+      "type": "number"
     },
     "crossReferences":{
       "$ref": "../crossReference.json"

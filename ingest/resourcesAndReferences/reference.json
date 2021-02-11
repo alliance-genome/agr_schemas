@@ -5,21 +5,22 @@
   "id": "reference.json#",
   "type": "object",
   "required": [
-    "primaryID",
+    "primaryId",
     "title",
-    "authors",
     "datePublished",
     "citation",
-    "allianceCategory",
-	  "resourceId"
+    "allianceCategory"
   ],
   "additionalProperties": false,
   "properties": {
-    "primaryID": {
+    "primaryId": {
       "$ref": "../globalId.json#/properties/globalId",
-      "description": "The globally unique identifier for the object.  ie: NLMId or ISBN or MOD ID. Each identifier should be prefixed and of the form prefix:id "
+      "description": "The globally unique identifier for the object.  ie: NLMId or ISBN or MOD Id. Each identifier should be prefixed and of the form prefix:Id "
     },
     "title": {
+      "type": "string"
+    },
+    "language": {
       "type": "string"
     },
     "authors": {
@@ -30,8 +31,7 @@
       "uniqueItems": false
     },
     "datePublished": {
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "dateArrivedInPubMed": {
       "type": "string",
@@ -104,8 +104,9 @@
         "$ref": "../crossReference.json"
       }
     },
-    "resourceId": {
-      "$ref": "../globalId.json#/properties/globalId"
+    "resourceAbbreviation": {
+      "type": "string",
+      "description": "The title of the resource in abbreviation form (for book references, this can be the full title).  If submission of resource.json is completed, these abbreviations should match an abbreviation in that submission."
   }
 }
 }

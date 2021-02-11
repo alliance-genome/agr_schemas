@@ -5,22 +5,27 @@
   "id": "resource.json#",
   "type": "object",
   "required": [
-    "primaryID",
-    "title",
-    "isoAbbreviation",
-    "medlineAbbreviation"
+    "primaryId",
+    "title"
   ],
   "additionalProperties": false,
   "properties": {
-    "primaryID": {
+    "primaryId": {
       "$ref": "../globalId.json#/properties/globalId",
-      "description": "The globally unique identifier for the resource.  ie: NLMId or ISBN or MOD ID.  Each identifier should be prefixed and of the form prefix:id "
+      "description": "The globally unique identifier for the resource.  ie: NLMId or ISBN or MOD Id.  Each identifier should be prefixed and of the form prefix:Id "
     },
     "title" : {
       "type": "string",
       "description": "The title of the resource."
     },
     "titleSynonyms":  {
+      "type" : "array",
+        "items": {
+          "type": "string"
+        },
+      "uniqueItems": true
+    },
+    "abbreviationSynonyms":  {
       "type" : "array",
         "items": {
           "type": "string"
@@ -59,7 +64,7 @@
       }
     },
     "pages": {
-      "type": "number"
+      "type": "string"
     },
     "abstractOrSummary": {
       "type": "string"
