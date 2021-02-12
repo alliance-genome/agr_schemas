@@ -14,11 +14,11 @@ endif
 
 .PHONY: run
 run: build
-	@docker run agrdocker/agr_schemas:${DOCKER_BUILD_TAG}
+	@docker run agrlocal/agr_schemas:${DOCKER_BUILD_TAG}
 
 .PHONY: build
 build: pull
-	@docker build -t agrdocker/agr_schemas:${DOCKER_BUILD_TAG} --build-arg REG=${REG} --build-arg DOCKER_PULL_TAG=${DOCKER_PULL_TAG} .
+	@docker build -t agrlocal/agr_schemas:${DOCKER_BUILD_TAG} --build-arg REG=${REG} --build-arg DOCKER_PULL_TAG=${DOCKER_PULL_TAG} .
 
 .PHONEY: pull
 pull: registry-docker-login
