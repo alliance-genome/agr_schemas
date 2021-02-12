@@ -1,4 +1,6 @@
-FROM agrdocker/agr_java_software:build
+ARG REG=agrdocker
+
+FROM ${REG}/agr_java_software:build
 
 WORKDIR /workdir/agr_java_software/schemas
 
