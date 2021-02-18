@@ -580,14 +580,14 @@
   example_gid: PMID:26447131
   gid_pattern: "^PMID:\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
-  
+
 - db_prefix: PMCID
   name: PubMed Central
-  aliases:['PMC']
+  aliases: ['PMC']
   example_gid: PMCID:PMC7519054
   gid_pattern: "^PMCID:PMC\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/pmc/[%s]
-  
+
 - db_prefix: RCSB_PDB
   name: RCSB Protein Data Bank
   aliases: ['RCSB PDB']
