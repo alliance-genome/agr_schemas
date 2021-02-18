@@ -12,6 +12,7 @@
     },
     "data": { 
       "type": "array",
+      "minItems": 1,
       "description": "A list of construct objects.",
       "items": {
         "$ref" : "construct.json"
