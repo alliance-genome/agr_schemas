@@ -329,7 +329,7 @@
     - name: gene/interactions
       url: https://thebiogrid.org/interaction/[%s]
     
-- dbprefix: bmrb
+- db_prefix: bmrb
   name: Biological Magnetic Resonance Data Bank
   example_id: bmrb:4899
   gid_pattern: "^bmrb:\\d+$"
