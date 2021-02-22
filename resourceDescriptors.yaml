@@ -406,6 +406,7 @@
   example_gid: efo:EFO:0004272
   gid_pattern: "^efo:EFO:\\d+$"
   default_url: https://www.ebi.ac.uk/ols/search?q=[%s]&exact=on
+  pages:
     - name: gene/interactions
       url: https://www.ebi.ac.uk/ols/search?q=[%s]&exact=on
 
@@ -691,7 +692,7 @@
 - db_prefix: psi-mi
   name: HUPO Protein Standards Initiative Molecular Interactions
   example_gid: psi-mi:MI:0465
-  gid_pattern: "^psi\\-mi:MI:\d+$"
+  gid_pattern: "^psi\\-mi:MI:\\d+$"
   default_url: http://identifiers.org/[%s]
   pages:
     - name: gene/interactions
