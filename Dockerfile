@@ -1,6 +1,7 @@
 ARG REG=agrdocker
+ARG DOCKER_PULL_TAG=build
 
-FROM ${REG}/agr_java_software:build
+FROM ${REG}/agr_java_software:${DOCKER_PULL_TAG}
 
 WORKDIR /workdir/agr_java_software/schemas
 
