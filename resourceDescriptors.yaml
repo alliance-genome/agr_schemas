@@ -313,8 +313,11 @@
 - db_prefix: GO
   name: Gene Ontology
   example_gid: GO:0045860
-  gid_pattern: "^GO:\\d+$"
+  gid_pattern: "^(go:)?GO:\\d+$"
   default_url: http://amigo.geneontology.org/amigo/term/GO:[%s] 
+  pages:
+    - name: gene/interactions
+      url: http://amigo.geneontology.org/amigo/term/[%s]
 
 #
 # External resources
