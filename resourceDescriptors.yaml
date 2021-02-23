@@ -1,6 +1,16 @@
 # AGR Schema Resource Descriptors YAML.
 # When submitting identifiers, please use the appropriate example_id/gid field listed below.
 
+#
+# AGR
+#
+
+- db_prefix: Alliance of Genome Resources
+  name: Alliance of Genome Resources
+  default_url: https://www.alliancegenome.org/
+  pages:
+    - name: homepage
+      url: https://www.alliancegenome.org/
 
 #
 # MGI
@@ -303,8 +313,11 @@
 - db_prefix: GO
   name: Gene Ontology
   example_gid: GO:0045860
-  gid_pattern: "^GO:\\d+$"
+  gid_pattern: "^(go:)?GO:\\d+$"
   default_url: http://amigo.geneontology.org/amigo/term/GO:[%s] 
+  pages:
+    - name: gene/interactions
+      url: http://amigo.geneontology.org/amigo/term/[%s]
 
 #
 # External resources
@@ -329,7 +342,7 @@
     - name: gene/interactions
       url: https://thebiogrid.org/interaction/[%s]
     
-- dbprefix: bmrb
+- db_prefix: bmrb
   name: Biological Magnetic Resonance Data Bank
   example_id: bmrb:4899
   gid_pattern: "^bmrb:\\d+$"
@@ -395,21 +408,14 @@
 - db_prefix: EFO
   name: Experimental Factor Ontology
   example_gid: EFO:EFO_0000000
-  gid_pattern: "^EFO:\\d+$"
+  gid_pattern: "^(efo:)?EFO:\\d+$"
   default_url: http://www.ebi.ac.uk/efo/EFO_[%s]
   pages:
     - name: ontology_provided_cross_references
       url: http://www.ebi.ac.uk/efo/EFO_[%s]
-
-- db_prefix: efo
-  name: Experimental Factor Ontology
-  example_gid: efo:EFO:0004272
-  gid_pattern: "^efo:EFO:\\d+$"
-  default_url: https://www.ebi.ac.uk/ols/search?q=[%s]&exact=on
-  pages:
     - name: gene/interactions
       url: https://www.ebi.ac.uk/ols/search?q=[%s]&exact=on
-
+    
 - db_prefix: EMDB
   name: Electron Microscopy Data Bank
   example_id: EMDB:EMD-1191
@@ -491,7 +497,7 @@
 - db_prefix: ICD9CM
   name: ICD9CM
   example_gid: ICD9CM:237.7
-  gid_pattern: "^ICD9CM:[EV]?\\d+(\\.\\d+)?$"
+  gid_pattern: "^ICD9CM:[EV]?\\d+(\\.[\\dA-z]+)?(\\-[EV]?\\d+(\\.[\\dA-z]+)?)?$"
   default_url: http://www.icd9data.com/Search/?q=[%s]
   pages:
     - name: gene/MODinteractions_genetic
@@ -500,7 +506,7 @@
 - db_prefix: ICD10CM
   name: ICD10CM
   example_gid: ICD10CM:L89
-  gid_pattern: "^ICD10CM:[A-Z]\\d(\\d|[A-Z])(\\.\\d+)?$"
+  gid_pattern: "^ICD10CM:[A-Z]\\d(\\d|[A-Z])(\\.[\\d|[A-Z]+)?(\\-[A-Z]\\d(\\d|[A-Z])(\\.[\\d|[A-Z]+)?)?$"
   default_url: http://www.icd10data.com/search?s=[%s]
   pages:
     - name: gene/MODinteractions_genetic
