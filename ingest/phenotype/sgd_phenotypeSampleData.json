@@ -18,15 +18,19 @@
                 "publicationId": "PMID:16729036"
             },
             "conditionRelations": [
-        {
-          "conditionRelationType": "has_condition",
-          "conditions": [
-          {"conditionClassId": "ZECO:0000111",
-            "conditionStatement": "chemical treatment:0.7 M calcium dichloride",
-            "conditionQuantity": "0.7 M",
-            "ChemicalOnotlogyId":"CHEBI:3312"
-            }]            
-            },
+                {
+                    "conditionRelationType": "has_condition",
+                    "conditions": [
+                        {
+                            "conditionClassId": "ZECO:0000111",
+                            "conditionStatement": "chemical treatment:0.7 M calcium dichloride",
+                            "conditionQuantity": "0.7 M",
+                            "ChemicalOntologyId":"CHEBI:3312"
+                        }
+                    ]            
+                }
+            ]
+        },
         {
             "objectId": "SGD:S000001133",
             "phenotypeTermIdentifiers": [
@@ -45,16 +49,23 @@
                 "publicationId": "PMID:12096123"
             },
             "conditionRelations": [
-        {
-          "conditionRelationType": "has_condition",
-          "conditions": [{"conditionClassId": "ZECO:0000111",
-            "conditionStatement": "chemical treatment:2 mM sorbate",
-            "conditionQuantity": "2 mM",
-            "ChemicalOnotlogyId":"CHEBI:36550"},
-            {"conditionClassId": "ZECO:XXXX", ## can't find appropriate ZECO for media
-            "conditionStatement": "media:pH 4.5",
-            "conditionQuantity": "pH 4.5"
-            }]    
+                {
+                    "conditionRelationType": "has_condition",
+                    "conditions": [
+                        {
+                            "conditionClassId": "ZECO:0000111",
+                            "conditionStatement": "chemical treatment:2 mM sorbate",
+                            "conditionQuantity": "2 mM",
+                            "ChemicalOntologyId":"CHEBI:36550"
+                        },
+                        {
+                            "conditionClassId": "ZECO:XXXX",
+                            "conditionStatement": "media:pH 4.5",
+                            "conditionQuantity": "pH 4.5"
+                        }
+                    ]   
+                }
+            ]
         }
     ],
     "metaData": {
