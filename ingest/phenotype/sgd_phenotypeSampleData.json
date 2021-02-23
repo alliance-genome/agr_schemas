@@ -59,7 +59,7 @@
                             "ChemicalOntologyId":"CHEBI:36550"
                         },
                         {
-                            "conditionClassId": "ZECO:XXXX",
+                            "conditionClassId": "ZECO:XXXX", ## Can't find ZE
                             "conditionStatement": "media:pH 4.5",
                             "conditionQuantity": "pH 4.5"
                         }
