@@ -715,6 +715,18 @@
     - name: gene/interactions
       url: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
 
+- db_prefix: ISSN
+  name: International Standard Serial Number
+  example_gid: ISSN:0092-8674
+  gid_pattern: "^ISSN:[0-9]{4}-[0-9]{3}[0-9xX]$"
+  default_url: https://portal.issn.org/resource/ISSN/[%s]
+
+- db_prefix: ISBN
+  name: International Standard Book Number
+  example_gid: ISBN:9780879697068
+  gid_pattern: "^ISBN:[0-9]+(-| )?[0-9]+(-| )?[0-9]+(-| )?[0-9]+(-| )?[0-9]+$"
+  default_url: https://isbnsearch.org/isbn/[%s]
+
 - db_prefix: psi-mi
   name: HUPO Protein Standards Initiative Molecular Interactions
   example_gid: psi-mi:MI:0465
