@@ -158,6 +158,10 @@
       url: https://zfin.org/action/publication/list/[%s]
     - name: htp/dataset
       url: https://zfin.org/[%s]
+    - name: journal
+      url: https://zfin.org/[%s]
+    - name: journal/references
+      url: https://zfin.org/[%s]
  
 #
 # FlyBase
@@ -375,6 +379,9 @@
   example_gid: DOI:10.3389/fcimb.2016.00052
   gid_pattern: "^DOI:\\S+$"
   default_url: https://doi.org/doi:[%s]
+  pages:
+    - name: reference
+      url: https://doi.org/doi:[%s]
 
 - db_prefix: DOID
   name: Disease Ontology
@@ -693,9 +700,9 @@
 
 - db_prefix: PMID
   name: PubMed
-  aliases: ['pubmed']
+  aliases: ['pubmed', 'PubMed']
   example_gid: PMID:26447131
-  gid_pattern: "^(PMID|pubmed):\\d+$"
+  gid_pattern: "^(PMID|pubmed|PubMed):\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
 
 - db_prefix: PMCID
