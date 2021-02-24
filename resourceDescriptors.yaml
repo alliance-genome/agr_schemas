@@ -632,6 +632,12 @@
     - name: ont
       url: https://www.omim.org/phenotypicSeries/[%s]
 
+- db_prefix: ORCID
+  name: ORCID
+  example_id: ORCID:0000-0002-3843-3472
+  gid_pattern: "^ORCID:\\d{4}\\-\\d{4}\\-\\d{4}\\-(\\d{3}X|\\d{4})$"
+  default_url: https://orcid.org/[%s]
+
 # maybe make this an alias of Orphanet instead.
 - db_prefix: ORDO
   name: ORDO
