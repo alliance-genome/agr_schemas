@@ -158,6 +158,10 @@
       url: https://zfin.org/action/publication/list/[%s]
     - name: htp/dataset
       url: https://zfin.org/[%s]
+    - name: journal
+      url: https://zfin.org/[%s]
+    - name: journal/references
+      url: https://zfin.org/[%s]
  
 #
 # FlyBase
@@ -375,6 +379,9 @@
   example_gid: DOI:10.3389/fcimb.2016.00052
   gid_pattern: "^DOI:\\S+$"
   default_url: https://doi.org/doi:[%s]
+  pages:
+    - name: reference
+      url: https://doi.org/doi:[%s]
 
 - db_prefix: DOID
   name: Disease Ontology
@@ -632,6 +639,12 @@
     - name: ont
       url: https://www.omim.org/phenotypicSeries/[%s]
 
+- db_prefix: ORCID
+  name: ORCID
+  example_id: ORCID:0000-0002-3843-3472
+  gid_pattern: "^ORCID:\\d{4}\\-\\d{4}\\-\\d{4}\\-(\\d{3}X|\\d{4})$"
+  default_url: https://orcid.org/[%s]
+
 # maybe make this an alias of Orphanet instead.
 - db_prefix: ORDO
   name: ORDO
@@ -687,9 +700,9 @@
 
 - db_prefix: PMID
   name: PubMed
-  aliases: ['pubmed']
+  aliases: ['pubmed', 'PubMed']
   example_gid: PMID:26447131
-  gid_pattern: "^(PMID|pubmed):\\d+$"
+  gid_pattern: "^(PMID|pubmed|PubMed):\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
 
 - db_prefix: PMCID
@@ -701,6 +714,18 @@
   pages:
     - name: gene/interactions
       url: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
+
+- db_prefix: ISSN
+  name: International Standard Serial Number
+  example_gid: ISSN:0092-8674
+  gid_pattern: "^ISSN:[0-9]{4}-[0-9]{3}[0-9xX]$"
+  default_url: https://portal.issn.org/resource/ISSN/[%s]
+
+- db_prefix: ISBN
+  name: International Standard Book Number
+  example_gid: ISBN:9780879697068
+  gid_pattern: "^ISBN:[0-9]+(-| )?[0-9]+(-| )?[0-9]+(-| )?[0-9]+(-| )?[0-9]+$"
+  default_url: https://isbnsearch.org/isbn/[%s]
 
 - db_prefix: psi-mi
   name: HUPO Protein Standards Initiative Molecular Interactions
