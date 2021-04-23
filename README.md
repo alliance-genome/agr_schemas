@@ -15,11 +15,17 @@ Usage is as follows:
 `agr_validate.py -d test_data.json -s base_schema.json`
 
 For the basic Gene info file run
-   `./agr_validate.py -d <your_new_gene_file.json> -s  gene/geneMetaData.json`
+   ```bash
+   ./agr_validate.py -d <your_new_gene_file.json> -s  gene/geneMetaData.json
+   ```
 for the disease info file run
-   `./agr_validate.py -d <your_new_disease_file.json> -s  disease/diseaseMetaDataDefinition.json`
+   ```bash
+   ./agr_validate.py -d <your_new_disease_file.json> -s  disease/diseaseMetaDataDefinition.json
+   ```
 and for the allele info file run
-   `./agr_validate.py -d <your_new_allele_file.json> -s  allele/alleleMetaData.json`
+   ```bash
+   ./agr_validate.py -d <your_new_allele_file.json> -s  allele/alleleMetaData.json
+   ```
 
 The java script "agr_validate_schema.sh" can be used to validate that the schema file itself conforms to the draft-4 version of the JSON schema spec and will run on PR into master.  
 
