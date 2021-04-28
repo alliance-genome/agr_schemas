@@ -36,18 +36,19 @@
       "type": "array",
       "items": {
         "$ref" : "../globalId.json#/properties/globalId",
-       "description": "for calculated submissions, this field represents the id of the genetic objects (allele or affectedGenomicModel) that this annotation is based on."}
-   }, 
+        "description": "for calculated submissions, this field represents the id of the genetic objects (allele or affectedGenomicModel) that this annotation is based on."
+      }
+    },
     "DOid": {
       "$ref" : "../globalId.json#/properties/globalId",
       "description": "The disease ontology term id."
     },
     "dataProvider": {
-        "type": "array",
-        "items": {
-            "$ref": "../dataProvider.json#"
-        },
-        "description": "source of data, can be multiple of these, each with a type and a crossReference"
+      "type": "array",
+      "items": {
+        "$ref": "../dataProvider.json#"
+      },
+      "description": "source of data, can be multiple of these, each with a type and a crossReference"
     },
     "with": {
       "type": "array",
