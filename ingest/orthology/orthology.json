@@ -34,7 +34,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Roundup","Hieranoid","OrthoFinder","OrthoInspector","OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
+        "enum": ["PhylomeDB", "Roundup","Hieranoid","OrthoFinder","OrthoInspector","OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
       },
         "description": "Source of the orthology match.",
         "uniqueItems": true
@@ -43,7 +43,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Roundup","Hieranoid","OrthoFinder","OrthoInspector","OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
+        "enum": ["PhylomeDB", "Roundup","Hieranoid","OrthoFinder","OrthoInspector","OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
       },
         "description": "Prediction methods that were not matched.",
         "uniqueItems": true
@@ -52,7 +52,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Roundup","Hieranoid","OrthoFinder","OrthoInspector","OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
+        "enum": ["PhylomeDB", "Roundup","Hieranoid","OrthoFinder","OrthoInspector","OMA","Panther","Inparanoid","OrthoDB","Isobase","TreeFam","RoundUp","Phylome","orthoMCL","ZFIN","HGNC","Homologene","Compara","eggNOG"]
       },
         "description": "Prediction methods that were not called.",
         "uniqueItems": true
