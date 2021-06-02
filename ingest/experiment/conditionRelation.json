@@ -8,19 +8,22 @@
     "conditionRelationType",
     "conditions"
   ],
-  "conditionRelationType": {
-    "enum": [
-      "ameliorates",
-      "exacerbates",
-      "has_condition",
-      "induces"
-    ]
-  },
-  "conditions": {
-    "type": "array",
-    "items": {
-      "$ref": "experimentalCondition.json",
-      "description": "all the experimental conditions that participate with the annotation as defined by the conditionRelationType"
+  "additionalProperties": false,
+  "properties": {
+    "conditionRelationType": {
+      "enum": [
+        "ameliorates",
+        "exacerbates",
+        "has_condition",
+        "induces"
+      ]
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "$ref": "experimentalCondition.json",
+        "description": "all the experimental conditions that participate with the annotation as defined by the conditionRelationType"
+      }
     }
   }
 }
