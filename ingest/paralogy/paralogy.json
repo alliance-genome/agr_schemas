@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Paralogy",
+  "description": "paralogy objects.",
+  "id": "paralogy.json",
+  "type": "object",
+  "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "confidence", "gene1Species", "gene2Species"],
+  "properties": {
+    "species": {
+      "type" : "integer",
+      "description": "The species of the organism."
+    },
+    "isBestScore": {
+      "enum": ["Yes", "No", "Yes_Adjusted"],
+      "description": "DIOPT schema highlights the best pair."
+    },
+    "isBestRevScore": {
+      "enum": ["Yes", "No"],
+      "description": "DIOPT schema highlights the best pair."
+    },
+    "gene1": {
+      "type": "string",
+      "description": "The primaryId of the the first gene."
+    },
+    "gene2": {
+      "type": "string",
+      "description": "The primaryId of the the second gene."
+    },
+    "predictionMethodsMatched": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "sonicParanoid", "ZFIN"]
+      },
+        "description": "Source of the paralogy match.",
+        "uniqueItems": true
+    },
+    "predictionMethodsNotMatched": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "sonicParanoid", "ZFIN"]
+      },
+        "description": "Prediction methods that were not matched.",
+        "uniqueItems": true
+    },
+    "predictionMethodsNotCalled": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "sonicParanoid", "ZFIN"]
+      },
+        "description": "Prediction methods that were not called.",
+        "uniqueItems": true
+    },
+    "confidence": {
+      "enum":["moderate","high","low"],
+      "description":"Confidence of paralogy match."
+    },
+    "moderateFilter": {
+      "type" : "boolean",
+      "description": "Indicates whether this paralogy match is displayed when the moderate filter is selected."
+    },
+    "strictFilter": {
+      "type" : "boolean",
+      "description": "Indicates whether this paralogy match is displayed when the strict filter is selected."
+    }
+  }
+}
