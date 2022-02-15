@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Paralogy MetaData",
+  "description": "A file of paralogy objects.",
+  "id": "paralogyMetaData.json",
+  "type": "object",
+  "required": [ "metaData", "data" ],
+  "properties": {
+    "metaData": {
+      "$ref": "../metaData.json#",
+      "description": "meta data of the load file as defined in metaData.json."
+    },
+    "data": { 
+      "type": "array",
+      "minItems": 1,
+      "description": "A list of paralogy objects.",
+      "items": {
+        "$ref" : "paralogy.json#"
+      }
+    }
+  }
+}
