@@ -18,13 +18,13 @@
 
 - taxonId: NCBITaxon:10090
   assemblies:
-    - name: GRCm38
-    - displayName: GRCm38 
+    - name: GRCm39
+    - displayName: GRCm39
 
 - taxonId: NCBITaxon:10116
   assemblies:
-    - name: Rnor60
-    - displayName: Rnor60
+    - name: mRatBN7.2
+    - displayName: mRatBN7.2
 
 - taxonId: NCBITaxon:559292
   assemblies:

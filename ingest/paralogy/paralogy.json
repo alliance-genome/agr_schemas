@@ -1,18 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Orthology",
-  "description": "orthology objects.",
-  "id": "orthology.json",
+  "title": "Paralogy",
+  "description": "paralogy objects.",
+  "id": "paralogy.json",
   "type": "object",
   "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "confidence", "gene1Species", "gene2Species"],
   "properties": {
-    "gene1Species": {
+    "species": {
       "type" : "integer",
-      "description": "The species of the first gene."
-    },
-    "gene2Species": {
-      "type" : "integer",
-      "description": "The species of the second gene."
+      "description": "The species of the organism."
     },
     "isBestScore": {
       "enum": ["Yes", "No", "Yes_Adjusted"],
@@ -36,7 +32,7 @@
         "type": "string",
         "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "sonicParanoid", "ZFIN"]
       },
-        "description": "Source of the orthology match.",
+        "description": "Source of the paralogy match.",
         "uniqueItems": true
     },
     "predictionMethodsNotMatched": {
@@ -59,15 +55,15 @@
     },
     "confidence": {
       "enum":["moderate","high","low"],
-      "description":"Confidence of orthology match."
+      "description":"Confidence of paralogy match."
     },
     "moderateFilter": {
       "type" : "boolean",
-      "description": "Indicates whether this orthology match is displayed when the moderate filter is selected."
+      "description": "Indicates whether this paralogy match is displayed when the moderate filter is selected."
     },
     "strictFilter": {
       "type" : "boolean",
-      "description": "Indicates whether this orthology match is displayed when the strict filter is selected."
+      "description": "Indicates whether this paralogy match is displayed when the strict filter is selected."
     }
   }
 }
