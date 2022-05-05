@@ -5,8 +5,11 @@
 Alliance JSON Ingest Schemas and Data Dictionary
 ================
 
-This directory contains JSON schemas used to define data for integration into the Alliance of Genome Resources and defines the data dictionary of the Alliance data store.
+**Important: This repository is no longer under active development.** 
 
+**Please see our newer repository [agr_curation_schema ](https://github.com/alliance-genome/agr_curation_schema) for any and all updates regarding Alliance identifier processing and schema.**
+
+This directory contains JSON schemas used to define data for integration into the Alliance of Genome Resources and defines the data dictionary of the Alliance data store. All information is used **internally** by the Alliance and is **not** meant to be interpreted as public-facing or an approach towards identifier standardization.
 
 Validation
 ----------
