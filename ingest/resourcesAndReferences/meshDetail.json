@@ -14,9 +14,9 @@
 	"type":"string",
 	"description": "medical subject heading term identifier. note: this is not a global Id."
     },
-    "meshQualfierTerm": {
+    "meshQualifierTerm": {
 	 "type":"string",
-        "description": "medical subject heading qualfier term identifier (aka: medical subject subheading term). note: this is not a global Id."
+        "description": "medical subject heading qualifier term identifier (aka: medical subject subheading term). note: this is not a global Id."
     }, 
     "referenceId": {
 	 "$ref": "../globalId.json#/properties/globalId",
