@@ -30,7 +30,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "sonicParanoid", "ZFIN"]
+        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "SonicParanoid", "ZFIN"]
       },
         "description": "Source of the paralogy match.",
         "uniqueItems": true
@@ -39,7 +39,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "sonicParanoid", "ZFIN"]
+        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "SonicParanoid", "ZFIN"]
       },
         "description": "Prediction methods that were not matched.",
         "uniqueItems": true
