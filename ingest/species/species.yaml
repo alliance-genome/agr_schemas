@@ -89,7 +89,6 @@
    dataProviderShortName: SGD
   phylogenicOrder: 70
 
-
 # NOTE: Hsa uses RGD for now,
 - taxonId: NCBITaxon:9606
   shortName: Hsa
@@ -102,3 +101,25 @@
    dataProviderShortName: RGD
   phylogenicOrder: 10
 
+- taxonId: NCBITaxon:8355
+  shortName: XBXL
+  fullName: Xenopus laevis
+  commonNames:
+    - African clawed frog
+    - xbxl
+  primaryDataProvider: 
+   dataProviderFullName: Xenbase
+   dataProviderShortName: XB
+  phylogenicOrder: 46
+
+- taxonId: NCBITaxon:8364
+  shortName: XBXT
+  fullName: Xenopus tropicalis
+  commonNames:
+    - African clawed frog
+    - xbxt
+  primaryDataProvider: 
+    dataProviderFullName: Xenbase
+    dataProviderShortName: XB
+  phylogenicOrder: 45
+  
