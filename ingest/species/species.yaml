@@ -110,7 +110,7 @@
   primaryDataProvider: 
    dataProviderFullName: Xenbase
    dataProviderShortName: XB
-  phylogenicOrder: 90
+  phylogenicOrder: 46
 
 - taxonId: NCBITaxon:8364
   shortName: XBXT
@@ -121,5 +121,5 @@
   primaryDataProvider: 
     dataProviderFullName: Xenbase
     dataProviderShortName: XB
-  phylogenicOrder: 100
+  phylogenicOrder: 45
   
