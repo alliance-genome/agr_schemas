@@ -117,12 +117,32 @@
 
 - db_prefix: Xenbase
   name: Xenbase
-  example_gid: Xenbase:XB-GENE-484087
+  example_gid: Xenbase:XB-GENE-922462
   gid_pattern: "^Xenbase:\\S+$"
-  default_url: https://xenabse.org/[%s]
+  default_url: https://www.xenbase.org/entry/[%s]
   pages:
     - name: gene
-      url: https://www.xenbase.org/common/xsearch.do?exactSearch=true&searchIn=7&searchValue=[%s]
+      url: https://www.xenbase.org/entry/[%s]
+    - name: gene/expression
+      url: https://www.xenbase.org/entry/[%s]
+    - name: gene/references
+      url: https://www.xenbase.org/entry/[%s]
+    - name: gene/phenotypes
+      url: https://www.xenbase.org/entry/[%s]
+    - name: Xenopus
+      url: https://www.xenbase.org/entry/[%s]
+    - name: homepage
+      url: https://www.xenbase.org/entry/
+    - name: disease
+      url: https://www.xenbase.org/entry/[%s]
+    - name: figure
+      url: https://www.xenbase.org/entry/[%s]
+    - name: reference
+      url: https://www.xenbase.org/entry/[%s]
+    - name: gene/expression_images
+      url: https://www.xenbase.org/entry/[%s]
+    - name: htp/dataset
+      url: https://www.xenbase.org/entry/[%s]
 
 #
 # ZFIN
