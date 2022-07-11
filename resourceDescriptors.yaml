@@ -112,6 +112,19 @@
       url: http://rgd.mcw.edu/rgdweb/search/search.html?term=[%s]
 
 #
+# Xenbase
+#
+
+- db_prefix: Xenbase
+  name: Xenbase
+  example_gid: Xenbase:XB-GENE-484087
+  gid_pattern: "^Xenbase:\\S+$"
+  default_url: https://xenabse.org/[%s]
+  pages:
+    - name: gene
+      url: https://www.xenbase.org/common/xsearch.do?exactSearch=true&searchIn=7&searchValue=[%s]
+
+#
 # ZFIN
 #
 
