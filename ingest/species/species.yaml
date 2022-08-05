@@ -102,7 +102,7 @@
   phylogenicOrder: 10
 
 - taxonId: NCBITaxon:8355
-  shortName: XBXL
+  shortName: Xla
   fullName: Xenopus laevis
   commonNames:
     - African clawed frog
@@ -113,7 +113,7 @@
   phylogenicOrder: 46
 
 - taxonId: NCBITaxon:8364
-  shortName: XBXT
+  shortName: Xtr
   fullName: Xenopus tropicalis
   commonNames:
     - African clawed frog
