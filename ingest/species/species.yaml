@@ -10,6 +10,7 @@
    dataProviderFullName: Zebrafish Information Network
    dataProviderShortName: ZFIN
   phylogenicOrder: 40
+  fmsSubtypeName: ZFIN
 
 - taxonId: NCBITaxon:2697049
   shortName: SARS-CoV-2
@@ -32,6 +33,7 @@
    dataProviderFullName: Alliance of Genome Resources
    dataProviderShortName: Alliance
   phylogenicOrder: 80
+  fmsSubtypeName: SARS-CoV-2
 
 - taxonId: NCBITaxon:7227
   shortName: Dme
@@ -44,6 +46,7 @@
    dataProviderFullName: FlyBase
    dataProviderShortName: FB
   phylogenicOrder: 50
+  fmsSubtypeName: FB
 
 - taxonId: NCBITaxon:6239
   shortName: Cel
@@ -55,6 +58,7 @@
    dataProviderFullName: WormBase
    dataProviderShortName: WB 
   phylogenicOrder: 60
+  fmsSubtypeName: WB
 
 - taxonId: NCBITaxon:10116
   shortName: Rno
@@ -66,6 +70,7 @@
    dataProviderFullName: Rat Genome Database
    dataProviderShortName: RGD
   phylogenicOrder: 20
+  fmsSubtypeName: RGD
    
 - taxonId: NCBITaxon:10090
   shortName: Mmu 
@@ -77,6 +82,7 @@
    dataProviderFullName: Mouse Genome Informatics
    dataProviderShortName: MGI
   phylogenicOrder: 30
+  fmsSubtypeName: MGI
 
 - taxonId: NCBITaxon:559292
   shortName: Sce
@@ -88,6 +94,7 @@
    dataProviderFullName: Saccharomyces Genome Database
    dataProviderShortName: SGD
   phylogenicOrder: 70
+  fmsSubtypeName: SGD
 
 # NOTE: Hsa uses RGD for now,
 - taxonId: NCBITaxon:9606
@@ -100,6 +107,7 @@
    dataProviderFullName: Rat Genome Database
    dataProviderShortName: RGD
   phylogenicOrder: 10
+  fmsSubtypeName: HUMAN
 
 - taxonId: NCBITaxon:8355
   shortName: Xla
@@ -111,6 +119,7 @@
    dataProviderFullName: Xenbase
    dataProviderShortName: XB
   phylogenicOrder: 46
+  fmsSubtypeName: XBXL
 
 - taxonId: NCBITaxon:8364
   shortName: Xtr
@@ -122,4 +131,5 @@
     dataProviderFullName: Xenbase
     dataProviderShortName: XB
   phylogenicOrder: 45
+  fmsSubtypeName: XBXT
   
