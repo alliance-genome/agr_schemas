@@ -30,39 +30,39 @@
     "synonyms": {
       "type": "array",
       "items": {
-         "type": "string"
+        "type": "string"
       },
-    "uniqueItems": true
+      "uniqueItems": true
     },
     "secondaryIds":{
       "type": "array",
       "items": {
-         "type": "string"
+        "type": "string"
       },
-    "uniqueItems": true
+      "uniqueItems": true
     },
     "affectedGenomicModelComponents": {
       "description": "Collection of genomic components that make up a model, ie: 'allele', each with a zygosity",
-       "type": "array",
-       "items": {
-         "$ref" : "affectedGenomicModelComponent.json#"
-       },
+      "type": "array",
+      "items": {
+        "$ref" : "affectedGenomicModelComponent.json#"
+      },
       "uniqueItems": true
     },
     "sequenceTargetingReagentIDs": {
       "description": "Collection of sequence targeting reagent components that make up a genotype.",
-       "type": "array",
-       "items": {
-         "$ref" : "../globalId.json#/properties/globalId"
-       },
+      "type": "array",
+      "items": {
+        "$ref" : "../globalId.json#/properties/globalId"
+      },
       "uniqueItems": true
     },
     "parentalPopulationIDs": { "description": "Collection of background components that make up a genotype.",
-       "type": "array",
-       "items": {
-         "$ref" : "../globalId.json#/properties/globalId"
-       },
+      "type": "array",
+      "items": {
+        "$ref" : "../globalId.json#/properties/globalId"
+      },
       "uniqueItems": true
-     }
+    }
   }
 }
