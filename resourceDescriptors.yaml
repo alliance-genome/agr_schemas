@@ -143,6 +143,12 @@
       url: https://www.xenbase.org/entry/[%s]
     - name: htp/dataset
       url: https://www.xenbase.org/entry/[%s]
+    - name: gene/MODinteractions
+      url: https://www.xenbase.org/entry/[%s]
+    - name: gene/MODinteractions_molecular
+      url: https://www.xenbase.org/entry/[%s]
+    - name: gene/MODinteractions_genetic
+      url: https://www.xenbase.org/entry/[%s]
 
 #
 # ZFIN
