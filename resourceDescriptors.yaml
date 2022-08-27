@@ -117,6 +117,7 @@
 
 - db_prefix: Xenbase
   name: Xenbase
+  aliases: ['XENBASE']  
   example_gid: Xenbase:XB-GENE-922462
   gid_pattern: "^Xenbase:\\S+$"
   default_url: https://www.xenbase.org/entry/[%s]
