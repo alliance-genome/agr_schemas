@@ -34,7 +34,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "Roundup", "SonicParanoid", "TreeFam", "ZFIN", "Xenbase"]
+        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "SonicParanoid", "ZFIN", "Xenbase"]
       },
         "description": "Source of the orthology match.",
         "uniqueItems": true
@@ -43,7 +43,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "Roundup", "SonicParanoid", "TreeFam", "ZFIN", "Xenbase"]
+        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "SonicParanoid", "ZFIN", "Xenbase"]
       },
         "description": "Prediction methods that were not matched.",
         "uniqueItems": true
@@ -52,7 +52,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "Roundup", "SonicParanoid", "TreeFam", "ZFIN", "Xenbase"]
+        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "SonicParanoid", "ZFIN", "Xenbase"]
       },
         "description": "Prediction methods that were not called.",
         "uniqueItems": true
