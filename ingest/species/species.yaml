@@ -115,6 +115,12 @@
   commonNames:
     - African clawed frog
     - xbxl
+    - X.laevis
+    - X. laevis
+    - Bufo laevis
+    - Common platanna
+    - Platanna
+    - African claw-toed frog
   primaryDataProvider: 
    dataProviderFullName: Xenbase
    dataProviderShortName: XB
@@ -127,6 +133,10 @@
   commonNames:
     - Western clawed frog
     - xbxt
+    - X.tropicalis
+    - X. tropicalis
+    - Tropical clawed frog
+    - Silurana tropicalis
   primaryDataProvider: 
     dataProviderFullName: Xenbase
     dataProviderShortName: XB
