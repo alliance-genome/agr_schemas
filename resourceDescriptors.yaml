@@ -572,19 +572,19 @@
   name: The International Molecular Exchange Consortium
   example_id: IMEX:IM-10766-6
   gid_pattern: "^IMEX:IM-\\d+(-?)(\\d+?)$"
-  default_url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
+  default_url: https://www.ebi.ac.uk/intact/search?query=[%s]
   pages:
     - name: gene/interactions
-      url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
+      url: https://www.ebi.ac.uk/intact/search?query=[%s]
   
 - db_prefix: INTACT
   name: IntAct Molecular Interaction Database
   example_id: INTACT:EBI-1000008
   gid_pattern: "^INTACT:EBI\\-[0-9]+$"
-  default_url: https://www.ebi.ac.uk/intact/interaction/[%s]
+  default_url: https://www.ebi.ac.uk/intact/details/interaction/[%s]
   pages:
     - name: gene/interactions
-      url: https://www.ebi.ac.uk/intact/pages/details/details.xhtml?interactionAc=[%s]
+      url: https://www.ebi.ac.uk/intact/details/interaction/[%s]
 
 - db_prefix: interpro
   name: InterPro
