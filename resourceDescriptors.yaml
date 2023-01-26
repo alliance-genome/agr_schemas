@@ -65,7 +65,7 @@
   name: MGD_old
   example_id: MGD_old:MGD-MRK-11588
   gid_pattern: "^MGD_old:MGD-[A-Z]+-\\d+$"
-  default_url:   
+  default_url:
   pages:
     - name: gene
       url: http://www.informatics.jax.org/accession/[%s]
@@ -117,7 +117,7 @@
 
 - db_prefix: Xenbase
   name: Xenbase
-  aliases: ['XENBASE']  
+  aliases: ['XENBASE']
   example_gid: Xenbase:XB-GENE-922462
   gid_pattern: "^Xenbase:\\S+$"
   default_url: https://www.xenbase.org/entry/[%s]
@@ -202,7 +202,7 @@
       url: https://zfin.org/[%s]
     - name: journal/references
       url: https://zfin.org/[%s]
- 
+
 #
 # FlyBase
 #
@@ -308,6 +308,8 @@
       url: https://www.wormbase.org/resources/analysis/[%s]
     - name: genotype
       url: https://wormbase.org/species/all/genotype/[%s]
+    - name: molecule
+      url: https://wormbase.org/resources/molecule/[%s]
 
 #
 # SGD
@@ -358,7 +360,7 @@
   name: Gene Ontology
   example_gid: GO:0045860
   gid_pattern: "^(go:)?GO:\\d+$"
-  default_url: http://amigo.geneontology.org/amigo/term/GO:[%s] 
+  default_url: http://amigo.geneontology.org/amigo/term/GO:[%s]
   pages:
     - name: gene/interactions
       url: http://amigo.geneontology.org/amigo/term/[%s]
@@ -385,7 +387,7 @@
   pages:
     - name: gene/interactions
       url: https://thebiogrid.org/interaction/[%s]
-    
+
 - db_prefix: bmrb
   name: Biological Magnetic Resonance Data Bank
   example_id: bmrb:4899
@@ -444,7 +446,7 @@
   name: DRSC
   example_gid: DRSC:FBgn0000490
   gid_pattern: "^DRSC:\\S+$"
-  default_url: 
+  default_url:
 
 - db_prefix: ECO
   name: Evidence and Conclusion Ontology
@@ -462,7 +464,7 @@
       url: http://www.ebi.ac.uk/efo/EFO_[%s]
     - name: gene/interactions
       url: https://www.ebi.ac.uk/ols/search?q=[%s]&exact=on
-    
+
 - db_prefix: EMDB
   name: Electron Microscopy Data Bank
   example_id: EMDB:EMD-1191
@@ -485,7 +487,7 @@
   name: Ensembl
   example_id: ENSEMBL:FBgn0000490
   gid_pattern: "^ENSEMBL:\\w+$"
-  default_url: http://www.ensembl.org/id/[%s] 
+  default_url: http://www.ensembl.org/id/[%s]
 
 - db_prefix: flannotator
   name: The FlAnnotator
@@ -576,7 +578,7 @@
   pages:
     - name: gene/interactions
       url: https://www.ebi.ac.uk/intact/search?query=[%s]
-  
+
 - db_prefix: INTACT
   name: IntAct Molecular Interaction Database
   example_id: INTACT:EBI-1000008
@@ -691,7 +693,7 @@
   example_id: ORDO:600483, ORDO:644:GARD:262
   gid_pattern: "^ORDO:\\d+:*[GARD]*:*\\d*$"
   default_url:  https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
-    
+
 - db_prefix: Orphanet
   name: Orphanet
   aliases: ['ORPHA']
@@ -775,7 +777,7 @@
   pages:
     - name: gene/interactions
       url: http://identifiers.org/[%s]
-  
+
 - db_prefix: RCSB_PDB
   name: RCSB Protein Data Bank
   aliases: ['RCSB PDB']
@@ -879,5 +881,3 @@
   example_id: ZFA:0001327
   gid_pattern: "^ZFA:\\d+$"
   default_url: http://zfin.org/action/ontology/term-detail/ZFA:[%s]
-
-
