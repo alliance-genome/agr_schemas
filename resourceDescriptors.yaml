@@ -275,11 +275,11 @@
     - name: gene/phenotypes
       url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=phenotype
     - name: gene/spell
-      url: http://spell.wormbase.org/search/show_results?search_string=[%s]
+      url: https://spell.wormbase.org/search/show_results?search_string=[%s]
     - name: gene/expression/annotation/detail
       url: https://www.wormbase.org/species/all/expr_pattern/[%s]
     - name: strain
-      url: http://www.wormbase.org/db/get?name=[%s];class=Strain
+      url: https://www.wormbase.org/db/get?name=[%s];class=Strain
     - name: reference
       url: https://www.wormbase.org/db/get?name=[%s];class=Paper
     - name: transgene
@@ -295,19 +295,21 @@
     - name: disease
       url: https://www.wormbase.org/resources/disease/[%s]
     - name: gene/MODinteractions
-      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
+      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
     - name: gene/MODinteractions_molecular
-      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
+      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
     - name: gene/MODinteractions_genetic
-      url: http://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
+      url: https://www.wormbase.org/db/get?name=[%s];class=Gene;widget=interactions
     - name: construct
       url: https://www.wormbase.org/db/get?name=[%s];class=Construct
     - name: pub
-      url: http://www.wormbase.org/db/misc/paper?name=[%s]
+      url: https://www.wormbase.org/db/misc/paper?name=[%s]
     - name: htp/dataset
       url: https://www.wormbase.org/resources/analysis/[%s]
     - name: genotype
       url: https://wormbase.org/species/all/genotype/[%s]
+    - name: molecule
+      url: https://wormbase.org/resources/molecule/[%s]
 
 #
 # SGD
