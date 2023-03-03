@@ -180,7 +180,7 @@
       url: https://zfin.org/[%s]
     - name: construct
       url: https://zfin.org/[%s]
-    - name: Fish
+    - name: fish
       url: https://zfin.org/[%s]
     - name: homepage
       url: https://zfin.org/
