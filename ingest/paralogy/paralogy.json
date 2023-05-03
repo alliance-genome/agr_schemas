@@ -30,7 +30,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "SonicParanoid", "XB","ZFIN"]
+        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "SonicParanoid", "XenBase","ZFIN"]
       },
         "description": "Source of the paralogy match.",
         "uniqueItems": true
@@ -39,7 +39,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "SonicParanoid", "XB","ZFIN"]
+        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "SonicParanoid", "XenBase","ZFIN"]
       },
         "description": "Prediction methods that were not matched.",
         "uniqueItems": true
@@ -48,7 +48,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "sonicParanoid", "XB","ZFIN"]
+        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "sonicParanoid", "XenBase","ZFIN"]
       },
         "description": "Prediction methods that were not called.",
         "uniqueItems": true
