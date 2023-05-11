@@ -234,8 +234,6 @@
       url: https://flybase.org/reports/[%s].html
     - name: homepage
       url: https://flybase.org/
-    - name: disease
-      url: https://flybase.org/cgi-bin/cvreport.html?id=[%s]
     - name: gene/interactions
       url: https://flybase.org/reports/[%s].html
     - name: gene/MODinteractions
@@ -441,6 +439,8 @@
       url: https://zfin.org/[%s]
     - name: disease/wb
       url: https://www.wormbase.org/resources/disease/[%s]
+    - name: disease/fb
+      url: https://flybase.org/cgi-bin/cvreport.html?id=[%s]
 
 - db_prefix: DRSC
   name: DRSC
