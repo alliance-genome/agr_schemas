@@ -224,8 +224,12 @@
       url: https://flybase.org/reports/[%s].html#pubs
     - name: gene/phenotypes
       url: https://flybase.org/reports/[%s].html#phenotypes
+    - name: gene/disease
+      url: https://flybase.org/reports/[%s].html#hdm_sub
     - name: allele
       url: https://flybase.org/reports/[%s].html
+    - name: allele/disease
+      url: https://flybase.org/reports/[%s].html#human_disease_models
     - name: allele/references
       url: https://flybase.org/reports/[%s].html#pubs
     - name: construct
