@@ -4,19 +4,11 @@
   "description": "paralogy objects.",
   "id": "paralogy.json",
   "type": "object",
-  "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "confidence", "species"],
+  "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "confidence", "species", "similarity", "identity", "length"],
   "properties": {
     "species": {
       "type" : "integer",
       "description": "The species of the organism."
-    },
-    "isBestScore": {
-      "enum": ["Yes", "No", "Yes_Adjusted"],
-      "description": "DIOPT schema highlights the best pair."
-    },
-    "isBestRevScore": {
-      "enum": ["Yes", "No"],
-      "description": "DIOPT schema highlights the best pair."
     },
     "gene1": {
       "type": "string",
@@ -30,7 +22,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "SonicParanoid", "XenBase","ZFIN"]
+        "enum": ["Ensembl Compara", "HGNC", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "SonicParanoid", "SGD"]
       },
         "description": "Source of the paralogy match.",
         "uniqueItems": true
@@ -39,7 +31,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "SonicParanoid", "XenBase","ZFIN"]
+        "enum": ["Ensembl Compara", "HGNC", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "SonicParanoid", "SGD"]
       },
         "description": "Prediction methods that were not matched.",
         "uniqueItems": true
@@ -48,7 +40,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["Ensembl Compara", "HGNC", "Hieranoid", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "sonicParanoid", "XenBase","ZFIN"]
+        "enum": ["Ensembl Compara", "HGNC", "InParanoid", "OMA", "OrthoFinder", "OrthoInspector", "PANTHER", "PhylomeDB", "sonicParanoid", "SGD"]
       },
         "description": "Prediction methods that were not called.",
         "uniqueItems": true
@@ -57,13 +49,17 @@
       "enum":["moderate","high","low"],
       "description":"Confidence of paralogy match."
     },
-    "moderateFilter": {
-      "type" : "boolean",
-      "description": "Indicates whether this paralogy match is displayed when the moderate filter is selected."
+      "length": {
+      "type": "string",
+      "description": "The length of the aligned regions between two genes."
     },
-    "strictFilter": {
-      "type" : "boolean",
-      "description": "Indicates whether this paralogy match is displayed when the strict filter is selected."
+      "similarity": {
+      "type": "string",
+      "description": "Similarity score between the two genes."
+    },
+      "identity": {
+      "type": "string",
+      "description": "Identity score between the two genes."
     }
   }
 }
