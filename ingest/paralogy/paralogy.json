@@ -4,11 +4,15 @@
   "description": "paralogy objects.",
   "id": "paralogy.json",
   "type": "object",
-  "required": [ "isBestScore", "isBestRevScore", "gene1", "gene2", "confidence", "species", "similarity", "identity", "length"],
+  "required": ["gene1", "gene2", "confidence", "species", "similarity", "identity", "length", "rank"],
   "properties": {
     "species": {
       "type" : "integer",
       "description": "The species of the organism."
+    },
+    "rank": {
+      "type" : "integer",
+      "description": "The rank (order) of the paralog result."
     },
     "gene1": {
       "type": "string",
@@ -50,15 +54,15 @@
       "description":"Confidence of paralogy match."
     },
       "length": {
-      "type": "string",
+      "type": ["number", "null"],
       "description": "The length of the aligned regions between two genes."
     },
       "similarity": {
-      "type": "string",
+      "type": ["number", "null"],
       "description": "Similarity score between the two genes."
     },
       "identity": {
-      "type": "string",
+      "type": ["number", "null"],
       "description": "Identity score between the two genes."
     }
   }
