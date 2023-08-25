@@ -556,6 +556,15 @@
     - name: gene/MODinteractions_genetic
       url: http://www.icd9data.com/Search/?q=[%s]
 
+- db_prefix: ICD10
+  name: ICD10
+  example_gid: ICD10:H00.019
+  gid_pattern: "^ICD10:.+$"
+  default_url: http://www.icd10data.com/search?s=[%s]
+  pages:
+    - name: ontology_provided_cross_reference
+      url: http://www.icd10data.com/search?s=[%s]
+
 - db_prefix: ICD10CM
   name: ICD10CM
   example_gid: ICD10CM:L89
@@ -656,6 +665,15 @@
       url: https://www.ncbi.nlm.nih.gov/gene/[%s]
     - name: biogrid/orcs
       url: https://orcs.thebiogrid.org/Gene/[%s]
+
+- db_prefix: SRA
+  name: SRA
+  example_gid: SRA:SRA044886
+  gid_pattern: "^SRA:SRA.+$"
+  default_url: https://www.ncbi.nlm.nih.gov/sra/?term=[%s]
+  pages:
+    - name: htp/dataset
+      url: https://www.ncbi.nlm.nih.gov/sra/?term=[%s]
 
 - db_prefix: NCI
   name: NCI Thesaurus
