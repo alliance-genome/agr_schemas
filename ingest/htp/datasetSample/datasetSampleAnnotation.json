@@ -50,7 +50,7 @@
         },
         "assayType": {
             "$ref": "../../globalId.json#/properties/globalId",
-            "enum": ["MMO:0000659", "MMO:0000648","MMO:0000650","MMO:0000649","MMO:0000664","MMO:0000666","MMO:0000000"],
+            "enum": ["MMO:0000659", "MMO:0000648","MMO:0000650","MMO:0000649","MMO:0000664","MMO:0000666","MMO:0000000","MMO:0000862"],
             "description": "id of type of assay used for this sample; sample or experiment property?"
         },
         "sequencingFormat": {
