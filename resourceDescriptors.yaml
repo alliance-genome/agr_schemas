@@ -353,6 +353,8 @@
     url: https://www.yeastgenome.org/strain/[%s]
   - name: allele
     url: https://www.yeastgenome.org/allele/[%s]
+  - name: allele/references
+    url: https://www.yeastgenome.org/allele/[%s]/literature
 
 #
 # GO
