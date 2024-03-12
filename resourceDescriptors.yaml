@@ -321,7 +321,7 @@
   name: SGD genes
   example_gid: SGD:S000001855
   gid_pattern: "^SGD:\\w+$"
-  default_url: http://www.yeastgenome.org/[%s]
+  default_url: https://www.yeastgenome.org/
   pages:
   - name: gene
     url: https://www.yeastgenome.org/locus/[%s]
