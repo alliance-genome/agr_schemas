@@ -321,16 +321,16 @@
   name: SGD genes
   example_gid: SGD:S000001855
   gid_pattern: "^SGD:\\w+$"
-  default_url: http://www.yeastgenome.org/[%s]
+  default_url: https://www.yeastgenome.org/
   pages:
   - name: gene
-    url: http://www.yeastgenome.org/locus/[%s]
+    url: https://www.yeastgenome.org/locus/[%s]
   - name: gene/expression
-    url: http://www.yeastgenome.org/locus/[%s]/expression
+    url: https://www.yeastgenome.org/locus/[%s]/expression
   - name: gene/interactions
-    url: http://www.yeastgenome.org/locus/[%s]/interaction
+    url: https://www.yeastgenome.org/locus/[%s]/interaction
   - name: homepage
-    url: http://www.yeastgenome.org/[%s]
+    url: https://www.yeastgenome.org/
   - name: gene/spell
     url: https://spell.yeastgenome.org/search/show_results?search_string=[%s]
   - name: gene/references
