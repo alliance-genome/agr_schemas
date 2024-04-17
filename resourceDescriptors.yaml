@@ -536,10 +536,10 @@
   name: HGNC
   example_gid: HGNC:33510
   gid_pattern: "^HGNC:\\d+$"
-  default_url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
+  default_url: https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:[%s]
   pages:
     - name: gene
-      url: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:[%s]
+      url: https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:[%s]
     - name: gene/MODinteractions
       url: https://rgd.mcw.edu/rgdweb/cytoscape/cy.html?species=1&identifiers=HGNC:[%s]
     - name: gene/MODinteractions_genetic
