@@ -689,7 +689,7 @@
 
 - db_prefix: MIM
   name: MIM
-  aliases: ['mim']
+  aliases: ['mim', 'omim']
   example_id: MIM:600483, MIM:PS203655
   gid_pattern: "^(MIM|mim):[PS]*\\d+$"
   default_url: https://www.omim.org/entry/[%s]
