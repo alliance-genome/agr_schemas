@@ -447,6 +447,8 @@
       url: https://www.wormbase.org/resources/disease/[%s]
     - name: disease/fb
       url: https://flybase.org/cgi-bin/cvreport.html?id=[%s]
+    - name: disease/sgd
+      url: https://www.yeastgenome.org/disease/[%s]
 
 - db_prefix: DRSC
   name: DRSC
