@@ -699,13 +699,13 @@
     - name: homepage
       url: https://www.omim.org/
     - name: gene
-      url: https://www.omim.org/entry/[%s]
+      url: https://www.omim.org/[%s]
     - name: gene/interactions
-      url: https://www.omim.org/entry/[%s]
+      url: https://www.omim.org/[%s]
     - name: disease
-      url: https://www.omim.org/entry/[%s]
+      url: https://www.omim.org//[%s]
     - name: ont
-      url: https://www.omim.org/phenotypicSeries/[%s]
+      url: https://www.omim.org/[%s]
 
 - db_prefix: ORCID
   name: ORCID
