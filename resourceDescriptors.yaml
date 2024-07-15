@@ -465,13 +465,15 @@
 - db_prefix: EFO
   name: Experimental Factor Ontology
   example_gid: EFO:EFO_0000000
-  gid_pattern: "^(efo:)?EFO:\\d+$"
+  gid_pattern: "^(efo:)?EFO(:EFO_)?\\d+$"
   default_url: http://www.ebi.ac.uk/efo/EFO_[%s]
   pages:
     - name: ontology_provided_cross_references
       url: http://www.ebi.ac.uk/efo/EFO_[%s]
     - name: gene/interactions
       url: https://www.ebi.ac.uk/ols/search?q=[%s]&exact=on
+  # Note: The code has been modified to handle EFO identifiers in two configurations: "EFO:12345" and "EFO:EFO_12345".
+  # This normalization is done within the return_url_from_identifier method in the resource_descriptor_helper_2.py file.
 
 - db_prefix: EMDB
   name: Electron Microscopy Data Bank
@@ -511,6 +513,8 @@
   example_id: GARD:262
   gid_pattern: "^GARD:\\d+$"
   default_url: https://rarediseases.info.nih.gov/diseases/[%s]/index
+    - name: ontology_provided_cross_reference
+       url: https://rarediseases.info.nih.gov/diseases/[%s]/index
 
 - db_prefix: GEO
   name: Gene Expression Omnibus
@@ -559,6 +563,8 @@
   pages:
     - name: gene/MODinteractions_genetic
       url: http://www.icd9data.com/Search/?q=[%s]
+    - name: ontology_provided_cross_reference
+      url: http://www.icd9data.com/Search/?q=[%s]
 
 - db_prefix: ICD10
   name: ICD10
@@ -577,6 +583,17 @@
   pages:
     - name: gene/MODinteractions_genetic
       url: http://www.icd10data.com/search?s=[%s]
+    - name: ontology_provided_cross_reference
+      url: http://www.icd10data.com/search?s=[%s]
+
+- db_prefix: ICD11
+  name: ICD11
+  example_gid: ICD11:4B24
+  gid_pattern: "^ICD11:.+$"
+  default_url: https://icd.who.int/en
+  pages:
+    - name: ontology_provided_cross_reference
+      url: https://icd.who.int/en
 
 - db_prefix: ICDO
   name: ICDO
@@ -619,6 +636,8 @@
   example_id: KEGG:05220
   gid_pattern: "^KEGG:\\w*:*\\d+$"
   default_url: http://www.genome.jp/dbget-bin/www_bget?map[%s]
+    - name: ontology_provided_cross_reference
+      url: http://www.genome.jp/dbget-bin/www_bget?map[%s]
 
 - db_prefix: MEDDRA
   name: MEDDRA
@@ -634,6 +653,9 @@
   example_gid: MESH:D020516
   gid_pattern: "^MESH:[CD]+\\d+$"
   default_url: https://www.ncbi.nlm.nih.gov/mesh/[%s]
+  pages:
+    - name: ontology_provided_cross_reference
+      url: https://www.ncbi.nlm.nih.gov/mesh/[%s]
 
 - db_prefix: MINT
   name: The Molecular INTeraction database
@@ -688,6 +710,8 @@
   pages:
     - name: pub
       url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=[%s]
+    - name: ontology_provided_cross_references
+      url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=[%s]
 
 - db_prefix: MIM
   name: MIM
@@ -719,6 +743,8 @@
   example_id: ORDO:600483, ORDO:644:GARD:262
   gid_pattern: "^ORDO:\\d+:*[GARD]*:*\\d*$"
   default_url:  https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
+    - name: ontology_provided_cross_references
+      url: https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
 
 - db_prefix: Orphanet
   name: Orphanet
@@ -839,7 +865,10 @@
 - db_prefix: SNOMED
   name: SNOMED
   aliases: ['SNOMEDCT_US_2019_09_01', 'SNOMEDCT_US_2020_03_01', 'SNOMED_CT_US_2018_03_01',
-            'SNOMEDCT_US_2020_09_01', 'SNOMEDCT_2020_03_01', 'SNOMEDCT_US_2018_03_01']
+            'SNOMEDCT_US_2020_09_01', 'SNOMEDCT_2020_03_01', 'SNOMEDCT_US_2018_03_01',
+            'SNOMEDCT_US_2021_09_01', 'SNOMEDCT_US_2021_07_31', 'SNOMEDCT_US_2023_11_01',
+            'SNOMEDCT_US_2023_09_01', 'SNOMEDCT_US_2022_03_01', 'SNOMEDCT_US_2022_07_31',
+            'SNOMEDCT_US_2023_10_01', 'SNOMEDCT_US_2023_03_01']
   example_gid: SNOMEDCT_US_2019_09_01:785879009
   gid_pattern: "^SNOMEDCT(_US)?(_\\d{4}_\\d{2}_\\d{2})?:\\d+$"
   default_url: https://browser.ihtsdotools.org/?perspective=full&conceptId1=[%s]
@@ -850,7 +879,7 @@
 - db_prefix: UMLS_CUI
   name: UMLS_CUI
   example_gid: UMLS_CUI:C0011127
-  gid_pattern: "^UMLS_CUI:C\\d{7}$"
+  gid_pattern: "^UMLS_CUI:C\\d+$"
   default_url: https://uts.nlm.nih.gov/uts/umls/searchResults?searchString=[%s]
   pages:
     - name: ontology_provided_cross_reference
