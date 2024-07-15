@@ -717,10 +717,10 @@
 
   - db_prefix: MIM
     name: MIM
-    aliases: ['mim', 'omim']
+    aliases: ['mim', 'omim', 'MIM', 'OMIM']
     example_id: MIM:600483, MIM:PS203655
     gid_pattern: "^(OMIM|omim|MIM|mim):[PS]*\\d+$"
-    default_url: https://www.omim.org/[%s]
+    default_url: https://www.omim.org/MIM:[%s]
     pages:
       - name: homepage
         url: https://www.omim.org/
