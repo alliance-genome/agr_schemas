@@ -4,7 +4,7 @@
   "description": "paralogy objects.",
   "id": "paralogy.json",
   "type": "object",
-  "required": ["gene1", "gene2", "confidence", "species", "similarity", "identity", "length", "rank"],
+  "required": ["gene1", "gene2", "confidence", "species", "rank"],
   "properties": {
     "species": {
       "type" : "integer",
