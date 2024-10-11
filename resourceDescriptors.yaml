@@ -498,6 +498,9 @@
     example_id: ENSEMBL:FBgn0000490
     gid_pattern: "^ENSEMBL:\\w+$"
     default_url: http://www.ensembl.org/id/[%s]
+    pages:
+      - name: expression_atlas
+        url: http://www.ebi.ac.uk/gxa/genes/[%s]
 
   - db_prefix: flannotator
     name: The FlAnnotator
