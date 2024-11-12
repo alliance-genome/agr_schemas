@@ -886,7 +886,7 @@
     name: UMLS_CUI
     example_gid: UMLS_CUI:C0011127
     gid_pattern: "^UMLS_CUI:C\\d+$"
-    default_url: 	https://identifiers.org/umls:[%s]
+    default_url: https://identifiers.org/umls:[%s]
     pages:
       - name: ontology_provided_cross_reference
         url: https://identifiers.org/umls:[%s]
