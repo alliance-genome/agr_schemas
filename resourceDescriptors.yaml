@@ -250,6 +250,8 @@
         url: https://flybase.org/reports/[%s].html
       - name: htp/dataset
         url: https://flybase.org/reports/[%s].html
+      - name: expression_atlas
+        url: http://www.ebi.ac.uk/gxa/genes/[%s]
 
   #
   # WormBase
@@ -355,6 +357,8 @@
       url: https://www.yeastgenome.org/allele/[%s]
     - name: allele/references
       url: https://www.yeastgenome.org/allele/[%s]/literature
+    - name: expression_atlas
+      url: http://www.ebi.ac.uk/gxa/genes/[%s]
 
   #
   # GO
