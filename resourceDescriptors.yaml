@@ -816,7 +816,7 @@
     aliases: ['PMC']
     example_gid: PMCID:PMC7519054
     gid_pattern: "^(PMCID|PMC):PMC\\d+$"
-    default_url: https://www.ncbi.nlm.nih.gov/pmc/[%s]
+    default_url: https://pmc.ncbi.nlm.nih.gov/articles/[%s]
     pages:
       - name: gene/interactions
         url: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
