@@ -476,6 +476,8 @@
     pages:
       - name: ontology_provided_cross_references
         url: http://www.ebi.ac.uk/efo/EFO_[%s]
+      - name: ontology_provided_cross_reference
+        url: http://www.ebi.ac.uk/efo/EFO_[%s]
       - name: gene/interactions
         url: https://www.ebi.ac.uk/ols/search?q=[%s]&exact=on
     # Note: The code has been modified to handle EFO identifiers in two configurations: "EFO:12345" and "EFO:EFO_12345".
@@ -725,6 +727,8 @@
         url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=[%s]
       - name: ontology_provided_cross_references
         url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=[%s]
+      - name: ontology_provided_cross_reference
+        url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=[%s]
 
   - db_prefix: MIM
     name: MIM
@@ -743,6 +747,8 @@
         url: https://www.omim.org/MIM:[%s]
       - name: ont
         url: https://www.omim.org/MIM:[%s]
+      - name: ontology_provided_cross_reference
+        url: https://www.omim.org/MIM:[%s]
 
   - db_prefix: ORCID
     name: ORCID
@@ -758,6 +764,8 @@
     default_url:  https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
     pages:
       - name: ontology_provided_cross_references
+        url: https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
+      - name: ontology_provided_cross_reference
         url: https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=[%s]
 
   - db_prefix: Orphanet
