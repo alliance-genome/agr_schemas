@@ -339,6 +339,8 @@
       url: https://www.yeastgenome.org/locus/[%s]/literature
     - name: gene/disease
       url: https://www.yeastgenome.org/locus/[%s]/disease
+    - name: disease
+      url: https://www.yeastgenome.org/disease/[%s]
     - name: gene/phenotypes
       url: https://www.yeastgenome.org/locus/[%s]/phenotype
     - name: gene/MODinteractions
