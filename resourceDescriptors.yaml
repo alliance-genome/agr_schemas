@@ -890,7 +890,7 @@
               'SNOMEDCT_US_2020_09_01', 'SNOMEDCT_2020_03_01', 'SNOMEDCT_US_2018_03_01',
               'SNOMEDCT_US_2021_09_01', 'SNOMEDCT_US_2021_07_31', 'SNOMEDCT_US_2023_11_01',
               'SNOMEDCT_US_2023_09_01', 'SNOMEDCT_US_2022_03_01', 'SNOMEDCT_US_2022_07_31',
-              'SNOMEDCT_US_2023_10_01', 'SNOMEDCT_US_2023_03_01']
+              'SNOMEDCT_US_2023_10_01', 'SNOMEDCT_US_2023_03_01', 'SNOMEDCT_US_2024_03_01', 'SNOMEDCT_US_2025_03_01']
     example_gid: SNOMEDCT_US_2019_09_01:785879009
     gid_pattern: "^SNOMEDCT(_US)?(_\\d{4}_\\d{2}_\\d{2})?:\\d+$"
     default_url: https://browser.ihtsdotools.org/?perspective=full&conceptId1=[%s]
