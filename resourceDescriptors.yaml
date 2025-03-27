@@ -43,7 +43,7 @@
       - name: homepage
         url: http://www.informatics.jax.org/
       - name: disease
-        url: http://www.informatics.jax.org/disease/MGI:[%s]
+        url: http://www.informatics.jax.org/disease/[%s]
       - name: gene/expression/annotation/detail
         url: http://www.informatics.jax.org/assay/MGI:[%s]
       - name: gene/MODinteractions_molecular
