@@ -421,10 +421,11 @@
     name: Database of Interacting Proteins
     example_id: DIP:DIP-88423E
     gid_pattern: "^DIP:DIP(\\:)?\\-\\d{1,}[ENXS]$"
-    default_url: http://dip.mbi.ucla.edu/dip/record?ac=[%s]
+    default_url: https://dip.doe-mbi.ucla.edu/dip/DIPview.cgi?IK=[%s]
     pages:
       - name: gene/interactions
-        url: http://dip.mbi.ucla.edu/dip/record?ac=[%s]
+        url: https://dip.doe-mbi.ucla.edu/dip/DIPview.cgi?IK=[%s]
+    # Note: integer part of ID needs to be pulled out in getResourceUrl() method in agr_ui repo for URL generation
 
   - db_prefix: DOI
     name: DOI
