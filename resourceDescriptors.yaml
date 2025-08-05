@@ -440,7 +440,7 @@
     name: Disease Ontology
     example_gid: DOID:820
     gid_pattern: "^DOID:\\d+$"
-    default_url: http://www.disease-ontology.org/?id=[%s]
+    default_url: https://www.disease-ontology.org/?id=[%s]
     pages:
       - name: disease/rat
         url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Rat&x=1&acc_id=DOID:[%s]#annot
