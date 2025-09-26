@@ -680,6 +680,25 @@
       - name: gene/interactions
         url: https://mint.bio.uniroma2.it/index.php/results-interactions/?id=[%s]
 
+  - db_prefix: miRBase
+    name: miRBase
+    example_id: miRBase:MI0006588, miRBase:MIMAT00065346
+    gid_pattern: "^miRBase:(MI|MIMAT)\\d+$"
+    default_url: https://www.mirbase.org/search
+    pages:
+      - name: hairpin
+        url: https://www.mirbase.org/hairpin/[%s]
+      - name: mature
+        url: https://www.mirbase.org/mature/[%s]
+
+  - db_prefix: MirGeneDB
+    name: MirGeneDB
+    example_gid: MirGeneDB:Mir-1821
+    default_url: https://mirgenedb.org/search
+    pages:
+      - name: cel
+        url: https://mirgenedb.org/show/cel/[%s]
+
   - db_prefix: mpidb
     name: The Microbial Protein Interaction Database
     example_id: mpidb:MPIDB-INT-1044
@@ -898,6 +917,11 @@
     pages:
       - name: ontology_provided_cross_reference
         url: https://browser.ihtsdotools.org/?perspective=full&conceptId1=[%s]
+
+  - db_prefix: TreeFam
+    name: TreeFam
+    example_gid: TreeFam:TF323667
+    default_url: http://www.treefam.org/family/[%s]
 
   - db_prefix: UMLS_CUI
     name: UMLS_CUI
