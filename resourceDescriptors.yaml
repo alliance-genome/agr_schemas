@@ -682,7 +682,7 @@
 
   - db_prefix: miRBase
     name: miRBase
-    example_id: miRBase:MI0006588, miRBase
+    example_id: miRBase:MI0006588, miRBase:MIMAT00065346
     gid_pattern: "^miRBase:(MI|MIMAT)\\d+$"
     default_url: https://www.mirbase.org/search
     pages:
