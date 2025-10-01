@@ -839,7 +839,7 @@
     aliases: ['pubmed', 'PubMed']
     example_gid: PMID:26447131
     gid_pattern: "^(PMID|pubmed|PubMed):\\d+$"
-    default_url: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
+    default_url: https://pubmed.ncbi.nlm.nih.gov/[%s]
 
   - db_prefix: PMCID
     name: PubMed Central
@@ -849,7 +849,7 @@
     default_url: https://pmc.ncbi.nlm.nih.gov/articles/[%s]
     pages:
       - name: gene/interactions
-        url: https://www.ncbi.nlm.nih.gov/pubmed/[%s]
+        url: https://pubmed.ncbi.nlm.nih.gov/[%s]
 
   - db_prefix: ISSN
     name: International Standard Serial Number
