@@ -568,6 +568,15 @@
       - name: disease/human
         url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?species=Human&x=1&acc_id=[%s]#annot
 
+  - db_prefix: HGNC_Group
+    name: HGNC Gene Group
+    example_gid: HGNC_Group:1436
+    gid_pattern: "^HGNC_Group:\\d+$"
+    default_url: https://www.genenames.org/data/genegroup/#!/group/[%s]
+    pages:
+      - name: gene_group
+        url: https://www.genenames.org/data/genegroup/#!/group/[%s]
+
   - db_prefix: ICD9CM
     name: ICD9CM
     example_gid: ICD9CM:237.7
@@ -938,6 +947,15 @@
     example_gid: UniProtKB:P07713
     gid_pattern: "^(UniProtKB|uniprotkb):\\w+$"
     default_url: http://www.uniprot.org/uniprot/[%s]
+
+  - db_prefix: WBGeneClass
+    name: WormBase Gene Class
+    example_gid: WBGeneClass:arp
+    gid_pattern: "^WBGeneClass:\\w+$"
+    default_url: https://www.wormbase.org/resources/gene_class/[%s]
+    pages:
+      - name: gene_class
+        url: https://www.wormbase.org/resources/gene_class/[%s]
 
   - db_prefix: WBbt
     name: WormBase anatomy Ontology
