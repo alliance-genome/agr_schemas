@@ -851,6 +851,13 @@
       - name: gene/interactions
         url: https://pubmed.ncbi.nlm.nih.gov/[%s]
 
+  - db_prefix: NLM
+    name: National Library of Medicine
+    aliases: ['NLMID']
+    example_gid: NLM:0400662
+    gid_pattern: "^NLM:\\w+$"
+    default_url: https://www.ncbi.nlm.nih.gov/nlmcatalog/[%s]
+
   - db_prefix: ISSN
     name: International Standard Serial Number
     example_gid: ISSN:0092-8674
