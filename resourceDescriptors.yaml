@@ -990,3 +990,8 @@
     example_id: ZFA:0001327
     gid_pattern: "^ZFA:\\d+$"
     default_url: http://zfin.org/action/ontology/term-detail/ZFA:[%s]
+
+  - db_prefix: dbSNP
+    name: dbSNP
+    example_gid: rs188724206
+    default_url: https://www.ncbi.nlm.nih.gov/snp/[%s]
