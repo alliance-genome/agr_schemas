@@ -952,10 +952,10 @@
     name: WormBase Gene Class
     example_gid: WBGeneClass:arp
     gid_pattern: "^WBGeneClass:\\w+$"
-    default_url: https://www.wormbase.org/resources/gene_class/[%s]
+    default_url: https://www.wormbase.org/db/get?name=[%s];class=Gene_class
     pages:
       - name: gene_class
-        url: https://www.wormbase.org/resources/gene_class/[%s]
+        url: https://www.wormbase.org/db/get?name=[%s];class=Gene_class
 
   - db_prefix: WBbt
     name: WormBase anatomy Ontology
