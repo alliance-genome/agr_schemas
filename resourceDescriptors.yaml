@@ -420,7 +420,7 @@
   - db_prefix: CGD
     name: Candida Genome Database 
     example_id: CGD:orf19.4993
-    gid_pattern: "^CGD:\\w+\.\\d+$"
+    gid_pattern: "^CGD:\\w+\\.\\d+$"
     default_url: http://www.candidagenome.org/cgi-bin/locus.pl?locus=[%s]
     pages:
       - name: gene
@@ -538,14 +538,14 @@
       - name: gene/interactions
         url: http://www.flannotator.org.uk
         
-- db_prefix: FungiDB
-    name: Fungal and Oomycete Informatics Resources 
-    example_id: FungiDB:PMAA_080990
-    gid_pattern: "^FungiDB:\\w+$"
-    default_url: https://fungidb.org/fungidb/app/record/gene/[%s]
-    pages:
-      - name: gene
-        url: https://fungidb.org/fungidb/app/record/gene/[%s]
+  - db_prefix: FungiDB
+      name: Fungal and Oomycete Informatics Resources
+      example_id: FungiDB:PMAA_080990
+      gid_pattern: "^FungiDB:\\w+$"
+      default_url: https://fungidb.org/fungidb/app/record/gene/[%s]
+      pages:
+        - name: gene
+          url: https://fungidb.org/fungidb/app/record/gene/[%s]
         
   - db_prefix: GARD
     name: GARD
@@ -1000,7 +1000,7 @@
   - db_prefix: TCDB
     name: Transporter Classification Database
     example_id: TCDB:3.A.3.8
-    gid_pattern: "^TCDG:\\w+\\.\\w+\.\\w+\.\\w+$"
+    gid_pattern: "^TCDB:\\w+\\.\\w+\\.\\w+\\.\\w+$"
     default_url:  https://www.tcdb.org/search/result.php?tc=[%s]
     pages:
       - name: gene
@@ -1020,14 +1020,14 @@
       - name: ontology_provided_cross_reference
         url: https://identifiers.org/umls:[%s]
 
-- db_prefix: UniParc
-    name: UniProt Sequence archive
-    example_id: UniParc:UPI0000052DF2
-    gid_pattern: "^UniParc:\\w+$"
-    default_url: https://www.uniprot.org/uniparc/[%s]/entry
-    pages:
-      - name: gene
-        url: https://www.uniprot.org/uniparc/[%s]/entry
+  - db_prefix: UniParc
+      name: UniProt Sequence archive
+      example_id: UniParc:UPI0000052DF2
+      gid_pattern: "^UniParc:\\w+$"
+      default_url: https://www.uniprot.org/uniparc/[%s]/entry
+      pages:
+        - name: gene
+          url: https://www.uniprot.org/uniparc/[%s]/entry
 
   - db_prefix: UniProtKB
     name: UniProtKB
