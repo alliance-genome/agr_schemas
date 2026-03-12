@@ -539,13 +539,13 @@
         url: http://www.flannotator.org.uk
         
   - db_prefix: FungiDB
-      name: Fungal and Oomycete Informatics Resources
-      example_id: FungiDB:PMAA_080990
-      gid_pattern: "^FungiDB:\\w+$"
-      default_url: https://fungidb.org/fungidb/app/record/gene/[%s]
-      pages:
-        - name: gene
-          url: https://fungidb.org/fungidb/app/record/gene/[%s]
+    name: Fungal and Oomycete Informatics Resources 
+    example_id: FungiDB:PMAA_080990
+    gid_pattern: "^FungiDB:\\w+$"
+    default_url: https://fungidb.org/fungidb/app/record/gene/[%s]
+    pages:
+      - name: gene
+        url: https://fungidb.org/fungidb/app/record/gene/[%s]
         
   - db_prefix: GARD
     name: GARD
@@ -1021,13 +1021,13 @@
         url: https://identifiers.org/umls:[%s]
 
   - db_prefix: UniParc
-      name: UniProt Sequence archive
-      example_id: UniParc:UPI0000052DF2
-      gid_pattern: "^UniParc:\\w+$"
-      default_url: https://www.uniprot.org/uniparc/[%s]/entry
-      pages:
-        - name: gene
-          url: https://www.uniprot.org/uniparc/[%s]/entry
+    name: UniProt Sequence archive
+    example_id: UniParc:UPI0000052DF2
+    gid_pattern: "^UniParc:\\w+$"
+    default_url: https://www.uniprot.org/uniparc/[%s]/entry
+    pages:
+      - name: gene
+        url: https://www.uniprot.org/uniparc/[%s]/entry
 
   - db_prefix: UniProtKB
     name: UniProtKB
