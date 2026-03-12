@@ -420,7 +420,7 @@
   - db_prefix: CGD
     name: Candida Genome Database 
     example_id: CGD:orf19.4993
-    gid_pattern: "^CGD:\\w+\.\\d+$"
+    gid_pattern: "^CGD:\\w+\\.\\d+$"
     default_url: http://www.candidagenome.org/cgi-bin/locus.pl?locus=[%s]
     pages:
       - name: gene
