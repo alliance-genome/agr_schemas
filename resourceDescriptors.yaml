@@ -538,7 +538,7 @@
       - name: gene/interactions
         url: http://www.flannotator.org.uk
         
-- db_prefix: FungiDB
+  - db_prefix: FungiDB
     name: Fungal and Oomycete Informatics Resources 
     example_id: FungiDB:PMAA_080990
     gid_pattern: "^FungiDB:\\w+$"
@@ -1020,7 +1020,7 @@
       - name: ontology_provided_cross_reference
         url: https://identifiers.org/umls:[%s]
 
-- db_prefix: UniParc
+  - db_prefix: UniParc
     name: UniProt Sequence archive
     example_id: UniParc:UPI0000052DF2
     gid_pattern: "^UniParc:\\w+$"
