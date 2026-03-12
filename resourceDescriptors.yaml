@@ -420,7 +420,7 @@
   - db_prefix: CGD
     name: Candida Genome Database 
     example_id: CGD:orf19.4993
-    gid_pattern: "^CGD:\\w+\.\\d+$"
+    gid_pattern: "^CGD:\\w+\\.\\d+$"
     default_url: http://www.candidagenome.org/cgi-bin/locus.pl?locus=[%s]
     pages:
       - name: gene
@@ -1000,7 +1000,7 @@
   - db_prefix: TCDB
     name: Transporter Classification Database
     example_id: TCDB:3.A.3.8
-    gid_pattern: "^TCDG:\\w+\\.\\w+\.\\w+\.\\w+$"
+    gid_pattern: "^TCDB:\\w+\\.\\w+\\.\\w+\\.\\w+$"
     default_url:  https://www.tcdb.org/search/result.php?tc=[%s]
     pages:
       - name: gene
