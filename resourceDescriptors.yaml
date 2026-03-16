@@ -434,7 +434,16 @@
     pages:
       - name: gene/interactions
         url: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=[%s]
-
+        
+  - db_prefix: CGD
+    name: Candida Genome Database 
+    example_id: CGD:orf19.4993
+    gid_pattern: "^CGD:\\w+\\.\\d+$"
+    default_url: http://www.candidagenome.org/cgi-bin/locus.pl?locus=[%s]
+    pages:
+      - name: gene
+        url: http://www.candidagenome.org/cgi-bin/locus.pl?locus=[%s]
+        
   - db_prefix: DIP
     name: Database of Interacting Proteins
     example_id: DIP:DIP-88423E
@@ -529,6 +538,15 @@
       - name: expression_atlas
         url: http://www.ebi.ac.uk/gxa/genes/[%s]
 
+  - db_prefix: ExPASy
+    name: Enzyme nomenclature database
+    example_id: ExPASy:2.7.11.1
+    gid_pattern: "^ExPASy:\\d+\\.\\d+\\.\\d+\\.\\d+$"
+    default_url: https://enzyme.expasy.org/EC/[%s]
+    pages:
+      - name: gene
+        url: https://enzyme.expasy.org/EC/[%s]
+        
   - db_prefix: flannotator
     name: The FlAnnotator
     example_id: flannotator:CPTI-002267
@@ -537,7 +555,16 @@
     pages:
       - name: gene/interactions
         url: http://www.flannotator.org.uk
-
+        
+  - db_prefix: FungiDB
+    name: Fungal and Oomycete Informatics Resources 
+    example_id: FungiDB:PMAA_080990
+    gid_pattern: "^FungiDB:\\w+$"
+    default_url: https://fungidb.org/fungidb/app/record/gene/[%s]
+    pages:
+      - name: gene
+        url: https://fungidb.org/fungidb/app/record/gene/[%s]
+        
   - db_prefix: GARD
     name: GARD
     example_id: GARD:262
@@ -546,7 +573,16 @@
     pages:
       - name: ontology_provided_cross_reference
         url: https://rarediseases.info.nih.gov/diseases/[%s]/index
-
+        
+  - db_prefix: GenBank-EMBL-DDBJ
+    name: International Nucleotide Sequence Database Collaboration 
+    example_id: GenBank-EMBL-DDBJ:171858
+    gid_pattern: "^GenBank-EMBL-DDBJ:\\w+$"
+    default_url: https://www.ncbi.nlm.nih.gov/nuccore/[%s]
+    pages:
+      - name: gene
+        url: https://www.ncbi.nlm.nih.gov/protein/[%s]
+ 
   - db_prefix: GEO
     name: Gene Expression Omnibus
     example_id: GEO:GSE59105
@@ -679,6 +715,15 @@
     pages:
       - name: ontology_provided_cross_reference
         url: http://www.genome.jp/dbget-bin/www_bget?map[%s]
+
+  - db_prefix: LoQAtE
+    name: The localization and quantitation atlas of the yeast proteome
+    example_id: LoQAtE:1027
+    gid_pattern: "^LoQAtE:\\d+$"
+    default_url: http://www.weizmann.ac.il/molgen/loqate/gene/view/[%s]
+    pages:
+      - name: gene
+        url: http://www.weizmann.ac.il/molgen/loqate/gene/view/[%s]
 
   - db_prefix: MEDDRA
     name: MEDDRA
@@ -843,6 +888,15 @@
       - name: SGD
         url:  http://pantherdb.org/treeViewer/treeViewer.jsp?book=PAN_BOOK&species=agr&seq=SGD=[%s]
 
+  - db_prefix: PDB
+    name: RCSB Protein Databank
+    example_id: PDB:1CR5
+    gid_pattern: "^PDB:\\w+$"
+    default_url: https://www.rcsb.org/structure/[%s]
+    pages:
+      - name: gene/interactions
+        url: https://www.rcsb.org/structure/[%s]
+ 
   - db_prefix: PDBE
     name: Protein Data Bank in Europe
     example_id: PDBE:1FHI
@@ -877,7 +931,16 @@
     pages:
       - name: gene/interactions
         url: https://pubmed.ncbi.nlm.nih.gov/[%s]
-
+  
+  - db_prefix: PomBase
+    name:  Schizosaccharomyces pombe Database
+    example_id: PomBase:SPAC222.06
+    gid_pattern: "^PomBase:\\w+\\.\\d*$"
+    default_url: https://www.pombase.org/spombe/result/[%s]
+    pages:
+      - name: gene
+        url:  https://www.pombase.org/spombe/gene/[%s]
+    
   - db_prefix: NLM
     name: National Library of Medicine
     aliases: ['NLMID']
@@ -952,6 +1015,15 @@
       - name: ontology_provided_cross_reference
         url: https://browser.ihtsdotools.org/?perspective=full&conceptId1=[%s]
 
+  - db_prefix: TCDB
+    name: Transporter Classification Database
+    example_id: TCDB:3.A.3.8
+    gid_pattern: "^TCDB:\\w+\\.\\w+\\.\\w+\\.\\w+$"
+    default_url:  https://www.tcdb.org/search/result.php?tc=[%s]
+    pages:
+      - name: gene
+        url:  https://www.tcdb.org/search/result.php?tc=[%s]
+      
   - db_prefix: TreeFam
     name: TreeFam
     example_gid: TreeFam:TF323667
@@ -965,6 +1037,15 @@
     pages:
       - name: ontology_provided_cross_reference
         url: https://identifiers.org/umls:[%s]
+
+  - db_prefix: UniParc
+    name: UniProt Sequence archive
+    example_id: UniParc:UPI0000052DF2
+    gid_pattern: "^UniParc:\\w+$"
+    default_url: https://www.uniprot.org/uniparc/[%s]/entry
+    pages:
+      - name: gene
+        url: https://www.uniprot.org/uniparc/[%s]/entry
 
   - db_prefix: UniProtKB
     name: UniProtKB
