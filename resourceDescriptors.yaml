@@ -1,5 +1,23 @@
   # AGR Schema Resource Descriptors YAML.
   # When submitting identifiers, please use the appropriate example_id/gid field listed below.
+  #
+  # Field descriptions:
+  #   db_prefix     - The prefix used to identify the resource (e.g. "MGI", "ZFIN"). Used as the
+  #                   namespace/prefix portion of CURIEs (Compact URIs) for identifiers from this resource.
+  #   name          - Human-readable name of the resource.
+  #   aliases       - (optional) A list of alternative prefixes that are recognized as equivalent to db_prefix.
+  #   example_id    - An example identifier (CURIE) from this resource, used for documentation and testing.
+  #   example_gid   - Alternative field for an example identifier (gene ID). Functionally equivalent to example_id.
+  #   gid_pattern   - A regular expression pattern that valid identifiers from this resource must match.
+  #   default_url   - The default URL for this resource. May contain [%s] as a placeholder for the identifier.
+  #   pages         - A list of named URL templates representing specific sections or entity-type pages of the
+  #                   resource website. Each page entry has:
+  #                     name - A short identifier for the page type (e.g. "gene", "allele", "homepage",
+  #                            "disease", "reference"). Slash-separated names (e.g. "gene/expression")
+  #                            represent sub-pages or filtered views of a parent page type.
+  #                     url  - The URL template for this page. Use [%s] as a placeholder that will be
+  #                            replaced with the local part of the identifier at runtime.
+  #                     description - (optional) A human-readable description of the page.
 
   #
   # AGR
