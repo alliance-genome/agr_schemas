@@ -722,7 +722,7 @@
     gid_pattern: "^LoQAtE:\\d+$"
     default_url: http://www.weizmann.ac.il/molgen/loqate/gene/view/[%s]
     pages:
-      - name: gene
+      - name: gene/expression
         url: http://www.weizmann.ac.il/molgen/loqate/gene/view/[%s]
 
   - db_prefix: MEDDRA
