@@ -74,9 +74,9 @@
         url: http://www.informatics.jax.org/reference/MGI:[%s]
       - name: htp/dataset
         url: http://www.informatics.jax.org/gxd/htexp_index/summary?arrayExpressID=[%s]
-      - name: imsr/gene
+      - name: gene/imsr
         url: https://www.findmice.org/summary?gaccid=MGI:[%s]
-      - name: imsr/allele
+      - name: allele/imsr
         url: https://www.findmice.org/summary?gaccid=MGI:[%s]&states=archived&states=embryo&states=live&states=ovaries&states=sperm
 
   #
