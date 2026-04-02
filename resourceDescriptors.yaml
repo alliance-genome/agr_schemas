@@ -1116,3 +1116,193 @@
     name: dbSNP
     example_gid: rs188724206
     default_url: https://www.ncbi.nlm.nih.gov/snp/[%s]
+
+  #
+  # Additional external resources (from FlyBase cross-references mapping)
+  #
+
+  - db_prefix: AlphaFold
+    name: AlphaFold DB
+    example_id: AlphaFold:Q9W5X2
+    gid_pattern: "^AlphaFold:[A-Z][0-9][A-Z0-9]{3,8}[0-9]$"
+    default_url: https://alphafold.ebi.ac.uk/entry/[%s]
+
+  - db_prefix: BDGP
+    name: BDGP
+    example_id: BDGP:FBgn0000014
+    gid_pattern: "^BDGP:\\S+$"
+    default_url: http://insitu.fruitfly.org/cgi-bin/ex/report.pl?ftype=10&ftext=[%s]
+
+  - db_prefix: CST
+    name: Cell Signaling Technology
+    example_id: CST:2846
+    gid_pattern: "^CST:\\d{4,5}$"
+    default_url: https://www.cellsignal.com/products/primary-antibodies/[%s]
+
+  - db_prefix: DGRC
+    name: Drosophila Genomics Resource Center
+    example_id: DGRC:FBcl0000020
+    gid_pattern: "^DGRC:\\S+$"
+    default_url: https://dgrc.bio.indiana.edu/Search?query=[%s]
+    pages:
+      - name: gene
+        url: https://dgrc.bio.indiana.edu/Search?category=&query=[%s]
+
+  - db_prefix: DHP
+    name: Drosophila Humanization Project
+    example_id: DHP:Hs9000
+    gid_pattern: "^DHP:Hs\\d{4}$"
+    default_url: https://flypush.research.bcm.edu/humanfly/info.php?stock=[%s]
+
+  - db_prefix: DRscDB
+    name: DRscDB
+    example_id: DRscDB:260693/tissue=All
+    gid_pattern: "^DRscDB:\\d{5,8}/tissue=All$"
+    default_url: https://www.flyrnai.org/tools/single_cell/web/show_genedata/ssgid=[%s]
+
+  - db_prefix: DroID
+    name: DroID
+    example_id: DroID:FBgn0000008
+    gid_pattern: "^DroID:\\S+$"
+    default_url: http://www.droidb.org/ppisummary.jsp?gene_ids_for_imbrowser=[%s]
+
+  - db_prefix: DSHB
+    name: Developmental Studies Hybridoma Bank
+    example_id: DSHB:5C9-2C7
+    gid_pattern: "^DSHB:[A-Za-z0-9_.\\-/()]+$"
+    default_url: https://dshb.biology.uiowa.edu/[%s]
+
+  - db_prefix: epd
+    name: Eukaryotic Promoter Database
+    example_id: epd:TA_H3
+    gid_pattern: "^epd:[A-Z_0-9-]+$"
+    default_url: https://bioregistry.io/epd:[%s]
+
+  - db_prefix: FlyAtlas
+    name: FlyAtlas
+    example_id: FlyAtlas:FBgn0000008
+    gid_pattern: "^FlyAtlas:\\S+$"
+    default_url: https://flyatlas2013.org/?search=gene&radioGene=FBgene&gene=[%s]
+
+  - db_prefix: FlyAtlas2
+    name: FlyAtlas2
+    example_id: FlyAtlas2:FBgn0031080
+    gid_pattern: "^FlyAtlas2:\\S+$"
+    default_url: https://motif.mvls.gla.ac.uk/FlyAtlas2/index.html?search=gene&gene=[%s]&idtype=fbgn#mobileTargetG
+
+  - db_prefix: FlyMet
+    name: FlyMet
+    example_id: FlyMet:FBgn0000008
+    gid_pattern: "^FlyMet:\\S+$"
+    default_url: http://flymet.org/met_explore/gene_tissue_explorer/[%s]
+
+  - db_prefix: FlyMine
+    name: FlyMine
+    example_id: FlyMine:FBgn0000003
+    gid_pattern: "^FlyMine:\\S+$"
+    default_url: http://www.flymine.org/query/portal.do?origin=flybase&externalid=[%s]
+
+  - db_prefix: FLYGUT
+    name: FLYGUT
+    example_id: FLYGUT:FBgn0000427
+    gid_pattern: "^FLYGUT:\\S+$"
+    default_url: http://flygut.epfl.ch/expressions/show_by_gene?flybase_gene_id=[%s]
+
+  - db_prefix: FPbase
+    name: FPbase
+    example_id: FPbase:cerulean
+    gid_pattern: "^FPbase:([A-Z0-9]{4,5}|[a-z][a-z0-9-]+)$"
+    default_url: https://www.fpbase.org/protein/[%s]
+
+  - db_prefix: GDP
+    name: Gene Disruption Project
+    example_id: GDP:KG00591
+    gid_pattern: "^GDP:[A-Z]{2}\\d{5}[A-Za-z0-9-]*$"
+    default_url: https://flypush.research.bcm.edu/pscreen/details.php?line=[%s]
+    pages:
+      - name: crimic
+        url: https://flypush.research.bcm.edu/pscreen/crimic/info.php?CRname=[%s]
+      - name: rmce
+        url: https://flypush.research.bcm.edu/pscreen/rmce/rmce.php?entry=[%s]
+
+  - db_prefix: GtRNAdb
+    name: Genomic tRNA Database
+    example_id: GtRNAdb:tRNA-Arg-TCG-4-1
+    gid_pattern: "^GtRNAdb:tRNA-[A-Za-z]+-[ACGT]{3}-\\d+-\\d+$"
+    default_url: http://gtrnadb.ucsc.edu/genomes/eukaryota/Dmela6/genes/[%s].html
+
+  - db_prefix: GXA_SC
+    name: Single Cell Expression Atlas
+    example_id: GXA_SC:FBgn0031080
+    gid_pattern: "^GXA_SC:\\S+$"
+    default_url: https://www.ebi.ac.uk/gxa/sc/search?flybase_gene_id=[%s]
+
+  - db_prefix: iBeetle
+    name: iBeetle-Base
+    example_id: iBeetle:TC001664
+    gid_pattern: "^iBeetle:TC\\d{6}$"
+    default_url: http://ibeetle-base.uni-goettingen.de/details/[%s]
+
+  - db_prefix: INTERACTIVEFLY
+    name: Interactive Fly
+    example_id: INTERACTIVEFLY:/genebrief/14-3-3epsilon.htm
+    gid_pattern: "^INTERACTIVEFLY:/[a-z]+/[A-Za-z0-9_&(). #-]+\\.htm(#\\w+)?$"
+    default_url: https://www.sdbonline.org/sites/fly[%s]
+
+  - db_prefix: MARRVEL
+    name: MARRVEL
+    example_id: MARRVEL:11315
+    gid_pattern: "^MARRVEL:(\\d+|[A-Z][A-Za-z0-9]+)$"
+    default_url: https://marrvel.org/human/gene/[%s]
+    pages:
+      - name: human
+        url: https://marrvel.org/human/gene/[%s]
+      - name: model
+        url: https://marrvel.org/model/gene/[%s]
+
+  - db_prefix: merops.entry
+    name: MEROPS Entry
+    example_id: merops.entry:A02.052
+    gid_pattern: "^merops\\.entry:[SCTAGMNUIX]{1,2}\\d{2}\\.([AB]\\d{2}|\\d{3})$"
+    default_url: https://bioregistry.io/merops.entry:[%s]
+
+  - db_prefix: MIST
+    name: An integrated Molecular Interaction Database
+    example_id: MIST:31691
+    gid_pattern: "^MIST:\\d{5,8}$"
+    default_url: http://fgrtools.hms.harvard.edu/MIST/MistShowData?organismSelection=fly&networks=ppi_interactions,interologs&gene_list=[%s]
+    pages:
+      - name: ppi
+        url: http://fgrtools.hms.harvard.edu/MIST/MistShowData?organismSelection=fly&networks=ppi_interactions,interologs&gene_list=[%s]
+      - name: genetic
+        url: http://fgrtools.hms.harvard.edu/MIST/MistShowData?organismSelection=fly&networks=genetic,interologs_genetic&gene_list=[%s]
+
+  - db_prefix: pubchem.compound
+    name: PubChem Compound
+    example_id: pubchem.compound:13609
+    gid_pattern: "^pubchem\\.compound:\\d+$"
+    default_url: https://bioregistry.io/pubchem.compound:[%s]
+
+  - db_prefix: reactome
+    name: Reactome
+    example_id: reactome:R-DME-418555
+    gid_pattern: "^reactome:R-[A-Z]{3}-\\d+(-\\d+)?(\\.\\d+)?$"
+    default_url: https://bioregistry.io/reactome:[%s]
+
+  - db_prefix: rfam
+    name: Rfam
+    example_id: rfam:RF00143
+    gid_pattern: "^rfam:RF\\d{5}$"
+    default_url: https://bioregistry.io/rfam:[%s]
+
+  - db_prefix: vfb
+    name: Virtual Fly Brain
+    example_id: vfb:00000001
+    gid_pattern: "^vfb:[0-9a-zA-Z]{8}$"
+    default_url: https://bioregistry.io/vfb:[%s]
+
+  - db_prefix: vgnc
+    name: Vertebrate Gene Nomenclature Committee
+    example_id: vgnc:33340
+    gid_pattern: "^vgnc:\\d{1,9}$"
+    default_url: https://bioregistry.io/vgnc:[%s]
