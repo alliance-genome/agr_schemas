@@ -1127,12 +1127,6 @@
     gid_pattern: "^AlphaFold:[A-Z][0-9][A-Z0-9]{3,8}[0-9]$"
     default_url: https://alphafold.ebi.ac.uk/entry/[%s]
 
-  - db_prefix: BDGP
-    name: BDGP
-    example_id: BDGP:FBgn0000014
-    gid_pattern: "^BDGP:\\S+$"
-    default_url: http://insitu.fruitfly.org/cgi-bin/ex/report.pl?ftype=10&ftext=[%s]
-
   - db_prefix: CST
     name: Cell Signaling Technology
     example_id: CST:2846
@@ -1157,8 +1151,8 @@
   - db_prefix: DRscDB
     name: DRscDB
     example_id: DRscDB:260693/tissue=All
-    gid_pattern: "^DRscDB:\\d{5,8}/tissue=All$"
-    default_url: https://www.flyrnai.org/tools/single_cell/web/show_genedata/ssgid=[%s]
+    gid_pattern: "^DRscDB:\\d{5,8}$"
+    default_url: https://www.flyrnai.org/tools/single_cell/web/show_genedata/ssgid=[%s]/tissue=All
 
   - db_prefix: DroID
     name: DroID
