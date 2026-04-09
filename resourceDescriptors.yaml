@@ -1150,7 +1150,7 @@
 
   - db_prefix: DRscDB
     name: DRscDB
-    example_id: DRscDB:260693/tissue=All
+    example_id: DRscDB:260693
     gid_pattern: "^DRscDB:\\d{5,8}$"
     default_url: https://www.flyrnai.org/tools/single_cell/web/show_genedata/ssgid=[%s]/tissue=All
 
