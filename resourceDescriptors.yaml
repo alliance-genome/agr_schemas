@@ -420,6 +420,12 @@
       - name: gene/interactions
         url: https://thebiogrid.org/interaction/[%s]
 
+  - db_prefix: biocyc
+    name: BioCyc
+    example_gid: biocyc:ECOLI:CYT-D-UBIOX-CPLX
+    gid_pattern: "^biocyc:[A-Z-0-9]+(\\:)?[A-Za-z0-9+_.%-:]+$"
+    default_url: https://bioregistry.io/biocyc:[%s]
+
   - db_prefix: bmrb
     name: Biological Magnetic Resonance Data Bank
     example_id: bmrb:4899
@@ -428,6 +434,12 @@
     pages:
       - name: gene/interactions
         url: https://bmrb.io/data_library/summary/index.php?bmrbId=[%s]
+
+  - db_prefix: cazy
+    name: Carbohydrate Active EnZYmes
+    example_gid: cazy:GT10
+    gid_pattern: "^cazy:(GT|GH|PL|CE|CBM)\\d+(_\\d+)?$"
+    default_url: https://bioregistry.io/cazy:[%s]
 
   - db_prefix: CHEBI
     aliases: ['chebi']
@@ -719,6 +731,12 @@
     pages:
       - name: ontology_provided_cross_reference
         url: http://www.genome.jp/dbget-bin/www_bget?map[%s]
+
+  - db_prefix: kegg.pathway
+    name: KEGG Pathway
+    example_gid: kegg.pathway:rsk00410
+    gid_pattern: "^kegg\\.pathway:\\w{2,4}\\d{5}$"
+    default_url: https://bioregistry.io/kegg.pathway:[%s]
 
   - db_prefix: LoQAtE
     name: The localization and quantitation atlas of the yeast proteome
@@ -1019,14 +1037,11 @@
       - name: ontology_provided_cross_reference
         url: https://browser.ihtsdotools.org/?perspective=full&conceptId1=[%s]
 
-  - db_prefix: TCDB
+  - db_prefix: tcdb
     name: Transporter Classification Database
-    example_id: TCDB:3.A.3.8
-    gid_pattern: "^TCDB:\\w+\\.\\w+\\.\\w+\\.\\w+$"
-    default_url:  https://www.tcdb.org/search/result.php?tc=[%s]
-    pages:
-      - name: gene
-        url:  https://www.tcdb.org/search/result.php?tc=[%s]
+    example_gid: tcdb:5.A.1.1.1
+    gid_pattern: "^tcdb:\\d+(\\.[A-Z])?(\\.\\d+)?(\\.\\d+)?(\\.\\d+)?$"
+    default_url: https://bioregistry.io/tcdb:[%s]
       
   - db_prefix: TreeFam
     name: TreeFam
@@ -1090,6 +1105,12 @@
     example_id: WIKIP:BRCA2
     gid_pattern: "^WIKIP:\\S+$"
     default_url: https://en.wikipedia.org/wiki/[%s]
+
+  - db_prefix: wikipathways
+    name: WikiPathways
+    example_gid: wikipathways:WP732
+    gid_pattern: "^wikipathways:WP\\d{1,5}(_r\\d+)?$"
+    default_url: https://bioregistry.io/wikipathways:[%s]
 
   - db_prefix: WWPDB
     name: Worldwide Protein Data Bank
@@ -1259,6 +1280,12 @@
     example_id: merops.entry:A02.052
     gid_pattern: "^merops\\.entry:[SCTAGMNUIX]{1,2}\\d{2}\\.([AB]\\d{2}|\\d{3})$"
     default_url: https://bioregistry.io/merops.entry:[%s]
+
+  - db_prefix: merops.family
+    name: MEROPS Family
+    example_gid: merops.family:S1
+    gid_pattern: "^merops\\.family:[SCTAGMNU]\\d+$"
+    default_url: https://bioregistry.io/merops.family:[%s]
 
   - db_prefix: MIST
     name: An integrated Molecular Interaction Database
