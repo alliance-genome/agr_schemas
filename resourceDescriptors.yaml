@@ -397,6 +397,12 @@
       - name: gene/interactions
         url: http://amigo.geneontology.org/amigo/term/[%s]
 
+  - db_prefix: go.model
+    name: GO Causal Activity Model
+    example_gid: go.model:5fce9b7300001250
+    gid_pattern: "^go\\.model:[a-f0-9]+$"
+    default_url: https://bioregistry.io/go.model:[%s]
+
   #
   # External resources
   # Ordered to make finding easier. Please add new ones in proper place.
@@ -460,6 +466,12 @@
       - name: gene
         url: http://www.candidagenome.org/cgi-bin/locus.pl?locus=[%s]
         
+  - db_prefix: complexportal
+    name: Complex Portal
+    example_gid: complexportal:CPX-263
+    gid_pattern: "^complexportal:CPX-[0-9]+$"
+    default_url: https://bioregistry.io/complexportal:[%s]
+
   - db_prefix: DIP
     name: Database of Interacting Proteins
     example_id: DIP:DIP-88423E
